@@ -4029,4 +4029,22 @@
   <data name="WorkItemTypeBug" xml:space="preserve">
     <value>漏洞</value>
   </data>
+  <data name="AboutBusinessAddressHeading" xml:space="preserve">
+    <value>Business Address:</value>
+  </data>
+  <data name="AboutBusinessAddressLine1" xml:space="preserve">
+    <value>107 Olive Street, SSS Village</value>
+  </data>
+  <data name="AboutBusinessAddressLine2" xml:space="preserve">
+    <value>Concepcion 2, Marikina City 1811, Philippines</value>
+  </data>
+  <data name="AboutBusinessPhoneHeading" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="AboutBusinessPhone" xml:space="preserve">
+    <value>+63 926 007 1850</value>
+  </data>
+  <data name="AboutBusinessEmailHeading" xml:space="preserve">
+    <value>Email:</value>
+  </data>
 </root>

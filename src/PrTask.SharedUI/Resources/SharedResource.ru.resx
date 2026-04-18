@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -3722,5 +3722,23 @@
   </data>
   <data name="TermsTaxDescription" xml:space="preserve">
     <value>Пользователи несут исключительную ответственность за определение и исполнение своих собственных налоговых обязательств, возникающих из транзакций на PrTask, включая отчетность по налогу на доходы в Bureau of Internal Revenue (BIR) или аналогичный орган в своей юрисдикции. PrTask не удерживает налоги от имени пользователей и не предоставляет налоговых консультаций. PrTask может собирать налоговые идентификационные данные, включая W-9/W-8BEN tax forms для лиц из United States (US) и эквивалентные документы для других юрисдикций, а также выдавать Internal Revenue Service (IRS) Form 1099-K американским получателям платежей, превышающим применимые пороги. PrTask соблюдает требования отчетности Directive on Administrative Cooperation 7 (DAC7) для деятельности в European Union (EU) и филиппинские требования по Value-Added Tax (VAT) в соответствии с Republic Act No. 12023. PrTask может формировать сводки транзакций для помощи пользователям в налоговой отчетности, но пользователи обязаны самостоятельно проверять свои налоговые обязательства.</value>
+  </data>
+  <data name="AboutBusinessAddressHeading" xml:space="preserve">
+    <value>Business Address:</value>
+  </data>
+  <data name="AboutBusinessAddressLine1" xml:space="preserve">
+    <value>107 Olive Street, SSS Village</value>
+  </data>
+  <data name="AboutBusinessAddressLine2" xml:space="preserve">
+    <value>Concepcion 2, Marikina City 1811, Philippines</value>
+  </data>
+  <data name="AboutBusinessPhoneHeading" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="AboutBusinessPhone" xml:space="preserve">
+    <value>+63 926 007 1850</value>
+  </data>
+  <data name="AboutBusinessEmailHeading" xml:space="preserve">
+    <value>Email:</value>
   </data>
 </root>

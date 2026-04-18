@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -3791,5 +3791,23 @@
   </data>
   <data name="TermsTaxDescription" xml:space="preserve">
     <value>Pengguna sepenuhnya bertanggung jawab untuk menentukan dan memenuhi kewajiban pajak mereka sendiri yang timbul dari transaksi di PrTask, termasuk pelaporan pajak penghasilan kepada Bureau of Internal Revenue (BIR) atau otoritas setara di yurisdiksi mereka. PrTask tidak memotong pajak atas nama pengguna dan tidak memberikan nasihat perpajakan. PrTask dapat mengumpulkan informasi identifikasi pajak, termasuk formulir pajak W-9/W-8BEN untuk orang dari United States (US) dan yang setara untuk yurisdiksi lain, serta menerbitkan Internal Revenue Service (IRS) Form 1099-K bagi penerima pembayaran di US yang melebihi ambang batas yang berlaku. PrTask mematuhi kewajiban pelaporan Directive on Administrative Cooperation 7 (DAC7) untuk aktivitas di European Union (EU) dan persyaratan Value-Added Tax (VAT) Filipina berdasarkan Republic Act No. 12023. PrTask dapat membuat ringkasan transaksi untuk membantu pengguna dalam pelaporan pajak, tetapi pengguna harus secara mandiri memverifikasi kewajiban pajak mereka.</value>
+  </data>
+  <data name="AboutBusinessAddressHeading" xml:space="preserve">
+    <value>Business Address:</value>
+  </data>
+  <data name="AboutBusinessAddressLine1" xml:space="preserve">
+    <value>107 Olive Street, SSS Village</value>
+  </data>
+  <data name="AboutBusinessAddressLine2" xml:space="preserve">
+    <value>Concepcion 2, Marikina City 1811, Philippines</value>
+  </data>
+  <data name="AboutBusinessPhoneHeading" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="AboutBusinessPhone" xml:space="preserve">
+    <value>+63 926 007 1850</value>
+  </data>
+  <data name="AboutBusinessEmailHeading" xml:space="preserve">
+    <value>Email:</value>
   </data>
 </root>

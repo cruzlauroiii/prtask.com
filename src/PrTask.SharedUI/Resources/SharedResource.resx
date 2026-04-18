@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -3239,5 +3239,23 @@
   </data>
   <data name="DownloadLastUpdatedValue" xml:space="preserve">
     <value>March 2026</value>
+  </data>
+  <data name="AboutBusinessAddressHeading" xml:space="preserve">
+    <value>Business Address:</value>
+  </data>
+  <data name="AboutBusinessAddressLine1" xml:space="preserve">
+    <value>107 Olive Street, SSS Village</value>
+  </data>
+  <data name="AboutBusinessAddressLine2" xml:space="preserve">
+    <value>Concepcion 2, Marikina City 1811, Philippines</value>
+  </data>
+  <data name="AboutBusinessPhoneHeading" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="AboutBusinessPhone" xml:space="preserve">
+    <value>+63 926 007 1850</value>
+  </data>
+  <data name="AboutBusinessEmailHeading" xml:space="preserve">
+    <value>Email:</value>
   </data>
 </root>

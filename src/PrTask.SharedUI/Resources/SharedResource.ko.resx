@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -3722,5 +3722,23 @@
   </data>
   <data name="TermsTaxDescription" xml:space="preserve">
     <value>사용자는 PrTask에서 발생한 거래로 인한 자신의 세금 의무를 결정하고 이행할 전적인 책임이 있으며, 여기에는 Bureau of Internal Revenue (BIR) 또는 해당 관할권의 동등한 기관에 대한 소득세 신고가 포함됩니다. PrTask는 사용자를 대신하여 세금을 원천징수하지 않으며 세무 자문도 제공하지 않습니다. PrTask는 United States (US) 인원을 위한 W-9/W-8BEN tax forms 와 다른 관할권의 동등 문서를 포함한 세금 식별 정보를 수집할 수 있으며, 적용 기준을 초과하는 미국 수취인에게는 Internal Revenue Service (IRS) Form 1099-K 를 발급할 수 있습니다. PrTask는 European Union (EU) 활동에 대한 Directive on Administrative Cooperation 7 (DAC7) 보고 의무와 Republic Act No. 12023 에 따른 필리핀 Value-Added Tax (VAT) 요건을 준수합니다. PrTask는 사용자의 세무 신고를 돕기 위해 거래 요약을 생성할 수 있지만, 사용자는 자신의 세금 의무를 독립적으로 확인해야 합니다.</value>
+  </data>
+  <data name="AboutBusinessAddressHeading" xml:space="preserve">
+    <value>Business Address:</value>
+  </data>
+  <data name="AboutBusinessAddressLine1" xml:space="preserve">
+    <value>107 Olive Street, SSS Village</value>
+  </data>
+  <data name="AboutBusinessAddressLine2" xml:space="preserve">
+    <value>Concepcion 2, Marikina City 1811, Philippines</value>
+  </data>
+  <data name="AboutBusinessPhoneHeading" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="AboutBusinessPhone" xml:space="preserve">
+    <value>+63 926 007 1850</value>
+  </data>
+  <data name="AboutBusinessEmailHeading" xml:space="preserve">
+    <value>Email:</value>
   </data>
 </root>

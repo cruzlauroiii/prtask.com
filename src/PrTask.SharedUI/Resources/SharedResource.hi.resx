@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -3767,5 +3767,23 @@
   </data>
   <data name="TermsTaxDescription" xml:space="preserve">
     <value>PrTask पर लेनदेन से उत्पन्न अपने कर दायित्वों को निर्धारित करना और पूरा करना पूरी तरह उपयोगकर्ताओं की जिम्मेदारी है, जिसमें Bureau of Internal Revenue (BIR) या उनकी न्यायक्षेत्र की समकक्ष प्राधिकरण को आयकर रिपोर्ट करना शामिल है। PrTask उपयोगकर्ताओं की ओर से कर नहीं रोकता और कर सलाह नहीं देता। PrTask कर पहचान संबंधी जानकारी एकत्र कर सकता है, जिनमें United States (US) के व्यक्तियों के लिए W-9/W-8BEN tax forms और अन्य न्यायक्षेत्रों के लिए उनके समकक्ष शामिल हैं, और लागू सीमा से अधिक भुगतान पाने वाले US payees के लिए Internal Revenue Service (IRS) Form 1099-K जारी कर सकता है। PrTask European Union (EU) गतिविधियों के लिए Directive on Administrative Cooperation 7 (DAC7) रिपोर्टिंग तथा Republic Act No. 12023 के तहत फिलीपींस की Value-Added Tax (VAT) आवश्यकताओं का पालन करता है। PrTask उपयोगकर्ताओं की कर रिपोर्टिंग में सहायता के लिए लेनदेन सारांश तैयार कर सकता है, लेकिन उपयोगकर्ताओं को अपने कर दायित्वों का स्वतंत्र रूप से सत्यापन करना होगा।</value>
+  </data>
+  <data name="AboutBusinessAddressHeading" xml:space="preserve">
+    <value>Business Address:</value>
+  </data>
+  <data name="AboutBusinessAddressLine1" xml:space="preserve">
+    <value>107 Olive Street, SSS Village</value>
+  </data>
+  <data name="AboutBusinessAddressLine2" xml:space="preserve">
+    <value>Concepcion 2, Marikina City 1811, Philippines</value>
+  </data>
+  <data name="AboutBusinessPhoneHeading" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="AboutBusinessPhone" xml:space="preserve">
+    <value>+63 926 007 1850</value>
+  </data>
+  <data name="AboutBusinessEmailHeading" xml:space="preserve">
+    <value>Email:</value>
   </data>
 </root>

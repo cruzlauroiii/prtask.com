@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -3770,5 +3770,23 @@
   </data>
   <data name="TermsTaxDescription" xml:space="preserve">
     <value>Los usuarios son los unicos responsables de determinar y cumplir sus propias obligaciones tributarias derivadas de transacciones en PrTask, incluida la declaracion del impuesto sobre la renta ante el Bureau of Internal Revenue (BIR) o la autoridad equivalente en su jurisdiccion. PrTask no retiene impuestos en nombre de los usuarios y no proporciona asesoramiento tributario. PrTask puede recopilar informacion de identificacion fiscal, incluidos los formularios tributarios W-9/W-8BEN para personas de los Estados Unidos (US) y equivalentes para otras jurisdicciones, y emitir el Formulario 1099-K del Internal Revenue Service (IRS) para beneficiarios estadounidenses que superen los umbrales aplicables. PrTask cumple las obligaciones de reporte de la Directiva de Cooperacion Administrativa 7 (DAC7) para actividades en la Union Europea (UE) y los requisitos filipinos del impuesto al valor agregado (VAT) conforme a la Ley de la Republica No. 12023. PrTask puede generar resumenes de transacciones para ayudar a los usuarios con sus declaraciones, pero los usuarios deben verificar de manera independiente sus obligaciones tributarias.</value>
+  </data>
+  <data name="AboutBusinessAddressHeading" xml:space="preserve">
+    <value>Business Address:</value>
+  </data>
+  <data name="AboutBusinessAddressLine1" xml:space="preserve">
+    <value>107 Olive Street, SSS Village</value>
+  </data>
+  <data name="AboutBusinessAddressLine2" xml:space="preserve">
+    <value>Concepcion 2, Marikina City 1811, Philippines</value>
+  </data>
+  <data name="AboutBusinessPhoneHeading" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="AboutBusinessPhone" xml:space="preserve">
+    <value>+63 926 007 1850</value>
+  </data>
+  <data name="AboutBusinessEmailHeading" xml:space="preserve">
+    <value>Email:</value>
   </data>
 </root>
