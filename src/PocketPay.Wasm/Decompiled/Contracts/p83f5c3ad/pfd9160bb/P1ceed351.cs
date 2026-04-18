@@ -1,0 +1,54 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+public interface P1ceed351
+{
+    void Back();
+    DialogFragment GetReceiptBSDialogFragment();
+    string GetReceiptSendByEmailKey();
+    string GetTophAutoActivationKey();
+    p2fc3359e GetTophFlow(p15913342 P0, p9ded6185 P1, pad7c4a1f P2, pbfc85237 P3);
+    string GetTophLogoutKey();
+    string GetTophPaymentKey();
+    void OpenActivation();
+    void OpenActivationConfirm(pdc33845b P0, string P1);
+    void OpenActivationViaEmail();
+    void OpenActivationViaSms();
+    void OpenChooseRegion();
+    void OpenCreateOrder();
+    void OpenOrderStatus(p80e68906 P0);
+    void OpenQrSlip(p9ded6185 P0);
+    void OpenSendReceiptToEmail(p9ded6185 P0);
+    void OpenSendReceiptToPhone(p9ded6185 P0);
+    void OpenTophNfcCalibration();
+    void OpenTophSendReport();
+    void ReplaceToBalanceGone();
+    void ReplaceToBalanceSuccess(pbc0ca418 P0);
+    void ReplaceToPaymentSellGone();
+    void ReplaceToTophBalanceError(string P0);
+    void ReplaceToTophPaybackError(string P0, pb455e130 P1);
+    void ReplaceToTophPaybackGone(string P0);
+    void ReplaceToTophPaymentError(string P0, pb455e130 P1);
+    void ReplaceTophNfcCalibration();
+    void ReplaceTophNfcCalibrationError();
+    void SendResult(string P0, object P1);
+    void SetResultListener(string P0, p449a7995 P1);
+    void StartActivationFlow();
+    void StartAuthFlow();
+    void StartBusinessOrderFlow();
+    void StartCashierOrderFlow();
+    void StartLauncherFlow();
+    void StartPaymentSellSuccessFlow(p9ded6185 P0, pb455e130 P1);
+    void StartQrSlipFlow(p9ded6185 P0);
+    void StartSendReceiptToEmailFlow(p9ded6185 P0);
+    void StartSendReceiptToPhoneFlow(p9ded6185 P0);
+    void StartTophBalanceFlow();
+    void StartTophInfoFlow();
+    void StartTophNfcCalibrationFlow();
+    void StartTophNfcCalibrationHelpFlow();
+    void StartTophPaybackFlow();
+    void StartTophPaybackSuccessFlow(p9ded6185 P0, pb455e130 P1);
+    void StartTophPaymentSellFlow();
+    void StartTophQrInfoFlow();
+    void StartTophQrPaybackFlow();
+    void StartTophQrSellFlow();
+}

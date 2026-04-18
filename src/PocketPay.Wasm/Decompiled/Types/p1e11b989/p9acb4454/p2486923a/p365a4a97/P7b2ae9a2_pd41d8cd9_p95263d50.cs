@@ -1,0 +1,14 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+public class P7b2ae9a2_pd41d8cd9_p95263d50 : Func<object, object>
+{
+    public readonly p7b2ae9a2 F$0;
+
+    public object Invoke(object P0)
+    {
+        // call: p7b2ae9a2.m72ed88c9
+        // field: p1e11b989.p9acb4454.p2486923a.p365a4a97.p7b2ae9a2$pd41d8cd9$p95263d50.f$0
+        return default!;
+    }
+
+}

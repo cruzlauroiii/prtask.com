@@ -1,0 +1,1 @@
+{"mcpServers":{"wolfstruckingco":{"command":"dotnet","args":["run","C:\\work\\prtask.com\\wolfstruckingco.cs","--","mcp"]}}}

@@ -1,0 +1,119 @@
+{
+  "de": {
+    "HowItWorksClientsHeading": "Für Kunden",
+    "HowItWorksClientsStep1": "Melden Sie sich mit GitHub oder Google an und richten Sie Ihre Zahlungsmethode ein",
+    "HowItWorksClientsStep2": "Erstellen Sie eine Aufgabe mit Beschreibung, Repository-Link und Bounty-Betrag",
+    "HowItWorksClientsStep3": "Entwickler reichen öffentliche Pull Requests für Ihre Aufgabe ein",
+    "HowItWorksClientsStep4": "Prüfen Sie alle eingereichten Pull Requests und genehmigen Sie den besten",
+    "HowItWorksClientsStep5": "Der Bounty wird Ihnen automatisch berechnet und der Entwickler wird bezahlt"
+  },
+  "es": {
+    "DashboardPrsLabel": "Solicitudes de extraccion",
+    "HowItWorksClientsHeading": "Para clientes",
+    "HowItWorksClientsStep1": "Inicia sesion con GitHub o Google y configura tu metodo de pago",
+    "HowItWorksClientsStep2": "Crea una tarea con descripcion, enlace al repositorio y monto de la recompensa",
+    "HowItWorksClientsStep3": "Los desarrolladores envian pull requests publicos para tu tarea",
+    "HowItWorksClientsStep4": "Revisa todos los pull requests enviados y aprueba el mejor",
+    "HowItWorksClientsStep5": "Se te cobra automaticamente la recompensa y el desarrollador recibe el pago"
+  },
+  "fil": {
+    "HowItWorksClientsHeading": "Para sa mga kliyente",
+    "HowItWorksClientsStep1": "Mag-sign in gamit ang GitHub o Google at i-set up ang iyong paraan ng pagbabayad",
+    "HowItWorksClientsStep2": "Gumawa ng gawain na may paglalarawan, link ng repository, at halaga ng bounty",
+    "HowItWorksClientsStep3": "Nagsusumite ang mga developer ng mga pampublikong pull request para sa iyong gawain",
+    "HowItWorksClientsStep4": "Suriin ang lahat ng naisumiteng pull request at aprubahan ang pinakamahusay",
+    "HowItWorksClientsStep5": "Awtomatikong sisingilin ang bounty at mababayaran ang developer",
+    "SettingsAddCardHeading": "Magdagdag ng card"
+  },
+  "fr": {
+    "DashboardPrsLabel": "Demandes de tirage",
+    "HowItWorksClientsHeading": "Pour les clients",
+    "HowItWorksClientsStep1": "Connectez-vous avec GitHub ou Google et configurez votre mode de paiement",
+    "HowItWorksClientsStep2": "Creez une tache avec une description, un lien de depot et un montant de prime",
+    "HowItWorksClientsStep3": "Les developpeurs soumettent des pull requests publics pour votre tache",
+    "HowItWorksClientsStep4": "Examinez toutes les pull requests soumises et approuvez la meilleure",
+    "HowItWorksClientsStep5": "La prime vous est facturee automatiquement et le developpeur est paye"
+  },
+  "hi": {
+    "HowItWorksClientsHeading": "ग्राहकों के लिए",
+    "HowItWorksClientsStep1": "GitHub या Google से साइन इन करें और अपनी भुगतान विधि सेट करें",
+    "HowItWorksClientsStep2": "विवरण, रिपॉजिटरी लिंक और बाउंटी राशि के साथ एक कार्य बनाएं",
+    "HowItWorksClientsStep3": "डेवलपर आपके कार्य के लिए सार्वजनिक पुल रिक्वेस्ट जमा करते हैं",
+    "HowItWorksClientsStep4": "सभी जमा की गई पुल रिक्वेस्ट की समीक्षा करें और सबसे अच्छी को स्वीकृत करें",
+    "HowItWorksClientsStep5": "आपसे बाउंटी स्वतः शुल्क ली जाती है और डेवलपर को भुगतान मिलता है",
+    "RefundNoEscrowHeading": "कोई एस्क्रो मॉडल नहीं",
+    "SettingsAddCardHeading": "कार्ड जोड़ें",
+    "SprintDescriptionHeading": "स्प्रिंट प्रबंधन - समय-सीमित विकास कार्य को व्यवस्थित करें",
+    "TermsDescriptionHeading": "इन सेवा की शर्तों के बारे में"
+  },
+  "id": {
+    "HowItWorksClientsHeading": "Untuk klien",
+    "HowItWorksClientsStep1": "Masuk dengan GitHub atau Google dan atur metode pembayaran Anda",
+    "HowItWorksClientsStep2": "Buat tugas dengan deskripsi, tautan repositori, dan jumlah bounty",
+    "HowItWorksClientsStep3": "Pengembang mengirim pull request publik untuk tugas Anda",
+    "HowItWorksClientsStep4": "Tinjau semua pull request yang dikirim dan setujui yang terbaik",
+    "HowItWorksClientsStep5": "Bounty akan dibebankan otomatis kepada Anda dan pengembang dibayar"
+  },
+  "it": {
+    "HowItWorksClientsHeading": "Per i clienti",
+    "HowItWorksClientsStep1": "Accedi con GitHub o Google e configura il tuo metodo di pagamento",
+    "HowItWorksClientsStep2": "Crea un'attivita con descrizione, link al repository e importo della bounty",
+    "HowItWorksClientsStep3": "Gli sviluppatori inviano pull request pubbliche per la tua attivita",
+    "HowItWorksClientsStep4": "Esamina tutte le pull request inviate e approva la migliore",
+    "HowItWorksClientsStep5": "La bounty ti viene addebitata automaticamente e lo sviluppatore viene pagato"
+  },
+  "ja": {
+    "HowItWorksClientsHeading": "クライアント向け",
+    "HowItWorksClientsStep1": "GitHub または Google でサインインし、支払い方法を設定します",
+    "HowItWorksClientsStep2": "説明、リポジトリリンク、報奨金額を含むタスクを作成します",
+    "HowItWorksClientsStep3": "開発者はあなたのタスクに対して公開プルリクエストを提出します",
+    "HowItWorksClientsStep4": "提出されたすべてのプルリクエストを確認し、最適なものを承認します",
+    "HowItWorksClientsStep5": "報奨金は自動的に請求され、開発者に支払われます",
+    "SettingsAddCardHeading": "カードを追加"
+  },
+  "ko": {
+    "HowItWorksClientsHeading": "클라이언트를 위한 안내",
+    "HowItWorksClientsStep1": "GitHub 또는 Google로 로그인하고 결제 수단을 설정하세요",
+    "HowItWorksClientsStep2": "설명, 저장소 링크, 바운티 금액이 포함된 작업을 만드세요",
+    "HowItWorksClientsStep3": "개발자가 작업에 대해 공개 풀 리퀘스트를 제출합니다",
+    "HowItWorksClientsStep4": "제출된 모든 풀 리퀘스트를 검토하고 가장 좋은 것을 승인하세요",
+    "HowItWorksClientsStep5": "바운티가 자동으로 청구되고 개발자에게 지급됩니다",
+    "SettingsAddCardHeading": "카드 추가"
+  },
+  "nl": {
+    "DashboardPrsLabel": "Pullverzoeken",
+    "HowItWorksClientsHeading": "Voor klanten",
+    "HowItWorksClientsStep1": "Meld u aan met GitHub of Google en stel uw betaalmethode in",
+    "HowItWorksClientsStep2": "Maak een taak met een beschrijving, repositorylink en bountybedrag",
+    "HowItWorksClientsStep3": "Ontwikkelaars dienen openbare pull requests in voor uw taak",
+    "HowItWorksClientsStep4": "Beoordeel alle ingediende pull requests en keur de beste goed",
+    "HowItWorksClientsStep5": "De bounty wordt automatisch in rekening gebracht en de ontwikkelaar wordt betaald"
+  },
+  "pt": {
+    "DashboardPrsLabel": "Solicitacoes de pull request",
+    "HowItWorksClientsHeading": "Para clientes",
+    "HowItWorksClientsStep1": "Entre com GitHub ou Google e configure sua forma de pagamento",
+    "HowItWorksClientsStep2": "Crie uma tarefa com descricao, link do repositorio e valor da recompensa",
+    "HowItWorksClientsStep3": "Os desenvolvedores enviam pull requests publicos para sua tarefa",
+    "HowItWorksClientsStep4": "Revise todos os pull requests enviados e aprove o melhor",
+    "HowItWorksClientsStep5": "A recompensa e cobrada automaticamente e o desenvolvedor recebe o pagamento"
+  },
+  "ru": {
+    "HowItWorksClientsHeading": "Для клиентов",
+    "HowItWorksClientsStep1": "Войдите через GitHub или Google и настройте способ оплаты",
+    "HowItWorksClientsStep2": "Создайте задачу с описанием, ссылкой на репозиторий и суммой вознаграждения",
+    "HowItWorksClientsStep3": "Разработчики отправляют публичные pull request для вашей задачи",
+    "HowItWorksClientsStep4": "Просмотрите все отправленные pull request и одобрите лучший",
+    "HowItWorksClientsStep5": "Вознаграждение списывается автоматически, а разработчик получает оплату",
+    "SettingsAddCardHeading": "Добавить карту"
+  },
+  "tr": {
+    "HowItWorksClientsHeading": "Musteriler icin",
+    "HowItWorksClientsStep1": "GitHub veya Google ile oturum acin ve odeme yonteminizi ayarlayin",
+    "HowItWorksClientsStep2": "Aciklama, depo baglantisi ve odul tutari ile bir gorev olusturun",
+    "HowItWorksClientsStep3": "Gelistiriciler goreviniz icin herkese acik pull request gonderir",
+    "HowItWorksClientsStep4": "Gonderilen tum pull requestleri inceleyin ve en iyisini onaylayin",
+    "HowItWorksClientsStep5": "Odul otomatik olarak tahsil edilir ve gelistiriciye odeme yapilir",
+    "SettingsAddCardHeading": "Kart ekle"
+  }
+}

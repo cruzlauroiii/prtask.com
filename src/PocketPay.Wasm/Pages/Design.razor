@@ -1,0 +1,31 @@
+@page "/design"
+@inject NavigationManager Nav
+
+<div style="width:100%">
+    <header class="toolbar" style="width:100%"></header>
+    <span class="inventoryTv"></span>
+    <fieldset class="designVariantsRg" style="display:flex;flex-direction:row">
+        <div class="inventoryListVg" style="display:flex;flex-direction:column">
+            <div style="display:flex;flex-direction:column;width:100%">
+                <img src="img/ic_inventory_list_design.png" alt="ic_inventory_list_design" />
+                <input class="inventoryListRb" type="radio" />
+            </div>
+            <span class="inventoryListTv"></span>
+        </div>
+        <div class="inventoryBigVg" style="display:flex;flex-direction:column">
+            <div style="display:flex;flex-direction:column;width:100%">
+                <img src="img/ic_inventory_big_design.png" alt="ic_inventory_big_design" />
+                <input class="inventoryBigRb" type="radio" />
+            </div>
+            <span class="inventoryBigTv"></span>
+        </div>
+        <div class="inventorySmallVg" style="display:flex;flex-direction:column">
+            <div style="display:flex;flex-direction:column;width:100%">
+                <img src="img/ic_inventory_small_design.png" alt="ic_inventory_small_design" />
+                <input class="inventorySmallRb" type="radio" />
+            </div>
+            <span class="inventorySmallTv"></span>
+        </div>
+    </fieldset>
+    <img class="designPreviewIv" />
+</div>

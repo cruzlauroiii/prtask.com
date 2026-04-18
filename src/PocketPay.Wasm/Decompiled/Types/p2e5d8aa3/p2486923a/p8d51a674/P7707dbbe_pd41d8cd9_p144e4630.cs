@@ -1,0 +1,13 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+public class P7707dbbe_pd41d8cd9_p144e4630 : CompoundButton$OnCheckedChangeListener
+{
+    public readonly p7707dbbe F$0;
+
+    public void OnCheckedChanged(CompoundButton P0, bool P1)
+    {
+        // call: p7707dbbe.m8bf38a4e
+        // field: p2e5d8aa3.p2486923a.p8d51a674.p7707dbbe$pd41d8cd9$p144e4630.f$0
+    }
+
+}

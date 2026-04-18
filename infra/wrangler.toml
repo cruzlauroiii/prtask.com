@@ -1,0 +1,127 @@
+name = "prtask-api"
+main = "worker.js"
+compatibility_date = "2026-02-24"
+compatibility_flags = ["nodejs_compat"]
+
+# Static assets (Blazor WASM) — replaces Pages hosting
+[assets]
+directory = "../publish/wwwroot"
+binding = "ASSETS"
+run_worker_first = false
+not_found_handling = "single-page-application"
+
+# KV namespace bindings
+[[kv_namespaces]]
+binding = "SESSIONS"
+id = "local-sessions"
+
+[[kv_namespaces]]
+binding = "CACHE"
+id = "local-cache"
+
+# R2 bucket bindings
+[[r2_buckets]]
+binding = "DIFFS"
+bucket_name = "prtask-diffs"
+
+[[r2_buckets]]
+binding = "AVATARS"
+bucket_name = "prtask-avatars"
+
+[[r2_buckets]]
+binding = "DATA"
+bucket_name = "prtask-data"
+
+# Durable Objects
+[durable_objects]
+bindings = [
+  { name = "GATEKEEPER_DO", class_name = "GatekeeperDO" }
+]
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["GatekeeperDO"]
+
+# Analytics Engine
+[[analytics_engine_datasets]]
+binding = "AUDIT"
+dataset = "prtask_audit"
+
+# Analytics Engine
+[[analytics_engine_datasets]]
+binding = "AUDIT"
+dataset = "prtask_audit"
+
+# Analytics Engine
+[[analytics_engine_datasets]]
+binding = "AUDIT"
+dataset = "prtask_audit"
+
+# Queue: R2 event notifications -> rebuild trigger
+[[queues.producers]]
+binding = "R2_EVENTS_QUEUE"
+queue = "prtask-r2-events"
+
+[[queues.consumers]]
+queue = "prtask-r2-events"
+max_batch_size = 1
+max_batch_timeout = 30
+
+# Queue: R2 event notifications -> rebuild trigger
+[[queues.producers]]
+binding = "R2_EVENTS_QUEUE"
+queue = "prtask-r2-events"
+
+[[queues.consumers]]
+queue = "prtask-r2-events"
+max_batch_size = 1
+max_batch_timeout = 30
+
+# Queue: R2 event notifications -> rebuild trigger
+[[queues.producers]]
+binding = "R2_EVENTS_QUEUE"
+queue = "prtask-r2-events"
+
+[[queues.consumers]]
+queue = "prtask-r2-events"
+max_batch_size = 1
+max_batch_timeout = 30
+
+# Queue: R2 event notifications -> rebuild trigger
+[[queues.producers]]
+binding = "R2_EVENTS_QUEUE"
+queue = "prtask-r2-events"
+
+[[queues.consumers]]
+queue = "prtask-r2-events"
+max_batch_size = 1
+max_batch_timeout = 30
+
+# Rate limiting
+# Rate limiting
+[[unsafe.bindings]]
+name = "RATE_LIMITER"
+type = "ratelimit"
+namespace_id = "prtask_wss"
+simple = { limit = 100, period = 60 }
+
+# Rate limiting
+[[ratelimits]]
+binding = "RATE_LIMITER"
+namespace_id = "prtask_wss"
+simple = { limit = 100, period = 60 }
+
+# Rate limiting
+[[ratelimits]]
+binding = "RATE_LIMITER"
+namespace_id = "prtask_wss"
+simple = { limit = 100, period = 60 }
+
+# Environment variables (local dev defaults)
+[vars]
+GOOGLE_CLIENT_ID = "placeholder"
+GITHUB_CLIENT_ID = "placeholder"
+AZURE_CLIENT_ID = "placeholder"
+OKTA_CLIENT_ID = "placeholder"
+OKTA_DOMAIN = "https://placeholder.okta.com"
+JWT_SECRET = "placeholder-jwt-secret-change-in-production"

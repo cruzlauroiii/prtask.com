@@ -1,0 +1,123 @@
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> L
+<nav class="nav-bar">
+    <input type="checkbox" id="@NavConstants.BurgerCheckId" class="burger-check" aria-hidden="true" />
+    <label for="@NavConstants.BurgerCheckId" class="burger-toggle" aria-label="@L["CategoryPlatform"]">@NavConstants.MenuIcon</label>
+    <a href="@NavConstants.HrefHome" class="nav-brand">@NavConstants.BrandName</a>
+    <div class="nav-cats">
+        <div class="nav-cat">
+            <input type="checkbox" id="@NavConstants.PlatformCatId" class="cat-check" aria-hidden="true" />
+            <label for="@NavConstants.PlatformCatId" class="cat-label">@L["CategoryPlatform"]@NavConstants.DropdownArrow</label>
+            <div class="cat-links">
+                <a href="@NavConstants.HrefTasks">@L["TasksLabel"]</a>
+                <a href="@NavConstants.HrefDashboard">@L["DashboardLabel"]</a>
+                <a href="@NavConstants.HrefLeaderboard">@L["LeaderboardLabel"]</a>
+                <a href="@NavConstants.HrefSprints">@L["SprintsLabel"]</a>
+                <a href="@NavConstants.HrefBoards">@L["BoardsLabel"]</a>
+            </div>
+        </div>
+        <div class="nav-cat">
+            <input type="checkbox" id="@NavConstants.ClientCatId" class="cat-check" aria-hidden="true" />
+            <label for="@NavConstants.ClientCatId" class="cat-label">@L["CategoryClient"]@NavConstants.DropdownArrow</label>
+            <div class="cat-links">
+                <a href="@NavConstants.HrefCreateTask">@L["CreateTaskLabel"]</a>
+                <a href="@NavConstants.HrefPayments">@L["PaymentsLabel"]</a>
+                <a href="@NavConstants.HrefRepository">@L["RepositoryLabel"]</a>
+            </div>
+        </div>
+        <div class="nav-cat">
+            <input type="checkbox" id="@NavConstants.AccountCatId" class="cat-check" aria-hidden="true" />
+            <label for="@NavConstants.AccountCatId" class="cat-label">@L["CategoryAccount"]@NavConstants.DropdownArrow</label>
+            <div class="cat-links">
+                <a href="@NavConstants.HrefLogin">@L["LoginLabel"]</a>
+                <a href="@NavConstants.HrefSettings">@L["SettingsLabel"]</a>
+                <a href="@NavConstants.HrefDownload">@L["DownloadLabel"]</a>
+            </div>
+        </div>
+        <div class="nav-cat">
+            <input type="checkbox" id="@NavConstants.InfoCatId" class="cat-check" aria-hidden="true" />
+            <label for="@NavConstants.InfoCatId" class="cat-label">@L["CategoryInfo"]@NavConstants.DropdownArrow</label>
+            <div class="cat-links">
+                <a href="@NavConstants.HrefAbout">@L["AboutLabel"]</a>
+                <a href="@NavConstants.HrefHowItWorks">@L["HowItWorksLabel"]</a>
+                <a href="@NavConstants.HrefPricing">@L["PricingLabel"]</a>
+            </div>
+        </div>
+        <div class="nav-cat">
+            <input type="checkbox" id="@NavConstants.LegalCatId" class="cat-check" aria-hidden="true" />
+            <label for="@NavConstants.LegalCatId" class="cat-label">@L["CategoryLegal"]@NavConstants.DropdownArrow</label>
+            <div class="cat-links">
+                <a href="@NavConstants.HrefTerms">@L["TermsLabel"]</a>
+                <a href="@NavConstants.HrefPrivacy">@L["PrivacyLabel"]</a>
+                <a href="@NavConstants.HrefRefund">@L["RefundLabel"]</a>
+                <a href="@NavConstants.HrefAcceptableUse">@L["AcceptableUseLabel"]</a>
+                <a href="@NavConstants.HrefCookiePolicy">@L["CookiePolicyLabel"]</a>
+                <a href="@NavConstants.HrefLicenses">@L["LicensesLabel"]</a>
+                <a href="@NavConstants.HrefAccessibility">@L["AccessibilityLabel"]</a>
+                <a href="@NavConstants.HrefDmca">@L["DmcaLabel"]</a>
+            </div>
+        </div>
+    </div>
+    <label class="theme-toggle-label" for="@NavConstants.ThemeCheckId" aria-label="@L["ToggleThemeTitle"]" title="@L["ToggleThemeTitle"]">
+        <input type="checkbox" id="@NavConstants.ThemeCheckId" class="theme-check" aria-hidden="true" />
+        <span class="theme-icon-light">@NavConstants.LightThemeIcon</span>
+        <span class="theme-icon-dark">@NavConstants.DarkThemeIcon</span>
+    </label>
+    <div class="burger-menu">
+        <div class="burger-cat">
+            <a href="@NavConstants.HrefHome" class="bm-home-link">@L["HomeLabel"]</a>
+        </div>
+        <div class="burger-cat">
+            <input type="checkbox" id="@NavConstants.BmPlatformCatId" class="bm-check" aria-hidden="true" />
+            <label for="@NavConstants.BmPlatformCatId" class="bm-label">@L["CategoryPlatform"]</label>
+            <div class="bm-links">
+                <a href="@NavConstants.HrefTasks">@L["TasksLabel"]</a>
+                <a href="@NavConstants.HrefDashboard">@L["DashboardLabel"]</a>
+                <a href="@NavConstants.HrefLeaderboard">@L["LeaderboardLabel"]</a>
+                <a href="@NavConstants.HrefSprints">@L["SprintsLabel"]</a>
+                <a href="@NavConstants.HrefBoards">@L["BoardsLabel"]</a>
+            </div>
+        </div>
+        <div class="burger-cat">
+            <input type="checkbox" id="@NavConstants.BmClientCatId" class="bm-check" aria-hidden="true" />
+            <label for="@NavConstants.BmClientCatId" class="bm-label">@L["CategoryClient"]</label>
+            <div class="bm-links">
+                <a href="@NavConstants.HrefCreateTask">@L["CreateTaskLabel"]</a>
+                <a href="@NavConstants.HrefPayments">@L["PaymentsLabel"]</a>
+                <a href="@NavConstants.HrefRepository">@L["RepositoryLabel"]</a>
+            </div>
+        </div>
+        <div class="burger-cat">
+            <input type="checkbox" id="@NavConstants.BmAccountCatId" class="bm-check" aria-hidden="true" />
+            <label for="@NavConstants.BmAccountCatId" class="bm-label">@L["CategoryAccount"]</label>
+            <div class="bm-links">
+                <a href="@NavConstants.HrefLogin">@L["LoginLabel"]</a>
+                <a href="@NavConstants.HrefSettings">@L["SettingsLabel"]</a>
+                <a href="@NavConstants.HrefDownload">@L["DownloadLabel"]</a>
+            </div>
+        </div>
+        <div class="burger-cat">
+            <input type="checkbox" id="@NavConstants.BmInfoCatId" class="bm-check" aria-hidden="true" />
+            <label for="@NavConstants.BmInfoCatId" class="bm-label">@L["CategoryInfo"]</label>
+            <div class="bm-links">
+                <a href="@NavConstants.HrefAbout">@L["AboutLabel"]</a>
+                <a href="@NavConstants.HrefHowItWorks">@L["HowItWorksLabel"]</a>
+                <a href="@NavConstants.HrefPricing">@L["PricingLabel"]</a>
+            </div>
+        </div>
+        <div class="burger-cat">
+            <input type="checkbox" id="@NavConstants.BmLegalCatId" class="bm-check" aria-hidden="true" />
+            <label for="@NavConstants.BmLegalCatId" class="bm-label">@L["CategoryLegal"]</label>
+            <div class="bm-links">
+                <a href="@NavConstants.HrefTerms">@L["TermsLabel"]</a>
+                <a href="@NavConstants.HrefPrivacy">@L["PrivacyLabel"]</a>
+                <a href="@NavConstants.HrefRefund">@L["RefundLabel"]</a>
+                <a href="@NavConstants.HrefAcceptableUse">@L["AcceptableUseLabel"]</a>
+                <a href="@NavConstants.HrefCookiePolicy">@L["CookiePolicyLabel"]</a>
+                <a href="@NavConstants.HrefLicenses">@L["LicensesLabel"]</a>
+                <a href="@NavConstants.HrefAccessibility">@L["AccessibilityLabel"]</a>
+                <a href="@NavConstants.HrefDmca">@L["DmcaLabel"]</a>
+            </div>
+        </div>
+    </div>
+</nav>

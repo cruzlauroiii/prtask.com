@@ -1,0 +1,30 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+
+@kotlin.Metadata(d1 = {"\u0000\u001a\n\u0000\n\u0002\u0010\b\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a\r\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u0087\n\u001a\r\u0010\u0000\u001a\u00020\u0003*\u00020\u0004H\u0087\n\u001a\r\u0010\u0000\u001a\u00020\u0003*\u00020\u0005H\u0086\n\u001a\r\u0010\u0006\u001a\u00020\u0001*\u00020\u0002H\u0087\n\u001a\r\u0010\u0006\u001a\u00020\u0003*\u00020\u0004H\u0087\n\u001a\r\u0010\u0006\u001a\u00020\u0003*\u00020\u0005H\u0086\n¨\u0006\u0007"}, d2 = {"component1", "", "Landroid/util/Size;", "", "Landroid/util/SizeF;", "Landroidx/core/util/SizeFCompat;", "component2", "core-ktx_release"}, m527k = 2, mv = {1, 8, 0}, xi = 48)
+public readonly class SizeKt {
+    public static readonly float Component1(android.util.SizeF sizeF) {
+        return sizeF.getWidth();
+    }
+
+    public static readonly float Component1(androidx.core.util.SizeFCompat sizeFCompat) {
+        return sizeFCompat.getWidth();
+    }
+
+    public static readonly int Component1(android.util.Size size) {
+        return size.getWidth();
+    }
+
+    public static readonly float Component2(android.util.SizeF sizeF) {
+        return sizeF.getHeight();
+    }
+
+    public static readonly float Component2(androidx.core.util.SizeFCompat sizeFCompat) {
+        return sizeFCompat.getHeight();
+    }
+
+    public static readonly int Component2(android.util.Size size) {
+        return size.getHeight();
+    }
+}
+

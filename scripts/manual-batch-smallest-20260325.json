@@ -1,0 +1,129 @@
+{
+  "de": {
+    "AboutValueOpenSourceHeading": "Open-Source",
+    "DownloadFeatureNative": "Native Leistung",
+    "DmcaSafeHarborHeading": "DMCA-Sicherer Hafen"
+  },
+  "es": {
+    "AboutValueOpenSourceHeading": "Codigo abierto"
+  },
+  "fil": {
+    "DownloadFeatureBiometric": "Biometric na pagpapatunay",
+    "DownloadFeatureNative": "Likas na pagganap",
+    "DownloadFeatureOffline": "Offline na access",
+    "DmcaSafeHarborHeading": "Ligtas na daungan ng DMCA"
+  },
+  "fr": {
+    "AboutValueOpenSourceHeading": "Code source ouvert"
+  },
+  "id": {
+    "AboutValueOpenSourceHeading": "Sumber terbuka"
+  },
+  "it": {
+    "AboutValueOpenSourceHeading": "Codice aperto"
+  },
+  "ja": {
+    "DmcaSafeHarborHeading": "DMCAセーフハーバー"
+  },
+  "ko": {
+    "DmcaSafeHarborHeading": "DMCA 세이프 하버"
+  },
+  "nl": {
+    "AboutValueOpenSourceHeading": "Open-source",
+    "DmcaSafeHarborHeading": "DMCA-veilige haven",
+    "DownloadDescriptionHeading": "Download PrTask - beschikbaar op meerdere platforms",
+    "DownloadDescriptionParagraph1": "PrTask is beschikbaar als native app op meerdere platforms, zodat u taken kunt beheren, pull requests kunt beoordelen en betalingen kunt volgen op het apparaat van uw voorkeur. De Android-app biedt een volledige mobiele ervaring met offline ondersteuning, pushmeldingen en biometrische authenticatie. De Windows-desktopapp biedt native integratie met de taakbalk en toegang tot lokale bestanden. Linux-gebruikers kunnen de zelfstandige x64-binaire versie downloaden en de webapp is altijd beschikbaar via prtask.com in elke moderne browser.",
+    "DownloadDescriptionParagraph2": "Elke platformversie deelt dezelfde kernfunctionaliteit, gebouwd met .NET MAUI en Blazor, zodat de ervaring overal consistent blijft. Native apps bieden extra mogelijkheden zoals offline toegang tot gecachte taken, pushmeldingen voor beoordelingen en betalingsupdates, en biometrisch aanmelden voor extra beveiliging. De webapp vereist geen installatie en werkt op elk apparaat met een moderne browser, wat dit de snelste manier maakt om te beginnen. iOS- en macOS-versies zijn in ontwikkeling en volgen in een toekomstige release.",
+    "DownloadDescriptionParagraph3": "Installatie is eenvoudig op alle ondersteunde platforms. Android-gebruikers downloaden het APK-bestand, schakelen installatie vanuit onbekende bronnen in en volgen de instructies op het scherm. Windows-gebruikers downloaden het uitvoerbare bestand en starten het direct, zonder aparte installatiewizard. Linux-gebruikers downloaden het binaire bestand, geven het uitvoerrechten en starten het vanuit de terminal. Alle downloads zijn ondertekend en geverifieerd om de authenticiteit te waarborgen. Bekijk de vergelijkingstabel om te zien welke functies per platform beschikbaar zijn en raadpleeg de probleemoplossing als u tijdens de installatie een fout tegenkomt.",
+    "DownloadFeatureBiometric": "Biometrische authenticatie",
+    "DownloadFeatureNative": "Native prestaties",
+    "DownloadFeatureOffline": "Offline toegang",
+    "DownloadInstallHeading": "Installatie-instructies",
+    "DownloadInstallAndroidDescription": "Download het APK-bestand, open het op uw apparaat en volg de aanwijzingen op het scherm om te installeren.",
+    "DownloadInstallIosDescription": "Download vanuit de App Store en tik op Installeren. De app verschijnt op uw beginscherm.",
+    "DownloadInstallLinuxDescription": "Download het pakket voor uw distributie en installeer het met uw pakketbeheerder.",
+    "DownloadInstallMacDescription": "Download het DMG-bestand, sleep PrTask naar uw map Programma's en start het vanuit Launchpad.",
+    "DownloadInstallWindowsDescription": "Download het installatieprogramma, voer de installatiewizard uit en volg de aanwijzingen om de installatie te voltooien.",
+    "DownloadLinuxButton": "Linux-binaire versie downloaden",
+    "DownloadMacDescription": "Native Mac-app voor Apple Silicon en Intel.",
+    "DownloadMacRequirements": "macOS 12 (Monterey) of hoger, 100 MB beschikbare opslagruimte",
+    "DownloadSystemRequirementsLabel": "Systeemvereisten:",
+    "DownloadTroubleshootApk": "Schakel 'Installeren uit onbekende bronnen' in de instellingen van uw apparaat in en probeer het daarna opnieuw.",
+    "DownloadTroubleshootApkQuestion": "De Android-APK wil niet installeren. Wat moet ik doen?",
+    "DownloadTroubleshootCrash": "Controleer of uw apparaat aan de minimale systeemvereisten voldoet en of u de nieuwste versie hebt geïnstalleerd.",
+    "DownloadTroubleshootCrashQuestion": "De app crasht bij het opstarten. Hoe kan ik dit oplossen?"
+  },
+  "pt": {
+    "AboutValueOpenSourceHeading": "Codigo aberto",
+    "DmcaCounterNotificationDescription": "Se voce acredita que seu conteudo foi removido por engano, pode enviar uma contranotificacao com o seguinte:",
+    "DmcaCounterNotificationHeading": "Contranotificacao",
+    "DmcaCounterNotificationItem1": "Sua assinatura fisica ou eletronica",
+    "DmcaCounterNotificationItem2": "Identificacao do material removido e de sua localizacao anterior",
+    "DmcaCounterNotificationItem3": "Declaracao, sob pena de perjurio, de que o material foi removido por engano ou identificacao incorreta",
+    "DmcaCounterNotificationItem4": "Seu nome, endereco, numero de telefone e consentimento com a jurisdicao do tribunal federal competente",
+    "DmcaCounterProcessDescription": "Ao receber uma contranotificacao valida, a PrTask a encaminhara ao reclamante original. Se o reclamante nao entrar com acao judicial em ate dez dias uteis, a PrTask restaurara o material entre dez e quatorze dias uteis depois.",
+    "DmcaCounterProcessHeading": "Processo de contranotificacao",
+    "DmcaDescriptionHeading": "Sobre esta politica da DMCA",
+    "DmcaDescriptionParagraph1": "Esta politica descreve os procedimentos da PrTask para lidar com alegacoes de infracao de direitos autorais segundo a Digital Millennium Copyright Act, 17 U.S.C. 512, e a Diretiva de Direitos Autorais da Uniao Europeia, Diretiva 2019/790. Como plataforma baseada em pull requests, a PrTask protege a propriedade intelectual com agente registrado da DMCA, procedimento de notificacao e retirada, contranotificacoes e politica para infratores reincidentes.",
+    "DmcaDescriptionParagraph2": "Se voce acredita que codigo enviado pela PrTask viola seus direitos autorais, esta politica explica como enviar uma notificacao de retirada com as informacoes exigidas. Se voce considerar que a remocao foi incorreta, pode contestar por meio de uma contranotificacao. A PrTask trata todas as solicitacoes da DMCA com rapidez e equilibrio entre os direitos dos titulares e as contribuicoes legitimas dos desenvolvedores.",
+    "DmcaDesignatedAgentDescription": "Notificacoes da DMCA e contranotificacoes devem ser enviadas ao nosso agente designado: PrTask DMCA Agent, email dmca@prtask.com. As informacoes do agente estao registradas junto ao U.S. Copyright Office nos termos de 17 U.S.C. 512(c)(2). Tambem e possivel enviar correspondencia para o endereco de contato da plataforma.",
+    "DmcaDesignatedAgentHeading": "Agente designado",
+    "DmcaEuCopyrightDescription": "Em conformidade com o artigo 17 da Diretiva de Direitos Autorais da Uniao Europeia, Diretiva 2019/790, a PrTask coopera com titulares de direitos, oferece mecanismos de reclamacao e solucao de disputas e toma medidas para impedir a disponibilidade de conteudo infrator quando notificada.",
+    "DmcaEuCopyrightHeading": "Diretiva de Direitos Autorais da Uniao Europeia",
+    "DmcaFilingDescription": "Se voce acredita que conteudo na PrTask viola seus direitos autorais, envie uma notificacao por escrito ao nosso agente designado com o seguinte:",
+    "DmcaFilingHeading": "Envio de notificacao da DMCA",
+    "DmcaFilingItem1": "Assinatura fisica ou eletronica do titular dos direitos autorais ou de seu representante autorizado",
+    "DmcaFilingItem2": "Identificacao da obra protegida por direitos autorais que estaria sendo infringida",
+    "DmcaFilingItem3": "Identificacao do material supostamente infrator, com detalhes suficientes para localiza-lo",
+    "DmcaFilingItem4": "Suas informacoes de contato, incluindo endereco, telefone e email",
+    "DmcaFilingItem5": "Declaracao de boa-fe de que o uso do material nao e autorizado pelo titular, por seu representante ou pela lei",
+    "DmcaFilingItem6": "Declaracao, sob pena de perjurio, de que as informacoes da notificacao sao exatas e de que voce esta autorizado a agir em nome do titular",
+    "DmcaLastUpdated": "Ultima atualizacao: marco de 2026",
+    "DmcaOverviewDescription": "A PrTask respeita os direitos de propriedade intelectual de terceiros e espera que seus usuarios facam o mesmo.",
+    "DmcaPageHeading": "Politica da DMCA / direitos autorais",
+    "DmcaRepeatInfringersDescription": "A PrTask mantem uma politica para infratores reincidentes, conforme exigido para a protecao de safe harbor da DMCA. Usuarios com violacoes repetidas podem ter a conta suspensa ou encerrada.",
+    "DmcaRepeatInfringersHeading": "Infratores reincidentes",
+    "DmcaSafeHarborDescription": "A PrTask se qualifica para a protecao de safe harbor nos termos da secao 512 da Digital Millennium Copyright Act. Mantemos agente registrado, procedimento de notificacao e retirada, sistema de contranotificacao e politica razoavel para infratores reincidentes.",
+    "DmcaSafeHarborHeading": "Porto seguro da DMCA",
+    "DmcaTakedownDescription": "Ao receber uma notificacao valida de retirada segundo a DMCA, a PrTask removera ou desabilitara prontamente o acesso ao material supostamente infrator, notificara o usuario afetado e fornecera informacoes sobre como apresentar uma contranotificacao.",
+    "DmcaTakedownHeading": "Processo de retirada"
+  },
+  "ru": {
+    "AboutValueOpenSourceHeading": "Otkrytyy iskhodnyy kod",
+    "DmcaCounterNotificationDescription": "Esli vy schitaete, chto vash kontent byl udalen po oshibke, vy mozhete podat vstrechnoe uvedomlenie so sleduyushchey informatsiey:",
+    "DmcaCounterNotificationHeading": "Vstrechnoe uvedomlenie",
+    "DmcaCounterNotificationItem1": "Vasha fizicheskaya ili elektronnaya podpis",
+    "DmcaCounterNotificationItem2": "Identifikatsiya udalennogo materiala i ego prezhnego mestopolozheniya",
+    "DmcaCounterNotificationItem3": "Zayavlenie pod strakhom nakazaniya za lzhesvidetelstvo o tom, chto material byl udalen po oshibke ili iz-za nevernoy identifikatsii",
+    "DmcaCounterNotificationItem4": "Vashe imya, adres, nomer telefona i soglasie na yurisdiktsiyu kompetentnogo federalnogo suda",
+    "DmcaCounterProcessDescription": "Posle polucheniya deystvitelnogo vstrechnogo uvedomleniya PrTask pereshlet ego pervonachalnomu zayavitelyu. Esli zayavitel ne podast iskovoe zayavlenie v techenie desyati rabochikh dney, PrTask vosstanovit material v srok ot desyati do chetyrnadtsati rabochikh dney.",
+    "DmcaCounterProcessHeading": "Protsess vstrechnogo uvedomleniya",
+    "DmcaDescriptionHeading": "Ob etoy politike DMCA",
+    "DmcaDescriptionParagraph1": "Eta politika opisivaet protsedury PrTask po rabote s zhalobami o narushenii avtorskikh prav v sootvetstvii s zakonom Digital Millennium Copyright Act, 17 U.S.C. 512, i Direktivoy Yevropeyskogo soyuza ob avtorskom prave, Direktiva 2019/790. Kak platforma, osnovannaya na pull request, PrTask zashchishchaet intellektualnuyu sobstvennost s pomoshchyu zaregistrirovannogo agenta DMCA, protsedury uvedomleniya i udaleniya, vstrechnykh uvedomleniy i politiki dlya povtornykh narushiteley.",
+    "DmcaDescriptionParagraph2": "Esli vy schitaete, chto kod, otpravlennyy cherez PrTask, narushaet vashi avtorskie prava, eta politika obyasnyaet, kak podat uvedomlenie ob udalenii s trebuemoy informatsiey. Esli vy schitaete udalenie oshibochnym, vy mozhete osparivat ego s pomoshchyu vstrechnogo uvedomleniya. PrTask rassmatrivaet vse zaprosy DMCA operativno i spravedlivo.",
+    "DmcaDesignatedAgentDescription": "Uvedomleniya DMCA i vstrechnye uvedomleniya sleduet napravlyat nashemu upolnomochennomu agentu: PrTask DMCA Agent, email dmca@prtask.com. Dannye agenta zaregistrirovany v U.S. Copyright Office soglasno 17 U.S.C. 512(c)(2). Takzhe mozhno napravit pismo po pochtovomu adresu platformy.",
+    "DmcaDesignatedAgentHeading": "Upolnomochennyy agent",
+    "DmcaEuCopyrightDescription": "Vo ispolnenie statyi 17 Direktivy Yevropeyskogo soyuza ob avtorskom prave, Direktiva 2019/790, PrTask sotrudnichaet s pravooobladatelyami, predostavlyaet mekhanizmy zhalob i razresheniya sporov i prinimaet mery dlya predotvrashcheniya dostupnosti narushayushchego kontenta pri poluchenii uvedomleniya.",
+    "DmcaEuCopyrightHeading": "Direktiva Yevropeyskogo soyuza ob avtorskom prave",
+    "DmcaFilingDescription": "Esli vy schitaete, chto kontent na PrTask narushaet vashi avtorskie prava, napravte nashemu agentu pismennoe uvedomlenie so sleduyushchey informatsiey:",
+    "DmcaFilingHeading": "Podacha uvedomleniya DMCA",
+    "DmcaFilingItem1": "Fizicheskaya ili elektronnaya podpis pravooobladatelya ili ego upolnomochennogo predstavitelya",
+    "DmcaFilingItem2": "Identifikatsiya obyekta avtorskogo prava, kotoryy, po vashemu mneniyu, narushen",
+    "DmcaFilingItem3": "Identifikatsiya materiala, kotoryy schitaetsya narushayushchim, s dostatochnymi dannymi dlya ego poiska",
+    "DmcaFilingItem4": "Vashi kontaktnye dannye, vklyuchaya adres, telefon i email",
+    "DmcaFilingItem5": "Zayavlenie o dobrosovestnom ubezhdenii, chto ispolzovanie materiala ne razresheno pravooobladatelem, ego predstavitelem ili zakonom",
+    "DmcaFilingItem6": "Zayavlenie pod strakhom nakazaniya za lzhesvidetelstvo o tom, chto informatsiya v uvedomlenii yavlyaetsya tochnoy i chto vy upolnomocheny deystvovat ot imeni pravooobladatelya",
+    "DmcaLastUpdated": "Poslednee obnovlenie: mart 2026",
+    "DmcaOverviewDescription": "PrTask uvazhaet prava intellektualnoy sobstvennosti drugikh lits i ozhidaet togo zhe ot svoikh polzovateley.",
+    "DmcaPageHeading": "Politika DMCA / avtorskikh prav",
+    "DmcaRepeatInfringersDescription": "PrTask primenyaet politiku v otnoshenii povtornykh narushiteley, kak eto trebuetsya dlya zashchity safe harbor po DMCA. Polzovateli s povtoryayushchimisya narusheniyami mogut byt vremenno zablokirovany ili navsegda otklyucheny.",
+    "DmcaRepeatInfringersHeading": "Povtornye narushiteli",
+    "DmcaSafeHarborDescription": "PrTask sootvetstvuet trebovaniyam safe harbor po razdelu 512 zakona Digital Millennium Copyright Act. My podderzhivaem zaregistrirovannogo agenta, protseduru uvedomleniya i udaleniya, sistemu vstrechnykh uvedomleniy i razumnuyu politiku dlya povtornykh narushiteley.",
+    "DmcaSafeHarborHeading": "Bezopasnaya gavan DMCA",
+    "DmcaTakedownDescription": "Posle polucheniya deystvitelnogo uvedomleniya ob udalenii po DMCA PrTask operativno udalit ili ogranichit dostup k predpolagaemo narushayushchemu materialu, uvedomit zatronutogo polzovatelya i predostavit informatsiyu o poryadke podachi vstrechnogo uvedomleniya.",
+    "DmcaTakedownHeading": "Protsess udaleniya"
+  },
+  "tr": {
+    "DmcaSafeHarborHeading": "DMCA guvenli limani"
+  }
+}

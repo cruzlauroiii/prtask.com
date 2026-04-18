@@ -1,0 +1,13 @@
+{
+  "id": {
+    "EditText": "Sunting"
+  },
+  "fr": {
+    "AboutContactHeading": "Contactez-nous",
+    "PaymentHeaderType": "Type de paiement"
+  },
+  "nl": {
+    "AboutContactHeading": "Contact opnemen",
+    "PaymentHeaderType": "Type betaling"
+  }
+}

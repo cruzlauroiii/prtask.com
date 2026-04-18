@@ -1,0 +1,25 @@
+================================================================
+   RECOVERY REPORT v3  -  2026-03-22 14:43:18
+================================================================
+
+JSONL files: 1502 | Lines: 375576
+Write: 5194 | Read: 1 | Edit: 11120 (applied 3127)
+Read tool IDs tracked: 6889
+Files written this pass: 1234
+Total unique recovered: 1234
+
+TOTAL FILES ON DISK: 2669
+  .cs       : 1399
+  .g.cs     : 0
+  .csproj   : 31
+  .razor    : 110
+  .html     : 809
+  .resx     : 16
+  .xaml     : 2
+  .scss/.css: 9
+  .ts/.js   : 63
+  .json     : 44
+  .sln      : 1
+  .yml/.yaml: 6
+  .ps1      : 45
+  .md       : 9

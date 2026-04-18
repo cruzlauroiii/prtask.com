@@ -1,0 +1,97 @@
+{
+  "de": {
+    "DashboardPrsLabel": "Pull-Anfragen",
+    "PrivacyAustraliaHeading": "Australiens Datenschutzgesetz von 1988",
+    "RefundNoEscrowHeading": "Kein Treuhandmodell",
+    "RepositoryDescriptionHeading": "Repository-Verwaltung - Verbinden und konfigurieren Sie Ihre GitHub-Repos",
+    "SettingsAddCardHeading": "Karte hinzufugen",
+    "SprintDescriptionHeading": "Sprint-Verwaltung - Zeitlich begrenzte Entwicklungsarbeit organisieren",
+    "TermsDescriptionHeading": "Uber diese Nutzungsbedingungen"
+  },
+  "es": {
+    "DashboardPrsLabel": "Solicitudes de extraccion",
+    "PrivacyAustraliaHeading": "Ley de Privacidad de Australia de 1988",
+    "RefundNoEscrowHeading": "Sin modelo de custodia",
+    "RepositoryDescriptionHeading": "Gestion de repositorios: conecta y configura tus repositorios de GitHub",
+    "SettingsAddCardHeading": "Agregar tarjeta",
+    "SprintDescriptionHeading": "Gestion de sprints: organiza el trabajo de desarrollo con limite de tiempo",
+    "TermsDescriptionHeading": "Acerca de estos Terminos del Servicio"
+  },
+  "fil": {
+    "PrivacyAustraliaHeading": "Batas sa Privacy ng Australia ng 1988",
+    "RefundNoEscrowHeading": "Walang modelo ng escrow",
+    "RepositoryDescriptionHeading": "Pamamahala ng repository - Ikonekta at i-configure ang iyong mga repo sa GitHub",
+    "SprintDescriptionHeading": "Pamamahala ng sprint - Ayusin ang gawaing pag-develop na may takdang panahon",
+    "TermsDescriptionHeading": "Tungkol sa mga Terms of Service na ito"
+  },
+  "fr": {
+    "DashboardPrsLabel": "Demandes de tirage",
+    "PrivacyAustraliaHeading": "Loi australienne de 1988 sur la confidentialite",
+    "RefundNoEscrowHeading": "Sans modele de depot fiduciaire",
+    "RepositoryDescriptionHeading": "Gestion des depots - Connecter et configurer vos depots GitHub",
+    "SettingsAddCardHeading": "Ajouter une carte",
+    "SprintDescriptionHeading": "Gestion des sprints - Organiser un travail de developpement limite dans le temps",
+    "TermsDescriptionHeading": "A propos de ces Conditions de service"
+  },
+  "id": {
+    "PrivacyAustraliaHeading": "Undang-Undang Privasi Australia 1988",
+    "RefundNoEscrowHeading": "Tanpa model escrow",
+    "RepositoryDescriptionHeading": "Manajemen repositori - Hubungkan dan konfigurasikan repo GitHub Anda",
+    "SprintDescriptionHeading": "Manajemen sprint - Mengatur pekerjaan pengembangan yang dibatasi waktu",
+    "TermsDescriptionHeading": "Tentang Ketentuan Layanan ini"
+  },
+  "it": {
+    "PrivacyAustraliaHeading": "Legge australiana sulla privacy del 1988",
+    "RefundNoEscrowHeading": "Nessun modello di escrow",
+    "RepositoryDescriptionHeading": "Gestione dei repository - Collega e configura i tuoi repository GitHub",
+    "SettingsAddCardHeading": "Aggiungi carta",
+    "SprintDescriptionHeading": "Gestione degli sprint - Organizza il lavoro di sviluppo con vincoli di tempo",
+    "TermsDescriptionHeading": "Informazioni su questi Termini di servizio"
+  },
+  "ja": {
+    "PrivacyAustraliaHeading": "1988年オーストラリアプライバシー法",
+    "RefundNoEscrowHeading": "エスクローなしのモデル",
+    "RepositoryDescriptionHeading": "リポジトリ管理 - GitHubリポジトリを接続して設定します",
+    "SprintDescriptionHeading": "スプリント管理 - 期間を区切った開発作業を整理します",
+    "TermsDescriptionHeading": "この利用規約について"
+  },
+  "ko": {
+    "PrivacyAustraliaHeading": "1988년 호주 개인정보 보호법",
+    "RefundNoEscrowHeading": "에스크로 없는 모델",
+    "RepositoryDescriptionHeading": "저장소 관리 - GitHub 저장소를 연결하고 구성합니다",
+    "SprintDescriptionHeading": "스프린트 관리 - 시간 제한 개발 작업을 구성합니다",
+    "TermsDescriptionHeading": "본 서비스 약관 소개"
+  },
+  "nl": {
+    "DashboardPrsLabel": "Pull requests",
+    "PrivacyAustraliaHeading": "Australische Privacywet van 1988",
+    "RefundNoEscrowHeading": "Zonder escrowmodel",
+    "RepositoryDescriptionHeading": "Repositorybeheer - Verbind en configureer je GitHub-repositories",
+    "SettingsAddCardHeading": "Kaart toevoegen",
+    "SprintDescriptionHeading": "Sprintbeheer - tijdgebonden ontwikkelwerk organiseren",
+    "TermsDescriptionHeading": "Over deze Servicevoorwaarden"
+  },
+  "pt": {
+    "DashboardPrsLabel": "Pull requests",
+    "PrivacyAustraliaHeading": "Lei de Privacidade da Australia de 1988",
+    "RefundNoEscrowHeading": "Sem modelo de custodia",
+    "RepositoryDescriptionHeading": "Gerenciamento de repositorios - conecte e configure seus repositorios do GitHub",
+    "SettingsAddCardHeading": "Adicionar cartao",
+    "SprintDescriptionHeading": "Gerenciamento de sprint - organize o trabalho de desenvolvimento com prazo definido",
+    "TermsDescriptionHeading": "Sobre estes Termos de Servico"
+  },
+  "ru": {
+    "PrivacyAustraliaHeading": "Австралийский закон о конфиденциальности 1988 года",
+    "RefundNoEscrowHeading": "Без модели условного депонирования",
+    "RepositoryDescriptionHeading": "Управление репозиториями - подключайте и настраивайте свои репозитории GitHub",
+    "SprintDescriptionHeading": "Управление спринтами - организуйте разработку в ограниченные сроки",
+    "TermsDescriptionHeading": "Об этих Условиях обслуживания"
+  },
+  "tr": {
+    "PrivacyAustraliaHeading": "1988 Avustralya Gizlilik Yasasi",
+    "RefundNoEscrowHeading": "Emanet modeli yok",
+    "RepositoryDescriptionHeading": "Depo yonetimi - GitHub depolarinizi baglayin ve yapilandirin",
+    "SprintDescriptionHeading": "Sprint yonetimi - zaman kutulu gelistirme calismasini duzenleyin",
+    "TermsDescriptionHeading": "Bu Hizmet Kosullari Hakkinda"
+  }
+}

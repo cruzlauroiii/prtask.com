@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <NoWarn>$(NoWarn);SA1402;SA1611;SA1615;SA1623;SA1629;SA1633;CS0114;CS1591;CS0219;CS0652;CS0675;PT003;PT004;PT005;PT006;PT007;CA1002;CA1003;CA1008;CA1711;CA2227;CA5350;IDE0017;IDE0028;IDE0031;IDE0032;IDE0046;IDE0059;IDE0072;IDE0078;IDE0270;IDE0290;IDE0300;IDE0301;IDE0305;IDE0306;MA0016;MA0028;MA0046;MA0132;MA0144;MA0159;RCS1085;RCS1118;RCS1140;RCS1141;RCS1161;RCS1181;RCS1197;RCS1201;RCS1226;RCS1235;S1450;S2166;S3457</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="PrTask.Unit" />
+    <InternalsVisibleTo Include="PrTask.E2E" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PrTask.Domain\PrTask.Domain.csproj" />
+  </ItemGroup>
+</Project>

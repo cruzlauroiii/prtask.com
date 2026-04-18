@@ -1,0 +1,74 @@
+{
+  "fil": {
+    "CreateTaskDescriptionHeading": "Lumikha ng Task — Mag-post ng mga gantimpala para sa gawaing development",
+    "CreateTaskDescriptionParagraph1": "Sa pahina ng Create Task, naglalagay ang mga kliyente ng bagong gawaing development sa marketplace ng PrTask. Bawat task ay nangangailangan ng malinaw na pamagat, detalyadong paglalarawan, naka-link na GitHub repository URL, at halagang gantimpala na matatanggap ng mga developer kapag matagumpay ang pagkumpleto. Gabay ng form ang pag-set ng mga parameter upang malaman ng mga developer kung ano ang gagawin, gaano ito kahirap, at kung magkano ang kanilang kikitain. Ang mga malinaw na task ay nakakahikayat ng mas kwalipikadong developer at nagdudulot ng mas mabilis at mataas na kalidad na resulta.",
+    "CreateTaskDescriptionParagraph2": "Ang mga antas ng pagiging kumplikado (Napaka-trivial, Simple, Katamtaman, Kumplikado, Eksperto) ay tumutulong sa mga developer na tantiyahin ang inaasahang pagsisikap at kasanayan bago tumanggap ng task. Itakda nang tapat ang pagiging kumplikado — ang pagmamaliit ay magreresulta sa hindi kumpletong submissions, at ang paglalagay ng sobra ay maaaring magpalayo ng mga developer. Ang gantimpala ay dapat mag-reflect ng halaga at kahirapan ng trabaho. May minimum na gantimpala ang PrTask upang tiyakin ang makabuluhang kompensasyon, at nakikita ng developer ang buong halaga nang walang nakatagong bawas. Nakakatulong ang mga tags na ikategorya ang task ayon sa teknolohiya at uri para mas madaling makita.",
+    "CreateTaskDescriptionParagraph3": "Maaari mo ring piliin ang uri ng work item (Epic, Feature, Story, Task, Bug) ayon sa iyong pamamahala ng proyekto, at pumili ng pampubliko o pribadong visibility. Ang mga pampublikong task ay nakikita ng lahat ng developer, habang ang pribado ay para lamang sa mga inimbitahang developer. Pagkatapos isumite, agad itong makikita sa Tasks page kung saan puwede itong mahanap at simulan ng mga developer. Binabayaran ang gantimpala kapag inaprubahan at na-merge mo ang panalong pull request, kaya nagbabayad ka lamang sa trabahong nakakatugon sa iyong pamantayan at pumasa sa code review.",
+    "CreateTaskDescriptionPlaceholder": "Ilarawan nang detalyado ang task...",
+    "CreateTaskPaymentHint": "Walang bayad sa platform — 100% ng gantimpala ang matatanggap ng developer.",
+    "CreateTaskSubmitAndPayButton": "Gumawa ng Task at magpatuloy sa pagbayad",
+    "CreateTaskTitlePlaceholder": "Ayusin ang authentication bug sa user service",
+    "CreateTaskVisibilityPrivate": "Pribado — ang mga pagbabago ay nakikita lang ng mga kalahok",
+    "CreateTaskVisibilityPublic": "Pampubliko — ang mga pagbabago ay nakikita ng lahat"
+  },
+  "hi": {
+    "CreateTaskDescriptionHeading": "एक कार्य बनाएं — विकास कार्य के लिए पुरस्कार पोस्ट करें",
+    "CreateTaskDescriptionParagraph1": "Create Task पृष्ठ पर ग्राहक PrTask मार्केटप्लेस पर नया विकास कार्य पोस्ट करते हैं। प्रत्येक कार्य में स्पष्ट शीर्षक, विस्तृत विवरण, जुड़ा हुआ GitHub रिपॉज़िटरी URL और वह पुरस्कार राशि शामिल होती है जो डेवलपर सफलतापूर्वक पूरा करने पर प्राप्त करेंगे। फ़ॉर्म आपको सभी पैरामीटर सेट करने में मार्गदर्शन करता है जिससे डेवलपर समझ सकें कि क्या करना है, कार्य कितना जटिल है और कितना वे कमा सकते हैं। अच्छी तरह परिभाषित टास्क अधिक योग्य डेवलपर्स को आकर्षित करते हैं और तेज़, उच्च गुणवत्ता वाले सबमिशन लाते हैं।",
+    "CreateTaskDescriptionParagraph2": "कम्प्लेक्सिटी स्तर (बहुत सरल, सरल, मध्य, जटिल, विशेषज्ञ) डेवलपर्स को यह आकलन करने में मदद करते हैं कि कार्य के लिए कितना प्रयास और कौशल चाहिए। सच्चाई से कम्प्लेक्सिटी सेट करें — कम बताने से अधूरी सबमिशन और अधिक बताने से डेवलपर पीछे हट सकते हैं। पुरस्कार राशि कार्य की जटिलता और मूल्य को प्रतिबिंबित करनी चाहिए। PrTask न्यूनतम पुरस्कार निर्धारित करता है ताकि उचित पारिश्रमिक मिले, और डेवलपर्स पूरी राशि देखते हैं बिना छिपी कटौती के। टैग तकनीक और प्रकार के अनुसार कार्य को वर्गीकृत करते हैं ताकि खोज आसान हो।",
+    "CreateTaskDescriptionParagraph3": "आप कार्य आइटम प्रकार (Epic, Feature, Story, Task, Bug) भी सेट कर सकते हैं ताकि आपके प्रोजेक्ट प्रबंधन पद्धति से मेल खा सके, और सार्वजनिक या निजी विज़िबिलिटी चुन सकते हैं। सार्वजनिक कार्य सभी डेवलपर्स के लिए दिखाई देते हैं, जबकि निजी कार्य केवल आमंत्रित डेवलपर्स को दिखाई देते हैं। कार्य जमा करने के बाद यह तुरंत Tasks पृष्ठ पर आ जाता है, जहां डेवलपर्स इसे खोजकर काम शुरू कर सकते हैं। पुरस्कार का भुगतान तब होता है जब आप विजेता पुल रिक्वेस्ट को मंजूर और मर्ज करते हैं, जिससे आप केवल उन कामों का भुगतान करते हैं जो आपकी आवश्यकताओं को पूरा करते हैं और कोड समीक्षा पास करते हैं।",
+    "CreateTaskDescriptionPlaceholder": "कार्य का विवरण विस्तार से लिखें...",
+    "CreateTaskPaymentHint": "कोई प्लेटफ़ॉर्म शुल्क नहीं — डेवलपर्स को 100% पुरस्कार मिलता है।",
+    "CreateTaskSubmitAndPayButton": "कार्य बनाएं और भुगतान पर जाएं",
+    "CreateTaskTitlePlaceholder": "यूजर सर्विस में ऑथेंटिकेशन बग ठीक करें",
+    "CreateTaskVisibilityPrivate": "निजी — केवल प्रतिभागियों को कोड परिवर्तन दिखते हैं",
+    "CreateTaskVisibilityPublic": "सार्वजनिक — सभी को कोड परिवर्तन दिखते हैं"
+  },
+  "id": {
+    "CreateTaskDescriptionHeading": "Buat Task — Posting hadiah untuk pekerjaan pengembangan",
+    "CreateTaskDescriptionParagraph1": "Halaman Create Task adalah tempat klien memposting pekerjaan pengembangan baru di marketplace PrTask. Setiap task membutuhkan judul yang jelas, deskripsi rinci, URL repositori GitHub terkait, dan jumlah hadiah yang akan diterima pengembang saat berhasil menyelesaikannya. Formulir memandu pengaturan semua parameter agar pengembang tahu apa yang dikerjakan, seberapa kompleks pekerjaan, dan berapa yang akan mereka dapatkan. Task yang terdefinisi dengan baik menarik pengembang berkualitas dan menghasilkan pengiriman yang lebih cepat dan berkualitas tinggi.",
+    "CreateTaskDescriptionParagraph2": "Tingkat kompleksitas (Sangat sepele, Sederhana, Menengah, Kompleks, Ahli) membantu pengembang menilai usaha dan keahlian sebelum mengambil task. Tetapkan kompleksitas secara jujur — meremehkan bisa menghasilkan pengiriman tidak lengkap, menaksir terlalu tinggi bisa membuat pengembang ragu. Jumlah hadiah harus mencerminkan kompleksitas dan nilai pekerjaan. PrTask menetapkan hadiah minimum agar kompensasi berarti, dan pengembang melihat jumlah penuh tanpa potongan tersembunyi. Tag mengkategorikan task berdasarkan teknologi dan tipe agar lebih mudah ditemukan.",
+    "CreateTaskDescriptionParagraph3": "Anda juga dapat memilih jenis work item (Epic, Feature, Story, Task, Bug) sesuai metodologi manajemen proyek Anda dan memilih antara visibilitas publik atau pribadi. Task publik terlihat oleh semua pengembang, sementara task pribadi hanya untuk pengembang yang diundang. Setelah mengirimkan task, langsung tersedia di halaman Tasks, di mana pengembang dapat menemukannya dan mulai mengerjakannya. Pembayaran hadiah diproses saat Anda menyetujui dan menggabungkan pull request pemenang, memastikan Anda hanya membayar pekerjaan yang memenuhi kebutuhan Anda dan lolos code review.",
+    "CreateTaskDescriptionPlaceholder": "Jelaskan task secara rinci...",
+    "CreateTaskPaymentHint": "Tidak ada biaya platform — pengembang menerima 100% hadiah.",
+    "CreateTaskSubmitAndPayButton": "Buat Task dan Lanjutkan ke Pembayaran",
+    "CreateTaskTitlePlaceholder": "Perbaiki bug autentikasi di layanan pengguna",
+    "CreateTaskVisibilityPrivate": "Pribadi — perubahan kode hanya terlihat peserta",
+    "CreateTaskVisibilityPublic": "Publik — perubahan kode terlihat semua orang"
+  },
+  "ja": {
+    "CreateTaskDescriptionHeading": "Taskを作成 — 開発作業の報酬を投稿",
+    "CreateTaskDescriptionParagraph1": "「Taskを作成」ページでは、クライアントがPrTaskマーケットプレイスに新しい開発作業を投稿します。各タスクには明確なタイトル、詳細な説明、関連するGitHubリポジトリURL、そして成功時に開発者が受け取る報酬額が必要です。フォームが各パラメーターの設定を案内し、開発者が何をするべきか、どれほど複雑か、どれだけ稼げるかを理解できるようにします。定義が明確なタスクは、より質の高い開発者を惹きつけ、迅速で高品質な提出を促します。",
+    "CreateTaskDescriptionParagraph2": "複雑さのレベル（極めて簡単、簡単、中間、複雑、エキスパート）は、開発者がタスクを受ける前に必要な工数とスキルを判断する助けになります。複雑さは正直に設定してください。過小評価すると不完全な提出になり、過大評価すると開発者が手を出さなくなります。報酬額は、作業の複雑さと価値を反映すべきです。PrTaskは意味のある報酬のために最低額を義務づけており、開発者は隠れた差し引きなしの全額を確認できます。タグは技術や種類ごとにタスクを分類し、発見しやすくします。",
+    "CreateTaskDescriptionParagraph3": "Epic、Feature、Story、Task、Bugなどの作業アイテム種別を設定してプロジェクト管理の流儀に合わせたり、公開/非公開の表示範囲を選択したりできます。公開タスクは全開発者に表示され、非公開タスクは招待された開発者だけが閲覧可能です。タスクを提出すると即座にTasksページに掲載され、開発者が見つけて作業を開始できます。報酬の支払いは、勝者のPull Requestを承認してマージしたタイミングで行われ、要件を満たしコードレビューを通過した分だけ支払います。",
+    "CreateTaskDescriptionPlaceholder": "タスクの内容を詳しく記載してください...",
+    "CreateTaskPaymentHint": "プラットフォーム手数料なし — 開発者は報酬の100%を受け取ります。",
+    "CreateTaskSubmitAndPayButton": "Taskを作成して支払いへ",
+    "CreateTaskTitlePlaceholder": "ユーザーサービスの認証バグを修正",
+    "CreateTaskVisibilityPrivate": "非公開 — 変更は参加者のみが閲覧可能",
+    "CreateTaskVisibilityPublic": "公開 — 変更はすべての人に表示"
+  },
+  "ko": {
+    "CreateTaskDescriptionHeading": "작업 생성 — 개발 업무에 보상 게시",
+    "CreateTaskDescriptionParagraph1": "‘작업 생성’ 페이지에서 고객은 PrTask 마켓플레이스에 새로운 개발 과제를 올립니다. 각 작업에는 명확한 제목, 상세 설명, 연결된 GitHub 리포지토리 URL, 그리고 완료 시 개발자가 받을 보상액이 필요합니다. 폼은 모든 설정 항목을 안내해 개발자가 무엇을 해야 하고, 작업이 얼마나 복잡하며, 얼마를 벌 수 있는지 알 수 있게 합니다. 정의가 잘 된 작업은 더 자격 있는 개발자를 끌어들이며, 빠르고 품질 높은 제출로 이어집니다.",
+    "CreateTaskDescriptionParagraph2": "복잡도 수준(매우 단순, 단순, 보통, 복잡, 전문가)은 개발자가 작업 수용 전 필요한 노력과 기술을 가늠하도록 돕습니다. 복잡도는 정직하게 설정하세요. 낮게 설정하면 불완전한 결과를, 높게 설정하면 시도조차 하지 않게 됩니다. 보상은 작업의 복잡도와 가치에 맞아야 합니다. PrTask는 의미 있는 보상을 위한 최소 금액을 요구하며, 개발자는 숨겨진 공제 없이 전체 금액을 확인합니다. 태그는 기술과 유형별로 작업을 분류하여 더 쉽게 찾을 수 있게 합니다.",
+    "CreateTaskDescriptionParagraph3": "Epic, Feature, Story, Task, Bug 등 작업 항목 유형을 프로젝트 관리 방식에 맞게 설정하고, 공개 또는 비공개 가시성을 선택할 수 있습니다. 공개 작업은 모든 개발자가 볼 수 있고, 비공개는 초대한 사람만 접근할 수 있습니다. 작업 제출 후 즉시 Tasks 페이지에 올라가 개발자가 찾고 작업을 시작할 수 있습니다. 우승한 Pull Request를 승인하고 병합하면 보상이 처리되며, 요구사항을 충족하고 코드 리뷰를 통과한 작업에만 비용을 지불합니다.",
+    "CreateTaskDescriptionPlaceholder": "작업을 자세히 설명하세요...",
+    "CreateTaskPaymentHint": "플랫폼 수수료 없음 — 개발자는 보상의 100%를 받습니다.",
+    "CreateTaskSubmitAndPayButton": "작업 생성 후 결제로 이동",
+    "CreateTaskTitlePlaceholder": "사용자 서비스의 인증 버그 수정",
+    "CreateTaskVisibilityPrivate": "비공개 — 변경 사항은 참가자만 확인",
+    "CreateTaskVisibilityPublic": "공개 — 변경 사항은 모두 볼 수 있음"
+  },
+  "tr": {
+    "CreateTaskDescriptionHeading": "Bir Görev Oluştur — Geliştirme işi için ödül yayınla",
+    "CreateTaskDescriptionParagraph1": "Create Task sayfası, müşterilerin PrTask pazarında yeni geliştirme işleri yayınladığı yerdir. Her görev net bir başlık, ayrıntılı açıklama, bağlantılı GitHub deposu URL’si ve başarılı tamamlamada geliştiricilerin kazanacağı ödül miktarını gerektirir. Form, geliştiricilerin ne yapmaları gerektiğini, işin ne kadar karmaşık olduğunu ve ne kadar kazanacaklarını anlaması için tüm parametreleri ayarlamanızda yol gösterir. İyi tanımlanmış görevler daha nitelikli geliştiricileri çeker ve daha hızlı, yüksek kaliteli teslimatlar sunar.",
+    "CreateTaskDescriptionParagraph2": "Karmaşıklık seviyeleri (Son derece önemsiz, Basit, Orta, Karmaşık, Uzman) geliştiricilerin bir görevi üstlenmeden önce gereken çabayı ve beceriyi değerlendirmesine yardımcı olur. Karmaşıklığı dürüstçe belirtin — düşük tahmin eksik teslimatlara, yüksek tahmin geliştiricilerin vazgeçmesine neden olabilir. Ödül miktarı işin karmaşıklığını ve değerini yansıtmalıdır. PrTask anlamlı ücret için bir minimum ödül belirler ve geliştiriciler gizli kesintiler olmadan toplam ödülü görürler. Etiketler görevinizi teknoloji ve türe göre kategorize ederek bulunabilirliğini artırır.",
+    "CreateTaskDescriptionParagraph3": "Proje yönetim metodolojinize uyacak şekilde Epic, Feature, Story, Task, Bug gibi iş türlerini tanımlayabilir ve genel veya özel görünürlük seçebilirsiniz. Genel görevler pazardaki tüm geliştiricilere görünürken, özel görevler yalnızca davetli geliştiriciler içindir. Görev gönderildikten sonra hemen Görevler sayfasında görünür ve geliştiriciler keşfedip çalışmaya başlayabilir. Ödül, kazanan pull request’i onaylayıp birleştirdiğinizde ödenir; böylece gereksinimlerinizi karşılayan ve kod incelemesini geçen çalışma için ödeme yaparsınız.",
+    "CreateTaskDescriptionPlaceholder": "Görevi ayrıntılı olarak anlatın...",
+    "CreateTaskPaymentHint": "Platform ücreti yok — geliştiriciler ödülün %100’ünü alır.",
+    "CreateTaskSubmitAndPayButton": "Görev oluştur ve ödemeye geç",
+    "CreateTaskTitlePlaceholder": "Kullanıcı servisindeki kimlik doğrulama hatasını düzelt",
+    "CreateTaskVisibilityPrivate": "Özel — kod değişiklikleri yalnızca katılımcılara görünür",
+    "CreateTaskVisibilityPublic": "Herkese açık — kod değişiklikleri herkes tarafından görünür"
+  }
+}

@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net11.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <NoWarn>$(NoWarn);SA1402;SA1633;CS1591;PT003;PT004;PT005;PT006;PT007;CA1002;CA1008;CA1865;CA2227;IDE0017;IDE0028;IDE0031;IDE0046;IDE0059;IDE0072;IDE0078;IDE0270;IDE0290;IDE0300;IDE0301;IDE0305;MA0016;MA0028;MA0132;MA0159;RCS1085;RCS1118;RCS1161;RCS1181;RCS1192;RCS1197;RCS1201;RCS1235;S127;S3063;S3457</NoWarn>
+  </PropertyGroup>
+</Project>

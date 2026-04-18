@@ -1,0 +1,48 @@
+{
+  "es": {
+    "PricingDescriptionParagraph1": "PrTask opera con un modelo de precios claramente orientado a los desarrolladores: los desarrolladores no pagan nada y se quedan con el 100% de cada recompensa que ganan. No hay cuotas de suscripcion, ni porcentajes de comision, ni cargos ocultos descontados de los pagos a desarrolladores. Cuando un cliente publica una tarea con una recompensa de 500 USD, el desarrollador que la completa y logra que se apruebe su pull request recibe los 500 USD completos. Esta estructura de precios refleja nuestra creencia de que quienes escriben el codigo deben recibir el valor total de su trabajo.",
+    "SprintSeoDescription": "Organiza tus contribuciones de codigo abierto en sprints. Haz seguimiento del progreso de los pull requests, gana recompensas y gestiona tu flujo de trabajo como desarrollador. Un excelente ingreso extra para desarrolladores que quieren ganar dinero con codigo de calidad."
+  },
+  "fil": {
+    "PricingDescriptionParagraph1": "Gumagamit ang PrTask ng modelong pagpepresyo na talagang pabor sa mga developer: walang binabayaran ang mga developer at kanila ang 100% ng bawat bounty na kanilang kinikita. Walang subscription fees, walang porsiyento ng komisyon, at walang mga nakatagong kaltas sa payout ng developer. Kapag ang kliyente ay nag-post ng gawain na may $500 na bounty, ang developer na tumapos at naaprubahan ang kanyang pull request ay tumatanggap ng buong $500. Ipinapakita ng ganitong pagpepresyo ang paniniwala namin na ang mga taong nagsusulat ng code ay dapat makatanggap ng buong halaga ng kanilang trabaho."
+  },
+  "fr": {
+    "PricingDescriptionParagraph1": "PrTask fonctionne selon un modele de tarification clairement favorable aux developpeurs : les developpeurs ne paient rien et conservent 100 % de chaque bounty qu'ils gagnent. Il n'y a pas de frais d'abonnement, pas de pourcentage de commission et aucun frais cache deduit des versements aux developpeurs. Lorsqu'un client publie une tache avec une bounty de 500 USD, le developpeur qui la termine et dont la pull request est approuvee recoit les 500 USD en entier. Cette structure de prix reflete notre conviction que les personnes qui ecrivent le code doivent recevoir la valeur integrale de leur travail.",
+    "SprintSeoDescription": "Organisez vos contributions open source en sprints. Suivez l'avancement des pull requests, gagnez des bounties et gerez votre flux de travail de developpeur. Une excellente activite complementaire pour les developpeurs qui veulent gagner de l'argent grace a du code de qualite."
+  },
+  "hi": {
+    "SprintSeoDescription": "अपनी ओपन सोर्स योगदानों को स्प्रिंट्स में व्यवस्थित करें। पुल रिक्वेस्ट की प्रगति ट्रैक करें, बाउंटी कमाएं, और अपना डेवलपर वर्कफ़्लो प्रबंधित करें। उच्च गुणवत्ता वाले कोड से कमाई करने वाले डेवलपर्स के लिए एक बेहतरीन साइड इनकम."
+  },
+  "id": {
+    "PricingDescriptionParagraph1": "PrTask menggunakan model harga yang sangat ramah developer: developer tidak membayar apa pun dan menerima 100% dari setiap bounty yang mereka peroleh. Tidak ada biaya langganan, tidak ada persentase komisi, dan tidak ada potongan tersembunyi dari payout developer. Saat klien memposting tugas dengan bounty $500, developer yang menyelesaikan dan mendapatkan persetujuan pull request menerima penuh $500. Struktur harga ini mencerminkan keyakinan kami bahwa orang yang menulis kode harus menerima nilai penuh dari kerja mereka.",
+    "SprintSeoDescription": "Atur kontribusi open source Anda ke dalam sprint. Lacak progres pull request, dapatkan bounty, dan kelola alur kerja developer Anda. Sampingan yang hebat bagi developer yang ingin menghasilkan uang melalui kode berkualitas."
+  },
+  "it": {
+    "PricingDescriptionParagraph1": "PrTask adotta un modello di prezzo davvero favorevole agli sviluppatori: gli sviluppatori non pagano nulla e trattengono il 100% di ogni bounty che guadagnano. Non ci sono quote di abbonamento, percentuali di commissione o costi nascosti detratti dai payout degli sviluppatori. Quando un cliente pubblica un'attivita con una bounty di 500 USD, lo sviluppatore che la completa e fa approvare la sua pull request riceve l'intero importo di 500 USD. Questa struttura di prezzo riflette la nostra convinzione che chi scrive il codice debba ricevere il pieno valore del proprio lavoro.",
+    "SprintSeoDescription": "Organizza i tuoi contributi open source in sprint. Traccia i progressi delle pull request, guadagna bounty e gestisci il tuo flusso di lavoro da sviluppatore. Un ottimo guadagno extra per gli sviluppatori che vogliono fare soldi con codice di qualita."
+  },
+  "ja": {
+    "PricingDescriptionParagraph1": "PrTask は開発者にとって非常に有利な料金モデルを採用しています。開発者は費用を一切支払わず、獲得した報奨金の 100% を受け取ります。サブスクリプション料金や手数料率、開発者の支払いから差し引かれる隠れた費用はありません。クライアントが 500 USD の報奨金でタスクを投稿した場合、タスクを完了しプルリクエストが承認された開発者は 500 USD を全額受け取ります。この価格構造は、コードを書く人が自分の仕事の価値を全て受け取るべきだという私たちの信念を反映しています。",
+    "SprintSeoDescription": "オープンソースへの貢献をスプリントに整理しましょう。プルリクエストの進捗を追跡し、報奨金を獲得し、開発者のワークフローを管理できます。質の高いコードで収入を得たい開発者にとって最適な副業です。"
+  },
+  "ko": {
+    "PricingDescriptionParagraph1": "PrTask는 개발자에게 매우 유리한 요금 모델로 운영됩니다. 개발자는 아무것도 지불하지 않으며, 자신이 얻은 모든 바운티의 100%를 그대로 받습니다. 구독료도, 수수료율도, 개발자 지급액에서 차감되는 숨겨진 비용도 없습니다. 고객이 500 USD 바운티로 작업을 올리면, 이를 완료하고 풀 리퀘스트가 승인된 개발자는 500 USD 전액을 받습니다. 이 가격 구조는 코드를 작성하는 사람들이 자신의 작업 가치 전체를 받아야 한다는 우리의 신념을 반영합니다.",
+    "SprintSeoDescription": "오픈 소스 기여를 스프린트로 정리하세요. 풀 리퀘스트 진행 상황을 추적하고 바운티를 벌며 개발자 워크플로를 관리할 수 있습니다. 고품질 코드로 수익을 얻고 싶은 개발자에게 훌륭한 부업입니다."
+  },
+  "nl": {
+    "PricingDescriptionParagraph1": "PrTask werkt met een fundamenteel ontwikkelaarsvriendelijk prijsmodel: ontwikkelaars betalen niets en houden 100% van elke bounty die ze verdienen. Er zijn geen abonnementskosten, geen commissiepercentages en geen verborgen kosten die van ontwikkelaarsuitbetalingen worden afgetrokken. Wanneer een klant een taak plaatst met een bounty van 500 USD, ontvangt de ontwikkelaar die de taak afrondt en waarvan de pull request wordt goedgekeurd de volledige 500 USD. Deze prijsstructuur weerspiegelt onze overtuiging dat de mensen die de code schrijven de volledige waarde van hun werk moeten krijgen.",
+    "SprintSeoDescription": "Organiseer je open source-bijdragen in sprints. Volg de voortgang van pull requests, verdien bounties en beheer je ontwikkelaarsworkflow. Een prima bijverdienste voor ontwikkelaars die geld willen verdienen met kwalitatieve code."
+  },
+  "pt": {
+    "PricingDescriptionParagraph1": "A PrTask opera com um modelo de precos claramente favoravel aos desenvolvedores: os desenvolvedores nao pagam nada e ficam com 100% de cada bounty que ganham. Nao ha taxas de assinatura, nem percentuais de comissao, nem cobrancas ocultas descontadas dos pagamentos aos desenvolvedores. Quando um cliente publica uma tarefa com uma bounty de 500 USD, o desenvolvedor que a conclui e tem seu pull request aprovado recebe os 500 USD integrais. Essa estrutura de precos reflete nossa conviccao de que as pessoas que escrevem o codigo devem receber o valor total do seu trabalho.",
+    "SprintSeoDescription": "Organize suas contribuicoes de codigo aberto em sprints. Acompanhe o progresso das pull requests, ganhe bounties e gerencie seu fluxo de trabalho como desenvolvedor. Um excelente bico para desenvolvedores que querem ganhar dinheiro com codigo de qualidade."
+  },
+  "ru": {
+    "PricingDescriptionParagraph1": "PrTask работает по по-настоящему ориентированной на разработчиков модели цен: разработчики ничего не платят и получают 100% каждой награды, которую зарабатывают. Нет абонентских платежей, процентных комиссий и скрытых удержаний из выплат разработчикам. Когда клиент публикует задачу с наградой 500 USD, разработчик, который ее выполняет и получает одобрение pull request, получает полные 500 USD. Эта ценовая структура отражает нашу веру в то, что люди, пишущие код, должны получать полную стоимость своего труда.",
+    "SprintSeoDescription": "Организуйте свои вклады в open source в виде спринтов. Отслеживайте прогресс pull request, зарабатывайте награды и управляйте своим рабочим процессом разработчика. Отличный дополнительный заработок для разработчиков, которые хотят зарабатывать на качественном коде."
+  },
+  "tr": {
+    "PricingDescriptionParagraph1": "PrTask, temel olarak geliştirici dostu bir fiyatlama modeliyle çalışır: geliştiriciler hiçbir ücret ödemez ve kazandıkları her bounty'nin %100'ünü alırlar. Abonelik ücreti yoktur, komisyon yüzdeleri yoktur ve geliştirici ödemelerinden kesilen gizli ücretler yoktur. Bir müşteri 500 USD bounty ile bir görev yayınladığında, görevi tamamlayıp pull request'i onaylanan geliştirici 500 USD'nin tamamını alır. Bu fiyatlama yapısı, kodu yazan kişilerin emeklerinin tam değerini alması gerektiğine dair inancımızı yansıtır.",
+    "SprintSeoDescription": "Açık kaynak katkılarınızı sprintler halinde düzenleyin. Pull request ilerlemesini takip edin, bounty kazanın ve geliştirici iş akışınızı yönetin. Kaliteli kodla para kazanmak isteyen geliştiriciler için harika bir ek gelir."
+  }
+}

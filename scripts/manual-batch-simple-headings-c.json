@@ -1,0 +1,105 @@
+{
+  "es": {
+    "PrivacyPiplHeading": "China PIPL",
+    "RefundPhConsumerHeading": "Proteccion del consumidor de Filipinas (RA 7394)",
+    "SettingsTwoFactorAuthenticatorOption": "Aplicacion autenticadora",
+    "TermsClientObligationsHeading": "Obligaciones del cliente",
+    "TermsPageHeading": "Terminos del servicio",
+    "TermsPlatformFeeHeading": "Tarifa de la plataforma",
+    "TermsPlatformRoleHeading": "Funcion de la plataforma"
+  },
+  "fil": {
+    "PrivacyPiplHeading": "China PIPL",
+    "RefundPhConsumerHeading": "Proteksyon ng mamimili sa Pilipinas (RA 7394)",
+    "SettingsTwoFactorAuthenticatorOption": "Authenticator app",
+    "TermsClientObligationsHeading": "Mga obligasyon ng kliyente",
+    "TermsPageHeading": "Mga tuntunin ng serbisyo",
+    "TermsPlatformFeeHeading": "Bayad sa plataporma",
+    "TermsPlatformRoleHeading": "Tungkulin ng plataporma"
+  },
+  "fr": {
+    "PrivacyPiplHeading": "PIPL de la Chine",
+    "RefundPhConsumerHeading": "Protection des consommateurs des Philippines (RA 7394)",
+    "SettingsTwoFactorAuthenticatorOption": "Application d'authentification",
+    "TermsClientObligationsHeading": "Obligations du client",
+    "TermsPageHeading": "Conditions d'utilisation",
+    "TermsPlatformFeeHeading": "Frais de plateforme",
+    "TermsPlatformRoleHeading": "Role de la plateforme"
+  },
+  "hi": {
+    "PrivacyPiplHeading": "चीन पीआईपीएल",
+    "RefundPhConsumerHeading": "फिलीपींस उपभोक्ता संरक्षण (RA 7394)",
+    "SettingsTwoFactorAuthenticatorOption": "ऑथेंटिकेटर ऐप",
+    "TermsClientObligationsHeading": "क्लाइंट की जिम्मेदारियां",
+    "TermsPlatformFeeHeading": "प्लेटफ़ॉर्म शुल्क",
+    "TermsPlatformRoleHeading": "प्लेटफ़ॉर्म की भूमिका"
+  },
+  "id": {
+    "PrivacyPiplHeading": "PIPL Tiongkok",
+    "RefundPhConsumerHeading": "Perlindungan konsumen Filipina (RA 7394)",
+    "SettingsTwoFactorAuthenticatorOption": "Aplikasi autentikator",
+    "TermsClientObligationsHeading": "Kewajiban klien",
+    "TermsPageHeading": "Ketentuan Layanan",
+    "TermsPlatformRoleHeading": "Peran platform"
+  },
+  "it": {
+    "PrivacyPiplHeading": "PIPL della Cina",
+    "RefundPhConsumerHeading": "Tutela dei consumatori delle Filippine (RA 7394)",
+    "SettingsTwoFactorAuthenticatorOption": "App di autenticazione",
+    "TermsClientObligationsHeading": "Obblighi del cliente",
+    "TermsPageHeading": "Termini di servizio",
+    "TermsPlatformFeeHeading": "Commissione della piattaforma",
+    "TermsPlatformRoleHeading": "Ruolo della piattaforma"
+  },
+  "ja": {
+    "PrivacyPiplHeading": "中国PIPL",
+    "RefundPhConsumerHeading": "フィリピン消費者保護（RA 7394）",
+    "SettingsTwoFactorAuthenticatorOption": "認証アプリ",
+    "TermsClientObligationsHeading": "クライアントの義務",
+    "TermsPageHeading": "利用規約",
+    "TermsPlatformFeeHeading": "プラットフォーム手数料",
+    "TermsPlatformRoleHeading": "プラットフォームの役割"
+  },
+  "ko": {
+    "PrivacyPiplHeading": "중국 PIPL",
+    "RefundPhConsumerHeading": "필리핀 소비자 보호 (RA 7394)",
+    "SettingsTwoFactorAuthenticatorOption": "인증 앱",
+    "TermsClientObligationsHeading": "클라이언트 의무",
+    "TermsPageHeading": "서비스 약관",
+    "TermsPlatformFeeHeading": "플랫폼 수수료",
+    "TermsPlatformRoleHeading": "플랫폼 역할"
+  },
+  "nl": {
+    "PrivacyPiplHeading": "China PIPL",
+    "RefundPhConsumerHeading": "Filipijnse consumentenbescherming (RA 7394)",
+    "SettingsTwoFactorAuthenticatorOption": "Authenticator-app",
+    "TermsClientObligationsHeading": "Verplichtingen van de klant",
+    "TermsPageHeading": "Servicevoorwaarden",
+    "TermsPlatformFeeHeading": "Platformkosten",
+    "TermsPlatformRoleHeading": "Rol van het platform"
+  },
+  "pt": {
+    "PrivacyPiplHeading": "PIPL da China",
+    "RefundPhConsumerHeading": "Protecao do consumidor das Filipinas (RA 7394)",
+    "SettingsTwoFactorAuthenticatorOption": "Aplicativo autenticador",
+    "TermsClientObligationsHeading": "Obrigacoes do cliente",
+    "TermsPageHeading": "Termos de servico",
+    "TermsPlatformFeeHeading": "Taxa da plataforma",
+    "TermsPlatformRoleHeading": "Papel da plataforma"
+  },
+  "ru": {
+    "PrivacyPiplHeading": "Китайский PIPL",
+    "RefundPhConsumerHeading": "Защита прав потребителей Филиппин (RA 7394)",
+    "SettingsTwoFactorAuthenticatorOption": "Приложение-аутентификатор",
+    "TermsClientObligationsHeading": "Обязанности клиента",
+    "TermsPageHeading": "Условия использования",
+    "TermsPlatformFeeHeading": "Комиссия платформы",
+    "TermsPlatformRoleHeading": "Роль платформы"
+  },
+  "tr": {
+    "SettingsTwoFactorAuthenticatorOption": "Kimlik dogrulayici uygulamasi",
+    "TermsClientObligationsHeading": "Musteri yukumlulukleri",
+    "TermsPageHeading": "Hizmet sartlari",
+    "TermsPlatformFeeHeading": "Platform ucreti"
+  }
+}

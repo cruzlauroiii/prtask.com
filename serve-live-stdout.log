@@ -1,0 +1,349 @@
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: https://0.0.0.0:55394
+SERVING_ON: https://0.0.0.0:55394
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\work\prtask.com\serve
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/en/index.dw1fy7wgsn.html'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\en\index.dw1fy7wgsn.html'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_content/PrTask.SharedUI/css/app.39zptzt0gi.css'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\_content\PrTask.SharedUI\css\app.39zptzt0gi.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - 200 18269 text/css 1.9617ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - 200 19039 text/html 58.0527ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/favicon.px37k2zbux.ico - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/favicon.px37k2zbux.ico'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\favicon.px37k2zbux.ico'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/favicon.px37k2zbux.ico - 200 1382 image/x-icon 1.0627ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/en/index.dw1fy7wgsn.html'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\en\index.dw1fy7wgsn.html'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - 200 19039 text/html 1.0812ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_content/PrTask.SharedUI/css/app.39zptzt0gi.css'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\_content\PrTask.SharedUI\css\app.39zptzt0gi.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - 200 18269 text/css 1.0938ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/favicon.px37k2zbux.ico - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/favicon.px37k2zbux.ico'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\favicon.px37k2zbux.ico'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/favicon.px37k2zbux.ico - 200 1382 image/x-icon 0.6383ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/en/index.dw1fy7wgsn.html'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\en\index.dw1fy7wgsn.html'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - 200 19039 text/html 0.7728ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_content/PrTask.SharedUI/css/app.39zptzt0gi.css'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\_content\PrTask.SharedUI\css\app.39zptzt0gi.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - 200 18269 text/css 1.1669ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/favicon.px37k2zbux.ico - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/favicon.px37k2zbux.ico'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\favicon.px37k2zbux.ico'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/favicon.px37k2zbux.ico - 200 1382 image/x-icon 0.8862ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - 404 0 - 0.4640ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[16]
+      Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/en/index.dw1fy7wgsn.html'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\en\index.dw1fy7wgsn.html'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - 200 19039 text/html 1.1011ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - 404 0 - 0.3243ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[16]
+      Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_content/PrTask.SharedUI/css/app.39zptzt0gi.css'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\_content\PrTask.SharedUI\css\app.39zptzt0gi.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - 200 18269 text/css 0.9028ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/favicon.px37k2zbux.ico - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/favicon.px37k2zbux.ico'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\favicon.px37k2zbux.ico'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/favicon.px37k2zbux.ico - 200 1382 image/x-icon 0.8443ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/robots.txt - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/robots.txt - 404 0 - 0.1563ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[16]
+      Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://127.0.0.1:55394/robots.txt, Response status code: 404
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - 404 0 - 0.4441ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[16]
+      Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - 404 0 - 0.2895ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[16]
+      Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/en/index.dw1fy7wgsn.html'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\en\index.dw1fy7wgsn.html'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - 200 19039 text/html 1.0255ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_content/PrTask.SharedUI/css/app.39zptzt0gi.css'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\_content\PrTask.SharedUI\css\app.39zptzt0gi.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - 200 18269 text/css 0.7440ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - 404 0 - 1.1323ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[16]
+      Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/en/index.dw1fy7wgsn.html'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\en\index.dw1fy7wgsn.html'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - 200 19039 text/html 0.7299ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - 404 0 - 0.2503ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[16]
+      Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_content/PrTask.SharedUI/css/app.39zptzt0gi.css'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\_content\PrTask.SharedUI\css\app.39zptzt0gi.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - 200 18269 text/css 1.2546ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/favicon.px37k2zbux.ico - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/favicon.px37k2zbux.ico'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\favicon.px37k2zbux.ico'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/favicon.px37k2zbux.ico - 200 1382 image/x-icon 0.6410ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/robots.txt - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/robots.txt - 404 0 - 0.1540ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[16]
+      Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://127.0.0.1:55394/robots.txt, Response status code: 404
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - 404 0 - 0.2849ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[16]
+      Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - 404 0 - 0.2187ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[16]
+      Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/en/index.dw1fy7wgsn.html'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\en\index.dw1fy7wgsn.html'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - 200 19039 text/html 0.8261ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_content/PrTask.SharedUI/css/app.39zptzt0gi.css'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\_content\PrTask.SharedUI\css\app.39zptzt0gi.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - 200 18269 text/css 0.7939ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - 404 0 - 0.2455ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[16]
+      Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/en/index.dw1fy7wgsn.html'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\en\index.dw1fy7wgsn.html'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - 200 19039 text/html 0.8935ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_content/PrTask.SharedUI/css/app.39zptzt0gi.css'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\_content\PrTask.SharedUI\css\app.39zptzt0gi.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - 200 18269 text/css 0.9069ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/favicon.px37k2zbux.ico - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/favicon.px37k2zbux.ico'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\favicon.px37k2zbux.ico'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/favicon.px37k2zbux.ico - 200 1382 image/x-icon 0.6634ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/en/index.dw1fy7wgsn.html'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\en\index.dw1fy7wgsn.html'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - 200 19039 text/html 1.2081ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - 404 0 - 0.5007ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[16]
+      Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_content/PrTask.SharedUI/css/app.39zptzt0gi.css'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\_content\PrTask.SharedUI\css\app.39zptzt0gi.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - 200 18269 text/css 0.6211ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/favicon.px37k2zbux.ico - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/favicon.px37k2zbux.ico'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\favicon.px37k2zbux.ico'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/favicon.px37k2zbux.ico - 200 1382 image/x-icon 0.5187ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/en/index.dw1fy7wgsn.html'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\en\index.dw1fy7wgsn.html'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - 200 19039 text/html 1.1588ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - 404 0 - 0.2893ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[16]
+      Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_content/PrTask.SharedUI/css/app.39zptzt0gi.css'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\_content\PrTask.SharedUI\css\app.39zptzt0gi.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - 200 18269 text/css 1.2555ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/ - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Fallback {*path:nonfile}'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/index.html'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\index.html'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Fallback {*path:nonfile}'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/index.html - 200 254 text/html 4.2498ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - 404 0 - 0.2595ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[16]
+      Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/en/index.dw1fy7wgsn.html'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\en\index.dw1fy7wgsn.html'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - 200 19039 text/html 0.8742ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/favicon.ico - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/favicon.ico'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\favicon.ico'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/favicon.ico - 200 1382 image/x-icon 0.4838ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - 404 0 - 0.2139ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[16]
+      Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_content/PrTask.SharedUI/css/app.39zptzt0gi.css'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\_content\PrTask.SharedUI\css\app.39zptzt0gi.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - 200 18269 text/css 1.0861ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/en/index.dw1fy7wgsn.html'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\en\index.dw1fy7wgsn.html'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - 200 19039 text/html 0.8575ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - 404 0 - 0.2596ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[16]
+      Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_content/PrTask.SharedUI/css/app.39zptzt0gi.css'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\_content\PrTask.SharedUI\css\app.39zptzt0gi.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - 200 18269 text/css 0.8637ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/favicon.px37k2zbux.ico - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/favicon.px37k2zbux.ico'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\favicon.px37k2zbux.ico'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/favicon.px37k2zbux.ico - 200 1382 image/x-icon 0.6201ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/robots.txt - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/robots.txt - 404 0 - 0.1508ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[16]
+      Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://127.0.0.1:55394/robots.txt, Response status code: 404
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - 404 0 - 0.2350ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[16]
+      Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - 404 0 - 0.2805ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[16]
+      Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/en/index.dw1fy7wgsn.html'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\en\index.dw1fy7wgsn.html'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/en/index.dw1fy7wgsn.html - 200 19039 text/html 0.7829ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_content/PrTask.SharedUI/css/app.39zptzt0gi.css'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\_content\PrTask.SharedUI\css\app.39zptzt0gi.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/_content/PrTask.SharedUI/css/app.39zptzt0gi.css - 200 18269 text/css 0.7769ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json - 404 0 - 0.1904ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[16]
+      Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://127.0.0.1:55394/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404

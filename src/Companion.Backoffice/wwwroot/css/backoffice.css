@@ -1,0 +1,67 @@
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--Bg:#0d1117;--Surface:#161b22;--Border:#30363d;--Text:#c9d1d9;--TextMuted:#8b949e;--Accent:#58a6ff;--Green:#3fb950;--Red:#f85149;--Yellow:#d29922;--Font:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+body{background:var(--Bg);color:var(--Text);font-family:var(--Font);font-size:14px;line-height:1.5;display:flex;flex-direction:column;height:100vh;overflow:hidden}
+.Header{background:var(--Surface);border-bottom:1px solid var(--Border);padding:8px 16px;display:flex;align-items:center;gap:8px;flex-shrink:0;flex-wrap:wrap}
+.Header h1{font-size:16px;font-weight:600;white-space:nowrap}
+.StatusDot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.StatusDot.Connected{background:var(--Green)}
+.StatusDot.Disconnected{background:var(--Red)}
+.DeviceInfo{color:var(--TextMuted);font-size:11px;margin-left:auto;white-space:nowrap}
+.StatusBar{display:flex;gap:12px;padding:6px 16px;background:var(--Surface);border-bottom:1px solid var(--Border);font-size:11px;color:var(--TextMuted);flex-shrink:0;flex-wrap:wrap}
+.StatusBar span{display:flex;align-items:center;gap:4px;white-space:nowrap}
+.Tabs{display:flex;gap:0;border-bottom:1px solid var(--Border);background:var(--Surface);padding:0 8px;flex-shrink:0;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.Tab{padding:8px 12px;cursor:pointer;color:var(--TextMuted);border-bottom:2px solid transparent;font-size:12px;white-space:nowrap;flex-shrink:0}
+.Tab.Active{color:var(--Accent);border-bottom-color:var(--Accent)}
+.Tab:hover{color:var(--Text)}
+.Panel{display:none;padding:12px 16px;flex:1;overflow-y:auto}
+.Panel.Active{display:flex;flex-direction:column}
+.LogEntry{font-family:"Cascadia Code",Consolas,monospace;font-size:11px;padding:2px 0;border-bottom:1px solid var(--Border);white-space:pre-wrap;word-break:break-all}
+.SearchBox{width:100%;padding:8px 12px;background:var(--Surface);border:1px solid var(--Border);border-radius:6px;color:var(--Text);font-size:13px}
+.SearchBox:focus{outline:none;border-color:var(--Accent)}
+.EventEntry{padding:6px 0;border-bottom:1px solid var(--Border);font-size:12px;display:flex;flex-wrap:wrap;gap:4px;align-items:baseline}
+.EventType{color:var(--Accent);font-weight:600}
+.EventPackage{color:var(--Yellow);font-size:11px}
+.EventTime{color:var(--TextMuted);font-size:11px;margin-left:auto}
+.TokenBox{background:var(--Surface);border:1px solid var(--Border);border-radius:6px;padding:12px;margin-bottom:12px;position:relative}
+.TokenLabel{color:var(--TextMuted);font-size:11px;text-transform:uppercase;margin-bottom:4px}
+.TokenValue{font-family:"Cascadia Code",Consolas,monospace;font-size:11px;word-break:break-all;max-height:80px;overflow-y:auto}
+.CopyBtn{position:absolute;top:8px;right:8px;background:var(--Border);border:none;color:var(--Text);padding:4px 10px;border-radius:4px;cursor:pointer;font-size:11px}
+.CopyBtn:hover{background:var(--Accent);color:#fff}
+.ControlBtn{background:var(--Surface);border:1px solid var(--Border);color:var(--Text);padding:8px 16px;border-radius:6px;cursor:pointer;font-size:13px}
+.ControlBtn:hover{border-color:var(--Accent);color:var(--Accent)}
+.ControlBtn.Danger{border-color:var(--Red);color:var(--Red)}
+.ControlBtn.Danger:hover{background:var(--Red);color:#fff}
+.ControlBtn.Success{border-color:var(--Green);color:var(--Green)}
+.ControlBtn.Success:hover{background:var(--Green);color:#fff}
+.BtnRow{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.MonitorInput{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.MonitorInput input{flex:1;min-width:200px;padding:8px 12px;background:var(--Surface);border:1px solid var(--Border);border-radius:6px;color:var(--Text);font-size:13px}
+.ScreenDump{font-family:"Cascadia Code",Consolas,monospace;font-size:11px;background:var(--Surface);border:1px solid var(--Border);border-radius:6px;padding:12px;white-space:pre-wrap;flex:1;overflow-y:auto}
+.LogToolbar{display:flex;gap:8px;align-items:center;margin-bottom:8px;flex-shrink:0}
+.LogToolbar .SearchBox{flex:1}
+.LogToolbar .ControlBtn{white-space:nowrap}
+.LogList{flex:1;overflow-y:auto}
+.PermGrid{display:flex;flex-direction:column;gap:6px;flex:1;overflow-y:auto}
+.PermRow{display:flex;align-items:center;gap:8px;padding:6px 10px;background:var(--Surface);border:1px solid var(--Border);border-radius:6px;font-size:12px}
+.PermName{flex:1;font-family:"Cascadia Code",Consolas,monospace;font-size:11px;word-break:break-all}
+.PermStatus{font-size:11px;font-weight:600;min-width:60px;text-align:center}
+.PermStatus.Granted{color:var(--Green)}
+.PermStatus.Denied{color:var(--Red)}
+.PermStatus.Unknown{color:var(--TextMuted)}
+.PermBtn{padding:4px 10px;border-radius:4px;border:1px solid var(--Border);background:var(--Surface);color:var(--Text);cursor:pointer;font-size:11px}
+.PermBtn:hover{border-color:var(--Accent);color:var(--Accent)}
+.DeviceGrid{display:flex;flex-direction:column;gap:8px;flex:1;overflow-y:auto}
+.DeviceCard{background:var(--Surface);border:1px solid var(--Border);border-radius:6px;padding:12px}
+.DeviceCard h3{font-size:13px;color:var(--Accent);margin-bottom:8px}
+.DeviceRow{display:flex;justify-content:space-between;align-items:center;padding:4px 0;font-size:12px;border-bottom:1px solid var(--Border)}
+.DeviceRow:last-child{border-bottom:none}
+.DeviceLabel{color:var(--TextMuted)}
+.DeviceValue{font-family:"Cascadia Code",Consolas,monospace;font-size:11px}
+.DeviceValue.On{color:var(--Green)}
+.DeviceValue.Off{color:var(--Red)}
+@media(max-width:600px){
+.Header h1{font-size:14px}
+.StatusBar{gap:8px;padding:4px 12px}
+.Panel{padding:8px 12px}
+.Tab{padding:6px 8px;font-size:11px}
+}

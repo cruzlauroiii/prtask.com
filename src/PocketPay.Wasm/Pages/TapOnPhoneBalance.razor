@@ -1,0 +1,30 @@
+@page "/tap-on-phone-balance"
+@inject NavigationManager Nav
+
+<div style="display:flex;flex-direction:column;width:100%">
+    <header class="toolbar" style="width:100%"></header>
+    <div class="content" style="width:100%">
+        <div class="vgCardProcess" style="width:100%">
+            <span class="tvCardError" style="width:100%"></span>
+            <div class="layoutProgress"></div>
+            <div class="layoutLogos" style="display:flex;flex-direction:row;width:100%">
+                <img class="ivLogoMC" src="img/ic_logo_mc.png" alt="ic_logo_mc" />
+                <img class="ivLogoVisa" src="img/ic_logo_visa.png" alt="ic_logo_visa" />
+            </div>
+            <button class="btnExit" style="width:100%"></button>
+            <div class="progressBarContactless"></div>
+        </div>
+    </div>
+    <div class="transactionLoading" style="display:flex;flex-direction:column;width:100%">
+        <progress></progress>
+        <span class="tvTransactionLoading"></span>
+    </div>
+    <div class="initLoadingView"></div>
+</div>
+
+@code {
+
+    private void OnField2131361983Click()
+    {
+    }
+}

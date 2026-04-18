@@ -1,0 +1,32 @@
+@page "/inspection"
+@inject NavigationManager Nav
+
+<div style="width:100%">
+    <header class="toolbar" style="width:100%"></header>
+    <div class="rvProducts" style="width:100%"></div>
+    <div class="empty" style="display:flex;flex-direction:column;width:100%">
+        <img src="img/ic_empty_sell.png" alt="ic_empty_sell" />
+        <span class="descriptionTv"></span>
+    </div>
+    <div class="button_add_group_layout">
+        <span class="floating_button_description"></span>
+        <button class="add_position_to_receipt_button"></button>
+    </div>
+    <div class="overlay" style="width:100%">
+        <div style="width:100%"></div>
+        <button class="close_expandable_menu_button"></button>
+        <div class="view_stub_expandable_fab_menu"></div>
+    </div>
+    <div class="btnAcceptInventory" style="width:100%">
+        <div class="inspection_carry_out_enabled_button" style="width:100%">
+            <span class="acceptEnabledTv"></span>
+            <span class="inspection_total_position_enabled"></span>
+            <span class="inspection_total_enabled"></span>
+        </div>
+        <div class="inspection_carry_out_disabled_button" style="width:100%">
+            <span class="acceptDisabledTv"></span>
+            <span class="inspection_total_position_disabled"></span>
+            <span class="inspection_total_disabled"></span>
+        </div>
+    </div>
+</div>

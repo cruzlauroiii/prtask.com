@@ -1,0 +1,7 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+
+public interface NestedScrollingChild3 : androidx.core.view.NestedScrollingChild2 {
+    void dispatchNestedScroll(int i, int i2, int i3, int i4, int[] iArr, int i5, int[] iArr2);
+}
+

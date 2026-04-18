@@ -1,0 +1,23 @@
+Starting server, serving src\Companion.Backoffice\wwwroot
+Listening on any IP:
+  https://localhost:60134
+
+Press CTRL+C to exit
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:60134/ - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/index.html'. Physical path: 'C:\work\prtask.com\src\Companion.Backoffice\wwwroot\index.html'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://localhost:60134/index.html - 200 10722 text/html 32.0281ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:60134/css/backoffice.css - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/css/backoffice.css'. Physical path: 'C:\work\prtask.com\src\Companion.Backoffice\wwwroot\css\backoffice.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://localhost:60134/css/backoffice.css - 200 3820 text/css 3.7139ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:60134/favicon.ico - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://localhost:60134/favicon.ico - 404 - text/html 18.5027ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[16]
+      Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:60134/favicon.ico, Response status code: 404

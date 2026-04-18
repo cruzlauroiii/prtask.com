@@ -1,0 +1,744 @@
+# Maya API Documentation - Complete Research Report
+
+## Authentication
+
+**Method:** HTTP Basic Authentication
+- Encode API key (username) with blank password: `base64(apikey:)`
+- Header: `Authorization: Basic <base64_encoded_key>`
+- Two key types: **PUBLIC** (for payment initiation) and **SECRET** (for management operations)
+
+---
+
+## Environment URLs
+
+| Environment | Base URL |
+|-------------|----------|
+| Sandbox | `https://pg-sandbox.paymaya.com` |
+| Production (new) | `https://pg.maya.ph` |
+| Production (legacy) | `https://pg.paymaya.com` |
+
+---
+
+## Sandbox Test Credentials
+
+| Role | Key Type | Value |
+|------|----------|-------|
+| Non-PF Merchant | Public | `pk-MOfNKu3FmHMVHtjyjG7vhr7vFevRkWxmxYL1Yq6iFk5` |
+| Non-PF Merchant | Secret | `sk-NMda607FeZNGRt9xCdsIRiZ4Lqu6LT898ItHbN4qPSe` |
+| PF Merchant | Public | `pk-rpwb5YR6EfnKiMsldZqY4hgpvJjuy8hhxW2bVAAiz2N` |
+| PF Merchant | Secret | `sk-6s9dwnYGFJdZOYu1HCUAfUZctWEf9AjtHIG38kezX8W` |
+| P3 Merchant | Secret | `sk-aXQdorOOF0zGMfyVAzTH9CbAFvqq1Oc7PAXcDlrz5zz` |
+| Maya Wallet Test User | - | Username: 09193890579, Password: Password123, OTP: 123456 |
+
+Test Cards:
+- Visa: 4761340000000019, Exp 2022/12, CVC 946 (CSC success)
+- Visa: 4012001037141112, Exp 2027/12, CVC 212 (3-DS enrolled)
+- MasterCard: 5457210001000019, Exp 2025/12, CVC 111 (CSC success)
+- MasterCard: 5453010000095323, Exp 2027/12, CVC 323 (3-DS enrolled)
+- JCB: 3562320109617106, Exp 2021/12, CVC 000 (CSC success)
+
+---
+
+## 1. CHECKOUT API
+
+### Create Checkout
+- POST /checkout/v1/checkouts
+- Auth: PUBLIC Key
+- Request: totalAmount{value,currency,details{discount,serviceCharge,shippingFee,tax,subtotal}}, buyer{firstName,middleName,lastName,birthday,customerSince,sex,contact{phone,email},shippingAddress{firstName,middleName,lastName,phone,email,line1,line2,city,state,zipCode,countryCode,shippingType("ST"|"SD")},billingAddress{same}}, items[{name,code,description,quantity,amount{value,details},totalAmount{value,details}}], redirectUrl{success,failure,cancel}, requestReferenceNumber, metadata
+- Response: { checkoutId: uuid, redirectUrl: url }
+
+### Get Checkout
+- GET /checkout/v1/checkouts/{checkoutId}
+- Auth: SECRET Key
+- Response: id, status, paymentStatus, requestReferenceNumber, transactionReferenceNumber, buyer, merchant, items, totalAmount, redirectUrl, paymentDetails{paymentAt, 3ds}, createdAt, updatedAt, expiredAt, refundedAmount, expressCheckout, canPayPal, paymentScheme
+
+Payment Statuses: VOIDED, REFUNDED, PAYMENT_PROCESSING, PAYMENT_SUCCESS, PAYMENT_FAILED, FOR_AUTHENTICATION, AUTHENTICATING, AUTH_SUCCESS, AUTH_FAILED, PENDING_TOKEN, PENDING_PAYMENT, PAYMENT_EXPIRED
+
+---
+
+## 2. PAYMENT API (Tokenized/Direct)
+
+### Create Payment Token
+- POST /payments/v1/payment-tokens
+- Auth: PUBLIC Key
+- Request: card{number, expMonth, expYear, cvc}
+- Response: paymentTokenId, state(AVAILABLE|CURRENTLY_IN_USE|USED|EXPIRED|PREVERIFICATION|VERIFYING|VERIFICATION_FAILED), createdAt, updatedAt, issuer
+
+### Create Payment
+- POST /payments/v1/payments
+- Auth: SECRET Key
+- Request: paymentTokenId, totalAmount{amount,currency}, buyer{firstName,lastName,contact{phone},billingAddress{line1,line2,city,state,zipCode,countryCode}}, redirectUrl{success,failure,cancel}, requestReferenceNumber
+- Response: id, isPaid, status, amount, currency, canVoid, canRefund, canCapture, createdAt, updatedAt, description, paymentTokenId, verificationUrl, receiptNumber, requestReferenceNumber
+
+### Get Payment by ID
+- GET /payments/v1/payments/{paymentId}
+- Auth: SECRET Key
+- Response: Full payment object + fundSource{type,id,description,details{firstName,middleName,lastName,msisdn,email,masked}}
+
+### Get Payment by RRN
+- GET /payments/v1/payment-rrns/{rrn}
+- Auth: SECRET Key
+- Response: Array of payment objects
+
+### Void Payment (POST)
+- POST /payments/v1/payments/{paymentId}/voids
+- Auth: SECRET Key
+- Request: { reason: string }
+- Response: id, payment(uuid), status("SUCCESS"), reason, createdAt, updatedAt
+
+### Void Payment (DELETE)
+- DELETE /payments/v1/payments/{paymentId}
+- Auth: SECRET Key
+- Request: { reason: string }
+- Response: Same as POST void
+
+### Void by RRN
+- POST /payments/v1/payment-rrns/{rrn}/voids
+- Auth: SECRET Key
+
+### Get Voids
+- GET /payments/v1/payments/{paymentId}/voids
+- Auth: SECRET Key
+- Response: Array of void objects
+
+### Get Single Void
+- GET /payments/v1/payments/{paymentId}/voids/{voidId}
+- Auth: SECRET Key
+
+### Refund Payment
+- POST /payments/v1/payments/{paymentId}/refunds
+- Auth: SECRET Key
+- Request: { reason: string, totalAmount: { amount: number, currency: string } }
+- Response: id, payment(uuid), amount, currency, status("SUCCESS"), reason, refundAt, createdAt, updatedAt
+
+### Refund by RRN
+- POST /payments/v1/payment-rrns/{rrn}/refunds
+- Auth: SECRET Key
+
+### Get Refunds
+- GET /payments/v1/payments/{paymentId}/refunds
+- Auth: SECRET Key
+- Response: Array of refund objects
+
+### Get Single Refund
+- GET /payments/v1/payments/{paymentId}/refunds/{refundId}
+- Auth: SECRET Key
+
+### Compute Fee
+- POST /payments/v1/fees
+- Auth: SECRET Key
+- Request: { currency: string, amount: string }
+- Response: { currency: string, amount: string }
+
+---
+
+## 3. CUSTOMER API (Vault)
+
+### Create Customer
+- POST /payments/v1/customers
+- Auth: SECRET Key
+- Request: firstName, lastName, middleName, birthday(YYYY-MM-DD), sex(M|F), contact{phone,email}, billingAddress{line1,line2,city,state,zipCode,countryCode}, metadata
+- Response: id(uuid), firstName, lastName, middleName, contact, billingAddress, sex, birthday, createdAt, updatedAt
+
+### Get Customer
+- GET /payments/v1/customers/{customerId}
+- Auth: SECRET Key
+- Response: Customer object
+
+### Update Customer
+- PUT /payments/v1/customers/{customerId}
+- Auth: SECRET Key
+- Request: Partial customer object
+
+### Delete Customer
+- DELETE /payments/v1/customers/{customerId}
+- Auth: SECRET Key
+
+---
+
+## 4. CARD VAULT API
+
+### Vault a Card
+- POST /payments/v1/customers/{customerId}/cards
+- Auth: SECRET Key
+- Request: paymentTokenId, isDefault(boolean), redirectUrl{success,failure,cancel}
+- Response: cardTokenId, state, cardType(master-card|visa), maskedPan, id(uuid), default(boolean), createdAt, updatedAt, verificationUrl
+
+### List Vaulted Cards
+- GET /payments/v1/customers/{customerId}/cards
+- Auth: SECRET Key
+- Response: Array of card objects
+
+### Get Vaulted Card
+- GET /payments/v1/customers/{customerId}/cards/{cardTokenId}
+- Auth: SECRET Key
+- Response: state, cardTokenId, cardType, maskedPan, createdAt, updatedAt, walletType, default(boolean)
+
+### Update Vaulted Card
+- PUT /payments/v1/customers/{customerId}/cards/{cardTokenId}
+- Auth: SECRET Key
+- Request: { isDefault: boolean }
+- Response: Updated card object
+
+### Delete Vaulted Card
+- DELETE /payments/v1/customers/{customerId}/cards/{cardTokenId}
+- Auth: SECRET Key
+- Response: Deleted card object
+
+### Pay with Vaulted Card
+- POST /payments/v1/customers/{customerId}/cards/{cardTokenId}/payments (verify exact path at integration time)
+- Auth: SECRET Key
+- Request: { totalAmount: { amount: number, currency: string }, requestReferenceNumber: string }
+- Response: Full payment object
+
+---
+
+## 5. WEBHOOK API
+
+### For Payment/Vault (base: /payments/v1/webhooks)
+Event names: 3DS_PAYMENT_SUCCESS, 3DS_PAYMENT_FAILURE, 3DS_PAYMENT_DROPOUT, RECURRING_PAYMENT_SUCCESS, RECURRING_PAYMENT_FAILURE
+
+### Create Webhook
+- POST /payments/v1/webhooks
+- Auth: SECRET Key
+- Request: { name: string, callbackUrl: url }
+- Response: id, name, callbackUrl, createdAt, updatedAt
+
+### List Webhooks
+- GET /payments/v1/webhooks
+- Auth: SECRET Key
+- Response: Array of webhook objects
+
+### Get Webhook
+- GET /payments/v1/webhooks/{webhookId}
+- Auth: SECRET Key
+
+### Update Webhook
+- PUT /payments/v1/webhooks/{webhookId}
+- Auth: SECRET Key
+- Request: { callbackUrl: url }
+- Response: Updated webhook object
+
+### Delete Webhook
+- DELETE /payments/v1/webhooks/{webhookId}
+- Auth: SECRET Key
+
+### For Checkout (base: /checkouts/v1/webhooks)
+Event names: CHECKOUT_SUCCESS, CHECKOUT_FAILURE, CHECKOUT_DROPOUT
+- POST /checkouts/v1/webhooks (Create)
+- GET /checkouts/v1/webhook (List - note: no trailing 's')
+- DELETE /checkouts/v1/webhook/{webhookId} (Delete)
+
+---
+
+## 6. CUSTOMIZATION API
+
+### Create/Update Customization
+- POST /checkouts/v1/customizations
+- Auth: SECRET Key
+- Request/Response fields: logoUrl, iconUrl, appleTouchIconUrl, customTitle, colorScheme(hex), showMerchantName(bool), hideReceiptInput(bool), skipResultPage(bool), redirectTimer(number, 3-30 seconds)
+
+### Delete Customization
+- DELETE /checkouts/v1/customizations
+- Auth: SECRET Key
+
+---
+
+## 7. PAY WITH MAYA WALLET API
+
+### Create Single Payment
+- POST /payby/v2/paymaya/payments
+- Auth: PUBLIC Key
+- Request: totalAmount{currency,value}, redirectUrl{success,failure,cancel}, requestReferenceNumber, metadata
+- Response: { paymentId: uuid, redirectUrl: url }
+
+### Create Wallet Link (recurring)
+- POST /payby/v2/paymaya/link
+- Auth: PUBLIC Key
+- Request: redirectUrl{success,failure,cancel}, requestReferenceNumber, metadata
+- Response: { linkId: uuid, redirectUrl: url }
+
+### Execute Recurring Payment
+- POST /payby/v2/paymaya/link/{linkId}/execute
+- Auth: SECRET Key
+- Request: totalAmount{currency,value(number)}, requestReferenceNumber, metadata
+- Response: id, isPaid, status, amount, currency, createdAt, updatedAt, receiptNumber, requestReferenceNumber, canVoid, canRefund
+
+### Get Wallet Link
+- GET /payby/v2/paymaya/link/{linkId}
+- Auth: SECRET Key
+- Response: profileId, card{state:"VERIFIED"}, customer{firstName,middleName,lastName,birthday,sex,contact}
+
+### Delete Wallet Link
+- DELETE /payby/v2/paymaya/link/{linkId}
+- Auth: SECRET Key
+- Response: Same as Get with card.state:"DELETED"
+
+---
+
+## 8. SUBSCRIPTION API
+
+### Create Subscription
+- POST /payments/v1/customers/{customerId}/cards/{cardTokenId}/subscriptions
+- Auth: SECRET Key
+- Request: description, totalAmount{amount(string),currency}, interval(DAY|MONTH|YEAR), intervalCount(number), startDate(YYYY-MM-DD)
+- Response: id, description, status(ACTIVE|CANCELLED), interval, amount, currency, intervalCount, startDate, endDate, cancelledAt, metadata, createdAt, updatedAt
+
+### List Subscriptions
+- GET /payments/v1/customers/{customerId}/cards/{cardTokenId}/subscriptions
+- Auth: SECRET Key
+
+### Get Subscription
+- GET /payments/v1/subscriptions/{subscriptionId}
+- Auth: SECRET Key
+
+### Cancel Subscription
+- DELETE /payments/v1/subscriptions/{subscriptionId}
+- Auth: SECRET Key
+- Response: Subscription with status:CANCELLED
+
+### Get Subscription Payments
+- GET /payments/v1/subscriptions/{subscriptionId}/payments
+- Auth: SECRET Key
+
+---
+
+## 9. P3 PAYMENTS PROCESSING PLATFORM
+
+Base: /p3 at https://pg-sandbox.paymaya.com
+
+### POST /p3/pay (Sale)
+- Request headers: Request-Reference-No (required), X-Idempotency-Key (optional)
+- Request: merchant{id}, payer{fundingInstrument{card{cardNumber,expiryMonth,expiryYear,firstName,lastName,csc,type(CREDIT|DEBIT),account(DEFAULT|SAVINGS|CURRENT|CREDIT),vaulted(bool),billingAddress},paymaya{fundSourceId}}}, transaction{initiator(CONSUMER|MERCHANT),intent(PAYMENT|VAULTING),amount{total{currency,value}},frequencyIndicator(SINGLE|RECURRING),description}, threeDSecure{verificationToken(base64),eci,enrolled(Y|N|U),authenticationStatus(Y|A|N|U),dsTransactionId,messageVersion}
+- Response: paymentTransactionReferenceNo, createdAt, receipt{transactionId,approvalCode,batchNo,traceNo,receiptNo}, payer, amount
+
+### POST /p3/authorize
+### POST /p3/capture
+### POST /p3/void
+### POST /p3/refund
+### GET /p3/transactions/{id}
+### GET /p3/transactions?mid=&refNo=&page=&size=&from=&to=&sort=&order=
+### POST /p3/accounts/balance/inquiry
+### GET /p3/bins?bin=
+### GET /p3/ping
+
+---
+
+## Error Response Format
+{ code: number, message: string, parameters: [{field, description}], details: {responseCode, responseDescription} }
+
+Common Errors:
+- PY0002: Card expired
+- PY0003: Card invalid
+- PY0009: Payment does not exist
+- PY0010: Failed to process payment
+- PY0045: Payment not available for void
+- PY0047: Payment ineligible for refund
+- PY0057: Payment expired
+- PY0072: Cannot refund before cutoff
+- PY0073: Cannot void after cutoff
+- PY0104: Reference number linked to multiple payments
+- PY0105: Insufficient account balance
+- PYBY0008: Insufficient balance
+- PYBY0009: Wallet does not exist
+
+---
+
+## Business Rules
+
+- Void window: Same calendar day until 11:59:59 PM PH Standard Time
+- Refund window: From next day 12:00:00 AM onwards
+- Partial refunds allowed if total <= original payment amount
+- X-Idempotency-Key header prevents duplicate charges on retransmission
+- Checkout payments expire 1 hour from creation, 15 min from auth start
+- Authorization holds: 6-29 days depending on card network
+- Void/refund window: Sandbox 90 days, Production 390 days data retention
+
+---
+
+## 10. DISBURSEMENT API
+
+The Disbursement API handles payouts to beneficiaries (e.g., paying freelancers).
+
+### Authentication
+- Uses Basic authentication with API key in the `x-api-key` HTTP Header field
+- Separate from the payment gateway API keys - requires dedicated disbursement credentials from Maya onboarding
+
+### Process Flow
+1. **GET /wallet** - Retrieve your walletId and check balance before disbursing
+2. **POST /members** - Submit member (beneficiary) file in CSV format with x-api-key; Maya sends SMS invites to members
+3. **POST /disbursement** - Submit a disbursement file referencing the walletId; returns a disbursementId
+4. **POST /disbursements/{disbursementId}** - Process the disbursement; Maya sends funds to target members
+5. **GET /disbursements/{disbursementId}** - Retrieve status of each disbursement record
+
+### Key Notes
+- Disbursement API documentation: https://developers.maya.ph/docs/disbursement-api-v1
+- Technical details: https://developers.maya.ph/docs/disbursement-api-technical-details
+- FAQ: https://developers.maya.ph/docs/disbursement-api-faq
+- Quickstart: https://developers.maya.ph/reference/quickstart-on-disbursement-api
+- Beneficiaries must be registered/invited before disbursement
+- Wallet balance must be sufficient before processing
+- The maya.net NuGet package does NOT yet support Disbursement API (listed as roadmap item)
+
+### Recommendation for PrTask.com
+For paying freelancers after PR approval, the Disbursement API is the correct choice. However, it requires:
+1. A Maya Business account with disbursement capability enabled
+2. Pre-registered beneficiaries (freelancers must be invited and accept)
+3. Sufficient wallet balance loaded by the paying party
+Alternative: Use Maya Checkout to collect payment from User 1, then manually or via API disburse to User 2's Maya wallet.
+
+---
+
+## 11. .NET INTEGRATION
+
+### maya.net NuGet Package
+- **Package**: https://www.nuget.org/packages/maya.net/ (v1.1.0)
+- **GitHub**: https://github.com/Towphe/maya.net
+- **Author**: Towphe (jccastillo1105@gmail.com)
+- **License**: MIT
+- **Last Updated**: February 3, 2024
+- **Downloads**: ~753 total (low adoption - community package, not official)
+- **Dependencies**: Newtonsoft.Json >= 13.0.3, System.Net.Http >= 4.3.4
+- **Target**: .NET 7.0+ (compatible through .NET 10.0)
+
+### Supported Features
+- Maya Checkout (CreateCheckout)
+- Maya Wallet
+- Webhook Management
+- Maya QR
+- Payment Transaction Management
+
+### NOT Yet Supported (Roadmap)
+- Wallet Link Support
+- Utility Endpoints
+- Maya P3
+- Disbursement API
+- Money Movement
+- Remittance
+
+### Code Example - Checkout
+
+```csharp
+using maya.net.Checkout;
+
+// Create handler
+string publicKey = "pk-TnpIh5X432Qw1DJLlMhzxRhBN4fvUp3SHPuHT3m5wv6";
+ICheckoutHandler checkoutHandler = new CheckoutHandler(publicKey, isSandbox: true);
+
+// Build checkout body
+Item item1 = new Item() {
+    name = "PR Review Payment",
+    quantity = "1",
+    totalAmount = new Total() { value = 500.00F }
+};
+
+CheckoutBody req = new BasicCheckoutBody() {
+    totalAmount = new TotalAmount() {
+        value = 500.00F,
+        currency = "PHP"
+    },
+    items = new List<Item>() { item1 },
+    requestReferenceNumber = "PR-20260313-001"
+};
+
+CheckoutResponse res = await checkoutHandler.CreateCheckout(req);
+Console.WriteLine(res.RedirectUrl); // Redirect user to Maya payment page
+```
+
+### Dependency Injection Setup (ASP.NET Core)
+
+```csharp
+builder.Services.AddScoped<ICheckoutHandler>(inst =>
+    ActivatorUtilities.CreateInstance<CheckoutHandler>(
+        inst,
+        builder.Configuration["Maya:PublicKey"],
+        true // isSandbox
+    )
+);
+```
+
+### Recommendation: Build Custom HTTP Client
+Given maya.net's limited feature coverage (no Vault, no Disbursement, no P3) and low adoption (~753 downloads), **recommend building a thin custom HttpClient wrapper** for the Maya REST APIs. This gives full control over:
+- All API endpoints (Checkout, Vault, Payments, Disbursements)
+- Error handling and retry logic
+- Serialization (System.Text.Json instead of Newtonsoft)
+- .NET 10 compatibility without transitive dependency issues
+
+```csharp
+// Recommended pattern - thin wrapper over HttpClient
+public class MayaApiClient
+{
+    private readonly HttpClient _http;
+    private readonly string _baseUrl;
+
+    public MayaApiClient(HttpClient http, string apiKey, bool isSandbox)
+    {
+        _http = http;
+        _baseUrl = isSandbox
+            ? "https://pg-sandbox.paymaya.com"
+            : "https://pg.maya.ph";
+        var encoded = Convert.ToBase64String(Encoding.UTF8.GetBytes($"{apiKey}:"));
+        _http.DefaultRequestHeaders.Authorization =
+            new AuthenticationHeaderValue("Basic", encoded);
+    }
+
+    public async Task<CheckoutResponse> CreateCheckoutAsync(CheckoutRequest request)
+    {
+        var response = await _http.PostAsJsonAsync(
+            $"{_baseUrl}/checkout/v1/checkouts", request);
+        response.EnsureSuccessStatusCode();
+        return await response.Content.ReadFromJsonAsync<CheckoutResponse>();
+    }
+
+    public async Task<PaymentTokenResponse> CreatePaymentTokenAsync(CardDetails card)
+    {
+        var response = await _http.PostAsJsonAsync(
+            $"{_baseUrl}/payments/v1/payment-tokens", card);
+        response.EnsureSuccessStatusCode();
+        return await response.Content.ReadFromJsonAsync<PaymentTokenResponse>();
+    }
+}
+```
+
+---
+
+## 12. WEBHOOK SETUP & BEST PRACTICES
+
+### Registration Methods
+1. **Via API**: POST to /payments/v1/webhooks or /checkouts/v1/webhooks with SECRET key
+2. **Via Maya Manager**: Settings > Webhooks > Select merchant > Add URL + event types
+
+### Webhook Event Types
+
+| API | Event Name | Payment Status |
+|-----|-----------|----------------|
+| Checkout | CHECKOUT_SUCCESS | PAYMENT_SUCCESS |
+| Checkout | CHECKOUT_FAILURE | PAYMENT_FAILED |
+| Checkout | CHECKOUT_DROPOUT | PAYMENT_EXPIRED |
+| Vault/Payment | 3DS_PAYMENT_SUCCESS | PAYMENT_SUCCESS |
+| Vault/Payment | 3DS_PAYMENT_FAILURE | PAYMENT_FAILED |
+| Vault/Payment | 3DS_PAYMENT_DROPOUT | PAYMENT_EXPIRED |
+| Vault/Payment | RECURRING_PAYMENT_SUCCESS | PAYMENT_SUCCESS |
+| Vault/Payment | RECURRING_PAYMENT_FAILURE | PAYMENT_FAILED |
+| Wallet | PAYMENT_SUCCESS | PAYMENT_SUCCESS |
+| Wallet | PAYMENT_FAILED | PAYMENT_FAILED |
+| Wallet | PAYMENT_EXPIRED | PAYMENT_EXPIRED |
+
+### Requirements
+- **HTTPS only** with TLS 1.2+ (no self-signed certs, complete cert chain required)
+- **Publicly accessible** (no localhost - use ngrok/cloudflare tunnel for dev)
+- **Respond within 5 seconds** with HTTP 200 before executing complex logic
+- **Idempotent** - same event may be delivered multiple times
+
+### Retry Mechanism
+- Maya retries up to **4 times total** (initial + 3 retries)
+- Retries triggered on 3xx, 4xx, or 5xx response codes
+- Environment-specific: webhooks must be reconfigured per environment (sandbox vs production)
+
+### Security
+- **IP Whitelisting**: Configure network to accept webhook traffic only from Maya's published IP addresses
+- No webhook signature verification documented (unlike Stripe) - verify by calling GET /checkout/v1/checkouts/{id} or GET /payments/v1/payments/{id} with SECRET key to confirm payment status
+
+### Webhook Payload Fields
+- id (payment ID)
+- paymentStatus (PAYMENT_SUCCESS, PAYMENT_FAILED, PAYMENT_EXPIRED)
+- totalAmount, buyer, merchant, items, metadata
+- requestReferenceNumber, transactionReferenceNumber
+- receiptNumber, paymentScheme, createdAt, updatedAt
+
+---
+
+## 13. ADDITIONAL SANDBOX TEST CARDS
+
+### From Official Sandbox Documentation
+
+| Card Brand | Number | Expiry | CVV | 3DS Password | Scenario |
+|------------|--------|--------|-----|--------------|----------|
+| Visa | 4761340000000019 | 12/22 | 946 | N/A | CSC success |
+| Visa | 4012001037141112 | 12/27 | 212 | secbarry1 | 3DS enrolled |
+| MasterCard | 5457210001000019 | 12/25 | 111 | N/A | CSC success |
+| MasterCard | 5453010000095323 | 12/27 | 323 | secbarry1 | 3DS enrolled |
+| JCB | 3562320109617106 | 12/21 | 000 | N/A | CSC success |
+
+### From Community GitHub Gist
+
+| Card Brand | Number | Expiry | CVV | 3DS Password | Scenario |
+|------------|--------|--------|-----|--------------|----------|
+| MasterCard | 5123456789012346 | 12/25 | 111 | N/A | Good status |
+| MasterCard | 5453010000064154 | 12/25 | 111 | secbarry1 | Good + Passkey |
+| MasterCard | 5596459277363286 | 12/25 | 121 | paymaya12 | Insufficient funds |
+
+### Test E-Wallet
+- Mobile: 09193890579
+- Password: Password@1 (or Password123)
+- OTP: 123456
+
+### Additional Sandbox API Keys (Payment Facilitator)
+
+| Role | Key Type | Value |
+|------|----------|-------|
+| PF Alt | Public | pk-TnpIh5X432Qw1DJLlMhzxRhBN4fvUp3SHPuHT3m5wv6 |
+| PF Alt | Secret | sk-SNCvnXbvtAxU6mszPMoDl2M1d4e1ivko1E6PLGiOiqm |
+
+### Maya Manager Sandbox
+- URL: https://manager-sandbox.paymaya.com/
+- Generate custom API keys via Developer Sandbox Application Management
+
+---
+
+## 14. PCI DSS COMPLIANCE CONSIDERATIONS
+
+### Maya's PCI DSS Coverage
+- Maya is a **PCI DSS Level 1 certified** payment processor
+- Maya handles all card data storage, tokenization, and encryption
+- Merchants using Maya Checkout (hosted page) or Payment Vault (tokenization) do NOT need to handle raw card numbers
+
+### Merchant Responsibilities
+1. **Never store card numbers** unless PCI DSS certified - use Maya's tokenization
+2. **Use HTTPS/TLS 1.2+** for all API communication
+3. **Keep API keys secret** - never expose secret keys in frontend code
+4. **Use public keys only in frontend** - for creating payment tokens
+5. **Validate webhook callbacks** - verify payment status via API before fulfilling orders
+
+### Integration Approach for PCI Scope Reduction
+| Approach | PCI Scope | Description |
+|----------|-----------|-------------|
+| Maya Checkout (Hosted Page) | **Lowest** | Redirect to Maya-hosted payment page; no card data touches your server |
+| Maya Vault (Tokenization) | **Low** | Card data goes directly to Maya via JS SDK; your server only sees tokens |
+| Maya P3 (Direct API) | **Highest** | Card data passes through your server; requires PCI DSS certification |
+
+### Recommendation for PrTask.com
+Use **Maya Checkout** (hosted page redirect) for the payment flow:
+- Lowest PCI DSS scope - card data never touches prtask.com servers
+- User is redirected to Maya's hosted payment page
+- After payment, user is redirected back to prtask.com success/failure URL
+- Webhook confirms payment server-side
+- No need for PCI DSS certification on prtask.com infrastructure
+
+---
+
+## 15. COMMON PITFALLS & ERROR HANDLING
+
+### Authentication Pitfalls
+- **K003**: "Invalid authentication credentials" - most common; ensure Base64 encoding of `apikey:` (with colon, empty password)
+- **K001-K007, K999**: Various auth failures - check key type (public vs secret) matches endpoint requirement
+- Using SECRET key where PUBLIC key is needed (or vice versa) returns auth errors
+
+### Payment Flow Pitfalls
+- **3DS Authentication**: Always handle the `verificationUrl` in payment response - redirect user there for 3DS
+- **Payment Expiry**: Checkout expires in 1 hour from creation, 15 minutes once 3DS authentication starts
+- **Void vs Refund Confusion**: Void before midnight PH time, refund after - using wrong one returns PY0045/PY0047
+- **QR Payment Timeout**: QR payments must be executed within 15 minutes of creation
+
+### Webhook Pitfalls
+- **localhost won't work** - Maya cannot reach your local dev server; use ngrok or similar
+- **Self-signed certs rejected** - must have valid SSL cert with complete chain
+- **Must return 200 quickly** - do complex processing asynchronously after acknowledging
+- **No signature verification** - unlike Stripe, Maya doesn't sign webhooks; verify by calling GET payment endpoint
+
+### Error Response Format
+```json
+{
+    "code": "PY0010",
+    "message": "Failed to process payment",
+    "parameters": [
+        { "field": "paymentTokenId", "description": "Token expired" }
+    ],
+    "details": {
+        "responseCode": "05",
+        "responseDescription": "Do not honor"
+    }
+}
+```
+
+### Key Error Codes
+
+| Code | HTTP | Description | Action |
+|------|------|-------------|--------|
+| PY0002 | 400 | Card expired | Ask user to use different card |
+| PY0003 | 400 | Card invalid | Verify card number |
+| PY0009 | 404 | Payment not found | Check paymentId |
+| PY0010 | 400 | Processing failed | Retry or different card |
+| PY0015/16 | 502 | Processor connectivity | Retry with backoff |
+| PY0045 | 400 | Cannot void | Already past cutoff; use refund |
+| PY0047 | 400 | Cannot refund | Not yet past cutoff; use void |
+| PY0057 | 400 | Payment expired | Create new payment |
+| PY0072 | 400 | Cannot refund before cutoff | Wait until after midnight |
+| PY0073 | 400 | Cannot void after cutoff | Use refund instead |
+| PY0105 | 400 | Insufficient balance | Different funding source |
+| PYBY0002 | 404 | Wallet payment not found | Check paymentId |
+| PYBY0004 | 403 | Access forbidden | Check API key permissions |
+| PYBY0008 | 400 | Insufficient wallet balance | Top up wallet |
+| PYBY0009 | 404 | Wallet does not exist | Register wallet first |
+| PYBY0011 | 400 | Wallet payment expired | Create new payment |
+
+### Retry Strategy
+- **Idempotent operations**: Use `X-Idempotency-Key` header to prevent duplicate charges
+- **5xx errors (PY0015/16)**: Retry with exponential backoff (1s, 2s, 4s, max 3 retries)
+- **4xx errors**: Do not retry - fix the request
+- **Load testing not allowed** on sandbox or production
+
+---
+
+## 16. RECOMMENDED ARCHITECTURE FOR PRTASK.COM
+
+### Payment Flow (User 1 pays for approved PR)
+1. User 1 clicks "Pay" on approved PR page
+2. Server creates Maya Checkout via POST /checkout/v1/checkouts with:
+   - totalAmount in PHP
+   - requestReferenceNumber = PR ID
+   - redirectUrl.success = /payment/success?pr={id}
+   - redirectUrl.failure = /payment/failure?pr={id}
+   - redirectUrl.cancel = /payment/cancel?pr={id}
+   - metadata = { prId, taskId, payerId, payeeId }
+3. Server stores checkoutId + paymentStatus=PENDING in database
+4. Server returns Maya redirectUrl to frontend
+5. Frontend redirects user to Maya hosted payment page
+6. User completes payment on Maya's page (card entry, 3DS)
+7. Maya redirects user back to prtask.com success/failure URL
+8. Maya sends webhook to server with payment result
+9. Server verifies payment by calling GET /checkout/v1/checkouts/{checkoutId}
+10. Server updates payment status in database
+11. If success, initiate disbursement to User 2 (or mark for manual payout)
+
+### Disbursement Flow (Pay freelancer/User 2)
+Option A: **Maya Disbursement API** (if enabled on your Maya Business account)
+Option B: **Manual bank transfer** based on payment confirmation
+Option C: **Maya Wallet transfer** if both users have Maya accounts
+
+### Key Design Decisions
+- Use Checkout API (not Vault or P3) to minimize PCI scope
+- Store only checkoutId and paymentStatus, never card data
+- Always verify via GET API call, don't trust redirect URL parameters alone
+- Register webhooks for reliable server-side notification
+- Use requestReferenceNumber to link Maya payments to PR records
+
+---
+
+## Sources
+- https://developers.maya.ph (Maya Developer Hub - primary documentation)
+- https://developers.maya.ph/reference/sandbox-credentials-and-cards
+- https://developers.maya.ph/reference/createv1checkout
+- https://developers.maya.ph/reference/receive-real-time-payment-information-using-webhooks
+- https://developers.maya.ph/docs/disbursement-api-v1
+- https://developers.maya.ph/docs/disbursement-api-technical-details
+- https://developers.maya.ph/docs/disbursement-api-faq
+- https://developers.maya.ph/reference/quickstart-on-disbursement-api
+- https://developers.maya.ph/docs/maya-checkout
+- https://developers.maya.ph/docs/maya-card-payment-vault
+- https://developers.maya.ph/reference/configuring-your-webhook-for-maya-checkout
+- https://developers.maya.ph/reference/payment-related-errors
+- https://developers.maya.ph/reference/payment-processing-platform-errors
+- https://developers.maya.ph/reference/authentication-and-api-key-error
+- https://s3-us-west-2.amazonaws.com/developers.paymaya.com.pg/checkout/v2/Checkout+API.html
+- https://s3-us-west-2.amazonaws.com/developers.paymaya.com.pg/pay-by-paymaya/index.html
+- https://s3-us-west-2.amazonaws.com/developers.paymaya.com.pg/payment-vault/paymentvault.html
+- https://cdn.paymaya.com/sandbox/payments_api/paymayap3/paymayap3.html
+- https://www.nuget.org/packages/maya.net/ (Community .NET wrapper)
+- https://github.com/Towphe/maya.net (maya.net source)
+- https://github.com/PayMaya/maya-demo-checkout-ts (Official checkout demo)
+- https://github.com/PayMaya/maya-demo-webhooks-ts (Official webhook demo)
+- https://github.com/PayMaya/maya-demo-vault-ts (Official vault demo)
+- https://www.paymayaapi.com/ (Maya API overview)
+- https://gist.github.com/abelcallejo/48b9c4d977732c1978b0f99c749117e2 (Community test cards)
+- https://manager-sandbox.paymaya.com/ (Sandbox management portal)

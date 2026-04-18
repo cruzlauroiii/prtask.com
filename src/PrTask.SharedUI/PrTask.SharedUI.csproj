@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <EnableTrimAnalyzer>false</EnableTrimAnalyzer>
+    <NoWarn>$(NoWarn);SA1633;CS1591;IDE0130</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.SassCompiler" Version="1.97.1" />
+    <PackageReference Include="System.Reactive" Version="6.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Localization" Version="10.0.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PrTask.Application\PrTask.Application.csproj" />
+    <ProjectReference Include="..\PrTask.Domain\PrTask.Domain.csproj" />
+  </ItemGroup>
+</Project>

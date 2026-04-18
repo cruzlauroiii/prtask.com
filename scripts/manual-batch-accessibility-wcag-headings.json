@@ -1,0 +1,81 @@
+{
+  "de": {
+    "AccessibilityFeedbackHeading": "Rückmeldung",
+    "AccessibilityWcag22Heading": "WCAG 2.2 Konformität Stufe AA",
+    "AccessibilityWcag22FocusAppearance": "2.4.13 Fokusdarstellung: fokussierte Elemente haben einen deutlich sichtbaren Fokusindikator",
+    "AccessibilityWcag22FocusNotObscured": "2.4.11 Fokus nicht verdeckt (Minimum): fokussierte Elemente werden nicht vollständig von anderem Inhalt verdeckt",
+    "AccessibilityWcag22RedundantEntry": "3.3.7 Redundante Eingabe: Nutzer müssen bereits angegebene Informationen nicht erneut eingeben",
+    "AccessibilityWcag22TargetSize": "2.5.8 Zielgröße (Minimum): interaktive Ziele sind mindestens 24x24 CSS-Pixel groß"
+  },
+  "es": {
+    "AccessibilityFeedbackHeading": "Comentarios",
+    "AccessibilityWcag22Heading": "Conformidad con WCAG 2.2 Nivel AA",
+    "AccessibilityWcag22FocusAppearance": "2.4.13 Apariencia del foco: los elementos enfocados tienen un indicador de foco claramente visible",
+    "AccessibilityWcag22FocusNotObscured": "2.4.11 Foco no oculto (mínimo): los elementos enfocados no quedan totalmente ocultos por otro contenido",
+    "AccessibilityWcag22RedundantEntry": "3.3.7 Entrada redundante: los usuarios no deben volver a introducir información ya proporcionada",
+    "AccessibilityWcag22TargetSize": "2.5.8 Tamaño del objetivo (mínimo): los objetivos interactivos tienen al menos 24x24 píxeles CSS"
+  },
+  "fil": {
+    "AccessibilityWcag22Heading": "Pagsunod sa WCAG 2.2 Antas AA",
+    "AccessibilityWcag22FocusAppearance": "2.4.13 Anyong Focus: ang mga nakatuong elemento ay may malinaw na nakikitang focus indicator",
+    "AccessibilityWcag22FocusNotObscured": "2.4.11 Hindi Natatakpan ang Focus (Pinakamababa): ang mga nakatuong elemento ay hindi lubusang natatakpan ng ibang nilalaman",
+    "AccessibilityWcag22RedundantEntry": "3.3.7 Paulit-ulit na Pagpasok: hindi kailangang muling ilagay ng mga user ang impormasyong naibigay na nila",
+    "AccessibilityWcag22TargetSize": "2.5.8 Sukat ng Target (Pinakamababa): ang mga interactive na target ay hindi bababa sa 24x24 CSS pixels"
+  },
+  "fr": {
+    "AccessibilityFeedbackHeading": "Commentaires",
+    "AccessibilityWcag22Heading": "Conformité WCAG 2.2 niveau AA",
+    "AccessibilityWcag22FocusAppearance": "2.4.13 Apparence du focus : les éléments focalisés ont un indicateur de focus clairement visible",
+    "AccessibilityWcag22FocusNotObscured": "2.4.11 Focus non masqué (minimum) : les éléments focalisés ne sont pas entièrement masqués par d'autres contenus",
+    "AccessibilityWcag22RedundantEntry": "3.3.7 Saisie redondante : les utilisateurs ne doivent pas ressaisir des informations déjà fournies",
+    "AccessibilityWcag22TargetSize": "2.5.8 Taille de la cible (minimum) : les cibles interactives mesurent au moins 24x24 pixels CSS"
+  },
+  "it": {
+    "AccessibilityFeedbackHeading": "Riscontri",
+    "AccessibilityWcag22Heading": "Conformità WCAG 2.2 livello AA",
+    "AccessibilityWcag22FocusAppearance": "2.4.13 Aspetto del focus: gli elementi in focus hanno un indicatore di focus chiaramente visibile",
+    "AccessibilityWcag22FocusNotObscured": "2.4.11 Focus non oscurato (minimo): gli elementi in focus non sono completamente nascosti da altri contenuti",
+    "AccessibilityWcag22RedundantEntry": "3.3.7 Inserimento ridondante: gli utenti non devono reinserire informazioni già fornite",
+    "AccessibilityWcag22TargetSize": "2.5.8 Dimensione del target (minimo): i target interattivi sono almeno 24x24 pixel CSS"
+  },
+  "ja": {
+    "AccessibilityFeedbackHeading": "フィードバック",
+    "AccessibilityWcag22Heading": "WCAG 2.2 レベルAA準拠",
+    "AccessibilityWcag22FocusAppearance": "2.4.13 フォーカスの外観: フォーカスされた要素には明確に見えるフォーカスインジケーターがある",
+    "AccessibilityWcag22FocusNotObscured": "2.4.11 フォーカスが隠れない（最小）: フォーカスされた要素が他の内容で完全に隠されない",
+    "AccessibilityWcag22RedundantEntry": "3.3.7 冗長な入力: すでに提供した情報を再入力する必要がない",
+    "AccessibilityWcag22TargetSize": "2.5.8 ターゲットサイズ（最小）: インタラクティブなターゲットは少なくとも24x24 CSSピクセル"
+  },
+  "ko": {
+    "AccessibilityFeedbackHeading": "피드백",
+    "AccessibilityWcag22Heading": "WCAG 2.2 레벨 AA 준수",
+    "AccessibilityWcag22FocusAppearance": "2.4.13 포커스 모양: 포커스된 요소에 명확하게 보이는 포커스 표시기가 있음",
+    "AccessibilityWcag22FocusNotObscured": "2.4.11 포커스 가림 없음(최소): 포커스된 요소가 다른 콘텐츠에 의해 완전히 가려지지 않음",
+    "AccessibilityWcag22RedundantEntry": "3.3.7 중복 입력: 사용자는 이미 제공한 정보를 다시 입력할 필요가 없음",
+    "AccessibilityWcag22TargetSize": "2.5.8 대상 크기(최소): 상호작용 대상은 최소 24x24 CSS 픽셀"
+  },
+  "nl": {
+    "AccessibilityFeedbackHeading": "Terugkoppeling",
+    "AccessibilityWcag22Heading": "WCAG 2.2-niveau AA naleving",
+    "AccessibilityWcag22FocusAppearance": "2.4.13 Focusweergave: gefocuste elementen hebben een duidelijk zichtbaar focusindicator",
+    "AccessibilityWcag22FocusNotObscured": "2.4.11 Focus niet verborgen (minimum): gefocuste elementen worden niet volledig verborgen door andere inhoud",
+    "AccessibilityWcag22RedundantEntry": "3.3.7 Dubbele invoer: gebruikers hoeven informatie die ze al hebben gegeven niet opnieuw in te voeren",
+    "AccessibilityWcag22TargetSize": "2.5.8 Doelgrootte (minimum): interactieve doelen zijn minimaal 24x24 CSS-pixels"
+  },
+  "pt": {
+    "AccessibilityFeedbackHeading": "Comentários",
+    "AccessibilityWcag22Heading": "Conformidade com WCAG 2.2 nível AA",
+    "AccessibilityWcag22FocusAppearance": "2.4.13 Aparência do foco: elementos focados têm um indicador de foco claramente visível",
+    "AccessibilityWcag22FocusNotObscured": "2.4.11 Foco não obscurecido (mínimo): elementos focados não são totalmente ocultados por outro conteúdo",
+    "AccessibilityWcag22RedundantEntry": "3.3.7 Entrada redundante: usuários não são obrigados a inserir novamente informações já fornecidas",
+    "AccessibilityWcag22TargetSize": "2.5.8 Tamanho do alvo (mínimo): alvos interativos têm pelo menos 24x24 pixels CSS"
+  },
+  "ru": {
+    "AccessibilityFeedbackHeading": "Обратная связь",
+    "AccessibilityWcag22Heading": "Соответствие WCAG 2.2 уровня AA",
+    "AccessibilityWcag22FocusAppearance": "2.4.13 Внешний вид фокуса: сфокусированные элементы имеют четко видимый индикатор фокуса",
+    "AccessibilityWcag22FocusNotObscured": "2.4.11 Фокус не перекрыт (минимум): сфокусированные элементы не полностью скрыты другим контентом",
+    "AccessibilityWcag22RedundantEntry": "3.3.7 Повторный ввод: пользователям не требуется повторно вводить уже предоставленную информацию",
+    "AccessibilityWcag22TargetSize": "2.5.8 Размер цели (минимум): интерактивные цели не менее 24x24 пикселей CSS"
+  }
+}

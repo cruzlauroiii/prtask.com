@@ -1,0 +1,26 @@
+     1→warn: Microsoft.EntityFrameworkCore.Model.Validation[10620]
+     2→      The property 'TaskEntity.Tags' is a collection or enumeration type with a value converter but with no value comparer. Set a value comparer to ensure the collection/enumeration elements are compared correctly.
+     3→info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+     4→      Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+     5→      SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+     6→info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+     7→      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+     8→      SELECT EXISTS (
+     9→          SELECT 1
+    10→          FROM "Tasks" AS "t"
+    11→          WHERE "t"."Id" = 'demo-task')
+    12→info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+    13→      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+    14→      SELECT EXISTS (
+    15→          SELECT 1
+    16→          FROM "PullRequests" AS "p"
+    17→          WHERE "p"."Id" = 'demo-pr')
+    18→info: Microsoft.Hosting.Lifetime[14]
+    19→      Now listening on: http://localhost:5000
+    20→info: Microsoft.Hosting.Lifetime[0]
+    21→      Application started. Press Ctrl+C to shut down.
+    22→info: Microsoft.Hosting.Lifetime[0]
+    23→      Hosting environment: Development
+    24→info: Microsoft.Hosting.Lifetime[0]
+    25→      Content root path: C:\work\prtask.com\src\PrTask.Server
+    26→

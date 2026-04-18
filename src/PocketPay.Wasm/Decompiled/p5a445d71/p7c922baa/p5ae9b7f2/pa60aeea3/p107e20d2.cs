@@ -1,0 +1,63 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+
+public class p107e20d2 {
+    public static readonly short f08b2cb7c = 1;
+    public static readonly short f0a8ef4cd = 12;
+    public static readonly short f0dd8a3a7 = 23;
+    public static readonly short f11999b91 = 20;
+    public static readonly short f14e43b78 = 15;
+    public static readonly short f15bbf2e4 = 23;
+    public static readonly short f1c0f3a3d = 4;
+    public static readonly short f2560d38b = 1;
+    public static readonly short f272267e0 = 4;
+    public static readonly short f2c95ea13 = 15;
+    public static readonly short f3122cfc1 = 0;
+    public static readonly short f317a4530 = 3;
+    public static readonly short f35426a07 = 13;
+    public static readonly short f408288ff = 15;
+    public static readonly short f4d537da3 = 23;
+    public static readonly short f6533f4f4 = 14;
+    public static readonly short f69133668 = 23;
+    public static readonly short f720102d6 = 16;
+    public static readonly short f76bb0caa = 12;
+    public static readonly short f78160d50 = 3;
+    public static readonly short f8678c94f = 4;
+    public static readonly short f89d13ef5 = 22;
+    public static readonly short f8fcd2334 = 23;
+    public static readonly short f90bab17e = 0;
+    public static readonly short f95cb3362 = 13;
+    public static readonly short f9738dbfa = 15;
+    public static readonly short f9742862a = 2;
+    public static readonly short f9a774273 = 0;
+    public static readonly short fa5b1d500 = 3;
+    public static readonly short fa5d7ceb2 = 20;
+    public static readonly short fa9cab145 = 22;
+    public static readonly short fabc99ab6 = 2;
+    public static readonly short fb84ffc9e = 16;
+    public static readonly short fb8cac826 = 12;
+    public static readonly short fb92a34e5 = 14;
+    public static readonly short fbb107aac = 1;
+    public static readonly short fbd46e520 = 4;
+    public static readonly short fbfcf670c = 3;
+    public static readonly short fc2037360 = 14;
+    public static readonly short fc9725114 = 4;
+    public static readonly short fcb573c4b = 15;
+    public static readonly short fcfe3f25b = 12;
+    public static readonly short fd058370f = 20;
+    public static readonly short fd2189faf = 1;
+    public static readonly short fd3ec79b6 = 11;
+    public static readonly short fdc926c44 = 16;
+    public static readonly short fdfc5bbac = 21;
+    public static readonly short fe005978b = 2;
+    public static readonly short fe0d30cef = 11;
+    public static readonly short fe860f16e = 13;
+    public static readonly short fe9c04605 = 12;
+    public static readonly short feb84c755 = 3;
+    public static readonly short febb5ee58 = 22;
+    public static readonly short ff59de53d = 21;
+    public static readonly short ff5ac60ae = 22;
+    public static readonly short ffc59c189 = 22;
+    public static readonly short fff0acc29 = 13;
+}
+

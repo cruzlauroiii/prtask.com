@@ -1,0 +1,68 @@
+@page "/leaderboard"
+@using PrTask.Application.Services
+@using PrTask.Domain.Models
+@inject ILeaderboardService LeaderboardService
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> Localizer
+<h1>@Localizer["LeaderboardPageHeading"]</h1>
+<div class="leaderboard-tabs">
+    <button class="btn @(ShowEarners ? "btn-primary" : "btn-secondary")" @onclick="ShowEarnersTab">@Localizer["LeaderboardTopEarnersTab"]</button>
+    <button class="btn @(ShowEarners ? "btn-secondary" : "btn-primary")" @onclick="ShowSpendersTab">@Localizer["LeaderboardTopSpendersTab"]</button>
+</div>
+@if (TopEntries is null)
+{
+    <p>@Localizer["LeaderboardLoadingText"]</p>
+}
+else if (TopEntries.Count == 0)
+{
+    <div class="empty-state">
+        <p>@Localizer["LeaderboardEmptyStateText"]</p>
+    </div>
+}
+else
+{
+    <div class="leaderboard-table">
+        <div class="leaderboard-header">
+            <span>@Localizer["LeaderboardHeaderRank"]</span>
+            <span>@Localizer["LeaderboardHeaderDeveloper"]</span>
+            <span>@Localizer["LeaderboardHeaderPrsMerged"]</span>
+            <span>@Localizer["LeaderboardHeaderEarned"]</span>
+        </div>
+        @foreach (var Entry in TopEntries)
+        {
+            <div class="leaderboard-row">
+                <span class="rank">#@Entry.Rank</span>
+                <span class="developer">
+                    @if (Entry.AvatarUrl is not null)
+                    {
+                        <img src="@Entry.AvatarUrl" alt="@Entry.GitHubUsername" class="avatar" />
+                    }
+                    @Entry.GitHubUsername
+                </span>
+                <span class="prs">@Entry.PrsMerged</span>
+                <span class="earned">@FormatEarnedAmount(Entry.TotalEarnedCents)</span>
+            </div>
+        }
+    </div>
+}
+<section class="page-description">
+    <h2>@Localizer["LeaderboardDescriptionHeading"]</h2>
+    <p>@Localizer["LeaderboardDescriptionParagraph1"]</p>
+    <p>@Localizer["LeaderboardDescriptionParagraph2"]</p>
+    <p>@Localizer["LeaderboardDescriptionParagraph3"]</p>
+</section>
+@code {
+    private IReadOnlyList<LeaderboardEntry>? TopEntries { get; set; }
+    private bool ShowEarners { get; set; } = true;
+    protected override async Task OnInitializedAsync() => TopEntries = await LeaderboardService.GetTopAsync(50);
+    private static string FormatEarnedAmount(long AmountCents) => $"${AmountCents / 100m:N0}";
+    private async Task ShowEarnersTab()
+    {
+        ShowEarners = true;
+        TopEntries = await LeaderboardService.GetTopAsync(50);
+    }
+    private async Task ShowSpendersTab()
+    {
+        ShowEarners = false;
+        TopEntries = await LeaderboardService.GetTopBySpendingAsync(50);
+    }
+}

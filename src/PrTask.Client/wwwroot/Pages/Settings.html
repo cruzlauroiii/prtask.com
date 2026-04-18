@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings - PrTask</title>
+    <meta name="description" content="Manage your PrTask profile and preferences." />
+    <link rel="stylesheet" href="/Css/app.css" />
+</head>
+<body>
+    <main>
+        <h1>Settings</h1>
+        <section>
+            <h2>Profile</h2>
+            <form>
+                <label>Display Name</label>
+                <input type="text" />
+                <label>Email</label>
+                <input type="email" />
+            </form>
+        </section>
+        <section>
+            <h2>Preferences</h2>
+            <form>
+                <label>Theme</label>
+                <select><option>System</option><option>Light</option><option>Dark</option></select>
+                <label>Notifications</label>
+                <input type="checkbox" checked />
+            </form>
+        </section>
+    </main>
+    <script src="/Framework/blazor.webassembly.js" autostart="false"></script>
+</body>
+</html>

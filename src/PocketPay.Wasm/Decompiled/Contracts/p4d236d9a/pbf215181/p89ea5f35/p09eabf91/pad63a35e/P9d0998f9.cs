@@ -1,0 +1,50 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+public interface P9d0998f9
+{
+    void Dismiss();
+    p2657b521 Init();
+    p2657b521 SetButtonDismiss(int P0);
+    p2657b521 SetButtonDismiss(string P0);
+    p2657b521 SetButtonDismissClickListener(DialogInterface$OnClickListener P0);
+    p2657b521 SetButtonDoNotShowAgain(int P0);
+    p2657b521 SetButtonDoNotShowAgain(string P0);
+    p2657b521 SetButtonDoNotShowAgainClickListener(DialogInterface$OnClickListener P0);
+    p2657b521 SetButtonUpdate(int P0);
+    p2657b521 SetButtonUpdate(string P0);
+    p2657b521 SetButtonUpdateClickListener(DialogInterface$OnClickListener P0);
+    p2657b521 SetCancelable(bool P0);
+    p2657b521 SetContentOnUpdateAvailable(int P0);
+    p2657b521 SetContentOnUpdateAvailable(string P0);
+    p2657b521 SetContentOnUpdateNotAvailable(int P0);
+    p2657b521 SetContentOnUpdateNotAvailable(string P0);
+    p2657b521 SetDialogButtonDismiss(int P0);
+    p2657b521 SetDialogButtonDismiss(string P0);
+    p2657b521 SetDialogButtonDoNotShowAgain(int P0);
+    p2657b521 SetDialogButtonDoNotShowAgain(string P0);
+    p2657b521 SetDialogButtonUpdate(int P0);
+    p2657b521 SetDialogButtonUpdate(string P0);
+    p2657b521 SetDialogDescriptionWhenUpdateAvailable(int P0);
+    p2657b521 SetDialogDescriptionWhenUpdateAvailable(string P0);
+    p2657b521 SetDialogDescriptionWhenUpdateNotAvailable(int P0);
+    p2657b521 SetDialogDescriptionWhenUpdateNotAvailable(string P0);
+    p2657b521 SetDialogTitleWhenUpdateAvailable(int P0);
+    p2657b521 SetDialogTitleWhenUpdateAvailable(string P0);
+    p2657b521 SetDialogTitleWhenUpdateNotAvailable(int P0);
+    p2657b521 SetDialogTitleWhenUpdateNotAvailable(string P0);
+    p2657b521 SetDisplay(pb9987a24 P0);
+    p2657b521 SetDuration(pe02d2ae0 P0);
+    p2657b521 SetGitHubUserAndRepo(string P0, string P1);
+    p2657b521 SetIcon(int P0);
+    p2657b521 SetTitleOnUpdateAvailable(int P0);
+    p2657b521 SetTitleOnUpdateAvailable(string P0);
+    p2657b521 SetTitleOnUpdateNotAvailable(int P0);
+    p2657b521 SetTitleOnUpdateNotAvailable(string P0);
+    p2657b521 SetUpdateFrom(pdc6abad0 P0);
+    p2657b521 SetUpdateJSON(string P0);
+    p2657b521 SetUpdateXML(string P0);
+    p2657b521 ShowAppUpdated(bool P0);
+    p2657b521 ShowEvery(int P0);
+    void Start();
+    void Stop();
+}

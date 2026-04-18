@@ -1,0 +1,37 @@
+@page "/payback-choose-payment-system"
+@inject NavigationManager Nav
+
+<div style="width:100%">
+    <header class="toolbar" style="width:100%">
+        <div class="vg_payment_address" style="display:flex;flex-direction:column;width:100%">
+            <span class="titleTv"></span>
+            <span class="tv_payment_address"></span>
+        </div>
+    </header>
+    <div style="width:100%">
+        <div style="width:100%">
+            <div style="width:100%">
+                <span class="vpn_disclaimer_tv" style="width:100%"></span>
+                <div class="sell_receipt_client_credentials_content" style="width:100%">
+                    <input class="switchReceiptState" type="checkbox" />
+                    <div class="divider" style="width:100%"></div>
+                    <div class="receipt_credentials_placeholder" style="width:100%">
+                        <span class="send_receipt_to_label"></span>
+                        <span class="client_credentials"></span>
+                        <img class="choose_client_credentials_btn" src="img/ic_chevron_right.png" alt="ic_chevron_right" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="payback_receipt_to_payment_button" style="display:flex;flex-direction:row;width:100%">
+            <span class="paybackAmountTv"></span>
+            <div></div>
+            <div class="receipt_discount_vg" style="display:flex;flex-direction:row">
+                <img src="img/discount_badge_part.png" alt="discount_badge_part" />
+                <span class="receipt_discount_tv"></span>
+            </div>
+            <span class="pay_system_receipt_total_price"></span>
+        </div>
+        <div class="pay_system_buttons_layout" style="width:100%"></div>
+    </div>
+</div>

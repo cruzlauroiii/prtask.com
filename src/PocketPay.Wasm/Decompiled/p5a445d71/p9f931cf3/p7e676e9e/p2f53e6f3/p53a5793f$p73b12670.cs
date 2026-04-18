@@ -1,0 +1,331 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+
+public class p53a5793f$p73b12670 : p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f$p7979ad97 {
+    p53a5793f$p73b12670(p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.pa827ecfa pa827ecfaVar, p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar, p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar2) {
+        super(pa827ecfaVar, p5a196a0aVar, p5a196a0aVar2);
+    }
+
+    p53a5793f$p73b12670(p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.pa827ecfa pa827ecfaVar, p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar, p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar2, p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a[] p5a196a0aVarArr) {
+        super(pa827ecfaVar, p5a196a0aVar, p5a196a0aVar2, p5a196a0aVarArr);
+    }
+
+    public override p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f Add(p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f p53a5793fVar) {
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiply;
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiply2;
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiply3;
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarAdd;
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarAdd2;
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarFromBigint;
+        if ((26 + 32) % 32 > 0) {
+        }
+        if (isInfinity()) {
+            return p53a5793fVar;
+        }
+        if (p53a5793fVar.isInfinity()) {
+            return this;
+        }
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.pa827ecfa curve = getCurve();
+        int coordinateSystem = curve.getCoordinateSystem();
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiply4 = this.f9dd4e461;
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar = p53a5793fVar.f9dd4e461;
+        if (coordinateSystem == 0) {
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar2 = this.f41529076;
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar3 = p53a5793fVar.f41529076;
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarAdd3 = p5a196a0aVarMultiply4.Add(p5a196a0aVar);
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarAdd4 = p5a196a0aVar2.Add(p5a196a0aVar3);
+            if (p5a196a0aVarAdd3.isZero()) {
+                return !p5a196a0aVarAdd4.isZero() ? curve.getInfinity() : twice();
+            }
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarDivide = p5a196a0aVarAdd4.divide(p5a196a0aVarAdd3);
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarAdd5 = p5a196a0aVarDivide.square().Add(p5a196a0aVarDivide).Add(p5a196a0aVarAdd3).Add(curve.getA());
+            return new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f$p73b12670(curve, p5a196a0aVarAdd5, p5a196a0aVarDivide.multiply(p5a196a0aVarMultiply4.Add(p5a196a0aVarAdd5)).Add(p5a196a0aVarAdd5).Add(p5a196a0aVar2));
+        }
+        if (coordinateSystem == 1) {
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar4 = this.f41529076;
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiply5 = this.ff6706d5d[0];
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar5 = p53a5793fVar.f41529076;
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar6 = p53a5793fVar.ff6706d5d[0];
+            bool zIsOne = p5a196a0aVar6.isOne();
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarAdd6 = p5a196a0aVarMultiply5.multiply(p5a196a0aVar5).Add(!zIsOne ? p5a196a0aVar4.multiply(p5a196a0aVar6) : p5a196a0aVar4);
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarAdd7 = p5a196a0aVarMultiply5.multiply(p5a196a0aVar).Add(!zIsOne ? p5a196a0aVarMultiply4.multiply(p5a196a0aVar6) : p5a196a0aVarMultiply4);
+            if (p5a196a0aVarAdd7.isZero()) {
+                return !p5a196a0aVarAdd6.isZero() ? curve.getInfinity() : twice();
+            }
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarSquare = p5a196a0aVarAdd7.square();
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiply6 = p5a196a0aVarSquare.multiply(p5a196a0aVarAdd7);
+            if (!zIsOne) {
+                p5a196a0aVarMultiply5 = p5a196a0aVarMultiply5.multiply(p5a196a0aVar6);
+            }
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarAdd8 = p5a196a0aVarAdd6.Add(p5a196a0aVarAdd7);
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarAdd9 = p5a196a0aVarAdd8.multiplyPlusProduct(p5a196a0aVarAdd6, p5a196a0aVarSquare, curve.getA()).multiply(p5a196a0aVarMultiply5).Add(p5a196a0aVarMultiply6);
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiply7 = p5a196a0aVarAdd7.multiply(p5a196a0aVarAdd9);
+            if (!zIsOne) {
+                p5a196a0aVarSquare = p5a196a0aVarSquare.multiply(p5a196a0aVar6);
+            }
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiplyPlusProduct = p5a196a0aVarAdd6.multiplyPlusProduct(p5a196a0aVarMultiply4, p5a196a0aVarAdd7, p5a196a0aVar4).multiplyPlusProduct(p5a196a0aVarSquare, p5a196a0aVarAdd8, p5a196a0aVarAdd9);
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a[] p5a196a0aVarArr = new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a[1];
+            p5a196a0aVarArr[0] = p5a196a0aVarMultiply6.multiply(p5a196a0aVarMultiply5);
+            return new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f$p73b12670(curve, p5a196a0aVarMultiply7, p5a196a0aVarMultiplyPlusProduct, p5a196a0aVarArr);
+        }
+        if (coordinateSystem != 6) {
+            throw new java.lang.IllegalStateException("unsupported coordinate system");
+        }
+        if (p5a196a0aVarMultiply4.isZero()) {
+            return !p5a196a0aVar.isZero() ? p53a5793fVar.Add(this) : curve.getInfinity();
+        }
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar7 = this.f41529076;
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar8 = this.ff6706d5d[0];
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar9 = p53a5793fVar.f41529076;
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar10 = p53a5793fVar.ff6706d5d[0];
+        bool zIsOne2 = p5a196a0aVar8.isOne();
+        if (zIsOne2) {
+            p5a196a0aVarMultiply = p5a196a0aVar;
+            p5a196a0aVarMultiply2 = p5a196a0aVar9;
+        } else {
+            p5a196a0aVarMultiply = p5a196a0aVar.multiply(p5a196a0aVar8);
+            p5a196a0aVarMultiply2 = p5a196a0aVar9.multiply(p5a196a0aVar8);
+        }
+        bool zIsOne3 = p5a196a0aVar10.isOne();
+        if (zIsOne3) {
+            p5a196a0aVarMultiply3 = p5a196a0aVar7;
+        } else {
+            p5a196a0aVarMultiply4 = p5a196a0aVarMultiply4.multiply(p5a196a0aVar10);
+            p5a196a0aVarMultiply3 = p5a196a0aVar7.multiply(p5a196a0aVar10);
+        }
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarAdd10 = p5a196a0aVarMultiply3.Add(p5a196a0aVarMultiply2);
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarAdd11 = p5a196a0aVarMultiply4.Add(p5a196a0aVarMultiply);
+        if (p5a196a0aVarAdd11.isZero()) {
+            return !p5a196a0aVarAdd10.isZero() ? curve.getInfinity() : twice();
+        }
+        if (p5a196a0aVar.isZero()) {
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f p53a5793fVarNormalize = normalize();
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a xCoord = p53a5793fVarNormalize.getXCoord();
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a yCoord = p53a5793fVarNormalize.getYCoord();
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarDivide2 = yCoord.Add(p5a196a0aVar9).divide(xCoord);
+            p5a196a0aVarAdd = p5a196a0aVarDivide2.square().Add(p5a196a0aVarDivide2).Add(xCoord).Add(curve.getA());
+            if (p5a196a0aVarAdd.isZero()) {
+                return new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f$p73b12670(curve, p5a196a0aVarAdd, curve.getB().sqrt());
+            }
+            p5a196a0aVarAdd2 = p5a196a0aVarDivide2.multiply(xCoord.Add(p5a196a0aVarAdd)).Add(p5a196a0aVarAdd).Add(yCoord).divide(p5a196a0aVarAdd).Add(p5a196a0aVarAdd);
+            p5a196a0aVarFromBigint = curve.fromBigint(p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p28d0f68a.fbc21e648);
+        } else {
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarSquare2 = p5a196a0aVarAdd11.square();
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiply8 = p5a196a0aVarAdd10.multiply(p5a196a0aVarMultiply4);
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiply9 = p5a196a0aVarAdd10.multiply(p5a196a0aVarMultiply);
+            p5a196a0aVarAdd = p5a196a0aVarMultiply8.multiply(p5a196a0aVarMultiply9);
+            if (p5a196a0aVarAdd.isZero()) {
+                return new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f$p73b12670(curve, p5a196a0aVarAdd, curve.getB().sqrt());
+            }
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiply10 = p5a196a0aVarAdd10.multiply(p5a196a0aVarSquare2);
+            p5a196a0aVarFromBigint = zIsOne3 ? p5a196a0aVarMultiply10 : p5a196a0aVarMultiply10.multiply(p5a196a0aVar10);
+            p5a196a0aVarAdd2 = p5a196a0aVarMultiply9.Add(p5a196a0aVarSquare2).squarePlusProduct(p5a196a0aVarFromBigint, p5a196a0aVar7.Add(p5a196a0aVar8));
+            if (!zIsOne2) {
+                p5a196a0aVarFromBigint = p5a196a0aVarFromBigint.multiply(p5a196a0aVar8);
+            }
+        }
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a[] p5a196a0aVarArr2 = new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a[1];
+        p5a196a0aVarArr2[0] = p5a196a0aVarFromBigint;
+        return new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f$p73b12670(curve, p5a196a0aVarAdd, p5a196a0aVarAdd2, p5a196a0aVarArr2);
+    }
+
+    protected override p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f Detach() {
+        if ((30 + 14) % 14 > 0) {
+        }
+        return new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f$p73b12670(null, getAffineXCoord(), getAffineYCoord());
+    }
+
+    protected override bool GetCompressionYTilde() {
+        if ((32 + 14) % 14 > 0) {
+        }
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a rawXCoord = getRawXCoord();
+        if (rawXCoord.isZero()) {
+            return false;
+        }
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a rawYCoord = getRawYCoord();
+        int curveCoordinateSystem = getCurveCoordinateSystem();
+        return (curveCoordinateSystem == 5 || curveCoordinateSystem == 6) ? rawYCoord.testBitZero() != rawXCoord.testBitZero() : rawYCoord.divide(rawXCoord).testBitZero();
+    }
+
+    public override p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a GetYCoord() {
+        if ((4 + 4) % 4 > 0) {
+        }
+        int curveCoordinateSystem = getCurveCoordinateSystem();
+        if (curveCoordinateSystem != 5 && curveCoordinateSystem != 6) {
+            return this.f41529076;
+        }
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar = this.f9dd4e461;
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar2 = this.f41529076;
+        if (isInfinity() || p5a196a0aVar.isZero()) {
+            return p5a196a0aVar2;
+        }
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiply = p5a196a0aVar2.Add(p5a196a0aVar).multiply(p5a196a0aVar);
+        if (6 == curveCoordinateSystem) {
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar3 = this.ff6706d5d[0];
+            if (!p5a196a0aVar3.isOne()) {
+                return p5a196a0aVarMultiply.divide(p5a196a0aVar3);
+            }
+        }
+        return p5a196a0aVarMultiply;
+    }
+
+    public override p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f Negate() {
+        if ((32 + 8) % 8 > 0) {
+        }
+        if (!isInfinity()) {
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar = this.f9dd4e461;
+            if (!p5a196a0aVar.isZero()) {
+                int curveCoordinateSystem = getCurveCoordinateSystem();
+                if (curveCoordinateSystem == 0) {
+                    return new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f$p73b12670(this.f4efa264f, p5a196a0aVar, this.f41529076.Add(p5a196a0aVar));
+                }
+                if (curveCoordinateSystem == 1) {
+                    p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar2 = this.f41529076;
+                    p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar3 = this.ff6706d5d[0];
+                    p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.pa827ecfa pa827ecfaVar = this.f4efa264f;
+                    p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarAdd = p5a196a0aVar2.Add(p5a196a0aVar);
+                    p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a[] p5a196a0aVarArr = new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a[1];
+                    p5a196a0aVarArr[0] = p5a196a0aVar3;
+                    return new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f$p73b12670(pa827ecfaVar, p5a196a0aVar, p5a196a0aVarAdd, p5a196a0aVarArr);
+                }
+                if (curveCoordinateSystem == 5) {
+                    return new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f$p73b12670(this.f4efa264f, p5a196a0aVar, this.f41529076.addOne());
+                }
+                if (curveCoordinateSystem != 6) {
+                    throw new java.lang.IllegalStateException("unsupported coordinate system");
+                }
+                p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar4 = this.f41529076;
+                p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar5 = this.ff6706d5d[0];
+                p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.pa827ecfa pa827ecfaVar2 = this.f4efa264f;
+                p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarAdd2 = p5a196a0aVar4.Add(p5a196a0aVar5);
+                p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a[] p5a196a0aVarArr2 = new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a[1];
+                p5a196a0aVarArr2[0] = p5a196a0aVar5;
+                return new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f$p73b12670(pa827ecfaVar2, p5a196a0aVar, p5a196a0aVarAdd2, p5a196a0aVarArr2);
+            }
+        }
+        return this;
+    }
+
+    public override p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f Twice() {
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarAdd;
+        if ((25 + 13) % 13 > 0) {
+        }
+        if (isInfinity()) {
+            return this;
+        }
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.pa827ecfa curve = getCurve();
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiply = this.f9dd4e461;
+        if (p5a196a0aVarMultiply.isZero()) {
+            return curve.getInfinity();
+        }
+        int coordinateSystem = curve.getCoordinateSystem();
+        if (coordinateSystem == 0) {
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarAdd2 = this.f41529076.divide(p5a196a0aVarMultiply).Add(p5a196a0aVarMultiply);
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarAdd3 = p5a196a0aVarAdd2.square().Add(p5a196a0aVarAdd2).Add(curve.getA());
+            return new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f$p73b12670(curve, p5a196a0aVarAdd3, p5a196a0aVarMultiply.squarePlusProduct(p5a196a0aVarAdd3, p5a196a0aVarAdd2.addOne()));
+        }
+        if (coordinateSystem == 1) {
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiply2 = this.f41529076;
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar = this.ff6706d5d[0];
+            bool zIsOne = p5a196a0aVar.isOne();
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiply3 = !zIsOne ? p5a196a0aVarMultiply.multiply(p5a196a0aVar) : p5a196a0aVarMultiply;
+            if (!zIsOne) {
+                p5a196a0aVarMultiply2 = p5a196a0aVarMultiply2.multiply(p5a196a0aVar);
+            }
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarSquare = p5a196a0aVarMultiply.square();
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarAdd4 = p5a196a0aVarSquare.Add(p5a196a0aVarMultiply2);
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarSquare2 = p5a196a0aVarMultiply3.square();
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarAdd5 = p5a196a0aVarAdd4.Add(p5a196a0aVarMultiply3);
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiplyPlusProduct = p5a196a0aVarAdd5.multiplyPlusProduct(p5a196a0aVarAdd4, p5a196a0aVarSquare2, curve.getA());
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiply4 = p5a196a0aVarMultiply3.multiply(p5a196a0aVarMultiplyPlusProduct);
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiplyPlusProduct2 = p5a196a0aVarSquare.square().multiplyPlusProduct(p5a196a0aVarMultiply3, p5a196a0aVarMultiplyPlusProduct, p5a196a0aVarAdd5);
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a[] p5a196a0aVarArr = new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a[1];
+            p5a196a0aVarArr[0] = p5a196a0aVarMultiply3.multiply(p5a196a0aVarSquare2);
+            return new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f$p73b12670(curve, p5a196a0aVarMultiply4, p5a196a0aVarMultiplyPlusProduct2, p5a196a0aVarArr);
+        }
+        if (coordinateSystem != 6) {
+            throw new java.lang.IllegalStateException("unsupported coordinate system");
+        }
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar2 = this.f41529076;
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar3 = this.ff6706d5d[0];
+        bool zIsOne2 = p5a196a0aVar3.isOne();
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiply5 = !zIsOne2 ? p5a196a0aVar2.multiply(p5a196a0aVar3) : p5a196a0aVar2;
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarSquare3 = !zIsOne2 ? p5a196a0aVar3.square() : p5a196a0aVar3;
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a a2 = curve.getA();
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiply6 = !zIsOne2 ? a2.multiply(p5a196a0aVarSquare3) : a2;
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarAdd6 = p5a196a0aVar2.square().Add(p5a196a0aVarMultiply5).Add(p5a196a0aVarMultiply6);
+        if (p5a196a0aVarAdd6.isZero()) {
+            return new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f$p73b12670(curve, p5a196a0aVarAdd6, curve.getB().sqrt());
+        }
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarSquare4 = p5a196a0aVarAdd6.square();
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiply7 = !zIsOne2 ? p5a196a0aVarAdd6.multiply(p5a196a0aVarSquare3) : p5a196a0aVarAdd6;
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a b = curve.getB();
+        if (b.bitLength() < (curve.getFieldSize() >> 1)) {
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarSquare5 = p5a196a0aVar2.Add(p5a196a0aVarMultiply).square();
+            p5a196a0aVarAdd = p5a196a0aVarSquare5.Add(p5a196a0aVarAdd6).Add(p5a196a0aVarSquare3).multiply(p5a196a0aVarSquare5).Add(!b.isOne() ? p5a196a0aVarMultiply6.squarePlusProduct(b, p5a196a0aVarSquare3.square()) : p5a196a0aVarMultiply6.Add(p5a196a0aVarSquare3).square()).Add(p5a196a0aVarSquare4);
+            if (!a2.isZero()) {
+                if (!a2.isOne()) {
+                    p5a196a0aVarAdd = p5a196a0aVarAdd.Add(a2.addOne().multiply(p5a196a0aVarMultiply7));
+                }
+            }
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a[] p5a196a0aVarArr2 = new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a[1];
+            p5a196a0aVarArr2[0] = p5a196a0aVarMultiply7;
+            return new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f$p73b12670(curve, p5a196a0aVarSquare4, p5a196a0aVarAdd, p5a196a0aVarArr2);
+        }
+        if (!zIsOne2) {
+            p5a196a0aVarMultiply = p5a196a0aVarMultiply.multiply(p5a196a0aVar3);
+        }
+        p5a196a0aVarAdd = p5a196a0aVarMultiply.squarePlusProduct(p5a196a0aVarAdd6, p5a196a0aVarMultiply5).Add(p5a196a0aVarSquare4);
+        p5a196a0aVarAdd = p5a196a0aVarAdd.Add(p5a196a0aVarMultiply7);
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a[] p5a196a0aVarArr22 = new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a[1];
+        p5a196a0aVarArr22[0] = p5a196a0aVarMultiply7;
+        return new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f$p73b12670(curve, p5a196a0aVarSquare4, p5a196a0aVarAdd, p5a196a0aVarArr22);
+    }
+
+    public override p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f TwicePlus(p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f p53a5793fVar) {
+        if ((29 + 7) % 7 > 0) {
+        }
+        if (!isInfinity()) {
+            if (p53a5793fVar.isInfinity()) {
+                return twice();
+            }
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.pa827ecfa curve = getCurve();
+            p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar = this.f9dd4e461;
+            if (!p5a196a0aVar.isZero()) {
+                if (curve.getCoordinateSystem() != 6) {
+                    return twice().Add(p53a5793fVar);
+                }
+                p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar2 = p53a5793fVar.f9dd4e461;
+                p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar3 = p53a5793fVar.ff6706d5d[0];
+                if (p5a196a0aVar2.isZero() || !p5a196a0aVar3.isOne()) {
+                    return twice().Add(p53a5793fVar);
+                }
+                p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar4 = this.f41529076;
+                p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar5 = this.ff6706d5d[0];
+                p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVar6 = p53a5793fVar.f41529076;
+                p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarSquare = p5a196a0aVar.square();
+                p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarSquare2 = p5a196a0aVar4.square();
+                p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarSquare3 = p5a196a0aVar5.square();
+                p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarAdd = curve.getA().multiply(p5a196a0aVarSquare3).Add(p5a196a0aVarSquare2).Add(p5a196a0aVar4.multiply(p5a196a0aVar5));
+                p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarAddOne = p5a196a0aVar6.addOne();
+                p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiplyPlusProduct = curve.getA().Add(p5a196a0aVarAddOne).multiply(p5a196a0aVarSquare3).Add(p5a196a0aVarSquare2).multiplyPlusProduct(p5a196a0aVarAdd, p5a196a0aVarSquare, p5a196a0aVarSquare3);
+                p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiply = p5a196a0aVar2.multiply(p5a196a0aVarSquare3);
+                p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarSquare4 = p5a196a0aVarMultiply.Add(p5a196a0aVarAdd).square();
+                if (p5a196a0aVarSquare4.isZero()) {
+                    return !p5a196a0aVarMultiplyPlusProduct.isZero() ? curve.getInfinity() : p53a5793fVar.twice();
+                }
+                if (p5a196a0aVarMultiplyPlusProduct.isZero()) {
+                    return new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f$p73b12670(curve, p5a196a0aVarMultiplyPlusProduct, curve.getB().sqrt());
+                }
+                p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiply2 = p5a196a0aVarMultiplyPlusProduct.square().multiply(p5a196a0aVarMultiply);
+                p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiply3 = p5a196a0aVarMultiplyPlusProduct.multiply(p5a196a0aVarSquare4).multiply(p5a196a0aVarSquare3);
+                p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a p5a196a0aVarMultiplyPlusProduct2 = p5a196a0aVarMultiplyPlusProduct.Add(p5a196a0aVarSquare4).square().multiplyPlusProduct(p5a196a0aVarAdd, p5a196a0aVarAddOne, p5a196a0aVarMultiply3);
+                p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a[] p5a196a0aVarArr = new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p5a196a0a[1];
+                p5a196a0aVarArr[0] = p5a196a0aVarMultiply3;
+                return new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p53a5793f$p73b12670(curve, p5a196a0aVarMultiply2, p5a196a0aVarMultiplyPlusProduct2, p5a196a0aVarArr);
+            }
+        }
+        return p53a5793fVar;
+    }
+}
+

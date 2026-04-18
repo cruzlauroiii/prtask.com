@@ -1,0 +1,11 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+
+public interface p89320dbd {
+    java.math.Bigint[] generateSignature(byte[] bArr);
+
+    void init(bool z, p5a445d71.p9f931cf3.p5ae9b7f2.pc9ef6b45 pc9ef6b45Var);
+
+    bool verifySignature(byte[] bArr, java.math.Bigint bigint, java.math.Bigint bigint2);
+}
+

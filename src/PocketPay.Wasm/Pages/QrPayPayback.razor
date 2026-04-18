@@ -1,0 +1,33 @@
+@page "/qr-pay-payback"
+@inject NavigationManager Nav
+
+<div style="width:100%">
+    <header class="toolbar" style="width:100%"></header>
+    <div style="width:100%">
+        <div class="qrPayGroup">
+            <img class="qrPaySellReceiptImage" style="width:100%" />
+        </div>
+        <div class="errorAfterQrGenerationLayout" style="display:flex;flex-direction:column">
+            <img src="img/ic_error_big.png" alt="ic_error_big" />
+            <span class="tvQrPaybackError"></span>
+            <button class="btnTryAgainAfterQrGeneration"></button>
+        </div>
+        <div class="successfulLayout" style="display:flex;flex-direction:column">
+            <img src="img/ic_ok_big.png" alt="ic_ok_big" />
+            <span class="tvQrPaybackSuccess"></span>
+        </div>
+    </div>
+    <progress class="loading"></progress>
+    <button class="btnFinish" style="width:100%"></button>
+</div>
+
+@code {
+
+    private void OnField2131361993Click()
+    {
+    }
+
+    private void OnField2131361984Click()
+    {
+    }
+}

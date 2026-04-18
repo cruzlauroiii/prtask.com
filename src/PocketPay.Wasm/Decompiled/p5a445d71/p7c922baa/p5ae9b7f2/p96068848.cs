@@ -1,0 +1,12 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+
+public class p96068848 : p5a445d71.p7c922baa.p5ae9b7f2.pc8f07219 {
+    public p96068848() {
+    }
+
+    public p96068848(java.lang.string str) {
+        super(str);
+    }
+}
+

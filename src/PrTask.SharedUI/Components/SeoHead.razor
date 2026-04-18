@@ -1,0 +1,22 @@
+@using PrTask.Domain.Constants
+<PageTitle>@Title</PageTitle>
+<HeadContent>
+    <meta name="description" content="@Description" />
+    <meta property="og:title" content="@Title" />
+    <meta property="og:description" content="@Description" />
+    <meta property="og:type" content="@OgType" />
+    <meta property="og:url" content="@CanonicalUrl" />
+    <meta property="og:site_name" content="@AppConstants.AppName" />
+    <meta name="twitter:card" content="@TwitterCard" />
+    <meta name="twitter:title" content="@Title" />
+    <meta name="twitter:description" content="@Description" />
+    <link rel="canonical" href="@CanonicalUrl" />
+</HeadContent>
+@code {
+    [Parameter] public string Title { get; set; } = string.Empty;
+    [Parameter] public string Description { get; set; } = string.Empty;
+    [Parameter] public string OgType { get; set; } = SeoConstants.DefaultOgType;
+    [Parameter] public string TwitterCard { get; set; } = SeoConstants.DefaultTwitterCard;
+    [Inject] private NavigationManager NavigationManager { get; set; } = default!;
+    private string CanonicalUrl => NavigationManager.Uri;
+}

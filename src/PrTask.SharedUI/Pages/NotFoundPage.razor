@@ -1,0 +1,7 @@
+@page "/NotFound"
+@using PrTask.Domain.Constants
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> L
+
+<SeoHead Title="@AppConstants.PageNotFoundTitle" Description="@AppConstants.PageNotFoundMessage" />
+<h1>@L["PageNotFoundTitle"]</h1>
+<p>@L["PageNotFoundMessage"]</p>

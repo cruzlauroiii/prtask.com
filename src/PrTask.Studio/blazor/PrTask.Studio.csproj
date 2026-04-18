@@ -1,0 +1,18 @@
+     1→<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+     2→  <PropertyGroup>
+     3→    <TargetFramework>net11.0</TargetFramework>
+     4→    <ImplicitUsings>enable</ImplicitUsings>
+     5→    <Nullable>enable</Nullable>
+     6→    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+     7→    <NoWarn>$(NoWarn);SA1132;SA1402;SA1503;SA1633;CS0162;CS0169;CS0219;CS0414;CS0649;CS1591;IL2110;IL2111;PT003;PT004;PT005;PT006;PT007;CA1050;CA1806;CA1838;CA5394;IDE0011;IDE0028;IDE0059;IDE0350;MA0047;MA0075;MA0099;S101;S1144;S1481;S3903;S3459;RCS1163;RCS1213</NoWarn>
+     8→    <EnableTrimAnalyzer>false</EnableTrimAnalyzer>
+     9→    <TrimMode>partial</TrimMode>
+    10→  </PropertyGroup>
+    11→  <ItemGroup>
+    12→    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="11.0.0-preview.2.26159.112" />
+    13→  </ItemGroup>
+    14→  <ItemGroup>
+    15→    <Compile Include="..\*.g.cs" Link="Generated\%(Filename)%(Extension)" />
+    16→  </ItemGroup>
+    17→</Project>
+    18→

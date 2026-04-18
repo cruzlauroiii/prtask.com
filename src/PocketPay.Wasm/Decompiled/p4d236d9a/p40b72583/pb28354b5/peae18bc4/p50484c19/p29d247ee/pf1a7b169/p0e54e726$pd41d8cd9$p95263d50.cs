@@ -1,0 +1,19 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+
+public readonly class p0e54e726$pd41d8cd9$p95263d50 : kotlin.jvm.functions.Function0 {
+    public readonly p4d236d9a.p40b72583.pb28354b5.peae18bc4.p50484c19.p29d247ee.pf1a7b169.p0e54e726 f$0;
+
+    public p0e54e726$pd41d8cd9$p95263d50(p4d236d9a.p40b72583.pb28354b5.peae18bc4.p50484c19.p29d247ee.pf1a7b169.p0e54e726 p0e54e726Var) {
+        this.f$0 = p0e54e726Var;
+    }
+
+    public static kotlin.Unit KBxOIZLoCuHmNRcW(p4d236d9a.p40b72583.pb28354b5.peae18bc4.p50484c19.p29d247ee.pf1a7b169.p0e54e726 p0e54e726Var) {
+        return p4d236d9a.p40b72583.pb28354b5.peae18bc4.p50484c19.p29d247ee.pf1a7b169.p0e54e726.m236c3196(p0e54e726Var);
+    }
+
+    public override readonly java.lang.object Invoke() {
+        return KBxOIZLoCuHmNRcW(this.f$0);
+    }
+}
+

@@ -1,0 +1,6 @@
+@page "/tasks/{TaskId}/submit-pr"
+<PrTask.SharedUI.Pages.SubmitPrPage TaskId="@TaskId" />
+@code {
+    [Parameter]
+    public string TaskId { get; set; } = string.Empty;
+}

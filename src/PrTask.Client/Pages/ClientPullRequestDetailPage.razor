@@ -1,0 +1,6 @@
+@page "/prs/{PrId}"
+<PrTask.SharedUI.Pages.PullRequestDetailPage PrId="@PrId" />
+@code {
+    [Parameter]
+    public string PrId { get; set; } = string.Empty;
+}

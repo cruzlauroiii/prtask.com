@@ -1,0 +1,7 @@
+{
+  "id": {
+    "RefundDisputeDescription": "Jika klien meyakini pull request yang telah disetujui tidak memenuhi persyaratan tugas, PrTask memulai proses arbitrase. Kedua pihak harus mengajukan bukti dalam 7 hari kerja. Kemungkinan hasilnya mencakup pengembalian dana penuh kepada klien jika pekerjaan tidak memenuhi persyaratan, pembayaran penuh kepada developer jika pekerjaan memenuhi persyaratan tugas yang dinyatakan, atau pengembalian dana sebagian jika pekerjaan hanya sebagian memenuhi persyaratan (pembagian ditentukan oleh PrTask).",
+    "RefundDisputeHeading": "Pull request yang dipersengketakan",
+    "RefundHowToDescription": "Untuk meminta pengembalian dana, masuk ke akun PrTask Anda, buka tugas yang dimaksud, lalu pilih \"Request Refund.\" Sebagai alternatif, kirim email ke support@prtask.com dengan ID tugas Anda dan alasan permintaan pengembalian dana. Semua permintaan pengembalian dana ditinjau dalam 2 hari kerja."
+  }
+}

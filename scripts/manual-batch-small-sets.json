@@ -1,0 +1,53 @@
+{
+  "fil": {
+    "CategoryAccount": "Akun",
+    "CategoryLegal": "Pang-legal",
+    "FooterLegalHeading": "Pang-legal",
+    "PrivacyLabel": "Pribasiya",
+    "SettingsAccountHeading": "Akun",
+    "SettingsPrivacyHeading": "Pribasiya",
+    "TaskDetailDeadlineLabel": "Huling araw: "
+  },
+  "it": {
+    "CategoryAccount": "Account utente",
+    "DownloadLabel": "Scarica",
+    "HomeLabel": "Pagina iniziale",
+    "NoText": "No.",
+    "PrivacyLabel": "Riservatezza",
+    "SettingsAccountHeading": "Account utente",
+    "SettingsPrivacyHeading": "Riservatezza"
+  },
+  "nl": {
+    "CategoryAccount": "Accountgegevens",
+    "CreateTaskRepoUrlLabel": "Repository-URL",
+    "PrivacyLabel": "Privacybeleid",
+    "SettingsAccountHeading": "Accountgegevens",
+    "SettingsAvatarUrlLabel": "Avatar-URL",
+    "SettingsPrivacyHeading": "Privacy",
+    "TaskDetailDeadlineLabel": "Uiterste datum: "
+  },
+  "fr": {
+    "CategoryClient": "Clientèle",
+    "CreateTaskDescriptionLabel": "Description du travail",
+    "DownloadVersionLabel": "Version du logiciel",
+    "PaymentHeaderDate": "Date de paiement"
+  },
+  "es": {
+    "CategoryLegal": "Asuntos legales",
+    "DownloadVersionLabel": "Versión",
+    "NoText": "No."
+  },
+  "pt": {
+    "DownloadLabel": "Baixar"
+  },
+  "de": {
+    "DownloadVersionLabel": "Versionsnummer"
+  },
+  "ja": {
+    "FooterCopyrightText": "© 2026 PrTask. 無断転載を禁じます。",
+    "LanguageEnglish": "英語"
+  },
+  "tr": {
+    "SettingsAvatarUrlLabel": "Avatar URL'si"
+  }
+}

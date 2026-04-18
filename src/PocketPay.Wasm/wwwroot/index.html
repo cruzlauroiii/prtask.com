@@ -1,0 +1,154 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>WillowMaze</title><base href="/" /><link rel="icon" href="data:," />
+<link rel="stylesheet" href="css/app.css" />
+<!-- No scoped CSS -->
+</head><body>
+<div id="app">Loading WillowMaze...</div>
+<script src="_framework/blazor.webassembly.js"></script>
+<script>
+(function(){
+  var WssPort = 0;
+  var WssSocket = null;
+  var Connected = false;
+
+  function TryConnect(Host, Port, FullUrl) {
+    return new Promise(function(Resolve) {
+      try {
+        var Url = FullUrl || ('wss://' + Host + ':' + Port);
+        var Ws = new WebSocket(Url);
+        var Timer = setTimeout(function() { try { Ws.close(); } catch(E) {} Resolve(null); }, 5000);
+        Ws.onopen = function() { clearTimeout(Timer); Resolve(Ws); };
+        Ws.onerror = function() { clearTimeout(Timer); Resolve(null); };
+      } catch(E) { Resolve(null); }
+    });
+  }
+
+  async function ScanSubnet() {
+    var ProxyUrl = window.location.origin.replace('http:', 'wss:').replace('https:', 'wss:') + '/ws';
+    console.log('Trying WSS proxy: ' + ProxyUrl);
+    var Ws = await TryConnect(null, null, ProxyUrl);
+    if (Ws) { SetupConnection(Ws); return; }
+    var DirectUrls = ['wss://localhost:8769', 'wss://127.0.0.1:8769'];
+    for (var I = 0; I < DirectUrls.length; I++) {
+      console.log('Trying direct: ' + DirectUrls[I]);
+      Ws = await TryConnect(null, null, DirectUrls[I]);
+      if (Ws) { SetupConnection(Ws); return; }
+    }
+    console.log('Backoffice not found, retrying in 10s');
+    setTimeout(ScanSubnet, 10000);
+  }
+
+  function SetupConnection(Ws) {
+    Connected = true;
+    WssSocket = Ws;
+    console.log('Connected to backoffice');
+    Ws.send(JSON.stringify({ClientType:'Browser'}));
+
+    Ws.onmessage = function(Ev) {
+      try {
+        var Msg = JSON.parse(Ev.data);
+        if (Msg.Method === 'CardData' && Msg.Payload) {
+          window.dispatchEvent(new CustomEvent('BackofficeCardData', {detail: Msg.Payload}));
+        } else if (Msg.Type === 'Response') {
+          window.dispatchEvent(new CustomEvent('BackofficeResponse', {detail: Msg}));
+        } else if (Msg.Type === 'PaymentResult' || Msg.Method === 'PaymentResult') {
+          window.dispatchEvent(new CustomEvent('BackofficePaymentResult', {detail: Msg.Data || Msg}));
+        } else if (Msg.Method === 'StoredCards') {
+          window.StoredCards = Msg.Cards || [];
+          window.dispatchEvent(new CustomEvent('BackofficeStoredCards', {detail: Msg.Cards}));
+          RenderCards();
+        } else if (Msg.Method === 'ScreenData' && Msg.Image) {
+          RenderScreen(Msg.Image, Msg.Width || 1440, Msg.Height || 3120);
+        } else if (Msg.Method === 'DeviceInfo') {
+          window.dispatchEvent(new CustomEvent('BackofficeDeviceInfo', {detail: Msg.Payload}));
+        }
+      } catch(E) { console.error('WSS message error', E); }
+    };
+
+    Ws.onclose = function() { Connected = false; WssSocket = null; console.log('Backoffice disconnected'); setTimeout(ScanSubnet, 5000); };
+    Ws.onerror = function() { Connected = false; WssSocket = null; };
+
+    window.BackofficeSend = function(Msg) { if (WssSocket && WssSocket.readyState === 1) WssSocket.send(JSON.stringify(Msg)); };
+    window.BackofficeReadCard = function() { window.BackofficeSend({Method: 'ReadCard'}); };
+    window.BackofficeSubmitPayment = function(Amount) { window.BackofficeSend({Method: 'SubmitPayment', Amount: Amount || 100}); };
+    window.BackofficeGetCards = function() { window.BackofficeSend({Method: 'GetCards'}); };
+    window.BackofficePayWithCard = function(CardId, Amount) { window.BackofficeSend({Method: 'PayWithCard', CardId: CardId, Amount: Amount || 100}); };
+    window.BackofficeDeleteCard = function(CardId) { window.BackofficeSend({Method: 'DeleteCard', CardId: CardId}); };
+    window.BackofficeUpdateCard = function(Card) { window.BackofficeSend({Method: 'UpdateCard', Payload: Card}); };
+    window.BackofficeGetCards();
+  }
+
+  window.StoredCards = [];
+  function RenderCards() {
+    if (window.location.pathname !== '/tap-on-phone-sell') { var Old = document.getElementById('StoredCardsPanel'); if (Old) Old.remove(); return; }
+    var Container = document.getElementById('StoredCardsPanel');
+    if (!Container) {
+      Container = document.createElement('div');
+      Container.id = 'StoredCardsPanel';
+      Container.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:#1a1a2e;color:#fff;padding:16px;font-family:monospace;max-height:50vh;overflow-y:auto;z-index:9999;display:flex;flex-direction:column;gap:8px;';
+      document.body.appendChild(Container);
+    }
+    var Html = '<div style="display:flex;justify-content:space-between;align-items:center"><b>Stored Cards (' + window.StoredCards.length + ')</b><button onclick="BackofficeReadCard()" style="padding:8px 16px;background:#4CAF50;color:#fff;border:none;border-radius:4px;cursor:pointer">Scan New Card</button></div>';
+    window.StoredCards.forEach(function(C) {
+      var Pan = C.MaskedPan || C.Pan || 'Unknown';
+      var Net = C.Network || '';
+      var Exp = C.Expiry || '';
+      var Id = C.Id || '';
+      Html += '<div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:#16213e;padding:12px;border-radius:8px">';
+      Html += '<span style="flex:1;min-width:200px">' + Net + ' ' + Pan + ' Exp:' + Exp + '</span>';
+      Html += '<input id="amt_' + Id + '" type="number" value="100" min="1" style="width:80px;padding:4px;background:#0f3460;color:#fff;border:1px solid #555;border-radius:4px"/>';
+      Html += '<button onclick="BackofficePayWithCard(\'' + Id + '\', parseInt(document.getElementById(\'amt_' + Id + '\').value))" style="padding:8px 16px;background:#e94560;color:#fff;border:none;border-radius:4px;cursor:pointer">Pay</button>';
+      Html += '<button onclick="BackofficeDeleteCard(\'' + Id + '\')" style="padding:8px;background:#555;color:#fff;border:none;border-radius:4px;cursor:pointer">Del</button>';
+      Html += '</div>';
+    });
+    if (window.StoredCards.length === 0) Html += '<div style="color:#888">No cards stored. Tap Scan New Card then hold a contactless card on the phone.</div>';
+    Container.innerHTML = Html;
+  }
+
+  function RenderScreen(B64, W, H) {
+    var Panel = document.getElementById('ScreenPanel');
+    if (!Panel) {
+      Panel = document.createElement('div');
+      Panel.id = 'ScreenPanel';
+      Panel.style.cssText = 'position:fixed;top:0;right:0;bottom:0;width:360px;background:#000;z-index:10000;display:flex;flex-direction:column;box-shadow:-4px 0 20px rgba(0,0,0,0.5);';
+      document.body.appendChild(Panel);
+    }
+    var ScaleX = W / 360;
+    var ImgH = Math.round(H / ScaleX);
+    var GridSize = 100;
+    Panel.innerHTML = '<div style="display:flex;gap:4px;padding:4px;background:#1a1a2e">' +
+      '<button onclick="BackofficeSend({Method:\'Screenshot\'})" style="flex:1;padding:6px;background:#4CAF50;color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:11px">Refresh</button>' +
+      '<button onclick="BackofficeSend({Method:\'LaunchApp\',Package:\'com.gcash.business.pocketpay\'})" style="flex:1;padding:6px;background:#e94560;color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:11px">PocketPay</button>' +
+      '<button onclick="BackofficeSend({Method:\'KeyEvent\',Key:\'KEYCODE_HOME\'})" style="padding:6px;background:#555;color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:11px">Home</button>' +
+      '<button onclick="BackofficeSend({Method:\'KeyEvent\',Key:\'KEYCODE_BACK\'})" style="padding:6px;background:#555;color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:11px">Back</button>' +
+      '<button onclick="document.getElementById(\'ScreenPanel\').remove()" style="padding:6px;background:#333;color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:11px">X</button>' +
+      '</div>' +
+      '<div id="ScreenCoords" style="padding:2px 8px;background:#111;color:#0f0;font-family:monospace;font-size:11px">Click on screen to tap</div>' +
+      '<div style="flex:1;overflow-y:auto;position:relative;cursor:crosshair" id="ScreenImgWrap">' +
+      '<img src="data:image/png;base64,' + B64 + '" style="width:360px;display:block" />' +
+      '<canvas id="ScreenGrid" width="360" height="' + ImgH + '" style="position:absolute;top:0;left:0;pointer-events:none"></canvas>' +
+      '</div>';
+    var Canvas = document.getElementById('ScreenGrid');
+    var Ctx2d = Canvas.getContext('2d');
+    Ctx2d.strokeStyle = 'rgba(0,255,0,0.3)';
+    Ctx2d.fillStyle = 'rgba(0,255,0,0.6)';
+    Ctx2d.font = '9px monospace';
+    for (var Gx = 0; Gx < 360; Gx += GridSize / ScaleX) { Ctx2d.beginPath(); Ctx2d.moveTo(Gx, 0); Ctx2d.lineTo(Gx, ImgH); Ctx2d.stroke(); Ctx2d.fillText(Math.round(Gx * ScaleX), Gx + 2, 10); }
+    for (var Gy = 0; Gy < ImgH; Gy += GridSize / ScaleX) { Ctx2d.beginPath(); Ctx2d.moveTo(0, Gy); Ctx2d.lineTo(360, Gy); Ctx2d.stroke(); Ctx2d.fillText(Math.round(Gy * ScaleX), 2, Gy + 10); }
+    document.getElementById('ScreenImgWrap').onclick = function(E) {
+      var R = E.currentTarget.getBoundingClientRect();
+      var X = Math.round((E.clientX - R.left) * ScaleX);
+      var Y = Math.round((E.clientY - R.top + E.currentTarget.scrollTop) * ScaleX);
+      document.getElementById('ScreenCoords').textContent = 'Tapped: ' + X + ', ' + Y;
+      BackofficeSend({Method: 'Tap', X: X, Y: Y});
+      setTimeout(function() { BackofficeSend({Method: 'Screenshot'}); }, 1000);
+    };
+  }
+
+  window.ShowScreen = function() { BackofficeSend({Method: 'Screenshot'}); };
+
+  ScanSubnet();
+})();
+</script>
+</body></html>

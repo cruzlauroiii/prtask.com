@@ -1,0 +1,108 @@
+{
+  "es": {
+    "LicensesContactDescription": "Para consultas de licencias, preguntas de cumplimiento o inquietudes sobre el procesamiento de tarjetas de credito, contacta a compliance en prtask.com.",
+    "LicensesOpenSourceGratitude": "Estamos agradecidos con la comunidad de codigo abierto por hacer disponibles estas herramientas. Para una lista completa de dependencias y sus licencias, consulte el manifiesto de dependencias del proyecto.",
+    "LicensesThirdPartyGitHub": "GitHub: se usa para la autenticacion OAuth (Open Authorization) y la integracion de pull requests, sujeto a los Terminos de Servicio de GitHub.",
+    "LoginPublicPrsHeading": "Pull requests publicos",
+    "PaymentSeoTitle": "Pagos - PrTask",
+    "LicensesCodeOwnershipDescription": "Los desarrolladores conservan la titularidad total de los derechos de autor de todo el codigo que envian a traves de PrTask. Tras la aprobacion y el pago de una recompensa, el desarrollador otorga al cliente una licencia perpetua, mundial, no exclusiva e irrevocable para usar, modificar, reproducir y distribuir el codigo enviado, sujeta a la licencia de codigo abierto del repositorio. PrTask no reclama la propiedad de ningun codigo enviado por los desarrolladores. Los desarrolladores deben garantizar que tienen derecho a enviar todo el codigo y que no infringe derechos de propiedad intelectual de terceros. El codigo generado por IA (inteligencia artificial) debe indicarse en la descripcion del pull request, y el desarrollador debe garantizar que tiene derecho a licenciarlo.",
+    "LicensesCodeOwnershipHeading": "Derechos de titularidad del codigo",
+    "LicensesOpenSourceBlazor": "Blazor WebAssembly (Licencia MIT)",
+    "LicensesPaymentProviderHeading": "Cumplimiento de los proveedores de pago",
+    "LicensesUserContentDescription": "Al publicar contenido en PrTask (incluidas descripciones de tareas, comentarios y resenas), otorgas a PrTask una licencia no exclusiva, mundial y libre de regalias para mostrar, reproducir y distribuir ese contenido unicamente con el proposito de operar y mejorar la plataforma. Conservas todos los derechos de propiedad sobre tu contenido. Esta licencia termina cuando eliminas tu contenido de PrTask, excepto cuando el contenido haya sido compartido con otros usuarios o estos hayan confiado en el."
+  },
+  "fil": {
+    "LicensesContactDescription": "Para sa mga katanungan sa lisensya, mga tanong sa pagsunod, o mga alalahanin sa pagproseso ng credit card, makipag-ugnayan sa compliance sa prtask.com.",
+    "LoginPublicPrsHeading": "Mga pampublikong pull request",
+    "PaymentSeoTitle": "Mga Pagbabayad - PrTask",
+    "LicensesCodeOwnershipDescription": "Pinananatili ng mga developer ang buong pagmamay-ari ng copyright sa lahat ng code na isinusumite nila sa PrTask. Kapag naaprubahan at nabayaran ang bounty, nagbibigay ang developer sa kliyente ng isang walang hanggan, pandaigdigan, hindi eksklusibo, at hindi mababawi na lisensya para gamitin, baguhin, kopyahin, at ipamahagi ang isinumiteng code, alinsunod sa open source license ng repositoryo. Hindi inaangkin ng PrTask ang pagmamay-ari ng anumang code na isinumite ng mga developer. Dapat patunayan ng mga developer na may karapatan silang isumite ang lahat ng code at na hindi ito lumalabag sa mga karapatan sa intelektwal na ari-arian ng ikatlong partido. Ang code na ginawa ng AI (artificial intelligence) ay dapat ibunyag sa paglalarawan ng pull request, at dapat patunayan ng developer na may karapatan silang ilisensya ito.",
+    "LicensesCodeOwnershipHeading": "Mga Karapatan sa Pagmamay-ari ng Code",
+    "LicensesOpenSourceBlazor": "Blazor WebAssembly (Lisensya MIT)",
+    "LicensesUserContentDescription": "Sa pag-post ng nilalaman sa PrTask (kabilang ang mga paglalarawan ng gawain, komento, at review), binibigyan mo ang PrTask ng hindi eksklusibo, pandaigdigan, at walang royalty na lisensya upang ipakita, kopyahin, at ipamahagi ang nasabing nilalaman para lamang sa layunin ng pagpapatakbo at pagpapabuti ng platform. Nananatili sa iyo ang lahat ng karapatan sa pagmamay-ari ng iyong nilalaman. Nagwawakas ang lisensyang ito kapag tinanggal mo ang iyong nilalaman mula sa PrTask, maliban kung ang nilalaman ay naibahagi o inasahan ng ibang mga user."
+  },
+  "fr": {
+    "LicensesContactDescription": "Pour les demandes de licence, les questions de conformite ou les preoccupations liees au traitement des cartes de credit, contactez compliance a prtask.com.",
+    "LicensesOpenSourceGratitude": "Nous sommes reconnaissants envers la communaute open source pour rendre ces outils disponibles. Pour une liste complete des dependances et de leurs licences, consultez le manifeste des dependances du projet.",
+    "LicensesThirdPartyGitHub": "GitHub : utilise pour l'authentification OAuth (Open Authorization) et l'integration des pull requests, soumis aux Conditions d'utilisation de GitHub.",
+    "LoginPublicPrsHeading": "Pull requests publics",
+    "PaymentSeoTitle": "Paiements - PrTask",
+    "LicensesCodeOwnershipDescription": "Les developpeurs conservent la pleine titularite des droits d'auteur sur tout le code qu'ils soumettent via PrTask. Apres approbation et paiement d'une recompense, le developpeur accorde au client une licence perpetuelle, mondiale, non exclusive et irrevocable pour utiliser, modifier, reproduire et distribuer le code soumis, sous reserve de la licence open source du depot. PrTask ne revendique la propriete d'aucun code soumis par les developpeurs. Les developpeurs doivent garantir qu'ils ont le droit de soumettre tout le code et qu'il ne porte pas atteinte aux droits de propriete intellectuelle de tiers. Le code genere par IA (intelligence artificielle) doit etre divulgue dans la description du pull request, et le developpeur doit garantir qu'il a le droit de le licencier.",
+    "LicensesCodeOwnershipHeading": "Droits de propriete du code",
+    "LicensesOpenSourceBlazor": "Blazor WebAssembly (Licence MIT)",
+    "LicensesPaymentProviderHeading": "Conformite des fournisseurs de paiement",
+    "LicensesUserContentDescription": "En publiant du contenu sur PrTask (y compris des descriptions de taches, des commentaires et des avis), vous accordez a PrTask une licence non exclusive, mondiale et libre de redevances pour afficher, reproduire et distribuer ce contenu uniquement aux fins d'exploitation et d'amelioration de la plateforme. Vous conservez tous les droits de propriete sur votre contenu. Cette licence prend fin lorsque vous supprimez votre contenu de PrTask, sauf lorsque le contenu a ete partage avec d'autres utilisateurs ou que ceux-ci s'y sont fies."
+  },
+  "hi": {
+    "LicensesOpenSourceGratitude": "इन टूल्स को उपलब्ध कराने के लिए हम ओपन सोर्स समुदाय के आभारी हैं। निर्भरताओं और उनकी लाइसेंसों की पूरी सूची के लिए परियोजना के डिपेंडेंसी मेनिफेस्ट को देखें।",
+    "LicensesThirdPartyGitHub": "GitHub: OAuth (Open Authorization) प्रमाणीकरण और pull request इंटीग्रेशन के लिए उपयोग किया जाता है, और GitHub की सेवा शर्तों के अधीन है।",
+    "LicensesCodeOwnershipDescription": "डेवलपर्स PrTask के माध्यम से जमा किए गए सभी कोड पर पूर्ण कॉपीराइट स्वामित्व बनाए रखते हैं। बाउंटी के अनुमोदन और भुगतान के बाद, डेवलपर क्लाइंट को रिपॉजिटरी के ओपन सोर्स लाइसेंस के अधीन, जमा किए गए कोड का उपयोग, संशोधन, पुनरुत्पादन और वितरण करने के लिए स्थायी, विश्वव्यापी, गैर-अनन्य और अपरिवर्तनीय लाइसेंस प्रदान करता है। PrTask डेवलपर्स द्वारा जमा किए गए किसी भी कोड का स्वामित्व दावा नहीं करता। डेवलपर्स को यह वारंट करना होगा कि उनके पास सभी कोड जमा करने का अधिकार है और यह किसी तृतीय-पक्ष के बौद्धिक संपदा अधिकारों का उल्लंघन नहीं करता। AI (कृत्रिम बुद्धिमत्ता) द्वारा उत्पन्न कोड को pull request विवरण में प्रकट किया जाना चाहिए, और डेवलपर को यह वारंट करना होगा कि उसके पास इसे लाइसेंस करने का अधिकार है।",
+    "LicensesCodeOwnershipHeading": "कोड स्वामित्व अधिकार",
+    "LicensesPaymentProviderHeading": "भुगतान प्रदाता अनुपालन",
+    "LicensesUserContentDescription": "PrTask पर सामग्री पोस्ट करके (जिसमें कार्य विवरण, टिप्पणियां और समीक्षाएं शामिल हैं), आप PrTask को प्लेटफॉर्म के संचालन और सुधार के उद्देश्य से उस सामग्री को प्रदर्शित करने, पुनरुत्पादित करने और वितरित करने के लिए एक गैर-अनन्य, विश्वव्यापी, रॉयल्टी-रहित लाइसेंस प्रदान करते हैं। आप अपनी सामग्री पर सभी स्वामित्व अधिकार बनाए रखते हैं। यह लाइसेंस तब समाप्त हो जाता है जब आप PrTask से अपनी सामग्री हटाते हैं, सिवाय उन स्थितियों के जहां सामग्री अन्य उपयोगकर्ताओं के साथ साझा की गई हो या उन पर भरोसा किया गया हो।"
+  },
+  "id": {
+    "PricingFaqMinBountyQuestion": "Apakah ada jumlah bounty minimum?",
+    "LicensesContactDescription": "Untuk pertanyaan lisensi, pertanyaan kepatuhan, atau kekhawatiran tentang pemrosesan kartu kredit, hubungi compliance di prtask.com.",
+    "LoginPublicPrsHeading": "Pull request publik",
+    "LicensesCodeOwnershipDescription": "Para pengembang mempertahankan kepemilikan penuh hak cipta atas semua kode yang mereka kirimkan melalui PrTask. Setelah bounty disetujui dan dibayar, pengembang memberikan kepada klien lisensi abadi, berlaku di seluruh dunia, non-eksklusif, dan tidak dapat dicabut untuk menggunakan, memodifikasi, mereproduksi, dan mendistribusikan kode yang dikirimkan, dengan tunduk pada lisensi open source dari repositori. PrTask tidak mengklaim kepemilikan atas kode apa pun yang dikirimkan oleh pengembang. Pengembang harus menjamin bahwa mereka berhak mengirimkan semua kode dan bahwa kode tersebut tidak melanggar hak kekayaan intelektual pihak ketiga. Kode yang dihasilkan oleh AI (kecerdasan buatan) harus diungkapkan dalam deskripsi pull request, dan pengembang harus menjamin bahwa mereka berhak melisensikannya.",
+    "LicensesCodeOwnershipHeading": "Hak Kepemilikan Kode",
+    "LicensesOpenSourceBlazor": "Blazor WebAssembly (Lisensi MIT)",
+    "LicensesPaymentProviderHeading": "Kepatuhan Penyedia Pembayaran",
+    "LicensesUserContentDescription": "Dengan memposting konten di PrTask (termasuk deskripsi tugas, komentar, dan ulasan), Anda memberikan PrTask lisensi non-eksklusif, berlaku di seluruh dunia, bebas royalti untuk menampilkan, mereproduksi, dan mendistribusikan konten tersebut semata-mata untuk tujuan mengoperasikan dan meningkatkan platform. Anda tetap memiliki semua hak kepemilikan atas konten Anda. Lisensi ini berakhir ketika Anda menghapus konten Anda dari PrTask, kecuali jika konten tersebut telah dibagikan kepada atau diandalkan oleh pengguna lain."
+  },
+  "it": {
+    "LicensesContactDescription": "Per richieste di licenza, domande di conformita o dubbi sul trattamento delle carte di credito, contatta compliance su prtask.com.",
+    "LicensesOpenSourceGratitude": "Siamo grati alla comunita open source per aver reso disponibili questi strumenti. Per un elenco completo delle dipendenze e delle relative licenze, consulta il manifesto delle dipendenze del progetto.",
+    "LicensesThirdPartyGitHub": "GitHub: usato per l'autenticazione OAuth (Open Authorization) e l'integrazione delle pull request, soggetto ai Termini di Servizio di GitHub.",
+    "LoginPublicPrsHeading": "Pull request pubbliche",
+    "PaymentSeoTitle": "Pagamenti - PrTask",
+    "LicensesCodeOwnershipDescription": "Gli sviluppatori mantengono la piena titolarita del copyright su tutto il codice che inviano tramite PrTask. Dopo l'approvazione e il pagamento di una bounty, lo sviluppatore concede al cliente una licenza perpetua, mondiale, non esclusiva e irrevocabile per usare, modificare, riprodurre e distribuire il codice inviato, nel rispetto della licenza open source del repository. PrTask non rivendica la proprieta di alcun codice inviato dagli sviluppatori. Gli sviluppatori devono garantire di avere il diritto di inviare tutto il codice e che non violi i diritti di proprieta intellettuale di terzi. Il codice generato da IA (intelligenza artificiale) deve essere dichiarato nella descrizione della pull request e lo sviluppatore deve garantire di avere il diritto di licenziarlo.",
+    "LicensesCodeOwnershipHeading": "Diritti di proprieta del codice",
+    "LicensesOpenSourceBlazor": "Blazor WebAssembly (Licenza MIT)",
+    "LicensesPaymentProviderHeading": "Conformita dei provider di pagamento",
+    "LicensesUserContentDescription": "Pubblicando contenuti su PrTask (inclusi descrizioni delle attivita, commenti e recensioni), concedi a PrTask una licenza non esclusiva, mondiale e gratuita di royalty per visualizzare, riprodurre e distribuire tali contenuti esclusivamente allo scopo di gestire e migliorare la piattaforma. Conservi tutti i diritti di proprieta sui tuoi contenuti. Questa licenza termina quando elimini i tuoi contenuti da PrTask, salvo nei casi in cui i contenuti siano stati condivisi con altri utenti o su cui altri utenti abbiano fatto affidamento."
+  },
+  "ja": {
+    "LicensesContactDescription": "ライセンスに関する問い合わせ、コンプライアンスの質問、またはクレジットカード処理に関する懸念がある場合は、prtask.com の compliance までご連絡ください。",
+    "LicensesOpenSourceGratitude": "これらのツールを提供してくれるオープンソースコミュニティに感謝します。依存関係とそのライセンスの完全な一覧は、プロジェクトの依存関係マニフェストをご覧ください。",
+    "LicensesThirdPartyGitHub": "GitHub: OAuth（Open Authorization）認証と pull request 連携に使用され、GitHub の利用規約に従います。",
+    "LoginPublicPrsHeading": "公開 pull request",
+    "PaymentSeoTitle": "支払い - PrTask",
+    "LicensesCodeOwnershipDescription": "開発者は、PrTask を通じて提出するすべてのコードの著作権を完全に保持します。バウンティの承認と支払い後、開発者はクライアントに対し、リポジトリのオープンソースライセンスに従う形で、提出されたコードを使用、改変、複製、配布するための永続的、世界的、非独占的、取消不能なライセンスを付与します。PrTask は開発者が提出したいかなるコードの所有権も主張しません。開発者は、すべてのコードを提出する権利を有し、第三者の知的財産権を侵害しないことを保証しなければなりません。AI（人工知能）生成コードは pull request の説明に開示する必要があり、開発者はそれをライセンスする権利を有することを保証しなければなりません。",
+    "LicensesCodeOwnershipHeading": "コード所有権の権利",
+    "LicensesOpenSourceBlazor": "Blazor WebAssembly（MIT License）",
+    "LicensesPaymentProviderHeading": "決済プロバイダーの準拠",
+    "LicensesUserContentDescription": "PrTask にコンテンツ（タスクの説明、コメント、レビューを含む）を投稿することで、あなたは PrTask に対し、プラットフォームの運用および改善のみを目的として、そのコンテンツを表示、複製、配布するための非独占的、世界的、ロイヤリティフリーのライセンスを付与します。あなたはコンテンツのすべての所有権を保持します。このライセンスは、あなたが PrTask からコンテンツを削除した時点で終了します。ただし、そのコンテンツが他のユーザーと共有された、または他のユーザーがそれに依拠した場合を除きます。"
+  },
+  "ko": {
+    "LicensesContactDescription": "라이선스 문의, 준수 관련 질문 또는 신용카드 처리에 대한 우려가 있으면 prtask.com의 compliance로 연락하세요.",
+    "LicensesOpenSourceGratitude": "이 도구들을 제공해 준 오픈 소스 커뮤니티에 감사드립니다. 의존성과 해당 라이선스의 전체 목록은 프로젝트 의존성 매니페스트를 확인하세요.",
+    "LicensesThirdPartyGitHub": "GitHub: OAuth(Open Authorization) 인증과 pull request 통합에 사용되며, GitHub 서비스 약관의 적용을 받습니다.",
+    "LoginPublicPrsHeading": "공개 pull request",
+    "PaymentSeoTitle": "결제 - PrTask",
+    "LicensesCodeOwnershipDescription": "개발자는 PrTask를 통해 제출한 모든 코드에 대한 저작권을 완전히 보유합니다. 현상금이 승인되고 결제되면 개발자는 클라이언트에게 저장소의 오픈 소스 라이선스를 따르는 조건으로 제출된 코드를 사용, 수정, 복제, 배포할 수 있는 영구적이고 전 세계적이며 비독점적이고 취소 불가능한 라이선스를 부여합니다. PrTask는 개발자가 제출한 어떤 코드의 소유권도 주장하지 않습니다. 개발자는 모든 코드를 제출할 권리가 있으며 제3자의 지적 재산권을 침해하지 않는다는 것을 보증해야 합니다. AI(인공지능) 생성 코드는 pull request 설명에 공개해야 하며, 개발자는 이를 라이선스할 권리가 있음을 보증해야 합니다.",
+    "LicensesCodeOwnershipHeading": "코드 소유권 권리",
+    "LicensesOpenSourceBlazor": "Blazor WebAssembly(MIT License)",
+    "LicensesPaymentProviderHeading": "결제 제공업체 준수",
+    "LicensesUserContentDescription": "PrTask에 콘텐츠(작업 설명, 댓글, 리뷰 포함)를 게시하면 플랫폼의 운영 및 개선 목적에 한해 해당 콘텐츠를 표시, 복제, 배포할 수 있는 비독점적이고 전 세계적이며 로열티 없는 라이선스를 PrTask에 부여하게 됩니다. 콘텐츠에 대한 모든 소유권은 사용자에게 남습니다. 이 라이선스는 사용자가 PrTask에서 콘텐츠를 삭제하면 종료되며, 다른 사용자가 해당 콘텐츠를 공유했거나 의존한 경우는 예외입니다."
+  },
+  "nl": {
+    "LicensesContactDescription": "Voor licentievragen, vragen over compliance of zorgen over creditcardverwerking, neem contact op met compliance via prtask.com.",
+    "LicensesOpenSourceGratitude": "We zijn dankbaar voor de open-sourcegemeenschap die deze tools beschikbaar maakt. Voor een volledige lijst met afhankelijkheden en hun licenties, zie het manifest met projectafhankelijkheden.",
+    "LicensesThirdPartyGitHub": "GitHub: gebruikt voor OAuth (Open Authorization)-authenticatie en pull request-integratie, onderworpen aan de Servicevoorwaarden van GitHub.",
+    "LoginPublicPrsHeading": "Openbare pull requests",
+    "PaymentSeoTitle": "Betalingen - PrTask",
+    "LicensesCodeOwnershipDescription": "Ontwikkelaars behouden het volledige auteursrecht op alle code die ze via PrTask indienen. Na goedkeuring en betaling van een bounty verleent de ontwikkelaar de klant een eeuwigdurende, wereldwijde, niet-exclusieve en onherroepelijke licentie om de ingediende code te gebruiken, te wijzigen, te reproduceren en te distribueren, onder voorbehoud van de open-source-licentie van de repository. PrTask claimt geen eigendom van door ontwikkelaars ingediende code. Ontwikkelaars moeten garanderen dat ze het recht hebben om alle code in te dienen en dat deze geen inbreuk maakt op intellectuele-eigendomsrechten van derden. Door AI (artificiele intelligentie) gegenereerde code moet worden vermeld in de beschrijving van de pull request, en de ontwikkelaar moet garanderen dat hij of zij het recht heeft om die te licentieren.",
+    "LicensesCodeOwnershipHeading": "Rechten op code-eigendom",
+    "LicensesOpenSourceBlazor": "Blazor WebAssembly (MIT-licentie)",
+    "LicensesPaymentProviderHeading": "Naleving door betalingsproviders",
+    "LicensesUserContentDescription": "Door content op PrTask te plaatsen (inclusief taakbeschrijvingen, opmerkingen en reviews) verleent u PrTask een niet-exclusieve, wereldwijde, royaltyvrije licentie om die content weer te geven, te reproduceren en te distribueren, uitsluitend met het doel het platform te beheren en te verbeteren. U behoudt alle eigendomsrechten op uw content. Deze licentie eindigt wanneer u uw content van PrTask verwijdert, behalve wanneer de content met andere gebruikers is gedeeld of door hen is gebruikt."
+  },
+  "tr": {
+    "LicensesOpenSourceGratitude": "Bu araclari erisilebilir kilan open source topluluguna minnettariz. Bagimliliklarin ve lisanslarinin tam listesi icin proje bagimlilik bildirgesine bakin.",
+    "LicensesThirdPartyGitHub": "GitHub: OAuth (Open Authorization) kimlik dogrulamasi ve pull request entegrasyonu icin kullanilir; GitHub'un Hizmet Kosullarina tabidir.",
+    "PaymentSeoTitle": "Odemeler - PrTask",
+    "LicensesOpenSourceBlazor": "Blazor WebAssembly (MIT Lisansi)",
+    "LicensesPaymentProviderHeading": "Odeme Saglayici Uyumlulugu"
+  }
+}

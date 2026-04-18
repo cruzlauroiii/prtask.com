@@ -1,0 +1,38 @@
+{
+  "de": {
+    "DashboardPrsLabel": "Pull-Anfragen",
+    "TaskDetailPullRequestsHeading": "Pull-Anfragen"
+  },
+  "es": {
+    "DashboardPrsLabel": "Solicitudes de extraccion",
+    "TaskDetailPullRequestsHeading": "Solicitudes de extraccion"
+  },
+  "fil": {
+    "SubmitPrGitHubUrlLabel": "URL ng GitHub pull request"
+  },
+  "fr": {
+    "DashboardPrsLabel": "Demandes de tirage",
+    "TaskDetailPullRequestsHeading": "Demandes de tirage"
+  },
+  "hi": {
+    "SubmitPrGitHubUrlLabel": "GitHub पुल रिक्वेस्ट यूआरएल"
+  },
+  "ja": {
+    "SubmitPrGitHubUrlLabel": "GitHubプルリクエストURL"
+  },
+  "ko": {
+    "SubmitPrGitHubUrlLabel": "GitHub 풀 리퀘스트 URL"
+  },
+  "nl": {
+    "DashboardPrsLabel": "Pullverzoeken",
+    "SubmitPrGitHubUrlLabel": "GitHub-pullrequest-URL",
+    "TaskDetailPullRequestsHeading": "Pullverzoeken"
+  },
+  "pt": {
+    "DashboardPrsLabel": "Solicitacoes de pull request",
+    "TaskDetailPullRequestsHeading": "Solicitacoes de pull request"
+  },
+  "tr": {
+    "SubmitPrGitHubUrlLabel": "GitHub pull request URL'si"
+  }
+}

@@ -1,0 +1,16 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+
+class p9442da0d$5 : androidx.room.SharedSQLiteStatement {
+    readonly pe0212e54.pf0719ea8.p9442da0d this$0;
+
+    p9442da0d$5(pe0212e54.pf0719ea8.p9442da0d p9442da0dVar, androidx.room.RoomDatabase roomDatabase) {
+        super(roomDatabase);
+        this.this$0 = p9442da0dVar;
+    }
+
+    public override java.lang.string CreateQuery() {
+        return "UPDATE device SET isSelected = 1 WHERE deviceId = ?";
+    }
+}
+

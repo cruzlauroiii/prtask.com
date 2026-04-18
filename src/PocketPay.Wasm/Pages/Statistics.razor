@@ -1,0 +1,75 @@
+@page "/statistics"
+@inject NavigationManager Nav
+@inject HttpClient Http
+
+<div class="app-shell">
+    <header class="app-header"><a href="/">← Back</a><h2>Statistics</h2></header>
+    <div class="card">
+        <label>Date From</label>
+        <input type="date" @bind="DateFrom" />
+        <label>Date To</label>
+        <input type="date" @bind="DateTo" />
+        <button @onclick="LoadStats" disabled="@IsLoading">@(IsLoading ? "Loading..." : "Load Statistics")</button>
+    </div>
+    @if (ErrorMessage.Length > 0)
+    {
+        <p class="error">@ErrorMessage</p>
+    }
+    @if (TotalSales > 0 || TotalCount > 0)
+    {
+        <div class="card">
+            <h3>Sales Summary</h3>
+            <p>Total Sales: @TotalSales.ToString("C2", System.Globalization.CultureInfo.GetCultureInfo("en-PH"))</p>
+            <p>Transaction Count: @TotalCount</p>
+            <p>Period: @DateFrom.ToString("yyyy-MM-dd") to @DateTo.ToString("yyyy-MM-dd")</p>
+        </div>
+    }
+    @if (StatsRaw.Length > 0)
+    {
+        <pre style="font-size:0.75rem;overflow:auto">@StatsRaw</pre>
+    }
+</div>
+
+@code {
+    private DateTime DateFrom { get; set; } = DateTime.Today.AddDays(-30);
+    private DateTime DateTo { get; set; } = DateTime.Today;
+    private bool IsLoading { get; set; }
+    private string ErrorMessage { get; set; } = string.Empty;
+    private decimal TotalSales { get; set; }
+    private int TotalCount { get; set; }
+    private string StatsRaw { get; set; } = string.Empty;
+
+    private async Task LoadStats()
+    {
+        ErrorMessage = string.Empty;
+        IsLoading = true;
+        try
+        {
+            var DateFromMs = new DateTimeOffset(DateFrom).ToUnixTimeMilliseconds();
+            var DateToMs = new DateTimeOffset(DateTo.AddDays(1)).ToUnixTimeMilliseconds();
+            var Payload = new { Method = "get_stats", Payload = new { DateFrom = DateFromMs, DateTo = DateToMs } };
+            var Response = await Http.PostAsJsonAsync("wss-proxy/get-stats", Payload);
+            var Result = await Response.Content.ReadFromJsonAsync<StatsResult>();
+            if (Result is not null && Result.Success)
+            {
+                TotalSales = Result.TotalSales;
+                TotalCount = Result.TotalCount;
+                StatsRaw = Result.Raw ?? string.Empty;
+            }
+            else
+            {
+                ErrorMessage = Result?.Error ?? "Failed to load statistics";
+            }
+        }
+        catch (Exception Ex)
+        {
+            ErrorMessage = Ex.Message;
+        }
+        finally
+        {
+            IsLoading = false;
+        }
+    }
+
+    private sealed record StatsResult(bool Success, decimal TotalSales, int TotalCount, string? Raw, string? Error);
+}

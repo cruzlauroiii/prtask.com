@@ -1,0 +1,19 @@
+{
+  "PaymentSeoTitle": "Payments - PrTask",
+  "SettingsDisplayNamePlaceholder": "Your display name",
+  "SettingsPayoutDetailsPlaceholder": "Account number",
+  "SettingsTimezoneUtc": "UTC",
+  "SettingsTimezoneManila": "Asia/Manila (GMT\u002B8)",
+  "SettingsTimezoneEastern": "Eastern Time (GMT-5)",
+  "SettingsTimezoneLondon": "London (GMT\u002B0)",
+  "TaskComplexityTrivial": "Trivial",
+  "TaskComplexitySimple": "Simple",
+  "TaskComplexityMedium": "Medium",
+  "TaskComplexityComplex": "Complex",
+  "TaskComplexityExpert": "Expert",
+  "WorkItemTypeEpic": "Epic",
+  "WorkItemTypeFeature": "Feature",
+  "WorkItemTypeStory": "Story",
+  "WorkItemTypeTask": "Task",
+  "WorkItemTypeBug": "Bug"
+}

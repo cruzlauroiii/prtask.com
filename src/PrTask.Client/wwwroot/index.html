@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrTask - Earn Money with Pull Requests</title>
+    <base href="/" />
+    <link rel="stylesheet" href="_content/PrTask.SharedUI/css/app.css" />
+    <script>
+        (function () {
+            var Saved = localStorage.getItem("prtask-theme");
+            if (Saved === "light" || Saved === "dark") {
+                document.documentElement.setAttribute("data-theme", Saved);
+            }
+        })();
+        function prtaskToggleTheme() {
+            var Current = document.documentElement.getAttribute("data-theme");
+            if (!Current) {
+                Current = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            }
+            var Next = Current === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", Next);
+            localStorage.setItem("prtask-theme", Next);
+            return Next;
+        }
+        function prtaskGetTheme() {
+            var Saved = document.documentElement.getAttribute("data-theme");
+            if (Saved) return Saved;
+            return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+    </script>
+</head>
+<body>
+    <div id="app">Loading...</div>
+    <script src="_framework/blazor.webassembly.js"></script>
+</body>
+</html>

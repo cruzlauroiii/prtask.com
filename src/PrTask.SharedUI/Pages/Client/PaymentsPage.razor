@@ -1,0 +1,90 @@
+@page "/client/payments"
+@using Microsoft.JSInterop
+@using PrTask.Application.Services
+@using PrTask.Domain.Constants
+@using PrTask.Domain.Models
+@inject IPaymentRecordService PaymentRecordService
+@inject IJSRuntime JsRuntime
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> Localizer
+
+<SeoHead Title="@Localizer["PaymentSeoTitle"]" Description="@Localizer["PaymentSeoDescription"]" />
+
+<h1>@Localizer["PaymentPageHeading"]</h1>
+<p>@Localizer["PaymentPageDescription"]</p>
+<div class="form-group">
+    <label for="PayerIdInput">@Localizer["PaymentUserIdLabel"]</label>
+    <div class="form-actions">
+        <input id="PayerIdInput" type="text" @bind="PayerIdInput" placeholder="@Localizer["PaymentUserIdPlaceholder"]" />
+        <button class="btn btn-primary" @onclick="LoadPayments">@Localizer["PaymentLoadButton"]</button>
+    </div>
+</div>
+@if (Payments is not null)
+{
+    @if (Payments.Count == 0)
+    {
+        <div class="empty-state">
+            <p>@Localizer["PaymentEmptyStateText"]</p>
+        </div>
+    }
+    else
+    {
+        <div class="leaderboard-table">
+            <div class="leaderboard-header">
+                <span>@Localizer["PaymentHeaderDate"]</span>
+                <span>@Localizer["PaymentHeaderTask"]</span>
+                <span>@Localizer["PaymentHeaderAmount"]</span>
+                <span>@Localizer["PaymentHeaderStatus"]</span>
+                <span>@Localizer["PaymentHeaderType"]</span>
+            </div>
+            @foreach (var Payment in Payments)
+            {
+                <div class="leaderboard-row">
+                    <span>@Payment.CreatedAt.ToString(PaymentPageConstants.DateFormat, System.Globalization.CultureInfo.InvariantCulture)</span>
+                    <span>
+                        @if (Payment.TaskId is not null)
+                        {
+                            <a href="@(string.Format(RouteConstants.TaskDetail, Payment.TaskId))">@Payment.TaskId[..8]...</a>
+                        }
+                        else
+                        {
+                            <text>@Localizer["PaymentTaskNotApplicable"]</text>
+                        }
+                    </span>
+                    <span>@FormatAmount(Payment.AmountCents)</span>
+                    <span class="pr-status">@Payment.Status</span>
+                    <span>@Payment.Type</span>
+                </div>
+            }
+        </div>
+    }
+}
+<section class="page-description">
+    <h2>@Localizer["PaymentDescriptionHeading"]</h2>
+    <p>@Localizer["PaymentDescriptionParagraph1"]</p>
+    <p>@Localizer["PaymentDescriptionParagraph2"]</p>
+    <p>@Localizer["PaymentDescriptionParagraph3"]</p>
+</section>
+@code {
+    private string PayerIdInput { get; set; } = string.Empty;
+    private IReadOnlyList<PaymentEntity>? Payments { get; set; }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            PayerIdInput = await JsRuntime.InvokeAsync<string>(JsInteropConstants.GetUserId);
+            if (!string.IsNullOrEmpty(PayerIdInput))
+            {
+                await LoadPayments();
+                StateHasChanged();
+            }
+        }
+    }
+    private async Task LoadPayments()
+    {
+        if (!string.IsNullOrWhiteSpace(PayerIdInput))
+        {
+            Payments = await PaymentRecordService.ListByPayerAsync(PayerIdInput);
+        }
+    }
+    private static string FormatAmount(long AmountCents) => FormatStrings.BountyAmount(AmountCents);
+}

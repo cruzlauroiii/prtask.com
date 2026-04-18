@@ -1,0 +1,207 @@
+@page "/how-it-works"
+@using PrTask.Domain.Constants
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> Localizer
+<h1>@Localizer["HowItWorksPageHeading"]</h1>
+<section class="steps">
+    <h2>@Localizer["HowItWorksGettingStartedHeading"]</h2>
+    <div class="step">
+        <span class="step-number">1</span>
+        <h3>@Localizer["HowItWorksStep1Heading"]</h3>
+        <p>@Localizer["HowItWorksStep1Description"]</p>
+    </div>
+    <div class="step">
+        <span class="step-number">2</span>
+        <h3>@Localizer["HowItWorksStep2Heading"]</h3>
+        <p>@Localizer["HowItWorksStep2Description"]</p>
+    </div>
+    <div class="step">
+        <span class="step-number">3</span>
+        <h3>@Localizer["HowItWorksStep3Heading"]</h3>
+        <p>@Localizer["HowItWorksStep3Description"]</p>
+    </div>
+    <div class="step">
+        <span class="step-number">4</span>
+        <h3>@Localizer["HowItWorksStep4Heading"]</h3>
+        <p>@Localizer["HowItWorksStep4Description"]</p>
+    </div>
+    <div class="step">
+        <span class="step-number">5</span>
+        <h3>@Localizer["HowItWorksStep5Heading"]</h3>
+        <p>@Localizer["HowItWorksStep5Description"]</p>
+    </div>
+</section>
+<section class="for-clients">
+    <h2>@Localizer["HowItWorksClientsHeading"]</h2>
+    <ol>
+        <li>@Localizer["HowItWorksClientsStep1"]</li>
+        <li>@Localizer["HowItWorksClientsStep2"]</li>
+        <li>@Localizer["HowItWorksClientsStep3"]</li>
+        <li>@Localizer["HowItWorksClientsStep4"]</li>
+        <li>@Localizer["HowItWorksClientsStep5"]</li>
+    </ol>
+</section>
+<section class="workflow-guide">
+    <h2>@Localizer["HowItWorksWorkflowHeading"]</h2>
+    <p>@Localizer["HowItWorksWorkflowDescription"]</p>
+    <div class="workflow-step" id="workflow-step-1">
+        <span class="step-number">1</span>
+        <div class="step-content">
+            <h3>@Localizer["HowItWorksWorkflowStep1Heading"]</h3>
+            <p>@Localizer["HowItWorksWorkflowStep1Description"]</p>
+            <div class="step-links">
+                <a href="@RouteConstants.Login" data-workflow-step="1" class="workflow-link">@Localizer["HowItWorksWorkflowStep1Link"]</a>
+                <span class="workflow-status status-required">@Localizer["HowItWorksWorkflowStep1Status"]</span>
+            </div>
+        </div>
+    </div>
+    <div class="workflow-step" id="workflow-step-2">
+        <span class="step-number">2</span>
+        <div class="step-content">
+            <h3>@Localizer["HowItWorksWorkflowStep2Heading"]</h3>
+            <p>@Localizer["HowItWorksWorkflowStep2Description"]</p>
+            <div class="step-links">
+                <a href="@RouteConstants.Settings" data-workflow-step="2" class="workflow-link">@Localizer["HowItWorksWorkflowStep2Link"]</a>
+                <span class="workflow-status status-login-required">@Localizer["HowItWorksWorkflowStatusLoginRequired"]</span>
+            </div>
+        </div>
+    </div>
+    <div class="workflow-step" id="workflow-step-3">
+        <span class="step-number">3</span>
+        <div class="step-content">
+            <h3>@Localizer["HowItWorksWorkflowStep3Heading"]</h3>
+            <p>@Localizer["HowItWorksWorkflowStep3Description"]</p>
+            <div class="step-links">
+                <a href="@RouteConstants.ClientCreateTask" data-workflow-step="3" class="workflow-link">@Localizer["HowItWorksWorkflowStep3Link"]</a>
+                <span class="workflow-status status-login-required">@Localizer["HowItWorksWorkflowStatusLoginRequired"]</span>
+            </div>
+        </div>
+    </div>
+    <div class="workflow-step" id="workflow-step-4">
+        <span class="step-number">4</span>
+        <div class="step-content">
+            <h3>@Localizer["HowItWorksWorkflowStep4Heading"]</h3>
+            <p>@Localizer["HowItWorksWorkflowStep4Description"]</p>
+            <div class="step-links">
+                <a href="/Tasks/demo-task" data-workflow-step="4" class="workflow-link">@Localizer["HowItWorksWorkflowStep4Link"]</a>
+                <span class="workflow-status status-login-required">@Localizer["HowItWorksWorkflowStatusLoginRequired"]</span>
+            </div>
+        </div>
+    </div>
+    <div class="workflow-step" id="workflow-step-5">
+        <span class="step-number">5</span>
+        <div class="step-content">
+            <h3>@Localizer["HowItWorksWorkflowStep5Heading"]</h3>
+            <p>@Localizer["HowItWorksWorkflowStep5Description"]</p>
+            <div class="step-links">
+                <a href="@RouteConstants.Tasks" data-workflow-step="5" class="workflow-link">@Localizer["HowItWorksWorkflowStep5Link"]</a>
+                <span class="workflow-status status-open">@Localizer["HowItWorksWorkflowStatusOpen"]</span>
+            </div>
+        </div>
+    </div>
+    <div class="workflow-step" id="workflow-step-6">
+        <span class="step-number">6</span>
+        <div class="step-content">
+            <h3>@Localizer["HowItWorksWorkflowStep6Heading"]</h3>
+            <p>@Localizer["HowItWorksWorkflowStep6Description"]</p>
+            <div class="step-links">
+                <a href="/Tasks/demo-task" data-workflow-step="6" class="workflow-link">@Localizer["HowItWorksWorkflowStep6Link"]</a>
+                <span class="workflow-status status-open">@Localizer["HowItWorksWorkflowStatusOpen"]</span>
+            </div>
+        </div>
+    </div>
+    <div class="workflow-step" id="workflow-step-7">
+        <span class="step-number">7</span>
+        <div class="step-content">
+            <h3>@Localizer["HowItWorksWorkflowStep7Heading"]</h3>
+            <p>@Localizer["HowItWorksWorkflowStep7Description"]</p>
+            <div class="step-links">
+                <a href="/Prs/demo-pr" data-workflow-step="7" class="workflow-link">@Localizer["HowItWorksWorkflowStep7Link"]</a>
+                <span class="workflow-status status-login-required">@Localizer["HowItWorksWorkflowStatusLoginRequired"]</span>
+            </div>
+        </div>
+    </div>
+    <div class="workflow-step" id="workflow-step-8">
+        <span class="step-number">8</span>
+        <div class="step-content">
+            <h3>@Localizer["HowItWorksWorkflowStep8Heading"]</h3>
+            <p>@Localizer["HowItWorksWorkflowStep8Description"]</p>
+            <div class="step-links">
+                <a href="/Tasks/demo-task/SubmitPr" data-workflow-step="8" class="workflow-link">@Localizer["HowItWorksWorkflowStep8Link"]</a>
+                <span class="workflow-status status-login-required">@Localizer["HowItWorksWorkflowStatusLoginRequired"]</span>
+            </div>
+        </div>
+    </div>
+    <div class="workflow-step" id="workflow-step-9">
+        <span class="step-number">9</span>
+        <div class="step-content">
+            <h3>@Localizer["HowItWorksWorkflowStep9Heading"]</h3>
+            <p>@Localizer["HowItWorksWorkflowStep9Description"]</p>
+            <div class="step-links">
+                <a href="/Prs/demo-pr" data-workflow-step="9" class="workflow-link">@Localizer["HowItWorksWorkflowStep9Link"]</a>
+                <span class="workflow-status status-login-required">@Localizer["HowItWorksWorkflowStatusLoginRequired"]</span>
+            </div>
+        </div>
+    </div>
+    <div class="workflow-step" id="workflow-step-10">
+        <span class="step-number">10</span>
+        <div class="step-content">
+            <h3>@Localizer["HowItWorksWorkflowStep10Heading"]</h3>
+            <p>@Localizer["HowItWorksWorkflowStep10Description"]</p>
+            <div class="step-links">
+                <a href="/Prs/demo-pr" data-workflow-step="10" class="workflow-link">@Localizer["HowItWorksWorkflowStep10Link"]</a>
+                <span class="workflow-status status-login-required">@Localizer["HowItWorksWorkflowStatusLoginRequired"]</span>
+            </div>
+        </div>
+    </div>
+    <div class="workflow-step" id="workflow-step-11">
+        <span class="step-number">11</span>
+        <div class="step-content">
+            <h3>@Localizer["HowItWorksWorkflowStep11Heading"]</h3>
+            <p>@Localizer["HowItWorksWorkflowStep11Description"]</p>
+            <div class="step-links">
+                <a href="/Prs/demo-pr" data-workflow-step="11" class="workflow-link">@Localizer["HowItWorksWorkflowStep11Link"]</a>
+                <span class="workflow-status status-login-required">@Localizer["HowItWorksWorkflowStatusLoginRequired"]</span>
+            </div>
+        </div>
+    </div>
+    <div class="workflow-step" id="workflow-step-12">
+        <span class="step-number">12</span>
+        <div class="step-content">
+            <h3>@Localizer["HowItWorksWorkflowStep12Heading"]</h3>
+            <p>@Localizer["HowItWorksWorkflowStep12Description"]</p>
+            <div class="step-links">
+                <a href="/Prs/demo-pr" data-workflow-step="12" class="workflow-link">@Localizer["HowItWorksWorkflowStep12Link"]</a>
+                <a href="@RouteConstants.ClientPayments" data-workflow-step="12-payments" class="workflow-link">@Localizer["HowItWorksWorkflowStep12PaymentsLink"]</a>
+                <span class="workflow-status status-login-required">@Localizer["HowItWorksWorkflowStatusLoginRequired"]</span>
+            </div>
+        </div>
+    </div>
+    <div class="workflow-step" id="workflow-step-13">
+        <span class="step-number">13</span>
+        <div class="step-content">
+            <h3>@Localizer["HowItWorksWorkflowStep13Heading"]</h3>
+            <p>@Localizer["HowItWorksWorkflowStep13Description"]</p>
+            <div class="step-links">
+                <a href="@RouteConstants.ClientPayments" data-workflow-step="13" class="workflow-link">@Localizer["HowItWorksWorkflowStep13Link"]</a>
+                <span class="workflow-status status-login-required">@Localizer["HowItWorksWorkflowStatusLoginRequired"]</span>
+            </div>
+        </div>
+    </div>
+    <div class="workflow-step" id="workflow-step-14">
+        <span class="step-number">14</span>
+        <div class="step-content">
+            <h3>@Localizer["HowItWorksWorkflowStep14Heading"]</h3>
+            <p>@Localizer["HowItWorksWorkflowStep14Description"]</p>
+            <div class="step-links">
+                <a href="@RouteConstants.Settings" data-workflow-step="14" class="workflow-link">@Localizer["HowItWorksWorkflowStep14Link"]</a>
+                <span class="workflow-status status-login-required">@Localizer["HowItWorksWorkflowStatusLoginRequired"]</span>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="page-description">
+    <h2>@Localizer["HowItWorksDescriptionHeading"]</h2>
+    <p>@Localizer["HowItWorksDescriptionParagraph1"]</p>
+    <p>@Localizer["HowItWorksDescriptionParagraph2"]</p>
+    <p>@Localizer["HowItWorksDescriptionParagraph3"]</p>
+</section>

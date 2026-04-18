@@ -1,0 +1,19 @@
+html, body { margin: 0; padding: 0; background: #0f172a; color: #e2e8f0; font-family: system-ui, sans-serif; }
+.app-container { display: flex; flex-direction: column; align-items: center; padding: 2rem; min-height: 100vh; }
+h1 { color: #22d3ee; margin-bottom: 1.5rem; font-size: 2rem; }
+.studio-viewport { width: 100%; max-width: 1200px; border: 2px solid #334155; border-radius: 8px; padding: 1rem; background: #1e293b; }
+.studio-status { color: #22d3ee; font-weight: 600; margin-bottom: 1rem; font-size: 1.1rem; }
+.studio-registers pre, .studio-output pre { background: #0f172a; padding: 1rem; border-radius: 4px; font-size: 0.85rem; overflow-x: auto; color: #94a3b8; white-space: pre-wrap; word-break: break-all; }
+.studio-controls { margin-top: 1.5rem; }
+.btn { background: #22d3ee; color: #0f172a; border: none; padding: 0.75rem 2rem; border-radius: 6px; cursor: pointer; font-weight: 700; font-size: 1rem; }
+.btn:hover { background: #06b6d4; }
+.chat-container { width: 100%; max-width: 1200px; display: flex; flex-direction: column; gap: 1rem; }
+.chat-messages { flex: 1; overflow-y: auto; max-height: 60vh; padding: 1rem; background: #1e293b; border-radius: 8px; border: 1px solid #334155; }
+.chat-message { padding: 0.75rem; margin-bottom: 0.5rem; border-radius: 6px; }
+.chat-message.user { background: #1e3a5f; text-align: right; }
+.chat-message.assistant { background: #1e293b; border: 1px solid #334155; }
+.chat-message.tool { background: #1a2332; border-left: 3px solid #22d3ee; font-family: monospace; font-size: 0.85rem; }
+.chat-input { display: flex; gap: 0.5rem; }
+.chat-input textarea { flex: 1; background: #1e293b; color: #e2e8f0; border: 1px solid #334155; border-radius: 6px; padding: 0.75rem; font-family: system-ui, sans-serif; font-size: 0.95rem; resize: none; }
+.api-key-input { background: #1e293b; color: #e2e8f0; border: 1px solid #334155; border-radius: 6px; padding: 0.75rem; width: 100%; max-width: 400px; font-family: monospace; }
+.streaming-indicator { color: #22d3ee; font-style: italic; }

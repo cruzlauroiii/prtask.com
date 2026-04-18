@@ -1,0 +1,48 @@
+@page "/inventorization"
+@inject NavigationManager Nav
+
+<div style="width:100%">
+    <header class="toolbar" style="width:100%"></header>
+    <div class="content" style="display:flex;flex-direction:column;width:100%">
+        <div class="summary_layout" style="display:flex;flex-direction:column;width:100%">
+            <div style="display:flex;flex-direction:row;width:100%">
+                <span class="tv_db_balance"></span>
+                <span class="tv_remainder_act"></span>
+                <span class="tv_discrepancy"></span>
+            </div>
+        </div>
+        <div class="positions_rv" style="width:100%"></div>
+    </div>
+    <img class="empty_icon" src="img/ic_empty_sell.png" alt="ic_empty_sell" />
+    <span class="empty" style="width:100%"></span>
+    <div class="button_add_group_layout">
+        <span class="floating_button_description"></span>
+        <button class="add_position_to_receipt_button"></button>
+    </div>
+    <div class="overlay" style="width:100%">
+        <div style="width:100%"></div>
+        <button class="close_expandable_menu_button"></button>
+        <div class="view_stub_expandable_fab_menu"></div>
+    </div>
+    <button class="next_btn" style="width:100%"></button>
+    <div class="btnAcceptInventory" style="width:100%">
+        <div class="inventorization_carry_out_enabled_button" style="width:100%">
+            <span class="completeEnabledTv"></span>
+            <span class="inventorization_total_position_enabled"></span>
+            <span class="inventorization_total_discrepancies_enabled"></span>
+        </div>
+        <div class="inventorization_carry_out_disabled_button" style="width:100%">
+            <span class="completeDisabledTv"></span>
+            <span class="inventorization_total_position_disabled"></span>
+            <span class="inventorization_total_discrepancies_disabled"></span>
+        </div>
+    </div>
+    <div class="loading" style="width:100%"></div>
+</div>
+
+@code {
+
+    private void OnField2131362696Click()
+    {
+    }
+}

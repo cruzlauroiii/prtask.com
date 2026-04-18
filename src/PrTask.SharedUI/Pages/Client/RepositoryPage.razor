@@ -1,0 +1,35 @@
+@page "/client/repository"
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> Localizer
+<h1>@Localizer["RepositoryPageHeading"]</h1>
+<p>@Localizer["RepositoryPageDescription"]</p>
+<section class="form-container">
+    <h2>@Localizer["RepositoryAddHeading"]</h2>
+    <div class="form-group">
+        <label for="RepoUrl">@Localizer["RepositoryRepoUrlLabel"]</label>
+        <input id="RepoUrl" type="url" placeholder="https://github.com/org/repo" />
+    </div>
+    <div class="form-group">
+        <label for="DisplayName">@Localizer["RepositoryDisplayNameLabel"]</label>
+        <input id="DisplayName" type="text" placeholder="" />
+    </div>
+    <div class="form-group">
+        <label for="Visibility">@Localizer["RepositoryVisibilityLabel"]</label>
+        <select id="Visibility">
+            <option value="Public">@Localizer["RepositoryVisibilityPublic"]</option>
+            <option value="Private">@Localizer["RepositoryVisibilityPrivate"]</option>
+        </select>
+    </div>
+    <button class="btn btn-primary">@Localizer["RepositoryAddButton"]</button>
+</section>
+<section class="about-section">
+    <h2>@Localizer["RepositoryYourReposHeading"]</h2>
+    <div class="empty-state">
+        <p>@Localizer["RepositoryEmptyState"]</p>
+    </div>
+</section>
+<section class="page-description">
+    <h2>@Localizer["RepositoryDescriptionHeading"]</h2>
+    <p>@Localizer["RepositoryDescriptionParagraph1"]</p>
+    <p>@Localizer["RepositoryDescriptionParagraph2"]</p>
+    <p>@Localizer["RepositoryDescriptionParagraph3"]</p>
+</section>

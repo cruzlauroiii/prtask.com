@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>$(NoWarn);CA5393</NoWarn>
+    <NoWarn>$(NoWarn);CA5393</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="runtimes\win-x64\native\libusearch_c.dll" PackagePath="runtimes\win-x64\native" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,46 @@
+namespace PrTask.Domain.Constants;
+public static class PrDetailConstants
+{
+    public const string SeoTitle = "Pull Request Details - PrTask";
+    public const string SeoDescription = "View pull request details, diff, and approval status.";
+    public const string PageHeading = "Pull Request Details";
+    public const string LoadingText = "Loading pull request...";
+    public const string SubmittedByPrefix = "Submitted by ";
+    public const string ViewOnGitHubText = "View on GitHub";
+    public const string ChangedFilesHeading = "Changed Files";
+    public const string NoFilesParsed = "No files parsed from diff";
+    public const string CodeChangesHeading = "Code Changes";
+    public const string SaveChangesButtonText = "Save Changes";
+    public const string NoDiffAvailable = "No diff available. Upload source code to the task to enable diff generation.";
+    public const string ReviewCommentsHeading = "Review Comments";
+    public const string CommentLinePrefix = "Adding comment on line ";
+    public const string CommentPlaceholder = "Write your review comment...";
+    public const string AddCommentButtonText = "Add Comment";
+    public const string CancelButtonText = "Cancel";
+    public const string NoCommentsYet = "No comments yet. Click on a line in the diff to add an inline comment.";
+    public const string CommentResolvedStatus = "Resolved";
+    public const string CommentOpenStatus = "Open";
+    public const string ReplyPlaceholder = "Write a reply...";
+    public const string ReplyButtonText = "Reply";
+    public const string SubmitReplyButtonText = "Submit Reply";
+    public const string CancelReplyButtonText = "Cancel";
+    public const string ResolveButtonText = "Resolve";
+    public const string ApproveAndMergeButtonText = "Approve and Merge";
+    public const string RequestChangesButtonText = "Request Changes";
+    public const string PaymentHeading = "Payment";
+    public const string PaymentInitiatedText = "Payment initiated via Maya checkout.";
+    public const string PaymentApproveText = "Approve the PR to initiate Maya credit card payment.";
+    public const string PaymentProviderText = "Powered by Maya";
+    public const string PaymentSandboxText = "Sandbox Mode";
+    public const string PrStatusPrefix = "PR status: ";
+    public const string SplitViewLabel = "Split View";
+    public const string UnifiedViewLabel = "Unified View";
+    public const string ViewDiffLabel = "View Diff";
+    public const string EditCodeLabel = "Edit Code";
+    public const string ChangesDefault = "Changes";
+    public const string CommentLocationFormat = "Line {0} in {1}";
+    public const string DiffStatsFormat = "Files changed: {0} | +{1} -{2}";
+    public const string DiffViewerAddCommentTitle = "Click to add a review comment on this line";
+    public const string DiffViewerOldPaneHeading = "Original";
+    public const string DiffViewerNewPaneHeading = "Modified";
+}

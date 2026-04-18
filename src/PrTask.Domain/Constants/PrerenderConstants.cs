@@ -1,0 +1,42 @@
+namespace PrTask.Domain.Constants;
+public static class PrerenderConstants
+{
+    public const string OutputDirName = "prerender-output";
+    public const string IndexFileName = "index.html";
+    public const string HtmlExtension = ".html";
+    public const string RouteHome = "/";
+    public const string RouteDashboard = "/Dashboard";
+    public const string RouteTasks = "/Tasks";
+    public const string RouteLogin = "/Login";
+    public const string RouteSettings = "/Settings";
+    public const string RouteLeaderboard = "/Leaderboard";
+    public const string RouteHowItWorks = "/HowItWorks";
+    public const string RoutePricing = "/Pricing";
+    public const string RouteAbout = "/About";
+    public const string RouteDownload = "/Download";
+    public const string RouteSprints = "/Sprints";
+    public const string RouteBoards = "/Boards";
+    public const string RouteLegalTerms = "/Legal/Terms";
+    public const string RouteLegalPrivacy = "/Legal/Privacy";
+    public const string RouteLegalRefund = "/Legal/Refund";
+    public const string RouteLegalAcceptableUse = "/Legal/AcceptableUse";
+    public const string RouteLegalCookiePolicy = "/Legal/CookiePolicy";
+    public const string RouteLegalLicenses = "/Legal/Licenses";
+    public const string RouteLegalAccessibility = "/Legal/Accessibility";
+    public const string RouteLegalDmca = "/Legal/Dmca";
+    public const string RouteClientCreateTask = "/Client/CreateTask";
+    public const string RouteClientPayments = "/Client/Payments";
+    public const string RouteClientRepository = "/Client/Repository";
+    public const string LogLangRouteFormat = "[{0}] {1}";
+    public const string StatusOk = "OK";
+    public const string StatusErr = "ERR";
+    public const string LogStartFormat = "Pre-rendering {0} routes to {1}";
+    public const string LogOkFormat = "  [{0}] {1} -> {2} ({3} bytes)";
+    public const string LogErrFormat = "  [{0}] {1}: {2}";
+    public const string LogComplete = "Pre-rendering complete.";
+    public const string MemoryDbConnectionString = "Data Source=PrerenderDb;Mode=Memory;Cache=Shared";
+    public const string BaseUrl = "https://prtask.com";
+    public const string BaseUrlSlash = "https://prtask.com/";
+    public const string RootRedirectTarget = "en/";
+    public const string RootRedirectTemplate = "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><meta http-equiv=\"refresh\" content=\"0;url={0}\"/><link rel=\"canonical\" href=\"https://prtask.com/en/\"/><style>html,body{{margin:0;background:#1a1a2e}}</style></head><body></body></html>";
+}

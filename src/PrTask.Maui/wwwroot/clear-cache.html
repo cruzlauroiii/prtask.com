@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Clearing Cache...</title>
+    <style>
+        body { background: #0f172a; color: #f1f5f9; font-family: system-ui, sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+    </style>
+</head>
+<body>
+    <p>Clearing cache and reloading...</p>
+    <script>
+        (function () {
+            if ("caches" in window) {
+                caches.keys().then(function (Names) {
+                    Names.forEach(function (Name) { caches.delete(Name); });
+                });
+            }
+            localStorage.clear();
+            sessionStorage.clear();
+            setTimeout(function () { window.location.href = "/"; }, 500);
+        })();
+    </script>
+</body>
+</html>

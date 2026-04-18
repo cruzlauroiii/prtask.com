@@ -1,0 +1,52 @@
+@page "/toph-create-order"
+@inject NavigationManager Nav
+
+<div style="width:100%">
+    <div class="appbar" style="width:100%">
+        <div class="collapsing_layout" style="width:100%">
+            <span class="toph_order_tv" style="width:100%"></span>
+            <header class="toolbar" style="width:100%"></header>
+        </div>
+    </div>
+    <div class="nested" style="width:100%">
+        <div style="display:flex;flex-direction:column;width:100%">
+            <span class="tv_toph_create_order_desc" style="width:100%"></span>
+            <div style="display:flex;flex-direction:row;width:100%">
+                <img src="img/ic_toph_order_phone.png" alt="ic_toph_order_phone" />
+                <label class="phone_layout" style="width:100%">
+                    <input class="phone_edit_text" style="width:100%" type="text" />
+                </label>
+            </div>
+            <div style="display:flex;flex-direction:row;width:100%">
+                <img src="img/ic_toph_user.png" alt="ic_toph_user" />
+                <label class="full_name_layout" style="width:100%">
+                    <input class="full_name_layout_edit_text" style="width:100%" type="text" />
+                </label>
+            </div>
+            <div style="display:flex;flex-direction:row;width:100%">
+                <img src="img/ic_toph_order_inn.png" alt="ic_toph_order_inn" />
+                <label class="inn_layout" style="width:100%">
+                    <input class="inn_layout_edit_text" style="width:100%" type="text" />
+                </label>
+            </div>
+            <div class="region" style="display:flex;flex-direction:row;width:100%">
+                <img src="img/ic_toph_order_region.png" alt="ic_toph_order_region" />
+                <label class="region_layout" style="width:100%">
+                    <input class="region_layout_edit_text" style="width:100%" type="text" />
+                </label>
+            </div>
+            <button class="confirm_form_button" style="width:100%"></button>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string Field2131362795 { get; set; } = string.Empty;
+    private string Field2131362400 { get; set; } = string.Empty;
+    private string Field2131362448 { get; set; } = string.Empty;
+    private string Field2131362913 { get; set; } = string.Empty;
+
+    private void OnField2131362153Click()
+    {
+    }
+}

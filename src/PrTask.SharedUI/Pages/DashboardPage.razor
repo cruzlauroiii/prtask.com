@@ -1,0 +1,41 @@
+@page "/dashboard"
+@using PrTask.Domain.Constants
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> Localizer
+<h1>@Localizer["DashboardPageHeading"]</h1>
+<p>@Localizer["DashboardPageDescription"]</p>
+<section class="dashboard-stats">
+    <div class="stat-card">
+        <span class="stat-value">@Localizer["DashboardActiveTasksValue"]</span>
+        <span class="stat-label">@Localizer["DashboardActiveTasksLabel"]</span>
+    </div>
+    <div class="stat-card">
+        <span class="stat-value">@Localizer["DashboardUsersValue"]</span>
+        <span class="stat-label">@Localizer["DashboardUsersLabel"]</span>
+    </div>
+    <div class="stat-card">
+        <span class="stat-value">@Localizer["DashboardTotalBountiesValue"]</span>
+        <span class="stat-label">@Localizer["DashboardTotalBountiesLabel"]</span>
+    </div>
+    <div class="stat-card">
+        <span class="stat-value">@Localizer["DashboardPrsValue"]</span>
+        <span class="stat-label">@Localizer["DashboardPrsLabel"]</span>
+    </div>
+</section>
+<section class="dashboard-section">
+    <h2>@Localizer["DashboardOpenTasksHeading"]</h2>
+    <div class="empty-state">
+        <p>@Localizer["DashboardEmptyStateText"] <a href="@RouteConstants.ClientCreateTask" class="inline-link">@Localizer["DashboardEmptyStateLink"]</a></p>
+    </div>
+</section>
+<section class="dashboard-section">
+    <h2>@Localizer["DashboardRecentPrsHeading"]</h2>
+    <div class="empty-state">
+        <p>@Localizer["DashboardNoPrsText"]</p>
+    </div>
+</section>
+<section class="page-description">
+    <h2>@Localizer["DashboardDescriptionHeading"]</h2>
+    <p>@Localizer["DashboardDescriptionParagraph1"]</p>
+    <p>@Localizer["DashboardDescriptionParagraph2"]</p>
+    <p>@Localizer["DashboardDescriptionParagraph3"]</p>
+</section>

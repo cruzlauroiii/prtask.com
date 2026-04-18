@@ -1,0 +1,27 @@
+@page "/qr-slip"
+@inject NavigationManager Nav
+
+<div class="receiptQrLayout" style="width:100%">
+    <header class="toolbar" style="width:100%"></header>
+    <div class="qrLayout" style="display:flex;flex-direction:column;width:100%">
+        <div style="display:flex;flex-direction:column;width:100%">
+            <img class="ivState" src="img/ic_ok_big.png" alt="ic_ok_big" />
+            <span class="tvStateTitle"></span>
+        </div>
+        <div style="width:100%"></div>
+        <div style="display:flex;flex-direction:column;width:100%">
+            <img class="ivQr" />
+            <span class="amount"></span>
+            <span class="tvMerchantInfo"></span>
+        </div>
+    </div>
+    <button class="btnToMain" style="width:100%"></button>
+    <div class="loader_toph_layout"></div>
+</div>
+
+@code {
+
+    private void OnField2131361992Click()
+    {
+    }
+}

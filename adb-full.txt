@@ -1,0 +1,305 @@
+--------- beginning of main
+03-26 10:56:47.027 25293 27481 I okhttp.OkHttpClient: --> PUT https://api.psr-it.com/stores/fc0f2f09-7b94-4140-b5f3-9fc589d7fa18/products/0f3b73a3-f204-4b51-8dde-03adbc3b9e48
+03-26 10:56:47.029 25293 27481 I okhttp.OkHttpClient: Content-Type: application/json; charset=UTF-8
+03-26 10:56:47.029 25293 27481 I okhttp.OkHttpClient: Content-Length: 326
+03-26 10:56:47.029 25293 27481 I okhttp.OkHttpClient: Authorization: b84a6501-c81e-4e95-a148-77b12670102b
+03-26 10:56:47.030 25293 27481 I okhttp.OkHttpClient: {"allow_to_sell":true,"tax":"VAT_3","measure_name":"EA","type":"SERVICE","updated_at":"","description":"description","price":1,"user_id":"","name":"service 1","id":"0f3b73a3-f204-4b51-8dde-03adbc3b9e48","parent_id":"d2e3d899-6103-486e-ad84-f1c5fbd470b0","code":"2","article_number":"vendor code","store_id":"","created_at":""}
+03-26 10:56:47.030 25293 27481 I okhttp.OkHttpClient: --> END PUT (326-byte body)
+03-26 10:56:47.351 25293 27481 I okhttp.OkHttpClient: <-- 201 https://api.psr-it.com/stores/fc0f2f09-7b94-4140-b5f3-9fc589d7fa18/products/0f3b73a3-f204-4b51-8dde-03adbc3b9e48 (320ms)
+03-26 10:56:47.351 25293 27481 I okhttp.OkHttpClient: date: Thu, 26 Mar 2026 02:56:47 GMT
+03-26 10:56:47.351 25293 27481 I okhttp.OkHttpClient: content-type: application/json;charset=UTF-8
+03-26 10:56:47.351 25293 27481 I okhttp.OkHttpClient: location: https://api.psr-it.com/stores/fc0f2f09-7b94-4140-b5f3-9fc589d7fa18/products/0f3b73a3-f204-4b51-8dde-03adbc3b9e48
+03-26 10:56:47.351 25293 27481 I okhttp.OkHttpClient: vary: Origin
+03-26 10:56:47.351 25293 27481 I okhttp.OkHttpClient: vary: Access-Control-Request-Method
+03-26 10:56:47.351 25293 27481 I okhttp.OkHttpClient: vary: Access-Control-Request-Headers
+03-26 10:56:47.351 25293 27481 I okhttp.OkHttpClient: x-ratelimit-limit: 3000
+03-26 10:56:47.351 25293 27481 I okhttp.OkHttpClient: x-ratelimit-remaining: 2993
+03-26 10:56:47.351 25293 27481 I okhttp.OkHttpClient: x-ratelimit-reset: 3207
+03-26 10:56:47.351 25293 27481 I okhttp.OkHttpClient: referrer-policy: no-referrer
+03-26 10:56:47.354 25293 27481 I okhttp.OkHttpClient: {"type":"SERVICE","name":"service 1","code":"2","price":1,"measure_name":"EA","tax":"VAT_3","allow_to_sell":true,"description":"description","article_number":"vendor code","parent_id":"d2e3d899-6103-486e-ad84-f1c5fbd470b0","id":"0f3b73a3-f204-4b51-8dde-03adbc3b9e48","store_id":"fc0f2f09-7b94-4140-b5f3-9fc589d7fa18","user_id":"34c9c05b-4de8-4edf-9bfa-0efdb09d8a94","created_at":"2026-03-26T02:56:47.262+0000","updated_at":"2026-03-26T02:56:47.262+0000"}
+03-26 10:56:47.354 25293 27481 I okhttp.OkHttpClient: <-- END HTTP (454-byte body)
+03-26 10:56:57.772 25293 27481 I okhttp.OkHttpClient: --> PUT https://api.psr-it.com/stores/fc0f2f09-7b94-4140-b5f3-9fc589d7fa18/products/0f3b73a3-f204-4b51-8dde-03adbc3b9e48
+03-26 10:56:57.774 25293 27481 I okhttp.OkHttpClient: Content-Type: application/json; charset=UTF-8
+03-26 10:56:57.774 25293 27481 I okhttp.OkHttpClient: Content-Length: 462
+03-26 10:56:57.774 25293 27481 I okhttp.OkHttpClient: Authorization: b84a6501-c81e-4e95-a148-77b12670102b
+03-26 10:56:57.776 25293 27481 I okhttp.OkHttpClient: {"allow_to_sell":true,"tax":"VAT_3","measure_name":"EA","type":"SERVICE","updated_at":"2026-03-26T02:56:47.262+0000","description":"description","price":1.00,"user_id":"34c9c05b-4de8-4edf-9bfa-0efdb09d8a94","name":"service 1 edit","id":"0f3b73a3-f204-4b51-8dde-03adbc3b9e48","parent_id":"d2e3d899-6103-486e-ad84-f1c5fbd470b0","code":"2","article_number":"vendor code","store_id":"fc0f2f09-7b94-4140-b5f3-9fc589d7fa18","created_at":"2026-03-26T02:56:47.262+0000"}
+03-26 10:56:57.776 25293 27481 I okhttp.OkHttpClient: --> END PUT (462-byte body)
+03-26 10:56:58.060 25293 27481 I okhttp.OkHttpClient: <-- 200 https://api.psr-it.com/stores/fc0f2f09-7b94-4140-b5f3-9fc589d7fa18/products/0f3b73a3-f204-4b51-8dde-03adbc3b9e48 (283ms)
+03-26 10:56:58.060 25293 27481 I okhttp.OkHttpClient: date: Thu, 26 Mar 2026 02:56:57 GMT
+03-26 10:56:58.060 25293 27481 I okhttp.OkHttpClient: content-type: application/json;charset=UTF-8
+03-26 10:56:58.060 25293 27481 I okhttp.OkHttpClient: vary: Accept-Encoding
+03-26 10:56:58.060 25293 27481 I okhttp.OkHttpClient: vary: Origin
+03-26 10:56:58.060 25293 27481 I okhttp.OkHttpClient: vary: Access-Control-Request-Method
+03-26 10:56:58.060 25293 27481 I okhttp.OkHttpClient: vary: Access-Control-Request-Headers
+03-26 10:56:58.060 25293 27481 I okhttp.OkHttpClient: x-ratelimit-limit: 3000
+03-26 10:56:58.060 25293 27481 I okhttp.OkHttpClient: x-ratelimit-remaining: 2992
+03-26 10:56:58.060 25293 27481 I okhttp.OkHttpClient: x-ratelimit-reset: 3197
+03-26 10:56:58.060 25293 27481 I okhttp.OkHttpClient: referrer-policy: no-referrer
+03-26 10:56:58.061 25293 27481 I okhttp.OkHttpClient: {"type":"SERVICE","name":"service 1 edit","code":"2","price":1.00,"measure_name":"EA","tax":"VAT_3","allow_to_sell":true,"description":"description","article_number":"vendor code","parent_id":"d2e3d899-6103-486e-ad84-f1c5fbd470b0","id":"0f3b73a3-f204-4b51-8dde-03adbc3b9e48","store_id":"fc0f2f09-7b94-4140-b5f3-9fc589d7fa18","user_id":"34c9c05b-4de8-4edf-9bfa-0efdb09d8a94","created_at":"2026-03-26T02:56:47.262+0000","updated_at":"2026-03-26T02:56:57.965+0000"}
+03-26 10:56:58.061 25293 27481 I okhttp.OkHttpClient: <-- END HTTP (462-byte body)
+03-26 10:57:27.024 25293 27481 I okhttp.OkHttpClient: --> PUT https://api.psr-it.com/stores/fc0f2f09-7b94-4140-b5f3-9fc589d7fa18/products/6b671a77-3d86-4adb-8142-13304651e54a
+03-26 10:57:27.024 25293 27481 I okhttp.OkHttpClient: Content-Type: application/json; charset=UTF-8
+03-26 10:57:27.024 25293 27481 I okhttp.OkHttpClient: Content-Length: 334
+03-26 10:57:27.024 25293 27481 I okhttp.OkHttpClient: Authorization: b84a6501-c81e-4e95-a148-77b12670102b
+03-26 10:57:27.025 25293 27481 I okhttp.OkHttpClient: {"allow_to_sell":true,"tax":"NO_VAT","measure_name":"EA","cost_price":0.00,"type":"NORMAL","updated_at":"","description":"","price":0.00,"user_id":"","name":"product in group 1","id":"6b671a77-3d86-4adb-8142-13304651e54a","parent_id":"d2e3d899-6103-486e-ad84-f1c5fbd470b0","code":"3","article_number":"","store_id":"","created_at":""}
+03-26 10:57:27.025 25293 27481 I okhttp.OkHttpClient: --> END PUT (334-byte body)
+03-26 10:57:27.351 25293 27481 I okhttp.OkHttpClient: <-- 201 https://api.psr-it.com/stores/fc0f2f09-7b94-4140-b5f3-9fc589d7fa18/products/6b671a77-3d86-4adb-8142-13304651e54a (325ms)
+03-26 10:57:27.351 25293 27481 I okhttp.OkHttpClient: date: Thu, 26 Mar 2026 02:57:27 GMT
+03-26 10:57:27.351 25293 27481 I okhttp.OkHttpClient: content-type: application/json;charset=UTF-8
+03-26 10:57:27.351 25293 27481 I okhttp.OkHttpClient: location: https://api.psr-it.com/stores/fc0f2f09-7b94-4140-b5f3-9fc589d7fa18/products/6b671a77-3d86-4adb-8142-13304651e54a
+03-26 10:57:27.351 25293 27481 I okhttp.OkHttpClient: vary: Origin
+03-26 10:57:27.351 25293 27481 I okhttp.OkHttpClient: vary: Access-Control-Request-Method
+03-26 10:57:27.351 25293 27481 I okhttp.OkHttpClient: vary: Access-Control-Request-Headers
+03-26 10:57:27.351 25293 27481 I okhttp.OkHttpClient: x-ratelimit-limit: 3000
+03-26 10:57:27.351 25293 27481 I okhttp.OkHttpClient: x-ratelimit-remaining: 2991
+03-26 10:57:27.351 25293 27481 I okhttp.OkHttpClient: x-ratelimit-reset: 3167
+03-26 10:57:27.351 25293 27481 I okhttp.OkHttpClient: referrer-policy: no-referrer
+03-26 10:57:27.353 25293 27481 I okhttp.OkHttpClient: {"type":"NORMAL","name":"product in group 1","code":"3","price":0.00,"cost_price":0.00,"measure_name":"EA","tax":"NO_VAT","allow_to_sell":true,"description":"","article_number":"","parent_id":"d2e3d899-6103-486e-ad84-f1c5fbd470b0","id":"6b671a77-3d86-4adb-8142-13304651e54a","store_id":"fc0f2f09-7b94-4140-b5f3-9fc589d7fa18","user_id":"34c9c05b-4de8-4edf-9bfa-0efdb09d8a94","created_at":"2026-03-26T02:57:27.256+0000","updated_at":"2026-03-26T02:57:27.256+0000"}
+03-26 10:57:27.353 25293 27481 I okhttp.OkHttpClient: <-- END HTTP (462-byte body)
+03-26 10:58:59.696 25293 28579 I okhttp.OkHttpClient: --> POST https://pulsar.psr-it.com/api/v3/receipt
+03-26 10:58:59.697 25293 28579 I okhttp.OkHttpClient: Content-Type: application/json; charset=UTF-8
+03-26 10:58:59.697 25293 28579 I okhttp.OkHttpClient: Content-Length: 1733
+03-26 10:58:59.697 25293 28579 I okhttp.OkHttpClient: platform: Android
+03-26 10:58:59.697 25293 28579 I okhttp.OkHttpClient: versionName: 1.0.30
+03-26 10:58:59.697 25293 28579 I okhttp.OkHttpClient: versionCode: 110304
+03-26 10:58:59.697 25293 28579 I okhttp.OkHttpClient: {"time_zone_offset":28800000,"cashier_uuid":"47d12aaa-31ee-4f49-9d75-5ff7fc65993f","positions":[{"tax":"NO_VAT","quantity":1.002,"measureName":"EA","type":"NORMAL","price":{"purchase_price":0.00,"price_without_tax":1.00,"price":1.00},"name":"custom 1","initialQuantity":0.00,"precision":100,"position_uuid":"5c1360d0-5d56-43cc-9f7a-a9767d430207"},{"tax":"NO_VAT","quantity":2.00,"measureName":"pc","type":"NORMAL","commodity_id":"dd72a731-a1d8-44e9-b4ab-d932d68674fc","price":{"purchase_price":1.00,"price_without_tax":1.00,"price":1.00},"name":"product 1","initialQuantity":0.00,"precision":100,"position_uuid":"cd5fcac1-639f-4c16-afdc-f535ca10d03c"},{"tax":"NO_VAT","quantity":1.00,"measureName":"pc","type":"NORMAL","commodity_id":"6b671a77-3d86-4adb-8142-13304651e54a","price":{"purchase_price":0.00,"price_without_tax":1.00,"price":1.00},"name":"product in group 1","initialQuantity":0.00,"precision":100,"position_uuid":"cc963f83-5bca-43ae-a478-567d5656b940"},{"tax":"VAT_3","quantity":1.00,"measureName":"pc","type":"SERVICE","commodity_id":"0f3b73a3-f204-4b51-8dde-03adbc3b9e48","price":{"purchase_price":0.00,"price_without_tax":0.97,"price":1.00},"name":"service 1 edit","initialQuantity":0.00,"precision":100,"position_uuid":"32ae2036-fe18-45e0-8abd-be63e0dc10d5"}],"payment_place":"","device_uuid":"a29e8f74-e57b-46cf-80a9-a5dff92f49a2","receipt_timestamp":1774493939679,"payment_address":"","device_id":"e14ceab085867eab","payments":[{"payment_type":"CASH","amount":4.95,"uuid":"b0ada996-b0b6-4986-8036-0dfbdf3192ce"}],"user_id":"34c9c05b-4de8-4edf-9bfa-0efdb09d8a94","receipt_discount":0.05,"operation_type":"SELL","store_id":"fc0f2f09-7b94-4140-b5f3-9fc589d7fa18","receipt_uuid":"b0ada996-b0b6-4986-8036-0dfbdf3192ce"}
+03-26 10:58:59.697 25293 28579 I okhttp.OkHttpClient: --> END POST (1733-byte body)
+03-26 10:59:00.830 25293 28579 I okhttp.OkHttpClient: <-- 200 https://pulsar.psr-it.com/api/v3/receipt (1132ms)
+03-26 10:59:00.831 25293 28579 I okhttp.OkHttpClient: date: Thu, 26 Mar 2026 02:59:00 GMT
+03-26 10:59:00.831 25293 28579 I okhttp.OkHttpClient: content-type: application/json
+03-26 10:59:00.831 25293 28579 I okhttp.OkHttpClient: vary: Accept-Encoding
+03-26 10:59:00.831 25293 28579 I okhttp.OkHttpClient: vary: Origin
+03-26 10:59:00.831 25293 28579 I okhttp.OkHttpClient: vary: Access-Control-Request-Method
+03-26 10:59:00.831 25293 28579 I okhttp.OkHttpClient: vary: Access-Control-Request-Headers
+03-26 10:59:00.833 25293 28579 I okhttp.OkHttpClient: {"type":"SELL","id":"b0ada996-b0b6-4986-8036-0dfbdf3192ce","extras":{},"number":13,"closeDate":1774493939679,"timeZoneOffset":28800000,"sessionId":"131ed2d1-5174-4867-b38b-565b3272a39f","sessionNumber":2,"closeUserId":"47d12aaa-31ee-4f49-9d75-5ff7fc65993f","deviceId":"a29e8f74-e57b-46cf-80a9-a5dff92f49a2","deviceImei":"e14ceab085867eab","storeId":"fc0f2f09-7b94-4140-b5f3-9fc589d7fa18","userId":"34c9c05b-4de8-4edf-9bfa-0efdb09d8a94","body":{"positions":[{"productId":null,"quantity":1.002,"initialQuantity":0.00,"quantityInPackage":null,"barCode":null,"productType":"NORMAL","mark":null,"markData":null,"alcoholByVolume":null,"alcoholProductKindCode":null,"tareVolume":null,"code":null,"productName":"custom 1","measureName":"EA","local":{},"id":0,"uuid":"5c1360d0-5d56-43cc-9f7a-a9767d430207","extraKeys":[],"subPositions":[],"measurePrecision":100,"price":1.00,"costPrice":0.00,"resultPrice":0.99,"sum":1.00,"tax":{"type":null,"sum":0,"resultSum":0,"rate":"NO_VAT","subType":"V004","taxType":"T1","taxCode":"NO_VAT"},"resultSum":0.99,"positionDiscount":null,"docDistributedDiscount":{"discountSum":0.01,"discountPercent":1.00,"discountType":"SUM","coupon":null,"discountPrice":null,"discountSumWithoutTax":0.00},"printGroupId":null,"splittedPositions":null,"attributesChoices":null,"settlementMethod":{"type":"CHECKOUT_FULL","amount":null},"agentRequisites":null,"priceWithoutTax":1.00,"sumWithoutTax":1.00,"discountSumWithoutTax":0.00,"resultPriceWithoutTax":null,"resultSumWithoutTax":null,"resultCostPrice":null,"costPriceWithoutTax":null,"resultCostPriceWithoutTax":null,"taxSum":null},{"productId":"dd72a731-a1d8-44e9-b4ab-d932d68674fc","quantity":2.00,"initialQuantity":0.00,"quantityInPackage":null,"barCode":null,"productType":"NORMAL","mark":null,"markData":null,"alcoholByVolume":null,"alcoholProductKindCode":null,"tareVolume":null,"code":null,"productName":"product 1","measureName":"pc","local":{},"id":1,"uuid":"cd5fcac1-639f-4c16-afdc-f535ca10d03c","extraKeys":[],"subPositions":[],"measurePrecision":100,"price":1.00,"costPrice":1.00,"resultPrice":0.99,"sum":2.00,"tax":{"type":null,"sum":0,"resultSum":0,"rate":"NO_VAT","subType":"V004","taxType":"T1","taxCode":"NO_VAT"},"resultSum":1.98,"positionDiscount":null,"docDistributedDiscount":{"discountSum":0.02,"discountPercent":1.00,"discountType":"SUM","coupon":null,"discountPrice":null,"discountSumWithoutTax":0.00},"printGroupId":null,"splittedPositions":null,"attributesChoices":null,"settlementMethod":{"type":"CHECKOUT_FULL","amount":null},"agentRequisites":null,"priceWithoutTax":1.00,"sumWithoutTax":2.00,"discountSumWithoutTax":0.00,"resultPriceWithoutTax":null,"resultSumWithoutTax":null,"resultCostPrice":null,"costPriceWithoutTax":null,"resultCostPriceWithoutTax":null,"taxSum":null},{"productId":"6b671a77-3d86-4adb-8142-13304651e54a","quantity":1.00,"initialQuantity":0.00,"quantityInPackage":null,"barCode":null,"productType":"NORMAL","mark":null,"markData":null,"alcoholByVolume":null,"alcoholProductKindCode":null,"tareVolume":null,"code":null,"productName":"product in group 1","measureName":"pc","local":{},"id":2,"uuid":"cc963f83-5bca-43ae-a478-567d5656b940","extraKeys":[],"subPositions":[],"measurePrecision":100,"price":1.00,"costPrice":0.00,"resultPrice":0.99,"sum":1.00,"tax":{"type":null,"sum":0,"resultSum":0,"rate":"NO_VAT","subType":"V004","taxType":"T1","taxCode":"NO_VAT"},"resultSum":0.99,"positionDiscount":null,"docDistributedDiscount":{"discountSum":0.01,"discountPercent":1.00,"discountType":"SUM","coupon":null,"discountPrice":null,"discountSumWithoutTax":0.00},"printGroupId":null,"splittedPositions":null,"attributesChoices":null,"settlementMethod":{"type":"CHECKOUT_FULL","amount":null},"agentRequisites":null,"priceWithoutTax":1.00,"sumWithoutTax":1.00,"discountSumWithoutTax":0.00,"resultPriceWithoutTax":null,"resultSumWithoutTax":null,"resultCostPrice":null,"costPriceWithoutTax":null,"resultCostPriceWithoutTax":null,"taxSum":null},{"productId":"0f3b73a3-f204-4b51-8dde-03adbc3b9e48",
+03-26 10:59:00.833 25293 28579 I okhttp.OkHttpClient: "quantity":1.00,"initialQuantity":0.00,"quantityInPackage":null,"barCode":null,"productType":"SERVICE","mark":null,"markData":null,"alcoholByVolume":null,"alcoholProductKindCode":null,"tareVolume":null,"code":null,"productName":"service 1 edit","measureName":"pc","local":{},"id":3,"uuid":"32ae2036-fe18-45e0-8abd-be63e0dc10d5","extraKeys":[],"subPositions":[],"measurePrecision":100,"price":1.00,"costPrice":0.00,"resultPrice":0.99,"sum":1.00,"tax":{"type":null,"sum":0.03,"resultSum":0.03,"rate":"3","subType":"Tbl01","taxType":"T1","taxCode":"VAT_3"},"resultSum":0.99,"positionDiscount":null,"docDistributedDiscount":{"discountSum":0.01,"discountPercent":1.00,"discountType":"SUM","coupon":null,"discountPrice":null,"discountSumWithoutTax":0.00},"printGroupId":null,"splittedPositions":null,"attributesChoices":null,"settlementMethod":{"type":"CHECKOUT_FULL","amount":null},"agentRequisites":null,"priceWithoutTax":0.97,"sumWithoutTax":0.97,"discountSumWithoutTax":0.00,"resultPriceWithoutTax":null,"resultSumWithoutTax":null,"resultCostPrice":null,"costPriceWithoutTax":null,"resultCostPriceWithoutTax":null,"taxSum":null}],"docDiscounts":[{"discountSum":0.05,"discountPercent":1.00,"discountType":"SUM","coupon":null}],"payments":[{"id":"b0ada996-b0b6-4986-8036-0dfbdf3192ce","parentId":null,"sum":4.95,"type":"CASH","transaction":null,"slip":null,"rrn":null,"pinPadInfo":null,"parts":null,"appPayment":null,"merchantInfo":null,"bankInfo":null,"appInfo":null}],"printGroups":[],"posPrintResults":[{"receiptNumber":1,"documentNumber":13,"sessionNumber":2,"receiptDate":"26032026","receiptTime":null,"fnRegNumber":null,"fiscalSignDocNumber":null,"fiscalDocumentNumber":null,"fnSerialNumber":null,"kktSerialNumber":null,"kktRegNumber":null,"printGroupId":null,"checkSum":4.95}],"local":{},"sum":5.00,"resultSum":4.95,"sumWithoutTax":4.97,"discountSumWithoutTax":0.00,"resultSumWithoutTax":4.97,"taxTotals":[{"taxType":"T1","resultSum":0},{"taxType":"T1","resultSum":0},{"taxType":"T1","resultSum":0},{"taxType":"T1","resultSum":0.03}],"customerEmail":null,"customerPhone":null},"counterparties":null,"createdAt":1774493939678,"version":"V2"}
+03-26 10:59:00.833 25293 28579 I okhttp.OkHttpClient: <-- END HTTP (6143-byte body)
+03-26 10:59:29.276 25293 28790 I okhttp.OkHttpClient: --> GET https://api.psr-it.com/stores/fc0f2f09-7b94-4140-b5f3-9fc589d7fa18/products
+03-26 10:59:29.276 25293 28790 I okhttp.OkHttpClient: Authorization: b84a6501-c81e-4e95-a148-77b12670102b
+03-26 10:59:29.276 25293 28790 I okhttp.OkHttpClient: --> END GET
+03-26 10:59:29.278 25293 28791 I okhttp.OkHttpClient: --> GET https://api.psr-it.com/stores/fc0f2f09-7b94-4140-b5f3-9fc589d7fa18/product-groups
+03-26 10:59:29.278 25293 28791 I okhttp.OkHttpClient: Authorization: b84a6501-c81e-4e95-a148-77b12670102b
+03-26 10:59:29.278 25293 28791 I okhttp.OkHttpClient: --> END GET
+03-26 10:59:30.429 25293 28790 I okhttp.OkHttpClient: <-- 200 https://api.psr-it.com/stores/fc0f2f09-7b94-4140-b5f3-9fc589d7fa18/products (1152ms)
+03-26 10:59:30.429 25293 28790 I okhttp.OkHttpClient: date: Thu, 26 Mar 2026 02:59:30 GMT
+03-26 10:59:30.429 25293 28790 I okhttp.OkHttpClient: content-type: application/json;charset=UTF-8
+03-26 10:59:30.429 25293 28790 I okhttp.OkHttpClient: vary: Accept-Encoding
+03-26 10:59:30.429 25293 28790 I okhttp.OkHttpClient: vary: Origin
+03-26 10:59:30.429 25293 28790 I okhttp.OkHttpClient: vary: Access-Control-Request-Method
+03-26 10:59:30.429 25293 28790 I okhttp.OkHttpClient: vary: Access-Control-Request-Headers
+03-26 10:59:30.429 25293 28790 I okhttp.OkHttpClient: x-ratelimit-limit: 3000
+03-26 10:59:30.429 25293 28790 I okhttp.OkHttpClient: x-ratelimit-remaining: 2996
+03-26 10:59:30.429 25293 28790 I okhttp.OkHttpClient: x-ratelimit-reset: 2889
+03-26 10:59:30.429 25293 28790 I okhttp.OkHttpClient: referrer-policy: no-referrer
+03-26 10:59:30.724 25293 28790 I okhttp.OkHttpClient: {"items":[{"type":"NORMAL","name":"product in group 1","code":"3","price":0.00,"cost_price":0.00,"measure_name":"EA","tax":"NO_VAT","allow_to_sell":true,"description":"","article_number":"","parent_id":"d2e3d899-6103-486e-ad84-f1c5fbd470b0","id":"6b671a77-3d86-4adb-8142-13304651e54a","store_id":"fc0f2f09-7b94-4140-b5f3-9fc589d7fa18","user_id":"34c9c05b-4de8-4edf-9bfa-0efdb09d8a94","created_at":"2026-03-26T02:57:27.256+0000","updated_at":"2026-03-26T02:57:27.256+0000"},{"type":"NORMAL","name":"product 1","code":"1","price":1.00,"cost_price":1.00,"measure_name":"EA","tax":"NO_VAT","allow_to_sell":true,"description":"description","article_number":"vendor code","id":"dd72a731-a1d8-44e9-b4ab-d932d68674fc","store_id":"fc0f2f09-7b94-4140-b5f3-9fc589d7fa18","user_id":"34c9c05b-4de8-4edf-9bfa-0efdb09d8a94","created_at":"2026-03-26T02:55:34.877+0000","updated_at":"2026-03-26T02:55:45.948+0000"},{"type":"SERVICE","name":"service 1 edit","code":"2","price":1.00,"measure_name":"EA","tax":"VAT_3","allow_to_sell":true,"description":"description","article_number":"vendor code","parent_id":"d2e3d899-6103-486e-ad84-f1c5fbd470b0","id":"0f3b73a3-f204-4b51-8dde-03adbc3b9e48","store_id":"fc0f2f09-7b94-4140-b5f3-9fc589d7fa18","user_id":"34c9c05b-4de8-4edf-9bfa-0efdb09d8a94","created_at":"2026-03-26T02:56:47.262+0000","updated_at":"2026-03-26T02:56:57.965+0000"}],"paging":{}}
+03-26 10:59:30.724 25293 28790 I okhttp.OkHttpClient: <-- END HTTP (1374-byte body)
+03-26 10:59:30.735 25293 28791 I okhttp.OkHttpClient: <-- 200 https://api.psr-it.com/stores/fc0f2f09-7b94-4140-b5f3-9fc589d7fa18/product-groups (1456ms)
+03-26 10:59:30.735 25293 28791 I okhttp.OkHttpClient: date: Thu, 26 Mar 2026 02:59:30 GMT
+03-26 10:59:30.735 25293 28791 I okhttp.OkHttpClient: content-type: application/json;charset=UTF-8
+03-26 10:59:30.735 25293 28791 I okhttp.OkHttpClient: vary: Accept-Encoding
+03-26 10:59:30.735 25293 28791 I okhttp.OkHttpClient: vary: Origin
+03-26 10:59:30.735 25293 28791 I okhttp.OkHttpClient: vary: Access-Control-Request-Method
+03-26 10:59:30.735 25293 28791 I okhttp.OkHttpClient: vary: Access-Control-Request-Headers
+03-26 10:59:30.735 25293 28791 I okhttp.OkHttpClient: x-ratelimit-limit: 3000
+03-26 10:59:30.735 25293 28791 I okhttp.OkHttpClient: x-ratelimit-remaining: 2995
+03-26 10:59:30.735 25293 28791 I okhttp.OkHttpClient: x-ratelimit-reset: 2889
+03-26 10:59:30.735 25293 28791 I okhttp.OkHttpClient: referrer-policy: no-referrer
+03-26 10:59:30.917 25293 28791 I okhttp.OkHttpClient: {"items":[{"name":"group 1","id":"d2e3d899-6103-486e-ad84-f1c5fbd470b0","store_id":"fc0f2f09-7b94-4140-b5f3-9fc589d7fa18","user_id":"34c9c05b-4de8-4edf-9bfa-0efdb09d8a94","created_at":"2026-03-26T02:56:13.306+0000","updated_at":"2026-03-26T02:56:13.306+0000"}],"paging":{}}
+03-26 10:59:30.917 25293 28791 I okhttp.OkHttpClient: <-- END HTTP (273-byte body)
+03-26 11:00:33.218 31251 31430 I okhttp.OkHttpClient: --> POST https://pulsar.psr-it.com/api/v3/authorize
+03-26 11:00:33.219 31251 31430 I okhttp.OkHttpClient: Content-Type: application/json; charset=UTF-8
+03-26 11:00:33.219 31251 31430 I okhttp.OkHttpClient: Content-Length: 438
+03-26 11:00:33.219 31251 31430 I okhttp.OkHttpClient: {"device_model":"SM-S928B","device_brand":"samsung","package_name":"com.gcash.business.pocketpay","time_zone_offset":28800000,"password":"75734616b81a8309f17b2d5bfdd9415b927985aa1fdade85a5b8284582e610e5","app_version":"1.0.30","login":"639568564236","fcmtoken":"cCUWnftPTEqfxtouT4g34G:APA91bGI_94Rd_0qCR1YOIXNUycNi0QnPFv3PCAMzRO5vdduwaFZ3QH_rb36gkk2NpFz6l02BzLtiG8KtuWJgUo-ckeCeMExUzdGqBUSeHnUmmYvemco4vE","android_id":"e14ceab085867eab"}
+03-26 11:00:33.219 31251 31430 I okhttp.OkHttpClient: --> END POST (438-byte body)
+03-26 11:00:34.267 31251 31430 I okhttp.OkHttpClient: <-- 200 https://pulsar.psr-it.com/api/v3/authorize (1047ms)
+03-26 11:00:34.267 31251 31430 I okhttp.OkHttpClient: date: Thu, 26 Mar 2026 03:00:34 GMT
+03-26 11:00:34.267 31251 31430 I okhttp.OkHttpClient: content-type: text/plain;charset=UTF-8
+03-26 11:00:34.267 31251 31430 I okhttp.OkHttpClient: vary: Accept-Encoding
+03-26 11:00:34.267 31251 31430 I okhttp.OkHttpClient: vary: Origin
+03-26 11:00:34.267 31251 31430 I okhttp.OkHttpClient: vary: Access-Control-Request-Method
+03-26 11:00:34.267 31251 31430 I okhttp.OkHttpClient: vary: Access-Control-Request-Headers
+03-26 11:00:34.274 31251 31430 I okhttp.OkHttpClient: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJzZWN1cmUtYXBpIiwiYXVkIjoic2VjdXJlLWFwcCIsInN1YiI6IjYzOTU2ODU2NDIzNiIsImV4cCI6MTc3NDU4MDMzNCwicm9sIjpbeyJhdXRob3JpdHkiOiJLQVNTIn1dfQ.OomIjRpkmkzyokyxC7ugYaWdniFQ_6J2p-2dE6C6fQBsezfaUJzCczoJRrVUG3sOrWbi7cAPrwBiOLpufSlwpg
+03-26 11:00:34.274 31251 31430 I okhttp.OkHttpClient: <-- END HTTP (273-byte body)
+03-26 11:00:34.285 31251 31462 I okhttp.OkHttpClient: --> POST https://pulsar.psr-it.com/api/v3/market/user/check
+03-26 11:00:34.285 31251 31462 I okhttp.OkHttpClient: Content-Type: application/json; charset=UTF-8
+03-26 11:00:34.285 31251 31462 I okhttp.OkHttpClient: Content-Length: 106
+03-26 11:00:34.286 31251 31462 I okhttp.OkHttpClient: {"shop_uuid":"fc0f2f09-7b94-4140-b5f3-9fc589d7fa18","phone":"639568564236","device_id":"e14ceab085867eab"}
+03-26 11:00:34.286 31251 31462 I okhttp.OkHttpClient: --> END POST (106-byte body)
+03-26 11:00:35.277 31251 31462 I okhttp.OkHttpClient: <-- 200 https://pulsar.psr-it.com/api/v3/market/user/check (991ms)
+03-26 11:00:35.277 31251 31462 I okhttp.OkHttpClient: date: Thu, 26 Mar 2026 03:00:35 GMT
+03-26 11:00:35.277 31251 31462 I okhttp.OkHttpClient: content-type: application/json
+03-26 11:00:35.277 31251 31462 I okhttp.OkHttpClient: vary: Accept-Encoding
+03-26 11:00:35.277 31251 31462 I okhttp.OkHttpClient: vary: Origin
+03-26 11:00:35.277 31251 31462 I okhttp.OkHttpClient: vary: Access-Control-Request-Method
+03-26 11:00:35.277 31251 31462 I okhttp.OkHttpClient: vary: Access-Control-Request-Headers
+03-26 11:00:35.277 31251 31462 I okhttp.OkHttpClient: vary: Origin
+03-26 11:00:35.277 31251 31462 I okhttp.OkHttpClient: vary: Access-Control-Request-Method
+03-26 11:00:35.277 31251 31462 I okhttp.OkHttpClient: vary: Access-Control-Request-Headers
+03-26 11:00:35.277 31251 31462 I okhttp.OkHttpClient: x-content-type-options: nosniff
+03-26 11:00:35.277 31251 31462 I okhttp.OkHttpClient: x-xss-protection: 1; mode=block
+03-26 11:00:35.277 31251 31462 I okhttp.OkHttpClient: cache-control: no-cache, no-store, max-age=0, must-revalidate
+03-26 11:00:35.277 31251 31462 I okhttp.OkHttpClient: pragma: no-cache
+03-26 11:00:35.277 31251 31462 I okhttp.OkHttpClient: expires: 0
+03-26 11:00:35.278 31251 31462 I okhttp.OkHttpClient: strict-transport-security: max-age=31536000 ; includeSubDomains
+03-26 11:00:35.278 31251 31462 I okhttp.OkHttpClient: x-frame-options: DENY
+03-26 11:00:35.278 31251 31462 I okhttp.OkHttpClient: {"user_exists":true,"user_id":"34c9c05b-4de8-4edf-9bfa-0efdb09d8a94","employee":{"id":"47d12aaa-31ee-4f49-9d75-5ff7fc65993f","name":"Administrator","lastName":null,"role":"ADMIN","pin":null,"roleId":"bfe4b768-e13f-4069-9cbb-4662ab4b4d38","shopIds":["fc0f2f09-7b94-4140-b5f3-9fc589d7fa18"]},"role":"BUSINESS","region":"PH"}
+03-26 11:00:35.278 31251 31462 I okhttp.OkHttpClient: <-- END HTTP (322-byte body)
+03-26 11:00:35.306 31251 31729 I okhttp.OkHttpClient: --> GET https://pulsar.psr-it.com/api/v2/market/user/34c9c05b-4de8-4edf-9bfa-0efdb09d8a94/stores?userRole=BUSINESS
+03-26 11:00:35.306 31251 31729 I okhttp.OkHttpClient: --> END GET
+03-26 11:00:36.201 31251 31729 I okhttp.OkHttpClient: <-- 200 https://pulsar.psr-it.com/api/v2/market/user/34c9c05b-4de8-4edf-9bfa-0efdb09d8a94/stores?userRole=BUSINESS (894ms)
+03-26 11:00:36.201 31251 31729 I okhttp.OkHttpClient: date: Thu, 26 Mar 2026 03:00:36 GMT
+03-26 11:00:36.201 31251 31729 I okhttp.OkHttpClient: content-type: application/json
+03-26 11:00:36.201 31251 31729 I okhttp.OkHttpClient: vary: Accept-Encoding
+03-26 11:00:36.201 31251 31729 I okhttp.OkHttpClient: vary: Origin
+03-26 11:00:36.201 31251 31729 I okhttp.OkHttpClient: vary: Access-Control-Request-Method
+03-26 11:00:36.201 31251 31729 I okhttp.OkHttpClient: vary: Access-Control-Request-Headers
+03-26 11:00:36.201 31251 31729 I okhttp.OkHttpClient: vary: Origin
+03-26 11:00:36.201 31251 31729 I okhttp.OkHttpClient: vary: Access-Control-Request-Method
+03-26 11:00:36.201 31251 31729 I okhttp.OkHttpClient: vary: Access-Control-Request-Headers
+03-26 11:00:36.201 31251 31729 I okhttp.OkHttpClient: x-content-type-options: nosniff
+03-26 11:00:36.201 31251 31729 I okhttp.OkHttpClient: x-xss-protection: 1; mode=block
+03-26 11:00:36.201 31251 31729 I okhttp.OkHttpClient: cache-control: no-cache, no-store, max-age=0, must-revalidate
+03-26 11:00:36.201 31251 31729 I okhttp.OkHttpClient: pragma: no-cache
+03-26 11:00:36.201 31251 31729 I okhttp.OkHttpClient: expires: 0
+03-26 11:00:36.201 31251 31729 I okhttp.OkHttpClient: strict-transport-security: max-age=31536000 ; includeSubDomains
+03-26 11:00:36.201 31251 31729 I okhttp.OkHttpClient: x-frame-options: DENY
+03-26 11:00:36.203 31251 31729 I okhttp.OkHttpClient: [{"id":"fc0f2f09-7b94-4140-b5f3-9fc589d7fa18","address":"PH","name":"My store"}]
+03-26 11:00:36.203 31251 31729 I okhttp.OkHttpClient: <-- END HTTP (80-byte body)
+03-26 11:00:36.233 31251 31729 I okhttp.OkHttpClient: --> GET https://pulsar.psr-it.com/api/v2/market/user/34c9c05b-4de8-4edf-9bfa-0efdb09d8a94/devices
+03-26 11:00:36.233 31251 31729 I okhttp.OkHttpClient: --> END GET
+03-26 11:00:36.706 31251 31729 I okhttp.OkHttpClient: <-- 200 https://pulsar.psr-it.com/api/v2/market/user/34c9c05b-4de8-4edf-9bfa-0efdb09d8a94/devices (473ms)
+03-26 11:00:36.706 31251 31729 I okhttp.OkHttpClient: date: Thu, 26 Mar 2026 03:00:36 GMT
+03-26 11:00:36.706 31251 31729 I okhttp.OkHttpClient: content-type: application/json
+03-26 11:00:36.706 31251 31729 I okhttp.OkHttpClient: vary: Accept-Encoding
+03-26 11:00:36.706 31251 31729 I okhttp.OkHttpClient: vary: Origin
+03-26 11:00:36.706 31251 31729 I okhttp.OkHttpClient: vary: Access-Control-Request-Method
+03-26 11:00:36.706 31251 31729 I okhttp.OkHttpClient: vary: Access-Control-Request-Headers
+03-26 11:00:36.706 31251 31729 I okhttp.OkHttpClient: vary: Origin
+03-26 11:00:36.706 31251 31729 I okhttp.OkHttpClient: vary: Access-Control-Request-Method
+03-26 11:00:36.706 31251 31729 I okhttp.OkHttpClient: vary: Access-Control-Request-Headers
+03-26 11:00:36.706 31251 31729 I okhttp.OkHttpClient: x-content-type-options: nosniff
+03-26 11:00:36.706 31251 31729 I okhttp.OkHttpClient: x-xss-protection: 1; mode=block
+03-26 11:00:36.706 31251 31729 I okhttp.OkHttpClient: cache-control: no-cache, no-store, max-age=0, must-revalidate
+03-26 11:00:36.706 31251 31729 I okhttp.OkHttpClient: pragma: no-cache
+03-26 11:00:36.706 31251 31729 I okhttp.OkHttpClient: expires: 0
+03-26 11:00:36.706 31251 31729 I okhttp.OkHttpClient: strict-transport-security: max-age=31536000 ; includeSubDomains
+03-26 11:00:36.706 31251 31729 I okhttp.OkHttpClient: x-frame-options: DENY
+03-26 11:00:36.714 31251 31729 I okhttp.OkHttpClient: [{"id":"a29e8f74-e57b-46cf-80a9-a5dff92f49a2","shopId":"fc0f2f09-7b94-4140-b5f3-9fc589d7fa18","name":"My device","state":"ONLINE","serialNumber":"a29e8f74-e57b-46cf-80a9-a5dff92f49a2","lastOnlineDate":1774494036629,"registrationDate":1774494035170,"model":"Mobile","warrantyExpirationDate":null,"remoteControlAvailable":false,"deviceId":"e14ceab085867eab","token":"b84a6501-c81e-4e95-a148-77b12670102b"}]
+03-26 11:00:36.714 31251 31729 I okhttp.OkHttpClient: <-- END HTTP (404-byte body)
+03-26 11:00:38.363 31251 31778 I okhttp.OkHttpClient: --> GET https://pulsar.psr-it.com/mobile-cashier/device/info?userId=34c9c05b-4de8-4edf-9bfa-0efdb09d8a94&deviceId=e14ceab085867eab
+03-26 11:00:38.363 31251 31778 I okhttp.OkHttpClient: platform: Android
+03-26 11:00:38.363 31251 31778 I okhttp.OkHttpClient: versionName: 1.0.30
+03-26 11:00:38.363 31251 31778 I okhttp.OkHttpClient: versionCode: 110304
+03-26 11:00:38.363 31251 31778 I okhttp.OkHttpClient: --> END GET
+03-26 11:00:39.801 31251 31778 I okhttp.OkHttpClient: <-- 200 https://pulsar.psr-it.com/mobile-cashier/device/info?userId=34c9c05b-4de8-4edf-9bfa-0efdb09d8a94&deviceId=e14ceab085867eab (1437ms)
+03-26 11:00:39.801 31251 31778 I okhttp.OkHttpClient: date: Thu, 26 Mar 2026 03:00:39 GMT
+03-26 11:00:39.801 31251 31778 I okhttp.OkHttpClient: content-type: application/json
+03-26 11:00:39.801 31251 31778 I okhttp.OkHttpClient: vary: Accept-Encoding
+03-26 11:00:39.801 31251 31778 I okhttp.OkHttpClient: vary: Origin
+03-26 11:00:39.801 31251 31778 I okhttp.OkHttpClient: vary: Access-Control-Request-Method
+03-26 11:00:39.801 31251 31778 I okhttp.OkHttpClient: vary: Access-Control-Request-Headers
+03-26 11:00:39.801 31251 31778 I okhttp.OkHttpClient: expires: 0
+03-26 11:00:39.801 31251 31778 I okhttp.OkHttpClient: cache-control: no-cache, no-store, max-age=0, must-revalidate
+03-26 11:00:39.801 31251 31778 I okhttp.OkHttpClient: x-xss-protection: 1; mode=block
+03-26 11:00:39.801 31251 31778 I okhttp.OkHttpClient: pragma: no-cache
+03-26 11:00:39.801 31251 31778 I okhttp.OkHttpClient: x-frame-options: DENY
+03-26 11:00:39.801 31251 31778 I okhttp.OkHttpClient: vary: Origin
+03-26 11:00:39.801 31251 31778 I okhttp.OkHttpClient: vary: Access-Control-Request-Method
+03-26 11:00:39.801 31251 31778 I okhttp.OkHttpClient: vary: Access-Control-Request-Headers
+03-26 11:00:39.801 31251 31778 I okhttp.OkHttpClient: x-content-type-options: nosniff
+03-26 11:00:39.801 31251 31778 I okhttp.OkHttpClient: strict-transport-security: max-age=31536000 ; includeSubDomains
+03-26 11:00:40.805 31251 31778 I okhttp.OkHttpClient: {"uuid":"a29e8f74-e57b-46cf-80a9-a5dff92f49a2","name":"My device","storeUuid":"fc0f2f09-7b94-4140-b5f3-9fc589d7fa18","timezoneOffset":0,"imei":"e14ceab085867eab","token":"b84a6501-c81e-4e95-a148-77b12670102b","userId":"34c9c05b-4de8-4edf-9bfa-0efdb09d8a94"}
+03-26 11:00:40.805 31251 31778 I okhttp.OkHttpClient: <-- END HTTP (257-byte body)
+03-26 11:00:42.457 31251 31818 I okhttp.OkHttpClient: --> GET https://api.psr-it.com/stores/fc0f2f09-7b94-4140-b5f3-9fc589d7fa18/products
+03-26 11:00:42.458 31251 31818 I okhttp.OkHttpClient: Authorization: b84a6501-c81e-4e95-a148-77b12670102b
+03-26 11:00:42.458 31251 31818 I okhttp.OkHttpClient: --> END GET
+03-26 11:00:42.459 31251 31819 I okhttp.OkHttpClient: --> GET https://api.psr-it.com/stores/fc0f2f09-7b94-4140-b5f3-9fc589d7fa18/product-groups
+03-26 11:00:42.459 31251 31819 I okhttp.OkHttpClient: Authorization: b84a6501-c81e-4e95-a148-77b12670102b
+03-26 11:00:42.459 31251 31819 I okhttp.OkHttpClient: --> END GET
+03-26 11:00:42.479 31251 31826 I okhttp.OkHttpClient: --> GET https://pulsar.psr-it.com/api/v2/market/user/34c9c05b-4de8-4edf-9bfa-0efdb09d8a94/roles/bfe4b768-e13f-4069-9cbb-4662ab4b4d38
+03-26 11:00:42.479 31251 31826 I okhttp.OkHttpClient: --> END GET
+03-26 11:00:43.445 31251 31826 I okhttp.OkHttpClient: <-- 200 https://pulsar.psr-it.com/api/v2/market/user/34c9c05b-4de8-4edf-9bfa-0efdb09d8a94/roles/bfe4b768-e13f-4069-9cbb-4662ab4b4d38 (966ms)
+03-26 11:00:43.445 31251 31826 I okhttp.OkHttpClient: date: Thu, 26 Mar 2026 03:00:43 GMT
+03-26 11:00:43.445 31251 31826 I okhttp.OkHttpClient: content-type: application/json
+03-26 11:00:43.445 31251 31826 I okhttp.OkHttpClient: vary: Accept-Encoding
+03-26 11:00:43.445 31251 31826 I okhttp.OkHttpClient: vary: Origin
+03-26 11:00:43.445 31251 31826 I okhttp.OkHttpClient: vary: Access-Control-Request-Method
+03-26 11:00:43.445 31251 31826 I okhttp.OkHttpClient: vary: Access-Control-Request-Headers
+03-26 11:00:43.445 31251 31826 I okhttp.OkHttpClient: vary: Origin
+03-26 11:00:43.445 31251 31826 I okhttp.OkHttpClient: vary: Access-Control-Request-Method
+03-26 11:00:43.445 31251 31826 I okhttp.OkHttpClient: vary: Access-Control-Request-Headers
+03-26 11:00:43.445 31251 31826 I okhttp.OkHttpClient: x-content-type-options: nosniff
+03-26 11:00:43.445 31251 31826 I okhttp.OkHttpClient: x-xss-protection: 1; mode=block
+03-26 11:00:43.445 31251 31826 I okhttp.OkHttpClient: cache-control: no-cache, no-store, max-age=0, must-revalidate
+03-26 11:00:43.445 31251 31826 I okhttp.OkHttpClient: pragma: no-cache
+03-26 11:00:43.445 31251 31826 I okhttp.OkHttpClient: expires: 0
+03-26 11:00:43.445 31251 31826 I okhttp.OkHttpClient: strict-transport-security: max-age=31536000 ; includeSubDomains
+03-26 11:00:43.445 31251 31826 I okhttp.OkHttpClient: x-frame-options: DENY
+03-26 11:00:43.447 31251 31826 I okhttp.OkHttpClient: {"name":"Administrator","grants":["CASH_OPERATIONS_SELL","CASH_OPERATIONS_SELL_ADDITIONAL_CHANGE_ZERO_PRICE","CASH_OPERATIONS_SELL_ADDITIONAL_POSITION_DISCOUNT","CASH_OPERATIONS_SELL_ADDITIONAL_DOCUMENT_DISCOUNT","CASH_OPERATIONS_SELL_ADDITIONAL_REGISTER_POSITION_FREE","CASH_OPERATIONS_PAYBACK","CASH_OPERATIONS_PAYBACK_BY_SUM","CASH_OPERATIONS_PAYBACK_BY_SUM_ADDITIONAL_CHANGE_PRICE","CASH_OPERATIONS_PAYBACK_BY_SUM_ADDITIONAL_CHANGE_ZERO_PRICE","CASH_OPERATIONS_PAYBACK_BY_SUM_ADDITIONAL_POSITION_DISCOUNT","CASH_OPERATIONS_PAYBACK_BY_SUM_ADDITIONAL_DOCUMENT_DISCOUNT","CASH_OPERATIONS_PAYBACK_BY_SUM_ADDITIONAL_REGISTER_POSITION_FREE","CASH_OPERATIONS_CASH_DRAWER_CASH_INCOME","CASH_OPERATIONS_CASH_DRAWER_CASH_OUTCOME","CASH_OPERATIONS_SELL_ADDITIONAL_POSITION_DELETE","CASH_OPERATIONS_PAYBACK_BY_SUM_ADDITIONAL_POSITION_DELETE","CASH_OPERATIONS_SELL_ADDITIONAL_ADD_COMMODITY_WITH_BARCODE_FROM_CATALOG","CASH_OPERATIONS_PAYBACK_BY_SUM_ADDITIONAL_ADD_COMMODITY_WITH_BARCODE_FROM_CATALOG","CASH_OPERATIONS_SELL_ADDITIONAL_POSITION_REDUCE_THE_AMOUNT","CASH_OPERATIONS_PAYBACK_BY_SUM_ADDITIONAL_POSITION_REDUCE_THE_AMOUNT","APPLICATIONS_MERCHANDISER","APPLICATIONS_MERCHANDISER_EDIT_PRODUCT","APPLICATIONS_MERCHANDISER_INVENTORY","APPLICATIONS_MERCHANDISER_ACCEPT","APPLICATIONS_MERCHANDISER_REVALUATION","APPLICATIONS_MERCHANDISER_RETURN","APPLICATIONS_MERCHANDISER_WRITE_OFF","CASH_REPORTS_X_REPORT","CASH_REPORTS_Z_REPORT","MANAGEMENT_REPORTS_STOCK_REPORT","MANAGEMENT_REPORTS_PROCUREMENT_REPORT","MANAGEMENT_REPORTS_SALES_REPORT","MANAGEMENT_REPORTS_CONSOLIDATED_SALES_REPORT","MANAGEMENT_REPORTS_GROSS_PROFIT_REPORT","MANAGEMENT_REPORTS_COMMODITIES_MOVEMENTS_REPORT","DOCUMENTS_JOURNAL","OPERATIONS_JOURNAL","SETTINGS_MENU","SERVICE_EXCHANGE"]}
+03-26 11:00:43.447 31251 31826 I okhttp.OkHttpClient: <-- END HTTP (1750-byte body)
+03-26 11:00:43.461 31251 31818 I okhttp.OkHttpClient: <-- 200 https://api.psr-it.com/stores/fc0f2f09-7b94-4140-b5f3-9fc589d7fa18/products (1003ms)
+03-26 11:00:43.461 31251 31818 I okhttp.OkHttpClient: date: Thu, 26 Mar 2026 03:00:43 GMT
+03-26 11:00:43.461 31251 31818 I okhttp.OkHttpClient: content-type: application/json;charset=UTF-8
+03-26 11:00:43.461 31251 31818 I okhttp.OkHttpClient: vary: Accept-Encoding
+03-26 11:00:43.461 31251 31818 I okhttp.OkHttpClient: vary: Origin
+03-26 11:00:43.461 31251 31818 I okhttp.OkHttpClient: vary: Access-Control-Request-Method
+03-26 11:00:43.461 31251 31818 I okhttp.OkHttpClient: vary: Access-Control-Request-Headers
+03-26 11:00:43.461 31251 31818 I okhttp.OkHttpClient: x-ratelimit-limit: 3000
+03-26 11:00:43.461 31251 31818 I okhttp.OkHttpClient: x-ratelimit-remaining: 2994
+03-26 11:00:43.461 31251 31818 I okhttp.OkHttpClient: x-ratelimit-reset: 2816
+03-26 11:00:43.461 31251 31818 I okhttp.OkHttpClient: referrer-policy: no-referrer
+03-26 11:00:43.463 31251 31818 I okhttp.OkHttpClient: {"items":[{"type":"NORMAL","name":"product in group 1","code":"3","price":0.00,"cost_price":0.00,"measure_name":"EA","tax":"NO_VAT","allow_to_sell":true,"description":"","article_number":"","parent_id":"d2e3d899-6103-486e-ad84-f1c5fbd470b0","id":"6b671a77-3d86-4adb-8142-13304651e54a","store_id":"fc0f2f09-7b94-4140-b5f3-9fc589d7fa18","user_id":"34c9c05b-4de8-4edf-9bfa-0efdb09d8a94","created_at":"2026-03-26T02:57:27.256+0000","updated_at":"2026-03-26T02:57:27.256+0000"},{"type":"NORMAL","name":"product 1","code":"1","price":1.00,"cost_price":1.00,"measure_name":"EA","tax":"NO_VAT","allow_to_sell":true,"description":"description","article_number":"vendor code","id":"dd72a731-a1d8-44e9-b4ab-d932d68674fc","store_id":"fc0f2f09-7b94-4140-b5f3-9fc589d7fa18","user_id":"34c9c05b-4de8-4edf-9bfa-0efdb09d8a94","created_at":"2026-03-26T02:55:34.877+0000","updated_at":"2026-03-26T02:55:45.948+0000"},{"type":"SERVICE","name":"service 1 edit","code":"2","price":1.00,"measure_name":"EA","tax":"VAT_3","allow_to_sell":true,"description":"description","article_number":"vendor code","parent_id":"d2e3d899-6103-486e-ad84-f1c5fbd470b0","id":"0f3b73a3-f204-4b51-8dde-03adbc3b9e48","store_id":"fc0f2f09-7b94-4140-b5f3-9fc589d7fa18","user_id":"34c9c05b-4de8-4edf-9bfa-0efdb09d8a94","created_at":"2026-03-26T02:56:47.262+0000","updated_at":"2026-03-26T02:56:57.965+0000"}],"paging":{}}
+03-26 11:00:43.463 31251 31818 I okhttp.OkHttpClient: <-- END HTTP (1374-byte body)
+03-26 11:00:43.473 31251 31819 I okhttp.OkHttpClient: <-- 200 https://api.psr-it.com/stores/fc0f2f09-7b94-4140-b5f3-9fc589d7fa18/product-groups (1014ms)
+03-26 11:00:43.474 31251 31819 I okhttp.OkHttpClient: date: Thu, 26 Mar 2026 03:00:43 GMT
+03-26 11:00:43.474 31251 31819 I okhttp.OkHttpClient: content-type: application/json;charset=UTF-8
+03-26 11:00:43.474 31251 31819 I okhttp.OkHttpClient: vary: Accept-Encoding
+03-26 11:00:43.474 31251 31819 I okhttp.OkHttpClient: vary: Origin
+03-26 11:00:43.474 31251 31819 I okhttp.OkHttpClient: vary: Access-Control-Request-Method
+03-26 11:00:43.474 31251 31819 I okhttp.OkHttpClient: vary: Access-Control-Request-Headers
+03-26 11:00:43.474 31251 31819 I okhttp.OkHttpClient: x-ratelimit-limit: 3000
+03-26 11:00:43.474 31251 31819 I okhttp.OkHttpClient: x-ratelimit-remaining: 2993
+03-26 11:00:43.474 31251 31819 I okhttp.OkHttpClient: x-ratelimit-reset: 2816
+03-26 11:00:43.474 31251 31819 I okhttp.OkHttpClient: referrer-policy: no-referrer
+03-26 11:00:43.475 31251 31819 I okhttp.OkHttpClient: {"items":[{"name":"group 1","id":"d2e3d899-6103-486e-ad84-f1c5fbd470b0","store_id":"fc0f2f09-7b94-4140-b5f3-9fc589d7fa18","user_id":"34c9c05b-4de8-4edf-9bfa-0efdb09d8a94","created_at":"2026-03-26T02:56:13.306+0000","updated_at":"2026-03-26T02:56:13.306+0000"}],"paging":{}}
+03-26 11:00:43.475 31251 31819 I okhttp.OkHttpClient: <-- END HTTP (273-byte body)
+03-26 11:10:43.512 31251  1603 I okhttp.OkHttpClient: --> GET https://api.psr-it.com/stores/fc0f2f09-7b94-4140-b5f3-9fc589d7fa18/products
+03-26 11:10:43.512 31251  1603 I okhttp.OkHttpClient: Authorization: b84a6501-c81e-4e95-a148-77b12670102b
+03-26 11:10:43.512 31251  1603 I okhttp.OkHttpClient: --> END GET
+03-26 11:10:43.517 31251  1605 I okhttp.OkHttpClient: --> GET https://api.psr-it.com/stores/fc0f2f09-7b94-4140-b5f3-9fc589d7fa18/product-groups
+03-26 11:10:43.517 31251  1605 I okhttp.OkHttpClient: Authorization: b84a6501-c81e-4e95-a148-77b12670102b
+03-26 11:10:43.517 31251  1605 I okhttp.OkHttpClient: --> END GET
+03-26 11:10:44.561 31251  1605 I okhttp.OkHttpClient: <-- 200 https://api.psr-it.com/stores/fc0f2f09-7b94-4140-b5f3-9fc589d7fa18/product-groups (1044ms)
+03-26 11:10:44.561 31251  1605 I okhttp.OkHttpClient: date: Thu, 26 Mar 2026 03:10:44 GMT
+03-26 11:10:44.561 31251  1605 I okhttp.OkHttpClient: content-type: application/json;charset=UTF-8
+03-26 11:10:44.561 31251  1605 I okhttp.OkHttpClient: vary: Accept-Encoding
+03-26 11:10:44.561 31251  1605 I okhttp.OkHttpClient: vary: Origin
+03-26 11:10:44.561 31251  1605 I okhttp.OkHttpClient: vary: Access-Control-Request-Method
+03-26 11:10:44.561 31251  1605 I okhttp.OkHttpClient: vary: Access-Control-Request-Headers
+03-26 11:10:44.561 31251  1605 I okhttp.OkHttpClient: x-ratelimit-limit: 3000
+03-26 11:10:44.562 31251  1605 I okhttp.OkHttpClient: x-ratelimit-remaining: 2992
+03-26 11:10:44.562 31251  1605 I okhttp.OkHttpClient: x-ratelimit-reset: 2215
+03-26 11:10:44.562 31251  1605 I okhttp.OkHttpClient: referrer-policy: no-referrer
+03-26 11:10:44.564 31251  1605 I okhttp.OkHttpClient: {"items":[{"name":"group 1","id":"d2e3d899-6103-486e-ad84-f1c5fbd470b0","store_id":"fc0f2f09-7b94-4140-b5f3-9fc589d7fa18","user_id":"34c9c05b-4de8-4edf-9bfa-0efdb09d8a94","created_at":"2026-03-26T02:56:13.306+0000","updated_at":"2026-03-26T02:56:13.306+0000"}],"paging":{}}
+03-26 11:10:44.564 31251  1605 I okhttp.OkHttpClient: <-- END HTTP (273-byte body)
+03-26 11:10:44.568 31251  1603 I okhttp.OkHttpClient: <-- 200 https://api.psr-it.com/stores/fc0f2f09-7b94-4140-b5f3-9fc589d7fa18/products (1055ms)
+03-26 11:10:44.568 31251  1603 I okhttp.OkHttpClient: date: Thu, 26 Mar 2026 03:10:44 GMT
+03-26 11:10:44.568 31251  1603 I okhttp.OkHttpClient: content-type: application/json;charset=UTF-8
+03-26 11:10:44.568 31251  1603 I okhttp.OkHttpClient: vary: Accept-Encoding
+03-26 11:10:44.568 31251  1603 I okhttp.OkHttpClient: vary: Origin
+03-26 11:10:44.568 31251  1603 I okhttp.OkHttpClient: vary: Access-Control-Request-Method
+03-26 11:10:44.568 31251  1603 I okhttp.OkHttpClient: vary: Access-Control-Request-Headers
+03-26 11:10:44.568 31251  1603 I okhttp.OkHttpClient: x-ratelimit-limit: 3000
+03-26 11:10:44.568 31251  1603 I okhttp.OkHttpClient: x-ratelimit-remaining: 2991
+03-26 11:10:44.568 31251  1603 I okhttp.OkHttpClient: x-ratelimit-reset: 2215
+03-26 11:10:44.568 31251  1603 I okhttp.OkHttpClient: referrer-policy: no-referrer
+03-26 11:10:44.569 31251  1603 I okhttp.OkHttpClient: {"items":[{"type":"NORMAL","name":"product in group 1","code":"3","price":0.00,"cost_price":0.00,"measure_name":"EA","tax":"NO_VAT","allow_to_sell":true,"description":"","article_number":"","parent_id":"d2e3d899-6103-486e-ad84-f1c5fbd470b0","id":"6b671a77-3d86-4adb-8142-13304651e54a","store_id":"fc0f2f09-7b94-4140-b5f3-9fc589d7fa18","user_id":"34c9c05b-4de8-4edf-9bfa-0efdb09d8a94","created_at":"2026-03-26T02:57:27.256+0000","updated_at":"2026-03-26T02:57:27.256+0000"},{"type":"NORMAL","name":"product 1","code":"1","price":1.00,"cost_price":1.00,"measure_name":"EA","tax":"NO_VAT","allow_to_sell":true,"description":"description","article_number":"vendor code","id":"dd72a731-a1d8-44e9-b4ab-d932d68674fc","store_id":"fc0f2f09-7b94-4140-b5f3-9fc589d7fa18","user_id":"34c9c05b-4de8-4edf-9bfa-0efdb09d8a94","created_at":"2026-03-26T02:55:34.877+0000","updated_at":"2026-03-26T02:55:45.948+0000"},{"type":"SERVICE","name":"service 1 edit","code":"2","price":1.00,"measure_name":"EA","tax":"VAT_3","allow_to_sell":true,"description":"description","article_number":"vendor code","parent_id":"d2e3d899-6103-486e-ad84-f1c5fbd470b0","id":"0f3b73a3-f204-4b51-8dde-03adbc3b9e48","store_id":"fc0f2f09-7b94-4140-b5f3-9fc589d7fa18","user_id":"34c9c05b-4de8-4edf-9bfa-0efdb09d8a94","created_at":"2026-03-26T02:56:47.262+0000","updated_at":"2026-03-26T02:56:57.965+0000"}],"paging":{}}
+03-26 11:10:44.569 31251  1603 I okhttp.OkHttpClient: <-- END HTTP (1374-byte body)
+03-26 11:20:43.553 31251  4934 I okhttp.OkHttpClient: --> GET https://api.psr-it.com/stores/fc0f2f09-7b94-4140-b5f3-9fc589d7fa18/products
+03-26 11:20:43.553 31251  4934 I okhttp.OkHttpClient: Authorization: b84a6501-c81e-4e95-a148-77b12670102b
+03-26 11:20:43.553 31251  4934 I okhttp.OkHttpClient: --> END GET
+03-26 11:20:43.566 31251  4934 I okhttp.OkHttpClient: <-- HTTP FAILED: java.net.UnknownHostException: Unable to resolve host "api.psr-it.com": No address associated with hostname
+03-26 11:20:43.591 31251  4934 I okhttp.OkHttpClient: --> GET https://api.psr-it.com/stores/fc0f2f09-7b94-4140-b5f3-9fc589d7fa18/product-groups
+03-26 11:20:43.591 31251  4934 I okhttp.OkHttpClient: Authorization: b84a6501-c81e-4e95-a148-77b12670102b
+03-26 11:20:43.591 31251  4934 I okhttp.OkHttpClient: --> END GET
+03-26 11:20:43.596 31251  4934 I okhttp.OkHttpClient: <-- HTTP FAILED: java.net.UnknownHostException: Unable to resolve host "api.psr-it.com": No address associated with hostname

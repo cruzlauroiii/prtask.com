@@ -1,0 +1,377 @@
+@page "/"
+@implements IDisposable
+@inject INfcWorkbenchService Pulse
+
+<PageTitle>WillowMaze</PageTitle>
+
+<div class="scan-shell">
+    <div class="wss-bar">
+        <span class="wss-dot @(Pulse.IsWssConnected ? "on" : "off")"></span>
+        <span>@(Pulse.IsWssConnected ? $"WSS connected: {Pulse.WssUrl}" : "WSS disconnected")</span>
+        <span>@(Pulse.HasWebNfc ? "Web NFC available" : "No Web NFC")</span>
+        <input @bind="_wssUrl" placeholder="wss://0.0.0.0:PORT" style="width:16rem" />
+        <button class="action primary" @onclick="ConnectWssAsync" disabled="@Pulse.IsWssConnected">Connect</button>
+        <button class="action" @onclick="DisconnectWssAsync" disabled="@(!Pulse.IsWssConnected)">Disconnect</button>
+    </div>
+    <section class="hero-card">
+        <p class="eyebrow">Willow Maze</p>
+        <h1>NFC Workbench</h1>
+        <p class="lede">
+            Full NFC workbench in the browser via WebAssembly.
+            Reader mode scans tags via Web NFC or WSS proxy to an Android device.
+            HCE APDU and NFC-F applets run in-process in WASM.
+            Raw tech I/O, NDEF write, observe mode, polling filters, and discovery
+            technology control operate through the WSS bridge.
+        </p>
+        <div class="hero-actions">
+            <button class="action primary" @onclick="StartAsync" disabled="@Pulse.IsListening">Start reader</button>
+            <button class="action" @onclick="StopAsync" disabled="@(!Pulse.IsListening)">Pause</button>
+            <button class="action" @onclick="RefreshAsync">Refresh</button>
+            <button class="action" @onclick="OpenSettingsAsync" disabled="@(!Pulse.IsWssConnected)">NFC settings</button>
+            @if (Pulse.SupportsTagIntentPreference)
+            {
+                <button class="action" @onclick="OpenRoutingAsync">Tag routing</button>
+            }
+        </div>
+    </section>
+    <section class="status-grid">
+        <article class="panel-card">
+            <h2>Adapter state</h2>
+            <div class="badge-row">
+                <span class="@GetBadgeClass(Pulse.IsSupported)">@(Pulse.IsSupported ? "NFC ready" : "NFC missing")</span>
+                <span class="@GetBadgeClass(Pulse.IsEnabled)">@(Pulse.IsEnabled ? "Radio on" : "Radio off")</span>
+                <span class="@GetBadgeClass(Pulse.IsListening)">@(Pulse.IsListening ? "Reader live" : "Reader paused")</span>
+                <span class="@GetBadgeClass(Pulse.SupportsHce)">@(Pulse.SupportsHce ? "HCE yes" : "HCE no")</span>
+                <span class="@GetBadgeClass(Pulse.SupportsNfcFCardEmulation)">@(Pulse.SupportsNfcFCardEmulation ? "NFC-F yes" : "NFC-F no")</span>
+                <span class="@GetBadgeClass(Pulse.SupportsObserveMode)">@(Pulse.SupportsObserveMode ? "Observe mode" : "No observe mode")</span>
+                <span class="@GetBadgeClass(Pulse.SupportsSecureNfc)">@(Pulse.SupportsSecureNfc ? (Pulse.IsSecureNfcEnabled ? "Secure NFC on" : "Secure NFC off") : "No secure NFC")</span>
+                <span class="@GetBadgeClass(Pulse.SupportsReaderOption)">@(Pulse.SupportsReaderOption ? (Pulse.IsReaderOptionEnabled ? "Reader option on" : "Reader option off") : "No reader option")</span>
+                <span class="@GetBadgeClass(Pulse.IsWssConnected)">@(Pulse.IsWssConnected ? "WSS connected" : "WSS offline")</span>
+                <span class="@GetBadgeClass(Pulse.HasWebNfc)">@(Pulse.HasWebNfc ? "Web NFC" : "No Web NFC")</span>
+                @if (Pulse.SupportsObserveMode)
+                {
+                    <span class="@GetBadgeClass(Pulse.IsObserveModeEnabled)">@(Pulse.IsObserveModeEnabled ? "Observing" : "Transactions")</span>
+                }
+                @if (Pulse.SupportsTagIntentPreference)
+                {
+                    <span class="@GetBadgeClass(Pulse.IsTagIntentAllowed == true)">@(Pulse.IsTagIntentAllowed == true ? "Tag intents allowed" : "Tag intents blocked")</span>
+                }
+                @if (Pulse.HasCustomDiscoveryTechnology)
+                {
+                    <span class="badge good">Custom discovery</span>
+                }
+            </div>
+            <p class="status-text">@Pulse.StatusText</p>
+            <ul class="detail-list">
+                @foreach (var Note in Pulse.CapabilityNotes) { <li>@Note</li> }
+            </ul>
+            <ul class="detail-list">
+                @foreach (var Fact in Pulse.AntennaFacts) { <li>@Fact</li> }
+            </ul>
+            <div class="chip-row">
+                <span class="chip">Payment: @Pulse.PreferredPaymentDescription</span>
+                <span class="chip">Route: @Pulse.PreferredPaymentRoute</span>
+                @if (Pulse.DefaultNfcSubscriptionId >= 0)
+                {
+                    <span class="chip">Sub ID: @Pulse.DefaultNfcSubscriptionId</span>
+                }
+            </div>
+        </article>
+
+        <article class="panel-card">
+            <h2>Latest tag</h2>
+            @if (_Latest is null)
+            {
+                <p class="empty-state">Nothing captured yet. Start the reader and tap a tag.</p>
+            }
+            else
+            {
+                <p class="snapshot-title">@_Latest.Summary</p>
+                <p class="snapshot-time">@_Latest.CapturedAtUtc.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss")</p>
+                <code class="mono">@_Latest.IdentifierHex</code>
+                <p class="status-text write-note">@_Latest.WriteOutcome</p>
+                <div class="hero-actions compact">
+                    <button class="action" @onclick="IgnoreTagAsync" disabled="@(!Pulse.IsWssConnected)">Ignore tag (@_DebounceMs ms)</button>
+                    <input type="number" @bind="_DebounceMs" style="width:5em" min="100" max="10000" step="100" />
+                </div>
+            }
+        </article>
+    </section>
+    <section class="detail-grid">
+        <article class="panel-card detail-wide">
+            <h2>Next NDEF write</h2>
+            <p class="status-text">Arm a write for the next scanned tag. Uses Web NFC or WSS proxy.</p>
+            <div class="form-grid">
+                <label><span>Payload kind</span><select @bind="_WriteKind"><option value="Text">Text</option><option value="Uri">URI</option><option value="Mime">MIME</option></select></label>
+                @if (_WriteKind == "Mime") { <label><span>MIME type</span><input @bind="_MimeType" placeholder="text/plain" /></label> }
+                <label class="wide"><span>Payload</span><textarea @bind="_PayloadText" rows="4" placeholder="Hello from Willow Maze"></textarea></label>
+                <label class="toggle"><input type="checkbox" @bind="_MakeReadOnly" /><span>Lock tag after write</span></label>
+            </div>
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="ArmWriteAsync">Arm next write</button>
+                <button class="action" @onclick="ClearWriteAsync" disabled="@(Pulse.PendingWrite is null)">Clear pending write</button>
+            </div>
+            <div class="badge-row inline-gap">
+                <span class="badge neutral">@(Pulse.PendingWrite is null ? "No pending write" : Pulse.PendingWrite.Summary)</span>
+                <span class="badge neutral">@Pulse.LastWriteStatus</span>
+            </div>
+        </article>
+        <article class="panel-card">
+            <h2>ISO-DEP applet (in-process)</h2>
+            <p class="status-text">HCE APDU applet runs entirely in browser WASM. SELECT AID + GET DATA + PUT DATA + ECHO + async response.</p>
+            <div class="chip-row">
+                <span class="chip">AID @Pulse.HceAidHex</span>
+                @if (Pulse.SupportsAidPrefixRegistration) { <span class="chip">AID prefix supported</span> }
+            </div>
+            <p class="status-text">@Pulse.HceStatusText</p>
+            <label class="wide"><span>Response text</span><textarea @bind="_HceResponseText" rows="3"></textarea></label>
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="SaveHceAsync">Save APDU text</button>
+                <button class="action" @onclick="PreferHceAsync" disabled="@(!Pulse.IsWssConnected)">Prefer service</button>
+                <button class="action" @onclick="ReleaseHceAsync" disabled="@(!Pulse.IsPreferredService)">Release preference</button>
+            </div>
+        </article>
+        <article class="panel-card">
+            <h2>Dynamic AID management</h2>
+            <p class="status-text">Register additional AIDs for the APDU applet. Enter hex AIDs separated by commas or newlines.</p>
+            <label class="wide"><span>AID hex values</span><textarea @bind="_DynamicAidText" rows="3" placeholder="F0010203040506, F0394148148100"></textarea></label>
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="RegisterAidsAsync">Register AIDs</button>
+                <button class="action" @onclick="ClearAidsAsync">Clear dynamic AIDs</button>
+            </div>
+            @if (Pulse.RegisteredHceAids.Count > 0) { <div class="chip-row">@foreach (var Aid in Pulse.RegisteredHceAids) { <span class="chip">@Aid</span> }</div> }
+        </article>
+        <article class="panel-card">
+            <h2>ISO-DEP events</h2>
+            @if (Pulse.HceEvents.Count == 0) { <p class="empty-state">No APDU events yet.</p> }
+            else { <ul class="detail-list">@foreach (var Entry in Pulse.HceEvents) { <li>@Entry</li> }</ul> }
+        </article>
+        <article class="panel-card">
+            <h2>Observe mode</h2>
+            <p class="status-text">Observe mode logs polling frames without completing the transaction (requires WSS).</p>
+            <p class="status-text">@Pulse.ObserveModeStatusText</p>
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="EnableObserveAsync" disabled="@(!Pulse.IsWssConnected || !Pulse.SupportsObserveMode)">Enable observe</button>
+                <button class="action" @onclick="DisableObserveAsync" disabled="@(!Pulse.IsObserveModeEnabled)">Disable observe</button>
+                <button class="action" @onclick="SetDefaultObserveTrueAsync" disabled="@(!Pulse.IsWssConnected || !Pulse.SupportsObserveMode)">Default on</button>
+                <button class="action" @onclick="SetDefaultObserveFalseAsync" disabled="@(!Pulse.ShouldDefaultToObserveMode)">Default off</button>
+            </div>
+        </article>
+        <article class="panel-card">
+            <h2>Polling loop filters</h2>
+            <p class="status-text">Register exact hex or regex-pattern polling loop filters (requires WSS).</p>
+            <div class="form-grid">
+                <label class="wide"><span>Hex filter</span><input @bind="_PollingFilterHex" placeholder="050506070809" /></label>
+                <label class="toggle"><input type="checkbox" @bind="_PollingAutoTransact" /><span>Auto-transact on match</span></label>
+            </div>
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="AddPollingFilterAsync" disabled="@(!Pulse.IsWssConnected)">Add exact filter</button>
+                <button class="action" @onclick="RemovePollingFilterAsync" disabled="@(Pulse.PollingFilters.Count == 0)">Remove</button>
+            </div>
+            @if (Pulse.PollingFilters.Count > 0) { <div class="chip-row">@foreach (var F in Pulse.PollingFilters) { <span class="chip">@F</span> }</div> }
+            <div class="form-grid">
+                <label class="wide"><span>Pattern filter (regex)</span><input @bind="_PollingPatternFilter" placeholder="05050[0-9A-F]*" /></label>
+            </div>
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="AddPollingPatternFilterAsync" disabled="@(!Pulse.IsWssConnected)">Add pattern filter</button>
+                <button class="action" @onclick="RemovePollingPatternFilterAsync" disabled="@(Pulse.PollingPatternFilters.Count == 0)">Remove pattern</button>
+            </div>
+            @if (Pulse.PollingPatternFilters.Count > 0) { <div class="chip-row">@foreach (var P in Pulse.PollingPatternFilters) { <span class="chip">@P</span> }</div> }
+        </article>
+    </section>
+    <section class="detail-grid">
+        <article class="panel-card detail-wide">
+            <h2>Discovery technology</h2>
+            <p class="status-text">Override NFC poll and listen technologies via WSS. @Pulse.DiscoveryStatusText</p>
+            <div class="form-grid">
+                <label class="toggle"><input type="checkbox" @bind="_PollNfcA" /><span>Poll NFC-A</span></label>
+                <label class="toggle"><input type="checkbox" @bind="_PollNfcB" /><span>Poll NFC-B</span></label>
+                <label class="toggle"><input type="checkbox" @bind="_PollNfcF" /><span>Poll NFC-F</span></label>
+                <label class="toggle"><input type="checkbox" @bind="_PollNfcV" /><span>Poll NFC-V</span></label>
+                <label class="toggle"><input type="checkbox" @bind="_PollBarcode" /><span>Poll Barcode</span></label>
+                <label class="toggle"><input type="checkbox" @bind="_ListenA" /><span>Listen passive A</span></label>
+                <label class="toggle"><input type="checkbox" @bind="_ListenB" /><span>Listen passive B</span></label>
+                <label class="toggle"><input type="checkbox" @bind="_ListenF" /><span>Listen passive F</span></label>
+            </div>
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="SetDiscoveryAsync" disabled="@(!Pulse.IsWssConnected)">Apply discovery</button>
+                <button class="action" @onclick="ResetDiscoveryAsync" disabled="@(!Pulse.HasCustomDiscoveryTechnology)">Reset to defaults</button>
+            </div>
+        </article>
+        <article class="panel-card detail-wide">
+            <h2>Raw Tech I/O</h2>
+            <p class="status-text">Send raw hex frames over NFC tech layers via WSS proxy.</p>
+            <div class="form-grid">
+                <label><span>Technology</span><select @bind="_RawTechnology"><option value="IsoDep">IsoDep</option><option value="NfcA">NfcA</option><option value="NfcB">NfcB</option><option value="NfcF">NfcF</option><option value="NfcV">NfcV</option><option value="MifareClassic">MifareClassic</option><option value="MifareUltralight">MifareUltralight</option></select></label>
+                <label class="wide"><span>Hex command</span><input @bind="_RawCommandHex" placeholder="00 A4 04 00 07 F0 77 0A 11 B1 C2 D3" /></label>
+            </div>
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="SendRawAsync" disabled="@(!Pulse.IsWssConnected)">Send raw frame</button>
+            </div>
+            <div class="badge-row inline-gap"><span class="badge neutral">@Pulse.LastRawStatus</span></div>
+        </article>
+        <article class="panel-card">
+            <h2>Raw events</h2>
+            @if (Pulse.RawEvents.Count == 0) { <p class="empty-state">No raw frames sent yet.</p> }
+            else { <ul class="detail-list">@foreach (var Entry in Pulse.RawEvents) { <li>@Entry</li> }</ul> }
+        </article>
+        <article class="panel-card">
+            <h2>NFC-F applet (in-process)</h2>
+            <p class="status-text">NFC-F host card emulation runs in browser WASM. Enable/disable via WSS proxy.</p>
+            <div class="chip-row">
+                <span class="chip">System Code @Pulse.HceFSystemCodeHex</span>
+                <span class="chip">NFCID2 @Pulse.HceFNfcid2Hex</span>
+                <span class="chip">T3T PMm @Pulse.HceFT3tPmmHex</span>
+                <span class="chip">@(Pulse.IsHceFEnabled ? "NFC-F enabled" : "NFC-F disabled")</span>
+            </div>
+            <p class="status-text">@Pulse.HceFStatusText</p>
+            <label class="wide"><span>NFC-F response text</span><textarea @bind="_HceFResponseText" rows="3"></textarea></label>
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="SaveHceFAsync">Save NFC-F text</button>
+                <button class="action" @onclick="EnableHceFAsync" disabled="@(!Pulse.IsWssConnected)">Enable NFC-F</button>
+                <button class="action" @onclick="DisableHceFAsync" disabled="@(!Pulse.IsHceFEnabled)">Disable NFC-F</button>
+            </div>
+        </article>
+        <article class="panel-card">
+            <h2>NFC-F events</h2>
+            @if (Pulse.HceFEvents.Count == 0) { <p class="empty-state">No NFC-F events yet.</p> }
+            else { <ul class="detail-list">@foreach (var Entry in Pulse.HceFEvents) { <li>@Entry</li> }</ul> }
+        </article>
+    </section>
+    @if (_Latest is not null)
+    {
+        <section class="detail-grid">
+            <article class="panel-card">
+                <h2>Tech stack</h2>
+                <div class="chip-row">@foreach (var Item in _Latest.Technologies) { <span class="chip">@Item</span> }</div>
+                <div class="headline-grid">@foreach (var Fact in _Latest.HeadlineFacts) { <div class="headline-chip">@Fact</div> }</div>
+            </article>
+            <article class="panel-card">
+                <h2>NDEF records</h2>
+                @if (_Latest.Records.Count == 0) { <p class="empty-state">No NDEF records decoded.</p> }
+                else { <div class="record-grid">@foreach (var Record in _Latest.Records) { <article class="record-card"><p class="record-kind">@Record.Icon @Record.Kind</p><p class="record-summary">@Record.Summary</p><code class="mono mini">@Record.PayloadHex</code></article> }</div> }
+            </article>
+            <article class="panel-card detail-wide">
+                <h2>Tech details</h2>
+                <ul class="detail-list">@foreach (var Line in _Latest.Details) { <li>@Line</li> }</ul>
+            </article>
+        </section>
+    }
+    <section class="detail-grid">
+        <article class="panel-card detail-wide">
+            <h2>JSONL logs</h2>
+            <p class="status-text">All NFC events logged in JSONL format.</p>
+            <div class="hero-actions compact">
+                <button class="action @(_ActiveLog == "session" ? "primary" : "")" @onclick='() => _ActiveLog = "session"'>Session</button>
+                <button class="action @(_ActiveLog == "tag" ? "primary" : "")" @onclick='() => _ActiveLog = "tag"'>Tag</button>
+                <button class="action @(_ActiveLog == "raw" ? "primary" : "")" @onclick='() => _ActiveLog = "raw"'>Raw</button>
+                <button class="action @(_ActiveLog == "hce" ? "primary" : "")" @onclick='() => _ActiveLog = "hce"'>HCE</button>
+                <button class="action @(_ActiveLog == "hcef" ? "primary" : "")" @onclick='() => _ActiveLog = "hcef"'>HCE-F</button>
+                <button class="action @(_ActiveLog == "adapter" ? "primary" : "")" @onclick='() => _ActiveLog = "adapter"'>Adapter</button>
+            </div>
+            <pre class="jsonl-viewer">@GetActiveLogContent()</pre>
+        </article>
+    </section>
+</div>
+
+@code {
+    private NfcTagSnapshot? _Latest;
+    private string _WriteKind = nameof(NdefPayloadKind.Text);
+    private string _PayloadText = "Hello from Willow Maze";
+    private string _MimeType = "text/plain";
+    private bool _MakeReadOnly;
+    private string _RawTechnology = "IsoDep";
+    private string _RawCommandHex = "00 A4 04 00 07 F0 77 0A 11 B1 C2 D3";
+    private string _HceResponseText = "Willow Maze demo payload";
+    private string _HceFResponseText = "Willow Maze flare payload";
+    private string _DynamicAidText = string.Empty;
+    private string _PollingFilterHex = string.Empty;
+    private string _PollingPatternFilter = string.Empty;
+    private bool _PollingAutoTransact;
+    private int _DebounceMs = 1500;
+    private string _ActiveLog = "session";
+    private bool _PollNfcA = true, _PollNfcB = true, _PollNfcF = true, _PollNfcV = true, _PollBarcode = true;
+    private bool _ListenA = true, _ListenB = true, _ListenF = true;
+    private string _wssUrl = "wss://0.0.0.0:51234";
+
+    protected override async Task OnInitializedAsync()
+    {
+        Pulse.Changed += HandleChanged;
+        await Pulse.InitializeAsync();
+        _Latest = Pulse.LatestTag;
+        _HceResponseText = Pulse.HceResponseText;
+        _HceFResponseText = Pulse.HceFResponseText;
+    }
+
+    private Task ConnectWssAsync() => Pulse.ConnectWssAsync(_wssUrl);
+    private Task DisconnectWssAsync() => Pulse.DisconnectWssAsync();
+    private Task StartAsync() => Pulse.StartReaderAsync();
+    private Task StopAsync() => Pulse.StopReaderAsync();
+    private Task RefreshAsync() => Pulse.RefreshAsync();
+    private Task OpenSettingsAsync() => Pulse.OpenNfcSettingsAsync();
+    private Task OpenRoutingAsync() => Pulse.OpenTagRoutingAsync();
+    private Task ClearWriteAsync() => Pulse.ClearWriteAsync();
+    private Task SendRawAsync() => Pulse.SendRawAsync(_RawTechnology, _RawCommandHex);
+    private Task SaveHceAsync() => Pulse.UpdateHceResponseAsync(_HceResponseText);
+    private Task SaveHceFAsync() => Pulse.UpdateHceFResponseAsync(_HceFResponseText);
+    private Task PreferHceAsync() => Pulse.SetPreferredServiceAsync(true);
+    private Task ReleaseHceAsync() => Pulse.SetPreferredServiceAsync(false);
+    private Task EnableHceFAsync() => Pulse.SetHceFEnabledAsync(true);
+    private Task DisableHceFAsync() => Pulse.SetHceFEnabledAsync(false);
+    private Task EnableObserveAsync() => Pulse.SetObserveModeEnabledAsync(true);
+    private Task DisableObserveAsync() => Pulse.SetObserveModeEnabledAsync(false);
+    private Task SetDefaultObserveTrueAsync() => Pulse.SetDefaultObserveModeAsync(true);
+    private Task SetDefaultObserveFalseAsync() => Pulse.SetDefaultObserveModeAsync(false);
+    private Task IgnoreTagAsync() => Pulse.IgnoreCurrentTagAsync(_DebounceMs);
+    private Task RegisterAidsAsync() => Pulse.RegisterHceAidsAsync(_DynamicAidText);
+    private Task ClearAidsAsync() => Pulse.ClearHceAidsAsync();
+    private Task AddPollingFilterAsync() => Pulse.AddPollingFilterAsync(_PollingFilterHex, _PollingAutoTransact);
+    private Task RemovePollingFilterAsync() => Pulse.RemovePollingFilterAsync(_PollingFilterHex);
+    private Task AddPollingPatternFilterAsync() => Pulse.AddPollingPatternFilterAsync(_PollingPatternFilter, _PollingAutoTransact);
+    private Task RemovePollingPatternFilterAsync() => Pulse.RemovePollingPatternFilterAsync(_PollingPatternFilter);
+    private Task ResetDiscoveryAsync() => Pulse.ResetDiscoveryTechnologyAsync();
+
+    private Task ArmWriteAsync()
+    {
+        var Kind = Enum.TryParse<NdefPayloadKind>(_WriteKind, true, out var Parsed) ? Parsed : NdefPayloadKind.Text;
+        return Pulse.ArmWriteAsync(new NdefWriteDraft(Kind, _PayloadText, _MimeType, string.Empty, string.Empty, _MakeReadOnly, DateTimeOffset.UtcNow, string.Empty, string.Empty, string.Empty, string.Empty));
+    }
+
+    private Task SetDiscoveryAsync()
+    {
+        var PollFlags = 0x80;
+        if (_PollNfcA) PollFlags |= 0x01;
+        if (_PollNfcB) PollFlags |= 0x02;
+        if (_PollNfcF) PollFlags |= 0x04;
+        if (_PollNfcV) PollFlags |= 0x08;
+        if (_PollBarcode) PollFlags |= 0x10;
+        var ListenFlags = 0;
+        if (_ListenA) ListenFlags |= 0x01;
+        if (_ListenB) ListenFlags |= 0x02;
+        if (_ListenF) ListenFlags |= 0x04;
+        return Pulse.SetDiscoveryTechnologyAsync(PollFlags, ListenFlags);
+    }
+
+    private string GetActiveLogContent() => _ActiveLog switch
+    {
+        "session" => string.IsNullOrWhiteSpace(Pulse.SessionJsonl) ? "(no session events yet)" : Pulse.SessionJsonl,
+        "tag" => string.IsNullOrWhiteSpace(Pulse.LatestTagJsonl) ? "(no tag scanned yet)" : Pulse.LatestTagJsonl,
+        "raw" => string.IsNullOrWhiteSpace(Pulse.RawJsonl) ? "(no raw events yet)" : Pulse.RawJsonl,
+        "hce" => string.IsNullOrWhiteSpace(Pulse.HceJsonl) ? "(no HCE events yet)" : Pulse.HceJsonl,
+        "hcef" => string.IsNullOrWhiteSpace(Pulse.HceFJsonl) ? "(no HCE-F events yet)" : Pulse.HceFJsonl,
+        "adapter" => Pulse.AdapterSnapshotJson,
+        _ => "(select a log stream)"
+    };
+
+    private void HandleChanged(object? Sender, EventArgs E)
+    {
+        _Latest = Pulse.LatestTag;
+        _HceResponseText = Pulse.HceResponseText;
+        _HceFResponseText = Pulse.HceFResponseText;
+        _ = InvokeAsync(StateHasChanged);
+    }
+
+    private static string GetBadgeClass(bool Value) => Value ? "badge good" : "badge bad";
+
+    public void Dispose() => Pulse.Changed -= HandleChanged;
+}

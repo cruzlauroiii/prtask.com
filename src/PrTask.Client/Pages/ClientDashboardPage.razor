@@ -1,0 +1,58 @@
+@page "/dashboard"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@if (IsLoggedIn)
+{
+    <h1>Welcome, @Username</h1>
+    <section class="dashboard-stats">
+        <div class="stat-card">
+            <span class="stat-value">0</span>
+            <span class="stat-label">Active Tasks</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-value">0</span>
+            <span class="stat-label">PRs Submitted</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-value">$0</span>
+            <span class="stat-label">Total Earned</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-value">Lv. 1</span>
+            <span class="stat-label">Current Level</span>
+        </div>
+    </section>
+    <section class="dashboard-section">
+        <h2>Recent Activity</h2>
+        <div class="empty-state">
+            <p>No activity yet. <a href="@RouteConstants.Tasks" class="btn btn-primary">Browse tasks</a> to get started.</p>
+        </div>
+    </section>
+}
+else
+{
+    <h1>Dashboard</h1>
+    <p>Please <a href="@RouteConstants.Login">sign in</a> to view your dashboard.</p>
+}
+@code {
+    private bool IsLoggedIn { get; set; }
+    private string Username { get; set; } = "";
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var Response = await Http.GetAsync(RouteConstants.ApiAuthMe);
+            if (Response.IsSuccessStatusCode)
+            {
+                var User = await Response.Content.ReadFromJsonAsync<AuthUser>();
+                IsLoggedIn = true;
+                Username = User?.Username ?? "Developer";
+            }
+        }
+        catch (HttpRequestException) { IsLoggedIn = false; }
+    }
+    private sealed class AuthUser
+    {
+        public string Username { get; set; } = "";
+    }
+}

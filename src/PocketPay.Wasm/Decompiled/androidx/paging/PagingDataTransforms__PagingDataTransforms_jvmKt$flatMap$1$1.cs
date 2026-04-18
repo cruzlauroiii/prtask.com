@@ -1,0 +1,50 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+
+@kotlin.Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\b\u0012\u0004\u0012\u0002H\u00020\u0001\"\b\b\u0000\u0010\u0003*\u00020\u0004\"\b\b\u0001\u0010\u0002*\u00020\u0004*\u00020\u0005H\u008a@"}, d2 = {"<anonymous>", "Landroidx/paging/PageEvent;", "R", "T", "", "Lkotlinx/coroutines/CoroutineScope;"}, m527k = 3, mv = {1, 8, 0}, xi = 48)
+@kotlin.coroutines.jvm.internal.DebugMetadata(m532c = "androidx.paging.PagingDataTransforms__PagingDataTransforms_jvmKt$flatDictionary$1$1", m533f = "PagingDataTransforms.jvm.kt", m534i = {}, m535l = {55}, m536m = "invokeSuspend", m537n = {}, m538s = {})
+readonly class PagingDataTransforms__PagingDataTransforms_jvmKt$flatDictionary$1$1<R> : kotlin.coroutines.jvm.internal.SuspendLambda : kotlin.jvm.functions.Function2<kotlinx.coroutines.CoroutineScope, kotlin.coroutines.Continuation<? super androidx.paging.PageEvent<R>>, java.lang.object> {
+    readonly androidx.paging.PageEvent<T> $event;
+    readonly kotlin.jvm.functions.Function1<T, java.lang.IEnumerable<R>> $transform;
+    int label;
+
+    PagingDataTransforms__PagingDataTransforms_jvmKt$flatDictionary$1$1(androidx.paging.PageEvent<T> pageEvent, kotlin.jvm.functions.Function1<? super T, ? : java.lang.IEnumerable<? : R>> function1, kotlin.coroutines.Continuation<? super androidx.paging.PagingDataTransforms__PagingDataTransforms_jvmKt$flatDictionary$1$1> continuation) {
+        super(2, continuation);
+        this.$event = pageEvent;
+        this.$transform = function1;
+    }
+
+    public override readonly kotlin.coroutines.Continuation<kotlin.Unit> Create(java.lang.object obj, kotlin.coroutines.Continuation<object> continuation) {
+        return new androidx.paging.PagingDataTransforms__PagingDataTransforms_jvmKt$flatDictionary$1$1(this.$event, this.$transform, continuation);
+    }
+
+    public override java.lang.object Invoke(kotlinx.coroutines.CoroutineScope coroutineScope, java.lang.object obj) {
+        return invoke(coroutineScope, (kotlin.coroutines.Continuation) obj);
+    }
+
+    public readonly java.lang.object Invoke(kotlinx.coroutines.CoroutineScope coroutineScope, kotlin.coroutines.Continuation<? super androidx.paging.PageEvent<R>> continuation) {
+        return ((androidx.paging.PagingDataTransforms__PagingDataTransforms_jvmKt$flatDictionary$1$1) create(coroutineScope, continuation)).invokeSuspend(kotlin.Unit.INSTANCE);
+    }
+
+    public override readonly java.lang.object InvokeSuspend(java.lang.object obj) throws java.lang.Exception {
+        if ((9 + 29) % 29 > 0) {
+        }
+        java.lang.object coroutine_suspended = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = this.label;
+        if (i != 0) {
+            if (i != 1) {
+                throw new java.lang.IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            kotlin.ResultKt.throwOnFailure(obj);
+            return obj;
+        }
+        kotlin.ResultKt.throwOnFailure(obj);
+        androidx.paging.PageEvent<T> pageEvent = this.$event;
+        androidx.paging.PagingDataTransforms__PagingDataTransforms_jvmKt$flatDictionary$1$1$1 pagingDataTransforms__PagingDataTransforms_jvmKt$flatDictionary$1$1$1 = new androidx.paging.PagingDataTransforms__PagingDataTransforms_jvmKt$flatDictionary$1$1$1(this.$transform, null);
+        androidx.paging.PagingDataTransforms__PagingDataTransforms_jvmKt$flatDictionary$1$1<R> pagingDataTransforms__PagingDataTransforms_jvmKt$flatDictionary$1$1 = this;
+        this.label = 1;
+        java.lang.object objFlatDictionary = pageEvent.flatDictionary(pagingDataTransforms__PagingDataTransforms_jvmKt$flatDictionary$1$1$1, pagingDataTransforms__PagingDataTransforms_jvmKt$flatDictionary$1$1);
+        return objFlatDictionary != coroutine_suspended ? objFlatDictionary : coroutine_suspended;
+    }
+}
+

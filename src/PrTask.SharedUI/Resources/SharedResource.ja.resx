@@ -1,0 +1,3726 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="xml:space" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter</value>
+  </resheader>
+  <data name="AboutBadgesDescription" xml:space="preserve">
+    <value>マージされた各プルリクエストには、達成マイルストーンに応じた実績バッジが付与されます。最初のプルリクエスト、10件目のプルリクエスト、収益マイルストーン、リーダーボード上位入賞でバッジを獲得できます。総収益で順位付けされた公開リーダーボードで競いましょう。すべてのプルリクエストは公開されています。</value>
+  </data>
+  <data name="AboutBadgesHeading" xml:space="preserve">
+    <value>実績バッジ</value>
+  </data>
+  <data name="AboutCommunityDescription" xml:space="preserve">
+    <value>PrTaskは、国境やタイムゾーンを越えて協力し、より良いソフトウェアを構築する開発者とクライアントのグローバルコミュニティを支えています。</value>
+  </data>
+  <data name="AboutCommunityHeading" xml:space="preserve">
+    <value>コミュニティへの影響</value>
+  </data>
+  <data name="AboutContactDescription" xml:space="preserve">
+    <value>サポートまたはビジネスに関するお問い合わせは support@prtask.com までご連絡ください。</value>
+  </data>
+  <data name="AboutContactHeading" xml:space="preserve">
+    <value>お問い合わせ</value>
+  </data>
+  <data name="AboutDescriptionHeading" xml:space="preserve">
+    <value>PrTask - </value>
+  </data>
+  <data name="AboutDescriptionParagraph1" xml:space="preserve">
+    <value>PrTaskは、ソフトウェア開発の才能はどこにでも存在するが、機会は均等ではないという信念のもとに設立されました。私たちのミッションは、スキルとコード品質だけが評価される透明なマーケットプレイスを構築することで、有償開発業務へのアクセスを民主化することです。PrTaskは、新興市場の優秀な開発者が高報酬のソフトウェア案件にアクセスする際の障壁を取り除くとともに、クライアントが使い慣れたpull requestワークフローを通じて本番対応コードを提供できる優秀な開発者を見つけられるよう構築されました。</value>
+  </data>
+  <data name="AboutDescriptionParagraph2" xml:space="preserve">
+    <value>透明性・公平性・オープンソースへのコミットメントという私たちのコアバリューが、すべての意思決定の指針となっています。透明性とは、すべてのタスク・バウンティ・レビューを公開することで、クライアントと開発者の双方が十分な情報をもとに判断できることを意味します。公平性とは、隠れた手数料や控除なしに、開発者がバウンティ収益の100%を受け取れることを意味します。オープンソースへのコミットメントとは、オープンソースプロジェクトへの有償貢献を可能にし、コミュニティの意見を取り入れながら自社プラットフォームのコードを維持することで、エコシステムを積極的に支援することを意味します。</value>
+  </data>
+  <data name="AboutDescriptionParagraph3" xml:space="preserve">
+    <value>PrTaskは単なるマーケットプレイスではなく、ソフトウェア開発のあるべき姿についてのビジョンを共有する開発者とクライアントのコミュニティです。実績を称えるバッジとXPの付与、トップコントリビューターを称えるリーダーボードの維持、国境を越えた包括的な決済オプションの提供を行っています。フィリピンの開発者をエンパワーするプロジェクトとして創業した経緯から、グローバルプラットフォームへの成長に至るまで、PrTaskは公正な報酬・高品質なコード・pull requestという共通言語を通じたクライアントと開発者の信頼構築に引き続きコミットしています。</value>
+  </data>
+  <data name="AboutGetStartedButton" xml:space="preserve">
+    <value>タスクを閲覧</value>
+  </data>
+  <data name="AboutGetStartedDescription" xml:space="preserve">
+    <value>開発者として次の挑戦を探している方も、クライアントとして優秀な人材を探している方も、PrTaskはプルリクエストを通じて適切な人々をつなぎます。オープンタスクを閲覧して、今日から収入を得ましょう。</value>
+  </data>
+  <data name="AboutGetStartedHeading" xml:space="preserve">
+    <value>始める準備はできましたか？</value>
+  </data>
+  <data name="AboutLabel" xml:space="preserve">
+    <value>概要</value>
+  </data>
+  <data name="AboutLegalAcceptableUse" xml:space="preserve">
+    <value>利用規定</value>
+  </data>
+  <data name="AboutLegalAccessibility" xml:space="preserve">
+    <value>アクセシビリティ声明</value>
+  </data>
+  <data name="AboutLegalCookiePolicy" xml:space="preserve">
+    <value>Cookie ポリシー</value>
+  </data>
+  <data name="AboutLegalDmca" xml:space="preserve">
+    <value>DMCA / 著作権ポリシー</value>
+  </data>
+  <data name="AboutLegalHeading" xml:space="preserve">
+    <value>法的情報</value>
+  </data>
+  <data name="AboutLegalLicenses" xml:space="preserve">
+    <value>ライセンス</value>
+  </data>
+  <data name="AboutLegalPrivacy" xml:space="preserve">
+    <value>プライバシーポリシー</value>
+  </data>
+  <data name="AboutLegalRefund" xml:space="preserve">
+    <value>返金ポリシー</value>
+  </data>
+  <data name="AboutLegalTerms" xml:space="preserve">
+    <value>利用規約</value>
+  </data>
+  <data name="AboutMissionDescription" xml:space="preserve">
+    <value>PrTaskはソフトウェア開発をすべての人にとってアクセス可能で、公平で、やりがいのあるものにするために存在します。世界中の才能ある開発者が、住んでいる場所に関係なく、意義ある仕事と透明な報酬に平等にアクセスできるべきだと信じています。</value>
+  </data>
+  <data name="AboutMissionHeading" xml:space="preserve">
+    <value>私たちのミッション</value>
+  </data>
+  <data name="AboutOpenSourceDescription" xml:space="preserve">
+    <value>PrTaskはオープンソースエコシステムの上に、そしてそのために構築されています。コミュニティに貢献し、オープンソースメンテナーをスポンサーし、すべてのコード行がアクセス可能であることを保証します。</value>
+  </data>
+  <data name="AboutOpenSourceHeading" xml:space="preserve">
+    <value>オープンソースへのコミットメント</value>
+  </data>
+  <data name="AboutPageDescription" xml:space="preserve">
+    <value>PrTaskは開発者が実際のプロジェクトにプルリクエストを提出して収入を得るプラットフォームです。</value>
+  </data>
+  <data name="AboutPageHeading" xml:space="preserve">
+    <value>PrTaskについて</value>
+  </data>
+  <data name="AboutPaymentsDescription" xml:space="preserve">
+    <value>クライアントの報酬支払いは、サポートされている決済プロバイダーを通じて処理されます。クライアントがプルリクエストを承認すると、自動的に課金され、開発者に報酬が支払われます。</value>
+  </data>
+  <data name="AboutPaymentsHeading" xml:space="preserve">
+    <value>安全な支払い</value>
+  </data>
+  <data name="AboutStatActiveDevelopers" xml:space="preserve">
+    <value>3,200+</value>
+  </data>
+  <data name="AboutStatActiveDevelopersLabel" xml:space="preserve">
+    <value>アクティブな開発者</value>
+  </data>
+  <data name="AboutStatCountries" xml:space="preserve">
+    <value>85+</value>
+  </data>
+  <data name="AboutStatCountriesLabel" xml:space="preserve">
+    <value>参加国数</value>
+  </data>
+  <data name="AboutStatPaidToDevelopers" xml:space="preserve">
+    <value>240 万ドル超</value>
+  </data>
+  <data name="AboutStatPaidToDevelopersLabel" xml:space="preserve">
+    <value>開発者への支払総額</value>
+  </data>
+  <data name="AboutStatTasksCompleted" xml:space="preserve">
+    <value>12,500+</value>
+  </data>
+  <data name="AboutStatTasksCompletedLabel" xml:space="preserve">
+    <value>完了したタスク</value>
+  </data>
+  <data name="AboutStoryDescription" xml:space="preserve">
+    <value>PrTask はシンプルな発想から始まりました。すべてのコード貢献に、明確で保証された報奨金が付いていたらどうだろうか。報酬のないオープンソース労働や不透明なフリーランスプラットフォームへの不満から生まれ、プルリクエストを仕事の共通通貨とする市場を作るために PrTask は立ち上げられました。最初の報奨金から数千件の完了タスクまで、私たちは透明で実力本位の協働に取り組む開発者とクライアントの世界的なコミュニティへと成長しました。</value>
+  </data>
+  <data name="AboutStoryHeading" xml:space="preserve">
+    <value>私たちの歩み</value>
+  </data>
+  <data name="AboutValueFairnessDescription" xml:space="preserve">
+    <value>報酬は提供された作業に直接結びついています。コードは書いた人ではなく、その品質で評価されます。</value>
+  </data>
+  <data name="AboutValueFairnessHeading" xml:space="preserve">
+    <value>公平性</value>
+  </data>
+  <data name="AboutValueOpenSourceDescription" xml:space="preserve">
+    <value>私たちはオープンソースの原則を支持します。PrTask上のすべてのプルリクエストは公開であり、知識の共有を促進します。</value>
+  </data>
+  <data name="AboutValueOpenSourceHeading" xml:space="preserve">
+    <value>オープンソース</value>
+  </data>
+  <data name="AboutValuesHeading" xml:space="preserve">
+    <value>コアバリュー</value>
+  </data>
+  <data name="AboutValueTransparencyDescription" xml:space="preserve">
+    <value>すべてのタスク、報酬、支払いが可視化されています。隠れた費用も、サプライズもありません。</value>
+  </data>
+  <data name="AboutValueTransparencyHeading" xml:space="preserve">
+    <value>透明性</value>
+  </data>
+  <data name="AboutWhatWeDoDescription" xml:space="preserve">
+    <value>クライアントが報酬付きの開発タスクを投稿します。開発者はタスクをクレームし、コードを書き、プルリクエストを提出します。PRがレビュー、承認、マージされると、作業の複雑さに応じて開発者に報酬が支払われます。</value>
+  </data>
+  <data name="AboutWhatWeDoHeading" xml:space="preserve">
+    <value>私たちの活動</value>
+  </data>
+  <data name="AcceptableUseLabel" xml:space="preserve">
+    <value>利用規定</value>
+  </data>
+  <data name="AccessibilityLabel" xml:space="preserve">
+    <value>アクセシビリティ</value>
+  </data>
+  <data name="BackText" xml:space="preserve">
+    <value>戻る</value>
+  </data>
+  <data name="BoardAddColumnButton" xml:space="preserve">
+    <value>カラムを追加</value>
+  </data>
+  <data name="BoardCreateButton" xml:space="preserve">
+    <value>ボードを作成</value>
+  </data>
+  <data name="BoardDeleteButton" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="BoardEmptyStateText" xml:space="preserve">
+    <value>まだボードがありません。作成して作業を整理しましょう。</value>
+  </data>
+  <data name="BoardLoadingText" xml:space="preserve">
+    <value>ボードを読み込み中...</value>
+  </data>
+  <data name="BoardPageHeading" xml:space="preserve">
+    <value>ボード</value>
+  </data>
+  <data name="BoardsLabel" xml:space="preserve">
+    <value>ボード</value>
+  </data>
+  <data name="BrandName" xml:space="preserve">
+    <value>PrTask</value>
+  </data>
+  <data name="BrowseTasksLabel" xml:space="preserve">
+    <value>タスクを閲覧</value>
+  </data>
+  <data name="CancelText" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="ClearCacheTitle" xml:space="preserve">
+    <value>キャッシュをクリアして全て再読み込み</value>
+  </data>
+  <data name="CloseText" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="ConfirmText" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="CookieAcceptAllButton" xml:space="preserve">
+    <value>すべて受け入れる</value>
+  </data>
+  <data name="CookieAnalyticsLabel" xml:space="preserve">
+    <value>アナリティクス</value>
+  </data>
+  <data name="CookieConsentMessage" xml:space="preserve">
+    <value>Cookieを使用して体験を向上させています。PrTaskを使用することで、Cookieポリシーに同意したことになります。</value>
+  </data>
+  <data name="CookieCustomizeButton" xml:space="preserve">
+    <value>カスタマイズ</value>
+  </data>
+  <data name="CookieEssentialLabel" xml:space="preserve">
+    <value>必須</value>
+  </data>
+  <data name="CookieMarketingLabel" xml:space="preserve">
+    <value>マーケティング</value>
+  </data>
+  <data name="CookiePolicyLabel" xml:space="preserve">
+    <value>Cookieポリシー</value>
+  </data>
+  <data name="CookieRejectAllButton" xml:space="preserve">
+    <value>すべて拒否</value>
+  </data>
+  <data name="CookieSavePreferencesButton" xml:space="preserve">
+    <value>設定を保存</value>
+  </data>
+  <data name="CreateTaskBountyLabel" xml:space="preserve">
+    <value>報酬額 (USD)</value>
+  </data>
+  <data name="CreateTaskComplexityLabel" xml:space="preserve">
+    <value>複雑さレベル</value>
+  </data>
+  <data name="CreateTaskDescriptionLabel" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="CreateTaskLabel" xml:space="preserve">
+    <value>タスク作成</value>
+  </data>
+  <data name="CreateTaskPageDescription" xml:space="preserve">
+    <value>開発者を惹きつけるために報酬付きタスクを投稿しましょう。</value>
+  </data>
+  <data name="CreateTaskPageHeading" xml:space="preserve">
+    <value>新しいタスクを作成</value>
+  </data>
+  <data name="CreateTaskRepoUrlLabel" xml:space="preserve">
+    <value>リポジトリURL</value>
+  </data>
+  <data name="CreateTaskSubmitButton" xml:space="preserve">
+    <value>タスクを作成</value>
+  </data>
+  <data name="CreateTaskTagsLabel" xml:space="preserve">
+    <value>タグ（カンマ区切り）</value>
+  </data>
+  <data name="CreateTaskTitleLabel" xml:space="preserve">
+    <value>タスクタイトル</value>
+  </data>
+  <data name="CreateTaskValidationBountyTooLow" xml:space="preserve">
+    <value>報酬は最低$100必要です。</value>
+  </data>
+  <data name="CreateTaskValidationDescriptionRequired" xml:space="preserve">
+    <value>説明は必須です。</value>
+  </data>
+  <data name="CreateTaskValidationTitleRequired" xml:space="preserve">
+    <value>タイトルは必須です。</value>
+  </data>
+  <data name="CreateTaskVisibilityLabel" xml:space="preserve">
+    <value>コードの可視性</value>
+  </data>
+  <data name="CreateTaskWorkItemTypeLabel" xml:space="preserve">
+    <value>作業項目タイプ</value>
+  </data>
+  <data name="DashboardActiveTasksLabel" xml:space="preserve">
+    <value>アクティブタスク</value>
+  </data>
+  <data name="DashboardActiveTasksValue" xml:space="preserve">
+    <value>ゼロ</value>
+  </data>
+  <data name="DashboardDescriptionHeading" xml:space="preserve">
+    <value>PrTaskダッシュボード - プラットフォーム概要とアクティビティ追跡</value>
+  </data>
+  <data name="DashboardDescriptionParagraph1" xml:space="preserve">
+    <value>ダッシュボードはPrTask上のプラットフォームアクティビティを一元的に把握できる画面です。プラットフォーム上のアクティブなタスク総数、登録ユーザー数、全オープンタスクの合計バウンティ額、提出されたpull request数を一目で確認できます。これらの統計情報はマーケットプレイスの健全性をリアルタイムで把握でき、現在の活動状況とプラットフォーム上の機会の水準を理解するのに役立ちます。</value>
+  </data>
+  <data name="DashboardDescriptionParagraph2" xml:space="preserve">
+    <value>開発者にとって、ダッシュボードは利用可能な作業の現状を把握するための出発点となります。アクティブなタスクが一覧表示され、詳細の確認や作業開始へのクイックリンクがダッシュボード上に直接表示されます。クライアントにとっては、作成したタスクのステータス（レビュー待ちのpull requestを含む）を確認できます。最近のpull requestセクションにはプラットフォーム全体の最新提出物が表示され、進行中の開発活動を常に把握できます。</value>
+  </data>
+  <data name="DashboardDescriptionParagraph3" xml:space="preserve">
+    <value>ダッシュボードは、新しいタスクの作成、pull requestの提出、バウンティの支払いに応じて動的に更新されます。新しい作業を投稿したいクライアントは、ダッシュボードからタスク作成フォームに直接アクセスできます。機会を探している開発者にとっては、統計情報が需要と競争状況の把握に役立ちます。プラットフォームの成長に伴い、ダッシュボードは収益・提出物の追跡からタスク管理・チームコラボレーションまで、PrTaskアクティビティのすべての側面を把握するコマンドセンターとして機能し続けます。</value>
+  </data>
+  <data name="DashboardEmptyStateLink" xml:space="preserve">
+    <value>作成する</value>
+  </data>
+  <data name="DashboardEmptyStateText" xml:space="preserve">
+    <value>オープンタスクはまだありません。</value>
+  </data>
+  <data name="DashboardLabel" xml:space="preserve">
+    <value>ダッシュボード</value>
+  </data>
+  <data name="DashboardNoPrsText" xml:space="preserve">
+    <value>まだプルリクエストは提出されていません。</value>
+  </data>
+  <data name="DashboardOpenTasksHeading" xml:space="preserve">
+    <value>オープンタスク</value>
+  </data>
+  <data name="DashboardPageDescription" xml:space="preserve">
+    <value>オープンソースのpull request、獲得バウンティ、開発者の実績を追跡できます。タスクを閲覧してPRを提出し、コードが承認されたら報酬を受け取りましょう。</value>
+  </data>
+  <data name="DashboardPageHeading" xml:space="preserve">
+    <value>ダッシュボード</value>
+  </data>
+  <data name="DashboardPrsLabel" xml:space="preserve">
+    <value>プルリクエスト</value>
+  </data>
+  <data name="DashboardPrsValue" xml:space="preserve">
+    <value>ゼロ</value>
+  </data>
+  <data name="DashboardRecentPrsHeading" xml:space="preserve">
+    <value>最近のプルリクエスト</value>
+  </data>
+  <data name="DashboardTotalBountiesLabel" xml:space="preserve">
+    <value>合計報酬</value>
+  </data>
+  <data name="DashboardTotalBountiesValue" xml:space="preserve">
+    <value>0ドル</value>
+  </data>
+  <data name="DashboardUsersLabel" xml:space="preserve">
+    <value>ユーザー</value>
+  </data>
+  <data name="DashboardUsersValue" xml:space="preserve">
+    <value>ゼロ</value>
+  </data>
+  <data name="DashboardViewButton" xml:space="preserve">
+    <value>表示</value>
+  </data>
+  <data name="DeleteText" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="DmcaLabel" xml:space="preserve">
+    <value>DMCA</value>
+  </data>
+  <data name="DownloadAndroidButton" xml:space="preserve">
+    <value>Android APKをダウンロード</value>
+  </data>
+  <data name="DownloadAndroidHeading" xml:space="preserve">
+    <value>Android</value>
+  </data>
+  <data name="DownloadLinuxHeading" xml:space="preserve">
+    <value>Linux システム</value>
+  </data>
+  <data name="DownloadMacHeading" xml:space="preserve">
+    <value>macOS（Apple）</value>
+  </data>
+  <data name="DownloadComingSoonText" xml:space="preserve">
+    <value>近日公開</value>
+  </data>
+  <data name="DownloadLabel" xml:space="preserve">
+    <value>ダウンロード</value>
+  </data>
+  <data name="DownloadPageDescription" xml:space="preserve">
+    <value>お使いのデバイスでPrTaskアプリを入手しましょう。</value>
+  </data>
+  <data name="DownloadPageHeading" xml:space="preserve">
+    <value>PrTaskをダウンロード</value>
+  </data>
+  <data name="DownloadWindowsButton" xml:space="preserve">
+    <value>Windows EXEをダウンロード</value>
+  </data>
+  <data name="DownloadWindowsHeading" xml:space="preserve">
+    <value>Windows</value>
+  </data>
+  <data name="EditTaskCancelButton" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="EditTaskLoadingText" xml:space="preserve">
+    <value>タスクを読み込み中...</value>
+  </data>
+  <data name="EditTaskPageHeading" xml:space="preserve">
+    <value>タスクを編集</value>
+  </data>
+  <data name="EditTaskSaveButton" xml:space="preserve">
+    <value>変更を保存</value>
+  </data>
+  <data name="EditText" xml:space="preserve">
+    <value>編集</value>
+  </data>
+  <data name="ErrorBoundaryMessage" xml:space="preserve">
+    <value>予期しないエラーが発生しました。もう一度お試しください。</value>
+  </data>
+  <data name="ErrorBoundaryRetryText" xml:space="preserve">
+    <value>再試行</value>
+  </data>
+  <data name="ErrorBoundaryTitle" xml:space="preserve">
+    <value>問題が発生しました</value>
+  </data>
+  <data name="FooterCopyrightText" xml:space="preserve">
+    <value>© 2026 PrTask. All rights reserved. 無断転載を禁じます。</value>
+  </data>
+  <data name="FooterDoNotSellText" xml:space="preserve">
+    <value>個人情報を売却しないでください</value>
+  </data>
+  <data name="FooterLegalHeading" xml:space="preserve">
+    <value>法的情報</value>
+  </data>
+  <data name="FooterPlatformHeading" xml:space="preserve">
+    <value>プラットフォーム</value>
+  </data>
+  <data name="FooterTagline" xml:space="preserve">
+    <value>プルリクエストで収入を得よう。</value>
+  </data>
+  <data name="HomeBrowseTasksButton" xml:space="preserve">
+    <value>タスクを閲覧</value>
+  </data>
+  <data name="HomeDescriptionHeading" xml:space="preserve">
+    <value>PrTaskとは - Pull Requestバウンティの開発者マーケットプレイス</value>
+  </data>
+  <data name="HomeDescriptionParagraph1" xml:space="preserve">
+    <value>PrTaskは、ソフトウェア開発を必要とするクライアントと、pull requestを通じてタスクをこなす優秀な開発者をつなぐ開発者マーケットプレイスです。クライアントが報酬付きのタスクを投稿し、開発者がレビューを通過する高品質なコードを提出することで報酬を獲得するバウンティ型モデルで運営されています。PrTask上のすべてのタスクは実際のGitHubリポジトリに紐づいており、すべての貢献が透明性・検証可能性を持ち、本番コードベースに直接統合されます。</value>
+  </data>
+  <data name="HomeDescriptionParagraph2" xml:space="preserve">
+    <value>従来のフリーランスプラットフォームとは異なり、PrTaskはpull requestベースの作業のみに特化しています。開発者はオープンなタスクを閲覧し、pull requestとしてソリューションを提出し、タスクオーナーにコードが承認・マージされると自動的に報酬を受け取ることができます。レビュープロセスは標準的なGitHubワークフローに従っているため、オープンソースへの貢献経験やチーム開発経験のある開発者なら誰でも馴染みやすい環境です。バウンティは小さなバグ修正から複雑な機能実装まで多岐にわたり、あらゆるスキルレベルの開発者に報酬を得る機会が与えられています。</value>
+  </data>
+  <data name="HomeDescriptionParagraph3" xml:space="preserve">
+    <value>PrTaskは開発者へのプラットフォーム手数料をゼロに設定しており、獲得したバウンティの100%を受け取れます。クライアントはタスク作成時にバウンティ金額を設定し、pull request承認後に自動的に支払いが処理されます。クレジットカード、GCash、GrabPay、Maya、銀行振込、QR Ph決済など複数の決済手段に対応しています。副収入を求める個人開発者から、特定タスクに特化した人材を探す企業まで、PrTaskはタスク作成から報酬支払いまでの一連のワークフローをシームレスに提供します。</value>
+  </data>
+  <data name="HomeDeveloperPayoutLabel" xml:space="preserve">
+    <value>開発者報酬</value>
+  </data>
+  <data name="HomeDeveloperPayoutValue" xml:space="preserve">
+    <value>100％</value>
+  </data>
+  <data name="HomeDevelopersLabel" xml:space="preserve">
+    <value>開発者</value>
+  </data>
+  <data name="HomeDevelopersValue" xml:space="preserve">
+    <value>ゼロ</value>
+  </data>
+  <data name="HomeEarnPerMergeLabel" xml:space="preserve">
+    <value>マージ毎の収入</value>
+  </data>
+  <data name="HomeGetPaidDescription" xml:space="preserve">
+    <value>クライアントがあなたのPRを承認すると、自動的に請求され、お好みの支払い方法で報酬が支払われます。</value>
+  </data>
+  <data name="HomeGetPaidHeading" xml:space="preserve">
+    <value>報酬を受け取る</value>
+  </data>
+  <data name="HomeHeroHeading" xml:space="preserve">
+    <value>PrTask — プルリクエストで収入を得よう</value>
+  </data>
+  <data name="HomeHeroSubtitle" xml:space="preserve">
+    <value>タスクを閲覧、PRを提出、複雑さに応じて報酬を獲得。リーダーボードを駆け上がろう。</value>
+  </data>
+  <data name="HomeHowItWorksButton" xml:space="preserve">
+    <value>仕組み</value>
+  </data>
+  <data name="HomeOpenTasksLabel" xml:space="preserve">
+    <value>オープンタスク</value>
+  </data>
+  <data name="HomeOpenTasksValue" xml:space="preserve">
+    <value>ゼロ</value>
+  </data>
+  <data name="HomePaymentOnApprovalLabel" xml:space="preserve">
+    <value>承認時の支払い</value>
+  </data>
+  <data name="HomePickTaskDescription" xml:space="preserve">
+    <value>簡単な修正からエキスパートレベルの機能まで、報酬付きのオープンタスクを閲覧。</value>
+  </data>
+  <data name="HomePickTaskHeading" xml:space="preserve">
+    <value>タスクを選ぶ</value>
+  </data>
+  <data name="HomeSubmitPrDescription" xml:space="preserve">
+    <value>公開プルリクエストを提出。複数の開発者がPRを提出でき、クライアントが最適なものを選びます。</value>
+  </data>
+  <data name="HomeSubmitPrHeading" xml:space="preserve">
+    <value>PRを提出</value>
+  </data>
+  <data name="HomeTotalBountyPoolLabel" xml:space="preserve">
+    <value>合計報酬プール</value>
+  </data>
+  <data name="HomeTotalBountyPoolValue" xml:space="preserve">
+    <value>0ドル</value>
+  </data>
+  <data name="HowItWorksLabel" xml:space="preserve">
+    <value>仕組み</value>
+  </data>
+  <data name="HowItWorksPageHeading" xml:space="preserve">
+    <value>仕組み</value>
+  </data>
+  <data name="HowItWorksStep1Description" xml:space="preserve">
+    <value>クライアントが報酬付きの開発タスクを投稿します。複雑さ、言語、報酬額で閲覧できます。</value>
+  </data>
+  <data name="HowItWorksStep1Heading" xml:space="preserve">
+    <value>オープンタスクを閲覧</value>
+  </data>
+  <data name="HowItWorksStep2Description" xml:space="preserve">
+    <value>コードを書いて公開プルリクエストを提出します。同じタスクに複数の開発者がPRを提出できます。</value>
+  </data>
+  <data name="HowItWorksStep2Heading" xml:space="preserve">
+    <value>プルリクエストを提出</value>
+  </data>
+  <data name="HowItWorksStep3Description" xml:space="preserve">
+    <value>PRは変更ファイル数、追加行数、言語の難易度、テストカバレッジに基づいて自動的にスコアリングされます。</value>
+  </data>
+  <data name="HowItWorksStep3Heading" xml:space="preserve">
+    <value>複雑さスコアリング</value>
+  </data>
+  <data name="HowItWorksStep4Description" xml:space="preserve">
+    <value>クライアントが全ての提出済みPRをレビューし、最適なものを承認します。承認時にクライアントに報酬額が自動請求されます。</value>
+  </data>
+  <data name="HowItWorksStep4Heading" xml:space="preserve">
+    <value>クライアントがレビュー・承認</value>
+  </data>
+  <data name="HowItWorksStep5Description" xml:space="preserve">
+    <value>開発者は希望の支払い方法で報酬を受け取ります。承認されたPRごとにアチーブメントバッジを獲得し、収入リーダーボードを駆け上がりましょう。</value>
+  </data>
+  <data name="HowItWorksStep5Heading" xml:space="preserve">
+    <value>報酬を受け取る</value>
+  </data>
+  <data name="LanguageChinese" xml:space="preserve">
+    <value>u{4E2D}u{56FD}u{8A9E}</value>
+  </data>
+  <data name="LanguageEnglish" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="LanguageGerman" xml:space="preserve">
+    <value>u{30C9}u{30A4}u{30C4}u{8A9E}</value>
+  </data>
+  <data name="LanguageHindi" xml:space="preserve">
+    <value>u{30D2}u{30F3}u{30C7}u{30A3}u{30FC}u{8A9E}</value>
+  </data>
+  <data name="LanguageJapanese" xml:space="preserve">
+    <value>日本語</value>
+  </data>
+  <data name="LanguageSelectorLabel" xml:space="preserve">
+    <value>言語</value>
+  </data>
+  <data name="LeaderboardDescriptionHeading" xml:space="preserve">
+    <value>PrTaskリーダーボード - ランキング・収益・表彰</value>
+  </data>
+  <data name="LeaderboardDescriptionParagraph1" xml:space="preserve">
+    <value>PrTaskリーダーボードは、プラットフォーム上の上位開発者と最も活発なクライアントを紹介しています。ランキングは客観的かつ検証可能な指標で決定されます。開発者についてはマージされたpull request数と総バウンティ収益、クライアント（トップスペンダー）については投稿・資金提供された総バウンティ額を追跡します。この両面表示のリーダーボードにより、マーケットプレイスの両側の可視性が高まり、開発者はアクティブなクライアントを、クライアントは経験豊富で実績のある開発者を見つけやすくなります。</value>
+  </data>
+  <data name="LeaderboardDescriptionParagraph2" xml:space="preserve">
+    <value>開発者ランキングは実際の成果に基づいています。マージされたすべてのpull requestと獲得したすべての報酬は、GitHub上で確認できる実際のコード貢献に裏付けられています。主観的な評価、クライアントによるスコア付け、課金によるランク向上は一切ありません。リーダーボードはpull requestの承認とバウンティの支払いに応じてリアルタイムで更新されます。トップ獲得者は注目度が高まり、より多くのタスク招待や高価値の機会につながります。PrTaskは初回タスク完了・連続達成・収益マイルストーン到達などの実績に対してXPポイントとバッジも付与します。</value>
+  </data>
+  <data name="LeaderboardDescriptionParagraph3" xml:space="preserve">
+    <value>リーダーボードはPrTaskエコシステムにおいて複数の役割を担っています。新規開発者にとっては目標となる指標となり、プラットフォームの収益ポテンシャルを示します。クライアントにとっては、高品質なコードを提供してきた実績のある開発者を発見できる人材ディレクトリとして機能します。コミュニティ全体にとっては、卓越性と継続的な改善を促す健全な競争環境を生み出します。「トップ獲得者」と「トップスペンダー」のタブを切り替えて、マーケットプレイスの両側を探索し、ニーズに最適な開発者またはクライアントを見つけてください。</value>
+  </data>
+  <data name="LeaderboardEmptyStateText" xml:space="preserve">
+    <value>まだエントリーがありません。最初にPRを提出またはタスクを投稿しましょう。</value>
+  </data>
+  <data name="LeaderboardHeaderEarned" xml:space="preserve">
+    <value>収入</value>
+  </data>
+  <data name="LeaderboardHeaderPrsMerged" xml:space="preserve">
+    <value>マージ済みPR</value>
+  </data>
+  <data name="LeaderboardHeaderRank" xml:space="preserve">
+    <value>ランク</value>
+  </data>
+  <data name="LeaderboardHeaderSpent" xml:space="preserve">
+    <value>支出</value>
+  </data>
+  <data name="LeaderboardHeaderTasksPosted" xml:space="preserve">
+    <value>投稿済みタスク</value>
+  </data>
+  <data name="LeaderboardHeaderUser" xml:space="preserve">
+    <value>ユーザー</value>
+  </data>
+  <data name="LeaderboardLabel" xml:space="preserve">
+    <value>リーダーボード</value>
+  </data>
+  <data name="LeaderboardLoadingText" xml:space="preserve">
+    <value>リーダーボードを読み込み中...</value>
+  </data>
+  <data name="LeaderboardPageHeading" xml:space="preserve">
+    <value>リーダーボード</value>
+  </data>
+  <data name="LeaderboardTopEarnersTab" xml:space="preserve">
+    <value>トップ収入者</value>
+  </data>
+  <data name="LeaderboardTopSpendersTab" xml:space="preserve">
+    <value>トップ支出者</value>
+  </data>
+  <data name="LicensesLabel" xml:space="preserve">
+    <value>ライセンス</value>
+  </data>
+  <data name="LoadingText" xml:space="preserve">
+    <value>読み込み中...</value>
+  </data>
+  <data name="LoginClientsDescription" xml:space="preserve">
+    <value>報酬付きタスクを投稿し、高品質なコードを受け取りましょう。</value>
+  </data>
+  <data name="LoginClientsHeading" xml:space="preserve">
+    <value>クライアント向け</value>
+  </data>
+  <data name="LoginDevelopersDescription" xml:space="preserve">
+    <value>タスクを閲覧、作業をクレーム、PRを提出、報酬を獲得。</value>
+  </data>
+  <data name="LoginDevelopersHeading" xml:space="preserve">
+    <value>開発者向け</value>
+  </data>
+  <data name="LoginPageDescription" xml:space="preserve">
+    <value>アカウントを接続して、収入を得るかタスクを投稿しましょう。</value>
+  </data>
+  <data name="LoginPageHeading" xml:space="preserve">
+    <value>PrTaskにサインイン</value>
+  </data>
+  <data name="LoginSignInWithGitHub" xml:space="preserve">
+    <value>GitHubでサインイン</value>
+  </data>
+  <data name="LoginSignInWithGoogle" xml:space="preserve">
+    <value>Googleでサインイン</value>
+  </data>
+  <data name="LoginSignInWithMicrosoft" xml:space="preserve">
+    <value>Microsoftでサインイン</value>
+  </data>
+  <data name="LoginSignInWithOkta" xml:space="preserve">
+    <value>Oktaでサインイン</value>
+  </data>
+  <data name="MenuTitle" xml:space="preserve">
+    <value>メニュー</value>
+  </data>
+  <data name="NextText" xml:space="preserve">
+    <value>次へ</value>
+  </data>
+  <data name="NoText" xml:space="preserve">
+    <value>いいえ</value>
+  </data>
+  <data name="PageNotFoundMessage" xml:space="preserve">
+    <value>リクエストされたページは見つかりませんでした。</value>
+  </data>
+  <data name="PageNotFoundTitle" xml:space="preserve">
+    <value>ページが見つかりません</value>
+  </data>
+  <data name="PaymentEmptyStateText" xml:space="preserve">
+    <value>支払いが見つかりません。</value>
+  </data>
+  <data name="PaymentHeaderAmount" xml:space="preserve">
+    <value>金額</value>
+  </data>
+  <data name="PaymentHeaderDate" xml:space="preserve">
+    <value>日付</value>
+  </data>
+  <data name="PaymentHeaderStatus" xml:space="preserve">
+    <value>ステータス</value>
+  </data>
+  <data name="PaymentHeaderTask" xml:space="preserve">
+    <value>タスク</value>
+  </data>
+  <data name="PaymentHeaderType" xml:space="preserve">
+    <value>種類</value>
+  </data>
+  <data name="PaymentLoadButton" xml:space="preserve">
+    <value>支払いを読み込み</value>
+  </data>
+  <data name="PaymentPageDescription" xml:space="preserve">
+    <value>すべての支払いとステータスを表示します。</value>
+  </data>
+  <data name="PaymentPageHeading" xml:space="preserve">
+    <value>支払い履歴</value>
+  </data>
+  <data name="PaymentsLabel" xml:space="preserve">
+    <value>支払い</value>
+  </data>
+  <data name="PrDetailAddCommentButton" xml:space="preserve">
+    <value>コメントを追加</value>
+  </data>
+  <data name="PrDetailApproveAndMergeButton" xml:space="preserve">
+    <value>承認してマージ</value>
+  </data>
+  <data name="PrDetailCancelButton" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="PrDetailChangedFilesHeading" xml:space="preserve">
+    <value>変更されたファイル</value>
+  </data>
+  <data name="PrDetailCodeChangesHeading" xml:space="preserve">
+    <value>コード変更</value>
+  </data>
+  <data name="PrDetailEditCodeLabel" xml:space="preserve">
+    <value>コードを編集</value>
+  </data>
+  <data name="PrDetailLoadingText" xml:space="preserve">
+    <value>プルリクエストを読み込み中...</value>
+  </data>
+  <data name="PrDetailPageHeading" xml:space="preserve">
+    <value>プルリクエスト詳細</value>
+  </data>
+  <data name="PrDetailReplyButton" xml:space="preserve">
+    <value>返信</value>
+  </data>
+  <data name="PrDetailRequestChangesButton" xml:space="preserve">
+    <value>変更をリクエスト</value>
+  </data>
+  <data name="PrDetailResolveButton" xml:space="preserve">
+    <value>解決</value>
+  </data>
+  <data name="PrDetailReviewCommentsHeading" xml:space="preserve">
+    <value>レビューコメント</value>
+  </data>
+  <data name="PrDetailSaveChangesButton" xml:space="preserve">
+    <value>変更を保存</value>
+  </data>
+  <data name="PrDetailSplitViewLabel" xml:space="preserve">
+    <value>分割ビュー</value>
+  </data>
+  <data name="PrDetailUnifiedViewLabel" xml:space="preserve">
+    <value>統合ビュー</value>
+  </data>
+  <data name="PrDetailViewDiffLabel" xml:space="preserve">
+    <value>Diffを表示</value>
+  </data>
+  <data name="PrDetailViewOnGitHub" xml:space="preserve">
+    <value>GitHubで表示</value>
+  </data>
+  <data name="PreviousText" xml:space="preserve">
+    <value>前へ</value>
+  </data>
+  <data name="PricingClientsHeading" xml:space="preserve">
+    <value>クライアント向け</value>
+  </data>
+  <data name="PricingDevelopersHeading" xml:space="preserve">
+    <value>開発者向け</value>
+  </data>
+  <data name="PricingFaqHeading" xml:space="preserve">
+    <value>支払い詳細</value>
+  </data>
+  <data name="PricingFreeLabel" xml:space="preserve">
+    <value>無料</value>
+  </data>
+  <data name="PricingGetStartedButton" xml:space="preserve">
+    <value>無料で登録</value>
+  </data>
+  <data name="PricingLabel" xml:space="preserve">
+    <value>料金</value>
+  </data>
+  <data name="PricingPageDescription" xml:space="preserve">
+    <value>PrTaskは全ての方に完全無料です。隠れた料金、手数料、課金はありません。</value>
+  </data>
+  <data name="PricingPageHeading" xml:space="preserve">
+    <value>料金</value>
+  </data>
+  <data name="PrivacyLabel" xml:space="preserve">
+    <value>プライバシー</value>
+  </data>
+  <data name="ProfileLeaderboardRankLabel" xml:space="preserve">
+    <value>リーダーボードランク</value>
+  </data>
+  <data name="ProfileLoadingText" xml:space="preserve">
+    <value>プロフィールを読み込み中...</value>
+  </data>
+  <data name="ProfilePrsCompletedLabel" xml:space="preserve">
+    <value>完了済みPR</value>
+  </data>
+  <data name="ProfileRecentPrsHeading" xml:space="preserve">
+    <value>最近のプルリクエスト</value>
+  </data>
+  <data name="ProfileTasksPostedLabel" xml:space="preserve">
+    <value>投稿済みタスク</value>
+  </data>
+  <data name="ProfileTotalEarnedLabel" xml:space="preserve">
+    <value>合計収入</value>
+  </data>
+  <data name="ProfileTotalSpentLabel" xml:space="preserve">
+    <value>合計支出</value>
+  </data>
+  <data name="ProfileViewButton" xml:space="preserve">
+    <value>表示</value>
+  </data>
+  <data name="RefundPolicyLabel" xml:space="preserve">
+    <value>返金ポリシー</value>
+  </data>
+  <data name="RepositoryLabel" xml:space="preserve">
+    <value>リポジトリ</value>
+  </data>
+  <data name="SaveText" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="SearchText" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="SettingsAvatarUrlLabel" xml:space="preserve">
+    <value>アバターURL</value>
+  </data>
+  <data name="SettingsConnectedAccountsHeading" xml:space="preserve">
+    <value>接続済みアカウント</value>
+  </data>
+  <data name="SettingsConnectedGoogle" xml:space="preserve">
+    <value>Google（グーグル）</value>
+  </data>
+  <data name="SettingsConnectedMicrosoft" xml:space="preserve">
+    <value>Microsoft（マイクロソフト）</value>
+  </data>
+  <data name="SettingsConnectedOkta" xml:space="preserve">
+    <value>Okta（オクタ）</value>
+  </data>
+  <data name="SettingsDepositHeading" xml:space="preserve">
+    <value>入金・支払い方法</value>
+  </data>
+  <data name="SettingsGatewayGrabPayLabel" xml:space="preserve">
+    <value>GrabPay（グラブペイ）</value>
+  </data>
+  <data name="SettingsGatewayMayaLabel" xml:space="preserve">
+    <value>Maya（マヤ）</value>
+  </data>
+  <data name="SettingsDisplayNameLabel" xml:space="preserve">
+    <value>表示名</value>
+  </data>
+  <data name="SettingsEmailLabel" xml:space="preserve">
+    <value>メール</value>
+  </data>
+  <data name="SettingsEmailNotificationsLabel" xml:space="preserve">
+    <value>メール通知</value>
+  </data>
+  <data name="SettingsKycDescription" xml:space="preserve">
+    <value>支払いを有効にし、マネーロンダリング防止規制に準拠するために本人確認を完了してください。</value>
+  </data>
+  <data name="SettingsKycHeading" xml:space="preserve">
+    <value>KYC - 本人確認</value>
+  </data>
+  <data name="SettingsKycSubmitButton" xml:space="preserve">
+    <value>KYC認証を提出</value>
+  </data>
+  <data name="SettingsLabel" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="SettingsNotificationsHeading" xml:space="preserve">
+    <value>通知設定</value>
+  </data>
+  <data name="SettingsPageDescription" xml:space="preserve">
+    <value>アカウントの設定と支払い設定を管理します。</value>
+  </data>
+  <data name="SettingsPageHeading" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="SettingsPaymentMethodLabel" xml:space="preserve">
+    <value>支払い方法</value>
+  </data>
+  <data name="SettingsCardCvcLabel" xml:space="preserve">
+    <value>カード認証コード (CVC)</value>
+  </data>
+  <data name="SettingsPayoutMethodLabel" xml:space="preserve">
+    <value>支払い方法</value>
+  </data>
+  <data name="SettingsPayoutPaypalOption" xml:space="preserve">
+    <value>PayPal（ペイパル）</value>
+  </data>
+  <data name="SettingsPrivacyHeading" xml:space="preserve">
+    <value>プライバシー</value>
+  </data>
+  <data name="SettingsTimezoneManila" xml:space="preserve">
+    <value>アジア/マニラ (GMT+8)</value>
+  </data>
+  <data name="SettingsTimezoneUtc" xml:space="preserve">
+    <value>協定世界時 (UTC)</value>
+  </data>
+  <data name="SettingsProfileHeading" xml:space="preserve">
+    <value>プロフィール</value>
+  </data>
+  <data name="SettingsSaveButton" xml:space="preserve">
+    <value>設定を保存</value>
+  </data>
+  <data name="SettingsSecurityHeading" xml:space="preserve">
+    <value>セキュリティ</value>
+  </data>
+  <data name="SettingsTwoFactorLabel" xml:space="preserve">
+    <value>二要素認証 (2FA)</value>
+  </data>
+  <data name="SettingsWithdrawalHeading" xml:space="preserve">
+    <value>出金設定</value>
+  </data>
+  <data name="SignInText" xml:space="preserve">
+    <value>サインイン</value>
+  </data>
+  <data name="SignOutText" xml:space="preserve">
+    <value>サインアウト</value>
+  </data>
+  <data name="SprintCompleteButton" xml:space="preserve">
+    <value>完了</value>
+  </data>
+  <data name="SprintCreateButton" xml:space="preserve">
+    <value>スプリントを作成</value>
+  </data>
+  <data name="SprintDeleteButton" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="SprintEmptyStateText" xml:space="preserve">
+    <value>まだスプリントがありません。作成して始めましょう。</value>
+  </data>
+  <data name="SprintLoadingText" xml:space="preserve">
+    <value>スプリントを読み込み中...</value>
+  </data>
+  <data name="SprintPageHeading" xml:space="preserve">
+    <value>スプリント</value>
+  </data>
+  <data name="SprintsLabel" xml:space="preserve">
+    <value>スプリント</value>
+  </data>
+  <data name="SprintStartButton" xml:space="preserve">
+    <value>開始</value>
+  </data>
+  <data name="SubmitPrCancelButton" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="SubmitPrGitHubUrlLabel" xml:space="preserve">
+    <value>GitHubプルリクエストURL</value>
+  </data>
+  <data name="SubmitPrLoadingText" xml:space="preserve">
+    <value>タスクを読み込み中...</value>
+  </data>
+  <data name="SubmitPrPageTitle" xml:space="preserve">
+    <value>プルリクエストを提出</value>
+  </data>
+  <data name="SubmitPrSubmitButton" xml:space="preserve">
+    <value>プルリクエストを提出</value>
+  </data>
+  <data name="SubmitPrUserIdLabel" xml:space="preserve">
+    <value>ユーザーID</value>
+  </data>
+  <data name="SubmitText" xml:space="preserve">
+    <value>提出</value>
+  </data>
+  <data name="TaskDetailApproveButton" xml:space="preserve">
+    <value>承認</value>
+  </data>
+  <data name="TaskDetailClaimButton" xml:space="preserve">
+    <value>このタスクをクレーム</value>
+  </data>
+  <data name="TaskDetailDeadlineLabel" xml:space="preserve">
+    <value>締切: </value>
+  </data>
+  <data name="TaskDetailDeleteButton" xml:space="preserve">
+    <value>タスクを削除</value>
+  </data>
+  <data name="TaskDetailEditButton" xml:space="preserve">
+    <value>タスクを編集</value>
+  </data>
+  <data name="TaskDetailLoadingText" xml:space="preserve">
+    <value>タスクを読み込み中...</value>
+  </data>
+  <data name="TaskDetailPullRequestsHeading" xml:space="preserve">
+    <value>プルリクエスト</value>
+  </data>
+  <data name="TaskDetailSourceCodeHeading" xml:space="preserve">
+    <value>ソースコード</value>
+  </data>
+  <data name="TaskDetailStatusLabel" xml:space="preserve">
+    <value>ステータス: </value>
+  </data>
+  <data name="TaskDetailSubmitPrButton" xml:space="preserve">
+    <value>プルリクエストを提出</value>
+  </data>
+  <data name="TaskDetailUploadButton" xml:space="preserve">
+    <value>ファイルをアップロード</value>
+  </data>
+  <data name="TaskDetailViewDiffButton" xml:space="preserve">
+    <value>Diffを表示</value>
+  </data>
+  <data name="TaskListAllComplexities" xml:space="preserve">
+    <value>すべての複雑さ</value>
+  </data>
+  <data name="TaskListComplexityLabel" xml:space="preserve">
+    <value>複雑さ</value>
+  </data>
+  <data name="TaskListDescriptionHeading" xml:space="preserve">
+    <value>オープンタスクを閲覧する - 有償開発作業を探す</value>
+  </data>
+  <data name="TaskListDescriptionParagraph1" xml:space="preserve">
+    <value>タスクページはPrTaskで有償開発作業を見つけるための入り口です。ここに掲載されているすべてのタスクは、クライアントが投稿した実際のソフトウェア開発案件であり、完了時に獲得できるバウンティが設定されています。タスクは、数分で解決できる些細な修正から、深い専門知識を要するエキスパートレベルの実装まで、幅広い複雑度をカバーしています。複雑度レベルでフィルタリングしてスキルに合った作業を探したり、最新順や最高バウンティ順で並べ替えて優先度を設定したりできます。</value>
+  </data>
+  <data name="TaskListDescriptionParagraph2" xml:space="preserve">
+    <value>各タスクカードには一目でわかる必須情報が表示されます。複雑度評価、USD建てのバウンティ金額、簡単な説明、関連技術を示すタグです。複雑度レベルはTrivial・Simple・Medium・Complex・Expertがあり、バウンティ金額は通常難易度に応じてスケールします。タグを活用することで、C#・Blazor・Python・JavaScript・DevOpsなど、自分の技術的専門知識に合ったタスクを素早く特定できます。任意のタスクをクリックすると、全文の説明・要件・リンク先のGitHubリポジトリを確認できます。</value>
+  </data>
+  <data name="TaskListDescriptionParagraph3" xml:space="preserve">
+    <value>バウンティ金額はクライアントがタスク作成時に設定するもので、依頼する作業の価値を反映しています。PrTaskは開発者に手数料を一切請求しません。表示されているバウンティ金額が承認後に実際に受け取る金額です。始めるには、利用可能なタスクを閲覧して自分のスキルに合ったものを見つけ、タスク詳細ページで要件を確認してから、pull requestとしてソリューションを提出してください。ワークフロー全体が標準的なGitHubの慣行に従っているため、バージョン管理とコードレビューの経験がある開発者なら誰でも簡単に利用できます。</value>
+  </data>
+  <data name="TaskListEmptyStateText" xml:space="preserve">
+    <value>現在オープンタスクはありません。また後で確認してください。</value>
+  </data>
+  <data name="TaskListHighestBounty" xml:space="preserve">
+    <value>最高報酬順</value>
+  </data>
+  <data name="TaskListLoadingText" xml:space="preserve">
+    <value>タスクを読み込み中...</value>
+  </data>
+  <data name="TaskListNewestFirst" xml:space="preserve">
+    <value>新しい順</value>
+  </data>
+  <data name="TaskListPageDescription" xml:space="preserve">
+    <value>利用可能なタスクを閲覧し、クレームして収入を得ましょう。</value>
+  </data>
+  <data name="TaskListPageHeading" xml:space="preserve">
+    <value>オープンタスク</value>
+  </data>
+  <data name="TaskListSearchPlaceholder" xml:space="preserve">
+    <value>タスクを検索...</value>
+  </data>
+  <data name="TaskListViewTaskButton" xml:space="preserve">
+    <value>タスクを表示</value>
+  </data>
+  <data name="TasksLabel" xml:space="preserve">
+    <value>タスク</value>
+  </data>
+  <data name="TermsLabel" xml:space="preserve">
+    <value>利用規約</value>
+  </data>
+  <data name="ToggleThemeTitle" xml:space="preserve">
+    <value>テーマ切り替え</value>
+  </data>
+  <data name="ViewText" xml:space="preserve">
+    <value>表示</value>
+  </data>
+  <data name="YesText" xml:space="preserve">
+    <value>はい</value>
+  </data>
+  <data name="HomeLabel" xml:space="preserve">
+    <value>ホーム</value>
+  </data>
+  <data name="LoginLabel" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="CategoryInfo" xml:space="preserve">
+    <value>情報</value>
+  </data>
+  <data name="BrandTagline" xml:space="preserve">
+    <value>プルリクエストで収入を得よう。</value>
+  </data>
+  <data name="CategoryClient" xml:space="preserve">
+    <value>クライアント</value>
+  </data>
+  <data name="CategoryPlatform" xml:space="preserve">
+    <value>プラットフォーム</value>
+  </data>
+  <data name="CategoryLegal" xml:space="preserve">
+    <value>法的情報</value>
+  </data>
+  <data name="CategoryAccount" xml:space="preserve">
+    <value>アカウント</value>
+  </data>
+  <data name="RefundLabel" xml:space="preserve">
+    <value>返金</value>
+  </data>
+  <data name="HomeAutomaticPaymentValue" xml:space="preserve">
+    <value>自動</value>
+  </data>
+  <data name="AcceptableUseAccountIntegrityDescription" xml:space="preserve">
+    <value>1人または1事業につき確認済みアカウントを1つだけ使用し、プロフィールと税務/KYC情報を正確に保ち、アクセスを共有したりアカウントを販売したりしないでください。</value>
+  </data>
+  <data name="AcceptableUseAccountIntegrityHeading" xml:space="preserve">
+    <value>アカウントの健全性</value>
+  </data>
+  <data name="AcceptableUseCodeQualityDescription" xml:space="preserve">
+    <value>本番投入できる品質の作業を提供し、課題で求められる場合はAI支援を開示し、悪意のあるコード、盗用コード、意図的に低品質なコードは絶対に挿入しないでください。</value>
+  </data>
+  <data name="AcceptableUseCodeQualityHeading" xml:space="preserve">
+    <value>コード品質と真正な納品</value>
+  </data>
+  <data name="AcceptableUseConductAutomated" xml:space="preserve">
+    <value>プラットフォームの制御を回避したり、非公開データを収集したり、スパム的な行動を自動化したりするボットやスクリプトを実行すること。</value>
+  </data>
+  <data name="AcceptableUseConductDescription" xml:space="preserve">
+    <value>マーケットプレイス、他のユーザー、または PrTask のシステムを不正利用しないでください。以下の行為は禁止されています。</value>
+  </data>
+  <data name="AcceptableUseConductDiscrimination" xml:space="preserve">
+    <value>保護対象の属性を狙った差別的、憎悪的、または嫌がらせ的な行為。</value>
+  </data>
+  <data name="AcceptableUseConductExploiting" xml:space="preserve">
+    <value>未成年者の搾取、または未成年者を含む性的コンテンツ。</value>
+  </data>
+  <data name="AcceptableUseConductFakeTasks" xml:space="preserve">
+    <value>偽のタスクや偽のレビューを投稿すること、または評価や報酬を組織的に操作すること。</value>
+  </data>
+  <data name="AcceptableUseConductHeading" xml:space="preserve">
+    <value>禁止行為</value>
+  </data>
+  <data name="AcceptableUseConductInauthentic" xml:space="preserve">
+    <value>なりすまし、偽の身元、偽造された資格情報、または未開示の利益相反。</value>
+  </data>
+  <data name="AcceptableUseConductIpViolation" xml:space="preserve">
+    <value>著作権、商標、営業秘密、または知的財産の侵害。</value>
+  </data>
+  <data name="AcceptableUseConductKycCircumvent" xml:space="preserve">
+    <value>本人確認、制裁スクリーニング、税務申告、または法令遵守の確認を回避すること。</value>
+  </data>
+  <data name="AcceptableUseConductMalicious" xml:space="preserve">
+    <value>マルウェア、フィッシング、認証情報の窃取、プロンプトインジェクション、または不正アクセスを得ようとする試み。</value>
+  </data>
+  <data name="AcceptableUseConductMoneyLaundering" xml:space="preserve">
+    <value>資金洗浄、テロ資金供与、制裁回避、または違法な支払いへのサービス利用。</value>
+  </data>
+  <data name="AcceptableUseConductUnauthorizedAccess" xml:space="preserve">
+    <value>許可なく他人のアカウント、ワークスペース、モデル出力、または内部システムにアクセスしようとすること。</value>
+  </data>
+  <data name="AcceptableUseContactDescription" xml:space="preserve">
+    <value>この利用許諾ポリシーに関するご質問は、abuse@prtask.com までご連絡ください。法的通知については、利用規約をご覧ください。</value>
+  </data>
+  <data name="AcceptableUseContentModerationDescription" xml:space="preserve">
+    <value>欧州連合デジタルサービス法（DSA）2022/2065に準拠し、PrTask は、必要に応じて通知・措置、社内苦情処理、信頼できる通報者の受け入れのための手続きを維持しています。</value>
+  </data>
+  <data name="AcceptableUseContentModerationHeading" xml:space="preserve">
+    <value>コンテンツモデレーション（EU DSA準拠）</value>
+  </data>
+  <data name="AcceptableUseDescriptionHeading" xml:space="preserve">
+    <value>この利用許諾ポリシーについて</value>
+  </data>
+  <data name="AcceptableUseDescriptionParagraph1" xml:space="preserve">
+    <value>この利用許諾ポリシーは、クライアント、開発者、訪問者を含む、PrTask を利用するすべての参加者の行動規範を定めるものです。</value>
+  </data>
+  <data name="AcceptableUseDescriptionParagraph2" xml:space="preserve">
+    <value>執行措置は、違反の重大性、意図、リスク、再発の有無に応じて、警告から永久的なアカウント停止まで及びます。</value>
+  </data>
+  <data name="AcceptableUseEnforcementAppeal" xml:space="preserve">
+    <value>PrTask は、自らの裁量で執行措置を講じる権利を留保します。該当する場合、ユーザーはサポートに連絡して異議申し立てができます。</value>
+  </data>
+  <data name="AcceptableUseEnforcementContentLabel" xml:space="preserve">
+    <value>コンテンツ削除:</value>
+  </data>
+  <data name="AcceptableUseEnforcementContentText" xml:space="preserve">
+    <value>問題のあるタスク、プルリクエスト、その他のコンテンツの削除</value>
+  </data>
+  <data name="AcceptableUseEnforcementDescription" xml:space="preserve">
+    <value>違反により、アカウント停止、報奨金の没収、プラットフォームからの永久追放が科される場合があります。</value>
+  </data>
+  <data name="AcceptableUseEnforcementFinancialLabel" xml:space="preserve">
+    <value>資金保留:</value>
+  </data>
+  <data name="AcceptableUseEnforcementFinancialText" xml:space="preserve">
+    <value>金融上の違反に関する調査中、アカウント資金を凍結すること</value>
+  </data>
+  <data name="AcceptableUseEnforcementLegalLabel" xml:space="preserve">
+    <value>法的通報:</value>
+  </data>
+  <data name="AcceptableUseEnforcementLegalText" xml:space="preserve">
+    <value>必要に応じて AML/CFT 当局を含む法執行機関への犯罪行為の通報</value>
+  </data>
+  <data name="AcceptableUseEnforcementSuspensionLabel" xml:space="preserve">
+    <value>一時停止:</value>
+  </data>
+  <data name="AcceptableUseEnforcementSuspensionText" xml:space="preserve">
+    <value>一定期間のアカウントアクセス停止（7日から90日）</value>
+  </data>
+  <data name="AcceptableUseEnforcementTerminationLabel" xml:space="preserve">
+    <value>永久停止:</value>
+  </data>
+  <data name="AcceptableUseEnforcementTerminationText" xml:space="preserve">
+    <value>保留中の報奨金を没収のうえ、プラットフォームから永久に削除すること</value>
+  </data>
+  <data name="AcceptableUseEnforcementWarningText" xml:space="preserve">
+    <value>違反内容を示し、是正措置を求める正式通知</value>
+  </data>
+  <data name="AcceptableUseIntroduction" xml:space="preserve">
+    <value>この利用許諾ポリシーは、PrTask プラットフォーム上でのあなたの行動を規定します。マーケットプレイスを合法的で、安全かつ信頼できるものに保つため、すべてのユーザーはこれらの規則に従わなければなりません。</value>
+  </data>
+  <data name="AcceptableUseLastUpdated" xml:space="preserve">
+    <value>最終更新: 2026年3月</value>
+  </data>
+  <data name="AcceptableUsePageHeading" xml:space="preserve">
+    <value>利用許諾ポリシー</value>
+  </data>
+  <data name="AcceptableUseProhibitedCollusion" xml:space="preserve">
+    <value>タスク結果を操作したり、報酬を不自然に水増ししたりするために他のユーザーと共謀すること</value>
+  </data>
+  <data name="AcceptableUseProhibitedDescription" xml:space="preserve">
+    <value>ユーザーは、剽窃コードの送信、スパムタスクの投稿、ランキングの操作、またはモデレーションポリシーの回避に PrTask を使用してはなりません。</value>
+  </data>
+  <data name="AcceptableUseProhibitedFraud" xml:space="preserve">
+    <value>不正な支払い行為や支払い操作に関与すること</value>
+  </data>
+  <data name="AcceptableUseProhibitedHarassment" xml:space="preserve">
+    <value>他のユーザーに対する嫌がらせ、脅迫、威圧</value>
+  </data>
+  <data name="AcceptableUseProhibitedHeading" xml:space="preserve">
+    <value>禁止行為</value>
+  </data>
+  <data name="AcceptableUseProhibitedImpersonation" xml:space="preserve">
+    <value>他のユーザーになりすますこと、または自分の身元を偽って表示すること</value>
+  </data>
+  <data name="AcceptableUseProhibitedLeaderboard" xml:space="preserve">
+    <value>ランキング操作や不正な順位上昇</value>
+  </data>
+  <data name="AcceptableUseProhibitedLowQuality" xml:space="preserve">
+    <value>低品質または無価値なコンテンツ</value>
+  </data>
+  <data name="AcceptableUseProhibitedMalware" xml:space="preserve">
+    <value>マルウェア、ウイルス、または有害コード</value>
+  </data>
+  <data name="AcceptableUseProhibitedMoneyLaundering" xml:space="preserve">
+    <value>マネーロンダリングまたは資金洗浄</value>
+  </data>
+  <data name="AcceptableUseProhibitedPaymentCircumvent" xml:space="preserve">
+    <value>支払い、料金、またはアクセス制限の回避</value>
+  </data>
+  <data name="AcceptableUseProhibitedPlagiarism" xml:space="preserve">
+    <value>盗用、または他者の成果の無断使用</value>
+  </data>
+  <data name="AcceptableUseProhibitedScraping" xml:space="preserve">
+    <value>無許可のスクレイピングまたはデータ収集</value>
+  </data>
+  <data name="AcceptableUseProhibitedSpam" xml:space="preserve">
+    <value>スパム、迷惑メッセージ、または大量送信</value>
+  </data>
+  <data name="AcceptableUseReportingDescription" xml:space="preserve">
+    <value>不正使用を見つけた場合は、PrTaskまで報告してください。適切な対応を行います。</value>
+  </data>
+  <data name="AcceptableUseReportingHeading" xml:space="preserve">
+    <value>不正使用の報告</value>
+  </data>
+  <data name="AccessibilityAdaComplianceDescription" xml:space="preserve">
+    <value>PrTaskは、米国障害者法（ADA）に準拠した利用を目指しています。</value>
+  </data>
+  <data name="AccessibilityAdaComplianceHeading" xml:space="preserve">
+    <value>ADA準拠</value>
+  </data>
+  <data name="AccessibilityConformanceDescription" xml:space="preserve">
+    <value>PrTaskは、WCAG 2.2 AAを含む関連アクセシビリティ基準への準拠に取り組んでいます。</value>
+  </data>
+  <data name="AccessibilityConformanceHeading" xml:space="preserve">
+    <value>準拠状況</value>
+  </data>
+  <data name="AccessibilityDescriptionHeading" xml:space="preserve">
+    <value>アクセシビリティについて</value>
+  </data>
+  <data name="AccessibilityDescriptionParagraph1" xml:space="preserve">
+    <value>PrTaskは、できるだけ多くの人に使いやすい体験を提供することを目指しています。</value>
+  </data>
+  <data name="AccessibilityDescriptionParagraph2" xml:space="preserve">
+    <value>私たちは継続的に改善を行い、障害のある方を含むすべてのユーザーが利用しやすいようにしています。</value>
+  </data>
+  <data name="AccessibilityEaaDescription" xml:space="preserve">
+    <value>PrTaskは、欧州アクセシビリティ法（EAA）で求められる要件に沿うよう努めています。</value>
+  </data>
+  <data name="AccessibilityEaaHeading" xml:space="preserve">
+    <value>EAA準拠</value>
+  </data>
+  <data name="AccessibilityFeedbackDescription" xml:space="preserve">
+    <value>アクセシビリティ上の問題や改善提案があれば、お知らせください。</value>
+  </data>
+  <data name="AccessibilityKnownLimitationsDescription" xml:space="preserve">
+    <value>一部の機能は、支援技術との組み合わせで制限がある場合があります。</value>
+  </data>
+  <data name="AccessibilityKnownLimitationsHeading" xml:space="preserve">
+    <value>既知の制限</value>
+  </data>
+  <data name="AccessibilityLastUpdated" xml:space="preserve">
+    <value>最終更新日</value>
+  </data>
+  <data name="AccessibilityMeasureColorContrast" xml:space="preserve">
+    <value>十分な色のコントラスト</value>
+  </data>
+  <data name="AccessibilityMeasureDarkMode" xml:space="preserve">
+    <value>ダークモード対応</value>
+  </data>
+  <data name="AccessibilityMeasureFocusIndicators" xml:space="preserve">
+    <value>明確なフォーカス表示</value>
+  </data>
+  <data name="AccessibilityMeasureKeyboard" xml:space="preserve">
+    <value>キーボード操作対応</value>
+  </data>
+  <data name="AccessibilityMeasureResponsive" xml:space="preserve">
+    <value>レスポンシブレイアウト</value>
+  </data>
+  <data name="AccessibilityMeasureSemantic" xml:space="preserve">
+    <value>意味的なHTML構造</value>
+  </data>
+  <data name="AccessibilityMeasureTargetSize" xml:space="preserve">
+    <value>十分なタップ領域</value>
+  </data>
+  <data name="AccessibilityMeasureTextAlternatives" xml:space="preserve">
+    <value>画像やアイコンの代替テキスト</value>
+  </data>
+  <data name="AccessibilityMeasuresHeading" xml:space="preserve">
+    <value>実施している対策</value>
+  </data>
+  <data name="AccessibilityOurCommitmentDescription" xml:space="preserve">
+    <value>PrTaskでは、アクセシビリティを製品設計の重要な一部と考えています。</value>
+  </data>
+  <data name="AccessibilityOurCommitmentHeading" xml:space="preserve">
+    <value>私たちの取り組み</value>
+  </data>
+  <data name="AccessibilityPageHeading" xml:space="preserve">
+    <value>アクセシビリティ</value>
+  </data>
+  <data name="AccessibilityWcag22ConsistentHelp" xml:space="preserve">
+    <value>一貫したヘルプの提供</value>
+  </data>
+  <data name="AccessibilityWcag22Description" xml:space="preserve">
+    <value>PrTaskは、WCAG 2.2の原則と成功基準に沿った設計を目指しています。</value>
+  </data>
+  <data name="AccessibilityWcag22DraggingMovements" xml:space="preserve">
+    <value>ドラッグ操作の代替手段</value>
+  </data>
+  <data name="AboutAcceptableUseLinkText" xml:space="preserve">
+    <value>利用規約</value>
+  </data>
+  <data name="AboutAccessibilityLinkText" xml:space="preserve">
+    <value>アクセシビリティに関する声明</value>
+  </data>
+  <data name="AboutAchievementsDescription" xml:space="preserve">
+    <value>マージされたPRごとにマイルストーンに基づくアチーブメントバッジを獲得できます。最初のPR、10番目のPR、収入マイルストーン、トップランキングのバッジをアンロックしましょう。総収入順の公開リーダーボードで競いましょう。すべてのプルリクエストは公開です。</value>
+  </data>
+  <data name="AboutAchievementsHeading" xml:space="preserve">
+    <value>アチーブメントバッジ</value>
+  </data>
+  <data name="AboutCookiePolicyLinkText" xml:space="preserve">
+    <value>Cookieポリシー</value>
+  </data>
+  <data name="AboutDmcaLinkText" xml:space="preserve">
+    <value>DMCA / 著作権ポリシー</value>
+  </data>
+  <data name="AboutHistoryDescription" xml:space="preserve">
+    <value>PrTaskは、シンプルなアイデアから生まれました。すべてのコード貢献に明確で保証された報酬があったらどうだろう？無給のオープンソース労働と不透明なフリーランスプラットフォームへの不満から、PrTaskはプルリクエストが仕事の普遍的な通貨となるマーケットプレイスを創造しました。</value>
+  </data>
+  <data name="AboutHistoryHeading" xml:space="preserve">
+    <value>私たちの物語</value>
+  </data>
+  <data name="AboutLicensesLinkText" xml:space="preserve">
+    <value>ライセンス</value>
+  </data>
+  <data name="AboutPrivacyLinkText" xml:space="preserve">
+    <value>プライバシーポリシー</value>
+  </data>
+  <data name="AboutRefundLinkText" xml:space="preserve">
+    <value>返金ポリシー</value>
+  </data>
+  <data name="AboutStatDevelopersActive" xml:space="preserve">
+    <value>3,200+</value>
+  </data>
+  <data name="AboutStatDevelopersLabel" xml:space="preserve">
+    <value>アクティブ開発者</value>
+  </data>
+  <data name="AboutStatPaidLabel" xml:space="preserve">
+    <value>開発者への支払い総額</value>
+  </data>
+  <data name="AboutStatTasksLabel" xml:space="preserve">
+    <value>完了タスク</value>
+  </data>
+  <data name="AboutStatTotalPaid" xml:space="preserve">
+    <value>$2.4M+</value>
+  </data>
+  <data name="AboutTermsLinkText" xml:space="preserve">
+    <value>利用規約</value>
+  </data>
+  <data name="BoardAddColumnActionText" xml:space="preserve">
+    <value>追加</value>
+  </data>
+  <data name="BoardCreateActionText" xml:space="preserve">
+    <value>作成</value>
+  </data>
+  <data name="BoardDeleteColumnButtonText" xml:space="preserve">
+    <value>x</value>
+  </data>
+  <data name="BoardDetailLoadingText" xml:space="preserve">
+    <value>ボードを読み込み中...</value>
+  </data>
+  <data name="BoardEmptyColumnText" xml:space="preserve">
+    <value>このカラムにタスクはありません</value>
+  </data>
+  <data name="CookieAnalyticsDescription" xml:space="preserve">
+    <value>プラットフォームの使用方法を理解するのにご協力ください</value>
+  </data>
+  <data name="CookieBackButtonText" xml:space="preserve">
+    <value>戻る</value>
+  </data>
+  <data name="CookieEssentialDescription" xml:space="preserve">
+    <value>コア機能に必要（常にオン）</value>
+  </data>
+  <data name="CookieManagePreferencesMessage" xml:space="preserve">
+    <value>Cookieの設定を管理してください。必須Cookieは常にアクティブです。</value>
+  </data>
+  <data name="CookieMarketingDescription" xml:space="preserve">
+    <value>パーソナライズされたコンテンツと広告を有効にする</value>
+  </data>
+  <data name="DeploymentPreviewAdditionsDeletionsLabel" xml:space="preserve">
+    <value>追加 / 削除</value>
+  </data>
+  <data name="DeploymentPreviewBranchLabel" xml:space="preserve">
+    <value>ブランチ</value>
+  </data>
+  <data name="DeploymentPreviewBuildStatusHeading" xml:space="preserve">
+    <value>ビルドステータス</value>
+  </data>
+  <data name="DeploymentPreviewDeployLogHeading" xml:space="preserve">
+    <value>デプロイログ</value>
+  </data>
+  <data name="DeploymentPreviewDeploymentPrefix" xml:space="preserve">
+    <value>デプロイメント: </value>
+  </data>
+  <data name="DeploymentPreviewDetailsHeading" xml:space="preserve">
+    <value>デプロイメント詳細</value>
+  </data>
+  <data name="DeploymentPreviewEnvironmentLabel" xml:space="preserve">
+    <value>環境</value>
+  </data>
+  <data name="DeploymentPreviewEnvironmentValue" xml:space="preserve">
+    <value>プレビュー</value>
+  </data>
+  <data name="DeploymentPreviewFilesChangedLabel" xml:space="preserve">
+    <value>変更されたファイル</value>
+  </data>
+  <data name="DeploymentPreviewOpenLivePreviewText" xml:space="preserve">
+    <value>ライブプレビューを開く</value>
+  </data>
+  <data name="DeploymentPreviewPageDescription" xml:space="preserve">
+    <value>このプルリクエストのライブデプロイ変更を表示します。</value>
+  </data>
+  <data name="DeploymentPreviewPageHeading" xml:space="preserve">
+    <value>デプロイメントプレビュー</value>
+  </data>
+  <data name="DeploymentPreviewPlatformLabel" xml:space="preserve">
+    <value>プラットフォーム</value>
+  </data>
+  <data name="DeploymentPreviewPlatformValue" xml:space="preserve">
+    <value>Cloudflare Pages</value>
+  </data>
+  <data name="DeploymentPreviewPreviewUrlDescription" xml:space="preserve">
+    <value>各プルリクエストは、本番環境にマージする前に変更を確認するための固有のプレビューURLを取得します。</value>
+  </data>
+  <data name="DeploymentPreviewPreviewUrlHeading" xml:space="preserve">
+    <value>プレビューURL</value>
+  </data>
+  <data name="DeploymentPreviewPrStatusLabel" xml:space="preserve">
+    <value>PRステータス</value>
+  </data>
+  <data name="DownloadAndroidDescription" xml:space="preserve">
+    <value>PrTask Androidアプリをダウンロードして、外出先でタスクの閲覧、PR提出、収入追跡ができます。</value>
+  </data>
+  <data name="DownloadAndroidRequirements" xml:space="preserve">
+    <value>Android 8.0以降、50 MBの空き容量</value>
+  </data>
+  <data name="DownloadCurrentVersion" xml:space="preserve">
+    <value>1.0.0</value>
+  </data>
+  <data name="DownloadFeatureAvailable" xml:space="preserve">
+    <value>利用可能</value>
+  </data>
+  <data name="DownloadFeatureBiometricAuth" xml:space="preserve">
+    <value>生体認証</value>
+  </data>
+  <data name="DownloadFeatureComparisonHeading" xml:space="preserve">
+    <value>機能比較</value>
+  </data>
+  <data name="DownloadFeatureNativePerformance" xml:space="preserve">
+    <value>ネイティブパフォーマンス</value>
+  </data>
+  <data name="DownloadFeatureNotApplicable" xml:space="preserve">
+    <value>該当なし</value>
+  </data>
+  <data name="DownloadFeatureOfflineAccess" xml:space="preserve">
+    <value>オフラインアクセス</value>
+  </data>
+  <data name="DownloadFeaturePlanned" xml:space="preserve">
+    <value>計画中</value>
+  </data>
+  <data name="DownloadFeaturePushNotifications" xml:space="preserve">
+    <value>プッシュ通知</value>
+  </data>
+  <data name="DownloadInstallAndroidSteps" xml:space="preserve">
+    <value>APKファイルをダウンロードし、デバイスで開いて、画面の指示に従ってインストールしてください。</value>
+  </data>
+  <data name="DownloadInstallationHeading" xml:space="preserve">
+    <value>インストール手順</value>
+  </data>
+  <data name="DownloadInstallIosSteps" xml:space="preserve">
+    <value>App Storeからダウンロードして、インストールをタップしてください。アプリはホーム画面に表示されます。</value>
+  </data>
+  <data name="DownloadInstallLinuxSteps" xml:space="preserve">
+    <value>お使いのディストリビューション用のパッケージをダウンロードし、パッケージマネージャーでインストールしてください。</value>
+  </data>
+  <data name="DownloadInstallMacosSteps" xml:space="preserve">
+    <value>DMGファイルをダウンロードし、PrTaskをアプリケーションフォルダにドラッグして、Launchpadから起動してください。</value>
+  </data>
+  <data name="DownloadInstallWindowsSteps" xml:space="preserve">
+    <value>インストーラーをダウンロードし、セットアップウィザードを実行して、指示に従ってください。</value>
+  </data>
+  <data name="DownloadIosDescription" xml:space="preserve">
+    <value>iPhone・iPad向けネイティブアプリ。</value>
+  </data>
+  <data name="DownloadIosHeading" xml:space="preserve">
+    <value>Apple iOS</value>
+  </data>
+  <data name="DownloadIosRequirements" xml:space="preserve">
+    <value>iOS 15以降、50 MBの空き容量</value>
+  </data>
+  <data name="DownloadLastUpdatedLabel" xml:space="preserve">
+    <value>最終更新</value>
+  </data>
+  <data name="DownloadLastUpdatedValue" xml:space="preserve">
+    <value>2026年3月</value>
+  </data>
+  <data name="DownloadLinuxDescription" xml:space="preserve">
+    <value>Ubuntu、Fedora、その他のディストリビューション向けデスクトップアプリ。</value>
+  </data>
+  <data name="DownloadLinuxRequirements" xml:space="preserve">
+    <value>Ubuntu 20.04+またはFedora 36+、100 MBの空き容量</value>
+  </data>
+  <data name="DownloadMacosDescription" xml:space="preserve">
+    <value>Apple SiliconとIntel向けネイティブMacアプリ。</value>
+  </data>
+  <data name="DownloadMacosHeading" xml:space="preserve">
+    <value>macOS</value>
+  </data>
+  <data name="DownloadMacosRequirements" xml:space="preserve">
+    <value>macOS 12 (Monterey)以降、100 MBの空き容量</value>
+  </data>
+  <data name="DownloadSystemRequirementsHeading" xml:space="preserve">
+    <value>システム要件</value>
+  </data>
+  <data name="DownloadTroubleshootFaq1Answer" xml:space="preserve">
+    <value>デバイス設定で「提供元不明のアプリのインストール」を有効にして、再度ダウンロードしてください。</value>
+  </data>
+  <data name="DownloadTroubleshootFaq1Question" xml:space="preserve">
+    <value>Android APKがインストールできません。どうすればよいですか？</value>
+  </data>
+  <data name="DownloadTroubleshootFaq2Answer" xml:space="preserve">
+    <value>デバイスが最小システム要件を満たしていること、最新バージョンがインストールされていることを確認してください。</value>
+  </data>
+  <data name="DownloadTroubleshootFaq2Question" xml:space="preserve">
+    <value>アプリが起動時にクラッシュします。どうすれば修正できますか？</value>
+  </data>
+  <data name="DownloadTroubleshootingHeading" xml:space="preserve">
+    <value>トラブルシューティング</value>
+  </data>
+  <data name="DownloadVerificationDescription" xml:space="preserve">
+    <value>すべてのPrTaskダウンロードはデジタル署名され、検証されています。ダウンロード後にSHA-256チェックサムを確認してください。</value>
+  </data>
+  <data name="DownloadVerificationHeading" xml:space="preserve">
+    <value>検証とセキュリティ</value>
+  </data>
+  <data name="DownloadVersionLabel" xml:space="preserve">
+    <value>バージョン</value>
+  </data>
+  <data name="DownloadWebAppDescription" xml:space="preserve">
+    <value>ブラウザで直接PrTaskを使用できます</value>
+  </data>
+  <data name="DownloadWebAppHeading" xml:space="preserve">
+    <value>Webアプリ</value>
+  </data>
+  <data name="DownloadWindowsDescription" xml:space="preserve">
+    <value>Windows 10以降向けデスクトップアプリ。</value>
+  </data>
+  <data name="DownloadWindowsRequirements" xml:space="preserve">
+    <value>Windows 10以降、64ビットプロセッサ、100 MBの空き容量</value>
+  </data>
+  <data name="HowItWorksForClientsHeading" xml:space="preserve">
+    <value>クライアント向け</value>
+  </data>
+  <data name="HowItWorksForClientsStep1" xml:space="preserve">
+    <value>GitHubまたはGoogleでサインインして支払い方法を設定</value>
+  </data>
+  <data name="HowItWorksForClientsStep2" xml:space="preserve">
+    <value>説明、リポジトリリンク、報酬額を含むタスクを作成</value>
+  </data>
+  <data name="HowItWorksForClientsStep3" xml:space="preserve">
+    <value>開発者がタスクに対して公開プルリクエストを提出</value>
+  </data>
+  <data name="HowItWorksForClientsStep4" xml:space="preserve">
+    <value>提出されたすべてのプルリクエストを確認し、最適なものを承認</value>
+  </data>
+  <data name="HowItWorksForClientsStep5" xml:space="preserve">
+    <value>報酬が自動的に課金され、開発者に支払われます</value>
+  </data>
+  <data name="HowItWorksStatusLoginRequired" xml:space="preserve">
+    <value>ログイン必須</value>
+  </data>
+  <data name="HowItWorksStatusOpen" xml:space="preserve">
+    <value>オープン</value>
+  </data>
+  <data name="HowItWorksStatusRequired" xml:space="preserve">
+    <value>必須</value>
+  </data>
+  <data name="HowItWorksWorkflow10Description" xml:space="preserve">
+    <value>変更が必要な特定の行やハイライトされたコードにインラインコメントを追加します。</value>
+  </data>
+  <data name="HowItWorksWorkflow10Heading" xml:space="preserve">
+    <value>レビューコメントを追加</value>
+  </data>
+  <data name="HowItWorksWorkflow10LinkText" xml:space="preserve">
+    <value>PRコメント</value>
+  </data>
+  <data name="HowItWorksWorkflow11Description" xml:space="preserve">
+    <value>開発者が修正を適用し、コメントに返信して解決します。</value>
+  </data>
+  <data name="HowItWorksWorkflow11Heading" xml:space="preserve">
+    <value>コメントに返信して解決</value>
+  </data>
+  <data name="HowItWorksWorkflow11LinkText" xml:space="preserve">
+    <value>コメントを解決</value>
+  </data>
+  <data name="HowItWorksWorkflow12Description" xml:space="preserve">
+    <value>クライアントがPRを承認し、Mayaクレジットカード決済で報酬を支払います。</value>
+  </data>
+  <data name="HowItWorksWorkflow12Heading" xml:space="preserve">
+    <value>PRを承認してMayaで支払い</value>
+  </data>
+  <data name="HowItWorksWorkflow12LinkText" xml:space="preserve">
+    <value>承認して支払い</value>
+  </data>
+  <data name="HowItWorksWorkflow12PaymentsLinkText" xml:space="preserve">
+    <value>支払い</value>
+  </data>
+  <data name="HowItWorksWorkflow13Description" xml:space="preserve">
+    <value>すべての支払い取引とそのステータスを表示します。</value>
+  </data>
+  <data name="HowItWorksWorkflow13Heading" xml:space="preserve">
+    <value>支払い履歴</value>
+  </data>
+  <data name="HowItWorksWorkflow13LinkText" xml:space="preserve">
+    <value>支払い</value>
+  </data>
+  <data name="HowItWorksWorkflow14Description" xml:space="preserve">
+    <value>出金方法を設定し、出金残高を確認します。</value>
+  </data>
+  <data name="HowItWorksWorkflow14Heading" xml:space="preserve">
+    <value>出金設定</value>
+  </data>
+  <data name="HowItWorksWorkflow14LinkText" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="HowItWorksWorkflow1Description" xml:space="preserve">
+    <value>Google、GitHub、Microsoft、またはOktaで認証します。</value>
+  </data>
+  <data name="HowItWorksWorkflow1Heading" xml:space="preserve">
+    <value>SSOでサインイン</value>
+  </data>
+  <data name="HowItWorksWorkflow1LinkText" xml:space="preserve">
+    <value>サインイン</value>
+  </data>
+  <data name="HowItWorksWorkflow2Description" xml:space="preserve">
+    <value>支払いを有効にし、規制に準拠するために本人確認を完了します。</value>
+  </data>
+  <data name="HowItWorksWorkflow2Heading" xml:space="preserve">
+    <value>KYC本人確認</value>
+  </data>
+  <data name="HowItWorksWorkflow2LinkText" xml:space="preserve">
+    <value>設定 - KYC</value>
+  </data>
+  <data name="HowItWorksWorkflow3Description" xml:space="preserve">
+    <value>開発者が完了するための報酬付きタスクを投稿します。</value>
+  </data>
+  <data name="HowItWorksWorkflow3Heading" xml:space="preserve">
+    <value>タスクを作成</value>
+  </data>
+  <data name="HowItWorksWorkflow3LinkText" xml:space="preserve">
+    <value>タスク作成</value>
+  </data>
+  <data name="HowItWorksWorkflow4Description" xml:space="preserve">
+    <value>ソースコードフォルダをタスクにアップロードして、開発者がDiffを見られるようにします。</value>
+  </data>
+  <data name="HowItWorksWorkflow4Heading" xml:space="preserve">
+    <value>ソースコードをアップロード</value>
+  </data>
+  <data name="HowItWorksWorkflow4LinkText" xml:space="preserve">
+    <value>タスク詳細</value>
+  </data>
+  <data name="HowItWorksWorkflow5Description" xml:space="preserve">
+    <value>開発者が利用可能なタスクを閲覧し、スキルに合った仕事を見つけます。</value>
+  </data>
+  <data name="HowItWorksWorkflow5Heading" xml:space="preserve">
+    <value>オープンタスクを閲覧</value>
+  </data>
+  <data name="HowItWorksWorkflow5LinkText" xml:space="preserve">
+    <value>タスク</value>
+  </data>
+  <data name="HowItWorksWorkflow6Description" xml:space="preserve">
+    <value>タスクの説明、報酬額、既存のプルリクエストを表示します。</value>
+  </data>
+  <data name="HowItWorksWorkflow6Heading" xml:space="preserve">
+    <value>タスク詳細を表示</value>
+  </data>
+  <data name="HowItWorksWorkflow6LinkText" xml:space="preserve">
+    <value>タスク詳細</value>
+  </data>
+  <data name="HowItWorksWorkflow7Description" xml:space="preserve">
+    <value>ブラウザのDiffエディタでソースコードを直接編集します。</value>
+  </data>
+  <data name="HowItWorksWorkflow7Heading" xml:space="preserve">
+    <value>Diffエディタでコードを修正</value>
+  </data>
+  <data name="HowItWorksWorkflow7LinkText" xml:space="preserve">
+    <value>Diffエディタ</value>
+  </data>
+  <data name="HowItWorksWorkflow8Description" xml:space="preserve">
+    <value>コード変更をタスクのプルリクエストとして提出します。</value>
+  </data>
+  <data name="HowItWorksWorkflow8Heading" xml:space="preserve">
+    <value>プルリクエストを提出</value>
+  </data>
+  <data name="HowItWorksWorkflow8LinkText" xml:space="preserve">
+    <value>PR提出</value>
+  </data>
+  <data name="HowItWorksWorkflow9Description" xml:space="preserve">
+    <value>クライアントがDiffを確認して、開発者が提出したすべてのコード変更を確認します。</value>
+  </data>
+  <data name="HowItWorksWorkflow9Heading" xml:space="preserve">
+    <value>コード変更を確認</value>
+  </data>
+  <data name="HowItWorksWorkflow9LinkText" xml:space="preserve">
+    <value>PR詳細</value>
+  </data>
+  <data name="HowItWorksWorkflowGuideDescription" xml:space="preserve">
+    <value>ログインから支払いまでの完全なワークフローを完了するための手順に従ってください。</value>
+  </data>
+  <data name="HowItWorksWorkflowGuideHeading" xml:space="preserve">
+    <value>ワークフローガイド</value>
+  </data>
+  <data name="LoginBenefitEarnMoneyDescription" xml:space="preserve">
+    <value>マージされたプルリクエストごとに報酬を受け取ります。報酬は事前に資金が確保され、マージ時に解放されます。</value>
+  </data>
+  <data name="LoginBenefitEarnMoneyHeading" xml:space="preserve">
+    <value>収入を得る</value>
+  </data>
+  <data name="LoginBenefitNoFeesDescription" xml:space="preserve">
+    <value>開発者は報酬の100%を受け取ります。PrTaskはクライアントに課金し、貢献者には課金しません。</value>
+  </data>
+  <data name="LoginBenefitNoFeesHeading" xml:space="preserve">
+    <value>プラットフォーム手数料なし</value>
+  </data>
+  <data name="LoginBenefitPublicPrsDescription" xml:space="preserve">
+    <value>すべての作業はGitHub上の実際のプルリクエストとして提供されます。あなたの貢献は可視で検証可能です。</value>
+  </data>
+  <data name="LoginBenefitPublicPrsHeading" xml:space="preserve">
+    <value>公開PR</value>
+  </data>
+  <data name="LoginHelpLinkDescription" xml:space="preserve">
+    <value>ガイド、FAQ、サポートリソースについては、ドキュメントをご覧ください。</value>
+  </data>
+  <data name="LoginHelpLinkText" xml:space="preserve">
+    <value>ヘルプが必要ですか？</value>
+  </data>
+  <data name="LoginHowItWorksHeading" xml:space="preserve">
+    <value>仕組み</value>
+  </data>
+  <data name="LoginSecurityDescription" xml:space="preserve">
+    <value>PrTaskはOAuthベースのSSOのみを使用します。パスワードは保存しません。すべての支払いは作業が検証されるまでエスクローに保管されます。</value>
+  </data>
+  <data name="LoginSecurityHeading" xml:space="preserve">
+    <value>セキュリティと信頼</value>
+  </data>
+  <data name="LoginStepBrowseDescription" xml:space="preserve">
+    <value>言語、フレームワーク、または報酬額でフィルタリングして利用可能なタスクを探索します。</value>
+  </data>
+  <data name="LoginStepBrowseHeading" xml:space="preserve">
+    <value>タスクを閲覧</value>
+  </data>
+  <data name="LoginStepGetPaidDescription" xml:space="preserve">
+    <value>PRがレビューされてマージされると、報酬が自動的にアカウントに解放されます。</value>
+  </data>
+  <data name="LoginStepGetPaidHeading" xml:space="preserve">
+    <value>報酬を受け取る</value>
+  </data>
+  <data name="LoginStepSignInDescription" xml:space="preserve">
+    <value>お好みのSSOプロバイダーで認証してPrTaskアカウントを作成します。</value>
+  </data>
+  <data name="LoginStepSignInHeading" xml:space="preserve">
+    <value>サインイン</value>
+  </data>
+  <data name="LoginStepSubmitDescription" xml:space="preserve">
+    <value>タスクをクレームし、コードを書いて、ターゲットリポジトリにプルリクエストを提出します。</value>
+  </data>
+  <data name="LoginStepSubmitHeading" xml:space="preserve">
+    <value>PRを提出</value>
+  </data>
+  <data name="LoginWhyPrTaskDescription" xml:space="preserve">
+    <value>PrTaskは開発者を有料のオープンソースおよびプライベートタスクとつなぎます。コードを提出し、収入を得て、ポートフォリオを構築しましょう。</value>
+  </data>
+  <data name="LoginWhyPrTaskHeading" xml:space="preserve">
+    <value>なぜPrTask？</value>
+  </data>
+  <data name="PrDetailCancelReplyButton" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="PrDetailCommentLinePrefix" xml:space="preserve">
+    <value>行にコメントを追加中 </value>
+  </data>
+  <data name="PrDetailCommentOpenStatus" xml:space="preserve">
+    <value>オープン</value>
+  </data>
+  <data name="PrDetailCommentResolvedStatus" xml:space="preserve">
+    <value>解決済み</value>
+  </data>
+  <data name="PrDetailNoCommentsYet" xml:space="preserve">
+    <value>まだコメントはありません。Diffの行をクリックしてインラインコメントを追加してください。</value>
+  </data>
+  <data name="PrDetailNoDiffAvailable" xml:space="preserve">
+    <value>Diffがありません。タスクにソースコードをアップロードしてDiff生成を有効にしてください。</value>
+  </data>
+  <data name="PrDetailNoFilesParsed" xml:space="preserve">
+    <value>Diffからファイルが解析されませんでした</value>
+  </data>
+  <data name="PrDetailPaymentApproveText" xml:space="preserve">
+    <value>PRを承認してMayaクレジットカード決済を開始します。</value>
+  </data>
+  <data name="PrDetailPaymentHeading" xml:space="preserve">
+    <value>支払い</value>
+  </data>
+  <data name="PrDetailPaymentInitiatedText" xml:space="preserve">
+    <value>Mayaチェックアウトで支払いが開始されました。</value>
+  </data>
+  <data name="PrDetailPaymentProviderText" xml:space="preserve">
+    <value>Maya提供</value>
+  </data>
+  <data name="PrDetailPaymentSandboxText" xml:space="preserve">
+    <value>サンドボックスモード</value>
+  </data>
+  <data name="PrDetailPrStatusPrefix" xml:space="preserve">
+    <value>PRステータス: </value>
+  </data>
+  <data name="PrDetailSubmitReplyButton" xml:space="preserve">
+    <value>返信を送信</value>
+  </data>
+  <data name="PrDetailSubmittedByPrefix" xml:space="preserve">
+    <value>提出者: </value>
+  </data>
+  <data name="PricingAdditionalFaq1Answer" xml:space="preserve">
+    <value>安全な決済プロセッサを通じて、Visa、Mastercard、American Expressおよびその他の主要なクレジットカードとデビットカードを受け付けています。</value>
+  </data>
+  <data name="PricingAdditionalFaq1Question" xml:space="preserve">
+    <value>どの支払い方法が利用できますか？</value>
+  </data>
+  <data name="PricingAdditionalFaq2Answer" xml:space="preserve">
+    <value>出金は通常、クライアントがプルリクエストを承認してから3〜5営業日以内に処理されます。</value>
+  </data>
+  <data name="PricingAdditionalFaq2Question" xml:space="preserve">
+    <value>出金が届くまでどのくらいかかりますか？</value>
+  </data>
+  <data name="PricingAdditionalFaq3Answer" xml:space="preserve">
+    <value>はい、クライアントがタスクに設定できる最低報酬は$1です。上限はありません。</value>
+  </data>
+  <data name="PricingAdditionalFaq3Question" xml:space="preserve">
+    <value>最低報酬額はありますか？</value>
+  </data>
+  <data name="PricingClientFeature1" xml:space="preserve">
+    <value>カスタム報酬で無制限のタスクを投稿</value>
+  </data>
+  <data name="PricingClientFeature2" xml:space="preserve">
+    <value>最低報酬: $1</value>
+  </data>
+  <data name="PricingClientFeature3" xml:space="preserve">
+    <value>PR承認時に自動支払い</value>
+  </data>
+  <data name="PricingClientFeature4" xml:space="preserve">
+    <value>クレジットカードまたはサポートされている支払い方法で支払い</value>
+  </data>
+  <data name="PricingClientFeature5" xml:space="preserve">
+    <value>支払い前にPRを確認して承認</value>
+  </data>
+  <data name="PricingClientFeature6" xml:space="preserve">
+    <value>紛争解決と仲裁サポート</value>
+  </data>
+  <data name="PricingComparisonClientIncluded" xml:space="preserve">
+    <value>含む</value>
+  </data>
+  <data name="PricingComparisonDeveloperIncluded" xml:space="preserve">
+    <value>含む</value>
+  </data>
+  <data name="PricingComparisonFeatureColumnHeader" xml:space="preserve">
+    <value>機能</value>
+  </data>
+  <data name="PricingComparisonHeading" xml:space="preserve">
+    <value>機能比較</value>
+  </data>
+  <data name="PricingDevFeature1" xml:space="preserve">
+    <value>無料でタスクを閲覧してクレーム</value>
+  </data>
+  <data name="PricingDevFeature2" xml:space="preserve">
+    <value>完了したPRごとに報酬の100%を受け取る</value>
+  </data>
+  <data name="PricingDevFeature3" xml:space="preserve">
+    <value>バッジとリーダーボードランクを獲得</value>
+  </data>
+  <data name="PricingDevFeature4" xml:space="preserve">
+    <value>収入と出金履歴を追跡</value>
+  </data>
+  <data name="PricingDevFeature5" xml:space="preserve">
+    <value>お好みの出金方法で報酬を受け取る</value>
+  </data>
+  <data name="PricingEnterpriseContactText" xml:space="preserve">
+    <value>お問い合わせ</value>
+  </data>
+  <data name="PricingEnterpriseDescription" xml:space="preserve">
+    <value>組織に合わせたソリューションが必要ですか？カスタム統合、専用サポート、ボリュームベースの契約を提供します。</value>
+  </data>
+  <data name="PricingEnterpriseHeading" xml:space="preserve">
+    <value>エンタープライズ・カスタムプラン</value>
+  </data>
+  <data name="PricingFaqAnswer1" xml:space="preserve">
+    <value>クライアントがプルリクエストを承認すると、報酬額が自動的に課金されます。開発者は報酬の100%を受け取ります。</value>
+  </data>
+  <data name="PricingFaqAnswer2" xml:space="preserve">
+    <value>PRがクライアントに承認されると、支払いが自動的に処理されます。開発者は報酬の100%を受け取ります。</value>
+  </data>
+  <data name="PricingFaqAnswer3" xml:space="preserve">
+    <value>すべての取引は米ドル(USD)建てです。</value>
+  </data>
+  <data name="PricingFaqQuestion1" xml:space="preserve">
+    <value>支払いはどのように処理されますか？</value>
+  </data>
+  <data name="PricingFaqQuestion2" xml:space="preserve">
+    <value>いつ支払いを受け取れますか？</value>
+  </data>
+  <data name="PricingFaqQuestion3" xml:space="preserve">
+    <value>どの通貨がサポートされていますか？</value>
+  </data>
+  <data name="PricingFeatureAchievements" xml:space="preserve">
+    <value>アチーブメント</value>
+  </data>
+  <data name="PricingFeatureCodeReview" xml:space="preserve">
+    <value>コードレビュー</value>
+  </data>
+  <data name="PricingFeatureLeaderboard" xml:space="preserve">
+    <value>リーダーボード</value>
+  </data>
+  <data name="PricingFeaturePaymentProcessing" xml:space="preserve">
+    <value>決済処理</value>
+  </data>
+  <data name="PricingFeaturePrSubmission" xml:space="preserve">
+    <value>PR提出</value>
+  </data>
+  <data name="PricingFeatureTaskBrowsing" xml:space="preserve">
+    <value>タスク閲覧</value>
+  </data>
+  <data name="PricingGetStartedDescription" xml:space="preserve">
+    <value>今日PrTaskに参加して、収入を得るか報酬を投稿しましょう。完全無料です。</value>
+  </data>
+  <data name="PricingGetStartedHeading" xml:space="preserve">
+    <value>始める準備はできましたか？</value>
+  </data>
+  <data name="PricingPaymentMethodsDescription" xml:space="preserve">
+    <value>主要なクレジットカード、デビットカード、その他のサポートされている決済プロバイダーを受け付けています。すべての支払いは安全に処理されます。</value>
+  </data>
+  <data name="PricingPaymentMethodsHeading" xml:space="preserve">
+    <value>支払い方法</value>
+  </data>
+  <data name="PricingPayoutDescription" xml:space="preserve">
+    <value>開発者は銀行振込、PayPal、またはその他のサポートされている方法で収入を引き出せます。出金は3〜5営業日で処理されます。</value>
+  </data>
+  <data name="PricingPayoutHeading" xml:space="preserve">
+    <value>出金詳細</value>
+  </data>
+  <data name="PricingRefundSummaryDescription" xml:space="preserve">
+    <value>争議のある作業や未納品の作業に対して公平な返金条件を提供します。</value>
+  </data>
+  <data name="PricingRefundSummaryHeading" xml:space="preserve">
+    <value>返金ポリシー</value>
+  </data>
+  <data name="PricingRefundSummaryLinkText" xml:space="preserve">
+    <value>返金ポリシーの全文を見る</value>
+  </data>
+  <data name="SettingsAccountHeading" xml:space="preserve">
+    <value>アカウント</value>
+  </data>
+  <data name="SettingsActivityVisibilityLabel" xml:space="preserve">
+    <value>アクティビティの公開設定</value>
+  </data>
+  <data name="SettingsConnectedAccountsDescription" xml:space="preserve">
+    <value>連携済みのSSOプロバイダーを管理します。</value>
+  </data>
+  <data name="SettingsDepositDescription" xml:space="preserve">
+    <value>タスク報酬の投稿に使用する支払い方法を設定します。</value>
+  </data>
+  <data name="SettingsDisabledLabel" xml:space="preserve">
+    <value>無効</value>
+  </data>
+  <data name="SettingsDisbursementDescription" xml:space="preserve">
+    <value>完了したタスクの支払い処理方法を設定します。</value>
+  </data>
+  <data name="SettingsDisbursementHeading" xml:space="preserve">
+    <value>支払い設定</value>
+  </data>
+  <data name="SettingsDisbursementMethodLabel" xml:space="preserve">
+    <value>支払い方法</value>
+  </data>
+  <data name="SettingsEnabledLabel" xml:space="preserve">
+    <value>有効</value>
+  </data>
+  <data name="SettingsInvoiceAutoGenerateLabel" xml:space="preserve">
+    <value>請求書の自動生成</value>
+  </data>
+  <data name="SettingsInvoiceDescription" xml:space="preserve">
+    <value>取引の請求書生成を設定します。</value>
+  </data>
+  <data name="SettingsInvoiceHeading" xml:space="preserve">
+    <value>請求書設定</value>
+  </data>
+  <data name="SettingsKycCheckStatusButtonText" xml:space="preserve">
+    <value>ステータスを確認</value>
+  </data>
+  <data name="SettingsKycCompleteVerificationText" xml:space="preserve">
+    <value>認証を完了</value>
+  </data>
+  <data name="SettingsKycDigitalVerifyButtonText" xml:space="preserve">
+    <value>Diditで認証</value>
+  </data>
+  <data name="SettingsKycDocumentIdLabel" xml:space="preserve">
+    <value>書類ID番号</value>
+  </data>
+  <data name="SettingsKycDocumentTypeLabel" xml:space="preserve">
+    <value>書類タイプ</value>
+  </data>
+  <data name="SettingsKycDriversLicenseLabel" xml:space="preserve">
+    <value>運転免許証</value>
+  </data>
+  <data name="SettingsKycNationalIdLabel" xml:space="preserve">
+    <value>国民ID</value>
+  </data>
+  <data name="SettingsKycPassportLabel" xml:space="preserve">
+    <value>パスポート</value>
+  </data>
+  <data name="SettingsKycSelectDocumentType" xml:space="preserve">
+    <value>書類タイプを選択</value>
+  </data>
+  <data name="SettingsKycSessionLabel" xml:space="preserve">
+    <value>セッション: </value>
+  </data>
+  <data name="SettingsKycVerificationStatusLabel" xml:space="preserve">
+    <value>認証ステータス</value>
+  </data>
+  <data name="SettingsNoActiveSubscriptions" xml:space="preserve">
+    <value>アクティブなサブスクリプションはありません。</value>
+  </data>
+  <data name="SettingsNoInvoiceHistory" xml:space="preserve">
+    <value>請求書履歴はありません。</value>
+  </data>
+  <data name="SettingsNotConfigured" xml:space="preserve">
+    <value>未設定。</value>
+  </data>
+  <data name="SettingsNotificationAllLabel" xml:space="preserve">
+    <value>すべての通知</value>
+  </data>
+  <data name="SettingsNotificationEmailLabel" xml:space="preserve">
+    <value>通知メール</value>
+  </data>
+  <data name="SettingsNotificationImportantLabel" xml:space="preserve">
+    <value>重要なもののみ</value>
+  </data>
+  <data name="SettingsNotificationNoneLabel" xml:space="preserve">
+    <value>なし</value>
+  </data>
+  <data name="SettingsNoWalletLinked" xml:space="preserve">
+    <value>ウォレットが連携されていません。</value>
+  </data>
+  <data name="SettingsPaymentBankLabel" xml:space="preserve">
+    <value>銀行振込</value>
+  </data>
+  <data name="SettingsPaymentCardLabel" xml:space="preserve">
+    <value>クレジットカードまたはデビットカード</value>
+  </data>
+  <data name="SettingsPaymentHistoryDescription" xml:space="preserve">
+    <value>過去の取引と支払い記録を表示します。</value>
+  </data>
+  <data name="SettingsPaymentHistoryHeaderAmount" xml:space="preserve">
+    <value>金額</value>
+  </data>
+  <data name="SettingsPaymentHistoryHeaderCreated" xml:space="preserve">
+    <value>作成日</value>
+  </data>
+  <data name="SettingsPaymentHistoryHeaderDescription" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="SettingsPaymentHistoryHeaderStatus" xml:space="preserve">
+    <value>ステータス</value>
+  </data>
+  <data name="SettingsPaymentHistoryHeading" xml:space="preserve">
+    <value>支払い履歴</value>
+  </data>
+  <data name="SettingsPaymentHistoryRecentLabel" xml:space="preserve">
+    <value>最近の請求書</value>
+  </data>
+  <data name="SettingsPayoutBankLabel" xml:space="preserve">
+    <value>銀行振込</value>
+  </data>
+  <data name="SettingsPayoutCryptoLabel" xml:space="preserve">
+    <value>暗号通貨</value>
+  </data>
+  <data name="SettingsPayoutDetailsLabel" xml:space="preserve">
+    <value>出金詳細</value>
+  </data>
+  <data name="SettingsPayoutPaypalLabel" xml:space="preserve">
+    <value>PayPal</value>
+  </data>
+  <data name="SettingsProfileVisibilityLabel" xml:space="preserve">
+    <value>プロフィールの公開設定</value>
+  </data>
+  <data name="SettingsProviderGitHubLabel" xml:space="preserve">
+    <value>GitHub</value>
+  </data>
+  <data name="SettingsProviderGoogleLabel" xml:space="preserve">
+    <value>Google</value>
+  </data>
+  <data name="SettingsProviderMicrosoftLabel" xml:space="preserve">
+    <value>Microsoft</value>
+  </data>
+  <data name="SettingsProviderOktaLabel" xml:space="preserve">
+    <value>Okta</value>
+  </data>
+  <data name="SettingsQrPaymentDescription" xml:space="preserve">
+    <value>QRコード決済の設定を管理します。</value>
+  </data>
+  <data name="SettingsQrPaymentHeading" xml:space="preserve">
+    <value>QR決済設定</value>
+  </data>
+  <data name="SettingsQrPaymentLabel" xml:space="preserve">
+    <value>QR決済</value>
+  </data>
+  <data name="SettingsSecurityDescription" xml:space="preserve">
+    <value>追加のセキュリティ対策でアカウントを保護します。</value>
+  </data>
+  <data name="SettingsSubscriptionActiveLabel" xml:space="preserve">
+    <value>アクティブなサブスクリプション</value>
+  </data>
+  <data name="SettingsSubscriptionDescription" xml:space="preserve">
+    <value>アクティブなサブスクリプションと定期支払いを管理します。</value>
+  </data>
+  <data name="SettingsSubscriptionHeaderAmount" xml:space="preserve">
+    <value>金額</value>
+  </data>
+  <data name="SettingsSubscriptionHeaderDescription" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="SettingsSubscriptionHeaderInterval" xml:space="preserve">
+    <value>間隔</value>
+  </data>
+  <data name="SettingsSubscriptionHeaderStatus" xml:space="preserve">
+    <value>ステータス</value>
+  </data>
+  <data name="SettingsSubscriptionHeading" xml:space="preserve">
+    <value>サブスクリプション設定</value>
+  </data>
+  <data name="SettingsTimezoneLabel" xml:space="preserve">
+    <value>タイムゾーン</value>
+  </data>
+  <data name="SettingsTimezoneLondonLabel" xml:space="preserve">
+    <value>ロンドン (GMT+0)</value>
+  </data>
+  <data name="SettingsTimezoneManilaLabel" xml:space="preserve">
+    <value>アジア/マニラ (GMT+8)</value>
+  </data>
+  <data name="SettingsTimezoneNewYorkLabel" xml:space="preserve">
+    <value>東部時間 (GMT-5)</value>
+  </data>
+  <data name="SettingsTimezoneUtcLabel" xml:space="preserve">
+    <value>UTC</value>
+  </data>
+  <data name="SettingsTwoFactorAuthenticatorLabel" xml:space="preserve">
+    <value>認証アプリ</value>
+  </data>
+  <data name="SettingsTwoFactorDisabledLabel" xml:space="preserve">
+    <value>無効</value>
+  </data>
+  <data name="SettingsTwoFactorEmailLabel" xml:space="preserve">
+    <value>メール認証</value>
+  </data>
+  <data name="SettingsVisibilityPrivateActivityLabel" xml:space="preserve">
+    <value>非公開 - 他の人にアクティビティを隠す</value>
+  </data>
+  <data name="SettingsVisibilityPrivateProfileLabel" xml:space="preserve">
+    <value>非公開 - 自分だけがプロフィールを閲覧可能</value>
+  </data>
+  <data name="SettingsVisibilityPublicActivityLabel" xml:space="preserve">
+    <value>公開 - リーダーボードにアクティビティを表示</value>
+  </data>
+  <data name="SettingsVisibilityPublicProfileLabel" xml:space="preserve">
+    <value>公開 - 誰でもプロフィールを閲覧可能</value>
+  </data>
+  <data name="SettingsWalletDescription" xml:space="preserve">
+    <value>迅速な支払いと出金のためにデジタルウォレットを連携します。</value>
+  </data>
+  <data name="SettingsWalletHeading" xml:space="preserve">
+    <value>ウォレット連携設定</value>
+  </data>
+  <data name="SettingsWalletLinkedLabel" xml:space="preserve">
+    <value>連携済みウォレット</value>
+  </data>
+  <data name="SettingsWithdrawalDescription" xml:space="preserve">
+    <value>完了したタスクの報酬の受け取り方法を設定します。</value>
+  </data>
+  <data name="SprintCreateActionText" xml:space="preserve">
+    <value>作成</value>
+  </data>
+  <data name="SprintEndDateLabel" xml:space="preserve">
+    <value>終了日</value>
+  </data>
+  <data name="SprintStartDateLabel" xml:space="preserve">
+    <value>開始日</value>
+  </data>
+  <data name="SubmitPrSubmittingForFormat" xml:space="preserve">
+    <value>PR提出中: </value>
+  </data>
+  <data name="TaskDetailEmptyPrState" xml:space="preserve">
+    <value>まだプルリクエストは提出されていません。</value>
+  </data>
+  <data name="TaskDetailPullRequestsDescription" xml:space="preserve">
+    <value>開発者がこのタスクのプルリクエストを提出します。最適なものを選んで承認・マージしてください。</value>
+  </data>
+  <data name="TaskDetailSourceCodeDescription" xml:space="preserve">
+    <value>ソースコードフォルダをアップロードして、開発者がDiffビューアでコードを確認できるようにします。</value>
+  </data>
+  <data name="TaskDetailUploadFilesLabel" xml:space="preserve">
+    <value>ソースファイルをアップロード</value>
+  </data>
+  <data name="AcceptableUseContactHeading" xml:space="preserve">
+    <value>お問い合わせ</value>
+  </data>
+  <data name="AcceptableUseEnforcementHeading" xml:space="preserve">
+    <value>執行</value>
+  </data>
+  <data name="AcceptableUseEnforcementWarningLabel" xml:space="preserve">
+    <value>警告：</value>
+  </data>
+  <data name="AccessibilityFeedbackHeading" xml:space="preserve">
+    <value>フィードバック</value>
+  </data>
+  <data name="AccessibilityWcag22Heading" xml:space="preserve">
+    <value>WCAG 2.2 レベルAA準拠</value>
+  </data>
+  <data name="AccessibilityWcag22FocusAppearance" xml:space="preserve">
+    <value>2.4.13 フォーカスの外観: フォーカスされた要素には明確に見えるフォーカスインジケーターがある</value>
+  </data>
+  <data name="AccessibilityWcag22FocusNotObscured" xml:space="preserve">
+    <value>2.4.11 フォーカスが隠れない（最小）: フォーカスされた要素が他の内容で完全に隠されない</value>
+  </data>
+  <data name="AccessibilityWcag22RedundantEntry" xml:space="preserve">
+    <value>3.3.7 冗長な入力: すでに提供した情報を再入力する必要がない</value>
+  </data>
+  <data name="AccessibilityWcag22TargetSize" xml:space="preserve">
+    <value>2.5.8 ターゲットサイズ（最小）: インタラクティブなターゲットは少なくとも24x24 CSSピクセル</value>
+  </data>
+  <data name="BoardDescriptionHeading" xml:space="preserve">
+    <value>カンバンボード — 視覚的なタスク管理とワークフロー</value>
+  </data>
+  <data name="BoardDescriptionParagraph1" xml:space="preserve">
+    <value>PrTaskのボードは列ベースの視覚的なアプローチで、ステータスとプルリクエストを追跡できます。</value>
+  </data>
+  <data name="BoardDescriptionParagraph2" xml:space="preserve">
+    <value>ボードの作成は簡単で、名前を入力しボードタイプ（デフォルトはカンバン）を選ぶだけです。</value>
+  </data>
+  <data name="BoardDescriptionParagraph3" xml:space="preserve">
+    <value>PrTaskのボードはWebSocketでリアルタイムに同期され、変更が即座に反映されます。</value>
+  </data>
+  <data name="BoardSeoDescription" xml:space="preserve">
+    <value>オープンソースプロジェクトのボードを管理し、プルリクエストのタスクを追跡します。</value>
+  </data>
+  <data name="CookiePolicyAnalyticsDescription" xml:space="preserve">
+    <value>利用状況の分析と体験改善のために分析クッキーを使用します。個人データは同意なく共有しません。</value>
+  </data>
+  <data name="CookiePolicyCcpaConsentDescription" xml:space="preserve">
+    <value>California Consumer Privacy Actに従い、PrTaskはすべての使用中のクッキーとその目的を開示します。</value>
+  </data>
+  <data name="CookiePolicyCcpaConsentHeading" xml:space="preserve">
+    <value>カリフォルニア（CCPA/CPRA）クッキー開示</value>
+  </data>
+  <data name="CookiePolicyConsentDescription" xml:space="preserve">
+    <value>初回アクセス時、クッキーバナーで利用を案内し同意を得ます。</value>
+  </data>
+  <data name="CookiePolicyConsentHeading" xml:space="preserve">
+    <value>クッキー同意</value>
+  </data>
+  <data name="CookiePolicyConsentPurpose" xml:space="preserve">
+    <value>クッキー設定を保存します</value>
+  </data>
+  <data name="CookiePolicyContactDescription" xml:space="preserve">
+    <value>クッキーやプライバシーに関する質問は当社の担当チームまでお問い合わせください。</value>
+  </data>
+  <data name="CookiePolicyCookieReferenceHeading" xml:space="preserve">
+    <value>クッキー一覧</value>
+  </data>
+  <data name="CookiePolicyCsrfPurpose" xml:space="preserve">
+    <value>クロスサイトリクエストフォージェリ攻撃から保護します</value>
+  </data>
+  <data name="CookiePolicyDescriptionHeading" xml:space="preserve">
+    <value>このクッキーポリシーについて</value>
+  </data>
+  <data name="CookiePolicyDescriptionParagraph1" xml:space="preserve">
+    <value>このポリシーはPrTaskが使用するクッキーや類似技術を明示します。</value>
+  </data>
+  <data name="CookiePolicyDescriptionParagraph2" xml:space="preserve">
+    <value>PrTaskはePrivacy、GDPR、CCPAなどに従い、クッキー選択を尊重します。</value>
+  </data>
+  <data name="CookiePolicyEssentialDescription" xml:space="preserve">
+    <value>必須クッキーはセッションを維持し認証を保護します。</value>
+  </data>
+  <data name="CookiePolicyEssentialHeading" xml:space="preserve">
+    <value>必須クッキー</value>
+  </data>
+  <data name="CookiePolicyEuConsentDescription" xml:space="preserve">
+    <value>ePrivacyやGDPR、PECRにより非必須クッキーには明示的な事前同意が必要です。</value>
+  </data>
+  <data name="CookiePolicyEuConsentHeading" xml:space="preserve">
+    <value>EU/EEA・英国のクッキー同意</value>
+  </data>
+  <data name="CookiePolicyFunctionalDescription" xml:space="preserve">
+    <value>機能クッキーはテーマなどの設定を記憶し体験を最適化します。</value>
+  </data>
+  <data name="CookiePolicyFunctionalHeading" xml:space="preserve">
+    <value>機能クッキー</value>
+  </data>
+  <data name="CookiePolicyGaPurpose" xml:space="preserve">
+    <value>ユニーク訪問者を追跡するGoogle Analytics識別子</value>
+  </data>
+  <data name="CookiePolicyGidPurpose" xml:space="preserve">
+    <value>セッション追跡用Google Analytics識別子</value>
+  </data>
+  <data name="CookiePolicyIntroduction" xml:space="preserve">
+    <value>このポリシーはPrTaskがクッキーや類似のトラッキング技術をどう使うかを説明します。</value>
+  </data>
+  <data name="CookiePolicyLastUpdated" xml:space="preserve">
+    <value>最終更新日：2026年3月</value>
+  </data>
+  <data name="CookiePolicyManagingDescription" xml:space="preserve">
+    <value>ブラウザ設定で非必須クッキーを無効にできますが、一部機能が制限される可能性があります。</value>
+  </data>
+  <data name="CookiePolicyManagingHeading" xml:space="preserve">
+    <value>クッキー管理</value>
+  </data>
+  <data name="CookiePolicyOtherRegionsDescription" xml:space="preserve">
+    <value>ブラジル（LGPD）、タイ（PDPA）、韓国（PIPA）、インド（DPDP）、南ア（POPIA）などの規制にも対応しています。</value>
+  </data>
+  <data name="CookiePolicyOtherRegionsHeading" xml:space="preserve">
+    <value>その他の法域</value>
+  </data>
+  <data name="CookiePolicyPageHeading" xml:space="preserve">
+    <value>クッキーポリシー</value>
+  </data>
+  <data name="CookiePolicyPaymentDescription" xml:space="preserve">
+    <value>決済プロバイダーは処理中に独自のクッキーを設定することがあり、それぞれの方針に従います。</value>
+  </data>
+  <data name="CookiePolicyPaymentHeading" xml:space="preserve">
+    <value>決済クッキー</value>
+  </data>
+  <data name="CookiePolicyPrivacyLinkDescription" xml:space="preserve">
+    <value>このポリシーはプライバシーポリシーの一部であり、併せてご覧ください。</value>
+  </data>
+  <data name="CookiePolicyPrivacyLinkHeading" xml:space="preserve">
+    <value>プライバシーポリシーとの関係</value>
+  </data>
+  <data name="CookiePolicyRetentionDescription" xml:space="preserve">
+    <value>必須クッキー（セッション、CSRF）はセッション中または最大3か月保存されます。</value>
+  </data>
+  <data name="CookiePolicyRetentionHeading" xml:space="preserve">
+    <value>保存期間</value>
+  </data>
+  <data name="CookiePolicySessionPurpose" xml:space="preserve">
+    <value>認証済みセッションを維持します</value>
+  </data>
+  <data name="CookiePolicyTableName" xml:space="preserve">
+    <value>クッキー名</value>
+  </data>
+  <data name="CookiePolicyThemePurpose" xml:space="preserve">
+    <value>選択したテーマ（ライト/ダーク）を記憶します</value>
+  </data>
+  <data name="CookiePolicyThirdPartyDescription" xml:space="preserve">
+    <value>統合された第三者サービスは自身のクッキーを設定することがあります。</value>
+  </data>
+  <data name="CookiePolicyThirdPartyHeading" xml:space="preserve">
+    <value>サードパーティクッキー</value>
+  </data>
+  <data name="CookiePolicyWhatAreDescription" xml:space="preserve">
+    <value>クッキーは端末に保存される小さなテキストファイルで、設定やセッションを管理します。</value>
+  </data>
+  <data name="CookiePolicyWhatAreHeading" xml:space="preserve">
+    <value>クッキーとは</value>
+  </data>
+  <data name="CookiePolicyWithdrawDescription" xml:space="preserve">
+    <value>フッターのクッキー設定リンクから同意を撤回できます。</value>
+  </data>
+  <data name="CookiePolicyWithdrawHeading" xml:space="preserve">
+    <value>同意の撤回</value>
+  </data>
+  <data name="CreateTaskDescriptionHeading" xml:space="preserve">
+    <value>Taskを作成 — 開発作業の報酬を投稿</value>
+  </data>
+  <data name="CreateTaskDescriptionParagraph1" xml:space="preserve">
+    <value>「Taskを作成」ページでは、クライアントがPrTaskマーケットプレイスに新しい開発作業を投稿します。各タスクには明確なタイトル、詳細な説明、関連するGitHubリポジトリURL、そして成功時に開発者が受け取る報酬額が必要です。フォームが各パラメーターの設定を案内し、開発者が何をするべきか、どれほど複雑か、どれだけ稼げるかを理解できるようにします。定義が明確なタスクは、より質の高い開発者を惹きつけ、迅速で高品質な提出を促します。</value>
+  </data>
+  <data name="CreateTaskDescriptionParagraph2" xml:space="preserve">
+    <value>複雑さのレベル（極めて簡単、簡単、中間、複雑、エキスパート）は、開発者がタスクを受ける前に必要な工数とスキルを判断する助けになります。複雑さは正直に設定してください。過小評価すると不完全な提出になり、過大評価すると開発者が手を出さなくなります。報酬額は、作業の複雑さと価値を反映すべきです。PrTaskは意味のある報酬のために最低額を義務づけており、開発者は隠れた差し引きなしの全額を確認できます。タグは技術や種類ごとにタスクを分類し、発見しやすくします。</value>
+  </data>
+  <data name="CreateTaskDescriptionParagraph3" xml:space="preserve">
+    <value>Epic、Feature、Story、Task、Bugなどの作業アイテム種別を設定してプロジェクト管理の流儀に合わせたり、公開/非公開の表示範囲を選択したりできます。公開タスクは全開発者に表示され、非公開タスクは招待された開発者だけが閲覧可能です。タスクを提出すると即座にTasksページに掲載され、開発者が見つけて作業を開始できます。報酬の支払いは、勝者のPull Requestを承認してマージしたタイミングで行われ、要件を満たしコードレビューを通過した分だけ支払います。</value>
+  </data>
+  <data name="CreateTaskDescriptionPlaceholder" xml:space="preserve">
+    <value>タスクの内容を詳しく記載してください...</value>
+  </data>
+  <data name="CreateTaskPaymentHint" xml:space="preserve">
+    <value>プラットフォーム手数料なし — 開発者は報酬の100%を受け取ります。</value>
+  </data>
+  <data name="CreateTaskSubmitAndPayButton" xml:space="preserve">
+    <value>Taskを作成して支払いへ</value>
+  </data>
+  <data name="CreateTaskTitlePlaceholder" xml:space="preserve">
+    <value>ユーザーサービスの認証バグを修正</value>
+  </data>
+  <data name="CreateTaskVisibilityPrivate" xml:space="preserve">
+    <value>非公開 — 変更は参加者のみが閲覧可能</value>
+  </data>
+  <data name="CreateTaskVisibilityPublic" xml:space="preserve">
+    <value>公開 — 変更はすべての人に表示</value>
+  </data>
+  <data name="DmcaCounterNotificationDescription" xml:space="preserve">
+    <value>ご自身のコンテンツが誤って削除されたと思われる場合、以下を含む反通知を提出できます：</value>
+  </data>
+  <data name="DmcaCounterNotificationHeading" xml:space="preserve">
+    <value>反通知</value>
+  </data>
+  <data name="DmcaCounterNotificationItem1" xml:space="preserve">
+    <value>著作権者または代理人による署名（手書きまたは電子）</value>
+  </data>
+  <data name="DmcaCounterNotificationItem2" xml:space="preserve">
+    <value>削除された素材とその元の場所の特定</value>
+  </data>
+  <data name="DmcaCounterNotificationItem3" xml:space="preserve">
+    <value>その素材が誤ってまたは誤認で削除されたとの宣誓供述</value>
+  </data>
+  <data name="DmcaCounterNotificationItem4" xml:space="preserve">
+    <value>氏名、住所、電話番号、および管轄連邦裁判所への同意</value>
+  </data>
+  <data name="DmcaCounterProcessDescription" xml:space="preserve">
+    <value>有効な反通知を受領すると、PrTaskは原告に転送します。原告が10営業日以内に差止命令を求める裁判を提起しない場合、反通知受領後10〜14営業日でコンテンツを復元します。</value>
+  </data>
+  <data name="DmcaCounterProcessHeading" xml:space="preserve">
+    <value>反通知手続き</value>
+  </data>
+  <data name="DmcaDescriptionHeading" xml:space="preserve">
+    <value>本DMCAポリシーについて</value>
+  </data>
+  <data name="DmcaDescriptionParagraph1" xml:space="preserve">
+    <value>このポリシーは、Digital Millennium Copyright Act（17 U.S.C. 512）およびEU著作権指令（2019/790）に基づく著作権侵害の取り扱いを説明します。Pull requestを通じてコードを投稿するプラットフォームとして、PrTaskは登録済みDMCA代理人、通知・削除手続き、反通知、再犯者ポリシーを通じて知的財産を保護します。</value>
+  </data>
+  <data name="DmcaDescriptionParagraph2" xml:space="preserve">
+    <value>PrTask上のコンテンツが著作権を侵害していると思われる場合、必要な情報とともに削除通知を提出する方法を説明します。削除が誤りだと思われる場合、反通知で異議を申し立てられます。PrTaskは迅速かつ公正にDMCA申請を処理し、権利者の権利と合法的な貢献のバランスを図ります。</value>
+  </data>
+  <data name="DmcaDesignatedAgentDescription" xml:space="preserve">
+    <value>DMCA通知および反通知は指定代理人までお送りください：PrTask DMCA Agent、dmca@prtask.com。情報は17 U.S.C. 512(c)(2)に従って米国著作権局に登録されています。お問い合わせページの住所宛に郵送も可能です。</value>
+  </data>
+  <data name="DmcaDesignatedAgentHeading" xml:space="preserve">
+    <value>指定代理人</value>
+  </data>
+  <data name="DmcaEuCopyrightDescription" xml:space="preserve">
+    <value>EU著作権指令第17条に従い、PrTaskは権利者と協力し、苦情処理と救済メカニズムを維持し、必要に応じてユーザーアップロード素材の許諾取得に努めます。権利者からの通知を受けた場合、違反コンテンツの継続的な存在を防ぐ措置を講じ、影響を受けたユーザーに対して内部手続きによる異議申し立ての機会を提供します。</value>
+  </data>
+  <data name="DmcaEuCopyrightHeading" xml:space="preserve">
+    <value>EU著作権指令</value>
+  </data>
+  <data name="DmcaFilingDescription" xml:space="preserve">
+    <value>PrTask上のコンテンツが著作権を侵害していると考える場合、次の情報を添えて書面で指定代理人に通知してください：</value>
+  </data>
+  <data name="DmcaFilingHeading" xml:space="preserve">
+    <value>DMCA通知の提出</value>
+  </data>
+  <data name="DmcaFilingItem1" xml:space="preserve">
+    <value>著作権者または権限ある代理人の署名（手書きまたは電子）</value>
+  </data>
+  <data name="DmcaFilingItem2" xml:space="preserve">
+    <value>侵害が主張される著作物の特定</value>
+  </data>
+  <data name="DmcaFilingItem3" xml:space="preserve">
+    <value>PrTaskで該当素材を特定できる十分な詳細を含む説明</value>
+  </data>
+  <data name="DmcaFilingItem4" xml:space="preserve">
+    <value>連絡先（住所、電話番号、メールアドレス）</value>
+  </data>
+  <data name="DmcaFilingItem5" xml:space="preserve">
+    <value>素材の利用が著作権者、代理人、または法律によって許可されていないとの善意の信念</value>
+  </data>
+  <data name="DmcaFilingItem6" xml:space="preserve">
+    <value>通知情報が正確であり、著作権者を代表して行動する権限があるとの宣誓</value>
+  </data>
+  <data name="DmcaLastUpdated" xml:space="preserve">
+    <value>最終更新：2026年3月</value>
+  </data>
+  <data name="DmcaOverviewDescription" xml:space="preserve">
+    <value>PrTaskは他者の知的財産を尊重し、ユーザーにも同様の対応を求めます。1998年DMCAに基づき、著作権侵害の申し立てに迅速に応じます。</value>
+  </data>
+  <data name="DmcaPageHeading" xml:space="preserve">
+    <value>DMCA / 著作権ポリシー</value>
+  </data>
+  <data name="DmcaRepeatInfringersDescription" xml:space="preserve">
+    <value>PrTaskはDMCA Safe Harborの要件として再犯者ポリシーを維持しています。2件以上の有効な通知を受けたユーザーは永久にアカウントが停止され、保留中の報酬を失います。重大な場合は初回でもアカウントを削除する権利を留保します。</value>
+  </data>
+  <data name="DmcaRepeatInfringersHeading" xml:space="preserve">
+    <value>再犯者</value>
+  </data>
+  <data name="DmcaSafeHarborDescription" xml:space="preserve">
+    <value>PrTaskはDMCA第512条のSafe Harborを満たします。登録済みDMCA代理人、notice-and-takedown、反通知、再犯者ポリシーを実施し、権利者が使用する標準的な技術的措置を支援します。</value>
+  </data>
+  <data name="DmcaSafeHarborHeading" xml:space="preserve">
+    <value>DMCAセーフハーバー</value>
+  </data>
+  <data name="DmcaTakedownDescription" xml:space="preserve">
+    <value>有効な通知を受け取り次第、PrTaskは疑わしいコンテンツを迅速に削除またはアクセス停止し、投稿者に通知と反通知手続きの情報を提供します。即座に対応し、係争中は証拠を保全します。</value>
+  </data>
+  <data name="DmcaTakedownHeading" xml:space="preserve">
+    <value>削除手続き</value>
+  </data>
+  <data name="DownloadDescriptionHeading" xml:space="preserve">
+    <value>PrTask をダウンロード — 複数プラットフォーム対応</value>
+  </data>
+  <data name="DownloadDescriptionParagraph1" xml:space="preserve">
+    <value>PrTask は複数プラットフォームでネイティブアプリとして提供され、好みのデバイスからタスク管理、プルリクエストのレビュー、支払いの追跡が可能です。Android アプリはオフライン対応、プッシュ通知、顔認証などを備えたフル機能のモバイル体験を提供します。Windows デスクトップアプリはシステムトレイ連携とローカルファイルアクセスを備えます。Linux 利用者は x64 向けのスタンドアロンバイナリをダウンロードでき、Web アプリは常に prtask.com で最新ブラウザからアクセス可能です。</value>
+  </data>
+  <data name="DownloadDescriptionParagraph2" xml:space="preserve">
+    <value>各プラットフォーム版は .NET MAUI と Blazor による共通コアを採用し、一貫した体験を実現します。ネイティブアプリはキャッシュされたタスクのオフライン参照、プルリクエストや支払いのプッシュ通知、セキュリティ向上のための生体認証ログインといった追加機能を提供します。Web アプリはインストール不要で、どのモダンブラウザでも動作し、最速で利用開始できます。iOS および macOS 版は開発中で、今後リリース予定です。</value>
+  </data>
+  <data name="DownloadDescriptionParagraph3" xml:space="preserve">
+    <value>対応プラットフォームすべてでインストールは簡単です。Android では APK をダウンロードし、不明な提供元からのインストールを許可して画面の指示に従ってください。Windows では実行ファイルを実行するだけでインストーラは不要。Linux ではバイナリをダウンロードして実行権限を与え、ターミナルから起動します。すべてのダウンロードは署名と検証済みで、正当性が保証されています。各プラットフォームの機能を比較表で確認し、インストール時に問題が生じたらトラブルシューティングをご参照ください。</value>
+  </data>
+  <data name="DownloadFeatureBiometric" xml:space="preserve">
+    <value>生体認証</value>
+  </data>
+  <data name="DownloadFeatureNative" xml:space="preserve">
+    <value>ネイティブパフォーマンス</value>
+  </data>
+  <data name="DownloadFeatureOffline" xml:space="preserve">
+    <value>オフラインアクセス</value>
+  </data>
+  <data name="DownloadInstallHeading" xml:space="preserve">
+    <value>インストール手順</value>
+  </data>
+  <data name="DownloadInstallAndroidDescription" xml:space="preserve">
+    <value>APK をダウンロードし、端末で開いて画面の指示に従ってください。</value>
+  </data>
+  <data name="DownloadInstallIosDescription" xml:space="preserve">
+    <value>App Store からダウンロードしてインストールをタップ。ホーム画面に表示されます。</value>
+  </data>
+  <data name="DownloadInstallLinuxDescription" xml:space="preserve">
+    <value>配布版に合わせたパッケージをダウンロードし、パッケージマネージャーでインストール。</value>
+  </data>
+  <data name="DownloadInstallMacDescription" xml:space="preserve">
+    <value>DMG ファイルをダウンロードし、PrTask をアプリケーションフォルダにドラッグして Launchpad から起動。</value>
+  </data>
+  <data name="DownloadInstallWindowsDescription" xml:space="preserve">
+    <value>インストーラーをダウンロードし、セットアップウィザードを実行して指示に従ってください。</value>
+  </data>
+  <data name="DownloadLinuxButton" xml:space="preserve">
+    <value>Linux バイナリをダウンロード</value>
+  </data>
+  <data name="DownloadMacDescription" xml:space="preserve">
+    <value>Apple Silicon および Intel 向けのネイティブ Mac アプリ。</value>
+  </data>
+  <data name="DownloadMacRequirements" xml:space="preserve">
+    <value>macOS 12 (Monterey) 以降、空き容量 100 MB</value>
+  </data>
+  <data name="DownloadSystemRequirementsLabel" xml:space="preserve">
+    <value>システム要件：</value>
+  </data>
+  <data name="DownloadTroubleshootApk" xml:space="preserve">
+    <value>端末設定で「不明な提供元からのインストールを許可」をオンにして再試行してください。</value>
+  </data>
+  <data name="DownloadTroubleshootApkQuestion" xml:space="preserve">
+    <value>Android APK がインストールできません。どうすればよいですか？</value>
+  </data>
+  <data name="DownloadTroubleshootCrash" xml:space="preserve">
+    <value>端末が最小要件を満たし、最新版を使用しているか確認してください。</value>
+  </data>
+  <data name="DownloadTroubleshootCrashQuestion" xml:space="preserve">
+    <value>アプリが起動時にクラッシュします。どう直しますか？</value>
+  </data>
+  <data name="DownloadTroubleshootHeading" xml:space="preserve">
+    <value>トラブルシューティング</value>
+  </data>
+  <data name="PrivacyAustraliaHeading" xml:space="preserve">
+    <value>1988年オーストラリアプライバシー法</value>
+  </data>
+  <data name="RefundNoEscrowHeading" xml:space="preserve">
+    <value>エスクローなしのモデル</value>
+  </data>
+  <data name="RepositoryDescriptionHeading" xml:space="preserve">
+    <value>リポジトリ管理 - GitHubリポジトリを接続して設定します</value>
+  </data>
+  <data name="SprintDescriptionHeading" xml:space="preserve">
+    <value>スプリント管理 - 期間を区切った開発作業を整理します</value>
+  </data>
+  <data name="TermsDescriptionHeading" xml:space="preserve">
+    <value>この利用規約について</value>
+  </data>
+  <data name="HowItWorksClientsHeading" xml:space="preserve">
+    <value>クライアント向け</value>
+  </data>
+  <data name="HowItWorksClientsStep1" xml:space="preserve">
+    <value>GitHub または Google でサインインし、支払い方法を設定します</value>
+  </data>
+  <data name="HowItWorksClientsStep2" xml:space="preserve">
+    <value>説明、リポジトリリンク、報奨金額を含むタスクを作成します</value>
+  </data>
+  <data name="HowItWorksClientsStep3" xml:space="preserve">
+    <value>開発者はあなたのタスクに対して公開プルリクエストを提出します</value>
+  </data>
+  <data name="HowItWorksClientsStep4" xml:space="preserve">
+    <value>提出されたすべてのプルリクエストを確認し、最適なものを承認します</value>
+  </data>
+  <data name="HowItWorksClientsStep5" xml:space="preserve">
+    <value>報奨金は自動的に請求され、開発者に支払われます</value>
+  </data>
+  <data name="SettingsAddCardHeading" xml:space="preserve">
+    <value>カードを追加</value>
+  </data>
+  <data name="HowItWorksDescriptionHeading" xml:space="preserve">
+    <value>PrTaskの仕組み - 収益化と採用の完全ガイド</value>
+  </data>
+  <data name="HowItWorksDescriptionParagraph1" xml:space="preserve">
+    <value>PrTaskは、開発者と有償のソフトウェア業務を結び付けるプロセスを簡素化します。不要な採用サイクルを省き、納品を加速します。クライアントはバウンティ付きのエンジニアリングタスクを投稿し、開発者はGitHub上の実際のプルリクエストで解決します。長期契約も面接も、プラットフォーム手数料もありません。</value>
+  </data>
+  <data name="HowItWorksDescriptionParagraph2" xml:space="preserve">
+    <value>開発者向けの流れはシンプルです。タスクを閲覧し、スキルに合うものを選び、差分エディターでコードを修正してプルリクエストを提出します。クライアントが承認すると自動で支払いが行われます。各タスクには詳細とバウンティ金額が明確に表示されます。</value>
+  </data>
+  <data name="HowItWorksDescriptionParagraph3" xml:space="preserve">
+    <value>クライアント向けには、PrTaskが面接や契約、遅延を排除して採用を容易にします。タスクを投稿し、複数のプルリクエストを受け取り、コードをレビューし、成果を承認した時だけ支払います。支払いと本人確認はPrTaskが担うため、納品に集中できます。</value>
+  </data>
+  <data name="HowItWorksGettingStartedHeading" xml:space="preserve">
+    <value>はじめに</value>
+  </data>
+  <data name="HowItWorksWorkflowDescription" xml:space="preserve">
+    <value>ログインから支払いまでの一連のワークフローを完了するために、次の手順に従ってください。</value>
+  </data>
+  <data name="HowItWorksWorkflowHeading" xml:space="preserve">
+    <value>ワークフローガイド</value>
+  </data>
+  <data name="HowItWorksWorkflowStatusLoginRequired" xml:space="preserve">
+    <value>ログインが必要です</value>
+  </data>
+  <data name="HowItWorksWorkflowStep10Description" xml:space="preserve">
+    <value>変更が必要な行やハイライトされたコードに、インラインコメントを追加します。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep10Heading" xml:space="preserve">
+    <value>レビューコメントを追加</value>
+  </data>
+  <data name="HowItWorksWorkflowStep11Description" xml:space="preserve">
+    <value>開発者が修正を適用し、コメントに返信して解決します。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep11Heading" xml:space="preserve">
+    <value>コメントに返信して解決</value>
+  </data>
+  <data name="HowItWorksWorkflowStep11Link" xml:space="preserve">
+    <value>コメントを解決</value>
+  </data>
+  <data name="HowItWorksWorkflowStep12Description" xml:space="preserve">
+    <value>クライアントがプルリクエストを承認し、Mayaのクレジットカード決済でバウンティを支払います。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep12Heading" xml:space="preserve">
+    <value>プルリクエストを承認してMayaで支払う</value>
+  </data>
+  <data name="HowItWorksWorkflowStep12Link" xml:space="preserve">
+    <value>承認して支払う</value>
+  </data>
+  <data name="HowItWorksWorkflowStep13Description" xml:space="preserve">
+    <value>すべての支払い取引とそのステータスを確認します。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep13Heading" xml:space="preserve">
+    <value>支払い履歴</value>
+  </data>
+  <data name="HowItWorksWorkflowStep14Description" xml:space="preserve">
+    <value>出金方法を設定し、出金残高を確認します。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep14Heading" xml:space="preserve">
+    <value>出金設定</value>
+  </data>
+  <data name="HowItWorksWorkflowStep1Description" xml:space="preserve">
+    <value>Google、GitHub、Microsoft、またはOktaで認証します。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep1Heading" xml:space="preserve">
+    <value>シングルサインオンでサインイン</value>
+  </data>
+  <data name="HowItWorksWorkflowStep2Description" xml:space="preserve">
+    <value>支払いを有効にし、規制に準拠するために本人確認を完了します。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep2Heading" xml:space="preserve">
+    <value>KYC（顧客確認）本人確認</value>
+  </data>
+  <data name="HowItWorksWorkflowStep2Link" xml:space="preserve">
+    <value>設定 - KYC</value>
+  </data>
+  <data name="HowItWorksWorkflowStep3Description" xml:space="preserve">
+    <value>開発者が完了できるようにバウンティ付きのタスクを投稿します。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep3Heading" xml:space="preserve">
+    <value>タスクを作成</value>
+  </data>
+  <data name="HowItWorksWorkflowStep3Link" xml:space="preserve">
+    <value>タスクを作成</value>
+  </data>
+  <data name="HowItWorksWorkflowStep4Description" xml:space="preserve">
+    <value>開発者が差分を確認できるように、タスクへソースコードフォルダーをアップロードします。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep4Heading" xml:space="preserve">
+    <value>ソースコードをアップロード</value>
+  </data>
+  <data name="HowItWorksWorkflowStep4Link" xml:space="preserve">
+    <value>タスク詳細</value>
+  </data>
+  <data name="HowItWorksWorkflowStep5Description" xml:space="preserve">
+    <value>開発者が利用可能なタスクを閲覧し、自分のスキルに合う仕事を見つけます。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep5Heading" xml:space="preserve">
+    <value>公開タスクを閲覧</value>
+  </data>
+  <data name="HowItWorksWorkflowStep6Description" xml:space="preserve">
+    <value>タスクの説明、バウンティ金額、既存のプルリクエストを確認します。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep6Heading" xml:space="preserve">
+    <value>タスク詳細を表示</value>
+  </data>
+  <data name="HowItWorksWorkflowStep6Link" xml:space="preserve">
+    <value>タスク詳細</value>
+  </data>
+  <data name="HowItWorksWorkflowStep7Description" xml:space="preserve">
+    <value>ブラウザーの差分エディターでソースコードを直接編集します。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep7Heading" xml:space="preserve">
+    <value>差分エディターでコードを変更</value>
+  </data>
+  <data name="HowItWorksWorkflowStep7Link" xml:space="preserve">
+    <value>差分エディター</value>
+  </data>
+  <data name="HowItWorksWorkflowStep8Description" xml:space="preserve">
+    <value>タスク向けにコード変更をプルリクエストとして送信します。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep8Heading" xml:space="preserve">
+    <value>プルリクエストを送信</value>
+  </data>
+  <data name="HowItWorksWorkflowStep9Description" xml:space="preserve">
+    <value>クライアントが差分をレビューして、開発者が送信したすべてのコード変更を確認します。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep9Heading" xml:space="preserve">
+    <value>コード変更をレビュー</value>
+  </data>
+  <data name="TermsClientObligationsDescription" xml:space="preserve">
+    <value>PrTaskのクライアントは、タスクの説明と要件を明確かつ正確に提示し、pull requestを迅速にレビューし、承認後にのみ報酬を支払い、開発者の知的財産権を尊重し、適用法令を遵守することに同意します。</value>
+  </data>
+  <data name="TermsLicenseGrantsDescription" xml:space="preserve">
+    <value>報酬の承認と支払い後、開発者は本規約に従い、成果物を使用・改変・配布するための永続的、世界的、非独占的、ロイヤリティフリーのライセンスをクライアントに付与します。</value>
+  </data>
+  <data name="TermsLicenseGrantsHeading" xml:space="preserve">
+    <value>ライセンス付与</value>
+  </data>
+  <data name="TermsRefundRightsDescription" xml:space="preserve">
+    <value>pull requestが誤って承認された場合、または成果物がタスク要件を満たさない場合、クライアントは当社の返金ポリシーに従って返金を請求できます。</value>
+  </data>
+  <data name="TermsRefundRightsHeading" xml:space="preserve">
+    <value>返金権</value>
+  </data>
+  <data name="PricingDescriptionHeading" xml:space="preserve">
+    <value>PrTaskの料金 — 透明で開発者に優しい</value>
+  </data>
+  <data name="PricingFaqMinBountyQuestion" xml:space="preserve">
+    <value>最小のバウンティ金額はありますか？</value>
+  </data>
+  <data name="PrivacyAustraliaDescription" xml:space="preserve">
+    <value>オーストラリアにお住まいの場合、個人情報はPrivacy Act 1988およびAustralian Privacy Principles (APP)により保護されます。PrTaskは収集、利用、開示、セキュリティ、アクセスに関するAPP要件に準拠します。</value>
+  </data>
+  <data name="PrivacyDpdpDescription" xml:space="preserve">
+    <value>インドにお住まいの場合、個人デジタルデータはDigital Personal Data Protection Act 2023 (DPDP)により保護されます。PrTaskは処理前に明確な同意を取得し、アクセス、訂正、削除、苦情申立ての権利を尊重します。</value>
+  </data>
+  <data name="PrivacyDpdpHeading" xml:space="preserve">
+    <value>インドDPDP法 2023</value>
+  </data>
+  <data name="LegalLastUpdated" xml:space="preserve">
+    <value>最終更新: 2026年3月</value>
+  </data>
+  <data name="LoginPublicPrsHeading" xml:space="preserve">
+    <value>公開 pull request</value>
+  </data>
+  <data name="PaymentSeoTitle" xml:space="preserve">
+    <value>支払い - PrTask</value>
+  </data>
+  <data name="LicensesCodeOwnershipHeading" xml:space="preserve">
+    <value>コード所有権の権利</value>
+  </data>
+  <data name="LicensesPaymentProviderHeading" xml:space="preserve">
+    <value>決済プロバイダーの準拠</value>
+  </data>
+  <data name="LicensesOpenSourceBlazor" xml:space="preserve">
+    <value>Blazor WebAssembly（MIT License）</value>
+  </data>
+  <data name="SettingsCardNumberLabel" xml:space="preserve">
+    <value>カード番号</value>
+  </data>
+  <data name="SettingsNoSubscriptions" xml:space="preserve">
+    <value>有効なサブスクリプションはありません。</value>
+  </data>
+  <data name="PricingFaqCurrencyQuestion" xml:space="preserve">
+    <value>対応している通貨は何ですか？</value>
+  </data>
+  <data name="PricingFeatureComparisonHeading" xml:space="preserve">
+    <value>機能比較</value>
+  </data>
+  <data name="PricingFeaturePayment" xml:space="preserve">
+    <value>決済処理</value>
+  </data>
+  <data name="PricingRefundHeading" xml:space="preserve">
+    <value>返金ポリシー</value>
+  </data>
+  <data name="PricingRefundLink" xml:space="preserve">
+    <value>返金ポリシー全文を見る</value>
+  </data>
+  <data name="PrivacyChildrensHeading" xml:space="preserve">
+    <value>子どものプライバシー</value>
+  </data>
+  <data name="TermsPaymentHeading" xml:space="preserve">
+    <value>支払条件</value>
+  </data>
+  <data name="LicensesContactDescription" xml:space="preserve">
+    <value>ライセンスに関する問い合わせ、コンプライアンスの質問、またはクレジットカード処理に関する懸念がある場合は、prtask.com の compliance までご連絡ください。</value>
+  </data>
+  <data name="LicensesOpenSourceGratitude" xml:space="preserve">
+    <value>これらのツールを提供してくれるオープンソースコミュニティに感謝します。依存関係とそのライセンスの完全な一覧は、プロジェクトの依存関係マニフェストをご覧ください。</value>
+  </data>
+  <data name="LicensesThirdPartyGitHub" xml:space="preserve">
+    <value>GitHub: OAuth（Open Authorization）認証と pull request 連携に使用され、GitHub の利用規約に従います。</value>
+  </data>
+  <data name="LicensesCodeOwnershipDescription" xml:space="preserve">
+    <value>開発者は、PrTask を通じて提出するすべてのコードの著作権を完全に保持します。バウンティの承認と支払い後、開発者はクライアントに対し、リポジトリのオープンソースライセンスに従う形で、提出されたコードを使用、改変、複製、配布するための永続的、世界的、非独占的、取消不能なライセンスを付与します。PrTask は開発者が提出したいかなるコードの所有権も主張しません。開発者は、すべてのコードを提出する権利を有し、第三者の知的財産権を侵害しないことを保証しなければなりません。AI（人工知能）生成コードは pull request の説明に開示する必要があり、開発者はそれをライセンスする権利を有することを保証しなければなりません。</value>
+  </data>
+  <data name="LicensesUserContentDescription" xml:space="preserve">
+    <value>PrTask にコンテンツ（タスクの説明、コメント、レビューを含む）を投稿することで、あなたは PrTask に対し、プラットフォームの運用および改善のみを目的として、そのコンテンツを表示、複製、配布するための非独占的、世界的、ロイヤリティフリーのライセンスを付与します。あなたはコンテンツのすべての所有権を保持します。このライセンスは、あなたが PrTask からコンテンツを削除した時点で終了します。ただし、そのコンテンツが他のユーザーと共有された、または他のユーザーがそれに依拠した場合を除きます。</value>
+  </data>
+  <data name="PrivacyPiplHeading" xml:space="preserve">
+    <value>中国PIPL</value>
+  </data>
+  <data name="RefundPhConsumerHeading" xml:space="preserve">
+    <value>フィリピン消費者保護（RA 7394）</value>
+  </data>
+  <data name="SettingsTwoFactorAuthenticatorOption" xml:space="preserve">
+    <value>認証アプリ</value>
+  </data>
+  <data name="TermsClientObligationsHeading" xml:space="preserve">
+    <value>クライアントの義務</value>
+  </data>
+  <data name="TermsPageHeading" xml:space="preserve">
+    <value>利用規約</value>
+  </data>
+  <data name="TermsPlatformFeeHeading" xml:space="preserve">
+    <value>プラットフォーム手数料</value>
+  </data>
+  <data name="TermsPlatformRoleHeading" xml:space="preserve">
+    <value>プラットフォームの役割</value>
+  </data>
+  <data name="LoginBrowseTasksHeading" xml:space="preserve">
+    <value>タスクを閲覧</value>
+  </data>
+  <data name="LoginEarnMoneyHeading" xml:space="preserve">
+    <value>報酬を得る</value>
+  </data>
+  <data name="LoginGetPaidHeading" xml:space="preserve">
+    <value>支払いを受け取る</value>
+  </data>
+  <data name="LoginHelpHeading" xml:space="preserve">
+    <value>ヘルプが必要ですか？</value>
+  </data>
+  <data name="LoginHelpLink" xml:space="preserve">
+    <value>ヘルプが必要ですか？</value>
+  </data>
+  <data name="LoginNoPlatformFeesHeading" xml:space="preserve">
+    <value>プラットフォーム手数料なし</value>
+  </data>
+  <data name="LoginSubmitPrsHeading" xml:space="preserve">
+    <value>プルリクエストを送信</value>
+  </data>
+  <data name="PaymentDescriptionHeading" xml:space="preserve">
+    <value>支払い履歴について</value>
+  </data>
+  <data name="PaymentUserIdLabel" xml:space="preserve">
+    <value>あなたのユーザーID</value>
+  </data>
+  <data name="PaymentUserIdPlaceholder" xml:space="preserve">
+    <value>あなたのユーザーIDを入力</value>
+  </data>
+  <data name="LoginDescriptionParagraph2" xml:space="preserve">
+    <value>PrTask のほとんどの機能にアクセスするには、金融取引とコードの貢献に本人確認済みの身元が必要なため、認証が必須です。初回のサインイン時に PrTask が自動でアカウントを作成し、選択した認証プロバイダーにリンクします。開発者は GitHub アカウントを接続して pull request の送信プロセスを簡素化でき、クライアントは信頼を高める認証済みの身元の恩恵を受けます。認証データはすべて暗号化された接続で送信され、PrTask が認証プロバイダーのパスワードを保存することはありません。</value>
+  </data>
+  <data name="LoginDescriptionParagraph3" xml:space="preserve">
+    <value>開発者にとって、サインインすることでタスクの閲覧、pull request の送信、報奨金の獲得、leaderboard の順位の追跡が可能になります。クライアントにとっては、タスクの作成、報奨金の資金提供、pull request のレビュー、支払い管理が有効になります。PrTask は複数の連携アカウントをサポートしているため、コード提出用に GitHub、一般的な認証用に Google アカウントをリンクできます。サインイン後に Settings ページへ移動して、連携アカウントの管理、支払い方法の設定、報奨金の引き出しに必要な KYC 検証の完了を行ってください。</value>
+  </data>
+  <data name="LicensesCreditCardHeading" xml:space="preserve">
+    <value>クレジットカード決済の処理</value>
+  </data>
+  <data name="LicensesDataProtectionHeading" xml:space="preserve">
+    <value>データ保護</value>
+  </data>
+  <data name="LicensesDescriptionHeading" xml:space="preserve">
+    <value>このライセンスページについて</value>
+  </data>
+  <data name="LicensesDeveloperCodeHeading" xml:space="preserve">
+    <value>開発者が提出したコード</value>
+  </data>
+  <data name="LicensesOpenSourceHeading" xml:space="preserve">
+    <value>オープンソースへの謝辞</value>
+  </data>
+  <data name="LicensesPlatformHeading" xml:space="preserve">
+    <value>プラットフォームライセンス</value>
+  </data>
+  <data name="LicensesRegulatoryHeading" xml:space="preserve">
+    <value>規制遵守</value>
+  </data>
+  <data name="LicensesThirdPartyHeading" xml:space="preserve">
+    <value>第三者帰属表示</value>
+  </data>
+  <data name="LicensesUserContentHeading" xml:space="preserve">
+    <value>ユーザー生成コンテンツのライセンス</value>
+  </data>
+  <data name="LoginBrowseTasksDescription" xml:space="preserve">
+    <value>言語、フレームワーク、または報酬額で絞り込んで利用可能なタスクを探せます。</value>
+  </data>
+  <data name="LoginDescriptionHeading" xml:space="preserve">
+    <value>PrTask にサインイン - 安全な認証オプション</value>
+  </data>
+  <data name="LoginDescriptionParagraph1" xml:space="preserve">
+    <value>PrTask は信頼できる ID プロバイダーを通じたシングルサインオン（Single Sign-On, SSO）認証を使用し、アカウントへの安全なアクセスを確保します。</value>
+  </data>
+  <data name="LoginEarnMoneyDescription" xml:space="preserve">
+    <value>マージされた pull request ごとに報酬を受け取れます。bounty は事前に資金が確保され、マージ時に支払われます。</value>
+  </data>
+  <data name="LoginGetPaidDescription" xml:space="preserve">
+    <value>あなたの pull request がレビューされてマージされると、bounty は自動的にあなたのアカウントへ支払われます。</value>
+  </data>
+  <data name="LoginHelpDescription" xml:space="preserve">
+    <value>ガイド、よくある質問、サポート情報についてはドキュメントをご覧ください。</value>
+  </data>
+  <data name="LoginNoPlatformFeesDescription" xml:space="preserve">
+    <value>開発者は bounty の 100% を受け取ります。PrTask はクライアントに請求し、貢献者には請求しません。</value>
+  </data>
+  <data name="LoginPublicPrsDescription" xml:space="preserve">
+    <value>すべての作業は GitHub 上の実際の pull request として提出されます。あなたの貢献は可視化され、検証可能です。</value>
+  </data>
+  <data name="LoginSignInDescription" xml:space="preserve">
+    <value>PrTask アカウントを作成するには、お好みのシングルサインオンプロバイダーで認証してください。</value>
+  </data>
+  <data name="LoginSubmitPrsDescription" xml:space="preserve">
+    <value>タスクを取得し、コードを書き、対象リポジトリに対して pull request を開いてください。</value>
+  </data>
+  <data name="PaymentSeoDescription" xml:space="preserve">
+    <value>支払い履歴と取引の詳細を確認できます。</value>
+  </data>
+  <data name="LicensesCreditCardDescription" xml:space="preserve">
+    <value>PrTask のクレジットカード決済は、ライセンス取得済みで PCI DSS に準拠した決済プロバイダーによって処理されます。PrTask は自社サーバー上でクレジットカード番号、CVV、その他の機微なカード会員データを保存・処理・送信しません。すべてのクレジットカード取引は当社の決済プロセッサーが完全に処理します。</value>
+  </data>
+  <data name="LicensesDataProtectionDescription" xml:space="preserve">
+    <value>PrTask はすべての通信に HTTPS/TLS 暗号化を使用します。認証は OAuth 2.0 と PKCE を用いた OpenID Connect (OIDC) により行われます。平文の認証情報は保存されません。データの取り扱いに関する詳細は Privacy Policy をご覧ください。</value>
+  </data>
+  <data name="LicensesDescriptionParagraph1" xml:space="preserve">
+    <value>この Licenses ページでは、PrTask プラットフォームを規定するソフトウェアライセンス、決済プロバイダー契約、規制遵守の認証、知的財産ポリシーに関する包括的な情報を提供します。プラットフォームのライセンス自体、クレジットカード処理の遵守、決済プロバイダーの統合、データ保護の認証、そして PrTask が構築されているオープンソースコンポーネントを含みます。これらのライセンスを理解することで、プラットフォーム利用時の権利と義務を把握できます。</value>
+  </data>
+  <data name="LicensesDescriptionParagraph2" xml:space="preserve">
+    <value>PrTask は .NET、Blazor、さまざまなコミュニティライブラリなどのオープンソース技術で構築されており、使用するすべてのコンポーネントのライセンスを尊重し、明示することにコミットしています。開発者が pull request を通じて提出したコードは、タスクで別途指定がない限り提出者の知的財産のままであり、貢献コードのライセンス条件はクライアントのプロジェクトのリポジトリライセンスによって決定されます。このページでは、GitHub、決済プロセッサー、Cloudflare との重要な第三者サービス統合についても説明しています。</value>
+  </data>
+  <data name="LicensesDeveloperCodeDescription" xml:space="preserve">
+    <value>開発者が提出した pull request は、報奨金が支払われるまで著者の知的財産のままです。支払い後、提出されたコードはタスクのリポジトリに指定されたライセンスの下でクライアントにライセンスされます。PrTask は開発者が提出したいかなるコードの所有権も主張しません。</value>
+  </data>
+  <data name="LicensesOpenSourceDescription" xml:space="preserve">
+    <value>PrTask は .NET、Blazor WebAssembly、およびその他のオープンソース技術で構築されています。これらのコンポーネントは、それぞれのライセンス条件に従って使用されます。</value>
+  </data>
+  <data name="LicensesOpenSourceDotNet" xml:space="preserve">
+    <value>.NET Runtime および ASP.NET Core（MIT ライセンス）</value>
+  </data>
+  <data name="LicensesOpenSourceMudBlazor" xml:space="preserve">
+    <value>MudBlazor ユーザーインターフェイス コンポーネント（MIT ライセンス）</value>
+  </data>
+  <data name="LicensesPaymentProviderDescription" xml:space="preserve">
+    <value>当社の決済プロバイダーは、決済カードデータの取り扱いにおける最高レベルの準拠である最新の PCI DSS レベル 1 認証を維持しています。</value>
+  </data>
+  <data name="LicensesPlatformDescription" xml:space="preserve">
+    <value>PrTask は PrTask が運営する独自プラットフォームです。プラットフォーム、その設計、ブランド、およびインフラに関するすべての権利は PrTask に帰属します。</value>
+  </data>
+  <data name="LicensesRegulatoryDescription" xml:space="preserve">
+    <value>PrTask は、オンライン決済、データ保護、デジタルプラットフォーム運営に関する適用法令を遵守します。</value>
+  </data>
+  <data name="LicensesThirdPartyCloudflare" xml:space="preserve">
+    <value>Cloudflare: ホスティング、CDN、および DDoS 保護のために使用され、Cloudflare の利用規約に従います。</value>
+  </data>
+  <data name="LicensesThirdPartyDescription" xml:space="preserve">
+    <value>PrTask は以下の第三者ライブラリおよびサービスを利用しています。これらの機能を可能にしている保守者および提供者に感謝します。</value>
+  </data>
+  <data name="LicensesThirdPartyPayment" xml:space="preserve">
+    <value>決済処理業者（Maya Business を含む）: 安全な取引処理のために使用され、それぞれの利用条件および規制要件に従います。</value>
+  </data>
+  <data name="PrivacyGdprRightErase" xml:space="preserve">
+    <value>個人データの消去（忘れられる権利）。法定保存義務の対象です</value>
+  </data>
+  <data name="PrivacyPipaDescription" xml:space="preserve">
+    <value>韓国に所在する場合、個人情報は Personal Information Protection Act（PIPA）により保護され、Personal Information Protection Commission（PIPC）が執行します。PrTaskはデータ処理について、真に任意の同意（抱き合わせや強制ではない）を取得します。あなたには以下の権利があります: データへのアクセス、不正確なデータの訂正、処理の停止の要請、削除の要請、安全な機械可読形式でのデータポータビリティ（2025年3月から有効）。PrTaskはアルゴリズム処理とユーザープロファイリングに関する透明性を提供します。PrTaskに国内拠点がない場合、必要に応じて国内代表者を任命します。権利行使については dpo@prtask.com に連絡してください。</value>
+  </data>
+  <data name="PrivacyPipaHeading" xml:space="preserve">
+    <value>韓国PIPA</value>
+  </data>
+  <data name="RefundDisputeDescription" xml:space="preserve">
+    <value>クライアントが承認済みのPRがタスク要件を満たしていないと考える場合、PrTaskは仲裁プロセスを開始します。両当事者は7営業日以内に証拠を提出する必要があります。結果として、作業が要件を満たしていない場合はクライアントへの全額返金、作業が要件を満たしている場合は開発者への全額支払い、作業が部分的に満たしている場合は一部返金（配分はPrTaskが決定）となる可能性があります。</value>
+  </data>
+  <data name="RefundDisputeHeading" xml:space="preserve">
+    <value>係争中のプルリクエスト</value>
+  </data>
+  <data name="RefundHowToDescription" xml:space="preserve">
+    <value>返金を依頼するには、PrTaskアカウントにログインし、対象のタスクに移動して「返金をリクエスト」を選択してください。代替として、タスクIDと返金理由を記載し、prtask.com のサポートにメールしてください。すべての返金リクエストは2営業日以内に審査されます。</value>
+  </data>
+  <data name="RepositoryDescriptionParagraph2" xml:space="preserve">
+    <value>PrTaskで整理された開発ワークフローを維持するには、接続済みリポジトリの管理が不可欠です。タスクを作成する際に、接続済みリポジトリのいずれかにリンクすることで、開発者がコード貢献をどこに提出すべきかを正確に把握できます。公開リポジトリはマーケットプレイス参加者全員に表示され、オープンソースプロジェクトやコミュニティ主導の開発に最適です。非公開リポジトリは招待された開発者のみにアクセスを制限し、コードの閲覧と貢献を制御したい独自コードベースに適しています。</value>
+  </data>
+  <data name="RepositoryDescriptionParagraph3" xml:space="preserve">
+    <value>PrTaskは標準API接続を通じてGitHubと統合され、リンクの確立にはリポジトリURLのみが必要です。リポジトリに対する完全なコントロールは維持されます - PrTaskはリポジトリ設定、ブランチ保護、またはアクセス権限を変更しません。すべてのプルリクエストのレビューとマージは既存のGitHubワークフローで行われ、PrTaskはバウンティ支払いとタスク状況の追跡を自動的に処理します。リポジトリを追加していくと、リポジトリページがPrTaskマーケットプレイスに接続されたすべてのコードベースの中央ディレクトリとして機能します。</value>
+  </data>
+  <data name="TermsArbitrationDescription" xml:space="preserve">
+    <value>本規約またはPrTaskの利用に起因または関連する紛争で、内部の紛争解決手続により解決されないものは、相互に合意した仲裁機関が管理する拘束力のある仲裁により解決されます。あなたは陪審裁判を受ける権利および集団訴訟に参加する権利を放棄することに同意します。アカウント作成から30日以内に legal@prtask.com へ書面通知を送付することで、この仲裁合意からオプトアウトできます。少額裁判所での訴訟はこの仲裁要件の対象外です。EU居住者は代替的紛争解決（ADR）メカニズムへのアクセス権を保持し、加盟国の該当する消費者仲裁機関に苦情を申し立てることができます。</value>
+  </data>
+  <data name="TermsDescriptionParagraph1" xml:space="preserve">
+    <value>本利用規約は、当社プラットフォームの利用を規律する、あなたとPrTaskの間の完全な法的合意です。アカウント作成、タスク投稿、プルリクエストの提出、支払い処理、知的財産権、紛争解決、プラットフォーム上の行動要件など、開発者マーケットプレイスのあらゆる側面を網羅します。本規約は、報奨金ベースのソフトウェア開発において公正で透明性の高いマーケットプレイスを維持しつつ、開発者とクライアント双方を保護するために設計されています。</value>
+  </data>
+  <data name="PaymentDescriptionParagraph1" xml:space="preserve">
+    <value>支払い履歴ページでは、あなたの PrTask アカウントに関連するすべての金融取引を包括的に確認できます。報奨金の支払いを受け取る開発者であっても、タスクの報奨金に資金を提供するクライアントであっても、このページによりプラットフォーム上で行われたすべての支払いを完全に可視化できます。各取引記録には、日付、関連タスク、金額、現在の状態、支払い種別が含まれており、安心して資金の流れを追跡できます。</value>
+  </data>
+  <data name="PaymentDescriptionParagraph2" xml:space="preserve">
+    <value>PrTask では、pull request がタスク所有者に承認されてマージされると、自動的に支払いが処理されます。開発者は、プラットフォーム手数料を差し引かれることなく報奨金額の 100% を受け取ります。支払い状況はリアルタイムで更新されるため、取引が保留中か、完了したか、対応が必要かを確認できます。ユーザー ID を入力して支払い履歴を絞り込むことで、自分のアカウントに関する取引だけを表示できます。</value>
+  </data>
+  <data name="PaymentDescriptionParagraph3" xml:space="preserve">
+    <value>クライアントにとって、このページはあなたのタスクを完了した開発者に支払われたすべての報奨金の記録としても機能します。資金が正しく分配されたことを確認するために、支払いを特定のタスクと照合できます。特定の取引について質問がある場合や、支払いに異議を申し立てる必要がある場合、PrTask ではアカウント設定から利用できる専用のサポート窓口を提供しています。すべての支払いデータは PCI DSS 基準に準拠して暗号化され、安全に保存されます。</value>
+  </data>
+  <data name="PrivacyDescriptionHeading" xml:space="preserve">
+    <value>このプライバシーポリシーについて</value>
+  </data>
+  <data name="PrivacyGdprHeading" xml:space="preserve">
+    <value>GDPR コンプライアンス</value>
+  </data>
+  <data name="PrivacyInfoCollectedHeading" xml:space="preserve">
+    <value>収集する情報</value>
+  </data>
+  <data name="PrivacyInfoSharingHeading" xml:space="preserve">
+    <value>情報共有</value>
+  </data>
+  <data name="PrivacyInfoUsageHeading" xml:space="preserve">
+    <value>情報の利用方法</value>
+  </data>
+  <data name="PrivacyPageHeading" xml:space="preserve">
+    <value>プライバシーポリシー</value>
+  </data>
+  <data name="PrivacyThirdPartyHeading" xml:space="preserve">
+    <value>第三者サービス</value>
+  </data>
+  <data name="PrivacyDataSecurityHeading" xml:space="preserve">
+    <value>データセキュリティ</value>
+  </data>
+  <data name="PrivacyDataRightsHeading" xml:space="preserve">
+    <value>あなたのデータに関する権利</value>
+  </data>
+  <data name="PrivacyDataRetentionHeading" xml:space="preserve">
+    <value>データ保持</value>
+  </data>
+  <data name="PrivacyControllerHeading" xml:space="preserve">
+    <value>データ管理者</value>
+  </data>
+  <data name="PrivacyAppiHeading" xml:space="preserve">
+    <value>日本 APPI</value>
+  </data>
+  <data name="PrivacyAutomatedDecisionHeading" xml:space="preserve">
+    <value>自動化された意思決定とプロファイリング</value>
+  </data>
+  <data name="PrivacyCcpaCategoriesHeading" xml:space="preserve">
+    <value>CCPA データ分類</value>
+  </data>
+  <data name="PrivacyCcpaHeading" xml:space="preserve">
+    <value>CCPA コンプライアンス</value>
+  </data>
+  <data name="PrivacyChangesHeading" xml:space="preserve">
+    <value>このプライバシーポリシーの変更</value>
+  </data>
+  <data name="PrivacyCookieReferenceHeading" xml:space="preserve">
+    <value>Cookie と追跡技術</value>
+  </data>
+  <data name="PrivacyDoNotSellHeading" xml:space="preserve">
+    <value>私の個人情報を販売または共有しないでください</value>
+  </data>
+  <data name="PrivacyInternationalHeading" xml:space="preserve">
+    <value>国際的なデータ移転</value>
+  </data>
+  <data name="PrivacyLegalBasisHeading" xml:space="preserve">
+    <value>処理の法的根拠（GDPR 第6条）</value>
+  </data>
+  <data name="PrivacyPaymentDataHeading" xml:space="preserve">
+    <value>支払いデータ</value>
+  </data>
+  <data name="PricingDescriptionParagraph1" xml:space="preserve">
+    <value>PrTask は開発者にとって非常に有利な料金モデルを採用しています。開発者は費用を一切支払わず、獲得した報奨金の 100% を受け取ります。サブスクリプション料金や手数料率、開発者の支払いから差し引かれる隠れた費用はありません。クライアントが 500 USD の報奨金でタスクを投稿した場合、タスクを完了しプルリクエストが承認された開発者は 500 USD を全額受け取ります。この価格構造は、コードを書く人が自分の仕事の価値を全て受け取るべきだという私たちの信念を反映しています。</value>
+  </data>
+  <data name="SprintSeoDescription" xml:space="preserve">
+    <value>オープンソースへの貢献をスプリントに整理しましょう。プルリクエストの進捗を追跡し、報奨金を獲得し、開発者のワークフローを管理できます。質の高いコードで収入を得たい開発者にとって最適な副業です。</value>
+  </data>
+  <data name="RepositoryAddButton" xml:space="preserve">
+    <value>リポジトリを追加</value>
+  </data>
+  <data name="RepositoryAddHeading" xml:space="preserve">
+    <value>リポジトリを追加</value>
+  </data>
+  <data name="RepositoryDescriptionParagraph1" xml:space="preserve">
+    <value>リポジトリページでは、クライアントが GitHub リポジトリを PrTask に接続し、スムーズなタスク公開と安全なコード管理を行えます。公開リポジトリまたは非公開リポジトリを追加し、各タスクのソースコードを誰が閲覧できるかを管理できます。</value>
+  </data>
+  <data name="RepositoryDisplayNameLabel" xml:space="preserve">
+    <value>表示名（任意）</value>
+  </data>
+  <data name="RepositoryEmptyState" xml:space="preserve">
+    <value>まだリポジトリが追加されていません。タスクの投稿を始めるにはリポジトリを追加してください。</value>
+  </data>
+  <data name="RepositoryPageDescription" xml:space="preserve">
+    <value>リポジトリを管理し、タスクのコード表示範囲を制御します。</value>
+  </data>
+  <data name="RepositoryPageHeading" xml:space="preserve">
+    <value>ソースコードリポジトリ</value>
+  </data>
+  <data name="RepositoryRepoUrlLabel" xml:space="preserve">
+    <value>リポジトリ URL</value>
+  </data>
+  <data name="RepositoryVisibilityLabel" xml:space="preserve">
+    <value>コードの公開範囲</value>
+  </data>
+  <data name="RepositoryVisibilityPrivate" xml:space="preserve">
+    <value>非公開 - 割り当てられた開発者のみコードを閲覧できます</value>
+  </data>
+  <data name="RepositoryVisibilityPublic" xml:space="preserve">
+    <value>公開 - 誰でもソースコードを閲覧できます</value>
+  </data>
+  <data name="RepositoryYourReposHeading" xml:space="preserve">
+    <value>あなたのリポジトリ</value>
+  </data>
+  <data name="RefundAutoPaymentDescription" xml:space="preserve">
+    <value>PrTask は自動決済モデルを採用しています。クライアントは pull request を承認したときにのみ課金されます。タスクを投稿する際に前払いまたはデポジットは不要です。</value>
+  </data>
+  <data name="RefundAutoPaymentHeading" xml:space="preserve">
+    <value>自動決済モデル</value>
+  </data>
+  <data name="RefundChargebackDescription" xml:space="preserve">
+    <value>クライアントが当社の紛争解決プロセスを利用せずに銀行やクレジットカード発行会社を通じてチャージバックを開始した場合、PrTask は調査が完了するまで当該クライアントのアカウントを停止する権利を留保します。PrTask を通じて解決を試みずにチャージバックを行ったクライアントは、アカウントが恒久的に停止される場合があります。すべてのクライアントに対し、金融機関へ連絡する前に当社の組み込みの紛争および返金プロセスを利用することを推奨します。チャージバックは関係者全員に手数料と遅延を発生させるためです。PrTask は適切な法的手段を通じて資金の回収を追求する権利を留保します。</value>
+  </data>
+  <data name="TermsDeveloperObligationsDescription" xml:space="preserve">
+    <value>PrTask の開発者として、あなたは以下に同意します。ライセンスする権利を有するオリジナルの作業のみを提出すること、pull request の説明に AI 生成コードの使用を開示すること、各タスクのリポジトリのオープンソースライセンス要件に従うこと、報酬を受け取る前に KYC 本人確認を完了すること、盗用・盗難・無許可のコードを提出しないこと、プラットフォーム上のすべてのやり取りで専門的な行動を維持すること、そして税務報告義務を含む、あなたの法域に適用されるすべての法律および規制を遵守すること。</value>
+  </data>
+  <data name="TermsPaymentDescription" xml:space="preserve">
+    <value>クライアントが pull request を承認すると、登録済みの支払い方法を通じて報奨金額が自動的に請求されます。その後、報奨金の全額が開発者に支払われます。すべての取引は米ドル (USD) で行われます。プラットフォーム手数料はありません。</value>
+  </data>
+  <data name="TermsPlatformFeeDescription" xml:space="preserve">
+    <value>PrTask は無料のプラットフォームです。クライアントにも開発者にも手数料はかかりません。PR 承認時に開発者は報奨金額の 100% を受け取ります。</value>
+  </data>
+  <data name="SettingsNotificationAllOption" xml:space="preserve">
+    <value>すべての通知</value>
+  </data>
+  <data name="SettingsNotificationImportantOption" xml:space="preserve">
+    <value>重要なもののみ</value>
+  </data>
+  <data name="SettingsPaymentBankOption" xml:space="preserve">
+    <value>銀行振込</value>
+  </data>
+  <data name="SettingsPaymentCardOption" xml:space="preserve">
+    <value>クレジットカードまたはデビットカード</value>
+  </data>
+  <data name="SettingsPayoutBankOption" xml:space="preserve">
+    <value>銀行振込</value>
+  </data>
+  <data name="SettingsPayoutDetailsPlaceholder" xml:space="preserve">
+    <value>口座番号</value>
+  </data>
+  <data name="SettingsPrivacyActivityOptions" xml:space="preserve">
+    <value>アクティビティの公開範囲</value>
+  </data>
+  <data name="SettingsPrivacyActivityPrivate" xml:space="preserve">
+    <value>非公開 - アクティビティを他の人に表示しない</value>
+  </data>
+  <data name="SettingsPrivacyActivityPublic" xml:space="preserve">
+    <value>公開 - アクティビティをリーダーボードに表示する</value>
+  </data>
+  <data name="SettingsPrivacyProfileOptions" xml:space="preserve">
+    <value>プロフィールの公開範囲</value>
+  </data>
+  <data name="SettingsPrivacyProfilePrivate" xml:space="preserve">
+    <value>非公開 - あなたのみがプロフィールを閲覧できます</value>
+  </data>
+  <data name="SettingsPrivacyProfilePublic" xml:space="preserve">
+    <value>公開 - 誰でもプロフィールを閲覧できます</value>
+  </data>
+  <data name="SettingsSavedCardsDescription" xml:space="preserve">
+    <value>すばやく支払えるよう、保存したクレジットカードとデビットカードを管理します。</value>
+  </data>
+  <data name="SettingsSavedCardsHeading" xml:space="preserve">
+    <value>保存済みカード</value>
+  </data>
+  <data name="SettingsTwoFactorEmailOption" xml:space="preserve">
+    <value>メール認証</value>
+  </data>
+  <data name="SettingsAddCardButton" xml:space="preserve">
+    <value>カードを追加</value>
+  </data>
+  <data name="SettingsCardExpMonthLabel" xml:space="preserve">
+    <value>有効期限（月）</value>
+  </data>
+  <data name="SettingsCardExpYearLabel" xml:space="preserve">
+    <value>有効期限（年）</value>
+  </data>
+  <data name="SettingsDisbursementMethod" xml:space="preserve">
+    <value>未設定です。</value>
+  </data>
+  <data name="SettingsDisplayNamePlaceholder" xml:space="preserve">
+    <value>表示名</value>
+  </data>
+  <data name="SettingsGatewayBankLabel" xml:space="preserve">
+    <value>銀行振込</value>
+  </data>
+  <data name="SettingsGatewayCardLabel" xml:space="preserve">
+    <value>クレジット / デビットカード</value>
+  </data>
+  <data name="SettingsGatewayQrPhLabel" xml:space="preserve">
+    <value>QR Ph（スキャンして支払う）</value>
+  </data>
+  <data name="SettingsGatewaysDescription" xml:space="preserve">
+    <value>アカウントの支払い方法を有効または無効にします。</value>
+  </data>
+  <data name="SettingsGatewaysHeading" xml:space="preserve">
+    <value>決済ゲートウェイ</value>
+  </data>
+  <data name="SettingsKycDigitVerifyButton" xml:space="preserve">
+    <value>Didit で認証</value>
+  </data>
+  <data name="SettingsKycDocumentTypeDrivers" xml:space="preserve">
+    <value>運転免許証</value>
+  </data>
+  <data name="SettingsKycDocumentTypeSelect" xml:space="preserve">
+    <value>書類の種類を選択</value>
+  </data>
+  <data name="SettingsLinkedWallet" xml:space="preserve">
+    <value>連携されたウォレットはありません。</value>
+  </data>
+  <data name="SettingsNoInvoices" xml:space="preserve">
+    <value>請求書の履歴はありません。</value>
+  </data>
+  <data name="SettingsNoSavedCards" xml:space="preserve">
+    <value>保存されたカードはありません。下でカードを追加してください。</value>
+  </data>
+  <data name="PricingDescriptionParagraph2" xml:space="preserve">
+    <value>クライアントにとっても、PrTask は無料で利用できます。クライアントが支払うのは、選択した開発者の pull request が承認されたときに設定していた報奨金額だけです。投稿手数料、掲載手数料、月額のプラットフォーム料金はありません。これにより、PrTask は世界中の経験豊富な開発者にソフトウェアタスクを依頼するための、効率的で低リスクな方法になります。</value>
+  </data>
+  <data name="PricingDescriptionParagraph3" xml:space="preserve">
+    <value>PrTask の決済処理は、世界中のユーザーに対応できるよう複数の方法をサポートしています。クライアントは主要なクレジットカードやデビットカードで支払いを行え、開発者は自分の地域で利用可能な対応出金オプションを通じて報酬を受け取れます。当社の決済基盤は信頼できるプロバイダーによって支えられており、暗号化された処理とコンプライアンス基準によって安全性が維持されています。</value>
+  </data>
+  <data name="PricingFaqCurrencyAnswer" xml:space="preserve">
+    <value>すべての取引は米ドル (USD) で行われます。</value>
+  </data>
+  <data name="PricingFaqMethodsQuestion" xml:space="preserve">
+    <value>どの支払い方法が利用できますか？</value>
+  </data>
+  <data name="PricingFaqMethodsAnswer" xml:space="preserve">
+    <value>当社の決済プロセッサーを通じて、Visa、Mastercard、American Express、その他主要なクレジットカードおよびデビットカードをご利用いただけます。</value>
+  </data>
+  <data name="PricingFaqMinBountyAnswer" xml:space="preserve">
+    <value>はい。クライアントがタスクに設定できる最低報奨金は 1 USD です。上限はありません。</value>
+  </data>
+  <data name="PricingFaqPayoutTimeQuestion" xml:space="preserve">
+    <value>報酬を受け取るまでどのくらいかかりますか？</value>
+  </data>
+  <data name="PricingFaqPayoutTimeAnswer" xml:space="preserve">
+    <value>通常、クライアントがあなたの PR を承認してから 3〜5 営業日以内に支払いが処理されます。</value>
+  </data>
+  <data name="PricingFaqProcessQuestion" xml:space="preserve">
+    <value>支払いはどのように処理されますか？</value>
+  </data>
+  <data name="PricingFaqProcessAnswer" xml:space="preserve">
+    <value>クライアントが pull request を承認すると、選択した支払い方法を通じて報奨金額が自動的に請求されます。</value>
+  </data>
+  <data name="PricingFaqWhenPaidQuestion" xml:space="preserve">
+    <value>いつ支払いを受け取れますか？</value>
+  </data>
+  <data name="PricingFaqWhenPaidAnswer" xml:space="preserve">
+    <value>クライアントがあなたの PR を承認すると、自動的に支払いが処理されます。開発者は報奨金の 100% を受け取ります。</value>
+  </data>
+  <data name="PricingRefundDescription" xml:space="preserve">
+    <value>紛争中または未納品の作業に対して、公平な返金条件を提供しています。クライアントが対象となる場合を確認するには、返金ポリシー全文をご覧ください。</value>
+  </data>
+  <data name="SettingsDescriptionHeading" xml:space="preserve">
+    <value>アカウント設定 - PrTask の利用環境を設定</value>
+  </data>
+  <data name="SettingsTimezoneEastern" xml:space="preserve">
+    <value>米国東部時間 (GMT-5)</value>
+  </data>
+  <data name="SettingsTimezoneLondon" xml:space="preserve">
+    <value>ロンドン (GMT+0)</value>
+  </data>
+  <data name="RefundAbandonedHeading" xml:space="preserve">
+    <value>放棄されたタスク</value>
+  </data>
+  <data name="RefundAfterApprovalHeading" xml:space="preserve">
+    <value>承認後の返金</value>
+  </data>
+  <data name="RefundChargebackHeading" xml:space="preserve">
+    <value>チャージバックポリシー</value>
+  </data>
+  <data name="RefundDescriptionHeading" xml:space="preserve">
+    <value>この返金ポリシーについて</value>
+  </data>
+  <data name="RefundEuWithdrawalHeading" xml:space="preserve">
+    <value>EUの14日間撤回権</value>
+  </data>
+  <data name="RefundHowToHeading" xml:space="preserve">
+    <value>返金の申請方法</value>
+  </data>
+  <data name="RefundMethodHeading" xml:space="preserve">
+    <value>返金方法</value>
+  </data>
+  <data name="RefundNoChargeHeading" xml:space="preserve">
+    <value>承認前の請求なし</value>
+  </data>
+  <data name="RefundNonRefundableHeading" xml:space="preserve">
+    <value>返金不可項目</value>
+  </data>
+  <data name="RefundPageHeading" xml:space="preserve">
+    <value>返金ポリシー</value>
+  </data>
+  <data name="RefundPlatformErrorHeading" xml:space="preserve">
+    <value>プラットフォームエラー</value>
+  </data>
+  <data name="RefundTimelineHeading" xml:space="preserve">
+    <value>返金処理の期間</value>
+  </data>
+  <data name="TermsAcceptedPaymentHeading" xml:space="preserve">
+    <value>利用可能な支払い方法</value>
+  </data>
+  <data name="TermsAccountCreationHeading" xml:space="preserve">
+    <value>アカウント作成</value>
+  </data>
+  <data name="TermsAccountTerminationHeading" xml:space="preserve">
+    <value>アカウント終了</value>
+  </data>
+  <data name="TermsAmlComplianceHeading" xml:space="preserve">
+    <value>マネーロンダリング対策遵守</value>
+  </data>
+  <data name="TermsAutoPaymentHeading" xml:space="preserve">
+    <value>自動支払い</value>
+  </data>
+  <data name="TermsConsumerProtectionHeading" xml:space="preserve">
+    <value>消費者保護</value>
+  </data>
+  <data name="TermsContentModerationHeading" xml:space="preserve">
+    <value>コンテンツモデレーション (EU DSA)</value>
+  </data>
+  <data name="TermsDeveloperObligationsHeading" xml:space="preserve">
+    <value>開発者の義務</value>
+  </data>
+  <data name="TermsDisclaimerHeading" xml:space="preserve">
+    <value>保証の否認</value>
+  </data>
+  <data name="TermsDisputeHeading" xml:space="preserve">
+    <value>紛争解決</value>
+  </data>
+  <data name="TermsEligibilityHeading" xml:space="preserve">
+    <value>利用資格</value>
+  </data>
+  <data name="TermsEntireAgreementHeading" xml:space="preserve">
+    <value>完全合意</value>
+  </data>
+  <data name="TermsEuConsumerRightsHeading" xml:space="preserve">
+    <value>EU 消費者の権利</value>
+  </data>
+  <data name="TermsForceHeading" xml:space="preserve">
+    <value>不可抗力</value>
+  </data>
+  <data name="PrivacyDataBreachHeading" xml:space="preserve">
+    <value>データ侵害通知</value>
+  </data>
+  <data name="PrivacyLgpdHeading" xml:space="preserve">
+    <value>ブラジル LGPD</value>
+  </data>
+  <data name="PrivacyNzHeading" xml:space="preserve">
+    <value>ニュージーランドプライバシー法 2020</value>
+  </data>
+  <data name="PrivacyPdpaSingaporeHeading" xml:space="preserve">
+    <value>シンガポール PDPA</value>
+  </data>
+  <data name="PrivacyPdpaThailandHeading" xml:space="preserve">
+    <value>タイ PDPA</value>
+  </data>
+  <data name="PrivacyPipedaHeading" xml:space="preserve">
+    <value>カナダ PIPEDA</value>
+  </data>
+  <data name="PrivacyPopiaHeading" xml:space="preserve">
+    <value>南アフリカ POPIA</value>
+  </data>
+  <data name="PrivacyRa10173Heading" xml:space="preserve">
+    <value>フィリピンデータプライバシー法 (RA 10173)</value>
+  </data>
+  <data name="PrivacyUkGdprHeading" xml:space="preserve">
+    <value>英国 GDPR および 2018年データ保護法</value>
+  </data>
+  <data name="PrivacyCcpaRightDeletion" xml:space="preserve">
+    <value>法的例外を条件として、あなたの個人情報の削除を請求する</value>
+  </data>
+  <data name="PrivacyCcpaRightKnow" xml:space="preserve">
+    <value>当社があなたについて収集、使用、開示する個人情報を、過去12か月の内容を含めて知る</value>
+  </data>
+  <data name="PrivacyCcpaRightLimit" xml:space="preserve">
+    <value>機微な個人情報の利用を制限する (PrTask は CCPA の定義による機微な個人情報を収集しません)</value>
+  </data>
+  <data name="PrivacyCcpaRightNonDiscrimination" xml:space="preserve">
+    <value>CCPA/CPRA の権利を行使しても差別されないこと</value>
+  </data>
+  <data name="PrivacyCcpaRightOptOut" xml:space="preserve">
+    <value>あなたの個人情報の販売または共有を拒否する (PrTask は個人情報を販売しません)</value>
+  </data>
+  <data name="PrivacyGdprRightObject" xml:space="preserve">
+    <value>プロファイリングを含む、正当な利益に基づく処理に異議を唱えること</value>
+  </data>
+  <data name="PrivacyGdprRightPortability" xml:space="preserve">
+    <value>データポータビリティ: あなたのデータを構造化され機械可読な形式で受け取ること</value>
+  </data>
+  <data name="PrivacyGdprRightRectify" xml:space="preserve">
+    <value>不正確または不完全な個人データを訂正すること</value>
+  </data>
+  <data name="PrivacyGdprRightRestrict" xml:space="preserve">
+    <value>一定の状況であなたの個人データの処理を制限すること</value>
+  </data>
+  <data name="PrivacyGdprRightWithdrawConsent" xml:space="preserve">
+    <value>処理が同意に基づく場合は、いつでも同意を撤回すること</value>
+  </data>
+  <data name="TermsGoverningLawHeading" xml:space="preserve">
+    <value>準拠法</value>
+  </data>
+  <data name="TermsIntellectualPropertyHeading" xml:space="preserve">
+    <value>知的財産</value>
+  </data>
+  <data name="TermsLiabilityHeading" xml:space="preserve">
+    <value>責任の制限</value>
+  </data>
+  <data name="TermsModificationHeading" xml:space="preserve">
+    <value>利用規約の変更</value>
+  </data>
+  <data name="TermsPublicPrHeading" xml:space="preserve">
+    <value>公開 pull request</value>
+  </data>
+  <data name="TermsTaxHeading" xml:space="preserve">
+    <value>税務上の責任</value>
+  </data>
+  <data name="TermsUserConductHeading" xml:space="preserve">
+    <value>ユーザー行動</value>
+  </data>
+  <data name="PrivacyGdprContactInfo" xml:space="preserve">
+    <value>これらの権利を行使するには、dpo@prtask.com の当社データ保護責任者までご連絡ください。PrTask は GDPR に従い 30 日以内に回答します。PrTask は Global Privacy Control (GPC) シグナルを有効なオプトアウト要求として認識し、対応します。</value>
+  </data>
+  <data name="PrivacyGdprRightAccess" xml:space="preserve">
+    <value>当社が保有するあなたに関するすべての個人データの写しにアクセスすること</value>
+  </data>
+  <data name="PrivacyGdprRightLodgeComplaint" xml:space="preserve">
+    <value>地域の監督機関に苦情を申し立てること</value>
+  </data>
+  <data name="PrivacyGdprDescription" xml:space="preserve">
+    <value>欧州経済領域（EEA）に所在する場合、あなたの個人データは General Data Protection Regulation (EU) 2016/679 (GDPR) によって保護されます。PrTask は、上記第4節で説明したとおり、契約履行、正当な利益、同意、および法的義務という適法根拠に基づいてあなたのデータを処理します。PrTask は privacy by design および by default（第25条）を実装し、処理活動の記録（第30条）を維持し、高リスクの処理についてデータ保護影響評価を実施します。PrTask は Global Privacy Control (GPC) シグナルを認識し、それに対応します。EU のデータ主体として、あなたには次の権利があります。</value>
+  </data>
+  <data name="PrivacyInfoCollectedDescription" xml:space="preserve">
+    <value>PrTask は次のカテゴリーの個人データを収集します。(a) アカウント情報: 対応する single sign-on プロバイダー（GitHub、Google、Microsoft、Okta）でサインインすると、ユーザー名、表示名、メールアドレス、アバター URL を収集します。(b) 支払いデータ: 支払いを開始または受領すると、当社の決済プロバイダーが支払い詳細を直接処理します。開発者は希望する payout 方法の詳細を提供します。(c) プラットフォーム活動: タスクおよび pull request の活動、コードレビュー、コメント、リーダーボード参加。(d) 技術データ: IP アドレス、ブラウザー種別、オペレーティングシステム、デバイス情報、IP アドレスから推定されるおおよその位置情報。(e) 本人確認データ: 当社の本人確認プロバイダーが処理する公的身分証明書と selfie verification。(f) 税務情報: 税務コンプライアンスのために収集される納税者識別番号（W-9/W-8BEN）。</value>
+  </data>
+  <data name="PrivacyInfoSharingDescription" xml:space="preserve">
+    <value>当社は、次のカテゴリーの受領者とあなたの情報を共有します。(a) 支払い処理および開発者への payout のための payment processor（Maya Business および Stripe を含む）。(b) 本人確認コンプライアンスのための identity verification provider。(c) 認証および repository integration のための GitHub。(d) ホスティング、コンテンツ配信ネットワーク、およびセキュリティサービスのための Cloudflare。(e) 法令で要求される場合の税務当局（IRS、BIR、DAC7 に基づく EU 税務当局）。あなたの公開プロフィール（ユーザー名、バッジ、完了したタスク）はリーダーボードに表示されます。当社はあなたの個人データを第三者に販売しません。cross-context behavioral advertising のために第三者とデータを共有することもありません。適用法、有効な裁判所命令、または PrTask とそのユーザーの安全および権利を守るために必要な場合、情報を開示することがあります。</value>
+  </data>
+  <data name="PrivacyPopiaDescription" xml:space="preserve">
+    <value>南アフリカに所在する場合、あなたの個人情報は Information Regulator が執行する Protection of Personal Information Act (POPIA) によって保護されます。PrTask は、責任、処理の制限、目的の特定、追加処理の制限、情報の品質、公開性、安全保護措置、およびデータ主体の参加という、適法な処理のための8つの条件を遵守します。あなたには、自身の個人情報にアクセスし、訂正し、削除する権利があります。PrTask は、いかなるセキュリティ侵害についても、合理的に可能な限り速やかに Information Regulator および影響を受けた個人に通知します。権利を行使するには dpo@prtask.com までご連絡ください。</value>
+  </data>
+  <data name="PrivacyAutomatedDecisionDescription" xml:space="preserve">
+    <value>PrTask は現在、ユーザーに法的効果または同様に重大な効果をもたらす自動化された意思決定やプロファイリングを使用していません。今後 PrTask がそのような処理を導入する場合、関与するロジック、その重要性、想定される結果について意味のある情報を提供し、GDPR 第22条および他の法域における同等の規定に従って、人による介入を求め、自身の見解を表明し、決定に異議を申し立てる権利を確保します。</value>
+  </data>
+  <data name="PrivacyChangesDescription" xml:space="preserve">
+    <value>PrTask はこのプライバシーポリシーを随時更新することがあります。重要な変更は、発効の少なくとも30日前までに、メールまたはプラットフォーム上の目立つ通知でお知らせします。当社はこのポリシーを少なくとも年1回見直し、更新します。このポリシーの上部にある「最終更新日」は、最新の改定日を示します。変更の発効日以降も PrTask を継続して利用した場合、更新後のポリシーに同意したものとみなされます。このポリシーの以前の版は、請求により入手できます。</value>
+  </data>
+  <data name="PrivacyChildrensDescription" xml:space="preserve">
+    <value>PrTask は18歳未満のユーザーを対象としていません。当社は未成年者から個人データを故意に収集しません。未成年者がアカウントを作成したと思われる場合は、削除のためにご連絡ください。</value>
+  </data>
+  <data name="PrivacyIntroduction" xml:space="preserve">
+    <value>PrTask は、あなたのプライバシーと個人データの保護に取り組んでいます。このプライバシーポリシーは、当社のプラットフォームを利用する際に、PrTask があなたの個人情報をどのように収集、使用、共有、保護するかを説明するものです。このポリシーは世界中のすべてのユーザーに適用され、欧州連合、英国、カリフォルニア州（米国）、フィリピン、カナダ、ブラジル、日本、シンガポール、タイ、南アフリカ、オーストラリア、インド、韓国、中国、ニュージーランドのデータ保護法における特定の要件を扱います。</value>
+  </data>
+  <data name="SettingsDescriptionParagraph1" xml:space="preserve">
+    <value>設定ページは、PrTask アカウントのあらゆる項目を構成するための中心的な場所です。ここでは、表示名、アバター、メールアドレスを含むプロフィール情報を更新できます。通知設定を構成して、どのイベントでメール通知を送るかを制御できます。すべての通知を受け取る、支払い確認やレビュー依頼などの重要な通知のみを受け取る、またはメール通知を完全に無効にすることが可能です。プロフィール設定は、リーダーボードや pull request のレビューを含め、プラットフォーム上で他のユーザーにどのように表示されるかを決定します。</value>
+  </data>
+  <data name="SettingsDescriptionParagraph2" xml:space="preserve">
+    <value>支払い設定は、アカウント設定の重要な部分です。開発者は bounty の支払いを受け取るために、銀行振込または PayPal などの出金方法を設定する必要があります。一方、クライアントは、タスクの bounty に資金を入れるために、クレジットカードまたは銀行振込などの入金方法を設定します。PrTask は、QR Ph、クレジットカード、GCash、GrabPay、Maya、直接銀行振込を含む複数の支払いゲートウェイに対応しており、それぞれを好みに応じて個別に有効化または無効化できます。保存済みの支払いカードの管理、自動請求の設定、迅速な取引のための QR コード決済の設定も行えます。</value>
+  </data>
+  <data name="SettingsDescriptionParagraph3" xml:space="preserve">
+    <value>セキュリティと確認の設定は、アカウントを保護し、プラットフォームのすべての機能へのアクセスを有効にします。Google、GitHub、Microsoft、Okta などの複数の ID プロバイダーをアカウントに接続し、柔軟な認証オプションを利用できます。認証アプリまたはメールによる二要素認証を有効にして、追加のセキュリティを確保できます。政府発行の本人確認書類を提出して KYC（Know Your Customer）確認プロセスを完了すると、より高い出金上限が解除され、クライアントからの信頼向上にもつながります。プライバシー設定では、プロフィールとアクティビティの公開範囲を制御でき、タイムゾーン設定によって日付や期限が地域に合わせて正しく表示されます。</value>
+  </data>
+  <data name="RefundAbandonedDescription" xml:space="preserve">
+    <value>タスクに pull request の提出が一件もない場合、クライアントはいつでもそのタスクを終了できます。pull request (PR) が承認されるまで支払いは行われないため、放棄されたタスクについて返金するものはありません。</value>
+  </data>
+  <data name="RefundAfterApprovalDescription" xml:space="preserve">
+    <value>クライアントが pull request を承認して課金されると、bounty は開発者に支払われます。返金は、プラットフォームの誤り、不正行為、または提出された作業が pull request (PR) に記載された内容と実質的に異なる場合にのみ行われます。</value>
+  </data>
+  <data name="RefundIntroduction" xml:space="preserve">
+    <value>この返金ポリシーは、PrTask プラットフォームにおいて返金がいつ、どのように行われるかを説明するものです。PrTask は、クライアントが pull request を承認した時点でのみ課金される自動決済モデルを採用しています。このポリシーは、欧州連合 (European Union, EU)、フィリピン、およびその他の法域の消費者保護法に基づく権利を含む、すべての返金シナリオを対象とします。</value>
+  </data>
+  <data name="RefundMethodDescription" xml:space="preserve">
+    <value>返金は、元の支払い方法に対して処理されます。処理時間はご利用の銀行またはカード発行会社によって異なりますが、通常は承認後 5 営業日から 7 営業日かかります。</value>
+  </data>
+  <data name="RefundNoChargeDescription" xml:space="preserve">
+    <value>クライアントは、pull request を明示的に承認するまで課金されません。承認された PR がない場合、支払いは発生しません。クライアントは PR を承認する前であれば、いつでも無料でタスクを取り消すことができます。</value>
+  </data>
+  <data name="RefundNoEscrowDescription" xml:space="preserve">
+    <value>PrTask は資金をエスクローで保管しません。bounty は PR が承認された時点でクライアントに直接請求され、そのまま開発者に支払われます。中間的な保留期間はありません。これにより、開発者は速やかに支払いを受け取り、クライアントは承認済みの作業に対してのみ請求されます。</value>
+  </data>
+  <data name="SprintDescriptionParagraph1" xml:space="preserve">
+    <value>PrTask の sprint は、bounty ベースの開発モデルにアジャイル型のプロジェクト管理手法を取り入れます。Sprint とは、通常 1 週間から 4 週間程度の時間枠で区切られた期間であり、その間に特定のタスクを計画し、実行し、完了させます。Sprint 管理により、クライアントやチームリーダーは、関連するタスクを開始日、終了日、目標が明確な集中作業期間へ整理できます。この構造化された方法は、チームが勢いを維持し、期限に対する進捗を追跡し、開発作業をより広いプロジェクトのマイルストーンに合わせるのに役立ちます。</value>
+  </data>
+  <data name="SprintDescriptionParagraph2" xml:space="preserve">
+    <value>Sprint の作成は簡単です。名前を付け、何を達成すべきかを示す目標を設定し、開始日と終了日を定義します。Sprint は Planned、Active、Completed の 3 つの状態を進むため、各 sprint がどの段階にあるかを明確に把握できます。チームの準備が整ったら planned sprint を開始し、時間枠が終了したら active sprint を完了し、不要になった sprint は削除できます。各 sprint には割り当てられたタスクが追跡されるため、その期間内に何を完了すべきかを集中して確認できます。</value>
+  </data>
+  <data name="SprintDescriptionParagraph3" xml:space="preserve">
+    <value>PrTask の sprint 管理は、より広いタスクシステムおよびボードシステムと統合され、完全なプロジェクト管理体験を提供します。タスクリストから特定の sprint にタスクを割り当てて sprint backlog を作成し、開発者が pull request を送信するにつれて完了率を追跡し、sprint の結果を見直して今後の反復計画を改善できます。少人数のコントリビューターによる小規模なオープンソースプロジェクトを運営している場合でも、複数のリポジトリにまたがる大規模な開発を管理している場合でも、sprint 管理は予測可能なリリースのリズムを維持し、開発作業を整理して予定どおりに進めるのに役立ちます。</value>
+  </data>
+  <data name="RefundContactDescription" xml:space="preserve">
+    <value>返金の依頼や本ポリシーに関する質問がある場合は、task ID と取引参照番号を添えて support@prtask.com までご連絡ください。欧州連合の消費者として撤回権を行使する場合は、件名に "EU Withdrawal" を含めてください。フィリピンの消費者苦情については、DTI に直接連絡することもできます。</value>
+  </data>
+  <data name="RefundEuWithdrawalDescription" xml:space="preserve">
+    <value>欧州連合または欧州経済領域の居住者である場合、Consumer Rights Directive (2011/83/EU) に基づき、デジタルサービスについて 14 日間の撤回権があります。この権利は取引日から開始します。14 日以内に support@prtask.com へ連絡することで、理由を示すことなくこの権利を行使できます。PrTask は、撤回通知を受領してから 14 日以内に、元の取引と同じ支払い方法で返金を処理します。購入時に明示的な事前同意を与え、デジタルサービス、すなわち開発者への bounty 支払いが完全に履行された時点で撤回権を失うことを認めた場合、この権利は放棄されることがあります。PrTask がこの権利について通知しなかった場合、この権利は自動的に 1 年へ延長されます。</value>
+  </data>
+  <data name="RefundPlatformErrorDescription" xml:space="preserve">
+    <value>プラットフォームの誤りにより支払いが不正に処理された場合、PrTask は 3 営業日以内に全額返金を行います。取引参照番号を添えて support@prtask.com までご連絡ください。</value>
+  </data>
+  <data name="RefundTimelineDescription" xml:space="preserve">
+    <value>PrTask は次の期間内に返金を処理します。欧州連合の撤回権に基づく返金は撤回通知の受領後 14 日以内、プラットフォームエラーによる返金は 3 営業日以内、紛争解決による返金は決定後 5 営業日以内、その他の返金対象となる返金は承認後 5 営業日以内です。実際に返金を受け取る時期は、利用している銀行または支払いプロバイダーによって異なり、さらに 5 から 10 営業日かかる場合があります。</value>
+  </data>
+  <data name="PrivacyAppiDescription" xml:space="preserve">
+    <value>日本に所在する場合、あなたの個人情報は、Personal Information Protection Commission (PPC) が執行する Act on the Protection of Personal Information (APPI) によって保護されます。PrTask はデータ利用目的を公表し、サイバーセキュリティ上および物理的な保護措置を実施し、第三者へのデータ共有についてオプトアウトの仕組みを提供します。データ侵害が発生した場合、当社は PPC と影響を受ける本人に通知します。あなたには、自身の個人情報について開示、訂正、利用停止、削除を求める権利があります。権利行使には dpo@prtask.com までご連絡ください。</value>
+  </data>
+  <data name="PrivacyCcpaCategoriesDescription" xml:space="preserve">
+    <value>California Consumer Privacy Act (CCPA) に基づき、当社が過去12か月間に収集した個人情報のカテゴリーには、識別子（氏名、メールアドレス、ユーザー名、IP アドレス）、商業情報（取引履歴、報奨金の支払い）、インターネットまたは電子ネットワーク活動（PrTask 上の閲覧履歴、機能利用、ログデータ）、職業情報（GitHub プロフィール、ポートフォリオ、スキル）、および位置情報データ（IP アドレスから推定されるおおよその位置）が含まれます。当社は CCPA で定義される機微な個人情報を収集しません。また、cross-context behavioral advertising のために個人情報を第三者に販売または共有しません。</value>
+  </data>
+  <data name="PrivacyCcpaContactInfo" xml:space="preserve">
+    <value>California Consumer Privacy Act (CCPA) または California Privacy Rights Act (CPRA) に基づく請求を行うには、件名を "CCPA Request." として privacy@prtask.com へメールしてください。当社は請求を処理する前に本人確認を行い、45日以内に回答します。PrTask は、個人情報の販売または共有に対する有効なオプトアウトとして Global Privacy Control (GPC) シグナルを尊重します。</value>
+  </data>
+  <data name="PrivacyCcpaDescription" xml:space="preserve">
+    <value>カリフォルニア州の居住者である場合、California Privacy Rights Act (CPRA) により改正された California Consumer Privacy Act (CCPA) に基づき、あなたには個人情報に関する追加の権利が認められます。PrTask は、cross-context behavioral advertising のためにあなたの個人情報を第三者に販売または共有しません。PrTask はこのポリシーで、収集したデータカテゴリーに関する12か月の振り返りを含む、CCPA が求める11項目の必須開示を提供しています。CCPA/CPRA の下で、あなたには次の権利があります。</value>
+  </data>
+  <data name="PrivacyContactDescription" xml:space="preserve">
+    <value>プライバシーに関する問い合わせ、データ主体からの請求、または General Data Protection Regulation (GDPR)、California Consumer Privacy Act (CCPA)、Republic Act No. 10173 (RA 10173)、Lei Geral de Protecao de Dados (LGPD)、その他適用されるデータ保護法に基づく権利を行使するには、当社の Data Protection Officer である dpo@prtask.com までご連絡ください。一般的なプライバシーに関する問い合わせは privacy@prtask.com へご連絡ください。PrTask は、適用法で定められた期間内にすべてのデータ主体請求に回答します（GDPR は30日、CCPA は45日、LGPD は15日、PIPEDA/Singapore PDPA は30日）。また、あなたには自らの法域の監督機関に苦情を申し立てる権利があります。</value>
+  </data>
+  <data name="PrivacyControllerDescription" xml:space="preserve">
+    <value>PrTask は、あなたの個人データについて責任を負う data controller です。当社の Data Protection Officer (DPO) には dpo@prtask.com で連絡できます。一般的なプライバシーに関する問い合わせは privacy@prtask.com へご連絡ください。当社の登録住所は Contact ページに記載されています。あなたが欧州連合に所在し、PrTask が EU に拠点を持たない場合、当社は GDPR 第27条で求められるとおり EU 代表者を指名します。</value>
+  </data>
+  <data name="RefundDescriptionParagraph1" xml:space="preserve">
+    <value>この Refund Policy は、PrTask を通じて行われた支払いがどのような条件で返金対象となるかを定めるものです。PrTask では、pull request が承認された時点で bounty が支払われる自動決済モデルを採用しているため、返金手続きはクライアントと開発者の双方にとって公平になるよう設計されています。このポリシーは、作業品質に関する紛争、放棄された task、プラットフォームのエラー、ならびに欧州連合およびフィリピンの消費者保護法に基づく規制要件を含む場面を対象としています。</value>
+  </data>
+  <data name="RefundDescriptionParagraph2" xml:space="preserve">
+    <value>PrTask は、pull request が承認されるまで開発者に請求せず、クライアントにも task bounty を明示的に資金提供するまで請求しません。この承認時支払いモデルにより、支払いは両当事者が成果物に同意した場合にのみ行われるため、返金の必要性を最小限に抑えます。返金が必要な場合、PrTask はこのポリシーで定める期間内に、元の支払い方法を通じて返金を処理します。返金依頼を開始する場合や取引に異議を申し立てる場合は、support@prtask.com までご連絡ください。</value>
+  </data>
+  <data name="RefundNonRefundableDescription" xml:space="preserve">
+    <value>次の場合は返金対象となりません。審査と承認が完了し、コードがマージされ、task の要件を満たしている pull request に対する bounty、取引から 30 日を超えて申し立てられた紛争、ならびにクライアントが提出されたコードをすでに使用、配備、または本番環境に組み込んでいる場合です。欧州連合居住者の法定撤回権については、それらの権利が有効に放棄されていない限り、この条項の影響を受けません。</value>
+  </data>
+  <data name="RefundPhConsumerDescription" xml:space="preserve">
+    <value>フィリピン居住者は、Republic Act No. 7394、すなわち Consumer Act of the Philippines に基づく消費者保護を受ける権利があります。サービスが購入時に示された説明または品質基準を満たさない場合、全額返金または是正措置を受ける権利があります。返金依頼が PrTask の内部手続きで満足のいく形で解決されない場合は、Department of Trade and Industry (DTI) に苦情を申し立てることができます。PrTask は DTI によるあらゆる調査に全面的に協力します。</value>
+  </data>
+  <data name="PrivacyCookieReferenceDescription" xml:space="preserve">
+    <value>PrTask は、当社の Cookie Policy に記載されているとおり、cookies と類似の technologies を使用します。Essential cookies は platform の運営に必要です。Analytics cookies と marketing cookies は、European Union、United Kingdom、および事前同意を義務付けるその他の jurisdictions では、あなたの opt-in consent を必要とします。Cookie preferences はいつでも管理できます。使用される cookies の完全な一覧、その purposes、および retention periods を含む詳細は、Cookie Policy をご確認ください。</value>
+  </data>
+  <data name="PrivacyDataBreachDescription" xml:space="preserve">
+    <value>PrTask は、包括的な data breach response plan を維持しています。Personal data breach が発生した場合: (a) General Data Protection Regulation (GDPR): breach が個人の rights and freedoms に high risk をもたらす可能性が高いときは、PrTask は関連する supervisory authority に 72 時間以内に通知し、影響を受ける individuals にも通知します。 (b) Republic of the Philippines, Republic Act No. 10173: PrTask は National Privacy Commission (NPC) と影響を受ける individuals に 72 時間以内に通知します。 (c) New Zealand: serious harm を生じる可能性がある breach については、Privacy Commissioner と影響を受ける individuals に 72 時間以内に通知します。 (d) California Consumer Privacy Act (CCPA): 影響を受ける California residents に law が要求する期限内に通知します。 (e) All jurisdictions: PrTask は breach を記録し、forensic investigation を行い、containment measures を実施し、影響を受けた users に breach の内容、関係する data の types、および推奨される protective measures を通知し、post-incident review を実施します。Our Data Protection Officer は主要な breach response coordinator を務めます。Data breach に関する懸念は dpo@prtask.com までご連絡ください。</value>
+  </data>
+  <data name="PrivacyDataRetentionDescription" xml:space="preserve">
+    <value>Account data は、あなたの account が active である間保持されます。Account deletion 後、当社は次を保持します: applicable tax regulations と anti-money laundering (AML) の record-keeping requirements により求められる transaction records を 5 年間、Personal Information Protection and Electronic Documents Act (PIPEDA) により求められる breach records を 24 か月間、anti-money laundering laws により求められる Know Your Customer (KYC) verification records を 5 年間。Anonymized and aggregated usage statistics は無期限に保持される場合があります。Collected された目的に不要になった personal data は、law により retention が求められない限り、delete または anonymize します。あなたは、これらの legal retention requirements に従って、いつでも data の deletion を request できます。</value>
+  </data>
+  <data name="PrivacyDataRightsDescription" xml:space="preserve">
+    <value>あなたには、PrTask が保持する personal data に access し、不正確または不完全な data を訂正し、legal retention requirements に従って data の deletion を request し、data の processing に objection する権利があります。</value>
+  </data>
+  <data name="PrivacyDataSecurityDescription" xml:space="preserve">
+    <value>当社は、すべての communications に Hypertext Transfer Protocol Secure (HTTPS) encryption、minimum required scopes の GitHub OAuth tokens、および industry-standard security practices を使用しています。ただし、完全に secure な system は存在しません。Vulnerabilities は security@prtask.com まで報告してください。</value>
+  </data>
+  <data name="PrivacyDescriptionParagraph1" xml:space="preserve">
+    <value>この Privacy Policy は、PrTask が当社のすべての services と platforms において、あなたの personal information をどのように collect、use、store、protect するかを詳しく説明するものです。Account registration、task interactions、pull request submissions、payment processing、および platform の general usage から得られる data を対象としています。PrTask は data minimization に取り組んでおり、marketplace の運営、payments の processing、そして legal requirements の遵守に必要な information のみを収集します。</value>
+  </data>
+  <data name="TermsPublicPrDescription" xml:space="preserve">
+    <value>PrTask に提出されるすべての pull request は公開されます。同じ task に対して複数の開発者が pull request を提出できます。Client はすべての提出内容を確認し、どの pull request を承認するかを選択します。支払いの対象となるのは、承認された pull request のみです。</value>
+  </data>
+  <data name="TermsSeverabilityDescription" xml:space="preserve">
+    <value>これらの terms のいずれかの規定が執行不能と判断された場合でも、残りの規定は完全な効力を維持します。執行不能な規定は、それを執行可能にするために必要な最小限の範囲で修正されます。</value>
+  </data>
+  <data name="TermsUserConductDescription" xml:space="preserve">
+    <value>Users は、PrTask を適法な方法で利用することに同意します。禁止される行為には、盗用したコードの提出、leaderboard の順位操作、複数アカウントの作成、不正な支払い活動への関与が含まれます。詳細については、当社の Acceptable Use Policy を参照してください。</value>
+  </data>
+  <data name="TermsWaiverDescription" xml:space="preserve">
+    <value>PrTask がこれらの terms に基づく権利または規定を執行しなかったとしても、それは当該権利または規定の放棄を意味しません。いかなる waiver も書面で行われ、PrTask の権限ある代表者が署名しなければなりません。</value>
+  </data>
+  <data name="TermsAcceptedPaymentDescription" xml:space="preserve">
+    <value>クライアントは、クレジットカードを含む対応する支払い方法で bounty を支払います。開発者は、自分が選択した方法で支払いを受け取ります。開発者は、pull request を送信する前に、希望する payout method を account settings で設定しておく必要があります。</value>
+  </data>
+  <data name="TermsAutoPaymentDescription" xml:space="preserve">
+    <value>クライアントが pull request を承認すると、bounty amount が自動的に請求されます。Pull request を承認することで、クライアントはその請求を承認したものとみなされます。Upfront deposit は不要です。</value>
+  </data>
+  <data name="TermsConfidentialityDescription" xml:space="preserve">
+    <value>Users は、platform を通じて取得した non-public information を秘密として保持することに同意します。これには、private repository code、client business requirements、その他の users の payment details が含まれますが、これらに限定されません。</value>
+  </data>
+  <data name="TermsContactDescription" xml:space="preserve">
+    <value>本利用規約について質問がある場合は legal@prtask.com までご連絡ください。プライバシーに関するお問い合わせは、当社の Data Protection Officer である dpo@prtask.com までご連絡ください。アクセシビリティに関する懸念は accessibility@prtask.com へ、濫用報告は abuse@prtask.com へご連絡ください。</value>
+  </data>
+  <data name="TermsPrivacyDescription" xml:space="preserve">
+    <value>PrTask の利用には、当社の Privacy Policy が適用されます。プラットフォームを利用することにより、あなたは Privacy Policy に記載されたとおりの情報の収集および利用に同意したものとみなされます。</value>
+  </data>
+  <data name="PrivacyDoNotSellDescription" xml:space="preserve">
+    <value>PrTask は、あなたの personal information を third parties に販売しません。PrTask は、cross-context behavioral advertising のために third parties とあなたの personal information を共有することもありません。将来この取扱いが変更される場合、PrTask は CCPA/CPRA により求められるとおり、目立つ "Do Not Sell or Share My Personal Information" リンクと "Limit the Use of My Sensitive Personal Information" リンクを提供します。PrTask は Global Privacy Control (GPC) signals を有効な opt-out request として尊重します。</value>
+  </data>
+  <data name="PrivacyInfoUsageDescription" xml:space="preserve">
+    <value>当社は、PrTask platform の運営、bounty payments の処理、public leaderboard profiles と achievement badges の表示、task status や payments に関する連絡、ならびに fraud や abuse の防止のために、あなたの information を使用します。</value>
+  </data>
+  <data name="PrivacyPaymentDataDescription" xml:space="preserve">
+    <value>クライアントのすべての payment card data は、当社の payment provider のみが取り扱います。PrTask は、credit card numbers や card verification values (CVV) を当社の servers に保存しません。Developer payout details は安全に保存され、選択された payout provider とのみ共有されます。Amount、status、date を含む transaction records は、accounting purposes のために保持されます。</value>
+  </data>
+  <data name="PrivacyDescriptionParagraph2" xml:space="preserve">
+    <value>このポリシーは、European Union の General Data Protection Regulation (GDPR)、UK GDPR、California Consumer Privacy Act (CCPA)、Philippines の Republic Act No. 10173、Brazil の Lei Geral de Protecao de Dados (LGPD)、Canada の Personal Information Protection and Electronic Documents Act (PIPEDA)、Japan の Act on the Protection of Personal Information (APPI)、Singapore と Thailand の Personal Data Protection Act (PDPA)、South Africa の Protection of Personal Information Act (POPIA) など、世界 20 を超える jurisdictions の privacy laws への準拠を扱います。各 section では、適用される law の下でのあなたの specific rights と、その行使方法を説明しています。PrTask はあなたの personal data を決して販売せず、要求に応じて data access、correction、deletion、portability の仕組みを提供します。</value>
+  </data>
+  <data name="TermsEligibilityDescription" xml:space="preserve">
+    <value>PrTask を利用するには、18 歳以上であり、かつあなたの法域で拘束力のある契約を締結する法的能力を有していなければなりません。Account を作成することにより、あなたはこれらの eligibility requirements を満たしていることを表明し保証します。PrTask は、いかなる法域においても 18 歳未満の users を対象としていません。適用法がより高い成年年齢を定めている場合、あなたはその基準を満たす必要があります。</value>
+  </data>
+  <data name="TermsForceDescription" xml:space="preserve">
+    <value>PrTask は、合理的な支配を超える事由、たとえば自然災害、戦争、テロリズム、疫病、internet outages、または政府の措置などに起因してその義務の履行に失敗したり遅延したりした場合、その責任を負いません。</value>
+  </data>
+  <data name="TermsGoverningLawDescription" xml:space="preserve">
+    <value>これらの Terms は、抵触法の原則を考慮することなく、Republic of the Philippines の法律に準拠し、これに従って解釈されます。Arbitration の対象とならない法的措置は、Republic of the Philippines の裁判所にのみ提起されるものとします。前記にかかわらず、あなたの居住法域における強行的な consumer protection laws は、契約により排除できない範囲で適用される場合があります。European Union の居住者は、governing law selection にかかわらず、適用される European Union consumer protection regulations の下でのすべての権利を保持します。</value>
+  </data>
+  <data name="TermsPlatformRoleDescription" xml:space="preserve">
+    <value>PrTask は、tasks を投稿する clients と pull requests を提出する developers をつなぐ intermediary として機能します。PrTask は developers を雇用しておらず、提供された work の quality について責任を負いません。</value>
+  </data>
+  <data name="PrivacyNzDescription" xml:space="preserve">
+    <value>お客様が New Zealand に所在する場合、お客様の personal information は Privacy Act 2020 により保護され、Office of the Privacy Commissioner がこれを執行します。PrTask は 13 Information Privacy Principles を遵守します。お客様には、ご自身の personal information へアクセスし、これを訂正する権利があります。PrTask は、serious harm を引き起こす、またはその可能性が高い breach について、72 時間以内に Privacy Commissioner および影響を受ける individuals に通知します。PrTask は cross-border disclosure restrictions を遵守します。権利の行使または Privacy Commissioner への complaint の提出については、privacy@prtask.com までご連絡ください。</value>
+  </data>
+  <data name="PrivacyPdpaSingaporeDescription" xml:space="preserve">
+    <value>お客様が Singapore に所在する場合、お客様の personal data は Personal Data Protection Act 2012 (PDPA) により保護され、Personal Data Protection Commission (PDPC) がこれを執行します。PrTask は Data Protection Officer を任命しており、その contact information は publicly available です。お客様には、30 日以内にご自身の personal data へアクセスし、これを訂正する権利があります。PrTask は、significant harm を生じる可能性がある、または significant scale に及ぶ data breach を PDPC に通知します。お客様の personal data は、収集目的に必要な期間に限って保持します。権利を行使するには、dpo@prtask.com までご連絡ください。</value>
+  </data>
+  <data name="PrivacyPdpaThailandDescription" xml:space="preserve">
+    <value>お客様が Thailand に所在する場合、お客様の personal data は Personal Data Protection Act B.E. 2562 (PDPA) により保護され、Personal Data Protection Committee (PDPC) がこれを執行します。PrTask は、お客様の personal data を collect、use、または disclose する前に consent を取得します。お客様には、ご自身の data へアクセスする権利、readable format の copy を取得する権利、processing に異議を述べる権利、erasure または destruction を求める権利、use の suspension を求める権利、および consent を撤回する権利があります。PrTask は適切な security safeguards を実施し、regular audits を行います。権利を行使するには、dpo@prtask.com までご連絡ください。</value>
+  </data>
+  <data name="PrivacyInternationalDescription" xml:space="preserve">
+    <value>PrTask の servers は Cloudflare を通じて hosted されており、あなたの data は複数の jurisdictions で処理される場合があります。European Economic Area、United Kingdom、または data transfer restrictions を持つその他の jurisdictions からの personal data transfer について、PrTask は、European Commission が承認した Standard Contractual Clauses (SCCs)、該当する場合の UK International Data Transfer Agreement または Addendum、destination country が十分な保護を提供すると判断された場合の adequacy decisions、および transfer impact assessments で求められる supplementary measures を含む適切な safeguards を実施します。PrTask は、十分な safeguards のない国へ data transfer を行いません。International transfers に使用される safeguards の copy を希望する場合は、dpo@prtask.com までご連絡ください。</value>
+  </data>
+  <data name="PrivacyLegalBasisDescription" xml:space="preserve">
+    <value>当社は、以下の lawful bases に基づいてあなたの personal data を処理します。(a) contract performance: account management、payment processing、platform operation を含め、あなたとの contract を履行するために必要な processing。(b) legitimate interest: fraud prevention、platform security、service improvement を含む当社の正当な利益のために必要な processing。ただし、それらの利益があなたの rights を上回らない場合に限ります。(c) consent: marketing communications や non-essential cookies など、特定の processing についてあなたが specific consent を与えた場合。(d) legal obligation: tax reporting、AML compliance、data breach notification requirements を含む applicable laws を遵守するために必要な processing。あなたはいつでも consent を撤回できますが、撤回前の consent に基づく processing の適法性には影響しません。</value>
+  </data>
+  <data name="PrivacyLgpdDescription" xml:space="preserve">
+    <value>あなたが Brazil に所在する場合、あなたの personal data は Lei Geral de Protecao de Dados (LGPD) により保護され、ANPD によって執行されます。PrTask は、consent、contract performance、legitimate interest を含む lawful bases に基づいて data を処理します。あなたには、data processing の確認、data への access、不完全または不正確な data の correction、不要な data の anonymization、blocking、deletion、data portability、third parties との sharing に関する information、consent withdrawal に関する information の取得、そしていつでも consent を revoke する権利があります。PrTask は data subject requests に 15 日以内に回答します。LGPD に基づく権利を行使するには、dpo@prtask.com の DPO までご連絡ください。</value>
+  </data>
+  <data name="TermsAccountCreationDescription" xml:space="preserve">
+    <value>PrTask を利用するには、GitHub、Google、Microsoft、Okta などの対応する single sign-on (SSO) provider を通じて認証し、アカウントを作成する必要があります。あなたは、アカウント認証情報の安全を維持する責任と、自分のアカウントの下で発生するすべての活動に対する責任を負います。登録時には正確かつ完全な情報を提供し、アカウント情報を常に最新の状態に保つ必要があります。複数のアカウントを作成したり、他人とアカウントを共有したりすることはできません。</value>
+  </data>
+  <data name="TermsAccountTerminationDescription" xml:space="preserve">
+    <value>PrTask は、本規約に違反するアカウント、不正行為に関与するアカウント、またはプラットフォームを濫用するアカウントを停止または終了する権利を留保します。終了後、あなたがプラットフォームを利用する権利は直ちに消滅します。保留中の bounty は没収される場合があります。PrTask は、適用される税務規則および anti-money laundering (AML) 規制に従って取引記録を保持します。あなたは、法的な保存義務に従って、privacy@prtask.com に連絡することで個人データの削除を求めることができます。European Union のユーザーは、Consumer Rights Directive に基づく契約取消権を引き続き保持します。</value>
+  </data>
+  <data name="TermsAmlComplianceDescription" xml:space="preserve">
+    <value>PrTask は、Republic Act No. 9160、すなわち Anti-Money Laundering Act を RA 11521 により改正した法令、EU Anti-Money Laundering Directives (AMLD6)、およびすべての法域で適用される AML 法令を遵守します。すべてのユーザーは、payout を受け取る前に Know Your Customer (KYC) verification を完了しなければなりません。PrTask は不審な活動を監視するために取引を監視し、law が求めるとおり、covered transactions および suspicious transactions を Anti-Money Laundering Council (AMLC) と関係当局に報告します。ユーザーは、PrTask を money laundering、terrorism financing、またはその他の違法な金融活動の促進に利用してはなりません。PrTask は、不審な活動の調査中にアカウントを凍結し、資金を留保する権利を留保します。</value>
+  </data>
+  <data name="TermsConsumerProtectionDescription" xml:space="preserve">
+    <value>PrTask は、Republic Act No. 7394、すなわち Consumer Act of the Philippines、およびプラットフォームが運営されるすべての法域における同等の消費者保護法を遵守します。ユーザーは、公正で衡平な取扱い、サービスと価格に関する正確な情報、そして効果的な苦情処理および救済手段へのアクセスを受ける権利があります。PrTask は隠れた手数料のない透明な価格設定を維持し、すべての task と bounty について明確なサービス説明を提供し、ユーザーが妨げられることなく消費者としての権利を行使できるようにします。European Union のユーザーは、Consumer Rights Directive (2011/83/EU) に基づく保護を受け、これには契約前情報提供義務および遠隔契約を取り消す権利が含まれます。</value>
+  </data>
+  <data name="TermsContentModerationDescription" xml:space="preserve">
+    <value>EU Digital Services Act (DSA) 2022/2065 に従い、PrTask は透明な content moderation policies を維持します。ユーザーは、当社の reporting mechanism を通じて違法または有害な content を通報できます。PrTask は、すべての content moderation decision について statement of reasons を提供し、その decision の影響を受けたユーザーに internal complaint handling mechanism を提供します。ユーザーは、裁判外の dispute settlement にアクセスできます。PrTask は、content moderation activities に関する annual transparency reports を公表します。PrTask は、すべての user interfaces において dark patterns を禁止し、fundamental rights に十分配慮しながら、non-discriminatory な形で moderation decisions が行われることを確保します。</value>
+  </data>
+  <data name="PrivacyPipedaDescription" xml:space="preserve">
+    <value>あなたが Canada の resident である場合、あなたの personal information は Personal Information Protection and Electronic Documents Act (PIPEDA) により保護され、Office of the Privacy Commissioner of Canada (OPC) がこれを執行します。PrTask は、accountability、identifying purposes、consent、limiting collection、limiting use and disclosure、accuracy、safeguards、openness、individual access、challenging compliance から成る 10 の Fair Information Principles を遵守します。あなたには、自身の personal information にアクセスし、その正確性に異議を唱える権利があります。PrTask は 30 日以内に access requests に対応します。権利の行使または complaint の提出については、privacy@prtask.com までご連絡ください。</value>
+  </data>
+  <data name="PrivacyPiplDescription" xml:space="preserve">
+    <value>あなたが China に所在する場合、あなたの personal information は Personal Information Protection Law (PIPL) により保護され、Cyberspace Administration of China (CAC) がこれを執行します。PrTask は複数の processing purposes について bundled consent を行わず、sensitive personal information については separate consent を取得します。あなたには、processing について知り判断する権利、processing を restrict または refuse する権利、自身の data に access し copy する権利、data portability を請求する権利、inaccurate data を correct する権利、deletion を請求する権利、および processing rules の explanation を求める権利があります。PrTask は必要に応じて Personal Information Protection Impact Assessments を実施します。権利を行使するには dpo@prtask.com までご連絡ください。</value>
+  </data>
+  <data name="PrivacyRa10173Description" xml:space="preserve">
+    <value>あなたが Philippines の citizen または resident である場合、あなたの personal data は Republic Act No. 10173 (Data Privacy Act of 2012) により保護され、National Privacy Commission (NPC) がこれを執行します。PrTask は transparency、legitimate purpose、proportionality の原則を遵守します。あなたには、processing の purpose と extent について informed である権利、自身の personal data へ access する権利、processing に objection する権利、personal data の erasure または blocking を求める権利、inaccurate data を rectify する権利、NPC に complaint を提出する権利、および unauthorized processing に対して damages を請求する権利があります。PrTask は Data Protection Officer を任命しており、sensitive personal information を処理する entities に求められる場合は NPC への registration を行います。権利を行使するには、当社の DPO である dpo@prtask.com までご連絡ください。</value>
+  </data>
+  <data name="TermsIntroduction" xml:space="preserve">
+    <value>PrTask へようこそ。これらの Terms of Service は、PrTask platform へのアクセスおよびその利用を規律するものです。PrTask は、clients が bounty 付きの tasks を投稿し、developers が payment のために pull requests を提出する developer marketplace です。Account を作成するか PrTask を利用することにより、あなたはこれらの Terms に拘束されることに同意したものとみなされます。同意しない場合は、platform を利用しないでください。</value>
+  </data>
+  <data name="TermsDisclaimerDescription" xml:space="preserve">
+    <value>PrTask platform は、明示または黙示を問わず、いかなる保証も伴わない "as is" および "as available" の状態で提供されます。PrTask は、merchantability、特定目的への適合性、権原、非侵害を含むすべての保証を否認します。PrTask は、developers が提出した work の quality、accuracy、completeness を保証せず、また platform が中断なく、安全で、error-free であることも保証しません。この disclaimer は、適用法の下で排除できない mandatory consumer rights、特に European Union consumer protection regulations に基づく権利に影響を与えるものではありません。</value>
+  </data>
+  <data name="TermsDisputeDescription" xml:space="preserve">
+    <value>これらの Terms または PrTask の利用に起因し、またはこれに関連するすべての disputes は、次の手続により解決されます: (1) users はまず、問題点と希望する解決策を記載した written complaint を support@prtask.com に提出しなければなりません。 (2) PrTask は 3 business days 以内に complaint の受領を確認し、14 business days 以内に調査します。 (3) complaint が user の満足する形で解決されない場合、dispute は相互に合意した mediator による mediation に進みます。 (4) mediation が不成立となった場合、その dispute は下記 Arbitration section に記載されたとおり binding arbitration により解決されます。Users はまた、自らの jurisdiction における Department of Trade and Industry (DTI) やその他の適用される consumer protection agencies に complaint を申し立てることもできます。</value>
+  </data>
+  <data name="TermsEntireAgreementDescription" xml:space="preserve">
+    <value>これらの Terms は、Privacy Policy、Cookie Policy、Acceptable Use Policy、Refund Policy、DMCA Policy、および本書で参照されるその他の policies とあわせて、platform の利用に関するあなたと PrTask との完全な agreement を構成します。これらの Terms は、あなたと PrTask の間で以前に交わされた oral または written のすべての agreements、understandings、communications に優先します。</value>
+  </data>
+  <data name="TermsEuConsumerRightsDescription" xml:space="preserve">
+    <value>European Union の居住者は、Consumer Rights Directive に基づき、digital services について 14 日間の withdrawal right を有します。この right は、購入時にあなたが explicit consent を与え、digital service が完全に履行された時点で withdrawal right を失うことを認めた場合に放棄することができます。PrTask は、prices、services の main characteristics、および trader identity について clear pre-contractual information を提供します。2026 年 6 月から、PrTask は European Union law により要求される clear な "Cancel my contract" function を提供します。PrTask は、Digital Services Act により要求される Alternative Dispute Resolution (ADR) に参加します。Users は、out-of-court dispute settlement のために、自らの European Union Member State における適用 consumer arbitration board に連絡することができます.</value>
+  </data>
+  <data name="PrivacyThirdPartyDescription" xml:space="preserve">
+    <value>PrTask は、authentication と repository integration のための GitHub、transaction handling のための payment processors（Maya Business を含む）、hosting と content delivery network のための Cloudflare、そして Know Your Customer (KYC) compliance のための identity verification providers などの third-party services と連携しています。各 third-party service はそれぞれ独自の privacy policy の下で運営されています。私たちは各 integration が機能するために必要な最小限の data のみを共有します。PrTask は、General Data Protection Regulation (GDPR) および適用される data protection laws に従い、すべての third-party processors と Data Processing Agreements (DPAs) を締結しています。</value>
+  </data>
+  <data name="PrivacyUkGdprDescription" xml:space="preserve">
+    <value>あなたが United Kingdom に所在する場合、あなたの personal data は、Information Commissioner's Office (ICO) により執行される UK GDPR および Data Protection Act 2018 の下で保護されます。あなたには、上記の European Union data subjects と同様の権利があり、それらは United Kingdom law に合わせて適用されます。PrTask は United Kingdom residents の data を処理するための lawful basis を維持し、適切な technical and organizational security measures を実施しています。PrTask が United Kingdom に establishment を有しない場合、必要に応じて United Kingdom representative を任命します。あなたの権利を行使する場合や complaint を提出する場合は、dpo@prtask.com の当社 DPO または ico.org.uk の ICO にご連絡ください。</value>
+  </data>
+  <data name="TermsDescriptionParagraph2" xml:space="preserve">
+    <value>PrTask はフィリピン法に基づいて運営されており、欧州の利用者に対する General Data Protection Regulation (GDPR)、カリフォルニア州居住者に対する California Consumer Privacy Act (CCPA)、および複数の法域における消費者保護法を含む国際的な規制を順守しています。これらの利用規約は、プラットフォーム手数料、すなわち開発者は無料でクライアントには透明性のある料金体系、pull request 承認時の自動決済処理、返金権と紛争解決手続、コンテンツモデレーション方針、ならびに Know Your Customer / Anti-Money Laundering (KYC/AML) の順守要件を定めています。すべての利用者に対し、本規約を十分に確認し、質問がある場合は legal@prtask.com まで連絡することを推奨します。</value>
+  </data>
+  <data name="TermsIndemnificationDescription" xml:space="preserve">
+    <value>お客様は、PrTask、その役員、取締役、従業員および代理人に対し、お客様によるプラットフォームの利用、本規約への違反、または第三者の権利侵害に起因または関連して生じるあらゆる請求、責任、損害、損失および費用（合理的な弁護士費用を含みます）について、補償し、防御し、免責することに同意します。この補償義務は、お客様の法域で適用される強行的な消費者保護法によって禁止される範囲では適用されません。</value>
+  </data>
+  <data name="TermsIntellectualPropertyDescription" xml:space="preserve">
+    <value>PrTask を通じて提出されたすべてのコードは、bounty が支払われるまで、その作成者の知的財産であり続けます。支払い後、提出されたコードは repository のライセンスに基づいてクライアントにライセンスされます。利用者が提出したコードについて、PrTask はいかなる所有権も保持しません。</value>
+  </data>
+  <data name="TermsLiabilityDescription" xml:space="preserve">
+    <value>適用法で認められる最大限の範囲で、PrTask、その役員、従業員および関連会社は、お客様によるプラットフォーム利用に起因する利益、データまたは goodwill の喪失を含む、あらゆる間接的、付随的、特別、結果的または懲罰的損害について責任を負いません。いかなる請求についても、PrTask の総責任額は、当該請求の前十二か月間にプラットフォームを通じてお客様が支払った、またはお客様に支払われた手数料総額を超えないものとします。この制限は、European Union (EU)、フィリピンその他の法域における強行的な消費者保護法を含め、適用法上除外または制限できない責任には適用されません。</value>
+  </data>
+  <data name="TermsModificationDescription" xml:space="preserve">
+    <value>PrTask は、いつでも本規約を変更する権利を留保します。重要な変更は、効力発生日の少なくとも 30 日前までに、電子メールまたはプラットフォーム上の目立つ通知によって告知されます。効力発生日後に PrTask を継続して利用した場合、更新後の規約に同意したものとみなされます。変更に同意しない場合は、利用を中止し、アカウントを閉鎖しなければなりません。本規約の以前の版は、請求により提供されます。</value>
+  </data>
+  <data name="TermsTaxDescription" xml:space="preserve">
+    <value>利用者は、PrTask 上の取引から生じる自らの税務上の義務を判断し履行することについて単独で責任を負います。これには、Bureau of Internal Revenue (BIR) または各自の法域における同等の当局への所得税申告が含まれます。PrTask は利用者に代わって税金を源泉徴収せず、税務助言も提供しません。PrTask は、United States (US) の個人に対する W-9/W-8BEN tax forms および他の法域における同等書類を含む税務識別情報を収集し、適用される基準額を超える米国の受取人に対して Internal Revenue Service (IRS) Form 1099-K を発行する場合があります。PrTask は、European Union (EU) に関する Directive on Administrative Cooperation 7 (DAC7) の報告義務および Republic Act No. 12023 に基づくフィリピンの Value-Added Tax (VAT) 要件を順守します。PrTask は利用者の税務申告を支援するために取引要約を作成する場合がありますが、利用者は自らの税務義務を独立して確認しなければなりません。</value>
+  </data>
+</root>

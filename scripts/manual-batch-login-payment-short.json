@@ -1,0 +1,122 @@
+{
+  "es": {
+    "LoginBrowseTasksHeading": "Explorar tareas",
+    "LoginEarnMoneyHeading": "Ganar dinero",
+    "LoginGetPaidHeading": "Recibir pago",
+    "LoginHelpHeading": "¿Necesita ayuda?",
+    "LoginHelpLink": "¿Necesita ayuda?",
+    "LoginNoPlatformFeesHeading": "Sin comisiones de plataforma",
+    "LoginSubmitPrsHeading": "Enviar pull requests",
+    "PaymentDescriptionHeading": "Acerca del historial de pagos",
+    "PaymentUserIdLabel": "Su identificador de usuario",
+    "PaymentUserIdPlaceholder": "Ingrese su identificador de usuario"
+  },
+  "fil": {
+    "LoginBrowseTasksHeading": "Mag-browse ng mga gawain",
+    "LoginEarnMoneyHeading": "Kumita ng pera",
+    "LoginGetPaidHeading": "Tumanggap ng bayad",
+    "LoginHelpHeading": "Kailangan ng tulong?",
+    "LoginHelpLink": "Kailangan ng tulong?",
+    "LoginNoPlatformFeesHeading": "Walang bayad sa plataporma",
+    "LoginSubmitPrsHeading": "Magsumite ng mga pull request",
+    "PaymentDescriptionHeading": "Tungkol sa kasaysayan ng bayad",
+    "PaymentUserIdLabel": "Iyong user ID",
+    "PaymentUserIdPlaceholder": "Ilagay ang iyong user ID"
+  },
+  "fr": {
+    "LoginBrowseTasksHeading": "Parcourir les taches",
+    "LoginEarnMoneyHeading": "Gagner de l'argent",
+    "LoginGetPaidHeading": "Recevoir le paiement",
+    "LoginHelpHeading": "Besoin d'aide ?",
+    "LoginHelpLink": "Besoin d'aide ?",
+    "LoginNoPlatformFeesHeading": "Aucun frais de plateforme",
+    "LoginSubmitPrsHeading": "Soumettre des pull requests",
+    "PaymentDescriptionHeading": "A propos de l'historique des paiements",
+    "PaymentUserIdLabel": "Votre identifiant utilisateur",
+    "PaymentUserIdPlaceholder": "Entrez votre identifiant utilisateur"
+  },
+  "hi": {
+    "LoginBrowseTasksHeading": "कार्य ब्राउज़ करें",
+    "LoginEarnMoneyHeading": "पैसा कमाएं",
+    "LoginGetPaidHeading": "भुगतान प्राप्त करें",
+    "LoginHelpHeading": "मदद चाहिए?",
+    "LoginHelpLink": "मदद चाहिए?",
+    "LoginNoPlatformFeesHeading": "कोई प्लेटफ़ॉर्म शुल्क नहीं",
+    "LoginSubmitPrsHeading": "पुल रिक्वेस्ट जमा करें",
+    "PaymentDescriptionHeading": "भुगतान इतिहास के बारे में",
+    "PaymentUserIdLabel": "आपकी उपयोगकर्ता आईडी",
+    "PaymentUserIdPlaceholder": "अपनी उपयोगकर्ता आईडी दर्ज करें"
+  },
+  "id": {
+    "LoginBrowseTasksHeading": "Jelajahi tugas",
+    "LoginEarnMoneyHeading": "Hasilkan uang",
+    "LoginGetPaidHeading": "Terima pembayaran",
+    "LoginHelpHeading": "Butuh bantuan?",
+    "LoginHelpLink": "Butuh bantuan?",
+    "LoginNoPlatformFeesHeading": "Tanpa biaya platform",
+    "LoginSubmitPrsHeading": "Kirim pull request",
+    "PaymentDescriptionHeading": "Tentang riwayat pembayaran",
+    "PaymentUserIdLabel": "ID pengguna Anda",
+    "PaymentUserIdPlaceholder": "Masukkan ID pengguna Anda"
+  },
+  "it": {
+    "LoginBrowseTasksHeading": "Sfoglia le attivita",
+    "LoginEarnMoneyHeading": "Guadagna denaro",
+    "LoginGetPaidHeading": "Ricevi il pagamento",
+    "LoginHelpHeading": "Hai bisogno di aiuto?",
+    "LoginHelpLink": "Hai bisogno di aiuto?",
+    "LoginNoPlatformFeesHeading": "Nessuna commissione di piattaforma",
+    "LoginSubmitPrsHeading": "Invia pull request",
+    "PaymentDescriptionHeading": "Informazioni sulla cronologia dei pagamenti",
+    "PaymentUserIdLabel": "Il tuo ID utente",
+    "PaymentUserIdPlaceholder": "Inserisci il tuo ID utente"
+  },
+  "ja": {
+    "LoginBrowseTasksHeading": "タスクを閲覧",
+    "LoginEarnMoneyHeading": "報酬を得る",
+    "LoginGetPaidHeading": "支払いを受け取る",
+    "LoginHelpHeading": "ヘルプが必要ですか？",
+    "LoginHelpLink": "ヘルプが必要ですか？",
+    "LoginNoPlatformFeesHeading": "プラットフォーム手数料なし",
+    "LoginSubmitPrsHeading": "プルリクエストを送信",
+    "PaymentDescriptionHeading": "支払い履歴について",
+    "PaymentUserIdLabel": "あなたのユーザーID",
+    "PaymentUserIdPlaceholder": "あなたのユーザーIDを入力"
+  },
+  "ko": {
+    "LoginBrowseTasksHeading": "작업 둘러보기",
+    "LoginEarnMoneyHeading": "수익 얻기",
+    "LoginGetPaidHeading": "대금 받기",
+    "LoginHelpHeading": "도움이 필요하신가요?",
+    "LoginHelpLink": "도움이 필요하신가요?",
+    "LoginNoPlatformFeesHeading": "플랫폼 수수료 없음",
+    "LoginSubmitPrsHeading": "pull request 제출",
+    "PaymentDescriptionHeading": "결제 내역 안내",
+    "PaymentUserIdLabel": "사용자 ID",
+    "PaymentUserIdPlaceholder": "사용자 ID를 입력하세요"
+  },
+  "nl": {
+    "LoginBrowseTasksHeading": "Taken bekijken",
+    "LoginEarnMoneyHeading": "Geld verdienen",
+    "LoginGetPaidHeading": "Betaald worden",
+    "LoginHelpHeading": "Hulp nodig?",
+    "LoginHelpLink": "Hulp nodig?",
+    "LoginNoPlatformFeesHeading": "Geen platformkosten",
+    "LoginSubmitPrsHeading": "Pull requests indienen",
+    "PaymentDescriptionHeading": "Over betalingsgeschiedenis",
+    "PaymentUserIdLabel": "Uw gebruikers-ID",
+    "PaymentUserIdPlaceholder": "Voer uw gebruikers-ID in"
+  },
+  "tr": {
+    "LoginBrowseTasksHeading": "Gorevlere goz at",
+    "LoginEarnMoneyHeading": "Para kazan",
+    "LoginGetPaidHeading": "Odemeni al",
+    "LoginHelpHeading": "Yardima mi ihtiyaciniz var?",
+    "LoginHelpLink": "Yardima mi ihtiyaciniz var?",
+    "LoginNoPlatformFeesHeading": "Platform ucreti yok",
+    "LoginSubmitPrsHeading": "Pull request gonder",
+    "PaymentDescriptionHeading": "Odeme gecmisi hakkinda",
+    "PaymentUserIdLabel": "Kullanici kimliginiz",
+    "PaymentUserIdPlaceholder": "Kullanici kimliginizi girin"
+  }
+}

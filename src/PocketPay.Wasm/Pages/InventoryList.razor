@@ -1,0 +1,89 @@
+@page "/inventory-list"
+@inject NavigationManager Nav
+@inject HttpClient Http
+
+<div class="app-shell">
+    <header class="app-header"><a href="/">← Back</a><h2>Inventory</h2></header>
+    <button @onclick="LoadProducts" disabled="@IsLoading">@(IsLoading ? "Loading..." : "Refresh")</button>
+    <button @onclick="AddNew">+ Add Product</button>
+    @if (ErrorMessage.Length > 0)
+    {
+        <p class="error">@ErrorMessage</p>
+    }
+    <div class="product-list">
+        @foreach (var P in Products)
+        {
+            <div class="card product-card" @onclick="() => EditProduct(P.Id)">
+                <h3>@P.Name</h3>
+                <p>Code: @P.Code | Price: @P.Price.ToString("F2", System.Globalization.CultureInfo.InvariantCulture)</p>
+                <button @onclick:stopPropagation @onclick="() => DeleteProduct(P.Id)">Delete</button>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private bool IsLoading { get; set; }
+    private string ErrorMessage { get; set; } = string.Empty;
+    private List<ProductItem> Products { get; set; } = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadProducts();
+    }
+
+    private async Task LoadProducts()
+    {
+        ErrorMessage = string.Empty;
+        IsLoading = true;
+        try
+        {
+            var Payload = new { Method = "get_products" };
+            var Response = await Http.PostAsJsonAsync("wss-proxy/get-products", Payload);
+            var Result = await Response.Content.ReadFromJsonAsync<ProductsResult>();
+            if (Result is not null && Result.Success)
+            {
+                Products = Result.Items ?? new();
+            }
+            else
+            {
+                ErrorMessage = Result?.Error ?? "Failed to load products";
+            }
+        }
+        catch (Exception Ex)
+        {
+            ErrorMessage = Ex.Message;
+        }
+        finally
+        {
+            IsLoading = false;
+        }
+    }
+
+    private void AddNew()
+    {
+        Nav.NavigateTo("/inventory-edit");
+    }
+
+    private void EditProduct(string Id)
+    {
+        Nav.NavigateTo($"/inventory-edit?id={Id}");
+    }
+
+    private async Task DeleteProduct(string Id)
+    {
+        try
+        {
+            var Payload = new { Method = "delete_product", Payload = new { ProductId = Id } };
+            await Http.PostAsJsonAsync("wss-proxy/delete-product", Payload);
+            await LoadProducts();
+        }
+        catch (Exception Ex)
+        {
+            ErrorMessage = Ex.Message;
+        }
+    }
+
+    private sealed record ProductItem(string Id, string Name, string Code, decimal Price, decimal CostPrice, string? ArticleNumber);
+    private sealed record ProductsResult(bool Success, List<ProductItem>? Items, string? Error);
+}

@@ -1,0 +1,946 @@
+@page "/workbench"
+@implements IDisposable
+@inject INfcWorkbenchService Pulse
+
+<PageTitle>Willow Maze</PageTitle>
+
+<div class="scan-shell">
+    <section class="hero-card">
+        <p class="eyebrow">🌀 Willow Maze</p>
+        <h1>NFC Workbench ✨</h1>
+        <p class="lede">
+            Real Android 36 NFC in one place 📱
+            Reader mode scans live tags, NDEF write runs on tap, raw tech I/O uses the platform `transceive(...)` APIs,
+            and the app can expose both ISO-DEP and NFC-F demo applets for your own protocols 🪄
+        </p>
+        <div class="hero-actions">
+            <button class="action primary" @onclick="StartAsync" disabled="@Pulse.IsListening">▶️ Start reader</button>
+            <button class="action" @onclick="StopAsync" disabled="@(!Pulse.IsListening)">⏸️ Pause</button>
+            <button class="action" @onclick="RefreshAsync">🔄 Refresh</button>
+            <button class="action" @onclick="OpenSettingsAsync">⚙️ NFC settings</button>
+            <a class="action primary" href="" style="text-decoration:none">💳 Tap to Pay</a>
+            @if (Pulse.SupportsTagIntentPreference)
+            {
+                <button class="action" @onclick="OpenRoutingAsync">🛣️ Tag routing</button>
+            }
+        </div>
+        <div class="hero-actions compact">
+            <button class="action" @onclick="ToggleForegroundDispatchAsync">
+                @(Pulse.IsForegroundDispatchEnabled ? "📡 Disable foreground dispatch" : "📡 Enable foreground dispatch")
+            </button>
+            <button class="action" @onclick="FormatTagAsync" disabled="@(_latest is null)">🗂️ Format tag as NDEF</button>
+        </div>
+    </section>
+
+    <section class="status-grid">
+        <article class="panel-card">
+            <h2>📡 Adapter state</h2>
+            <div class="badge-row">
+                <span class="@GetBadgeClass(Pulse.IsSupported)">@(Pulse.IsSupported ? "✅ NFC ready" : "🚫 NFC missing")</span>
+                <span class="@GetBadgeClass(Pulse.IsEnabled)">@(Pulse.IsEnabled ? "⚡ Radio on" : "⚠️ Radio off")</span>
+                <span class="@GetBadgeClass(Pulse.IsListening)">@(Pulse.IsListening ? "🟢 Reader live" : "⏹️ Reader paused")</span>
+                <span class="@GetBadgeClass(Pulse.SupportsHce)">@(Pulse.SupportsHce ? "🪪 HCE yes" : "🚫 HCE no")</span>
+                <span class="@GetBadgeClass(Pulse.SupportsNfcFCardEmulation)">@(Pulse.SupportsNfcFCardEmulation ? "🇯🇵 NFC-F yes" : "🧩 NFC-F no")</span>
+                <span class="@GetBadgeClass(Pulse.SupportsObserveMode)">@(Pulse.SupportsObserveMode ? "👀 Observe mode" : "🫥 No observe mode")</span>
+                <span class="@GetBadgeClass(Pulse.SupportsSecureNfc)">@(Pulse.SupportsSecureNfc ? (Pulse.IsSecureNfcEnabled ? "🔐 Secure NFC on" : "🔓 Secure NFC off") : "🔐 No secure NFC")</span>
+                <span class="@GetBadgeClass(Pulse.SupportsReaderOption)">@(Pulse.SupportsReaderOption ? (Pulse.IsReaderOptionEnabled ? "📖 Reader option on" : "📖 Reader option off") : "📖 No reader option")</span>
+                <span class="@GetBadgeClass(Pulse.IsForegroundDispatchEnabled)">@(Pulse.IsForegroundDispatchEnabled ? "📡 Foreground dispatch on" : "📡 Foreground dispatch off")</span>
+                @if (Pulse.SupportsObserveMode)
+                {
+                    <span class="@GetBadgeClass(Pulse.IsObserveModeEnabled)">@(Pulse.IsObserveModeEnabled ? "🛑 Observing" : "▶️ Transactions")</span>
+                }
+                @if (Pulse.SupportsTagIntentPreference)
+                {
+                    <span class="@GetBadgeClass(Pulse.IsTagIntentAllowed == true)">@(Pulse.IsTagIntentAllowed == true ? "🛣️ Tag intents allowed" : "🚧 Tag intents blocked")</span>
+                }
+                @if (Pulse.HasCustomDiscoveryTechnology)
+                {
+                    <span class="badge good">🔍 Custom discovery</span>
+                }
+            </div>
+            <p class="status-text">@Pulse.StatusText</p>
+            <ul class="detail-list">
+                @foreach (var note in Pulse.CapabilityNotes)
+                {
+                    <li>@note</li>
+                }
+            </ul>
+            <ul class="detail-list">
+                @foreach (var fact in Pulse.AntennaFacts)
+                {
+                    <li>@fact</li>
+                }
+            </ul>
+            <div class="chip-row">
+                <span class="chip">💳 Payment • @Pulse.PreferredPaymentDescription</span>
+                <span class="chip">🛤️ Route • @Pulse.PreferredPaymentRoute</span>
+                @if (Pulse.DefaultNfcSubscriptionId >= 0)
+                {
+                    <span class="chip">📡 Sub ID • @Pulse.DefaultNfcSubscriptionId</span>
+                }
+                <span class="chip">📥 Intent • @Pulse.LastIntentAction</span>
+            </div>
+        </article>
+
+        <article class="panel-card">
+            <h2>🕒 Latest tag</h2>
+            @if (_latest is null)
+            {
+                <p class="empty-state">👀 Nothing captured yet. Start the reader and tap a tag.</p>
+            }
+            else
+            {
+                <p class="snapshot-title">@_latest.Summary</p>
+                <p class="snapshot-time">🗓️ @_latest.CapturedAtUtc.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss")</p>
+                <code class="mono">@_latest.IdentifierHex</code>
+                <div class="chip-row">
+                    <span class="chip">🏭 @_latest.Manufacturer</span>
+                    <span class="chip">🪪 @_latest.CardType</span>
+                </div>
+                <p class="status-text write-note">@_latest.WriteOutcome</p>
+                <div class="hero-actions compact">
+                    <button class="action" @onclick="IgnoreTagAsync">🚫 Ignore tag (@_debounceMs ms)</button>
+                    <input type="number" @bind="_debounceMs" style="width:5em" min="100" max="10000" step="100" />
+                </div>
+            }
+        </article>
+    </section>
+
+    <section class="detail-grid">
+        <article class="panel-card detail-wide">
+            <h2>✍️ Next NDEF write</h2>
+            <p class="status-text">
+                Arm a single write for the next scanned tag. Reader mode must be running when you tap the target tag. 🏷️
+            </p>
+            <div class="form-grid">
+                <label>
+                    <span>Payload kind</span>
+                    <select @bind="_writeKind">
+                        <option value="Text">📝 Text</option>
+                        <option value="Uri">🔗 URI</option>
+                        <option value="Mime">📦 MIME</option>
+                        <option value="External">🌐 External Type</option>
+                        <option value="Aar">📱 Android App Record</option>
+                        <option value="SmartPoster">📲 Smart Poster</option>
+                        <option value="Handover">🤝 Handover Select</option>
+                    </select>
+                </label>
+
+                @if (_writeKind == "Mime")
+                {
+                    <label>
+                        <span>MIME type</span>
+                        <input @bind="_mimeType" placeholder="text/plain" />
+                    </label>
+                }
+
+                @if (_writeKind == "External")
+                {
+                    <label>
+                        <span>Domain</span>
+                        <input @bind="_externalDomain" placeholder="example.com" />
+                    </label>
+                    <label>
+                        <span>Type</span>
+                        <input @bind="_externalType" placeholder="data" />
+                    </label>
+                }
+
+                <label class="wide">
+                    <span>@(_writeKind == "Aar" ? "Package name" : _writeKind == "SmartPoster" ? "URI" : "Payload")</span>
+                    <textarea @bind="_payloadText" rows="4" placeholder="@GetWritePlaceholder()"></textarea>
+                </label>
+
+                <label class="toggle">
+                    <input type="checkbox" @bind="_makeReadOnly" />
+                    <span>🔒 Lock tag after write when supported</span>
+                </label>
+            </div>
+
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="ArmWriteAsync">🪄 Arm next write</button>
+                <button class="action" @onclick="ClearWriteAsync" disabled="@(Pulse.PendingWrite is null)">🧹 Clear pending write</button>
+            </div>
+
+            <div class="badge-row inline-gap">
+                <span class="badge neutral">@(Pulse.PendingWrite is null ? "🧪 No pending write" : Pulse.PendingWrite.Summary)</span>
+                <span class="badge neutral">@Pulse.LastWriteStatus</span>
+            </div>
+        </article>
+
+        <article class="panel-card">
+            <h2>🪪 ISO-DEP applet</h2>
+            <p class="status-text">
+                The app exposes a real `HostApduService` using a custom AID and responds to `SELECT AID` plus `80 CA 00 00`. Pause reader mode before testing it. ✨
+            </p>
+            <div class="chip-row">
+                <span class="chip">🪪 AID @Pulse.HceAidHex</span>
+                @if (Pulse.SupportsAidPrefixRegistration)
+                {
+                    <span class="chip">🔀 AID prefix supported</span>
+                }
+            </div>
+            <p class="status-text">@Pulse.HceStatusText</p>
+            <label class="wide">
+                <span>Response text</span>
+                <textarea @bind="_hceResponseText" rows="3"></textarea>
+            </label>
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="SaveHceAsync">💾 Save APDU text</button>
+                <button class="action" @onclick="PreferHceAsync" disabled="@(!Pulse.SupportsHce)">🪄 Prefer service</button>
+                <button class="action" @onclick="ReleaseHceAsync" disabled="@(!Pulse.IsPreferredService)">🫶 Release preference</button>
+            </div>
+            <ul class="detail-list">
+                <li>📥 `00 A4 04 00 07 F0 77 0A 11 B1 C2 D3`</li>
+                <li>📤 `80 CA 00 00 00`</li>
+                <li>📝 `80 DA 00 00 [len] [data]` (PUT DATA)</li>
+                <li>🔁 `80 EE 00 00 [len] [data]` (ECHO)</li>
+                <li>⏳ `80 E2 00 00 [len] [data]` (ASYNC)</li>
+            </ul>
+        </article>
+
+        <article class="panel-card">
+            <h2>🪪 Dynamic AID management</h2>
+            <p class="status-text">
+                Register additional AIDs for the APDU applet at runtime. The built-in AID always remains active. Enter hex AIDs separated by commas or newlines. 🔀
+            </p>
+            <label class="wide">
+                <span>AID hex values</span>
+                <textarea @bind="_dynamicAidText" rows="3" placeholder="F0010203040506, F0394148148100"></textarea>
+            </label>
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="RegisterAidsAsync">🪪 Register AIDs</button>
+                <button class="action" @onclick="ClearAidsAsync">🧹 Clear dynamic AIDs</button>
+            </div>
+            @if (Pulse.RegisteredHceAids.Count > 0)
+            {
+                <div class="chip-row">
+                    @foreach (var aid in Pulse.RegisteredHceAids)
+                    {
+                        <span class="chip">🪪 @aid</span>
+                    }
+                </div>
+            }
+        </article>
+
+        <article class="panel-card">
+            <h2>📜 ISO-DEP events</h2>
+            @if (Pulse.HceEvents.Count == 0)
+            {
+                <p class="empty-state">🫧 No APDU events yet.</p>
+            }
+            else
+            {
+                <ul class="detail-list">
+                    @foreach (var entry in Pulse.HceEvents)
+                    {
+                        <li>@entry</li>
+                    }
+                </ul>
+            }
+        </article>
+
+        <article class="panel-card">
+            <h2>👀 Observe mode</h2>
+            <p class="status-text">
+                Android 36 can keep the APDU service in passive observe mode, which logs polling frames without completing the transaction. Your APDU service must be preferred first. 🪄
+            </p>
+            <p class="status-text">@Pulse.ObserveModeStatusText</p>
+            <div class="badge-row">
+                <span class="@GetBadgeClass(Pulse.ShouldDefaultToObserveMode)">@(Pulse.ShouldDefaultToObserveMode ? "👀 Default observe on" : "▶️ Default observe off")</span>
+            </div>
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="EnableObserveAsync" disabled="@(!Pulse.SupportsObserveMode || !Pulse.IsPreferredService || Pulse.IsObserveModeEnabled)">👀 Enable observe</button>
+                <button class="action" @onclick="DisableObserveAsync" disabled="@(!Pulse.IsObserveModeEnabled)">🫶 Disable observe</button>
+                <button class="action" @onclick="SetDefaultObserveTrueAsync" disabled="@(!Pulse.SupportsObserveMode || !Pulse.SupportsHce)">👀 Default on</button>
+                <button class="action" @onclick="SetDefaultObserveFalseAsync" disabled="@(!Pulse.ShouldDefaultToObserveMode)">▶️ Default off</button>
+            </div>
+        </article>
+
+        <article class="panel-card">
+            <h2>📡 Polling loop filters</h2>
+            <p class="status-text">
+                Register exact hex or regex-pattern polling loop filters for the APDU service. Matched frames can auto-exit observe mode for transaction. 🔍
+            </p>
+            <div class="form-grid">
+                <label class="wide">
+                    <span>Hex filter</span>
+                    <input @bind="_pollingFilterHex" placeholder="050506070809" />
+                </label>
+                <label class="toggle">
+                    <input type="checkbox" @bind="_pollingAutoTransact" />
+                    <span>🔁 Auto-transact on match</span>
+                </label>
+            </div>
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="AddPollingFilterAsync" disabled="@(!Pulse.SupportsHce)">📡 Add exact filter</button>
+                <button class="action" @onclick="RemovePollingFilterAsync" disabled="@(Pulse.PollingFilters.Count == 0)">🧹 Remove</button>
+            </div>
+            @if (Pulse.PollingFilters.Count > 0)
+            {
+                <div class="chip-row">
+                    @foreach (var filter in Pulse.PollingFilters)
+                    {
+                        <span class="chip">📡 @filter</span>
+                    }
+                </div>
+            }
+            <div class="form-grid">
+                <label class="wide">
+                    <span>Pattern filter (regex)</span>
+                    <input @bind="_pollingPatternFilter" placeholder="05050[0-9A-F]*" />
+                </label>
+            </div>
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="AddPollingPatternFilterAsync" disabled="@(!Pulse.SupportsHce)">🔀 Add pattern filter</button>
+                <button class="action" @onclick="RemovePollingPatternFilterAsync" disabled="@(Pulse.PollingPatternFilters.Count == 0)">🧹 Remove pattern</button>
+            </div>
+            @if (Pulse.PollingPatternFilters.Count > 0)
+            {
+                <div class="chip-row">
+                    @foreach (var pattern in Pulse.PollingPatternFilters)
+                    {
+                        <span class="chip">🔀 @pattern</span>
+                    }
+                </div>
+            }
+        </article>
+    </section>
+
+    <section class="detail-grid">
+        <article class="panel-card detail-wide">
+            <h2>🔍 Discovery technology</h2>
+            <p class="status-text">
+                Override which NFC poll and listen technologies the adapter uses. This affects both reader mode and card emulation discovery. Reset returns to system defaults. @Pulse.DiscoveryStatusText
+            </p>
+            <div class="form-grid">
+                <label class="toggle"><input type="checkbox" @bind="_pollNfcA" /><span>🅰️ Poll NFC-A</span></label>
+                <label class="toggle"><input type="checkbox" @bind="_pollNfcB" /><span>🅱️ Poll NFC-B</span></label>
+                <label class="toggle"><input type="checkbox" @bind="_pollNfcF" /><span>🇯🇵 Poll NFC-F</span></label>
+                <label class="toggle"><input type="checkbox" @bind="_pollNfcV" /><span>🛰️ Poll NFC-V</span></label>
+                <label class="toggle"><input type="checkbox" @bind="_pollBarcode" /><span>🧾 Poll Barcode</span></label>
+                <label class="toggle"><input type="checkbox" @bind="_listenA" /><span>🅰️ Listen passive A</span></label>
+                <label class="toggle"><input type="checkbox" @bind="_listenB" /><span>🅱️ Listen passive B</span></label>
+                <label class="toggle"><input type="checkbox" @bind="_listenF" /><span>🇯🇵 Listen passive F</span></label>
+            </div>
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="SetDiscoveryAsync">🔍 Apply discovery</button>
+                <button class="action" @onclick="ResetDiscoveryAsync" disabled="@(!Pulse.HasCustomDiscoveryTechnology)">🔄 Reset to defaults</button>
+            </div>
+        </article>
+
+        <article class="panel-card detail-wide">
+            <h2>🧪 Raw Tech I/O</h2>
+            <p class="status-text">
+                This uses the real Android raw I/O path. Tap a tag first, keep it in field, then send a hex frame over the selected tech layer. 📡
+            </p>
+            <div class="form-grid">
+                <label>
+                    <span>Technology</span>
+                    <select @bind="_rawTechnology">
+                        <option value="IsoDep">💳 IsoDep</option>
+                        <option value="NfcA">🅰️ NfcA</option>
+                        <option value="NfcB">🅱️ NfcB</option>
+                        <option value="NfcF">🇯🇵 NfcF</option>
+                        <option value="NfcV">🛰️ NfcV</option>
+                        <option value="MifareClassic">🧱 MifareClassic</option>
+                        <option value="MifareUltralight">🌿 MifareUltralight</option>
+                    </select>
+                </label>
+
+                <label class="wide">
+                    <span>Hex command</span>
+                    <input @bind="_rawCommandHex" placeholder="00 A4 04 00 07 F0 77 0A 11 B1 C2 D3" />
+                </label>
+            </div>
+
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="SendRawAsync">📤 Send raw frame</button>
+            </div>
+
+            <div class="badge-row inline-gap">
+                <span class="badge neutral">@Pulse.LastRawStatus</span>
+            </div>
+        </article>
+
+        <article class="panel-card detail-wide">
+            <h2>🧱 MIFARE Classic sector read</h2>
+            <p class="status-text">
+                Authenticate and read a specific MIFARE Classic sector using Key A or Key B. Default key is FFFFFFFFFFFF. All block data is decoded to plaintext. 🔑
+            </p>
+            <div class="form-grid">
+                <label>
+                    <span>Sector</span>
+                    <input type="number" @bind="_mifareClassicSector" min="0" max="39" style="width:5em" />
+                </label>
+                <label>
+                    <span>Key (hex, 6 bytes)</span>
+                    <input @bind="_mifareClassicKey" placeholder="FFFFFFFFFFFF" />
+                </label>
+                <label class="toggle">
+                    <input type="checkbox" @bind="_mifareUseKeyB" />
+                    <span>🔑 Use Key B (default: Key A)</span>
+                </label>
+            </div>
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="ReadMifareClassicSectorAsync" disabled="@(_latest is null)">🧱 Read sector</button>
+            </div>
+        </article>
+
+        <article class="panel-card detail-wide">
+            <h2>🌿 MIFARE Ultralight page read</h2>
+            <p class="status-text">
+                Read a range of pages from a MIFARE Ultralight or NTAG tag. Each page is 4 bytes. All data is decoded to printable ASCII. 📄
+            </p>
+            <div class="form-grid">
+                <label>
+                    <span>Start page</span>
+                    <input type="number" @bind="_ultralightStartPage" min="0" max="255" style="width:5em" />
+                </label>
+                <label>
+                    <span>Page count</span>
+                    <input type="number" @bind="_ultralightPageCount" min="1" max="64" style="width:5em" />
+                </label>
+            </div>
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="ReadMifareUltralightPagesAsync" disabled="@(_latest is null)">🌿 Read pages</button>
+            </div>
+        </article>
+
+        <article class="panel-card detail-wide">
+            <h2>🧱 MIFARE Classic value block ops</h2>
+            <p class="status-text">
+                Perform increment, decrement, transfer, restore on MIFARE Classic value blocks. Also write arbitrary 16-byte blocks. Authenticate first. 💰
+            </p>
+            <div class="form-grid">
+                <label>
+                    <span>Block index</span>
+                    <input type="number" @bind="_mcValueBlock" min="0" max="255" style="width:5em" />
+                </label>
+                <label>
+                    <span>Value (for inc/dec)</span>
+                    <input type="number" @bind="_mcValue" min="0" style="width:6em" />
+                </label>
+                <label>
+                    <span>Auth sector</span>
+                    <input type="number" @bind="_mcValueAuthSector" min="0" max="39" style="width:5em" />
+                </label>
+                <label>
+                    <span>Key (hex)</span>
+                    <input @bind="_mcValueKey" placeholder="FFFFFFFFFFFF" />
+                </label>
+                <label class="toggle">
+                    <input type="checkbox" @bind="_mcValueKeyB" />
+                    <span>🔑 Use Key B</span>
+                </label>
+                <label class="wide">
+                    <span>Block data (hex, 16 bytes for write)</span>
+                    <input @bind="_mcWriteDataHex" placeholder="00112233445566778899AABBCCDDEEFF" />
+                </label>
+            </div>
+            <div class="hero-actions compact">
+                <button class="action" @onclick="McIncrementAsync" disabled="@(_latest is null)">➕ Increment</button>
+                <button class="action" @onclick="McDecrementAsync" disabled="@(_latest is null)">➖ Decrement</button>
+                <button class="action" @onclick="McTransferAsync" disabled="@(_latest is null)">📋 Transfer</button>
+                <button class="action" @onclick="McRestoreAsync" disabled="@(_latest is null)">♻️ Restore</button>
+                <button class="action primary" @onclick="McWriteBlockAsync" disabled="@(_latest is null)">✍️ Write block</button>
+            </div>
+        </article>
+
+        <article class="panel-card detail-wide">
+            <h2>🌿 MIFARE Ultralight write + PWD_AUTH</h2>
+            <p class="status-text">
+                Write a single 4-byte page to a MIFARE Ultralight/NTAG, or authenticate with NTAG PWD_AUTH (0x1B command). 🔑
+            </p>
+            <div class="form-grid">
+                <label>
+                    <span>Page index</span>
+                    <input type="number" @bind="_ulWritePage" min="0" max="255" style="width:5em" />
+                </label>
+                <label>
+                    <span>Data (hex, 4 bytes)</span>
+                    <input @bind="_ulWriteDataHex" placeholder="DEADBEEF" />
+                </label>
+                <label>
+                    <span>Password (hex, 4 bytes)</span>
+                    <input @bind="_ulPasswordHex" placeholder="FFFFFFFF" />
+                </label>
+            </div>
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="UlWritePageAsync" disabled="@(_latest is null)">✍️ Write page</button>
+                <button class="action" @onclick="UlPwdAuthAsync" disabled="@(_latest is null)">🔑 PWD_AUTH</button>
+            </div>
+        </article>
+
+        <article class="panel-card">
+            <h2>⏱️ Tech timeout</h2>
+            <p class="status-text">
+                Set the I/O timeout for a specific tag technology. Applies to the current tag connection. ⏱️
+            </p>
+            <div class="form-grid">
+                <label>
+                    <span>Technology</span>
+                    <select @bind="_timeoutTech">
+                        <option value="NfcA">🅰️ NfcA</option>
+                        <option value="NfcF">🇯🇵 NfcF</option>
+                        <option value="IsoDep">💳 IsoDep</option>
+                        <option value="MifareClassic">🧱 MifareClassic</option>
+                        <option value="MifareUltralight">🌿 MifareUltralight</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Timeout (ms)</span>
+                    <input type="number" @bind="_timeoutMs" min="100" max="60000" style="width:6em" />
+                </label>
+            </div>
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="SetTimeoutAsync" disabled="@(_latest is null)">⏱️ Set timeout</button>
+            </div>
+        </article>
+
+        <article class="panel-card">
+            <h2>🪪 System AID management</h2>
+            <p class="status-text">
+                Register, remove, and query AIDs through the CardEmulation system API. These persist across app restarts. 📋
+            </p>
+            <div class="form-grid">
+                <label>
+                    <span>Category</span>
+                    <select @bind="_aidCategory">
+                        <option value="other">Other</option>
+                        <option value="payment">Payment</option>
+                    </select>
+                </label>
+                <label class="wide">
+                    <span>AIDs (hex, comma-separated)</span>
+                    <input @bind="_systemAidText" placeholder="F0010203040506" />
+                </label>
+            </div>
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="RegisterSystemAidsAsync">🪪 Register</button>
+                <button class="action" @onclick="RemoveSystemAidsAsync">🧹 Remove</button>
+                <button class="action" @onclick="QuerySystemAidsAsync">🔍 Query</button>
+            </div>
+            <div class="badge-row">
+                <span class="@GetBadgeClass(Pulse.IsDefaultServiceForCategory)">@(Pulse.IsDefaultServiceForCategory ? "✅ Default for category" : "⬜ Not default")</span>
+                <span class="badge neutral">🗂️ Selection: @Pulse.SelectionModeForCategory</span>
+            </div>
+            @if (Pulse.RegisteredSystemAids.Count > 0)
+            {
+                <div class="chip-row">
+                    @foreach (var aid in Pulse.RegisteredSystemAids)
+                    {
+                        <span class="chip">🪪 @aid</span>
+                    }
+                </div>
+            }
+        </article>
+
+        <article class="panel-card">
+            <h2>📡 Adapter state events</h2>
+            @if (Pulse.AdapterStateEvents.Count == 0)
+            {
+                <p class="empty-state">🫧 No adapter state changes yet.</p>
+            }
+            else
+            {
+                <ul class="detail-list">
+                    @foreach (var entry in Pulse.AdapterStateEvents)
+                    {
+                        <li>@entry</li>
+                    }
+                </ul>
+            }
+        </article>
+
+        <article class="panel-card">
+            <h2>🔐 SE transaction events</h2>
+            @if (Pulse.SeTransactionEvents.Count == 0)
+            {
+                <p class="empty-state">🫧 No secure element transactions detected.</p>
+            }
+            else
+            {
+                <ul class="detail-list">
+                    @foreach (var entry in Pulse.SeTransactionEvents)
+                    {
+                        <li>@entry</li>
+                    }
+                </ul>
+            }
+        </article>
+
+        <article class="panel-card">
+            <h2>📜 Raw events</h2>
+            @if (Pulse.RawEvents.Count == 0)
+            {
+                <p class="empty-state">🫧 No raw frames sent yet.</p>
+            }
+            else
+            {
+                <ul class="detail-list">
+                    @foreach (var entry in Pulse.RawEvents)
+                    {
+                        <li>@entry</li>
+                    }
+                </ul>
+            }
+        </article>
+
+        <article class="panel-card">
+            <h2>🧩 NFC-F applet</h2>
+            <p class="status-text">
+                This is a real `HostNfcFService` with enable and disable flow through Android's `NfcFCardEmulation` APIs. Pause reader mode before testing it. 🌊
+            </p>
+            <div class="chip-row">
+                <span class="chip">🏷️ System Code @Pulse.HceFSystemCodeHex</span>
+                <span class="chip">🪪 NFCID2 @Pulse.HceFNfcid2Hex</span>
+                <span class="chip">🎴 T3T PMm @Pulse.HceFT3tPmmHex</span>
+                <span class="chip">@(Pulse.IsHceFEnabled ? "🟢 NFC-F enabled" : "⏹️ NFC-F disabled")</span>
+            </div>
+            <p class="status-text">@Pulse.HceFStatusText</p>
+            <label class="wide">
+                <span>NFC-F response text</span>
+                <textarea @bind="_hceFResponseText" rows="3"></textarea>
+            </label>
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="SaveHceFAsync">💾 Save NFC-F text</button>
+                <button class="action" @onclick="EnableHceFAsync" disabled="@(!Pulse.SupportsNfcFCardEmulation)">🟢 Enable NFC-F</button>
+                <button class="action" @onclick="DisableHceFAsync" disabled="@(!Pulse.IsHceFEnabled)">⏹️ Disable NFC-F</button>
+            </div>
+        </article>
+
+        <article class="panel-card">
+            <h2>📜 NFC-F events</h2>
+            @if (Pulse.HceFEvents.Count == 0)
+            {
+                <p class="empty-state">🫧 No NFC-F events yet.</p>
+            }
+            else
+            {
+                <ul class="detail-list">
+                    @foreach (var entry in Pulse.HceFEvents)
+                    {
+                        <li>@entry</li>
+                    }
+                </ul>
+            }
+        </article>
+    </section>
+
+    @if (_latest is not null)
+    {
+        <section class="detail-grid">
+            <article class="panel-card">
+                <h2>🧰 Tech stack</h2>
+                <div class="chip-row">
+                    @foreach (var item in _latest.Technologies)
+                    {
+                        <span class="chip">🧩 @item</span>
+                    }
+                </div>
+                <div class="headline-grid">
+                    @foreach (var fact in _latest.HeadlineFacts)
+                    {
+                        <div class="headline-chip">@fact</div>
+                    }
+                </div>
+            </article>
+
+            <article class="panel-card">
+                <h2>📚 NDEF records</h2>
+                @if (_latest.Records.Count == 0)
+                {
+                    <p class="empty-state">📭 No NDEF records decoded from the latest tag.</p>
+                }
+                else
+                {
+                    <div class="record-grid">
+                        @foreach (var record in _latest.Records)
+                        {
+                            <article class="record-card">
+                                <p class="record-kind">@record.Icon @record.Kind</p>
+                                <p class="record-summary">@record.Summary</p>
+                                @if (!string.IsNullOrEmpty(record.LanguageCode))
+                                {
+                                    <p class="record-meta">🌍 @record.LanguageCode • @record.Encoding</p>
+                                }
+                                <code class="mono mini">@record.PayloadHex</code>
+                                @if (!string.IsNullOrEmpty(record.TypeHex))
+                                {
+                                    <code class="mono mini">type: @record.TypeHex</code>
+                                }
+                                @if (!string.IsNullOrEmpty(record.IdHex))
+                                {
+                                    <code class="mono mini">id: @record.IdHex</code>
+                                }
+                                @if (record.SubRecords.Count > 0)
+                                {
+                                    <div class="record-grid nested">
+                                        @foreach (var sub in record.SubRecords)
+                                        {
+                                            <article class="record-card nested">
+                                                <p class="record-kind">@sub.Icon @sub.Kind</p>
+                                                <p class="record-summary">@sub.Summary</p>
+                                                <code class="mono mini">@sub.PayloadHex</code>
+                                            </article>
+                                        }
+                                    </div>
+                                }
+                            </article>
+                        }
+                    </div>
+                }
+            </article>
+
+            @if (_latest.MifareClassicSectors.Count > 0)
+            {
+                <article class="panel-card detail-wide">
+                    <h2>🧱 MIFARE Classic dump</h2>
+                    @foreach (var sector in _latest.MifareClassicSectors)
+                    {
+                        <div class="sector-header">Sector @sector.SectorIndex (block @sector.FirstBlock+) • key @sector.KeyUsed</div>
+                        @foreach (var block in sector.Blocks)
+                        {
+                            <div class="block-row">
+                                <span class="block-index">B@block.BlockIndex</span>
+                                <code class="mono mini">@block.DataHex</code>
+                                <span class="block-plain">@block.Plaintext</span>
+                                <span class="block-type">[@block.BlockType]</span>
+                            </div>
+                        }
+                    }
+                </article>
+            }
+
+            @if (_latest.MifareUltralightPages.Count > 0)
+            {
+                <article class="panel-card detail-wide">
+                    <h2>🌿 MIFARE Ultralight dump</h2>
+                    @foreach (var pg in _latest.MifareUltralightPages)
+                    {
+                        <div class="block-row">
+                            <span class="block-index">P@(pg.PageIndex)</span>
+                            <code class="mono mini">@pg.DataHex</code>
+                            <span class="block-plain">@pg.Plaintext</span>
+                            <span class="block-type">[@pg.PageType]</span>
+                        </div>
+                    }
+                </article>
+            }
+
+            <article class="panel-card detail-wide">
+                <h2>🧾 Tech details</h2>
+                <ul class="detail-list">
+                    @foreach (var line in _latest.Details)
+                    {
+                        <li>@line</li>
+                    }
+                </ul>
+            </article>
+        </section>
+    }
+
+    <section class="detail-grid">
+        <article class="panel-card detail-wide">
+            <h2>📋 JSONL logs</h2>
+            <p class="status-text">
+                All NFC events are logged in plaintext JSONL format. Each line is a self-contained JSON object with stream, eventType, timestampUtc, and payload fields. 📝
+            </p>
+            <div class="hero-actions compact">
+                <button class="action @(_activeLog == "session" ? "primary" : "")" @onclick='() => _activeLog = "session"'>📋 Session</button>
+                <button class="action @(_activeLog == "tag" ? "primary" : "")" @onclick='() => _activeLog = "tag"'>🏷️ Tag</button>
+                <button class="action @(_activeLog == "raw" ? "primary" : "")" @onclick='() => _activeLog = "raw"'>🧪 Raw</button>
+                <button class="action @(_activeLog == "hce" ? "primary" : "")" @onclick='() => _activeLog = "hce"'>🪪 HCE</button>
+                <button class="action @(_activeLog == "hcef" ? "primary" : "")" @onclick='() => _activeLog = "hcef"'>🧩 HCE-F</button>
+                <button class="action @(_activeLog == "adapter" ? "primary" : "")" @onclick='() => _activeLog = "adapter"'>📡 Adapter</button>
+                <button class="action @(_activeLog == "mifare_classic" ? "primary" : "")" @onclick='() => _activeLog = "mifare_classic"'>🧱 Mifare Classic</button>
+                <button class="action @(_activeLog == "mifare_ultralight" ? "primary" : "")" @onclick='() => _activeLog = "mifare_ultralight"'>🌿 Mifare Ultralight</button>
+                <button class="action @(_activeLog == "foreground" ? "primary" : "")" @onclick='() => _activeLog = "foreground"'>📡 Foreground</button>
+                <button class="action @(_activeLog == "adapter_state" ? "primary" : "")" @onclick='() => _activeLog = "adapter_state"'>📡 State</button>
+                <button class="action @(_activeLog == "se_transaction" ? "primary" : "")" @onclick='() => _activeLog = "se_transaction"'>🔐 SE</button>
+                <button class="action @(_activeLog == "aid_mgmt" ? "primary" : "")" @onclick='() => _activeLog = "aid_mgmt"'>🪪 AIDs</button>
+                <button class="action @(_activeLog == "nfc_events" ? "primary" : "")" @onclick='() => _activeLog = "nfc_events"'>⚠️ Events</button>
+            </div>
+            <pre class="jsonl-viewer">@GetActiveLogContent()</pre>
+        </article>
+    </section>
+</div>
+
+@code {
+    private NfcTagSnapshot? _latest;
+    private string _writeKind = nameof(NdefPayloadKind.Text);
+    private string _payloadText = "Hello from Willow Maze ✨";
+    private string _mimeType = "text/plain";
+    private string _externalDomain = "example.com";
+    private string _externalType = "data";
+    private bool _makeReadOnly;
+    private string _rawTechnology = "IsoDep";
+    private string _rawCommandHex = "00 A4 04 00 07 F0 77 0A 11 B1 C2 D3";
+    private string _hceResponseText = "✨ Willow Maze demo payload";
+    private string _hceFResponseText = "✨ Willow Maze flare payload";
+    private string _dynamicAidText = string.Empty;
+    private string _pollingFilterHex = string.Empty;
+    private string _pollingPatternFilter = string.Empty;
+    private bool _pollingAutoTransact;
+    private int _debounceMs = 1500;
+    private string _activeLog = "session";
+    private bool _pollNfcA = true;
+    private bool _pollNfcB = true;
+    private bool _pollNfcF = true;
+    private bool _pollNfcV = true;
+    private bool _pollBarcode = true;
+    private bool _listenA = true;
+    private bool _listenB = true;
+    private bool _listenF = true;
+    private int _mifareClassicSector;
+    private string _mifareClassicKey = "FFFFFFFFFFFF";
+    private bool _mifareUseKeyB;
+    private int _ultralightStartPage;
+    private int _ultralightPageCount = 16;
+    private int _mcValueBlock = 4;
+    private int _mcValue = 1;
+    private int _mcValueAuthSector;
+    private string _mcValueKey = "FFFFFFFFFFFF";
+    private bool _mcValueKeyB;
+    private string _mcWriteDataHex = string.Empty;
+    private int _ulWritePage = 4;
+    private string _ulWriteDataHex = string.Empty;
+    private string _ulPasswordHex = "FFFFFFFF";
+    private string _timeoutTech = "IsoDep";
+    private int _timeoutMs = 2000;
+    private string _aidCategory = "other";
+    private string _systemAidText = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Pulse.Changed += HandleChanged;
+        _latest = Pulse.LatestTag;
+        _hceResponseText = Pulse.HceResponseText;
+        _hceFResponseText = Pulse.HceFResponseText;
+        await Pulse.RefreshAsync();
+    }
+
+    private Task StartAsync() => Pulse.StartReaderAsync();
+    private Task StopAsync() => Pulse.StopReaderAsync();
+    private Task RefreshAsync() => Pulse.RefreshAsync();
+    private Task OpenSettingsAsync() => Pulse.OpenNfcSettingsAsync();
+    private Task OpenRoutingAsync() => Pulse.OpenTagRoutingAsync();
+    private Task ClearWriteAsync() => Pulse.ClearWriteAsync();
+    private Task SendRawAsync() => Pulse.SendRawAsync(_rawTechnology, _rawCommandHex);
+    private Task SaveHceAsync() => Pulse.UpdateHceResponseAsync(_hceResponseText);
+    private Task SaveHceFAsync() => Pulse.UpdateHceFResponseAsync(_hceFResponseText);
+    private Task PreferHceAsync() => Pulse.SetPreferredServiceAsync(true);
+    private Task ReleaseHceAsync() => Pulse.SetPreferredServiceAsync(false);
+    private Task EnableHceFAsync() => Pulse.SetHceFEnabledAsync(true);
+    private Task DisableHceFAsync() => Pulse.SetHceFEnabledAsync(false);
+    private Task EnableObserveAsync() => Pulse.SetObserveModeEnabledAsync(true);
+    private Task DisableObserveAsync() => Pulse.SetObserveModeEnabledAsync(false);
+    private Task SetDefaultObserveTrueAsync() => Pulse.SetDefaultObserveModeAsync(true);
+    private Task SetDefaultObserveFalseAsync() => Pulse.SetDefaultObserveModeAsync(false);
+    private Task IgnoreTagAsync() => Pulse.IgnoreCurrentTagAsync(_debounceMs);
+    private Task RegisterAidsAsync() => Pulse.RegisterHceAidsAsync(_dynamicAidText);
+    private Task ClearAidsAsync() => Pulse.ClearHceAidsAsync();
+    private Task AddPollingFilterAsync() => Pulse.AddPollingFilterAsync(_pollingFilterHex, _pollingAutoTransact);
+    private Task RemovePollingFilterAsync() => Pulse.RemovePollingFilterAsync(_pollingFilterHex);
+    private Task AddPollingPatternFilterAsync() => Pulse.AddPollingPatternFilterAsync(_pollingPatternFilter, _pollingAutoTransact);
+    private Task RemovePollingPatternFilterAsync() => Pulse.RemovePollingPatternFilterAsync(_pollingPatternFilter);
+    private Task ResetDiscoveryAsync() => Pulse.ResetDiscoveryTechnologyAsync();
+    private Task FormatTagAsync() => Pulse.FormatTagAsync();
+    private Task ToggleForegroundDispatchAsync() => Pulse.ToggleForegroundDispatchAsync(!Pulse.IsForegroundDispatchEnabled);
+    private Task ReadMifareClassicSectorAsync() => Pulse.ReadMifareClassicSectorAsync(_mifareClassicSector, _mifareClassicKey, _mifareUseKeyB);
+    private Task ReadMifareUltralightPagesAsync() => Pulse.ReadMifareUltralightPageRangeAsync(_ultralightStartPage, _ultralightPageCount);
+    private Task McIncrementAsync() => Pulse.MifareClassicIncrementAsync(_mcValueBlock, _mcValue, _mcValueAuthSector, _mcValueKey, _mcValueKeyB);
+    private Task McDecrementAsync() => Pulse.MifareClassicDecrementAsync(_mcValueBlock, _mcValue, _mcValueAuthSector, _mcValueKey, _mcValueKeyB);
+    private Task McTransferAsync() => Pulse.MifareClassicTransferAsync(_mcValueBlock, _mcValueAuthSector, _mcValueKey, _mcValueKeyB);
+    private Task McRestoreAsync() => Pulse.MifareClassicRestoreAsync(_mcValueBlock, _mcValueAuthSector, _mcValueKey, _mcValueKeyB);
+    private Task McWriteBlockAsync() => Pulse.MifareClassicWriteBlockAsync(_mcValueBlock, _mcWriteDataHex, _mcValueAuthSector, _mcValueKey, _mcValueKeyB);
+    private Task UlWritePageAsync() => Pulse.MifareUltralightWritePageAsync(_ulWritePage, _ulWriteDataHex);
+    private Task UlPwdAuthAsync() => Pulse.MifareUltralightPwdAuthAsync(_ulPasswordHex);
+    private Task SetTimeoutAsync() => Pulse.SetTechTimeoutAsync(_timeoutTech, _timeoutMs);
+    private Task RegisterSystemAidsAsync() => Pulse.RegisterSystemAidsAsync(_aidCategory, _systemAidText);
+    private Task RemoveSystemAidsAsync() => Pulse.RemoveSystemAidsAsync(_aidCategory);
+    private Task QuerySystemAidsAsync() => Pulse.QuerySystemAidsAsync(_aidCategory);
+
+    private Task ArmWriteAsync()
+    {
+        var kind = Enum.TryParse<NdefPayloadKind>(_writeKind, true, out var parsed)
+            ? parsed
+            : NdefPayloadKind.Text;
+
+        return Pulse.ArmWriteAsync(new NdefWriteDraft(
+            kind,
+            _payloadText,
+            _mimeType,
+            _externalDomain,
+            _externalType,
+            _makeReadOnly,
+            DateTimeOffset.UtcNow));
+    }
+
+    private Task SetDiscoveryAsync()
+    {
+        var pollFlags = Android.Nfc.NfcReaderFlags.NoPlatformSounds;
+        if (_pollNfcA) pollFlags |= Android.Nfc.NfcReaderFlags.NfcA;
+        if (_pollNfcB) pollFlags |= Android.Nfc.NfcReaderFlags.NfcB;
+        if (_pollNfcF) pollFlags |= Android.Nfc.NfcReaderFlags.NfcF;
+        if (_pollNfcV) pollFlags |= Android.Nfc.NfcReaderFlags.NfcV;
+        if (_pollBarcode) pollFlags |= Android.Nfc.NfcReaderFlags.NfcBarcode;
+
+        var listenFlags = Android.Nfc.NfcListenFlags.Disable;
+        if (_listenA) listenFlags |= Android.Nfc.NfcListenFlags.NfcPassiveA;
+        if (_listenB) listenFlags |= Android.Nfc.NfcListenFlags.NfcPassiveB;
+        if (_listenF) listenFlags |= Android.Nfc.NfcListenFlags.NfcPassiveF;
+
+        return Pulse.SetDiscoveryTechnologyAsync(pollFlags, listenFlags);
+    }
+
+    private string GetWritePlaceholder()
+    {
+        return _writeKind switch
+        {
+            "Aar" => "com.example.myapp",
+            "SmartPoster" => "https://example.com",
+            "External" => "custom payload data",
+            "Uri" => "https://example.com",
+            "Handover" => "handover payload",
+            _ => "Hello from Willow Maze ✨"
+        };
+    }
+
+    private string GetActiveLogContent()
+    {
+        return _activeLog switch
+        {
+            "session" => string.IsNullOrWhiteSpace(Pulse.SessionJsonl) ? "(no session events yet)" : Pulse.SessionJsonl,
+            "tag" => string.IsNullOrWhiteSpace(Pulse.LatestTagJsonl) ? "(no tag scanned yet)" : Pulse.LatestTagJsonl,
+            "raw" => string.IsNullOrWhiteSpace(Pulse.RawJsonl) ? "(no raw events yet)" : Pulse.RawJsonl,
+            "hce" => string.IsNullOrWhiteSpace(Pulse.HceJsonl) ? "(no HCE events yet)" : Pulse.HceJsonl,
+            "hcef" => string.IsNullOrWhiteSpace(Pulse.HceFJsonl) ? "(no HCE-F events yet)" : Pulse.HceFJsonl,
+            "adapter" => Pulse.AdapterSnapshotJson,
+            "mifare_classic" => string.IsNullOrWhiteSpace(Pulse.MifareClassicDumpJsonl) ? "(no MIFARE Classic reads yet)" : Pulse.MifareClassicDumpJsonl,
+            "mifare_ultralight" => string.IsNullOrWhiteSpace(Pulse.MifareUltralightDumpJsonl) ? "(no MIFARE Ultralight reads yet)" : Pulse.MifareUltralightDumpJsonl,
+            "foreground" => string.IsNullOrWhiteSpace(Pulse.ForegroundDispatchJsonl) ? "(no foreground dispatch events yet)" : Pulse.ForegroundDispatchJsonl,
+            "adapter_state" => string.IsNullOrWhiteSpace(Pulse.AdapterStateJsonl) ? "(no adapter state events yet)" : Pulse.AdapterStateJsonl,
+            "se_transaction" => string.IsNullOrWhiteSpace(Pulse.SeTransactionJsonl) ? "(no SE transactions yet)" : Pulse.SeTransactionJsonl,
+            "aid_mgmt" => string.IsNullOrWhiteSpace(Pulse.AidManagementJsonl) ? "(no AID management events yet)" : Pulse.AidManagementJsonl,
+            "nfc_events" => string.IsNullOrWhiteSpace(Pulse.NfcEventCallbackJsonl) ? "(no NFC event callbacks yet)" : Pulse.NfcEventCallbackJsonl,
+            _ => "(select a log stream)"
+        };
+    }
+
+    private void HandleChanged(object? sender, EventArgs e)
+    {
+        _latest = Pulse.LatestTag;
+        _hceResponseText = Pulse.HceResponseText;
+        _hceFResponseText = Pulse.HceFResponseText;
+        _ = InvokeAsync(StateHasChanged);
+    }
+
+    private static string GetBadgeClass(bool value) => value ? "badge good" : "badge bad";
+
+    public void Dispose()
+    {
+        Pulse.Changed -= HandleChanged;
+    }
+}

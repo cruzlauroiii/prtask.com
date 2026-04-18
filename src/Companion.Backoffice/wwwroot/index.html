@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Transpiler Companion Backoffice</title>
+<link rel="stylesheet" href="css/backoffice.css">
+</head>
+<body>
+<div class="Header">
+<span id="StatusDot" class="StatusDot Disconnected"></span>
+<h1>Transpiler Companion Backoffice</h1>
+<span class="DeviceInfo" id="DeviceInfo">Connecting...</span>
+</div>
+<div class="StatusBar">
+<span>Status: <b id="SvcStatus">--</b></span>
+<span>Uptime: <b id="SvcUptime">--</b></span>
+<span>Logs: <b id="SvcLogCount">0</b></span>
+<span>Events: <b id="SvcEventCount">0</b></span>
+<span>Monitored: <b id="SvcMonitored">all</b></span>
+<span>WSS: <b id="WsState">Closed</b></span>
+<span>ADB: <b id="AdbState">--</b></span>
+</div>
+<div class="Tabs">
+<div class="Tab Active" data-panel="LogsPanel">Logs</div>
+<div class="Tab" data-panel="EventsPanel">Events</div>
+<div class="Tab" data-panel="ScreenPanel">Screen</div>
+<div class="Tab" data-panel="TokensPanel">Tokens</div>
+<div class="Tab" data-panel="ControlsPanel">Controls</div>
+<div class="Tab" data-panel="DevicePanel">Device</div>
+<div class="Tab" data-panel="PermissionsPanel">Permissions</div>
+</div>
+<div id="LogsPanel" class="Panel Active">
+<div class="LogToolbar">
+<input type="text" class="SearchBox" id="LogSearch" placeholder="Filter logs...">
+<button class="ControlBtn Danger" onclick="SendCommand('Clear')">Clear</button>
+</div>
+<div class="LogList" id="LogList"></div>
+</div>
+<div id="EventsPanel" class="Panel">
+<div id="EventList"></div>
+</div>
+<div id="ScreenPanel" class="Panel">
+<div class="ScreenDump" id="ScreenDump">No screen data</div>
+</div>
+<div id="TokensPanel" class="Panel">
+<div class="TokenBox">
+<div class="TokenLabel">JWT</div>
+<div class="TokenValue" id="JwtValue">--</div>
+<button class="CopyBtn" onclick="CopyText('JwtValue')">Copy</button>
+</div>
+<div class="TokenBox">
+<div class="TokenLabel">Device Token</div>
+<div class="TokenValue" id="DeviceTokenValue">--</div>
+<button class="CopyBtn" onclick="CopyText('DeviceTokenValue')">Copy</button>
+</div>
+</div>
+<div id="ControlsPanel" class="Panel">
+<div class="BtnRow">
+<button class="ControlBtn Success" onclick="SendCommand('Start')">Start (ADB)</button>
+<button class="ControlBtn" onclick="SendCommand('Restart')">Restart</button>
+<button class="ControlBtn Danger" onclick="SendCommand('Kill')">Kill</button>
+</div>
+<div class="MonitorInput">
+<input type="text" id="MonitorPkg" placeholder="Package name (empty = all)">
+<button class="ControlBtn" onclick="SetMonitor()">Set Monitor</button>
+</div>
+</div>
+<div id="DevicePanel" class="Panel">
+<div class="DeviceGrid" id="DeviceGrid">
+<div class="DeviceCard">
+<h3>Device Info</h3>
+<div class="DeviceRow"><span class="DeviceLabel">Model</span><span class="DeviceValue" id="DevModel">--</span></div>
+<div class="DeviceRow"><span class="DeviceLabel">Android</span><span class="DeviceValue" id="DevAndroid">--</span></div>
+<div class="DeviceRow"><span class="DeviceLabel">API Level</span><span class="DeviceValue" id="DevApi">--</span></div>
+<div class="DeviceRow"><span class="DeviceLabel">Serial</span><span class="DeviceValue" id="DevSerial">--</span></div>
+<div class="DeviceRow"><span class="DeviceLabel">Battery</span><span class="DeviceValue" id="DevBattery">--</span></div>
+</div>
+<div class="DeviceCard">
+<h3>ADB Connection</h3>
+<div class="DeviceRow"><span class="DeviceLabel">Status</span><span class="DeviceValue" id="AdbConnStatus">--</span></div>
+<div class="DeviceRow"><span class="DeviceLabel">Device Serial</span><span class="DeviceValue" id="AdbSerial">--</span></div>
+<div class="DeviceRow"><span class="DeviceLabel">WiFi Debug IP:Port</span><span class="DeviceValue" id="AdbWifiAddr">--</span></div>
+</div>
+<div class="DeviceCard">
+<h3>Developer Options</h3>
+<div class="DeviceRow"><span class="DeviceLabel">Dev Options</span><span class="DeviceValue" id="DevOptions">--</span></div>
+<div class="DeviceRow"><span class="DeviceLabel">USB Debugging</span><span class="DeviceValue" id="DevUsb">--</span></div>
+<div class="DeviceRow"><span class="DeviceLabel">WiFi Debugging</span><span class="DeviceValue" id="DevWifi">--</span></div>
+</div>
+<div class="BtnRow">
+<button class="ControlBtn Success" onclick="SendCommand('DevOptOn')">Dev Options ON</button>
+<button class="ControlBtn Danger" onclick="SendCommand('DevOptOff')">Dev Options OFF</button>
+</div>
+<div class="BtnRow">
+<button class="ControlBtn Success" onclick="SendCommand('AdbOn')">ADB ON</button>
+<button class="ControlBtn Danger" onclick="SendCommand('AdbOff')">ADB OFF</button>
+</div>
+<div class="BtnRow">
+<button class="ControlBtn Success" onclick="SendCommand('WifiDebugOn')">WiFi Debug ON</button>
+<button class="ControlBtn Danger" onclick="SendCommand('WifiDebugOff')">WiFi Debug OFF</button>
+</div>
+<div class="BtnRow">
+<button class="ControlBtn" onclick="RefreshDevice()">Refresh</button>
+</div>
+</div>
+</div>
+<div id="PermissionsPanel" class="Panel">
+<div class="LogToolbar">
+<input type="text" class="SearchBox" id="PermSearch" placeholder="Filter permissions...">
+<button class="ControlBtn" onclick="RefreshPermissions()">Refresh</button>
+</div>
+<div class="PermGrid" id="PermGrid"></div>
+</div>
+<script>
+var ActiveTab = "LogsPanel";
+var LogSearchFilter = "";
+var PermSearchFilter = "";
+var AutoScroll = true;
+var Socket = null;
+var ReconnectDelay = 1000;
+var LastLogs = [];
+var LastEvents = [];
+var PermissionsData = [];
+
+function ConnectWebSocket() {
+    var WsUrl = "wss://" + window.location.host + "/ws";
+    Socket = new WebSocket(WsUrl);
+    document.getElementById("WsState").textContent = "Connecting";
+
+    Socket.onopen = function() {
+        document.getElementById("WsState").textContent = "Open";
+        ReconnectDelay = 1000;
+    };
+
+    Socket.onclose = function() {
+        document.getElementById("WsState").textContent = "Closed";
+        document.getElementById("StatusDot").className = "StatusDot Disconnected";
+        document.getElementById("DeviceInfo").textContent = "Reconnecting...";
+        setTimeout(function() {
+            ReconnectDelay = Math.min(ReconnectDelay * 2, 10000);
+            ConnectWebSocket();
+        }, ReconnectDelay);
+    };
+
+    Socket.onerror = function() {
+        document.getElementById("WsState").textContent = "Error";
+    };
+
+    Socket.onmessage = function(Event) {
+        var Msg = JSON.parse(Event.data);
+
+        if (Msg.Type === "Discovery") {
+            var Dot = document.getElementById("StatusDot");
+            if (Msg.Connected) {
+                Dot.className = "StatusDot Connected";
+                document.getElementById("DeviceInfo").textContent = "Connected to " + Msg.Ip;
+            } else {
+                Dot.className = "StatusDot Disconnected";
+                document.getElementById("DeviceInfo").textContent = "Discovering companion...";
+            }
+            return;
+        }
+
+        if (Msg.Type === "Status" && Msg.Data) {
+            var D = Msg.Data;
+            document.getElementById("SvcStatus").textContent = D.Status || "--";
+            document.getElementById("SvcUptime").textContent = D.Uptime ? FormatUptime(D.Uptime) : "--";
+            document.getElementById("SvcLogCount").textContent = D.LogCount || 0;
+            document.getElementById("SvcEventCount").textContent = D.EventCount || 0;
+            document.getElementById("SvcMonitored").textContent = D.MonitoredPackage || "all";
+            if (D.Status === "Running") {
+                document.getElementById("StatusDot").className = "StatusDot Connected";
+            }
+            return;
+        }
+
+        if (Msg.Type === "Logs" && Array.isArray(Msg.Data)) { RenderLogs(Msg.Data); return; }
+        if (Msg.Type === "Events" && Array.isArray(Msg.Data)) { RenderEvents(Msg.Data); return; }
+
+        if (Msg.Type === "Token" && Msg.Data) {
+            document.getElementById("JwtValue").textContent = Msg.Data.Jwt || "--";
+            document.getElementById("DeviceTokenValue").textContent = Msg.Data.DeviceToken || "--";
+            return;
+        }
+
+        if (Msg.Type === "Screen" && Array.isArray(Msg.Data)) {
+            document.getElementById("ScreenDump").textContent = Msg.Data.join("\n");
+            return;
+        }
+
+        if (Msg.Type === "DeviceInfo" && Msg.Data) { RenderDeviceInfo(Msg.Data); return; }
+        if (Msg.Type === "Permissions" && Msg.Data) { RenderPermissions(Msg.Data); return; }
+        if (Msg.Type === "Ack") { console.log("Ack:", Msg.Action, Msg.Response); return; }
+    };
+}
+
+function SendCommand(Action, Extra) {
+    if (!Socket || Socket.readyState !== WebSocket.OPEN) return;
+    var Cmd = { Action: Action };
+    if (Extra) { for (var K in Extra) { Cmd[K] = Extra[K]; } }
+    Socket.send(JSON.stringify(Cmd));
+}
+
+function SetMonitor() {
+    var Pkg = document.getElementById("MonitorPkg").value.trim();
+    if (!Pkg) { Pkg = "all"; }
+    SendCommand("Monitor", { Package: Pkg });
+}
+
+function RefreshDevice() { SendCommand("DeviceInfo"); }
+function RefreshPermissions() { SendCommand("Permissions"); }
+
+function GrantPerm(Perm) { SendCommand("GrantPerm", { Permission: Perm }); }
+function RevokePerm(Perm) { SendCommand("RevokePerm", { Permission: Perm }); }
+
+document.querySelectorAll(".Tab").forEach(function(T) {
+    T.addEventListener("click", function() {
+        document.querySelectorAll(".Tab").forEach(function(X) { X.classList.remove("Active"); });
+        document.querySelectorAll(".Panel").forEach(function(X) { X.classList.remove("Active"); });
+        T.classList.add("Active");
+        var PanelId = T.getAttribute("data-panel");
+        document.getElementById(PanelId).classList.add("Active");
+        ActiveTab = PanelId;
+        if (PanelId === "DevicePanel") RefreshDevice();
+        if (PanelId === "PermissionsPanel") RefreshPermissions();
+    });
+});
+
+document.getElementById("LogSearch").addEventListener("input", function(E) {
+    LogSearchFilter = E.target.value.toLowerCase();
+    RenderLogs(LastLogs);
+});
+
+document.getElementById("PermSearch").addEventListener("input", function(E) {
+    PermSearchFilter = E.target.value.toLowerCase();
+    RenderPermissionsUI();
+});
+
+function RenderLogs(Logs) {
+    LastLogs = Logs;
+    var Container = document.getElementById("LogList");
+    var Filtered = Logs;
+    if (LogSearchFilter) {
+        Filtered = Logs.filter(function(L) { return L.toLowerCase().indexOf(LogSearchFilter) >= 0; });
+    }
+    var Html = "";
+    for (var I = 0; I < Filtered.length; I++) {
+        Html += '<div class="LogEntry">' + EscapeHtml(Filtered[I]) + "</div>";
+    }
+    Container.innerHTML = Html;
+    if (AutoScroll) { Container.scrollTop = Container.scrollHeight; }
+}
+
+function RenderEvents(Events) {
+    LastEvents = Events;
+    var Container = document.getElementById("EventList");
+    var Html = "";
+    for (var I = Events.length - 1; I >= 0; I--) {
+        var Ev = Events[I];
+        var Time = new Date(Ev.Time).toLocaleTimeString();
+        Html += '<div class="EventEntry">';
+        Html += '<span class="EventType">' + EscapeHtml(Ev.Type) + "</span>";
+        Html += '<span class="EventPackage">' + EscapeHtml(Ev.Package || "") + "</span>";
+        Html += '<span>' + EscapeHtml(Ev.Class || "") + " " + EscapeHtml(Ev.Text || "") + "</span>";
+        Html += '<span class="EventTime">' + Time + "</span>";
+        Html += "</div>";
+    }
+    Container.innerHTML = Html;
+}
+
+function RenderDeviceInfo(D) {
+    document.getElementById("DevModel").textContent = D.Model || "--";
+    document.getElementById("DevAndroid").textContent = D.AndroidVersion || "--";
+    document.getElementById("DevApi").textContent = D.ApiLevel || "--";
+    document.getElementById("DevSerial").textContent = D.Serial || "--";
+    document.getElementById("DevBattery").textContent = D.Battery || "--";
+    var AdbEl = document.getElementById("AdbConnStatus");
+    AdbEl.textContent = D.AdbConnected ? "Connected" : "Disconnected";
+    AdbEl.className = "DeviceValue " + (D.AdbConnected ? "On" : "Off");
+    document.getElementById("AdbSerial").textContent = D.AdbSerial || "--";
+    document.getElementById("AdbWifiAddr").textContent = D.WifiDebugAddr || "--";
+    document.getElementById("AdbState").textContent = D.AdbConnected ? "Connected" : "Off";
+    var DevOpt = document.getElementById("DevOptions");
+    DevOpt.textContent = D.DevOptionsEnabled ? "Enabled" : "Disabled";
+    DevOpt.className = "DeviceValue " + (D.DevOptionsEnabled ? "On" : "Off");
+    var UsbDbg = document.getElementById("DevUsb");
+    UsbDbg.textContent = D.UsbDebugging ? "Enabled" : "Disabled";
+    UsbDbg.className = "DeviceValue " + (D.UsbDebugging ? "On" : "Off");
+    var WifiDbg = document.getElementById("DevWifi");
+    WifiDbg.textContent = D.WifiDebugging ? "Enabled" : "Disabled";
+    WifiDbg.className = "DeviceValue " + (D.WifiDebugging ? "On" : "Off");
+}
+
+function RenderPermissions(Data) {
+    PermissionsData = Data;
+    RenderPermissionsUI();
+}
+
+function RenderPermissionsUI() {
+    var Container = document.getElementById("PermGrid");
+    var Html = "";
+    for (var I = 0; I < PermissionsData.length; I++) {
+        var P = PermissionsData[I];
+        if (PermSearchFilter && P.Name.toLowerCase().indexOf(PermSearchFilter) < 0) continue;
+        var StatusClass = P.Granted ? "Granted" : "Denied";
+        var BtnHtml = P.Granted
+            ? '<button class="PermBtn" onclick="RevokePerm(\'' + EscapeHtml(P.Name) + '\')">Revoke</button>'
+            : '<button class="PermBtn" onclick="GrantPerm(\'' + EscapeHtml(P.Name) + '\')">Grant</button>';
+        Html += '<div class="PermRow">';
+        Html += '<span class="PermName">' + EscapeHtml(P.Name) + '</span>';
+        Html += '<span class="PermStatus ' + StatusClass + '">' + (P.Granted ? "GRANTED" : "DENIED") + '</span>';
+        Html += BtnHtml;
+        Html += '</div>';
+    }
+    Container.innerHTML = Html || '<div style="color:var(--TextMuted);padding:20px">Click Refresh to load permissions</div>';
+}
+
+function EscapeHtml(S) { var D = document.createElement("div"); D.textContent = S; return D.innerHTML; }
+function CopyText(Id) { navigator.clipboard.writeText(document.getElementById(Id).textContent); }
+function FormatUptime(Ms) {
+    var S = Math.floor(Ms / 1000);
+    var M = Math.floor(S / 60); S = S % 60;
+    var H = Math.floor(M / 60); M = M % 60;
+    return H + "h " + M + "m " + S + "s";
+}
+
+ConnectWebSocket();
+</script>
+</body>
+</html>

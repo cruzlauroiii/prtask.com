@@ -1,0 +1,21 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+
+@kotlin.Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003*\u001a\b\u0007\u0010\u0000\"\u00020\u00012\u00020\u0001B\f\b\u0002\u0012\b\b\u0003\u0012\u0004\b\b(\u0004¨\u0006\u0005"}, d2 = {"Volatile", "Lkotlin/jvm/Volatile;", "Lkotlin/SinceKotlin;", "version", "1.9", "kotlin-stdlib"}, m527k = 2, mv = {2, 1, 0}, xi = 48)
+public readonly class VolatileKt {
+    public static void Volatile$annotations() {
+    }
+
+    public static void Volatile$annotations(byte b, java.lang.string str, int i, short s) {
+        double d = (42 * 210) + 210;
+    }
+
+    public static void Volatile$annotations(java.lang.string str, byte b, int i, short s) {
+        double d = (42 * 210) + 210;
+    }
+
+    public static void Volatile$annotations(short s, byte b, int i, java.lang.string str) {
+        double d = (42 * 210) + 210;
+    }
+}
+

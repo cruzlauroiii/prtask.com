@@ -1,0 +1,96 @@
+@page "/legal/cookie-policy"
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> Localizer
+<h1>@Localizer["CookiePolicyPageHeading"]</h1>
+<p>@Localizer["CookiePolicyLastUpdated"]</p>
+<p>@Localizer["CookiePolicyIntroduction"]</p>
+<h2>1. @Localizer["CookiePolicyWhatAreHeading"]</h2>
+<p>@Localizer["CookiePolicyWhatAreDescription"]</p>
+<h2>2. @Localizer["CookiePolicyEssentialHeading"]</h2>
+<p>@Localizer["CookiePolicyEssentialDescription"]</p>
+<h2>3. @Localizer["CookiePolicyFunctionalHeading"]</h2>
+<p>@Localizer["CookiePolicyFunctionalDescription"]</p>
+<h2>4. @Localizer["CookiePolicyAnalyticsHeading"]</h2>
+<p>@Localizer["CookiePolicyAnalyticsDescription"]</p>
+<h2>5. @Localizer["CookiePolicyThirdPartyHeading"]</h2>
+<p>@Localizer["CookiePolicyThirdPartyDescription"]</p>
+<h2>6. @Localizer["CookiePolicyCookieReferenceHeading"]</h2>
+<section>
+    <table>
+        <thead>
+            <tr>
+                <th>@Localizer["CookiePolicyTableName"]</th>
+                <th>@Localizer["CookiePolicyTableProvider"]</th>
+                <th>@Localizer["CookiePolicyTablePurpose"]</th>
+                <th>@Localizer["CookiePolicyTableDuration"]</th>
+                <th>@Localizer["CookiePolicyTableCategory"]</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>prtask-session</td>
+                <td>PrTask</td>
+                <td>@Localizer["CookiePolicySessionPurpose"]</td>
+                <td>@Localizer["CookiePolicyDuration30Days"]</td>
+                <td>@Localizer["CookiePolicyCategoryEssential"]</td>
+            </tr>
+            <tr>
+                <td>prtask-csrf</td>
+                <td>PrTask</td>
+                <td>@Localizer["CookiePolicyCsrfPurpose"]</td>
+                <td>@Localizer["CookiePolicyDurationSession"]</td>
+                <td>@Localizer["CookiePolicyCategoryEssential"]</td>
+            </tr>
+            <tr>
+                <td>prtask-cookie-consent</td>
+                <td>PrTask</td>
+                <td>@Localizer["CookiePolicyConsentPurpose"]</td>
+                <td>@Localizer["CookiePolicyDuration1Year"]</td>
+                <td>@Localizer["CookiePolicyCategoryEssential"]</td>
+            </tr>
+            <tr>
+                <td>prtask-theme</td>
+                <td>PrTask</td>
+                <td>@Localizer["CookiePolicyThemePurpose"]</td>
+                <td>@Localizer["CookiePolicyDuration1Year"]</td>
+                <td>@Localizer["CookiePolicyCategoryFunctional"]</td>
+            </tr>
+            <tr>
+                <td>_ga</td>
+                <td>@Localizer["SettingsConnectedGoogle"]</td>
+                <td>@Localizer["CookiePolicyGaPurpose"]</td>
+                <td>@Localizer["CookiePolicyDuration2Years"]</td>
+                <td>@Localizer["CookiePolicyCategoryAnalytics"]</td>
+            </tr>
+            <tr>
+                <td>_gid</td>
+                <td>@Localizer["SettingsConnectedGoogle"]</td>
+                <td>@Localizer["CookiePolicyGidPurpose"]</td>
+                <td>@Localizer["CookiePolicyDuration24Hours"]</td>
+                <td>@Localizer["CookiePolicyCategoryAnalytics"]</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<h2>7. @Localizer["CookiePolicyConsentHeading"]</h2>
+<p>@Localizer["CookiePolicyConsentDescription"]</p>
+<h3>@Localizer["CookiePolicyEuConsentHeading"]</h3>
+<p>@Localizer["CookiePolicyEuConsentDescription"]</p>
+<h3>@Localizer["CookiePolicyCcpaConsentHeading"]</h3>
+<p>@Localizer["CookiePolicyCcpaConsentDescription"]</p>
+<h3>@Localizer["CookiePolicyOtherRegionsHeading"]</h3>
+<p>@Localizer["CookiePolicyOtherRegionsDescription"]</p>
+<h2>8. @Localizer["CookiePolicyManagingHeading"]</h2>
+<p>@Localizer["CookiePolicyManagingDescription"]</p>
+<h2>9. @Localizer["CookiePolicyWithdrawHeading"]</h2>
+<p>@Localizer["CookiePolicyWithdrawDescription"]</p>
+<h2>10. @Localizer["CookiePolicyRetentionHeading"]</h2>
+<p>@Localizer["CookiePolicyRetentionDescription"]</p>
+<h2>11. @Localizer["CookiePolicyPrivacyLinkHeading"]</h2>
+<p>@Localizer["CookiePolicyPrivacyLinkDescription"]</p>
+<h2>12. @Localizer["CookiePolicyContactHeading"]</h2>
+<p>@Localizer["CookiePolicyContactDescription"]</p>
+<section class="page-description">
+    <h2>@Localizer["CookiePolicyDescriptionHeading"]</h2>
+    <p>@Localizer["CookiePolicyDescriptionParagraph1"]</p>
+    <p>@Localizer["CookiePolicyDescriptionParagraph2"]</p>
+</section>

@@ -1,0 +1,89 @@
+{
+  "de": {
+    "AboutValueOpenSourceHeading": "Open-Source",
+    "AboutStatPaidToDevelopers": "2,4 Mio. USD+",
+    "AccessibilityEaaHeading": "Europäisches Barrierefreiheitsgesetz (EAA)",
+    "AcceptableUseContactHeading": "Kontakt",
+    "AcceptableUseEnforcementHeading": "Durchsetzung",
+    "AcceptableUseEnforcementWarningLabel": "Warnung:",
+    "AboutLegalLicenses": "Lizenzen"
+  },
+  "es": {
+    "AboutValueOpenSourceHeading": "Código abierto",
+    "AboutStatPaidToDevelopers": "US$2,4 M+",
+    "AcceptableUseContactHeading": "Contacto",
+    "AcceptableUseEnforcementHeading": "Aplicación",
+    "AcceptableUseEnforcementWarningLabel": "Advertencia:",
+    "AboutLegalLicenses": "Licencias"
+  },
+  "fil": {
+    "AboutValueOpenSourceHeading": "Bukas na Pinagmulan",
+    "AccessibilityEaaHeading": "Batas sa Accessibility ng Europa (EAA)"
+  },
+  "fr": {
+    "AboutValueOpenSourceHeading": "Code source ouvert",
+    "AboutStatPaidToDevelopers": "2,4 M$+",
+    "AccessibilityEaaHeading": "Acte européen sur l'accessibilité (EAA)",
+    "AcceptableUseContactHeading": "Contactez-nous",
+    "AcceptableUseEnforcementHeading": "Application",
+    "AcceptableUseEnforcementWarningLabel": "Avertissement:",
+    "AboutLegalLicenses": "Licences"
+  },
+  "id": {
+    "AboutValueOpenSourceHeading": "Sumber terbuka",
+    "AboutStatPaidToDevelopers": "US$2,4 Jt+",
+    "AccessibilityEaaHeading": "Undang-Undang Aksesibilitas Eropa (EAA)"
+  },
+  "it": {
+    "AboutValueOpenSourceHeading": "Codice aperto",
+    "AboutStatPaidToDevelopers": "2,4 M$+",
+    "AccessibilityEaaHeading": "Atto europeo sull'accessibilità (EAA)",
+    "AcceptableUseContactHeading": "Contatto",
+    "AcceptableUseEnforcementHeading": "Applicazione",
+    "AcceptableUseEnforcementWarningLabel": "Avviso:",
+    "AboutLegalLicenses": "Licenze"
+  },
+  "ja": {
+    "AcceptableUseContactHeading": "お問い合わせ",
+    "AcceptableUseEnforcementHeading": "執行",
+    "AcceptableUseEnforcementWarningLabel": "警告：",
+    "AboutLegalLicenses": "ライセンス"
+  },
+  "ko": {
+    "AcceptableUseContactHeading": "문의",
+    "AcceptableUseEnforcementHeading": "집행",
+    "AcceptableUseEnforcementWarningLabel": "경고:",
+    "AboutLegalLicenses": "라이선스"
+  },
+  "nl": {
+    "AboutValueOpenSourceHeading": "Open-source",
+    "AboutStatPaidToDevelopers": "US$2,4 mln+",
+    "AccessibilityEaaHeading": "Europese toegankelijkheidswet (EAA)",
+    "AcceptableUseContactHeading": "Contact opnemen",
+    "AcceptableUseEnforcementHeading": "Handhaving",
+    "AcceptableUseEnforcementWarningLabel": "Waarschuwing:",
+    "AboutLegalLicenses": "Licenties"
+  },
+  "pt": {
+    "AboutValueOpenSourceHeading": "Código aberto",
+    "AboutStatPaidToDevelopers": "US$2,4 mi+",
+    "AccessibilityEaaHeading": "Lei Europeia de Acessibilidade (EAA)",
+    "AcceptableUseContactHeading": "Contato",
+    "AcceptableUseEnforcementHeading": "Aplicação",
+    "AcceptableUseEnforcementWarningLabel": "Aviso:",
+    "AboutLegalLicenses": "Licenças"
+  },
+  "ru": {
+    "AboutValueOpenSourceHeading": "Открытый исходный код",
+    "AcceptableUseContactHeading": "Контакты",
+    "AcceptableUseEnforcementHeading": "Применение",
+    "AcceptableUseEnforcementWarningLabel": "Предупреждение:",
+    "AboutLegalLicenses": "Лицензии"
+  },
+  "tr": {
+    "AccessibilityEaaHeading": "Avrupa Erişilebilirlik Yasası (EAA)"
+  },
+  "hi": {
+    "AboutStatPaidToDevelopers": "US$2.4M+"
+  }
+}

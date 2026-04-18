@@ -1,0 +1,51 @@
+@page "/profile/{UserId}"
+@using PrTask.Application.Services
+@using PrTask.Domain.Models
+@inject IUserService UserService
+@inject ILeaderboardService LeaderboardService
+<div class="profile-page">
+    @if (ProfileUser is null)
+    {
+        <p>Loading profile...</p>
+    }
+    else
+    {
+        <div class="profile-header">
+            @if (ProfileUser.AvatarUrl is not null)
+            {
+                <img src="@ProfileUser.AvatarUrl" alt="@ProfileUser.GitHubUsername" class="profile-avatar" />
+            }
+            <div class="profile-info">
+                <h1>@(ProfileUser.DisplayName ?? ProfileUser.GitHubUsername)</h1>
+                <p class="profile-username">@@@ProfileUser.GitHubUsername</p>
+                <div class="profile-badges">
+                    <span class="badge">Lv. @ProfileUser.Level</span>
+                    <span class="badge">@ProfileUser.Xp XP</span>
+                    <span class="badge">@ProfileUser.StreakDays Day Streak</span>
+                </div>
+            </div>
+        </div>
+        <div class="profile-stats">
+            <div class="stat-card">
+                <span class="stat-value">@FormatEarnedAmount(ProfileUser.TotalEarnedCents)</span>
+                <span class="stat-label">Total Earned</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">#@UserRank</span>
+                <span class="stat-label">Leaderboard Rank</span>
+            </div>
+        </div>
+    }
+</div>
+@code {
+    [Parameter]
+    public string UserId { get; set; } = string.Empty;
+    private UserEntity? ProfileUser { get; set; }
+    private int UserRank { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        ProfileUser = await UserService.GetByIdAsync(UserId);
+        UserRank = await LeaderboardService.GetRankAsync(UserId);
+    }
+    private static string FormatEarnedAmount(long AmountCents) => $"${AmountCents / 100m:N0}";
+}

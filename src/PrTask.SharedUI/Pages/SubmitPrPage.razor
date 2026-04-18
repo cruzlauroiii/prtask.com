@@ -1,0 +1,82 @@
+@page "/Tasks/{TaskId}/SubmitPr"
+@using Microsoft.JSInterop
+@using PrTask.Application.Services
+@using PrTask.Domain.Constants
+@using PrTask.Domain.Models
+@inject ITaskService TaskService
+@inject IPullRequestService PullRequestService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JsRuntime
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> L
+
+<SeoHead Title="@SubmitPrConstants.SeoTitle" Description="@SubmitPrConstants.SeoDescription" />
+
+<div class="form-container">
+    <h1>@L["SubmitPrPageTitle"]</h1>
+    @if (CurrentTask is null)
+    {
+        <p>@L["SubmitPrLoadingText"]</p>
+    }
+    else
+    {
+        <p>@L["SubmitPrSubmittingForFormat"]<strong>@CurrentTask.Title</strong></p>
+        <div class="form-group">
+            <label for="GitHubPrUrl">@L["SubmitPrGitHubUrlLabel"]</label>
+            <input id="GitHubPrUrl" type="url" @bind="GitHubPrUrl" placeholder="@SubmitPrConstants.GitHubPrUrlPlaceholder" />
+        </div>
+        <div class="form-group">
+            <label for="DeveloperId">@L["SubmitPrUserIdLabel"]</label>
+            <input id="DeveloperId" type="text" @bind="DeveloperId" placeholder="@SubmitPrConstants.UserIdPlaceholder" />
+        </div>
+        @if (!string.IsNullOrEmpty(StatusMessage))
+        {
+            <p class="status-message">@StatusMessage</p>
+        }
+        <button class="btn btn-primary" @onclick="SubmitPr">@L["SubmitPrSubmitButton"]</button>
+        <a href="@(string.Format(RouteConstants.TaskDetail, TaskId))" class="btn btn-secondary">@L["SubmitPrCancelButton"]</a>
+    }
+</div>
+@code {
+    [Parameter]
+    public string TaskId { get; set; } = string.Empty;
+    private TaskEntity? CurrentTask { get; set; }
+    private string GitHubPrUrl { get; set; } = string.Empty;
+    private string DeveloperId { get; set; } = string.Empty;
+    private string StatusMessage { get; set; } = string.Empty;
+    protected override async Task OnInitializedAsync() => CurrentTask = await TaskService.GetByIdAsync(TaskId);
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            DeveloperId = await JsRuntime.InvokeAsync<string>(JsInteropConstants.GetUserId);
+            StateHasChanged();
+        }
+    }
+    private async Task SubmitPr()
+    {
+        if (string.IsNullOrWhiteSpace(DeveloperId))
+        {
+            StatusMessage = SubmitPrConstants.EnterUserId;
+            return;
+        }
+        if (!string.IsNullOrWhiteSpace(GitHubPrUrl) && !IsValidGitHubPrUrl(GitHubPrUrl))
+        {
+            StatusMessage = SubmitPrConstants.InvalidGitHubUrl;
+            return;
+        }
+        var Entity = new PullRequestEntity
+        {
+            Id = Guid.NewGuid().ToString(),
+            TaskId = TaskId,
+            DeveloperId = DeveloperId,
+            GitHubPrUrl = string.IsNullOrWhiteSpace(GitHubPrUrl) ? null : GitHubPrUrl
+        };
+        await PullRequestService.SubmitAsync(Entity);
+        NavigationManager.NavigateTo(string.Format(RouteConstants.PullRequestDetail, Entity.Id));
+    }
+    private static bool IsValidGitHubPrUrl(string Url) =>
+        Uri.TryCreate(Url, UriKind.Absolute, out var Parsed)
+        && Parsed.Scheme == Uri.UriSchemeHttps
+        && Url.StartsWith(SubmitPrConstants.GitHubPrUrlPrefix, StringComparison.OrdinalIgnoreCase)
+        && Url.Contains(SubmitPrConstants.GitHubPrUrlSegment, StringComparison.OrdinalIgnoreCase);
+}

@@ -1,0 +1,66 @@
+{
+  "de": {
+    "SettingsTimezoneEastern": "Ostliche Zeit (GMT-5)",
+    "SettingsTimezoneLondon": "Zeitzone London (GMT+0)"
+  },
+  "es": {
+    "SettingsDescriptionHeading": "Configuracion de la cuenta - Configure su experiencia en PrTask",
+    "SettingsTimezoneEastern": "Hora del Este (GMT-5)",
+    "SettingsTimezoneLondon": "Londres (GMT+0)"
+  },
+  "fil": {
+    "SettingsDescriptionHeading": "Mga setting ng account - I-configure ang iyong karanasan sa PrTask",
+    "SettingsTimezoneEastern": "Silangang oras (GMT-5)",
+    "SettingsTimezoneLondon": "Londres (GMT+0)"
+  },
+  "fr": {
+    "SettingsDescriptionHeading": "Parametres du compte - Configurez votre experience PrTask",
+    "SettingsTimezoneEastern": "Heure de l'Est (GMT-5)",
+    "SettingsTimezoneLondon": "Londres (GMT+0)"
+  },
+  "hi": {
+    "SettingsDescriptionHeading": "खाता सेटिंग्स - अपना PrTask अनुभव कॉन्फ़िगर करें",
+    "SettingsTimezoneEastern": "पूर्वी समय (GMT-5)",
+    "SettingsTimezoneLondon": "लंदन (GMT+0)"
+  },
+  "id": {
+    "SettingsDescriptionHeading": "Pengaturan akun - Konfigurasikan pengalaman PrTask Anda",
+    "SettingsTimezoneEastern": "Waktu Timur (GMT-5)",
+    "SettingsTimezoneLondon": "Waktu London (GMT+0)"
+  },
+  "it": {
+    "SettingsDescriptionHeading": "Impostazioni dell'account - Configura la tua esperienza PrTask",
+    "SettingsTimezoneEastern": "Ora orientale (GMT-5)",
+    "SettingsTimezoneLondon": "Londra (GMT+0)"
+  },
+  "ja": {
+    "SettingsDescriptionHeading": "アカウント設定 - PrTask の利用環境を設定",
+    "SettingsTimezoneEastern": "米国東部時間 (GMT-5)",
+    "SettingsTimezoneLondon": "ロンドン (GMT+0)"
+  },
+  "ko": {
+    "SettingsDescriptionHeading": "계정 설정 - PrTask 사용 환경 구성",
+    "SettingsTimezoneEastern": "동부 표준시 (GMT-5)",
+    "SettingsTimezoneLondon": "런던 (GMT+0)"
+  },
+  "nl": {
+    "SettingsDescriptionHeading": "Accountinstellingen - Configureer uw PrTask-ervaring",
+    "SettingsTimezoneEastern": "Oostelijke tijd (GMT-5)",
+    "SettingsTimezoneLondon": "Londen (GMT+0)"
+  },
+  "pt": {
+    "SettingsDescriptionHeading": "Configuracoes da conta - Configure sua experiencia no PrTask",
+    "SettingsTimezoneEastern": "Horario do leste (GMT-5)",
+    "SettingsTimezoneLondon": "Londres (GMT+0)"
+  },
+  "ru": {
+    "SettingsDescriptionHeading": "Настройки аккаунта - настройте работу с PrTask",
+    "SettingsTimezoneEastern": "Восточное время (GMT-5)",
+    "SettingsTimezoneLondon": "Лондон (GMT+0)"
+  },
+  "tr": {
+    "SettingsDescriptionHeading": "Hesap ayarlari - PrTask deneyiminizi yapilandirin",
+    "SettingsTimezoneEastern": "Dogu saati (GMT-5)",
+    "SettingsTimezoneLondon": "Londra (GMT+0)"
+  }
+}

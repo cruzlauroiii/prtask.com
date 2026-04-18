@@ -1,0 +1,39 @@
+@page "/top-payback"
+@inject NavigationManager Nav
+
+<div style="display:flex;flex-direction:column;width:100%">
+    <header class="toolbar" style="width:100%"></header>
+    <div class="content" style="width:100%">
+        <div class="vgCardProcess" style="width:100%">
+            <span class="tvCardError" style="width:100%"></span>
+            <div class="layoutProgress"></div>
+            <span class="tvAmount" style="width:100%"></span>
+            <div class="viewMerchantAddress" style="display:flex;flex-direction:column;width:100%">
+                <span class="tvMerchantAddress" style="width:100%"></span>
+            </div>
+            <div class="layoutLogos" style="display:flex;flex-direction:row;width:100%">
+                <img class="ivLogoMC" src="img/ic_logo_mc.png" alt="ic_logo_mc" />
+                <img class="ivLogoVisa" src="img/ic_logo_visa.png" alt="ic_logo_visa" />
+            </div>
+            <button class="btnExit" style="width:100%"></button>
+            <div class="progressBarContactless"></div>
+            <div class="motionLayout" style="width:100%">
+                <div class="dotSuccessPulseWave"></div>
+                <img class="dotSuccessIv" src="img/toph_calibrate_success_gradient_dot.png" alt="toph_calibrate_success_gradient_dot" />
+            </div>
+        </div>
+    </div>
+    <div class="transactionLoading" style="display:flex;flex-direction:column;width:100%">
+        <progress></progress>
+        <span class="tvTransactionLoading"></span>
+        <span class="tvAmountLoading" style="width:100%"></span>
+    </div>
+    <div class="initLoadingView"></div>
+</div>
+
+@code {
+
+    private void OnField2131361983Click()
+    {
+    }
+}

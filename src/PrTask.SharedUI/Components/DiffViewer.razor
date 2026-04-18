@@ -1,0 +1,121 @@
+@using PrTask.Application.Services
+@using PrTask.Domain.Constants
+@using PrTask.Domain.Models
+@inject IDiffComputeService DiffComputeService
+
+<div class="diff-viewer-container">
+    <div class="diff-viewer-toolbar">
+        <div class="diff-viewer-file-info">
+            <span class="diff-viewer-filename">@FileName</span>
+            @if (DiffResult is not null)
+            {
+                <span class="diff-viewer-stats">@string.Format(DiffConstants.DiffStatsFormat, DiffResult.Additions, DiffResult.Deletions, DiffResult.Modifications)</span>
+            }
+        </div>
+        <div class="diff-viewer-controls">
+            <button class="btn btn-secondary btn-sm diff-viewer-toggle" @onclick="ToggleView">
+                @(IsSideBySide ? DiffConstants.InlineViewLabel : DiffConstants.SideBySideViewLabel)
+            </button>
+        </div>
+    </div>
+    @if (DiffResult is null || (DiffResult.InlineLines.Count == 0 && DiffResult.OldLines.Count == 0))
+    {
+        <div class="diff-viewer-empty">
+            <p>@DiffConstants.NoContentMessage</p>
+        </div>
+    }
+    else if (IsSideBySide)
+    {
+        <div class="@DiffConstants.CssClassSideBySide">
+            <div class="diff-pane diff-pane-old">
+                <div class="diff-pane-header">@PrDetailConstants.DiffViewerOldPaneHeading</div>
+                <div class="diff-pane-lines">
+                    @for (var I = 0; I < DiffResult.OldLines.Count; I++)
+                    {
+                        var Idx = I;
+                        var Line = DiffResult.OldLines[Idx];
+                        <div class="diff-viewer-line @GetLineCssClass(Line.Type)" title="@PrDetailConstants.DiffViewerAddCommentTitle" @onclick="() => OnLineClicked(Line.OldLineNumber)">
+                            <span class="diff-viewer-line-number">@(Line.OldLineNumber?.ToString() ?? DiffConstants.EmptyLineMarker)</span>
+                            <span class="diff-viewer-line-text syntax-@DetectedLanguage">@((MarkupString)(Line.Type == DiffLineType.Imaginary ? string.Empty : DiffComputeService.TokenizeLine(Line.Text, DetectedLanguage)))</span>
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="diff-pane diff-pane-new">
+                <div class="diff-pane-header">@PrDetailConstants.DiffViewerNewPaneHeading</div>
+                <div class="diff-pane-lines">
+                    @for (var I = 0; I < DiffResult.NewLines.Count; I++)
+                    {
+                        var Idx = I;
+                        var Line = DiffResult.NewLines[Idx];
+                        <div class="diff-viewer-line @GetLineCssClass(Line.Type)" title="@PrDetailConstants.DiffViewerAddCommentTitle" @onclick="() => OnLineClicked(Line.NewLineNumber)">
+                            <span class="diff-viewer-line-number">@(Line.NewLineNumber?.ToString() ?? DiffConstants.EmptyLineMarker)</span>
+                            <span class="diff-viewer-line-text syntax-@DetectedLanguage">@((MarkupString)(Line.Type == DiffLineType.Imaginary ? string.Empty : DiffComputeService.TokenizeLine(Line.Text, DetectedLanguage)))</span>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="@DiffConstants.CssClassInline">
+            <div class="diff-pane-lines">
+                @for (var I = 0; I < DiffResult.InlineLines.Count; I++)
+                {
+                    var Idx = I;
+                    var Line = DiffResult.InlineLines[Idx];
+                    <div class="diff-viewer-line @GetLineCssClass(Line.Type)" title="@PrDetailConstants.DiffViewerAddCommentTitle" @onclick="() => OnLineClicked(Line.NewLineNumber ?? Line.OldLineNumber)">
+                        <span class="diff-viewer-line-number diff-viewer-line-number-old">@(Line.OldLineNumber?.ToString() ?? DiffConstants.EmptyLineMarker)</span>
+                        <span class="diff-viewer-line-number diff-viewer-line-number-new">@(Line.NewLineNumber?.ToString() ?? DiffConstants.EmptyLineMarker)</span>
+                        <span class="diff-viewer-line-prefix">@GetLinePrefix(Line.Type)</span>
+                        <span class="diff-viewer-line-text syntax-@DetectedLanguage">@((MarkupString)DiffComputeService.TokenizeLine(Line.Text, DetectedLanguage))</span>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+</div>
+@code {
+    [Parameter]
+    public string OldText { get; set; } = string.Empty;
+    [Parameter]
+    public string NewText { get; set; } = string.Empty;
+    [Parameter]
+    public string FileName { get; set; } = DiffConstants.DefaultFileName;
+    [Parameter]
+    public string Language { get; set; } = string.Empty;
+    [Parameter]
+    public EventCallback<int> OnLineSelected { get; set; }
+    private DiffResultModel? DiffResult { get; set; }
+    private bool IsSideBySide { get; set; } = true;
+    private string DetectedLanguage { get; set; } = DiffConstants.LanguagePlainText;
+    protected override void OnParametersSet()
+    {
+        DetectedLanguage = !string.IsNullOrEmpty(Language) ? Language : DiffComputeService.DetectLanguage(FileName);
+        DiffResult = DiffComputeService.ComputeDiff(OldText ?? string.Empty, NewText ?? string.Empty);
+    }
+    private void ToggleView() => IsSideBySide = !IsSideBySide;
+    private async Task OnLineClicked(int? LineNumber)
+    {
+        if (LineNumber.HasValue && OnLineSelected.HasDelegate)
+        {
+            await OnLineSelected.InvokeAsync(LineNumber.Value);
+        }
+    }
+    private static string GetLineCssClass(DiffLineType Type) => Type switch
+    {
+        DiffLineType.Added => DiffConstants.CssClassAdded,
+        DiffLineType.Deleted => DiffConstants.CssClassDeleted,
+        DiffLineType.Modified => DiffConstants.CssClassModified,
+        DiffLineType.Imaginary => DiffConstants.CssClassImaginary,
+        _ => DiffConstants.CssClassUnchanged
+    };
+    private static string GetLinePrefix(DiffLineType Type) => Type switch
+    {
+        DiffLineType.Added => "+",
+        DiffLineType.Deleted => "-",
+        DiffLineType.Modified => "~",
+        _ => DiffConstants.EmptyLineMarker
+    };
+}

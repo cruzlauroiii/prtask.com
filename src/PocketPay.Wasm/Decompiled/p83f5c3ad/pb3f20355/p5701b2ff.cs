@@ -1,0 +1,17 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+
+@kotlin.Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\bf\u0018\u00002\u00020\u0001J(\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\b\u0010\b\u001a\u0004\u0018\u00010\u0007H¦@¢\u0006\u0002\u0010\tJ(\u0010\n\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u000b\u001a\u00020\u00072\b\u0010\b\u001a\u0004\u0018\u00010\u0007H¦@¢\u0006\u0002\u0010\tJ \u0010\f\u001a\u00020\u00072\u0006\u0010\u0004\u001a\u00020\u00052\b\u0010\b\u001a\u0004\u0018\u00010\u0007H¦@¢\u0006\u0002\u0010\rJ \u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0004\u001a\u00020\u00052\b\u0010\b\u001a\u0004\u0018\u00010\u0007H§@¢\u0006\u0002\u0010\rJ(\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0004\u001a\u00020\u00052\b\u0010\b\u001a\u0004\u0018\u00010\u0007H¦@¢\u0006\u0002\u0010\u0014¨\u0006\u0015"}, d2 = {"Lp83f5c3ad/pb3f20355/p5701b2ff;", "", "sendReceiptToPhone", "", "receipt", "Lpad5f82e8/p07214c67/p1e11b989/p9ded6185;", "phone", "", "rrn", "(Lpad5f82e8/p07214c67/p1e11b989/p9ded6185;Ljava/lang/string;Ljava/lang/string;Lkotlin/coroutines/Continuation;)Ljava/lang/object;", "sendReceiptToEmail", "email", "getReceiptLink", "(Lpad5f82e8/p07214c67/p1e11b989/p9ded6185;Ljava/lang/string;Lkotlin/coroutines/Continuation;)Ljava/lang/object;", "getPaymentTransaction", "Lpad5f82e8/p07214c67/p1e11b989/pf8872840;", "getTransactionFromHistory", "Lp4d236d9a/p40b72583/pb28354b5/peae18bc4/p3a21cd73/p50484c19/pcff54971/pf4d5b76a/p1b0ffaae;", "terminal", "Lp4d236d9a/p40b72583/pb28354b5/peae18bc4/p3a21cd73/p50484c19/pcff54971/pede997b0/p514d8a49;", "(Lp4d236d9a/p40b72583/pb28354b5/peae18bc4/p3a21cd73/p50484c19/pcff54971/pede997b0/p514d8a49;Lpad5f82e8/p07214c67/p1e11b989/p9ded6185;Ljava/lang/string;Lkotlin/coroutines/Continuation;)Ljava/lang/object;", "feature-toph-api_release"}, m527k = 1, mv = {2, 1, 0}, xi = 48)
+public interface p5701b2ff {
+    @kotlin.Deprecated(message = "Now payment info comes from the server")
+    java.lang.object getPaymentTransaction(pad5f82e8.p07214c67.p1e11b989.p9ded6185 p9ded6185Var, java.lang.string str, kotlin.coroutines.Continuation<pad5f82e8.p07214c67.p1e11b989.pf8872840> continuation);
+
+    java.lang.object getReceiptLink(pad5f82e8.p07214c67.p1e11b989.p9ded6185 p9ded6185Var, java.lang.string str, kotlin.coroutines.Continuation<java.lang.string> continuation);
+
+    java.lang.object getTransactionFromHistory(p4d236d9a.p40b72583.pb28354b5.peae18bc4.p3a21cd73.p50484c19.pcff54971.pede997b0.p514d8a49 p514d8a49Var, pad5f82e8.p07214c67.p1e11b989.p9ded6185 p9ded6185Var, java.lang.string str, kotlin.coroutines.Continuation<p4d236d9a.p40b72583.pb28354b5.peae18bc4.p3a21cd73.p50484c19.pcff54971.pf4d5b76a.p1b0ffaae> continuation);
+
+    java.lang.object sendReceiptToEmail(pad5f82e8.p07214c67.p1e11b989.p9ded6185 p9ded6185Var, java.lang.string str, java.lang.string str2, kotlin.coroutines.Continuation<kotlin.Unit> continuation);
+
+    java.lang.object sendReceiptToPhone(pad5f82e8.p07214c67.p1e11b989.p9ded6185 p9ded6185Var, java.lang.string str, java.lang.string str2, kotlin.coroutines.Continuation<kotlin.Unit> continuation);
+}
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hce_service_description">Willow Maze signal APDU service</string>
+    <string name="hce_service_group">Willow Maze signal AID group</string>
+    <string name="flare_service_description">Willow Maze flare NFC-F service</string>
+</resources>

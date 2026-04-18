@@ -1,0 +1,22 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+public class P77beeb9e : Pabc8833a
+{
+    private p53a5793f$p7979ad97[] F37cc763e;
+    private p53a5793f$p7979ad97[] F7ed14257;
+    private p53a5793f$p7979ad97[] F839136e8;
+    private p53a5793f$p7979ad97[] F9769869e;
+    private p53a5793f$p7979ad97[] Fc286116b;
+
+    public p53a5793f$p7979ad97[] GetPreComp()
+    {
+        // field: p5a445d71.p7c922baa.p7e676e9e.p2f53e6f3.p77beeb9e.f37cc763e
+        return default!;
+    }
+
+    public void SetPreComp(p53a5793f$p7979ad97[] P0)
+    {
+        // field: p5a445d71.p7c922baa.p7e676e9e.p2f53e6f3.p77beeb9e.f37cc763e
+    }
+
+}

@@ -1,0 +1,1 @@
+Get-ChildItem -Path C:\work\prtask.com\src -Include *.cs,*.razor -Recurse | Where-Object { $_.FullName -notmatch '\\bin\\' -and $_.FullName -notmatch '\\obj\\' } | ForEach-Object { $l = (Get-Content $_.FullName).Count; if($l -gt 300) { Write-Host "$($_.FullName): $l lines" } }

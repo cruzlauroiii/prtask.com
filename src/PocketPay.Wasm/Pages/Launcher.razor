@@ -1,0 +1,64 @@
+@page "/launcher"
+@inject NavigationManager Nav
+@inject HttpClient Http
+
+<div class="app-shell">
+    <header class="app-header">
+        <h1>PocketPay</h1>
+        <p>@WelcomeMessage</p>
+    </header>
+    @if (StoreName.Length > 0)
+    {
+        <div class="card"><h2>@StoreName</h2><p>@UserRole - @Region</p></div>
+    }
+    <div class="dashboard-grid">
+        <a class="dashboard-tile" href="/tap-on-phone-sell"><h3>New Sale</h3><p>Tap to pay</p></a>
+        <a class="dashboard-tile" href="/statistics"><h3>Statistics</h3><p>View reports</p></a>
+        <a class="dashboard-tile" href="/receipt-statuses"><h3>Receipts</h3><p>Transaction history</p></a>
+        <a class="dashboard-tile" href="/inventory-list"><h3>Inventory</h3><p>Manage items</p></a>
+        <a class="dashboard-tile" href="/main-settings"><h3>Settings</h3><p>Configuration</p></a>
+        <a class="dashboard-tile" href="/company-details"><h3>Company</h3><p>Business info</p></a>
+    </div>
+</div>
+
+@code {
+    private string WelcomeMessage { get; set; } = "Loading...";
+    private string StoreName { get; set; } = string.Empty;
+    private string UserRole { get; set; } = string.Empty;
+    private string Region { get; set; } = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var CheckResponse = await Http.PostAsJsonAsync("wss-proxy/check-user", new { Method = "check_user" });
+            var CheckResult = await CheckResponse.Content.ReadFromJsonAsync<CheckUserResult>();
+            if (CheckResult is not null && CheckResult.UserExists)
+            {
+                UserRole = CheckResult.Role ?? "BUSINESS";
+                Region = CheckResult.Region ?? "PH";
+                WelcomeMessage = $"Welcome, {CheckResult.UserId ?? "Merchant"}";
+
+                if (CheckResult.UserId is not null)
+                {
+                    var StoresResponse = await Http.GetFromJsonAsync<StoreInfo[]>($"wss-proxy/stores?userId={CheckResult.UserId}");
+                    if (StoresResponse is not null && StoresResponse.Length > 0)
+                    {
+                        StoreName = StoresResponse[0].Name ?? "My Store";
+                    }
+                }
+            }
+            else
+            {
+                WelcomeMessage = "Welcome, Merchant";
+            }
+        }
+        catch
+        {
+            WelcomeMessage = "Welcome, Merchant";
+        }
+    }
+
+    private sealed record CheckUserResult(bool UserExists, string? UserId, string? Role, string? Region);
+    private sealed record StoreInfo(string? Id, string? Name, string? Address);
+}

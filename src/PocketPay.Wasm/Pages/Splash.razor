@@ -1,0 +1,14 @@
+@page "/splash"
+@inject NavigationManager Nav
+
+<div class="splash-screen">
+    <h1>PocketPay</h1>
+    <p>Redirecting...</p>
+</div>
+
+@code {
+    protected override void OnInitialized()
+    {
+        Nav.NavigateTo("/", replace: true);
+    }
+}

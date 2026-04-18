@@ -1,0 +1,56 @@
+{
+  "de": {
+    "CategoryInfo": "Info",
+    "CookieMarketingLabel": "Marketing",
+    "DashboardLabel": "Dashboard",
+    "DashboardPageHeading": "Dashboard",
+    "TaskDetailStatusLabel": "Status: "
+  },
+  "es": {
+    "CategoryInfo": "Info",
+    "CookieMarketingLabel": "Marketing",
+    "DashboardPrsLabel": "Pull Requests"
+  },
+  "fil": {
+    "CategoryPlatform": "Plataporma",
+    "CookieMarketingLabel": "Marketing",
+    "FooterPlatformHeading": "Plataporma"
+  },
+  "fr": {
+    "CategoryInfo": "Info",
+    "CookieMarketingLabel": "Marketing",
+    "DashboardPrsLabel": "Pull Requests"
+  },
+  "id": {
+    "CategoryInfo": "Info",
+    "CategoryPlatform": "Platform",
+    "RepositoryLabel": "Repositori",
+    "TaskDetailStatusLabel": "Status: "
+  },
+  "it": {
+    "CategoryInfo": "Info",
+    "CookieMarketingLabel": "Marketing",
+    "DashboardLabel": "Dashboard",
+    "DashboardPageHeading": "Dashboard"
+  },
+  "nl": {
+    "CategoryInfo": "Info",
+    "CategoryPlatform": "Platform",
+    "CookieMarketingLabel": "Marketing",
+    "DashboardLabel": "Dashboard",
+    "DashboardPageHeading": "Dashboard",
+    "DashboardPrsLabel": "Pull Requests",
+    "FooterPlatformHeading": "Platform",
+    "RepositoryLabel": "Repository",
+    "TaskDetailStatusLabel": "Status: "
+  },
+  "pt": {
+    "CategoryInfo": "Info",
+    "CookieMarketingLabel": "Marketing",
+    "DashboardPrsLabel": "Pull Requests"
+  },
+  "tr": {
+    "CategoryPlatform": "Platform",
+    "FooterPlatformHeading": "Platform"
+  }
+}

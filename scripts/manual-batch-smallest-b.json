@@ -1,0 +1,65 @@
+{
+  "es": {
+    "TermsClientObligationsDescription": "Como cliente en PrTask, usted acepta: proporcionar descripciones y requisitos de tareas claros y precisos; revisar los pull requests con prontitud; pagar las recompensas solo al aprobar el trabajo; respetar la propiedad intelectual de los desarrolladores; y cumplir con las leyes aplicables.",
+    "TermsLicenseGrantsDescription": "Tras la aprobación y el pago de una recompensa, el desarrollador otorga al cliente una licencia perpetua, mundial, no exclusiva y libre de regalías para usar, modificar y distribuir el trabajo entregado conforme a los términos aquí descritos.",
+    "TermsLicenseGrantsHeading": "Concesión de licencias",
+    "TermsRefundRightsDescription": "Los clientes pueden solicitar un reembolso si un pull request fue aprobado por error o si el trabajo entregado no cumple los requisitos de la tarea, sujeto a nuestra Política de Reembolsos.",
+    "TermsRefundRightsHeading": "Derechos de reembolso"
+  },
+  "fr": {
+    "TermsClientObligationsDescription": "En tant que client sur PrTask, vous acceptez de: fournir des descriptions et des exigences claires et exactes des tâches; examiner les pull requests rapidement; payer les primes uniquement après approbation du travail; respecter la propriété intellectuelle des développeurs; et vous conformer aux lois applicables.",
+    "TermsLicenseGrantsDescription": "Après l'approbation et le paiement d'une prime, le développeur accorde au client une licence perpétuelle, mondiale, non exclusive et libre de redevances pour utiliser, modifier et distribuer le travail livré conformément aux présentes conditions.",
+    "TermsLicenseGrantsHeading": "Octroi de licence",
+    "TermsRefundRightsDescription": "Les clients peuvent demander un remboursement si un pull request a été approuvé par erreur ou si le travail livré ne répond pas aux exigences de la tâche, conformément à notre Politique de remboursement.",
+    "TermsRefundRightsHeading": "Droits au remboursement"
+  },
+  "it": {
+    "TermsClientObligationsDescription": "Come cliente su PrTask, accetti di: fornire descrizioni e requisiti delle attivita chiari e accurati; rivedere prontamente le pull request; pagare le ricompense solo dopo l'approvazione del lavoro; rispettare la proprieta intellettuale degli sviluppatori; e rispettare le leggi applicabili.",
+    "TermsLicenseGrantsDescription": "Dopo l'approvazione e il pagamento di una ricompensa, lo sviluppatore concede al cliente una licenza perpetua, mondiale, non esclusiva e priva di royalty per usare, modificare e distribuire il lavoro consegnato in base a questi termini.",
+    "TermsLicenseGrantsHeading": "Concessioni di licenza",
+    "TermsRefundRightsDescription": "I clienti possono richiedere un rimborso se una pull request e stata approvata per errore o se il lavoro consegnato non soddisfa i requisiti dell'attivita, in base alla nostra Politica di rimborso.",
+    "TermsRefundRightsHeading": "Diritti di rimborso"
+  },
+  "ja": {
+    "TermsClientObligationsDescription": "PrTaskのクライアントは、タスクの説明と要件を明確かつ正確に提示し、pull requestを迅速にレビューし、承認後にのみ報酬を支払い、開発者の知的財産権を尊重し、適用法令を遵守することに同意します。",
+    "TermsLicenseGrantsDescription": "報酬の承認と支払い後、開発者は本規約に従い、成果物を使用・改変・配布するための永続的、世界的、非独占的、ロイヤリティフリーのライセンスをクライアントに付与します。",
+    "TermsLicenseGrantsHeading": "ライセンス付与",
+    "TermsRefundRightsDescription": "pull requestが誤って承認された場合、または成果物がタスク要件を満たさない場合、クライアントは当社の返金ポリシーに従って返金を請求できます。",
+    "TermsRefundRightsHeading": "返金権"
+  },
+  "ko": {
+    "TermsClientObligationsDescription": "PrTask의 클라이언트는 작업 설명과 요구사항을 명확하고 정확하게 제공하고, pull request를 신속히 검토하며, 승인 후에만 보상을 지급하고, 개발자의 지적 재산권을 존중하며, 관련 법률을 준수하는 데 동의합니다.",
+    "TermsLicenseGrantsDescription": "보상이 승인되고 지급되면, 개발자는 본 약관에 따라 납품된 작업을 사용할 수 있도록 영구적이고 전 세계적이며 비독점적이고 로열티가 없는 라이선스를 클라이언트에게 부여합니다.",
+    "TermsLicenseGrantsHeading": "라이선스 부여",
+    "TermsRefundRightsDescription": "pull request가 실수로 승인되었거나 납품물이 작업 요구사항을 충족하지 못한 경우, 클라이언트는 환불 정책에 따라 환불을 요청할 수 있습니다.",
+    "TermsRefundRightsHeading": "환불 권리"
+  },
+  "nl": {
+    "TermsClientObligationsDescription": "Als klant op PrTask gaat u ermee akkoord om: duidelijke en accurate taakbeschrijvingen en vereisten te geven; pull requests tijdig te beoordelen; bounties pas te betalen na goedkeuring van het werk; de intellectuele eigendomsrechten van ontwikkelaars te respecteren; en de toepasselijke wetgeving na te leven.",
+    "TermsLicenseGrantsDescription": "Na goedkeuring en betaling van een bounty verleent de ontwikkelaar aan de klant een eeuwigdurende, wereldwijde, niet-exclusieve en royaltyvrije licentie om het opgeleverde werk te gebruiken, te wijzigen en te verspreiden volgens deze voorwaarden.",
+    "TermsLicenseGrantsHeading": "Licentieverlening",
+    "TermsRefundRightsDescription": "Klanten kunnen een terugbetaling aanvragen als een pull request per ongeluk is goedgekeurd of als het opgeleverde werk niet aan de taakvereisten voldoet, onder voorbehoud van ons Terugbetalingsbeleid.",
+    "TermsRefundRightsHeading": "Rechten op terugbetaling"
+  },
+  "pt": {
+    "TermsClientObligationsDescription": "Como cliente no PrTask, voce concorda em: fornecer descricoes e requisitos de tarefas claros e precisos; revisar pull requests rapidamente; pagar recompensas somente apos aprovar o trabalho; respeitar a propriedade intelectual dos desenvolvedores; e cumprir as leis aplicaveis.",
+    "TermsLicenseGrantsDescription": "Apos a aprovacao e o pagamento de uma recompensa, o desenvolvedor concede ao cliente uma licenca perpetua, mundial, nao exclusiva e livre de royalties para usar, modificar e distribuir o trabalho entregue conforme estes termos.",
+    "TermsLicenseGrantsHeading": "Concessao de licencas",
+    "TermsRefundRightsDescription": "Os clientes podem solicitar reembolso se um pull request foi aprovado por engano ou se o trabalho entregue nao atende aos requisitos da tarefa, sujeito a nossa Politica de Reembolso.",
+    "TermsRefundRightsHeading": "Direitos de reembolso"
+  },
+  "ru": {
+    "TermsClientObligationsDescription": "Как клиент PrTask, вы соглашаетесь: предоставлять четкие и точные описания и требования задач; оперативно рассматривать pull request; оплачивать вознаграждение только после одобрения работы; уважать интеллектуальную собственность разработчиков; и соблюдать применимые законы.",
+    "TermsLicenseGrantsDescription": "После одобрения и оплаты вознаграждения разработчик предоставляет клиенту бессрочную, всемирную, неисключительную и безвозмездную лицензию на использование, изменение и распространение предоставленного результата в соответствии с этими условиями.",
+    "TermsLicenseGrantsHeading": "Предоставление лицензий",
+    "TermsRefundRightsDescription": "Клиенты могут запросить возврат средств, если pull request был одобрен по ошибке или если предоставленная работа не соответствует требованиям задачи, в соответствии с нашей Политикой возвратов.",
+    "TermsRefundRightsHeading": "Права на возврат средств"
+  },
+  "tr": {
+    "TermsClientObligationsDescription": "PrTask'te musteri olarak: gorev aciklamalarini ve gereksinimleri acik ve dogru saglamayi; cekme isteklerini zamaninda incelemeyi; odulleri yalnizca is onaylandiginda odemeyi; gelistiricilerin fikri mulkiyet haklarina saygi duymayi; ve yürürlükteki yasalara uymayi kabul edersiniz.",
+    "TermsLicenseGrantsDescription": "Bir odul onaylanip odendikten sonra gelistirici, bu kosullere uygun olarak teslim edilen calismayi kullanmak, degistirmek ve dagitmak icin musteriye surekli, dunya capinda, gayri munhasir ve telifsiz bir lisans verir.",
+    "TermsLicenseGrantsHeading": "Lisans verilmesi",
+    "TermsRefundRightsDescription": "Bir cekme istegi yanlislikla onaylanmissa veya teslim edilen is gorev gereksinimlerini karsilamiyorsa, musteri Iade Politikamiza tabi olarak iade talep edebilir.",
+    "TermsRefundRightsHeading": "Iade haklari"
+  }
+}

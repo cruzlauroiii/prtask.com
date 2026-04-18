@@ -1,0 +1,149 @@
+{
+  "de": {
+    "PrivacyAppiHeading": "Japan APPI"
+  },
+  "es": {
+    "PrivacyAppiHeading": "Japon APPI",
+    "PrivacyAutomatedDecisionHeading": "Toma de decisiones automatizada y elaboracion de perfiles",
+    "PrivacyCcpaCategoriesHeading": "Categorias de datos de la CCPA",
+    "PrivacyCcpaHeading": "Cumplimiento de la CCPA",
+    "PrivacyChangesHeading": "Cambios en esta politica de privacidad",
+    "PrivacyCookieReferenceHeading": "Cookies y tecnologias de seguimiento",
+    "PrivacyDoNotSellHeading": "No vender ni compartir mi informacion personal",
+    "PrivacyInternationalHeading": "Transferencias internacionales de datos",
+    "PrivacyLegalBasisHeading": "Base juridica del tratamiento (articulo 6 del RGPD)",
+    "PrivacyPaymentDataHeading": "Datos de pago"
+  },
+  "fil": {
+    "PrivacyAppiHeading": "Japan APPI",
+    "PrivacyAutomatedDecisionHeading": "Awtomatikong pagdedesisyon at profiling",
+    "PrivacyCcpaCategoriesHeading": "Mga kategorya ng datos ng CCPA",
+    "PrivacyCcpaHeading": "Pagsunod sa CCPA",
+    "PrivacyChangesHeading": "Mga pagbabago sa Patakaran sa Privacy na Ito",
+    "PrivacyCookieReferenceHeading": "Cookies at mga teknolohiyang pangsubaybay",
+    "PrivacyDoNotSellHeading": "Huwag ibenta o ibahagi ang aking personal na impormasyon",
+    "PrivacyInternationalHeading": "Internasyonal na paglilipat ng datos",
+    "PrivacyLegalBasisHeading": "Legal na batayan ng pagproseso (GDPR Artikulo 6)",
+    "PrivacyPaymentDataHeading": "Datos sa pagbabayad"
+  },
+  "fr": {
+    "PrivacyAppiHeading": "Japon APPI",
+    "PrivacyAutomatedDecisionHeading": "Prise de decision automatisee et profilage",
+    "PrivacyCcpaCategoriesHeading": "Categories de donnees du CCPA",
+    "PrivacyCcpaHeading": "Conformite au CCPA",
+    "PrivacyChangesHeading": "Modifications de cette politique de confidentialite",
+    "PrivacyCookieReferenceHeading": "Cookies et technologies de suivi",
+    "PrivacyDoNotSellHeading": "Ne pas vendre ni partager mes informations personnelles",
+    "PrivacyInternationalHeading": "Transferts internationaux de donnees",
+    "PrivacyLegalBasisHeading": "Base juridique du traitement (article 6 du RGPD)",
+    "PrivacyPaymentDataHeading": "Donnees de paiement"
+  },
+  "hi": {
+    "PrivacyAppiHeading": "जापान APPI",
+    "PrivacyAutomatedDecisionHeading": "स्वचालित निर्णय-निर्माण और प्रोफाइलिंग",
+    "PrivacyCcpaCategoriesHeading": "CCPA डेटा श्रेणियां",
+    "PrivacyCcpaHeading": "CCPA अनुपालन",
+    "PrivacyChangesHeading": "इस गोपनीयता नीति में परिवर्तन",
+    "PrivacyCookieReferenceHeading": "कुकीज़ और ट्रैकिंग तकनीकें",
+    "PrivacyDoNotSellHeading": "मेरी व्यक्तिगत जानकारी न बेचें और न साझा करें",
+    "PrivacyInternationalHeading": "अंतरराष्ट्रीय डेटा हस्तांतरण",
+    "PrivacyLegalBasisHeading": "प्रसंस्करण का कानूनी आधार (GDPR अनुच्छेद 6)",
+    "PrivacyPaymentDataHeading": "भुगतान डेटा"
+  },
+  "id": {
+    "PrivacyAppiHeading": "Jepang APPI",
+    "PrivacyAutomatedDecisionHeading": "Pengambilan keputusan otomatis dan pembuatan profil",
+    "PrivacyCcpaCategoriesHeading": "Kategori data CCPA",
+    "PrivacyCcpaHeading": "Kepatuhan CCPA",
+    "PrivacyChangesHeading": "Perubahan pada Kebijakan Privasi Ini",
+    "PrivacyCookieReferenceHeading": "Cookie dan teknologi pelacakan",
+    "PrivacyDoNotSellHeading": "Jangan jual atau bagikan informasi pribadi saya",
+    "PrivacyInternationalHeading": "Transfer data internasional",
+    "PrivacyLegalBasisHeading": "Dasar hukum pemrosesan (GDPR Pasal 6)",
+    "PrivacyPaymentDataHeading": "Data pembayaran"
+  },
+  "it": {
+    "PrivacyAppiHeading": "Giappone APPI",
+    "PrivacyAutomatedDecisionHeading": "Processo decisionale automatizzato e profilazione",
+    "PrivacyCcpaCategoriesHeading": "Categorie di dati CCPA",
+    "PrivacyCcpaHeading": "Conformita al CCPA",
+    "PrivacyChangesHeading": "Modifiche a questa informativa sulla privacy",
+    "PrivacyCookieReferenceHeading": "Cookie e tecnologie di tracciamento",
+    "PrivacyDoNotSellHeading": "Non vendere ne condividere le mie informazioni personali",
+    "PrivacyInternationalHeading": "Trasferimenti internazionali di dati",
+    "PrivacyLegalBasisHeading": "Base giuridica del trattamento (articolo 6 del GDPR)",
+    "PrivacyPaymentDataHeading": "Dati di pagamento"
+  },
+  "ja": {
+    "PrivacyAppiHeading": "日本 APPI",
+    "PrivacyAutomatedDecisionHeading": "自動化された意思決定とプロファイリング",
+    "PrivacyCcpaCategoriesHeading": "CCPA データ分類",
+    "PrivacyCcpaHeading": "CCPA コンプライアンス",
+    "PrivacyChangesHeading": "このプライバシーポリシーの変更",
+    "PrivacyCookieReferenceHeading": "Cookie と追跡技術",
+    "PrivacyDoNotSellHeading": "私の個人情報を販売または共有しないでください",
+    "PrivacyInternationalHeading": "国際的なデータ移転",
+    "PrivacyLegalBasisHeading": "処理の法的根拠（GDPR 第6条）",
+    "PrivacyPaymentDataHeading": "支払いデータ"
+  },
+  "ko": {
+    "PrivacyAppiHeading": "일본 APPI",
+    "PrivacyAutomatedDecisionHeading": "자동화된 의사결정 및 프로파일링",
+    "PrivacyCcpaCategoriesHeading": "CCPA 데이터 범주",
+    "PrivacyCcpaHeading": "CCPA 준수",
+    "PrivacyChangesHeading": "이 개인정보 처리방침의 변경",
+    "PrivacyCookieReferenceHeading": "쿠키 및 추적 기술",
+    "PrivacyDoNotSellHeading": "내 개인정보를 판매하거나 공유하지 마십시오",
+    "PrivacyInternationalHeading": "국제 데이터 이전",
+    "PrivacyLegalBasisHeading": "처리의 법적 근거 (GDPR 제6조)",
+    "PrivacyPaymentDataHeading": "결제 데이터"
+  },
+  "nl": {
+    "PrivacyAppiHeading": "Japan APPI",
+    "PrivacyAutomatedDecisionHeading": "Geautomatiseerde besluitvorming en profilering",
+    "PrivacyCcpaCategoriesHeading": "CCPA-gegevenscategorieen",
+    "PrivacyCcpaHeading": "Naleving van de CCPA",
+    "PrivacyChangesHeading": "Wijzigingen in dit privacybeleid",
+    "PrivacyCookieReferenceHeading": "Cookies en trackingtechnologieen",
+    "PrivacyDoNotSellHeading": "Verkoop of deel mijn persoonsgegevens niet",
+    "PrivacyInternationalHeading": "Internationale gegevensoverdrachten",
+    "PrivacyLegalBasisHeading": "Rechtsgrond voor verwerking (AVG artikel 6)",
+    "PrivacyPaymentDataHeading": "Betalingsgegevens"
+  },
+  "pt": {
+    "PrivacyAppiHeading": "Japao APPI",
+    "PrivacyAutomatedDecisionHeading": "Tomada de decisao automatizada e criacao de perfil",
+    "PrivacyCcpaCategoriesHeading": "Categorias de dados da CCPA",
+    "PrivacyCcpaHeading": "Conformidade com a CCPA",
+    "PrivacyChangesHeading": "Alteracoes nesta politica de privacidade",
+    "PrivacyCookieReferenceHeading": "Cookies e tecnologias de rastreamento",
+    "PrivacyDoNotSellHeading": "Nao vender nem compartilhar minhas informacoes pessoais",
+    "PrivacyInternationalHeading": "Transferencias internacionais de dados",
+    "PrivacyLegalBasisHeading": "Base legal para o tratamento (artigo 6 do GDPR)",
+    "PrivacyPaymentDataHeading": "Dados de pagamento"
+  },
+  "ru": {
+    "PrivacyAppiHeading": "Япония APPI",
+    "PrivacyAutomatedDecisionHeading": "Автоматизированное принятие решений и профилирование",
+    "PrivacyCcpaCategoriesHeading": "Категории данных CCPA",
+    "PrivacyCcpaHeading": "Соблюдение CCPA",
+    "PrivacyChangesHeading": "Изменения в настоящей политике конфиденциальности",
+    "PrivacyCookieReferenceHeading": "Файлы cookie и технологии отслеживания",
+    "PrivacyDoNotSellHeading": "Не продавать и не передавать мою личную информацию",
+    "PrivacyInternationalHeading": "Международная передача данных",
+    "PrivacyLegalBasisHeading": "Правовое основание обработки (статья 6 GDPR)",
+    "PrivacyPaymentDataHeading": "Платежные данные"
+  },
+  "tr": {
+    "PrivacyAppiHeading": "Japonya APPI",
+    "PrivacyAutomatedDecisionHeading": "Otomatik karar verme ve profilleme",
+    "PrivacyCcpaCategoriesHeading": "CCPA veri kategorileri",
+    "PrivacyCcpaHeading": "CCPA uyumlulugu",
+    "PrivacyChangesHeading": "Bu gizlilik politikasindaki degisiklikler",
+    "PrivacyCookieReferenceHeading": "Cerezler ve izleme teknolojileri",
+    "PrivacyDoNotSellHeading": "Kisisel bilgilerimi satmayin veya paylasmayin",
+    "PrivacyInternationalHeading": "Uluslararasi veri aktarimlari",
+    "PrivacyLegalBasisHeading": "Isleme icin hukuki dayanak (GDPR Madde 6)",
+    "PrivacyPaymentDataHeading": "Odeme verileri"
+  }
+}

@@ -1,0 +1,134 @@
+@page "/download"
+@using PrTask.Domain.Constants
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> Localizer
+<h1>@Localizer["DownloadPageHeading"]</h1>
+<p>@Localizer["DownloadPageDescription"]</p>
+<section class="about-section">
+    <h2>@Localizer["DownloadAndroidHeading"]</h2>
+    <p>@Localizer["DownloadAndroidDescription"]</p>
+    <p><strong>@Localizer["DownloadSystemRequirementsLabel"]</strong> @Localizer["DownloadAndroidRequirements"]</p>
+    <a href="/downloads/com.prtask.app-Signed.apk" class="btn btn-primary" download>@Localizer["DownloadAndroidButton"]</a>
+</section>
+<section class="about-section">
+    <h2>@Localizer["DownloadWindowsHeading"]</h2>
+    <p>@Localizer["DownloadWindowsDescription"]</p>
+    <p><strong>@Localizer["DownloadSystemRequirementsLabel"]</strong> @Localizer["DownloadWindowsRequirements"]</p>
+    <a href="/downloads/PrTask.exe" class="btn btn-primary" download>@Localizer["DownloadWindowsButton"]</a>
+</section>
+<section class="about-section">
+    <h2>@Localizer["DownloadIosHeading"]</h2>
+    <p>@Localizer["DownloadIosDescription"]</p>
+    <p><strong>@Localizer["DownloadSystemRequirementsLabel"]</strong> @Localizer["DownloadIosRequirements"]</p>
+    <span class="btn btn-secondary coming-soon">@Localizer["DownloadComingSoonText"]</span>
+</section>
+<section class="about-section">
+    <h2>@Localizer["DownloadMacHeading"]</h2>
+    <p>@Localizer["DownloadMacDescription"]</p>
+    <p><strong>@Localizer["DownloadSystemRequirementsLabel"]</strong> @Localizer["DownloadMacRequirements"]</p>
+    <span class="btn btn-secondary coming-soon">@Localizer["DownloadComingSoonText"]</span>
+</section>
+<section class="about-section">
+    <h2>@Localizer["DownloadLinuxHeading"]</h2>
+    <p>@Localizer["DownloadLinuxDescription"]</p>
+    <p><strong>@Localizer["DownloadSystemRequirementsLabel"]</strong> @Localizer["DownloadLinuxRequirements"]</p>
+    <a href="/downloads/PrTask-linux-x64" class="btn btn-primary" download>@Localizer["DownloadLinuxButton"]</a>
+</section>
+<section class="about-section">
+    <h2>@Localizer["DownloadWebAppHeading"]</h2>
+    <p>@Localizer["DownloadWebAppDescription"] <a href="https://@(AppConstants.AppDomain)" class="inline-link">@AppConstants.AppDomain</a></p>
+</section>
+
+<section class="about-section">
+    <h2>@Localizer["DownloadInstallHeading"]</h2>
+    <h3>@Localizer["DownloadAndroidHeading"]</h3>
+    <p>@Localizer["DownloadInstallAndroidDescription"]</p>
+    <h3>@Localizer["DownloadWindowsHeading"]</h3>
+    <p>@Localizer["DownloadInstallWindowsDescription"]</p>
+    <h3>@Localizer["DownloadIosHeading"]</h3>
+    <p>@Localizer["DownloadInstallIosDescription"]</p>
+    <h3>@Localizer["DownloadMacHeading"]</h3>
+    <p>@Localizer["DownloadInstallMacDescription"]</p>
+    <h3>@Localizer["DownloadLinuxHeading"]</h3>
+    <p>@Localizer["DownloadInstallLinuxDescription"]</p>
+</section>
+
+<section class="about-section">
+    <h2>@Localizer["DownloadVerificationHeading"]</h2>
+    <p>@Localizer["DownloadVerificationDescription"]</p>
+</section>
+
+<section class="about-section">
+    <h2>@Localizer["DownloadFeatureComparisonHeading"]</h2>
+    <table class="feature-table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>@Localizer["DownloadAndroidHeading"]</th>
+                <th>@Localizer["DownloadWindowsHeading"]</th>
+                <th>@Localizer["DownloadIosHeading"]</th>
+                <th>@Localizer["DownloadMacHeading"]</th>
+                <th>@Localizer["DownloadLinuxHeading"]</th>
+                <th>@Localizer["DownloadWebAppHeading"]</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">@Localizer["DownloadFeatureOffline"]</th>
+                <td>@Localizer["DownloadFeatureAvailable"]</td>
+                <td>@Localizer["DownloadFeatureAvailable"]</td>
+                <td>@Localizer["DownloadFeaturePlanned"]</td>
+                <td>@Localizer["DownloadFeaturePlanned"]</td>
+                <td>@Localizer["DownloadFeaturePlanned"]</td>
+                <td>@Localizer["DownloadFeatureNotApplicable"]</td>
+            </tr>
+            <tr>
+                <th scope="row">@Localizer["DownloadFeaturePushNotifications"]</th>
+                <td>@Localizer["DownloadFeatureAvailable"]</td>
+                <td>@Localizer["DownloadFeaturePlanned"]</td>
+                <td>@Localizer["DownloadFeaturePlanned"]</td>
+                <td>@Localizer["DownloadFeaturePlanned"]</td>
+                <td>@Localizer["DownloadFeaturePlanned"]</td>
+                <td>@Localizer["DownloadFeatureAvailable"]</td>
+            </tr>
+            <tr>
+                <th scope="row">@Localizer["DownloadFeatureNative"]</th>
+                <td>@Localizer["DownloadFeatureAvailable"]</td>
+                <td>@Localizer["DownloadFeatureAvailable"]</td>
+                <td>@Localizer["DownloadFeaturePlanned"]</td>
+                <td>@Localizer["DownloadFeaturePlanned"]</td>
+                <td>@Localizer["DownloadFeaturePlanned"]</td>
+                <td>@Localizer["DownloadFeatureNotApplicable"]</td>
+            </tr>
+            <tr>
+                <th scope="row">@Localizer["DownloadFeatureBiometric"]</th>
+                <td>@Localizer["DownloadFeatureAvailable"]</td>
+                <td>@Localizer["DownloadFeaturePlanned"]</td>
+                <td>@Localizer["DownloadFeaturePlanned"]</td>
+                <td>@Localizer["DownloadFeaturePlanned"]</td>
+                <td>@Localizer["DownloadFeatureNotApplicable"]</td>
+                <td>@Localizer["DownloadFeatureNotApplicable"]</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section class="about-section">
+    <h2>@Localizer["DownloadTroubleshootHeading"]</h2>
+    <h3>@Localizer["DownloadTroubleshootApkQuestion"]</h3>
+    <p>@Localizer["DownloadTroubleshootApk"]</p>
+    <h3>@Localizer["DownloadTroubleshootCrashQuestion"]</h3>
+    <p>@Localizer["DownloadTroubleshootCrash"]</p>
+</section>
+
+<section class="about-section">
+    <h3>@Localizer["DownloadVersionLabel"]</h3>
+    <p>@AppConstants.AppVersion</p>
+    <h3>@Localizer["DownloadLastUpdatedLabel"]</h3>
+    <p>@Localizer["DownloadLastUpdatedValue"]</p>
+</section>
+<section class="page-description">
+    <h2>@Localizer["DownloadDescriptionHeading"]</h2>
+    <p>@Localizer["DownloadDescriptionParagraph1"]</p>
+    <p>@Localizer["DownloadDescriptionParagraph2"]</p>
+    <p>@Localizer["DownloadDescriptionParagraph3"]</p>
+</section>

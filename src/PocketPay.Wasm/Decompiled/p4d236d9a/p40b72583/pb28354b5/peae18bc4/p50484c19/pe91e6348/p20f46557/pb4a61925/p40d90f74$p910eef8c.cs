@@ -1,0 +1,13 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+
+@kotlin.Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\t\n\u0002\b\u0006\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003R\u000e\u0010\u0004\u001a\u00020\u0005X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0005X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0005X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0005X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\u0005X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u0005X\u0086T¢\u0006\u0002\n\u0000¨\u0006\u000b"}, d2 = {"Lp4d236d9a/p40b72583/pb28354b5/peae18bc4/p50484c19/pe91e6348/p20f46557/pb4a61925/p40d90f74$p910eef8c;", "", "<init>", "()V", "CHECKS_START_AFTER_SEC", "", "CHECKS_MIN_RANDOM_PERIOD_SEC", "CHECKS_MAX_RANDOM_PERIOD_SEC", "CHECKS_LOCAL_START_AFTER_SEC", "CHECKS_LOCAL_PERIOD_SEC", "CHECKS_SKIPS_NUMBER", "SDKLibrary_prodRelease"}, m527k = 1, mv = {2, 1, 0}, xi = 48)
+public readonly class p40d90f74$p910eef8c {
+    private p40d90f74$p910eef8c() {
+    }
+
+    public p40d90f74$p910eef8c(kotlin.jvm.internal.DefaultConstructorMarker defaultConstructorMarker) {
+        this();
+    }
+}
+

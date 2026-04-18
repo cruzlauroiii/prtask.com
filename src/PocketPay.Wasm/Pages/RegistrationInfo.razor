@@ -1,0 +1,74 @@
+@page "/registration-info"
+@inject NavigationManager Nav
+@inject HttpClient Http
+
+<div class="login-form">
+    <h2>PocketPay Login</h2>
+    <p>Enter your phone number and password</p>
+    <input type="tel" placeholder="09XX XXX XXXX" @bind="PhoneNumber" @bind:event="oninput" />
+    <input type="password" placeholder="Password" @bind="Password" @bind:event="oninput" />
+    @if (ErrorMessage.Length > 0)
+    {
+        <p class="error">@ErrorMessage</p>
+    }
+    <button @onclick="SubmitLogin" disabled="@IsLoading">@(IsLoading ? "Logging in..." : "Login")</button>
+</div>
+
+@code {
+    private string PhoneNumber { get; set; } = string.Empty;
+    private string Password { get; set; } = string.Empty;
+    private string ErrorMessage { get; set; } = string.Empty;
+    private bool IsLoading { get; set; }
+
+    private async Task SubmitLogin()
+    {
+        ErrorMessage = string.Empty;
+        if (PhoneNumber.Length < 10)
+        {
+            ErrorMessage = "Please enter a valid phone number";
+            return;
+        }
+
+        if (Password.Length == 0)
+        {
+            ErrorMessage = "Please enter your password";
+            return;
+        }
+
+        IsLoading = true;
+        try
+        {
+            var LoginPhone = PhoneNumber.Replace(" ", string.Empty).Replace("+", string.Empty).Replace("-", string.Empty);
+            if (LoginPhone.StartsWith("0", StringComparison.Ordinal))
+            {
+                LoginPhone = "63" + LoginPhone[1..];
+            }
+            else if (!LoginPhone.StartsWith("63", StringComparison.Ordinal))
+            {
+                LoginPhone = "63" + LoginPhone;
+            }
+
+            var Payload = new { Method = "login", Payload = new { Phone = LoginPhone, Password = Password } };
+            var Response = await Http.PostAsJsonAsync("wss-proxy/login", Payload);
+            var Result = await Response.Content.ReadFromJsonAsync<LoginResult>();
+            if (Result is not null && Result.Success)
+            {
+                Nav.NavigateTo("/launcher");
+            }
+            else
+            {
+                ErrorMessage = Result?.Error ?? "Login failed";
+            }
+        }
+        catch (Exception Ex)
+        {
+            ErrorMessage = Ex.Message;
+        }
+        finally
+        {
+            IsLoading = false;
+        }
+    }
+
+    private sealed record LoginResult(bool Success, string? Token, string? Error, string? ShopUuid);
+}

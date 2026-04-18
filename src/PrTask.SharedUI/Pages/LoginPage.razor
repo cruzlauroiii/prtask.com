@@ -1,0 +1,92 @@
+@page "/login"
+@using PrTask.Domain.Constants
+@inject NavigationManager NavigationManager
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> Localizer
+<section class="login-section">
+    <h1>@Localizer["LoginPageHeading"]</h1>
+    <p>@Localizer["LoginPageDescription"]</p>
+    <div class="login-buttons">
+        <a href="@RouteConstants.ApiAuthGoogle" class="btn btn-primary google-login">@Localizer["LoginSignInWithGoogle"]</a>
+        <a href="@RouteConstants.ApiAuthGitHub" class="btn btn-secondary github-login">@Localizer["LoginSignInWithGitHub"]</a>
+        <a href="@RouteConstants.ApiAuthAzure" class="btn btn-secondary azure-login">@Localizer["LoginSignInWithMicrosoft"]</a>
+        <a href="@RouteConstants.ApiAuthOkta" class="btn btn-secondary okta-login">@Localizer["LoginSignInWithOkta"]</a>
+    </div>
+    <div class="login-info">
+        <h2>@Localizer["LoginDevelopersHeading"]</h2>
+        <p>@Localizer["LoginDevelopersDescription"]</p>
+        <h2>@Localizer["LoginClientsHeading"]</h2>
+        <p>@Localizer["LoginClientsDescription"]</p>
+    </div>
+</section>
+
+<section class="why-prtask-section">
+    <h2>@Localizer["LoginWhyPrTaskHeading"]</h2>
+    <p>@Localizer["LoginWhyPrTaskDescription"]</p>
+    <div class="benefit-cards">
+        <div class="benefit-card">
+            <h3>@Localizer["LoginEarnMoneyHeading"]</h3>
+            <p>@Localizer["LoginEarnMoneyDescription"]</p>
+        </div>
+        <div class="benefit-card">
+            <h3>@Localizer["LoginNoPlatformFeesHeading"]</h3>
+            <p>@Localizer["LoginNoPlatformFeesDescription"]</p>
+        </div>
+        <div class="benefit-card">
+            <h3>@Localizer["LoginPublicPrsHeading"]</h3>
+            <p>@Localizer["LoginPublicPrsDescription"]</p>
+        </div>
+    </div>
+</section>
+
+<section class="how-it-works-section">
+    <h2>@Localizer["LoginHowItWorksHeading"]</h2>
+    <div class="steps">
+        <div class="step">
+            <span class="step-number">1</span>
+            <h3>@Localizer["LoginSignInHeading"]</h3>
+            <p>@Localizer["LoginSignInDescription"]</p>
+        </div>
+        <div class="step">
+            <span class="step-number">2</span>
+            <h3>@Localizer["LoginBrowseTasksHeading"]</h3>
+            <p>@Localizer["LoginBrowseTasksDescription"]</p>
+        </div>
+        <div class="step">
+            <span class="step-number">3</span>
+            <h3>@Localizer["LoginSubmitPrsHeading"]</h3>
+            <p>@Localizer["LoginSubmitPrsDescription"]</p>
+        </div>
+        <div class="step">
+            <span class="step-number">4</span>
+            <h3>@Localizer["LoginGetPaidHeading"]</h3>
+            <p>@Localizer["LoginGetPaidDescription"]</p>
+        </div>
+    </div>
+</section>
+
+<section class="security-section">
+    <h2>@Localizer["LoginSecurityHeading"]</h2>
+    <p>@Localizer["LoginSecurityDescription"]</p>
+</section>
+
+<section class="help-section">
+    <h2>@Localizer["LoginHelpHeading"]</h2>
+    <p>@Localizer["LoginHelpDescription"]</p>
+    <a href="@RouteConstants.HowItWorks" class="btn btn-outline">@Localizer["LoginHelpLink"]</a>
+</section>
+<section class="page-description">
+    <h2>@Localizer["LoginDescriptionHeading"]</h2>
+    <p>@Localizer["LoginDescriptionParagraph1"]</p>
+    <p>@Localizer["LoginDescriptionParagraph2"]</p>
+    <p>@Localizer["LoginDescriptionParagraph3"]</p>
+</section>
+@code {
+    protected override void OnInitialized()
+    {
+        var CurrentUri = NavigationManager.Uri;
+        if (!CurrentUri.Contains("auto_failed") && !CurrentUri.Contains("error="))
+        {
+            NavigationManager.NavigateTo($"{RouteConstants.ApiAuthGoogle}?auto=true", forceLoad: true);
+        }
+    }
+}

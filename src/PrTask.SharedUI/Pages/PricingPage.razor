@@ -1,0 +1,136 @@
+@page "/pricing"
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> Localizer
+<h1>@Localizer["PricingPageHeading"]</h1>
+<p>@Localizer["PricingPageDescription"]</p>
+<section class="pricing-cards">
+    <div class="pricing-card">
+        <h2>@Localizer["PricingDevelopersHeading"]</h2>
+        <div class="pricing-amount">@Localizer["PricingFreeLabel"]</div>
+        <ul>
+            <li>@Localizer["PricingDevFeature1"]</li>
+            <li>@Localizer["PricingDevFeature2"]</li>
+            <li>@Localizer["PricingDevFeature3"]</li>
+            <li>@Localizer["PricingDevFeature4"]</li>
+            <li>@Localizer["PricingDevFeature5"]</li>
+        </ul>
+    </div>
+    <div class="pricing-card featured">
+        <h2>@Localizer["PricingClientsHeading"]</h2>
+        <div class="pricing-amount">@Localizer["PricingFreeLabel"]</div>
+        <ul>
+            <li>@Localizer["PricingClientFeature1"]</li>
+            <li>@Localizer["PricingClientFeature2"]</li>
+            <li>@Localizer["PricingClientFeature3"]</li>
+            <li>@Localizer["PricingClientFeature4"]</li>
+            <li>@Localizer["PricingClientFeature5"]</li>
+            <li>@Localizer["PricingClientFeature6"]</li>
+        </ul>
+    </div>
+</section>
+
+<section class="feature-comparison">
+    <h2>@Localizer["PricingFeatureComparisonHeading"]</h2>
+    <table class="comparison-table">
+        <thead>
+            <tr>
+                <th>@Localizer["PricingFeatureHeading"]</th>
+                <th>@Localizer["PricingDevelopersHeading"]</th>
+                <th>@Localizer["PricingClientsHeading"]</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">@Localizer["PricingFeatureTaskBrowsing"]</th>
+                <td>@Localizer["PricingFeatureIncluded"]</td>
+                <td>@Localizer["PricingFeatureIncluded"]</td>
+            </tr>
+            <tr>
+                <th scope="row">@Localizer["PricingFeaturePrSubmission"]</th>
+                <td>@Localizer["PricingFeatureIncluded"]</td>
+                <td>@Localizer["PricingFeatureIncluded"]</td>
+            </tr>
+            <tr>
+                <th scope="row">@Localizer["PricingFeatureCodeReview"]</th>
+                <td>@Localizer["PricingFeatureIncluded"]</td>
+                <td>@Localizer["PricingFeatureIncluded"]</td>
+            </tr>
+            <tr>
+                <th scope="row">@Localizer["PricingFeaturePayment"]</th>
+                <td>@Localizer["PricingFeatureIncluded"]</td>
+                <td>@Localizer["PricingFeatureIncluded"]</td>
+            </tr>
+            <tr>
+                <th scope="row">@Localizer["PricingFeatureLeaderboard"]</th>
+                <td>@Localizer["PricingFeatureIncluded"]</td>
+                <td>@Localizer["PricingFeatureIncluded"]</td>
+            </tr>
+            <tr>
+                <th scope="row">@Localizer["PricingFeatureAchievements"]</th>
+                <td>@Localizer["PricingFeatureIncluded"]</td>
+                <td>@Localizer["PricingFeatureIncluded"]</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section class="enterprise-section">
+    <h2>@Localizer["PricingEnterpriseHeading"]</h2>
+    <p>@Localizer["PricingEnterpriseDescription"]</p>
+    <a class="btn btn-primary" href="/contact">@Localizer["PricingEnterpriseLink"]</a>
+</section>
+
+<section class="payment-methods-section">
+    <h2>@Localizer["PricingPaymentMethodsHeading"]</h2>
+    <p>@Localizer["PricingPaymentMethodsDescription"]</p>
+</section>
+
+<section class="payout-section">
+    <h2>@Localizer["PricingPayoutHeading"]</h2>
+    <p>@Localizer["PricingPayoutDescription"]</p>
+</section>
+
+<section class="refund-summary-section">
+    <h2>@Localizer["PricingRefundHeading"]</h2>
+    <p>@Localizer["PricingRefundDescription"]</p>
+    <a href="/legal/refund" class="inline-link">@Localizer["PricingRefundLink"]</a>
+</section>
+
+<section class="pricing-faq">
+    <h2>@Localizer["PricingFaqHeading"]</h2>
+    <div class="faq-item">
+        <h3>@Localizer["PricingFaqProcessQuestion"]</h3>
+        <p>@Localizer["PricingFaqProcessAnswer"]</p>
+    </div>
+    <div class="faq-item">
+        <h3>@Localizer["PricingFaqWhenPaidQuestion"]</h3>
+        <p>@Localizer["PricingFaqWhenPaidAnswer"]</p>
+    </div>
+    <div class="faq-item">
+        <h3>@Localizer["PricingFaqCurrencyQuestion"]</h3>
+        <p>@Localizer["PricingFaqCurrencyAnswer"]</p>
+    </div>
+    <div class="faq-item">
+        <h3>@Localizer["PricingFaqMethodsQuestion"]</h3>
+        <p>@Localizer["PricingFaqMethodsAnswer"]</p>
+    </div>
+    <div class="faq-item">
+        <h3>@Localizer["PricingFaqPayoutTimeQuestion"]</h3>
+        <p>@Localizer["PricingFaqPayoutTimeAnswer"]</p>
+    </div>
+    <div class="faq-item">
+        <h3>@Localizer["PricingFaqMinBountyQuestion"]</h3>
+        <p>@Localizer["PricingFaqMinBountyAnswer"]</p>
+    </div>
+</section>
+
+<section class="get-started-section">
+    <h2>@Localizer["PricingGetStartedHeading"]</h2>
+    <p>@Localizer["PricingGetStartedDescription"]</p>
+    <a class="btn btn-primary" href="/register">@Localizer["PricingGetStartedButton"]</a>
+</section>
+<section class="page-description">
+    <h2>@Localizer["PricingDescriptionHeading"]</h2>
+    <p>@Localizer["PricingDescriptionParagraph1"]</p>
+    <p>@Localizer["PricingDescriptionParagraph2"]</p>
+    <p>@Localizer["PricingDescriptionParagraph3"]</p>
+</section>

@@ -1,0 +1,121 @@
+@page "/Boards/{BoardId}"
+@using PrTask.Application.Services
+@using PrTask.Domain.Constants
+@using PrTask.Domain.Models
+@inject IBoardService BoardService
+@inject ITaskService TaskService
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> L
+
+<SeoHead Title="@BoardConstants.DetailSeoTitle" Description="@BoardConstants.DetailSeoDescription" />
+
+<div class="board-detail">
+    @if (CurrentBoard is null)
+    {
+        <p>@L["BoardDetailLoadingText"]</p>
+    }
+    else
+    {
+        <div class="board-header">
+            <h1>@CurrentBoard.Name</h1>
+            <span class="board-type">@CurrentBoard.Type</span>
+            <button class="btn btn-sm btn-secondary" @onclick="ToggleAddColumn">@L["BoardAddColumnButton"]</button>
+        </div>
+        @if (ShowAddColumn)
+        {
+            <div class="add-column-form">
+                <input type="text" @bind="NewColumnName" placeholder="@BoardConstants.ColumnNamePlaceholder" class="form-input" />
+                <input type="number" @bind="NewColumnWipLimit" placeholder="@BoardConstants.ColumnWipPlaceholder" class="form-input" />
+                <button class="btn btn-primary" @onclick="AddColumnAsync">@L["BoardAddColumnActionText"]</button>
+            </div>
+        }
+        <div class="board-columns">
+            @if (Columns is not null)
+            {
+                @foreach (var Column in Columns)
+                {
+                    <div class="board-column @(IsWipExceeded(Column) ? "wip-exceeded" : string.Empty)">
+                        <div class="column-header">
+                            <h3>@Column.Name</h3>
+                            @if (Column.WipLimit.HasValue)
+                            {
+                                <span class="wip-limit @(IsWipExceeded(Column) ? "wip-exceeded-badge" : string.Empty)">@GetColumnTaskCount(Column.Id)/@Column.WipLimit</span>
+                            }
+                            <button class="btn btn-sm btn-danger" @onclick="() => DeleteColumnAsync(Column.Id)">@L["BoardDeleteColumnButtonText"]</button>
+                        </div>
+                        <div class="column-items">
+                            @if (ColumnTasks.TryGetValue(Column.Id, out var Tasks) && Tasks.Count > 0)
+                            {
+                                @foreach (var T in Tasks)
+                                {
+                                    <div class="task-card">
+                                        <a href="@(string.Format(RouteConstants.TaskDetail, T.Id))">@T.Title</a>
+                                        <span class="task-complexity complexity-@T.Complexity.ToString().ToLowerInvariant()">@L[$"TaskComplexity{T.Complexity}"]</span>
+                                    </div>
+                                }
+                            }
+                            else
+                            {
+                                <p class="empty-column">@L["BoardEmptyColumnText"]</p>
+                            }
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    }
+</div>
+@code {
+    [Parameter] public string BoardId { get; set; } = string.Empty;
+    private BoardEntity? CurrentBoard { get; set; }
+    private IReadOnlyList<BoardColumnEntity>? Columns { get; set; }
+    private Dictionary<string, List<TaskEntity>> ColumnTasks { get; set; } = [];
+    private bool ShowAddColumn { get; set; }
+    private string NewColumnName { get; set; } = string.Empty;
+    private int? NewColumnWipLimit { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        CurrentBoard = await BoardService.GetByIdAsync(BoardId);
+        Columns = await BoardService.ListColumnsAsync(BoardId);
+        await LoadColumnTasksAsync();
+    }
+    private async Task LoadColumnTasksAsync()
+    {
+        ColumnTasks = [];
+        var AllTasks = await TaskService.ListOpenAsync();
+        foreach (var T in AllTasks.Where(T => !string.IsNullOrEmpty(T.BoardColumnId)))
+        {
+            if (!ColumnTasks.ContainsKey(T.BoardColumnId!))
+            {
+                ColumnTasks[T.BoardColumnId!] = [];
+            }
+            ColumnTasks[T.BoardColumnId!].Add(T);
+        }
+    }
+    private void ToggleAddColumn() => ShowAddColumn = !ShowAddColumn;
+    private async Task AddColumnAsync()
+    {
+        if (string.IsNullOrWhiteSpace(NewColumnName)) return;
+        var Order = Columns?.Count ?? 0;
+        await BoardService.CreateColumnAsync(new BoardColumnEntity
+        {
+            Id = Guid.NewGuid().ToString(),
+            BoardId = BoardId,
+            Name = NewColumnName,
+            Order = Order,
+            WipLimit = NewColumnWipLimit
+        });
+        NewColumnName = string.Empty;
+        NewColumnWipLimit = null;
+        ShowAddColumn = false;
+        Columns = await BoardService.ListColumnsAsync(BoardId);
+    }
+    private async Task DeleteColumnAsync(string ColumnId)
+    {
+        await BoardService.DeleteColumnAsync(ColumnId);
+        Columns = await BoardService.ListColumnsAsync(BoardId);
+    }
+    private int GetColumnTaskCount(string ColumnId) =>
+        ColumnTasks.TryGetValue(ColumnId, out var Tasks) ? Tasks.Count : 0;
+    private bool IsWipExceeded(BoardColumnEntity Column) =>
+        Column.WipLimit.HasValue && GetColumnTaskCount(Column.Id) >= Column.WipLimit.Value;
+}

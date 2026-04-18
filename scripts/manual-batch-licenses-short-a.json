@@ -1,0 +1,112 @@
+{
+  "es": {
+    "LicensesCreditCardHeading": "Procesamiento de tarjetas de credito",
+    "LicensesDataProtectionHeading": "Proteccion de datos",
+    "LicensesDescriptionHeading": "Acerca de esta pagina de licencias",
+    "LicensesDeveloperCodeHeading": "Codigo enviado por desarrolladores",
+    "LicensesOpenSourceHeading": "Reconocimientos de codigo abierto",
+    "LicensesPlatformHeading": "Licencia de la plataforma",
+    "LicensesRegulatoryHeading": "Cumplimiento normativo",
+    "LicensesThirdPartyHeading": "Atribuciones de terceros",
+    "LicensesUserContentHeading": "Licencia del contenido generado por usuarios"
+  },
+  "fil": {
+    "LicensesCreditCardHeading": "Pagproseso ng credit card",
+    "LicensesDataProtectionHeading": "Proteksyon ng datos",
+    "LicensesDescriptionHeading": "Tungkol sa pahinang ito ng mga lisensya",
+    "LicensesDeveloperCodeHeading": "Code na isinumite ng developer",
+    "LicensesOpenSourceHeading": "Pagkilala sa open source",
+    "LicensesPlatformHeading": "Lisensya ng plataporma",
+    "LicensesRegulatoryHeading": "Pagsunod sa regulasyon",
+    "LicensesThirdPartyHeading": "Mga atribusyon ng third-party",
+    "LicensesUserContentHeading": "Lisensya ng nilalamang mula sa user"
+  },
+  "fr": {
+    "LicensesCreditCardHeading": "Traitement des cartes de credit",
+    "LicensesDataProtectionHeading": "Protection des donnees",
+    "LicensesDescriptionHeading": "A propos de cette page des licences",
+    "LicensesDeveloperCodeHeading": "Code soumis par les developpeurs",
+    "LicensesOpenSourceHeading": "Remerciements open source",
+    "LicensesPlatformHeading": "Licence de la plateforme",
+    "LicensesRegulatoryHeading": "Conformite reglementaire",
+    "LicensesThirdPartyHeading": "Attributions de tiers",
+    "LicensesUserContentHeading": "Licence du contenu genere par les utilisateurs"
+  },
+  "hi": {
+    "LicensesCreditCardHeading": "क्रेडिट कार्ड प्रसंस्करण",
+    "LicensesDataProtectionHeading": "डेटा सुरक्षा",
+    "LicensesDescriptionHeading": "इस लाइसेंस पृष्ठ के बारे में",
+    "LicensesDeveloperCodeHeading": "डेवलपर द्वारा जमा किया गया कोड",
+    "LicensesOpenSourceHeading": "ओपन सोर्स आभार",
+    "LicensesPlatformHeading": "प्लेटफ़ॉर्म लाइसेंस",
+    "LicensesRegulatoryHeading": "नियामक अनुपालन",
+    "LicensesThirdPartyHeading": "तृतीय-पक्ष श्रेय",
+    "LicensesUserContentHeading": "उपयोगकर्ता-जनित सामग्री लाइसेंस"
+  },
+  "id": {
+    "LicensesCreditCardHeading": "Pemrosesan kartu kredit",
+    "LicensesDataProtectionHeading": "Perlindungan data",
+    "LicensesDescriptionHeading": "Tentang halaman lisensi ini",
+    "LicensesDeveloperCodeHeading": "Kode yang dikirim developer",
+    "LicensesOpenSourceHeading": "Ucapan terima kasih open source",
+    "LicensesPlatformHeading": "Lisensi platform",
+    "LicensesRegulatoryHeading": "Kepatuhan regulasi",
+    "LicensesThirdPartyHeading": "Atribusi pihak ketiga",
+    "LicensesUserContentHeading": "Lisensi konten buatan pengguna"
+  },
+  "it": {
+    "LicensesCreditCardHeading": "Elaborazione delle carte di credito",
+    "LicensesDataProtectionHeading": "Protezione dei dati",
+    "LicensesDescriptionHeading": "Informazioni su questa pagina delle licenze",
+    "LicensesDeveloperCodeHeading": "Codice inviato dagli sviluppatori",
+    "LicensesOpenSourceHeading": "Riconoscimenti open source",
+    "LicensesPlatformHeading": "Licenza della piattaforma",
+    "LicensesRegulatoryHeading": "Conformita normativa",
+    "LicensesThirdPartyHeading": "Attribuzioni di terze parti",
+    "LicensesUserContentHeading": "Licenza dei contenuti generati dagli utenti"
+  },
+  "ja": {
+    "LicensesCreditCardHeading": "クレジットカード処理",
+    "LicensesDataProtectionHeading": "データ保護",
+    "LicensesDescriptionHeading": "このライセンスページについて",
+    "LicensesDeveloperCodeHeading": "開発者が提出したコード",
+    "LicensesOpenSourceHeading": "オープンソースへの謝辞",
+    "LicensesPlatformHeading": "プラットフォームライセンス",
+    "LicensesRegulatoryHeading": "規制遵守",
+    "LicensesThirdPartyHeading": "第三者帰属表示",
+    "LicensesUserContentHeading": "ユーザー生成コンテンツのライセンス"
+  },
+  "ko": {
+    "LicensesCreditCardHeading": "신용카드 처리",
+    "LicensesDataProtectionHeading": "데이터 보호",
+    "LicensesDescriptionHeading": "이 라이선스 페이지 안내",
+    "LicensesDeveloperCodeHeading": "개발자가 제출한 코드",
+    "LicensesOpenSourceHeading": "오픈 소스 감사",
+    "LicensesPlatformHeading": "플랫폼 라이선스",
+    "LicensesRegulatoryHeading": "규제 준수",
+    "LicensesThirdPartyHeading": "제3자 고지",
+    "LicensesUserContentHeading": "사용자 생성 콘텐츠 라이선스"
+  },
+  "nl": {
+    "LicensesCreditCardHeading": "Verwerking van creditcards",
+    "LicensesDataProtectionHeading": "Gegevensbescherming",
+    "LicensesDescriptionHeading": "Over deze licentiepagina",
+    "LicensesDeveloperCodeHeading": "Door ontwikkelaars ingediende code",
+    "LicensesOpenSourceHeading": "Open source-erkenningen",
+    "LicensesPlatformHeading": "Platformlicentie",
+    "LicensesRegulatoryHeading": "Naleving van regelgeving",
+    "LicensesThirdPartyHeading": "Toeschrijvingen van derden",
+    "LicensesUserContentHeading": "Licentie voor door gebruikers gegenereerde inhoud"
+  },
+  "tr": {
+    "LicensesCreditCardHeading": "Kredi karti islemleri",
+    "LicensesDataProtectionHeading": "Veri korumasi",
+    "LicensesDescriptionHeading": "Bu lisanslar sayfasi hakkinda",
+    "LicensesDeveloperCodeHeading": "Gelistirici tarafindan gonderilen kod",
+    "LicensesOpenSourceHeading": "Acik kaynak tesekkurleri",
+    "LicensesPlatformHeading": "Platform lisansi",
+    "LicensesRegulatoryHeading": "Duzenleyici uyumluluk",
+    "LicensesThirdPartyHeading": "Ucuncu taraf atiflari",
+    "LicensesUserContentHeading": "Kullanici tarafindan olusturulan icerik lisansi"
+  }
+}

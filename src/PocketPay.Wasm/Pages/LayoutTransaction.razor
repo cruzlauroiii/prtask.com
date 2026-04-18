@@ -1,0 +1,28 @@
+@page "/layout-transaction"
+@inject NavigationManager Nav
+
+<div style="display:flex;flex-direction:column;width:100%">
+    <header class="toolbar" style="width:100%"></header>
+    <div style="width:100%">
+        <div class="layoutProgress" style="width:100%">
+            <div class="progressBarContactless"></div>
+            <img class="ivAnimContactless" />
+            <img class="ivWaitContactless" />
+        </div>
+        <span class="tvAmount" style="width:100%"></span>
+        <span class="tvMerchantName" style="width:100%"></span>
+        <span class="tvMerchantAddress" style="width:100%"></span>
+        <div class="layoutLogos" style="width:100%">
+            <img class="ivLogoMC" src="img/toph_ic_logo_mc.png" alt="toph_ic_logo_mc" />
+            <img class="ivLogoVisa" src="img/toph_ic_logo_visa.png" alt="toph_ic_logo_visa" />
+        </div>
+        <button class="btnExit" style="width:100%"></button>
+    </div>
+</div>
+
+@code {
+
+    private void OnField2131361983Click()
+    {
+    }
+}

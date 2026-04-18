@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>WillowMaze.Wasm</RootNamespace>
+    <NoWarn>$(NoWarn);SYSLIB0057;SA0001;SA1122;SA1134;SA1402;SA1407;SA1503;SA1520;SA1633;CS1591;PT003;PT004;PT005;PT006;PT007;CA1002;CA1416;CA1422;CA1834;CA1865;CA2016;CA2227;CA5359;CA5394;IDE0007;IDE0011;IDE0017;IDE0021;IDE0022;IDE0023;IDE0024;IDE0025;IDE0026;IDE0027;IDE0028;IDE0031;IDE0032;IDE0046;IDE0047;IDE0048;IDE0059;IDE0072;IDE0078;IDE0130;IDE0200;IDE0270;IDE0290;IDE0300;IDE0301;IDE0305;IDE0330;IDE1006;MA0016;MA0028;MA0075;MA0099;MA0101;MA0132;MA0140;MA0158;MA0159;RCS1003;CA1859;RCS1036;RCS1075;RCS1077;RCS1085;RCS1118;RCS1123;RCS1136;RCS1161;RCS1170;RCS1179;RCS1181;RCS1192;RCS1197;RCS1201;RCS1214;RCS1235;RCS1239;RCS1266;RCS1267;S108;S127;S1075;S1144;S1186;S1481;S1854;S1871;S1905;S2486;S2681;S3063;S3358;S3457;S3459;S3626;S4830;IL2026;IL2046;IL2050;IL2055;IL2057;IL2060;IL2072;IL2075;IL2077;IL2091;IL3050</NoWarn>
+    <EnableTrimAnalyzer>false</EnableTrimAnalyzer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Decompiled/**/*.cs" />
+    <None Include="Decompiled/**/*.cs" />
+    <Compile Remove="WillowMaze.Wasm.Backoffice/**/*.cs" />
+    <None Include="WillowMaze.Wasm.Backoffice/**/*.cs" />
+    <Compile Remove="WillowMaze.Wasm.Companion/**/*.cs" />
+    <None Include="WillowMaze.Wasm.Companion/**/*.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="11.0.0-preview.2.26159.112" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="11.0.0-preview.2.26159.112" PrivateAssets="all" />
+  </ItemGroup>
+</Project>

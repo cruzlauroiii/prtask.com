@@ -1,0 +1,74 @@
+@page "/tasks/{TaskId}"
+@using PrTask.Application.Services
+@using PrTask.Domain.Models
+@inject ITaskService TaskService
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> Localizer
+<div class="task-detail">
+    @if (CurrentTask is null)
+    {
+        <p>Loading task...</p>
+    }
+    else
+    {
+        <div class="task-detail-header">
+            <span class="task-complexity complexity-@CurrentTask.Complexity.ToString().ToLowerInvariant()">@Localizer[$"TaskComplexity{CurrentTask.Complexity}"]</span>
+            <span class="task-bounty">@FormatBountyAmount(CurrentTask.BountyAmountCents)</span>
+        </div>
+        <h1>@CurrentTask.Title</h1>
+        <p class="task-description">@CurrentTask.Description</p>
+        @if (CurrentTask.Tags is not null)
+        {
+            <div class="task-tags">
+                @foreach (var CurrentTag in CurrentTask.Tags)
+                {
+                    <span class="tag">@CurrentTag</span>
+                }
+            </div>
+        }
+        <div class="task-meta">
+            <span>Status: @CurrentTask.Status</span>
+            @if (CurrentTask.Deadline.HasValue)
+            {
+                <span>Deadline: @CurrentTask.Deadline.Value.ToString("MMM dd, yyyy", System.Globalization.CultureInfo.InvariantCulture)</span>
+            }
+        </div>
+        @if (CurrentTask.Status == PrTaskStatus.Open)
+        {
+            <button class="btn btn-primary" @onclick="ClaimCurrentTask">Claim This Task</button>
+        }
+        <div class="task-owner-actions">
+            <a href="/client/edit-task/@TaskId" class="btn btn-secondary">Edit Task</a>
+            <button class="btn btn-secondary" @onclick="DeleteCurrentTask">Delete Task</button>
+        </div>
+        <section class="pr-list-section">
+            <h2>Pull Requests</h2>
+            <p>Developers submit pull requests for this task. Choose the best one to approve and merge.</p>
+            <div class="pr-list">
+                <div class="empty-state">
+                    <p>No pull requests submitted yet.</p>
+                </div>
+            </div>
+            <div class="pr-actions">
+                <p>Select a Pull Request to review and Approve it.</p>
+            </div>
+        </section>
+    }
+</div>
+@code {
+    [Parameter]
+    public string TaskId { get; set; } = string.Empty;
+    private TaskEntity? CurrentTask { get; set; }
+    private string UploadStatus { get; set; } = string.Empty;
+    private Dictionary<string, string> UploadedFiles { get; set; } = [];
+    protected override async Task OnInitializedAsync() => CurrentTask = await TaskService.GetByIdAsync(TaskId);
+    private static string FormatBountyAmount(long AmountCents) => $"${AmountCents / 100m:N0}";
+    private async Task ClaimCurrentTask()
+    {
+        await TaskService.ClaimAsync(TaskId, "current-user");
+        CurrentTask = await TaskService.GetByIdAsync(TaskId);
+    }
+    private async Task DeleteCurrentTask()
+    {
+        await TaskService.DeleteAsync(TaskId);
+    }
+}

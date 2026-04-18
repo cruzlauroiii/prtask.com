@@ -1,0 +1,21 @@
+@page "/advance-receipt-search"
+@inject NavigationManager Nav
+
+<div style="width:100%">
+    <header class="toolbar" style="width:100%">
+        <label class="advance_receipts_search_layout" style="width:100%">
+            <input class="advance_receipt_search" style="width:100%" type="text" />
+        </label>
+    </header>
+    <div class="advance_receipts_rv" style="width:100%"></div>
+    <div class="empty" style="display:flex;flex-direction:column">
+        <img src="img/ic_search.png" alt="ic_search" />
+        <span class="empty_text_view"></span>
+    </div>
+    <div class="error" style="width:100%"></div>
+    <div class="loader" style="width:100%"></div>
+</div>
+
+@code {
+    private string Field2131361903 { get; set; } = string.Empty;
+}

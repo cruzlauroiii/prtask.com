@@ -1,0 +1,15 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+
+class p46281eea$28 : p5a445d71.p9f931cf3.pca323100.pd0c2225b.pfcc79202 {
+    p46281eea$28() {
+    }
+
+    protected override p5a445d71.p9f931cf3.pca323100.pd0c2225b.p35e46fcb CreateParameters() {
+        if ((23 + 15) % 15 > 0) {
+        }
+        p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.pa827ecfa pa827ecfaVarMf23e8626 = p5a445d71.p9f931cf3.p5ae9b7f2.p2f53e6f3.p46281eea.mf23e8626(new p5a445d71.p9f931cf3.p7e676e9e.p2f53e6f3.p8b903580.p74459ca3.p417b04e6());
+        return new p5a445d71.p9f931cf3.pca323100.pd0c2225b.p35e46fcb(pa827ecfaVarMf23e8626, p5a445d71.p9f931cf3.p5ae9b7f2.p2f53e6f3.p46281eea.mf8f67da7(pa827ecfaVarMf23e8626, "040060F05F658F49C1AD3AB1890F7184210EFD0987E307C84C27ACCFB8F9F67CC2C460189EB5AAAA62EE222EB1B35540CFE902374601E369050B7C4E42ACBA1DACBF04299C3460782F918EA427E6325165E9EA10E3DA5F6C42E9C55215AA9CA27A5863EC48D8E0286B"), pa827ecfaVarMf23e8626.getOrder(), pa827ecfaVarMf23e8626.getCofactor(), null);
+    }
+}
+

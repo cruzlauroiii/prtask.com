@@ -1,0 +1,55 @@
+@page "/login"
+@using PrTask.Domain.Constants
+@inject NavigationManager NavigationManager
+<section class="login-section">
+    <h1>Sign In to PrTask</h1>
+    <p>Connect your account to start earning or posting tasks.</p>
+    <div class="login-buttons">
+        <button class="btn btn-primary google-login" @onclick="() => LoginWithProviderAsync(RouteConstants.ApiAuthGoogle)">Sign in with Google</button>
+        <button class="btn btn-secondary github-login" @onclick="() => LoginWithProviderAsync(RouteConstants.ApiAuthGitHub)">Sign in with GitHub</button>
+        <button class="btn btn-secondary azure-login" @onclick="() => LoginWithProviderAsync(RouteConstants.ApiAuthAzure)">Sign in with Microsoft</button>
+        <button class="btn btn-secondary okta-login" @onclick="() => LoginWithProviderAsync(RouteConstants.ApiAuthOkta)">Sign in with Okta</button>
+    </div>
+    @if (!string.IsNullOrEmpty(ErrorMessage))
+    {
+        <p style="color: red;">@ErrorMessage</p>
+    }
+    <div class="login-info">
+        <h3>For Developers</h3>
+        <p>Browse tasks, claim work, submit PRs, and get paid.</p>
+        <h3>For Clients</h3>
+        <p>Post tasks with bounties and get quality code delivered.</p>
+    </div>
+</section>
+@code {
+    private static readonly string SiteBase = $"https://{AppConstants.AppDomain}";
+    private static readonly Uri CallbackUri = new("com.prtask.app://auth");
+    private string ErrorMessage { get; set; } = string.Empty;
+    private async Task LoginWithProviderAsync(string AuthRoute)
+    {
+        try
+        {
+            var AuthUrl = new Uri($"{SiteBase}{AuthRoute}?platform=android");
+            var Result = await WebAuthenticator.Default.AuthenticateAsync(AuthUrl, CallbackUri);
+            var Session = Result.Properties.TryGetValue("session", out var Sid) ? Sid : string.Empty;
+            if (!string.IsNullOrEmpty(Session))
+            {
+                Preferences.Default.Set("session", Session);
+                var StoredUsername = Result.Properties.TryGetValue("username", out var Name) ? Name : string.Empty;
+                if (!string.IsNullOrEmpty(StoredUsername))
+                {
+                    Preferences.Default.Set("username", StoredUsername);
+                }
+                NavigationManager.NavigateTo(RouteConstants.Dashboard);
+            }
+        }
+        catch (TaskCanceledException)
+        {
+            ErrorMessage = string.Empty;
+        }
+        catch (Exception Ex)
+        {
+            ErrorMessage = Ex.Message;
+        }
+    }
+}

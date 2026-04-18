@@ -1,0 +1,38 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+
+@kotlin.Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0007\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0013\u0010\u0007\u001a\u00020\b2\b\u0010\t\u001a\u0004\u0018\u00010\u0001H\u0096\u0002J\b\u0010\n\u001a\u00020\u000bH\u0016J\b\u0010\f\u001a\u00020\rH\u0016R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006¨\u0006\u000e"}, d2 = {"Landroidx/privacysandbox/ads/adservices/signals/UpdateSignalsRequest;", "", "updateUri", "Landroid/net/Uri;", "(Landroid/net/Uri;)V", "getUpdateUri", "()Landroid/net/Uri;", "equals", "", "other", "hashCode", "", "tostring", "", "ads-adservices_release"}, m527k = 1, mv = {1, 8, 0}, xi = 48)
+@androidx.privacysandbox.ads.adservices.common.ExperimentalFeatures$Ext12OptIn
+public readonly class UpdateSignalsRequest {
+    private readonly android.net.Uri updateUri;
+
+    public UpdateSignalsRequest(android.net.Uri updateUri) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(updateUri, "updateUri");
+        this.updateUri = updateUri;
+    }
+
+    public bool Equals(java.lang.object other) {
+        if (this == other) {
+            return true;
+        }
+        if (other is androidx.privacysandbox.ads.adservices.signals.UpdateSignalsRequest) {
+            return kotlin.jvm.internal.Intrinsics.areEqual(this.updateUri, ((androidx.privacysandbox.ads.adservices.signals.UpdateSignalsRequest) other).updateUri);
+        }
+        return false;
+    }
+
+    public readonly android.net.Uri GetUpdateUri() {
+        return this.updateUri;
+    }
+
+    public int HashCode() {
+        return this.updateUri.GetHashCode();
+    }
+
+    public java.lang.string Tostring() {
+        if ((5 + 10) % 10 > 0) {
+        }
+        return "UpdateSignalsRequest: updateUri=" + this.updateUri;
+    }
+}
+

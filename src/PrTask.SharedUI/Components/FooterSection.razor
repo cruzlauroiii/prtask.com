@@ -1,0 +1,67 @@
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> L
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <a href="@NavConstants.HrefHome" class="footer-logo">@NavConstants.BrandName</a>
+            <p>@L["BrandTagline"]</p>
+        </div>
+        <div class="footer-links">
+            <div class="footer-column">
+                <input type="checkbox" id="@NavConstants.FooterPlatformCatId" class="fcat-check" checked aria-hidden="true" />
+                <label for="@NavConstants.FooterPlatformCatId" class="fcat-label">@L["CategoryPlatform"]</label>
+                <div class="fcat-links">
+                    <a href="@NavConstants.HrefTasks">@L["TasksLabel"]</a>
+                    <a href="@NavConstants.HrefDashboard">@L["DashboardLabel"]</a>
+                    <a href="@NavConstants.HrefLeaderboard">@L["LeaderboardLabel"]</a>
+                    <a href="@NavConstants.HrefSprints">@L["SprintsLabel"]</a>
+                    <a href="@NavConstants.HrefBoards">@L["BoardsLabel"]</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <input type="checkbox" id="@NavConstants.FooterClientCatId" class="fcat-check" checked aria-hidden="true" />
+                <label for="@NavConstants.FooterClientCatId" class="fcat-label">@L["CategoryClient"]</label>
+                <div class="fcat-links">
+                    <a href="@NavConstants.HrefCreateTask">@L["CreateTaskLabel"]</a>
+                    <a href="@NavConstants.HrefPayments">@L["PaymentsLabel"]</a>
+                    <a href="@NavConstants.HrefRepository">@L["RepositoryLabel"]</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <input type="checkbox" id="@NavConstants.FooterAccountCatId" class="fcat-check" checked aria-hidden="true" />
+                <label for="@NavConstants.FooterAccountCatId" class="fcat-label">@L["CategoryAccount"]</label>
+                <div class="fcat-links">
+                    <a href="@NavConstants.HrefLogin">@L["LoginLabel"]</a>
+                    <a href="@NavConstants.HrefSettings">@L["SettingsLabel"]</a>
+                    <a href="@NavConstants.HrefDownload">@L["DownloadLabel"]</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <input type="checkbox" id="@NavConstants.FooterInfoCatId" class="fcat-check" checked aria-hidden="true" />
+                <label for="@NavConstants.FooterInfoCatId" class="fcat-label">@L["CategoryInfo"]</label>
+                <div class="fcat-links">
+                    <a href="@NavConstants.HrefAbout">@L["AboutLabel"]</a>
+                    <a href="@NavConstants.HrefHowItWorks">@L["HowItWorksLabel"]</a>
+                    <a href="@NavConstants.HrefPricing">@L["PricingLabel"]</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <input type="checkbox" id="@NavConstants.FooterLegalCatId" class="fcat-check" checked aria-hidden="true" />
+                <label for="@NavConstants.FooterLegalCatId" class="fcat-label">@L["CategoryLegal"]</label>
+                <div class="fcat-links">
+                    <a href="@NavConstants.HrefTerms">@L["TermsLabel"]</a>
+                    <a href="@NavConstants.HrefPrivacy">@L["PrivacyLabel"]</a>
+                    <a href="@NavConstants.HrefRefund">@L["RefundLabel"]</a>
+                    <a href="@NavConstants.HrefAcceptableUse">@L["AcceptableUseLabel"]</a>
+                    <a href="@NavConstants.HrefCookiePolicy">@L["CookiePolicyLabel"]</a>
+                    <a href="@NavConstants.HrefLicenses">@L["LicensesLabel"]</a>
+                    <a href="@NavConstants.HrefAccessibility">@L["AccessibilityLabel"]</a>
+                    <a href="@NavConstants.HrefDmca">@L["DmcaLabel"]</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>@L["FooterCopyrightText"]</p>
+    </div>
+</footer>

@@ -1,0 +1,7 @@
+{
+  "sourceFolder": "Styles",
+  "targetFolder": "wwwroot/css",
+  "arguments": "--style=compressed --no-source-map",
+  "generateScopedCss": true,
+  "scopedCssFolders": [ "" ]
+}

@@ -1,0 +1,50 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  PrTask.Analyzers -> C:\work\prtask.com\src\PrTask.Analyzers\bin\Debug\net10.0\PrTask.Analyzers.dll
+  PrTask.Domain -> C:\work\prtask.com\src\PrTask.Domain\bin\Debug\net10.0\PrTask.Domain.dll
+  PrTask.Application -> C:\work\prtask.com\src\PrTask.Application\bin\Debug\net10.0\PrTask.Application.dll
+C:\work\prtask.com\src\PrTask.Git\GitBranch.cs(11,24): error CS0144: Cannot create an instance of the abstract type or interface 'IList<GitBranchInfo>' [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitBranch.cs(25,24): error CS0144: Cannot create an instance of the abstract type or interface 'IList<GitBranchInfo>' [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitDiff.cs(12,23): error CS0144: Cannot create an instance of the abstract type or interface 'IList<GitDiffEntry>' [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitDiff.cs(95,23): error CS0144: Cannot create an instance of the abstract type or interface 'IList<GitDiffEntry>' [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitPack.cs(12,23): error CS0144: Cannot create an instance of the abstract type or interface 'IList<GitRawObject>' [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitDiffAlgorithm.cs(87,21): error CS0144: Cannot create an instance of the abstract type or interface 'IList<GitDiffHunk>' [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitCommit.cs(61,27): error CS0144: Cannot create an instance of the abstract type or interface 'IList<GitTreeEntry>' [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitRemote.cs(13,23): error CS0144: Cannot create an instance of the abstract type or interface 'IList<GitRemoteInfo>' [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitDiffFormatter.cs(89,44): error CS8524: The switch expression does not handle some values of its input type (it is not exhaustive) involving an unnamed enum value. For example, the pattern '(PrTask.Git.Models.GitDiffLineType)3' is not covered. [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitPack.cs(244,33): error CS8524: The switch expression does not handle some values of its input type (it is not exhaustive) involving an unnamed enum value. For example, the pattern '(PrTask.Git.Models.GitObjectType)5' is not covered. [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitObjects.cs(250,68): error CS8524: The switch expression does not handle some values of its input type (it is not exhaustive) involving an unnamed enum value. For example, the pattern '(PrTask.Git.Models.GitObjectType)5' is not covered. [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitPack.cs(286,1): error RCS1036: ([deprecated] Use RCS0063 instead) Remove unnecessary blank line (https://josefpihrt.github.io/docs/roslynator/analyzers/RCS1036) [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitPack.cs(287,1): error SA1508: A closing brace should not be preceded by a blank line (https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1508.md) [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitCommit.cs(41,9): error RCS1201: Use method chaining (https://josefpihrt.github.io/docs/roslynator/analyzers/RCS1201) [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\Models\GitCommitObject.cs(31,9): error RCS1201: Use method chaining (https://josefpihrt.github.io/docs/roslynator/analyzers/RCS1201) [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitPackIndex.cs(39,9): error RCS1118: Mark local variable as const (https://josefpihrt.github.io/docs/roslynator/analyzers/RCS1118) [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitDiffFormatter.cs(89,44): error IDE0072: Populate switch (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/style-rules/ide0072) [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitPack.cs(244,33): error IDE0072: Populate switch (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/style-rules/ide0072) [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitObjects.cs(250,68): error IDE0072: Populate switch (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/style-rules/ide0072) [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+
+Build FAILED.
+
+C:\work\prtask.com\src\PrTask.Git\GitBranch.cs(11,24): error CS0144: Cannot create an instance of the abstract type or interface 'IList<GitBranchInfo>' [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitBranch.cs(25,24): error CS0144: Cannot create an instance of the abstract type or interface 'IList<GitBranchInfo>' [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitDiff.cs(12,23): error CS0144: Cannot create an instance of the abstract type or interface 'IList<GitDiffEntry>' [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitDiff.cs(95,23): error CS0144: Cannot create an instance of the abstract type or interface 'IList<GitDiffEntry>' [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitPack.cs(12,23): error CS0144: Cannot create an instance of the abstract type or interface 'IList<GitRawObject>' [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitDiffAlgorithm.cs(87,21): error CS0144: Cannot create an instance of the abstract type or interface 'IList<GitDiffHunk>' [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitCommit.cs(61,27): error CS0144: Cannot create an instance of the abstract type or interface 'IList<GitTreeEntry>' [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitRemote.cs(13,23): error CS0144: Cannot create an instance of the abstract type or interface 'IList<GitRemoteInfo>' [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitDiffFormatter.cs(89,44): error CS8524: The switch expression does not handle some values of its input type (it is not exhaustive) involving an unnamed enum value. For example, the pattern '(PrTask.Git.Models.GitDiffLineType)3' is not covered. [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitPack.cs(244,33): error CS8524: The switch expression does not handle some values of its input type (it is not exhaustive) involving an unnamed enum value. For example, the pattern '(PrTask.Git.Models.GitObjectType)5' is not covered. [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitObjects.cs(250,68): error CS8524: The switch expression does not handle some values of its input type (it is not exhaustive) involving an unnamed enum value. For example, the pattern '(PrTask.Git.Models.GitObjectType)5' is not covered. [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitPack.cs(286,1): error RCS1036: ([deprecated] Use RCS0063 instead) Remove unnecessary blank line (https://josefpihrt.github.io/docs/roslynator/analyzers/RCS1036) [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitPack.cs(287,1): error SA1508: A closing brace should not be preceded by a blank line (https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1508.md) [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitCommit.cs(41,9): error RCS1201: Use method chaining (https://josefpihrt.github.io/docs/roslynator/analyzers/RCS1201) [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\Models\GitCommitObject.cs(31,9): error RCS1201: Use method chaining (https://josefpihrt.github.io/docs/roslynator/analyzers/RCS1201) [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitPackIndex.cs(39,9): error RCS1118: Mark local variable as const (https://josefpihrt.github.io/docs/roslynator/analyzers/RCS1118) [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitDiffFormatter.cs(89,44): error IDE0072: Populate switch (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/style-rules/ide0072) [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitPack.cs(244,33): error IDE0072: Populate switch (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/style-rules/ide0072) [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+C:\work\prtask.com\src\PrTask.Git\GitObjects.cs(250,68): error IDE0072: Populate switch (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/style-rules/ide0072) [C:\work\prtask.com\src\PrTask.Git\PrTask.Git.csproj]
+    0 Warning(s)
+    19 Error(s)
+
+Time Elapsed 00:00:07.74

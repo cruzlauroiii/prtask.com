@@ -1,0 +1,63 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+public class P107e20d2
+{
+    public static short F08b2cb7c;
+    public static short F0a8ef4cd;
+    public static short F0dd8a3a7;
+    public static short F11999b91;
+    public static short F14e43b78;
+    public static short F15bbf2e4;
+    public static short F1c0f3a3d;
+    public static short F2560d38b;
+    public static short F272267e0;
+    public static short F2c95ea13;
+    public static short F3122cfc1;
+    public static short F317a4530;
+    public static short F35426a07;
+    public static short F408288ff;
+    public static short F4d537da3;
+    public static short F6533f4f4;
+    public static short F69133668;
+    public static short F720102d6;
+    public static short F76bb0caa;
+    public static short F78160d50;
+    public static short F8678c94f;
+    public static short F89d13ef5;
+    public static short F8fcd2334;
+    public static short F90bab17e;
+    public static short F95cb3362;
+    public static short F9738dbfa;
+    public static short F9742862a;
+    public static short F9a774273;
+    public static short Fa5b1d500;
+    public static short Fa5d7ceb2;
+    public static short Fa9cab145;
+    public static short Fabc99ab6;
+    public static short Fb84ffc9e;
+    public static short Fb8cac826;
+    public static short Fb92a34e5;
+    public static short Fbb107aac;
+    public static short Fbd46e520;
+    public static short Fbfcf670c;
+    public static short Fc2037360;
+    public static short Fc9725114;
+    public static short Fcb573c4b;
+    public static short Fcfe3f25b;
+    public static short Fd058370f;
+    public static short Fd2189faf;
+    public static short Fd3ec79b6;
+    public static short Fdc926c44;
+    public static short Fdfc5bbac;
+    public static short Fe005978b;
+    public static short Fe0d30cef;
+    public static short Fe860f16e;
+    public static short Fe9c04605;
+    public static short Feb84c755;
+    public static short Febb5ee58;
+    public static short Ff59de53d;
+    public static short Ff5ac60ae;
+    public static short Ffc59c189;
+    public static short Fff0acc29;
+
+}

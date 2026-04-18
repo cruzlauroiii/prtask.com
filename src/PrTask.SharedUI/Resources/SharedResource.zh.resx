@@ -1,0 +1,4032 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="xml:space" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter</value>
+  </resheader>
+  <data name="AboutAcceptableUseLinkText" xml:space="preserve">
+    <value>可接受使用政策</value>
+  </data>
+  <data name="AboutAccessibilityLinkText" xml:space="preserve">
+    <value>无障碍声明</value>
+  </data>
+  <data name="AboutAchievementsDescription" xml:space="preserve">
+    <value>每个合并的 拉取请求 都会根据里程碑获得成就徽章。解锁您的第一个 拉取请求、第十个 拉取请求、收入里程碑和排行榜顶级位置的徽章。在按总收入排名的公共排行榜上竞争。所有拉取请求都是公开的。</value>
+  </data>
+  <data name="AboutAchievementsHeading" xml:space="preserve">
+    <value>成就徽章</value>
+  </data>
+  <data name="AboutBadgesDescription" xml:space="preserve">
+    <value>每个合并的 拉取请求 都会根据里程碑获得成就徽章。解锁首个 拉取请求、第十个 拉取请求、收益里程碑及排行榜前列等徽章。按总收益排名的公开排行榜上与他人同台竞技。所有 拉取请求 均公开可见。</value>
+  </data>
+  <data name="AboutBadgesHeading" xml:space="preserve">
+    <value>成就徽章</value>
+  </data>
+  <data name="AboutCommunityDescription" xml:space="preserve">
+    <value>拉取请求任务 汇聚了一个蓬勃发展的全球开发者与客户社区，跨越地域与时区，携手共建更优质的软件。</value>
+  </data>
+  <data name="AboutCommunityHeading" xml:space="preserve">
+    <value>社区影响力</value>
+  </data>
+  <data name="AboutContactDescription" xml:space="preserve">
+    <value>如需支持或商务咨询，请联系 support@prtask.com。</value>
+  </data>
+  <data name="AboutContactHeading" xml:space="preserve">
+    <value>联系我们</value>
+  </data>
+  <data name="AboutCookiePolicyLinkText" xml:space="preserve">
+    <value>网络缓存 政策</value>
+  </data>
+  <data name="AboutDescriptionHeading" xml:space="preserve">
+    <value>拉取请求任务 -</value>
+  </data>
+  <data name="AboutDescriptionParagraph1" xml:space="preserve">
+    <value>拉取请求任务 的创立源于一个信念：软件开发人才遍布各地，但机会并非如此。我们的使命是通过打造透明的市场，让技能与代码质量成为唯一评判标准，从而推动付费开发工作的机会平等化。我们构建 拉取请求任务，旨在消除阻碍新兴市场优秀开发者获得高薪软件工作的壁垒，同时帮助客户以熟悉的 拉取请求 工作流找到能交付生产级代码的技术开发者。</value>
+  </data>
+  <data name="AboutDescriptionParagraph2" xml:space="preserve">
+    <value>透明、公平与开源承诺是我们的核心价值观，指引着我们的每一个决策。透明意味着所有任务、赏金和审查结果均公开可见，让客户与开发者都能做出知情决策。公平意味着开发者可获得赏金收入的 100%，无任何隐性费用或扣除。我们对开源的承诺体现在积极支持开源生态——通过启用开源项目的付费贡献，并在社区参与下维护平台自身代码。</value>
+  </data>
+  <data name="AboutDescriptionParagraph3" xml:space="preserve">
+    <value>拉取请求任务 不仅仅是一个市场，更是一个由开发者和客户共同构成的社区，大家共同认同软件工作应有的运作方式。我们通过徽章和 经验值 认可成就，维护排行榜以彰显顶尖贡献者，并提供跨境可用的多元支付选项。从最初赋能菲律宾开发者的创始初心，到成长为全球性平台，拉取请求任务 始终坚守公平薪酬、高质量代码的承诺，并通过 拉取请求 这一通用语言在客户与开发者之间建立信任。</value>
+  </data>
+  <data name="AboutDmcaLinkText" xml:space="preserve">
+    <value>数字千年版权法 / 版权政策</value>
+  </data>
+  <data name="AboutGetStartedButton" xml:space="preserve">
+    <value>浏览任务</value>
+  </data>
+  <data name="AboutGetStartedDescription" xml:space="preserve">
+    <value>无论您是寻找下一个挑战的开发者，还是寻觅顶尖人才的客户，拉取请求任务 都能借助 拉取请求 的力量将您与合适的人连接起来。浏览开放任务，立即开始赚取收益。</value>
+  </data>
+  <data name="AboutGetStartedHeading" xml:space="preserve">
+    <value>准备好开始了吗？</value>
+  </data>
+  <data name="AboutHistoryDescription" xml:space="preserve">
+    <value>拉取请求任务 的创立源于一个简单的想法：如果每一次代码贡献都有一个明确的、有保障的赏金，会怎样？源自对无偿开源劳动和不透明自由职业平台的不满，拉取请求任务 的诞生是为了创建一个以拉取请求为通用工作货币的市场。从我们的第一笔赏金到数千个已完成的任务，我们已经成长为一个全球开发者和客户社区，共同致力于透明、基于价值的协作。</value>
+  </data>
+  <data name="AboutHistoryHeading" xml:space="preserve">
+    <value>我们的故事</value>
+  </data>
+  <data name="AboutLabel" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="AboutLegalAcceptableUse" xml:space="preserve">
+    <value>可接受使用政策</value>
+  </data>
+  <data name="AboutLegalAccessibility" xml:space="preserve">
+    <value>无障碍声明</value>
+  </data>
+  <data name="AboutLegalCookiePolicy" xml:space="preserve">
+    <value>网络缓存 政策</value>
+  </data>
+  <data name="AboutLegalDmca" xml:space="preserve">
+    <value>数字千年版权法 / 版权政策</value>
+  </data>
+  <data name="AboutLegalHeading" xml:space="preserve">
+    <value>法律条款</value>
+  </data>
+  <data name="AboutLegalLicenses" xml:space="preserve">
+    <value>许可证</value>
+  </data>
+  <data name="AboutLegalPrivacy" xml:space="preserve">
+    <value>隐私政策</value>
+  </data>
+  <data name="AboutLegalRefund" xml:space="preserve">
+    <value>退款政策</value>
+  </data>
+  <data name="AboutLegalTerms" xml:space="preserve">
+    <value>服务条款</value>
+  </data>
+  <data name="AboutLicensesLinkText" xml:space="preserve">
+    <value>许可证</value>
+  </data>
+  <data name="AboutMissionDescription" xml:space="preserve">
+    <value>拉取请求任务 致力于让软件开发对每个人都变得可访问、公平且有回报。我们相信，世界各地有才华的开发者都应平等地获得有意义的工作和透明的报酬，无论他们住在哪里。</value>
+  </data>
+  <data name="AboutMissionHeading" xml:space="preserve">
+    <value>我们的使命</value>
+  </data>
+  <data name="AboutOpenSourceDescription" xml:space="preserve">
+    <value>拉取请求任务 建立于开源生态之上，也为开源生态而生。我们回馈社区、赞助开源维护者，并确保通过平台提交的每一行代码始终公开可访问。我们的审核流程是公开的，排行榜是公开的，我们对开放精神的承诺坚定不移。</value>
+  </data>
+  <data name="AboutOpenSourceHeading" xml:space="preserve">
+    <value>开源承诺</value>
+  </data>
+  <data name="AboutPageDescription" xml:space="preserve">
+    <value>拉取请求任务 是一个开发者通过向真实项目提交拉取请求来赚钱的平台。</value>
+  </data>
+  <data name="AboutPageHeading" xml:space="preserve">
+    <value>关于 拉取请求任务</value>
+  </data>
+  <data name="AboutPaymentsDescription" xml:space="preserve">
+    <value>客户悬赏款项通过支持的支付服务商处理。当客户批准一个 拉取请求 时，系统将自动扣款并向开发者付款。无需预先存款。开发者可自选偏好的收款方式。</value>
+  </data>
+  <data name="AboutPaymentsHeading" xml:space="preserve">
+    <value>安全支付</value>
+  </data>
+  <data name="AboutPrivacyLinkText" xml:space="preserve">
+    <value>隐私政策</value>
+  </data>
+  <data name="AboutRefundLinkText" xml:space="preserve">
+    <value>退款政策</value>
+  </data>
+  <data name="AboutStatActiveDevelopers" xml:space="preserve">
+    <value>3,200+</value>
+  </data>
+  <data name="AboutStatActiveDevelopersLabel" xml:space="preserve">
+    <value>活跃开发者</value>
+  </data>
+  <data name="AboutStatCountries" xml:space="preserve">
+    <value>85+</value>
+  </data>
+  <data name="AboutStatCountriesLabel" xml:space="preserve">
+    <value>覆盖国家与地区</value>
+  </data>
+  <data name="AboutStatDevelopersActive" xml:space="preserve">
+    <value>3,200+</value>
+  </data>
+  <data name="AboutStatDevelopersLabel" xml:space="preserve">
+    <value>活跃开发者</value>
+  </data>
+  <data name="AboutStatPaidLabel" xml:space="preserve">
+    <value>已支付给开发者</value>
+  </data>
+  <data name="AboutStatPaidToDevelopers" xml:space="preserve">
+    <value>240 万美元以上</value>
+  </data>
+  <data name="AboutStatPaidToDevelopersLabel" xml:space="preserve">
+    <value>已支付给开发者</value>
+  </data>
+  <data name="AboutStatTasksCompleted" xml:space="preserve">
+    <value>12,500+</value>
+  </data>
+  <data name="AboutStatTasksCompletedLabel" xml:space="preserve">
+    <value>已完成任务</value>
+  </data>
+  <data name="AboutStatTasksLabel" xml:space="preserve">
+    <value>已完成任务</value>
+  </data>
+  <data name="AboutStatTotalPaid" xml:space="preserve">
+    <value>$2.4M+</value>
+  </data>
+  <data name="AboutStoryDescription" xml:space="preserve">
+    <value>拉取请求任务 源于一个简单的想法：如果每一次代码贡献都附带明确且有保障的悬赏，会怎样？平台诞生于对无偿开源劳动和不透明自由职业平台的不满，旨在打造一个以 拉取请求 为通用工作货币的市场。从第一笔悬赏到数千个已完成的任务，我们已成长为一个由开发者和客户共同组成的全球社区，共同践行透明、以实力为本的协作理念。</value>
+  </data>
+  <data name="AboutStoryHeading" xml:space="preserve">
+    <value>我们的故事</value>
+  </data>
+  <data name="AboutTermsLinkText" xml:space="preserve">
+    <value>服务条款</value>
+  </data>
+  <data name="AboutValueFairnessDescription" xml:space="preserve">
+    <value>报酬与交付的工作直接挂钩。代码依据其质量接受评审，而非看作者是谁。每位开发者在同等机会的公平竞争环境中一较高下。</value>
+  </data>
+  <data name="AboutValueFairnessHeading" xml:space="preserve">
+    <value>公平</value>
+  </data>
+  <data name="AboutValueOpenSourceDescription" xml:space="preserve">
+    <value>我们倡导开源精神。拉取请求任务 上的所有 拉取请求 均公开可见，推动知识共享，并在每个项目中形成社区驱动的质量标准。</value>
+  </data>
+  <data name="AboutValueOpenSourceHeading" xml:space="preserve">
+    <value>开源</value>
+  </data>
+  <data name="AboutValuesHeading" xml:space="preserve">
+    <value>核心价值观</value>
+  </data>
+  <data name="AboutValueTransparencyDescription" xml:space="preserve">
+    <value>每项任务、悬赏及付款均公开透明。开发者在开始前即可明确知晓收益，客户也能清楚了解所付费用。无隐藏费用，无意外惊喜。</value>
+  </data>
+  <data name="AboutValueTransparencyHeading" xml:space="preserve">
+    <value>透明</value>
+  </data>
+  <data name="AboutWhatWeDoDescription" xml:space="preserve">
+    <value>客户发布带有赏金的开发任务。开发者认领任务、编写代码并提交拉取请求。一旦 拉取请求 被审查、批准和合并，开发者将根据工作复杂度获得报酬。</value>
+  </data>
+  <data name="AboutWhatWeDoHeading" xml:space="preserve">
+    <value>我们做什么</value>
+  </data>
+  <data name="AcceptableUseLabel" xml:space="preserve">
+    <value>可接受使用政策</value>
+  </data>
+  <data name="AccessibilityLabel" xml:space="preserve">
+    <value>无障碍访问</value>
+  </data>
+  <data name="BackText" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="BoardAddColumnActionText" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="BoardAddColumnButton" xml:space="preserve">
+    <value>添加列</value>
+  </data>
+  <data name="BoardCreateActionText" xml:space="preserve">
+    <value>创建</value>
+  </data>
+  <data name="BoardCreateButton" xml:space="preserve">
+    <value>创建看板</value>
+  </data>
+  <data name="BoardDeleteButton" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="BoardDeleteColumnButtonText" xml:space="preserve">
+    <value>x</value>
+  </data>
+  <data name="BoardDetailLoadingText" xml:space="preserve">
+    <value>正在加载看板...</value>
+  </data>
+  <data name="BoardEmptyColumnText" xml:space="preserve">
+    <value>此列中没有任务</value>
+  </data>
+  <data name="BoardEmptyStateText" xml:space="preserve">
+    <value>还没有看板。创建一个来组织您的工作。</value>
+  </data>
+  <data name="BoardLoadingText" xml:space="preserve">
+    <value>正在加载看板...</value>
+  </data>
+  <data name="BoardPageHeading" xml:space="preserve">
+    <value>看板</value>
+  </data>
+  <data name="BoardsLabel" xml:space="preserve">
+    <value>看板</value>
+  </data>
+  <data name="BrandName" xml:space="preserve">
+    <value>拉取请求任务</value>
+  </data>
+  <data name="BrowseTasksLabel" xml:space="preserve">
+    <value>浏览任务</value>
+  </data>
+  <data name="CancelText" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="ClearCacheTitle" xml:space="preserve">
+    <value>清除缓存并重新加载</value>
+  </data>
+  <data name="CloseText" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ConfirmText" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="CookieAcceptAllButton" xml:space="preserve">
+    <value>全部接受</value>
+  </data>
+  <data name="CookieAnalyticsDescription" xml:space="preserve">
+    <value>帮助我们了解您如何使用平台</value>
+  </data>
+  <data name="CookieAnalyticsLabel" xml:space="preserve">
+    <value>分析</value>
+  </data>
+  <data name="CookieBackButtonText" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="CookieConsentMessage" xml:space="preserve">
+    <value>我们使用 网络缓存 来改善您的体验。使用 拉取请求任务 即表示您同意我们的 网络缓存 政策。</value>
+  </data>
+  <data name="CookieCustomizeButton" xml:space="preserve">
+    <value>自定义</value>
+  </data>
+  <data name="CookieEssentialDescription" xml:space="preserve">
+    <value>核心功能所需（始终开启）</value>
+  </data>
+  <data name="CookieEssentialLabel" xml:space="preserve">
+    <value>必要</value>
+  </data>
+  <data name="CookieManagePreferencesMessage" xml:space="preserve">
+    <value>管理您的 网络缓存 偏好设置。基本 网络缓存 始终处于活动状态。</value>
+  </data>
+  <data name="CookieMarketingDescription" xml:space="preserve">
+    <value>启用个性化内容和广告</value>
+  </data>
+  <data name="CookieMarketingLabel" xml:space="preserve">
+    <value>营销</value>
+  </data>
+  <data name="CookiePolicyLabel" xml:space="preserve">
+    <value>网络缓存 政策</value>
+  </data>
+  <data name="CookieRejectAllButton" xml:space="preserve">
+    <value>全部拒绝</value>
+  </data>
+  <data name="CookieSavePreferencesButton" xml:space="preserve">
+    <value>保存偏好设置</value>
+  </data>
+  <data name="CreateTaskBountyLabel" xml:space="preserve">
+    <value>赏金金额 (美元)</value>
+  </data>
+  <data name="CreateTaskComplexityLabel" xml:space="preserve">
+    <value>复杂度等级</value>
+  </data>
+  <data name="CreateTaskDescriptionLabel" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="CreateTaskLabel" xml:space="preserve">
+    <value>创建任务</value>
+  </data>
+  <data name="CreateTaskPageDescription" xml:space="preserve">
+    <value>发布带有赏金的任务以吸引开发者。</value>
+  </data>
+  <data name="CreateTaskPageHeading" xml:space="preserve">
+    <value>创建新任务</value>
+  </data>
+  <data name="CreateTaskRepoUrlLabel" xml:space="preserve">
+    <value>仓库 网址</value>
+  </data>
+  <data name="CreateTaskSubmitButton" xml:space="preserve">
+    <value>创建任务</value>
+  </data>
+  <data name="CreateTaskTagsLabel" xml:space="preserve">
+    <value>标签（逗号分隔）</value>
+  </data>
+  <data name="CreateTaskTitleLabel" xml:space="preserve">
+    <value>任务标题</value>
+  </data>
+  <data name="CreateTaskValidationBountyTooLow" xml:space="preserve">
+    <value>赏金必须至少为 $100。</value>
+  </data>
+  <data name="CreateTaskValidationDescriptionRequired" xml:space="preserve">
+    <value>描述为必填项。</value>
+  </data>
+  <data name="CreateTaskValidationTitleRequired" xml:space="preserve">
+    <value>标题为必填项。</value>
+  </data>
+  <data name="CreateTaskVisibilityLabel" xml:space="preserve">
+    <value>代码可见性</value>
+  </data>
+  <data name="CreateTaskWorkItemTypeLabel" xml:space="preserve">
+    <value>工作项类型</value>
+  </data>
+  <data name="DashboardActiveTasksLabel" xml:space="preserve">
+    <value>活跃任务</value>
+  </data>
+  <data name="DashboardDescriptionHeading" xml:space="preserve">
+    <value>您的拉取请求任务控制台——平台概览与活动追踪</value>
+  </data>
+  <data name="DashboardDescriptionParagraph1" xml:space="preserve">
+    <value>控制台提供拉取请求任务平台活动的集中概览。您可以一目了然地查看平台上的活跃任务总数、注册用户数量、所有开放任务的赏金池总额以及已提交的拉取请求数量。这些统计数据为您提供市场健康状况的实时快照，帮助您了解当前的活跃程度和可用机会。</value>
+  </data>
+  <data name="DashboardDescriptionParagraph2" xml:space="preserve">
+    <value>对于开发者，控制台是评估当前可用工作概况的起点。当有活跃任务时，它们会直接显示在控制台上，并附有查看详情和开始工作的快速链接。对于客户，控制台可查看您所创建任务的状态，包括任何待审查的拉取请求。最近的拉取请求版块展示平台上的最新提交，让您随时掌握进行中的开发动态。</value>
+  </data>
+  <data name="DashboardDescriptionParagraph3" xml:space="preserve">
+    <value>控制台随新任务创建、拉取请求提交及赏金发放而动态更新。如果您是希望发布新工作的客户，可从控制台直接导航至任务创建表单。如果您是寻找机会的开发者，这些统计数据有助于衡量需求与竞争情况。随着平台的成长，控制台将继续作为您的指挥中心，追踪拉取请求任务活动的各个方面，从收入与提交记录到任务管理和团队协作。</value>
+  </data>
+  <data name="DashboardEmptyStateLink" xml:space="preserve">
+    <value>创建一个</value>
+  </data>
+  <data name="DashboardEmptyStateText" xml:space="preserve">
+    <value>还没有开放任务。</value>
+  </data>
+  <data name="DashboardLabel" xml:space="preserve">
+    <value>仪表盘</value>
+  </data>
+  <data name="DashboardNoPrsText" xml:space="preserve">
+    <value>还没有提交拉取请求。</value>
+  </data>
+  <data name="DashboardOpenTasksHeading" xml:space="preserve">
+    <value>开放任务</value>
+  </data>
+  <data name="DashboardPageDescription" xml:space="preserve">
+    <value>追踪您的开源拉取请求、已获赏金及开发者成就。提交拉取请求赚取收入——浏览任务、认领工作，代码获批后即可收款。</value>
+  </data>
+  <data name="DashboardPageHeading" xml:space="preserve">
+    <value>仪表盘</value>
+  </data>
+  <data name="DashboardPrsLabel" xml:space="preserve">
+    <value>拉取请求</value>
+  </data>
+  <data name="DashboardRecentPrsHeading" xml:space="preserve">
+    <value>最近的拉取请求</value>
+  </data>
+  <data name="DashboardTotalBountiesLabel" xml:space="preserve">
+    <value>总赏金</value>
+  </data>
+  <data name="DashboardUsersLabel" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="DashboardViewButton" xml:space="preserve">
+    <value>查看</value>
+  </data>
+  <data name="DeleteText" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="DeploymentPreviewAdditionsDeletionsLabel" xml:space="preserve">
+    <value>添加 / 删除</value>
+  </data>
+  <data name="DeploymentPreviewBranchLabel" xml:space="preserve">
+    <value>分支</value>
+  </data>
+  <data name="DeploymentPreviewBuildStatusHeading" xml:space="preserve">
+    <value>构建状态</value>
+  </data>
+  <data name="DeploymentPreviewDeployLogHeading" xml:space="preserve">
+    <value>部署日志</value>
+  </data>
+  <data name="DeploymentPreviewDeploymentPrefix" xml:space="preserve">
+    <value>部署：</value>
+  </data>
+  <data name="DeploymentPreviewDetailsHeading" xml:space="preserve">
+    <value>部署详情</value>
+  </data>
+  <data name="DeploymentPreviewEnvironmentLabel" xml:space="preserve">
+    <value>环境</value>
+  </data>
+  <data name="DeploymentPreviewEnvironmentValue" xml:space="preserve">
+    <value>预览</value>
+  </data>
+  <data name="DeploymentPreviewFilesChangedLabel" xml:space="preserve">
+    <value>已更改文件</value>
+  </data>
+  <data name="DeploymentPreviewOpenLivePreviewText" xml:space="preserve">
+    <value>打开实时预览</value>
+  </data>
+  <data name="DeploymentPreviewPageDescription" xml:space="preserve">
+    <value>查看此拉取请求的实时部署更改。</value>
+  </data>
+  <data name="DeploymentPreviewPageHeading" xml:space="preserve">
+    <value>部署预览</value>
+  </data>
+  <data name="DeploymentPreviewPlatformLabel" xml:space="preserve">
+    <value>平台</value>
+  </data>
+  <data name="DeploymentPreviewPlatformValue" xml:space="preserve">
+    <value>Cloudflare Pages</value>
+  </data>
+  <data name="DeploymentPreviewPreviewUrlDescription" xml:space="preserve">
+    <value>每个拉取请求都有唯一的预览 网址，可在合并到生产环境之前查看更改。</value>
+  </data>
+  <data name="DeploymentPreviewPreviewUrlHeading" xml:space="preserve">
+    <value>预览 网址</value>
+  </data>
+  <data name="DeploymentPreviewPrStatusLabel" xml:space="preserve">
+    <value>拉取请求 状态</value>
+  </data>
+  <data name="DmcaLabel" xml:space="preserve">
+    <value>数字千年版权法</value>
+  </data>
+  <data name="DownloadAndroidButton" xml:space="preserve">
+    <value>下载 安卓 安卓安装包</value>
+  </data>
+  <data name="DownloadAndroidDescription" xml:space="preserve">
+    <value>下载 拉取请求任务 安卓 应用，随时随地浏览任务、提交 拉取请求 和跟踪收入。</value>
+  </data>
+  <data name="DownloadAndroidHeading" xml:space="preserve">
+    <value>安卓</value>
+  </data>
+  <data name="DownloadAndroidRequirements" xml:space="preserve">
+    <value>安卓 8.0 或更高版本，50 兆字节 可用存储空间</value>
+  </data>
+  <data name="DownloadComingSoonText" xml:space="preserve">
+    <value>即将推出</value>
+  </data>
+  <data name="DownloadCurrentVersion" xml:space="preserve">
+    <value>1.0.0</value>
+  </data>
+  <data name="DownloadFeatureAvailable" xml:space="preserve">
+    <value>可用</value>
+  </data>
+  <data name="DownloadFeatureBiometricAuth" xml:space="preserve">
+    <value>生物识别认证</value>
+  </data>
+  <data name="DownloadFeatureComparisonHeading" xml:space="preserve">
+    <value>功能对比</value>
+  </data>
+  <data name="DownloadFeatureNativePerformance" xml:space="preserve">
+    <value>原生性能</value>
+  </data>
+  <data name="DownloadFeatureNotApplicable" xml:space="preserve">
+    <value>不适用</value>
+  </data>
+  <data name="DownloadFeatureOfflineAccess" xml:space="preserve">
+    <value>离线访问</value>
+  </data>
+  <data name="DownloadFeaturePlanned" xml:space="preserve">
+    <value>计划中</value>
+  </data>
+  <data name="DownloadFeaturePushNotifications" xml:space="preserve">
+    <value>推送通知</value>
+  </data>
+  <data name="DownloadInstallAndroidSteps" xml:space="preserve">
+    <value>下载 安卓安装包 文件，在设备上打开它，按照屏幕提示进行安装。</value>
+  </data>
+  <data name="DownloadInstallationHeading" xml:space="preserve">
+    <value>安装说明</value>
+  </data>
+  <data name="DownloadInstallIosSteps" xml:space="preserve">
+    <value>从 应用商店 下载并点击安装。应用将出现在您的主屏幕上。</value>
+  </data>
+  <data name="DownloadInstallLinuxSteps" xml:space="preserve">
+    <value>为您的发行版下载安装包，使用包管理器安装。</value>
+  </data>
+  <data name="DownloadInstallMacosSteps" xml:space="preserve">
+    <value>下载 苹果磁盘镜像 文件，将 拉取请求任务 拖到应用程序文件夹，从 Launchpad 启动。</value>
+  </data>
+  <data name="DownloadInstallWindowsSteps" xml:space="preserve">
+    <value>下载安装程序，运行安装向导，按照提示完成安装。</value>
+  </data>
+  <data name="DownloadIosDescription" xml:space="preserve">
+    <value>原生 苹果手机 和 苹果平板 应用。</value>
+  </data>
+  <data name="DownloadIosHeading" xml:space="preserve">
+    <value>苹果系统</value>
+  </data>
+  <data name="DownloadIosRequirements" xml:space="preserve">
+    <value>苹果系统 15 或更高版本，50 兆字节 可用存储空间</value>
+  </data>
+  <data name="DownloadLabel" xml:space="preserve">
+    <value>下载</value>
+  </data>
+  <data name="DownloadLastUpdatedLabel" xml:space="preserve">
+    <value>最后更新</value>
+  </data>
+  <data name="DownloadLastUpdatedValue" xml:space="preserve">
+    <value>2026年3月</value>
+  </data>
+  <data name="DownloadLinuxDescription" xml:space="preserve">
+    <value>适用于 乌班图、软呢帽 和其他发行版的桌面应用。</value>
+  </data>
+  <data name="DownloadLinuxHeading" xml:space="preserve">
+    <value>利纳克斯</value>
+  </data>
+  <data name="DownloadLinuxRequirements" xml:space="preserve">
+    <value>乌班图 20.04+ 或 软呢帽 36+，100 兆字节 可用存储空间</value>
+  </data>
+  <data name="DownloadMacosDescription" xml:space="preserve">
+    <value>适用于 苹果硅芯片 和 英特尔 的原生 苹果电脑 应用。</value>
+  </data>
+  <data name="DownloadMacosHeading" xml:space="preserve">
+    <value>苹果电脑系统</value>
+  </data>
+  <data name="DownloadMacosRequirements" xml:space="preserve">
+    <value>苹果电脑系统 12 (蒙特雷) 或更高版本，100 兆字节 可用存储空间</value>
+  </data>
+  <data name="DownloadPageDescription" xml:space="preserve">
+    <value>在您的设备上获取 拉取请求任务 应用。</value>
+  </data>
+  <data name="DownloadPageHeading" xml:space="preserve">
+    <value>下载 拉取请求任务</value>
+  </data>
+  <data name="DownloadSystemRequirementsHeading" xml:space="preserve">
+    <value>系统要求</value>
+  </data>
+  <data name="DownloadTroubleshootFaq1Answer" xml:space="preserve">
+    <value>在设备设置中启用"允许安装未知来源应用"，然后重试下载。</value>
+  </data>
+  <data name="DownloadTroubleshootFaq1Question" xml:space="preserve">
+    <value>安卓 安卓安装包 无法安装。该怎么办？</value>
+  </data>
+  <data name="DownloadTroubleshootFaq2Answer" xml:space="preserve">
+    <value>确保您的设备满足最低系统要求，并安装了最新版本。</value>
+  </data>
+  <data name="DownloadTroubleshootFaq2Question" xml:space="preserve">
+    <value>应用启动时崩溃。如何修复？</value>
+  </data>
+  <data name="DownloadTroubleshootingHeading" xml:space="preserve">
+    <value>故障排除</value>
+  </data>
+  <data name="DownloadVerificationDescription" xml:space="preserve">
+    <value>所有 拉取请求任务 下载均经过数字签名和验证。下载后检查 安全散列算法256 校验和以确保文件完整性。</value>
+  </data>
+  <data name="DownloadVerificationHeading" xml:space="preserve">
+    <value>验证与安全</value>
+  </data>
+  <data name="DownloadVersionLabel" xml:space="preserve">
+    <value>版本</value>
+  </data>
+  <data name="DownloadWebAppDescription" xml:space="preserve">
+    <value>在浏览器中直接使用 拉取请求任务，访问</value>
+  </data>
+  <data name="DownloadWebAppHeading" xml:space="preserve">
+    <value>网页应用</value>
+  </data>
+  <data name="DownloadWindowsButton" xml:space="preserve">
+    <value>下载 视窗 视窗可执行文件</value>
+  </data>
+  <data name="DownloadWindowsDescription" xml:space="preserve">
+    <value>适用于 视窗 10 及更高版本的桌面应用。</value>
+  </data>
+  <data name="DownloadWindowsHeading" xml:space="preserve">
+    <value>视窗</value>
+  </data>
+  <data name="DownloadWindowsRequirements" xml:space="preserve">
+    <value>视窗 10 或更高版本，64 位处理器，100 兆字节 可用存储空间</value>
+  </data>
+  <data name="EditTaskCancelButton" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="EditTaskLoadingText" xml:space="preserve">
+    <value>正在加载任务...</value>
+  </data>
+  <data name="EditTaskPageHeading" xml:space="preserve">
+    <value>编辑任务</value>
+  </data>
+  <data name="EditTaskSaveButton" xml:space="preserve">
+    <value>保存更改</value>
+  </data>
+  <data name="EditText" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="ErrorBoundaryMessage" xml:space="preserve">
+    <value>发生了意外错误。请重试。</value>
+  </data>
+  <data name="ErrorBoundaryRetryText" xml:space="preserve">
+    <value>重试</value>
+  </data>
+  <data name="ErrorBoundaryTitle" xml:space="preserve">
+    <value>出了点问题</value>
+  </data>
+  <data name="FooterCopyrightText" xml:space="preserve">
+    <value>© 二〇二六 拉取请求任务. 保留所有权利。</value>
+  </data>
+  <data name="FooterDoNotSellText" xml:space="preserve">
+    <value>请勿出售我的个人信息</value>
+  </data>
+  <data name="FooterLegalHeading" xml:space="preserve">
+    <value>法律</value>
+  </data>
+  <data name="FooterPlatformHeading" xml:space="preserve">
+    <value>平台</value>
+  </data>
+  <data name="FooterTagline" xml:space="preserve">
+    <value>通过拉取请求赚钱。</value>
+  </data>
+  <data name="HomeBrowseTasksButton" xml:space="preserve">
+    <value>浏览任务</value>
+  </data>
+  <data name="HomeDescriptionHeading" xml:space="preserve">
+    <value>拉取请求任务 是什么——面向拉取请求赏金的开发者市场</value>
+  </data>
+  <data name="HomeDescriptionParagraph1" xml:space="preserve">
+    <value>拉取请求任务 是一个开发者市场，连接有软件开发需求的客户与通过拉取请求完成任务的技术开发者。平台采用赏金模式运营：客户发布附带金钱奖励的任务，开发者通过提交高质量、通过审查的代码来获得赏金。拉取请求任务上的每项任务都绑定到真实的 GitHub 仓库，确保所有贡献透明可验证，并直接集成到生产代码库中。</value>
+  </data>
+  <data name="HomeDescriptionParagraph2" xml:space="preserve">
+    <value>与传统自由职业平台不同，拉取请求任务专注于基于拉取请求的工作模式。开发者可以浏览开放任务，以拉取请求的形式提交解决方案，一旦代码被任务发布者审批合并，即可自动收款。审查流程遵循标准的 GitHub 工作流，对任何参与过开源贡献或团队开发的开发者来说都非常熟悉。赏金涵盖从小型漏洞修复到复杂功能实现的广泛范围，各技术水平的开发者均有机会获得收入。</value>
+  </data>
+  <data name="HomeDescriptionParagraph3" xml:space="preserve">
+    <value>拉取请求任务对开发者零抽佣——每笔赏金全额到账。客户在创建任务时设定赏金金额，拉取请求获批后自动完成支付。平台支持多种支付方式，包括信用卡、GCash、格步支付、Maya、银行转账及 菲律宾二维码 支付。无论您是寻找副业收入的独立开发者，还是为特定任务寻找专业人才的企业，拉取请求任务都提供从任务创建到赏金发放的流畅工作流。</value>
+  </data>
+  <data name="HomeDeveloperPayoutLabel" xml:space="preserve">
+    <value>开发者报酬</value>
+  </data>
+  <data name="HomeDevelopersLabel" xml:space="preserve">
+    <value>开发者</value>
+  </data>
+  <data name="HomeEarnPerMergeLabel" xml:space="preserve">
+    <value>每次合并收入</value>
+  </data>
+  <data name="HomeGetPaidDescription" xml:space="preserve">
+    <value>当客户批准您的拉取请求时，系统会自动向其收费，您将通过首选的支付方式获得报酬。</value>
+  </data>
+  <data name="HomeGetPaidHeading" xml:space="preserve">
+    <value>获得报酬</value>
+  </data>
+  <data name="HomeHeroHeading" xml:space="preserve">
+    <value>拉取请求任务 — 通过拉取请求赚钱</value>
+  </data>
+  <data name="HomeHeroSubtitle" xml:space="preserve">
+    <value>浏览任务，提交拉取请求，根据复杂度获得报酬。攀登排行榜。</value>
+  </data>
+  <data name="HomeHowItWorksButton" xml:space="preserve">
+    <value>了解运作方式</value>
+  </data>
+  <data name="HomeOpenTasksLabel" xml:space="preserve">
+    <value>开放任务</value>
+  </data>
+  <data name="HomePaymentOnApprovalLabel" xml:space="preserve">
+    <value>批准即付款</value>
+  </data>
+  <data name="HomePickTaskDescription" xml:space="preserve">
+    <value>浏览从简单修复到专家级功能的带赏金开放任务。</value>
+  </data>
+  <data name="HomePickTaskHeading" xml:space="preserve">
+    <value>选择任务</value>
+  </data>
+  <data name="HomeSubmitPrDescription" xml:space="preserve">
+    <value>提交公开的拉取请求。多个开发者可以提交拉取请求，客户选择最佳方案。</value>
+  </data>
+  <data name="HomeSubmitPrHeading" xml:space="preserve">
+    <value>提交您的拉取请求</value>
+  </data>
+  <data name="HomeTotalBountyPoolLabel" xml:space="preserve">
+    <value>总赏金池</value>
+  </data>
+  <data name="HowItWorksForClientsHeading" xml:space="preserve">
+    <value>面向客户</value>
+  </data>
+  <data name="HowItWorksForClientsStep1" xml:space="preserve">
+    <value>使用 GitHub 或 谷歌 登录并设置支付方式</value>
+  </data>
+  <data name="HowItWorksForClientsStep2" xml:space="preserve">
+    <value>创建包含描述、仓库链接和赏金金额的任务</value>
+  </data>
+  <data name="HowItWorksForClientsStep3" xml:space="preserve">
+    <value>开发者为您的任务提交公开的拉取请求</value>
+  </data>
+  <data name="HowItWorksForClientsStep4" xml:space="preserve">
+    <value>审查所有提交的拉取请求并批准最佳方案</value>
+  </data>
+  <data name="HowItWorksForClientsStep5" xml:space="preserve">
+    <value>系统自动向您收取赏金，开发者获得报酬</value>
+  </data>
+  <data name="HowItWorksLabel" xml:space="preserve">
+    <value>运作方式</value>
+  </data>
+  <data name="HowItWorksPageHeading" xml:space="preserve">
+    <value>运作方式</value>
+  </data>
+  <data name="HowItWorksStatusLoginRequired" xml:space="preserve">
+    <value>需要登录</value>
+  </data>
+  <data name="HowItWorksStatusOpen" xml:space="preserve">
+    <value>开放</value>
+  </data>
+  <data name="HowItWorksStatusRequired" xml:space="preserve">
+    <value>必需</value>
+  </data>
+  <data name="HowItWorksStep1Description" xml:space="preserve">
+    <value>客户发布带有赏金的开发任务。按复杂度、语言或奖励金额浏览。</value>
+  </data>
+  <data name="HowItWorksStep1Heading" xml:space="preserve">
+    <value>浏览开放任务</value>
+  </data>
+  <data name="HowItWorksStep2Description" xml:space="preserve">
+    <value>编写代码并提交公开的拉取请求。多个开发者可以为同一任务提交 拉取请求。</value>
+  </data>
+  <data name="HowItWorksStep2Heading" xml:space="preserve">
+    <value>提交拉取请求</value>
+  </data>
+  <data name="HowItWorksStep3Description" xml:space="preserve">
+    <value>您的 拉取请求 将根据更改的文件、添加的行数、语言难度和测试覆盖率自动评分。</value>
+  </data>
+  <data name="HowItWorksStep3Heading" xml:space="preserve">
+    <value>复杂度评分</value>
+  </data>
+  <data name="HowItWorksStep4Description" xml:space="preserve">
+    <value>客户审查所有提交的 拉取请求 并选择最佳方案进行批准。批准后，系统自动向客户收取赏金金额。</value>
+  </data>
+  <data name="HowItWorksStep4Heading" xml:space="preserve">
+    <value>客户审查和批准</value>
+  </data>
+  <data name="HowItWorksStep5Description" xml:space="preserve">
+    <value>开发者通过首选支付方式收到报酬。每个获批的 拉取请求 都可解锁成就徽章，并在收入排行榜上攀升。</value>
+  </data>
+  <data name="HowItWorksStep5Heading" xml:space="preserve">
+    <value>获得报酬</value>
+  </data>
+  <data name="HowItWorksWorkflow10Description" xml:space="preserve">
+    <value>在需要修改的特定行或高亮代码上添加内联评论。</value>
+  </data>
+  <data name="HowItWorksWorkflow10Heading" xml:space="preserve">
+    <value>添加审查评论</value>
+  </data>
+  <data name="HowItWorksWorkflow10LinkText" xml:space="preserve">
+    <value>拉取请求 评论</value>
+  </data>
+  <data name="HowItWorksWorkflow11Description" xml:space="preserve">
+    <value>开发者应用修复，回复评论并解决它们。</value>
+  </data>
+  <data name="HowItWorksWorkflow11Heading" xml:space="preserve">
+    <value>回复并解决评论</value>
+  </data>
+  <data name="HowItWorksWorkflow11LinkText" xml:space="preserve">
+    <value>解决评论</value>
+  </data>
+  <data name="HowItWorksWorkflow12Description" xml:space="preserve">
+    <value>客户批准 拉取请求 并通过 Maya 信用卡结账支付赏金。</value>
+  </data>
+  <data name="HowItWorksWorkflow12Heading" xml:space="preserve">
+    <value>批准 拉取请求 并通过 Maya 支付</value>
+  </data>
+  <data name="HowItWorksWorkflow12LinkText" xml:space="preserve">
+    <value>批准并支付</value>
+  </data>
+  <data name="HowItWorksWorkflow12PaymentsLinkText" xml:space="preserve">
+    <value>付款</value>
+  </data>
+  <data name="HowItWorksWorkflow13Description" xml:space="preserve">
+    <value>查看所有支付交易及其状态。</value>
+  </data>
+  <data name="HowItWorksWorkflow13Heading" xml:space="preserve">
+    <value>支付历史</value>
+  </data>
+  <data name="HowItWorksWorkflow13LinkText" xml:space="preserve">
+    <value>付款</value>
+  </data>
+  <data name="HowItWorksWorkflow14Description" xml:space="preserve">
+    <value>配置提现方式并验证提现余额。</value>
+  </data>
+  <data name="HowItWorksWorkflow14Heading" xml:space="preserve">
+    <value>提现设置</value>
+  </data>
+  <data name="HowItWorksWorkflow14LinkText" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="HowItWorksWorkflow1Description" xml:space="preserve">
+    <value>通过 谷歌、GitHub、微软 或 Okta 进行身份验证。</value>
+  </data>
+  <data name="HowItWorksWorkflow1Heading" xml:space="preserve">
+    <value>通过 单点登录 登录</value>
+  </data>
+  <data name="HowItWorksWorkflow1LinkText" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="HowItWorksWorkflow2Description" xml:space="preserve">
+    <value>完成身份验证以启用支付并遵守法规。</value>
+  </data>
+  <data name="HowItWorksWorkflow2Heading" xml:space="preserve">
+    <value>了解您的客户 身份验证</value>
+  </data>
+  <data name="HowItWorksWorkflow2LinkText" xml:space="preserve">
+    <value>设置 - 了解您的客户</value>
+  </data>
+  <data name="HowItWorksWorkflow3Description" xml:space="preserve">
+    <value>发布带赏金的任务供开发者完成。</value>
+  </data>
+  <data name="HowItWorksWorkflow3Heading" xml:space="preserve">
+    <value>创建任务</value>
+  </data>
+  <data name="HowItWorksWorkflow3LinkText" xml:space="preserve">
+    <value>创建任务</value>
+  </data>
+  <data name="HowItWorksWorkflow4Description" xml:space="preserve">
+    <value>将源代码文件夹上传到任务，以便开发者查看差异。</value>
+  </data>
+  <data name="HowItWorksWorkflow4Heading" xml:space="preserve">
+    <value>上传源代码</value>
+  </data>
+  <data name="HowItWorksWorkflow4LinkText" xml:space="preserve">
+    <value>任务详情</value>
+  </data>
+  <data name="HowItWorksWorkflow5Description" xml:space="preserve">
+    <value>开发者浏览可用任务，找到与其技能匹配的工作。</value>
+  </data>
+  <data name="HowItWorksWorkflow5Heading" xml:space="preserve">
+    <value>浏览开放任务</value>
+  </data>
+  <data name="HowItWorksWorkflow5LinkText" xml:space="preserve">
+    <value>任务</value>
+  </data>
+  <data name="HowItWorksWorkflow6Description" xml:space="preserve">
+    <value>查看任务描述、赏金金额和现有拉取请求。</value>
+  </data>
+  <data name="HowItWorksWorkflow6Heading" xml:space="preserve">
+    <value>查看任务详情</value>
+  </data>
+  <data name="HowItWorksWorkflow6LinkText" xml:space="preserve">
+    <value>任务详情</value>
+  </data>
+  <data name="HowItWorksWorkflow7Description" xml:space="preserve">
+    <value>直接在浏览器差异编辑器中编辑源代码。</value>
+  </data>
+  <data name="HowItWorksWorkflow7Heading" xml:space="preserve">
+    <value>在差异编辑器中修改代码</value>
+  </data>
+  <data name="HowItWorksWorkflow7LinkText" xml:space="preserve">
+    <value>差异编辑器</value>
+  </data>
+  <data name="HowItWorksWorkflow8Description" xml:space="preserve">
+    <value>将您的代码更改作为拉取请求提交到任务。</value>
+  </data>
+  <data name="HowItWorksWorkflow8Heading" xml:space="preserve">
+    <value>提交拉取请求</value>
+  </data>
+  <data name="HowItWorksWorkflow8LinkText" xml:space="preserve">
+    <value>提交 拉取请求</value>
+  </data>
+  <data name="HowItWorksWorkflow9Description" xml:space="preserve">
+    <value>客户审查差异以查看开发者提交的所有代码更改。</value>
+  </data>
+  <data name="HowItWorksWorkflow9Heading" xml:space="preserve">
+    <value>审查代码更改</value>
+  </data>
+  <data name="HowItWorksWorkflow9LinkText" xml:space="preserve">
+    <value>拉取请求 详情</value>
+  </data>
+  <data name="HowItWorksWorkflowGuideDescription" xml:space="preserve">
+    <value>按照这些步骤完成从登录到支付的完整工作流程。</value>
+  </data>
+  <data name="HowItWorksWorkflowGuideHeading" xml:space="preserve">
+    <value>工作流程指南</value>
+  </data>
+  <data name="LanguageChinese" xml:space="preserve">
+    <value>中文</value>
+  </data>
+  <data name="LanguageEnglish" xml:space="preserve">
+    <value>英语</value>
+  </data>
+  <data name="LanguageGerman" xml:space="preserve">
+    <value>德语</value>
+  </data>
+  <data name="LanguageHindi" xml:space="preserve">
+    <value>印地语</value>
+  </data>
+  <data name="LanguageJapanese" xml:space="preserve">
+    <value>日语</value>
+  </data>
+  <data name="LanguageSelectorLabel" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="LeaderboardDescriptionHeading" xml:space="preserve">
+    <value>拉取请求任务 排行榜——排名、收入与荣誉认可</value>
+  </data>
+  <data name="LeaderboardDescriptionParagraph1" xml:space="preserve">
+    <value>拉取请求任务 排行榜展示平台上表现最突出的开发者和最活跃的客户。排名基于客观可验证的指标：对于开发者，排行榜追踪已合并的 拉取请求 数量和赏金总收入；对于客户（高消费榜），追踪已发布和资助的赏金总额。这一双视角排行榜为市场双方提供曝光机会，帮助开发者找到活跃客户，也帮助客户发现经验丰富、实力已获验证的开发者。</value>
+  </data>
+  <data name="LeaderboardDescriptionParagraph2" xml:space="preserve">
+    <value>开发者排名基于真实成就——每一个已合并的 拉取请求 和每一笔收入都有 GitHub 上可见的实际代码贡献作为支撑。没有主观评分，没有客户打分，也没有付费排名机制。排行榜随 拉取请求 获批和赏金发放实时更新。顶尖获益者将获得更多曝光，从而带来更多任务邀请和高价值机会。拉取请求任务 还为完成首个任务、保持连胜记录、达到里程碑收入等成就颁发 经验值 积分和徽章。</value>
+  </data>
+  <data name="LeaderboardDescriptionParagraph3" xml:space="preserve">
+    <value>排行榜在 拉取请求任务 生态中服务于多重目的。对新开发者而言，它提供了奋斗目标，展示了平台的收入潜力。对客户而言，它是一个人才目录，可用于发现具有交付高质量代码记录的开发者。对整个社区而言，它营造了一个健康的竞争环境，鼓励卓越追求与持续进步。切换顶尖获益者和顶尖消费者标签页，探索市场双方，找到最符合您需求的开发者或客户。</value>
+  </data>
+  <data name="LeaderboardEmptyStateText" xml:space="preserve">
+    <value>还没有条目。成为第一个提交 拉取请求 或发布任务的人。</value>
+  </data>
+  <data name="LeaderboardHeaderEarned" xml:space="preserve">
+    <value>收入</value>
+  </data>
+  <data name="LeaderboardHeaderPrsMerged" xml:space="preserve">
+    <value>已合并 拉取请求</value>
+  </data>
+  <data name="LeaderboardHeaderRank" xml:space="preserve">
+    <value>排名</value>
+  </data>
+  <data name="LeaderboardHeaderSpent" xml:space="preserve">
+    <value>支出</value>
+  </data>
+  <data name="LeaderboardHeaderTasksPosted" xml:space="preserve">
+    <value>已发布任务</value>
+  </data>
+  <data name="LeaderboardHeaderUser" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="LeaderboardLabel" xml:space="preserve">
+    <value>排行榜</value>
+  </data>
+  <data name="LeaderboardLoadingText" xml:space="preserve">
+    <value>正在加载排行榜...</value>
+  </data>
+  <data name="LeaderboardPageHeading" xml:space="preserve">
+    <value>排行榜</value>
+  </data>
+  <data name="LeaderboardTopEarnersTab" xml:space="preserve">
+    <value>收入最高</value>
+  </data>
+  <data name="LeaderboardTopSpendersTab" xml:space="preserve">
+    <value>支出最高</value>
+  </data>
+  <data name="LicensesLabel" xml:space="preserve">
+    <value>许可证</value>
+  </data>
+  <data name="LoadingText" xml:space="preserve">
+    <value>正在加载...</value>
+  </data>
+  <data name="LoginBenefitEarnMoneyDescription" xml:space="preserve">
+    <value>每个合并的拉取请求都能获得报酬。赏金预先资助，合并时释放。</value>
+  </data>
+  <data name="LoginBenefitEarnMoneyHeading" xml:space="preserve">
+    <value>赚取收入</value>
+  </data>
+  <data name="LoginBenefitNoFeesDescription" xml:space="preserve">
+    <value>开发者保留 100% 的赏金。拉取请求任务 向客户收费，从不向贡献者收费。</value>
+  </data>
+  <data name="LoginBenefitNoFeesHeading" xml:space="preserve">
+    <value>无平台费用</value>
+  </data>
+  <data name="LoginBenefitPublicPrsDescription" xml:space="preserve">
+    <value>所有工作都以 GitHub 上的真实拉取请求交付。您的贡献可见且可验证。</value>
+  </data>
+  <data name="LoginBenefitPublicPrsHeading" xml:space="preserve">
+    <value>公开 拉取请求</value>
+  </data>
+  <data name="LoginClientsDescription" xml:space="preserve">
+    <value>发布带赏金的任务，获得高质量代码交付。</value>
+  </data>
+  <data name="LoginClientsHeading" xml:space="preserve">
+    <value>面向客户</value>
+  </data>
+  <data name="LoginDevelopersDescription" xml:space="preserve">
+    <value>浏览任务、认领工作、提交 拉取请求 并获得报酬。</value>
+  </data>
+  <data name="LoginDevelopersHeading" xml:space="preserve">
+    <value>面向开发者</value>
+  </data>
+  <data name="LoginHelpLinkDescription" xml:space="preserve">
+    <value>访问我们的文档获取指南、常见问题和支持资源。</value>
+  </data>
+  <data name="LoginHelpLinkText" xml:space="preserve">
+    <value>需要帮助？</value>
+  </data>
+  <data name="LoginHowItWorksHeading" xml:space="preserve">
+    <value>运作方式</value>
+  </data>
+  <data name="LoginPageDescription" xml:space="preserve">
+    <value>连接您的账户以开始赚钱或发布任务。</value>
+  </data>
+  <data name="LoginPageHeading" xml:space="preserve">
+    <value>登录 拉取请求任务</value>
+  </data>
+  <data name="LoginSecurityDescription" xml:space="preserve">
+    <value>拉取请求任务 专门使用基于 开放授权 的 单点登录。我们从不存储密码。所有付款在工作验证前都保存在托管中。</value>
+  </data>
+  <data name="LoginSecurityHeading" xml:space="preserve">
+    <value>安全与信任</value>
+  </data>
+  <data name="LoginSignInWithGitHub" xml:space="preserve">
+    <value>使用 GitHub 登录</value>
+  </data>
+  <data name="LoginSignInWithGoogle" xml:space="preserve">
+    <value>使用 谷歌 登录</value>
+  </data>
+  <data name="LoginSignInWithMicrosoft" xml:space="preserve">
+    <value>使用 微软 登录</value>
+  </data>
+  <data name="LoginSignInWithOkta" xml:space="preserve">
+    <value>使用 Okta 登录</value>
+  </data>
+  <data name="LoginStepBrowseDescription" xml:space="preserve">
+    <value>按语言、框架或赏金金额筛选浏览可用任务。</value>
+  </data>
+  <data name="LoginStepBrowseHeading" xml:space="preserve">
+    <value>浏览任务</value>
+  </data>
+  <data name="LoginStepGetPaidDescription" xml:space="preserve">
+    <value>您的 拉取请求 被审查并合并后，赏金将自动释放到您的账户。</value>
+  </data>
+  <data name="LoginStepGetPaidHeading" xml:space="preserve">
+    <value>获得报酬</value>
+  </data>
+  <data name="LoginStepSignInDescription" xml:space="preserve">
+    <value>使用您首选的 单点登录 提供商进行身份验证以创建 拉取请求任务 账户。</value>
+  </data>
+  <data name="LoginStepSignInHeading" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="LoginStepSubmitDescription" xml:space="preserve">
+    <value>认领任务，编写代码，并向目标仓库提交拉取请求。</value>
+  </data>
+  <data name="LoginStepSubmitHeading" xml:space="preserve">
+    <value>提交 拉取请求</value>
+  </data>
+  <data name="LoginWhyPrTaskDescription" xml:space="preserve">
+    <value>拉取请求任务 将开发者与付费的开源和私有任务连接起来。提交代码，赚取收入，建立你的作品集。</value>
+  </data>
+  <data name="LoginWhyPrTaskHeading" xml:space="preserve">
+    <value>为什么选择 拉取请求任务？</value>
+  </data>
+  <data name="MenuTitle" xml:space="preserve">
+    <value>菜单</value>
+  </data>
+  <data name="NextText" xml:space="preserve">
+    <value>下一步</value>
+  </data>
+  <data name="NoText" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="PageNotFoundMessage" xml:space="preserve">
+    <value>您请求的页面未找到。</value>
+  </data>
+  <data name="PageNotFoundTitle" xml:space="preserve">
+    <value>页面未找到</value>
+  </data>
+  <data name="PaymentEmptyStateText" xml:space="preserve">
+    <value>未找到付款记录。</value>
+  </data>
+  <data name="PaymentHeaderAmount" xml:space="preserve">
+    <value>金额</value>
+  </data>
+  <data name="PaymentHeaderDate" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="PaymentHeaderStatus" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="PaymentHeaderTask" xml:space="preserve">
+    <value>任务</value>
+  </data>
+  <data name="PaymentHeaderType" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="PaymentLoadButton" xml:space="preserve">
+    <value>加载付款记录</value>
+  </data>
+  <data name="PaymentPageDescription" xml:space="preserve">
+    <value>查看您的所有付款及其状态。</value>
+  </data>
+  <data name="PaymentPageHeading" xml:space="preserve">
+    <value>付款历史</value>
+  </data>
+  <data name="PaymentsLabel" xml:space="preserve">
+    <value>付款</value>
+  </data>
+  <data name="PrDetailAddCommentButton" xml:space="preserve">
+    <value>添加评论</value>
+  </data>
+  <data name="PrDetailApproveAndMergeButton" xml:space="preserve">
+    <value>批准并合并</value>
+  </data>
+  <data name="PrDetailCancelButton" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="PrDetailCancelReplyButton" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="PrDetailChangedFilesHeading" xml:space="preserve">
+    <value>已更改文件</value>
+  </data>
+  <data name="PrDetailCodeChangesHeading" xml:space="preserve">
+    <value>代码更改</value>
+  </data>
+  <data name="PrDetailCommentLinePrefix" xml:space="preserve">
+    <value>在第 行添加评论</value>
+  </data>
+  <data name="PrDetailCommentOpenStatus" xml:space="preserve">
+    <value>开放</value>
+  </data>
+  <data name="PrDetailCommentResolvedStatus" xml:space="preserve">
+    <value>已解决</value>
+  </data>
+  <data name="PrDetailEditCodeLabel" xml:space="preserve">
+    <value>编辑代码</value>
+  </data>
+  <data name="PrDetailLoadingText" xml:space="preserve">
+    <value>正在加载拉取请求...</value>
+  </data>
+  <data name="PrDetailNoCommentsYet" xml:space="preserve">
+    <value>暂无评论。点击差异中的某行添加内联评论。</value>
+  </data>
+  <data name="PrDetailNoDiffAvailable" xml:space="preserve">
+    <value>无可用差异。请将源代码上传到任务以启用差异生成。</value>
+  </data>
+  <data name="PrDetailNoFilesParsed" xml:space="preserve">
+    <value>未从差异中解析到文件</value>
+  </data>
+  <data name="PrDetailPageHeading" xml:space="preserve">
+    <value>拉取请求详情</value>
+  </data>
+  <data name="PrDetailPaymentApproveText" xml:space="preserve">
+    <value>批准 拉取请求 以发起 Maya 信用卡付款。</value>
+  </data>
+  <data name="PrDetailPaymentHeading" xml:space="preserve">
+    <value>付款</value>
+  </data>
+  <data name="PrDetailPaymentInitiatedText" xml:space="preserve">
+    <value>已通过 Maya 结账发起付款。</value>
+  </data>
+  <data name="PrDetailPaymentProviderText" xml:space="preserve">
+    <value>由 Maya 提供支持</value>
+  </data>
+  <data name="PrDetailPaymentSandboxText" xml:space="preserve">
+    <value>沙盒模式</value>
+  </data>
+  <data name="PrDetailPrStatusPrefix" xml:space="preserve">
+    <value>拉取请求 状态：</value>
+  </data>
+  <data name="PrDetailReplyButton" xml:space="preserve">
+    <value>回复</value>
+  </data>
+  <data name="PrDetailRequestChangesButton" xml:space="preserve">
+    <value>请求更改</value>
+  </data>
+  <data name="PrDetailResolveButton" xml:space="preserve">
+    <value>解决</value>
+  </data>
+  <data name="PrDetailReviewCommentsHeading" xml:space="preserve">
+    <value>审查评论</value>
+  </data>
+  <data name="PrDetailSaveChangesButton" xml:space="preserve">
+    <value>保存更改</value>
+  </data>
+  <data name="PrDetailSplitViewLabel" xml:space="preserve">
+    <value>拆分视图</value>
+  </data>
+  <data name="PrDetailSubmitReplyButton" xml:space="preserve">
+    <value>提交回复</value>
+  </data>
+  <data name="PrDetailSubmittedByPrefix" xml:space="preserve">
+    <value>提交者：</value>
+  </data>
+  <data name="PrDetailUnifiedViewLabel" xml:space="preserve">
+    <value>统一视图</value>
+  </data>
+  <data name="PrDetailViewDiffLabel" xml:space="preserve">
+    <value>查看差异</value>
+  </data>
+  <data name="PrDetailViewOnGitHub" xml:space="preserve">
+    <value>在 GitHub 上查看</value>
+  </data>
+  <data name="PreviousText" xml:space="preserve">
+    <value>上一步</value>
+  </data>
+  <data name="PricingAdditionalFaq1Answer" xml:space="preserve">
+    <value>我们通过安全支付处理器接受 维萨、万事达、美国运通 及其他主要信用卡和借记卡。</value>
+  </data>
+  <data name="PricingAdditionalFaq1Question" xml:space="preserve">
+    <value>接受哪些支付方式？</value>
+  </data>
+  <data name="PricingAdditionalFaq2Answer" xml:space="preserve">
+    <value>客户批准您的拉取请求后，通常在 3 到 5 个工作日内处理提现。</value>
+  </data>
+  <data name="PricingAdditionalFaq2Question" xml:space="preserve">
+    <value>多久能收到提现？</value>
+  </data>
+  <data name="PricingAdditionalFaq3Answer" xml:space="preserve">
+    <value>是的，客户可以为任务设置的最低赏金为 $1。没有最高限额。</value>
+  </data>
+  <data name="PricingAdditionalFaq3Question" xml:space="preserve">
+    <value>有最低赏金金额吗？</value>
+  </data>
+  <data name="PricingClientFeature1" xml:space="preserve">
+    <value>发布无限数量的自定义赏金任务</value>
+  </data>
+  <data name="PricingClientFeature2" xml:space="preserve">
+    <value>最低赏金：$1</value>
+  </data>
+  <data name="PricingClientFeature3" xml:space="preserve">
+    <value>拉取请求 批准时自动付款</value>
+  </data>
+  <data name="PricingClientFeature4" xml:space="preserve">
+    <value>通过信用卡或支持的支付方式付款</value>
+  </data>
+  <data name="PricingClientFeature5" xml:space="preserve">
+    <value>在付款前审查和批准 拉取请求</value>
+  </data>
+  <data name="PricingClientFeature6" xml:space="preserve">
+    <value>争议解决和仲裁支持</value>
+  </data>
+  <data name="PricingClientsHeading" xml:space="preserve">
+    <value>面向客户</value>
+  </data>
+  <data name="PricingComparisonClientIncluded" xml:space="preserve">
+    <value>包含</value>
+  </data>
+  <data name="PricingComparisonDeveloperIncluded" xml:space="preserve">
+    <value>包含</value>
+  </data>
+  <data name="PricingComparisonFeatureColumnHeader" xml:space="preserve">
+    <value>功能</value>
+  </data>
+  <data name="PricingComparisonHeading" xml:space="preserve">
+    <value>功能对比</value>
+  </data>
+  <data name="PricingDevelopersHeading" xml:space="preserve">
+    <value>面向开发者</value>
+  </data>
+  <data name="PricingDevFeature1" xml:space="preserve">
+    <value>免费浏览和认领任务</value>
+  </data>
+  <data name="PricingDevFeature2" xml:space="preserve">
+    <value>每个已完成 拉取请求 获得 100% 赏金</value>
+  </data>
+  <data name="PricingDevFeature3" xml:space="preserve">
+    <value>获得徽章和排行榜排名</value>
+  </data>
+  <data name="PricingDevFeature4" xml:space="preserve">
+    <value>跟踪您的收入和提现历史</value>
+  </data>
+  <data name="PricingDevFeature5" xml:space="preserve">
+    <value>通过首选提现方式获得报酬</value>
+  </data>
+  <data name="PricingEnterpriseContactText" xml:space="preserve">
+    <value>联系我们</value>
+  </data>
+  <data name="PricingEnterpriseDescription" xml:space="preserve">
+    <value>需要为您的组织量身定制的解决方案？我们为企业团队提供自定义集成、专属支持和基于量的安排。</value>
+  </data>
+  <data name="PricingEnterpriseHeading" xml:space="preserve">
+    <value>企业和自定义计划</value>
+  </data>
+  <data name="PricingFaqAnswer1" xml:space="preserve">
+    <value>当客户批准拉取请求时，系统通过其支付方式自动收取赏金金额。开发者获得 100% 的赏金。</value>
+  </data>
+  <data name="PricingFaqAnswer2" xml:space="preserve">
+    <value>当您的 拉取请求 被客户批准时，付款将自动处理。开发者通过首选提现方式获得 100% 的赏金。</value>
+  </data>
+  <data name="PricingFaqAnswer3" xml:space="preserve">
+    <value>所有交易均以美元计价。</value>
+  </data>
+  <data name="PricingFaqHeading" xml:space="preserve">
+    <value>付款详情</value>
+  </data>
+  <data name="PricingFaqQuestion1" xml:space="preserve">
+    <value>付款如何处理？</value>
+  </data>
+  <data name="PricingFaqQuestion2" xml:space="preserve">
+    <value>我什么时候能收到付款？</value>
+  </data>
+  <data name="PricingFaqQuestion3" xml:space="preserve">
+    <value>支持哪些货币？</value>
+  </data>
+  <data name="PricingFeatureAchievements" xml:space="preserve">
+    <value>成就</value>
+  </data>
+  <data name="PricingFeatureCodeReview" xml:space="preserve">
+    <value>代码审查</value>
+  </data>
+  <data name="PricingFeatureLeaderboard" xml:space="preserve">
+    <value>排行榜</value>
+  </data>
+  <data name="PricingFeaturePaymentProcessing" xml:space="preserve">
+    <value>支付处理</value>
+  </data>
+  <data name="PricingFeaturePrSubmission" xml:space="preserve">
+    <value>拉取请求 提交</value>
+  </data>
+  <data name="PricingFeatureTaskBrowsing" xml:space="preserve">
+    <value>任务浏览</value>
+  </data>
+  <data name="PricingFreeLabel" xml:space="preserve">
+    <value>免费</value>
+  </data>
+  <data name="PricingGetStartedButton" xml:space="preserve">
+    <value>免费注册</value>
+  </data>
+  <data name="PricingGetStartedDescription" xml:space="preserve">
+    <value>立即加入 拉取请求任务，开始赚取或发布赏金。完全免费。</value>
+  </data>
+  <data name="PricingGetStartedHeading" xml:space="preserve">
+    <value>准备好开始了吗？</value>
+  </data>
+  <data name="PricingLabel" xml:space="preserve">
+    <value>价格</value>
+  </data>
+  <data name="PricingPageDescription" xml:space="preserve">
+    <value>拉取请求任务 对所有人完全免费。没有隐藏费用、没有佣金、没有收费。</value>
+  </data>
+  <data name="PricingPageHeading" xml:space="preserve">
+    <value>价格</value>
+  </data>
+  <data name="PricingPaymentMethodsDescription" xml:space="preserve">
+    <value>我们接受主要信用卡、借记卡和其他支持的支付提供商。所有付款均通过行业标准加密安全处理。</value>
+  </data>
+  <data name="PricingPaymentMethodsHeading" xml:space="preserve">
+    <value>支付方式</value>
+  </data>
+  <data name="PricingPayoutDescription" xml:space="preserve">
+    <value>开发者可通过银行转账、贝宝 或其他支持的提现方式提取收入。拉取请求 批准后通常在 3 到 5 个工作日内处理提现。</value>
+  </data>
+  <data name="PricingPayoutHeading" xml:space="preserve">
+    <value>提现详情</value>
+  </data>
+  <data name="PricingRefundSummaryDescription" xml:space="preserve">
+    <value>我们为有争议或未交付的工作提供公平的退款条款。查看完整退款政策了解详情。</value>
+  </data>
+  <data name="PricingRefundSummaryHeading" xml:space="preserve">
+    <value>退款政策</value>
+  </data>
+  <data name="PricingRefundSummaryLinkText" xml:space="preserve">
+    <value>查看完整退款政策</value>
+  </data>
+  <data name="PrivacyLabel" xml:space="preserve">
+    <value>隐私</value>
+  </data>
+  <data name="ProfileLeaderboardRankLabel" xml:space="preserve">
+    <value>排行榜排名</value>
+  </data>
+  <data name="ProfileLoadingText" xml:space="preserve">
+    <value>正在加载个人资料...</value>
+  </data>
+  <data name="ProfilePrsCompletedLabel" xml:space="preserve">
+    <value>已完成 拉取请求</value>
+  </data>
+  <data name="ProfileRecentPrsHeading" xml:space="preserve">
+    <value>最近的拉取请求</value>
+  </data>
+  <data name="ProfileTasksPostedLabel" xml:space="preserve">
+    <value>已发布任务</value>
+  </data>
+  <data name="ProfileTotalEarnedLabel" xml:space="preserve">
+    <value>总收入</value>
+  </data>
+  <data name="ProfileTotalSpentLabel" xml:space="preserve">
+    <value>总支出</value>
+  </data>
+  <data name="ProfileViewButton" xml:space="preserve">
+    <value>查看</value>
+  </data>
+  <data name="RefundPolicyLabel" xml:space="preserve">
+    <value>退款政策</value>
+  </data>
+  <data name="RepositoryLabel" xml:space="preserve">
+    <value>仓库</value>
+  </data>
+  <data name="SaveText" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="SearchText" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="SettingsAccountHeading" xml:space="preserve">
+    <value>账户</value>
+  </data>
+  <data name="SettingsActivityVisibilityLabel" xml:space="preserve">
+    <value>活动可见性</value>
+  </data>
+  <data name="SettingsAvatarUrlLabel" xml:space="preserve">
+    <value>头像 网址</value>
+  </data>
+  <data name="SettingsConnectedAccountsDescription" xml:space="preserve">
+    <value>管理您关联的 单点登录 提供商。</value>
+  </data>
+  <data name="SettingsConnectedAccountsHeading" xml:space="preserve">
+    <value>已关联账户</value>
+  </data>
+  <data name="SettingsDepositDescription" xml:space="preserve">
+    <value>配置用于发布任务赏金的支付方式。</value>
+  </data>
+  <data name="SettingsDepositHeading" xml:space="preserve">
+    <value>充值和支付方式</value>
+  </data>
+  <data name="SettingsDisabledLabel" xml:space="preserve">
+    <value>已禁用</value>
+  </data>
+  <data name="SettingsDisbursementDescription" xml:space="preserve">
+    <value>配置已完成任务的支付处理方式。</value>
+  </data>
+  <data name="SettingsDisbursementHeading" xml:space="preserve">
+    <value>支付设置</value>
+  </data>
+  <data name="SettingsDisbursementMethodLabel" xml:space="preserve">
+    <value>支付方式</value>
+  </data>
+  <data name="SettingsDisplayNameLabel" xml:space="preserve">
+    <value>显示名称</value>
+  </data>
+  <data name="SettingsEmailLabel" xml:space="preserve">
+    <value>电子邮件</value>
+  </data>
+  <data name="SettingsEmailNotificationsLabel" xml:space="preserve">
+    <value>电子邮件通知</value>
+  </data>
+  <data name="SettingsEnabledLabel" xml:space="preserve">
+    <value>已启用</value>
+  </data>
+  <data name="SettingsInvoiceAutoGenerateLabel" xml:space="preserve">
+    <value>自动生成发票</value>
+  </data>
+  <data name="SettingsInvoiceDescription" xml:space="preserve">
+    <value>为您的交易配置发票生成。</value>
+  </data>
+  <data name="SettingsInvoiceHeading" xml:space="preserve">
+    <value>发票设置</value>
+  </data>
+  <data name="SettingsKycCheckStatusButtonText" xml:space="preserve">
+    <value>检查状态</value>
+  </data>
+  <data name="SettingsKycCompleteVerificationText" xml:space="preserve">
+    <value>完成验证</value>
+  </data>
+  <data name="SettingsKycDescription" xml:space="preserve">
+    <value>完成身份验证以启用提现并遵守反洗钱法规。</value>
+  </data>
+  <data name="SettingsKycDigitalVerifyButtonText" xml:space="preserve">
+    <value>通过 Didit 验证</value>
+  </data>
+  <data name="SettingsKycDocumentIdLabel" xml:space="preserve">
+    <value>证件号码</value>
+  </data>
+  <data name="SettingsKycDocumentTypeLabel" xml:space="preserve">
+    <value>证件类型</value>
+  </data>
+  <data name="SettingsKycDriversLicenseLabel" xml:space="preserve">
+    <value>驾照</value>
+  </data>
+  <data name="SettingsKycHeading" xml:space="preserve">
+    <value>了解您的客户 - 身份验证</value>
+  </data>
+  <data name="SettingsKycNationalIdLabel" xml:space="preserve">
+    <value>国民身份证</value>
+  </data>
+  <data name="SettingsKycPassportLabel" xml:space="preserve">
+    <value>护照</value>
+  </data>
+  <data name="SettingsKycSelectDocumentType" xml:space="preserve">
+    <value>选择证件类型</value>
+  </data>
+  <data name="SettingsKycSessionLabel" xml:space="preserve">
+    <value>会话：</value>
+  </data>
+  <data name="SettingsKycSubmitButton" xml:space="preserve">
+    <value>提交 了解您的客户 验证</value>
+  </data>
+  <data name="SettingsKycVerificationStatusLabel" xml:space="preserve">
+    <value>验证状态</value>
+  </data>
+  <data name="SettingsLabel" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="SettingsNoActiveSubscriptions" xml:space="preserve">
+    <value>无活跃订阅。</value>
+  </data>
+  <data name="SettingsNoInvoiceHistory" xml:space="preserve">
+    <value>无发票历史记录。</value>
+  </data>
+  <data name="SettingsNotConfigured" xml:space="preserve">
+    <value>未配置。</value>
+  </data>
+  <data name="SettingsNotificationAllLabel" xml:space="preserve">
+    <value>所有通知</value>
+  </data>
+  <data name="SettingsNotificationEmailLabel" xml:space="preserve">
+    <value>通知邮箱</value>
+  </data>
+  <data name="SettingsNotificationImportantLabel" xml:space="preserve">
+    <value>仅重要通知</value>
+  </data>
+  <data name="SettingsNotificationNoneLabel" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="SettingsNotificationsHeading" xml:space="preserve">
+    <value>通知偏好</value>
+  </data>
+  <data name="SettingsNoWalletLinked" xml:space="preserve">
+    <value>未关联钱包。</value>
+  </data>
+  <data name="SettingsPageDescription" xml:space="preserve">
+    <value>管理您的账户偏好和支付配置。</value>
+  </data>
+  <data name="SettingsPageHeading" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="SettingsPaymentBankLabel" xml:space="preserve">
+    <value>银行转账</value>
+  </data>
+  <data name="SettingsPaymentCardLabel" xml:space="preserve">
+    <value>信用卡或借记卡</value>
+  </data>
+  <data name="SettingsPaymentHistoryDescription" xml:space="preserve">
+    <value>查看过去的交易和付款记录。</value>
+  </data>
+  <data name="SettingsPaymentHistoryHeaderAmount" xml:space="preserve">
+    <value>金额</value>
+  </data>
+  <data name="SettingsPaymentHistoryHeaderCreated" xml:space="preserve">
+    <value>创建时间</value>
+  </data>
+  <data name="SettingsPaymentHistoryHeaderDescription" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="SettingsPaymentHistoryHeaderStatus" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="SettingsPaymentHistoryHeading" xml:space="preserve">
+    <value>支付历史</value>
+  </data>
+  <data name="SettingsPaymentHistoryRecentLabel" xml:space="preserve">
+    <value>最近的发票</value>
+  </data>
+  <data name="SettingsPaymentMethodLabel" xml:space="preserve">
+    <value>支付方式</value>
+  </data>
+  <data name="SettingsPayoutBankLabel" xml:space="preserve">
+    <value>银行转账</value>
+  </data>
+  <data name="SettingsPayoutCryptoLabel" xml:space="preserve">
+    <value>加密货币</value>
+  </data>
+  <data name="SettingsPayoutDetailsLabel" xml:space="preserve">
+    <value>提现详情</value>
+  </data>
+  <data name="SettingsPayoutMethodLabel" xml:space="preserve">
+    <value>提现方式</value>
+  </data>
+  <data name="SettingsPayoutPaypalLabel" xml:space="preserve">
+    <value>贝宝</value>
+  </data>
+  <data name="SettingsPrivacyHeading" xml:space="preserve">
+    <value>隐私</value>
+  </data>
+  <data name="SettingsProfileHeading" xml:space="preserve">
+    <value>个人资料</value>
+  </data>
+  <data name="SettingsProfileVisibilityLabel" xml:space="preserve">
+    <value>个人资料可见性</value>
+  </data>
+  <data name="SettingsProviderGitHubLabel" xml:space="preserve">
+    <value>GitHub</value>
+  </data>
+  <data name="SettingsProviderGoogleLabel" xml:space="preserve">
+    <value>谷歌</value>
+  </data>
+  <data name="SettingsProviderMicrosoftLabel" xml:space="preserve">
+    <value>微软</value>
+  </data>
+  <data name="SettingsProviderOktaLabel" xml:space="preserve">
+    <value>Okta</value>
+  </data>
+  <data name="SettingsQrPaymentDescription" xml:space="preserve">
+    <value>管理二维码支付偏好设置。</value>
+  </data>
+  <data name="SettingsQrPaymentHeading" xml:space="preserve">
+    <value>二维码支付设置</value>
+  </data>
+  <data name="SettingsQrPaymentLabel" xml:space="preserve">
+    <value>二维码支付</value>
+  </data>
+  <data name="SettingsSaveButton" xml:space="preserve">
+    <value>保存设置</value>
+  </data>
+  <data name="SettingsSecurityDescription" xml:space="preserve">
+    <value>通过额外的安全措施保护您的账户。</value>
+  </data>
+  <data name="SettingsSecurityHeading" xml:space="preserve">
+    <value>安全</value>
+  </data>
+  <data name="SettingsSubscriptionActiveLabel" xml:space="preserve">
+    <value>活跃订阅</value>
+  </data>
+  <data name="SettingsSubscriptionDescription" xml:space="preserve">
+    <value>管理您的活跃订阅和定期付款。</value>
+  </data>
+  <data name="SettingsSubscriptionHeaderAmount" xml:space="preserve">
+    <value>金额</value>
+  </data>
+  <data name="SettingsSubscriptionHeaderDescription" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="SettingsSubscriptionHeaderInterval" xml:space="preserve">
+    <value>间隔</value>
+  </data>
+  <data name="SettingsSubscriptionHeaderStatus" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="SettingsSubscriptionHeading" xml:space="preserve">
+    <value>订阅设置</value>
+  </data>
+  <data name="SettingsTimezoneLabel" xml:space="preserve">
+    <value>时区</value>
+  </data>
+  <data name="SettingsTimezoneLondonLabel" xml:space="preserve">
+    <value>伦敦 (GMT+0)</value>
+  </data>
+  <data name="SettingsTimezoneManilaLabel" xml:space="preserve">
+    <value>亚洲/马尼拉 (GMT+8)</value>
+  </data>
+  <data name="SettingsTimezoneNewYorkLabel" xml:space="preserve">
+    <value>东部时间 (GMT-5)</value>
+  </data>
+  <data name="SettingsTimezoneUtcLabel" xml:space="preserve">
+    <value>协调世界时</value>
+  </data>
+  <data name="SettingsTwoFactorAuthenticatorLabel" xml:space="preserve">
+    <value>身份验证器应用</value>
+  </data>
+  <data name="SettingsTwoFactorDisabledLabel" xml:space="preserve">
+    <value>已禁用</value>
+  </data>
+  <data name="SettingsTwoFactorEmailLabel" xml:space="preserve">
+    <value>电子邮件验证</value>
+  </data>
+  <data name="SettingsTwoFactorLabel" xml:space="preserve">
+    <value>双因素认证</value>
+  </data>
+  <data name="SettingsVisibilityPrivateActivityLabel" xml:space="preserve">
+    <value>私密 - 对他人隐藏活动</value>
+  </data>
+  <data name="SettingsVisibilityPrivateProfileLabel" xml:space="preserve">
+    <value>私密 - 仅自己可查看个人资料</value>
+  </data>
+  <data name="SettingsVisibilityPublicActivityLabel" xml:space="preserve">
+    <value>公开 - 在排行榜上显示活动</value>
+  </data>
+  <data name="SettingsVisibilityPublicProfileLabel" xml:space="preserve">
+    <value>公开 - 任何人可查看个人资料</value>
+  </data>
+  <data name="SettingsWalletDescription" xml:space="preserve">
+    <value>关联您的数字钱包以进行快速支付和提现。</value>
+  </data>
+  <data name="SettingsWalletHeading" xml:space="preserve">
+    <value>钱包关联设置</value>
+  </data>
+  <data name="SettingsWalletLinkedLabel" xml:space="preserve">
+    <value>已关联钱包</value>
+  </data>
+  <data name="SettingsWithdrawalDescription" xml:space="preserve">
+    <value>配置您接收已完成任务报酬的方式。</value>
+  </data>
+  <data name="SettingsWithdrawalHeading" xml:space="preserve">
+    <value>提现设置</value>
+  </data>
+  <data name="SignInText" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="SignOutText" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="SprintCompleteButton" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="SprintCreateActionText" xml:space="preserve">
+    <value>创建</value>
+  </data>
+  <data name="SprintCreateButton" xml:space="preserve">
+    <value>创建冲刺</value>
+  </data>
+  <data name="SprintDeleteButton" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="SprintEmptyStateText" xml:space="preserve">
+    <value>还没有冲刺。创建一个来开始。</value>
+  </data>
+  <data name="SprintEndDateLabel" xml:space="preserve">
+    <value>结束日期</value>
+  </data>
+  <data name="SprintLoadingText" xml:space="preserve">
+    <value>正在加载冲刺...</value>
+  </data>
+  <data name="SprintPageHeading" xml:space="preserve">
+    <value>冲刺</value>
+  </data>
+  <data name="SprintsLabel" xml:space="preserve">
+    <value>冲刺</value>
+  </data>
+  <data name="SprintStartButton" xml:space="preserve">
+    <value>开始</value>
+  </data>
+  <data name="SprintStartDateLabel" xml:space="preserve">
+    <value>开始日期</value>
+  </data>
+  <data name="SubmitPrCancelButton" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="SubmitPrGitHubUrlLabel" xml:space="preserve">
+    <value>GitHub 拉取请求 链接</value>
+  </data>
+  <data name="SubmitPrLoadingText" xml:space="preserve">
+    <value>正在加载任务...</value>
+  </data>
+  <data name="SubmitPrPageTitle" xml:space="preserve">
+    <value>提交拉取请求</value>
+  </data>
+  <data name="SubmitPrSubmitButton" xml:space="preserve">
+    <value>提交拉取请求</value>
+  </data>
+  <data name="SubmitPrSubmittingForFormat" xml:space="preserve">
+    <value>正在为以下任务提交 拉取请求：</value>
+  </data>
+  <data name="SubmitPrUserIdLabel" xml:space="preserve">
+    <value>您的用户 编号</value>
+  </data>
+  <data name="SubmitText" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="TaskDetailApproveButton" xml:space="preserve">
+    <value>批准</value>
+  </data>
+  <data name="TaskDetailClaimButton" xml:space="preserve">
+    <value>认领此任务</value>
+  </data>
+  <data name="TaskDetailDeadlineLabel" xml:space="preserve">
+    <value>截止日期：</value>
+  </data>
+  <data name="TaskDetailDeleteButton" xml:space="preserve">
+    <value>删除任务</value>
+  </data>
+  <data name="TaskDetailEditButton" xml:space="preserve">
+    <value>编辑任务</value>
+  </data>
+  <data name="TaskDetailEmptyPrState" xml:space="preserve">
+    <value>尚未提交拉取请求。</value>
+  </data>
+  <data name="TaskDetailLoadingText" xml:space="preserve">
+    <value>正在加载任务...</value>
+  </data>
+  <data name="TaskDetailPullRequestsDescription" xml:space="preserve">
+    <value>开发者为此任务提交拉取请求。选择最佳方案进行批准和合并。</value>
+  </data>
+  <data name="TaskDetailPullRequestsHeading" xml:space="preserve">
+    <value>拉取请求</value>
+  </data>
+  <data name="TaskDetailSourceCodeDescription" xml:space="preserve">
+    <value>上传您的源代码文件夹，以便开发者在差异查看器中查看代码。</value>
+  </data>
+  <data name="TaskDetailSourceCodeHeading" xml:space="preserve">
+    <value>源代码</value>
+  </data>
+  <data name="TaskDetailStatusLabel" xml:space="preserve">
+    <value>状态：</value>
+  </data>
+  <data name="TaskDetailSubmitPrButton" xml:space="preserve">
+    <value>提交拉取请求</value>
+  </data>
+  <data name="TaskDetailUploadButton" xml:space="preserve">
+    <value>上传文件</value>
+  </data>
+  <data name="TaskDetailUploadFilesLabel" xml:space="preserve">
+    <value>上传源文件</value>
+  </data>
+  <data name="TaskDetailViewDiffButton" xml:space="preserve">
+    <value>查看差异</value>
+  </data>
+  <data name="TaskListAllComplexities" xml:space="preserve">
+    <value>所有复杂度</value>
+  </data>
+  <data name="TaskListComplexityLabel" xml:space="preserve">
+    <value>复杂度</value>
+  </data>
+  <data name="TaskListDescriptionHeading" xml:space="preserve">
+    <value>浏览开放任务——寻找付费开发工作</value>
+  </data>
+  <data name="TaskListDescriptionParagraph1" xml:space="preserve">
+    <value>任务页面是您在 拉取请求任务 寻找付费开发工作的入口。此处列出的每项任务都代表客户发布的真实软件工作，并附有成功完成后可获得的赏金。任务涵盖从几分钟即可完成的简单修复到需要深厚专业知识的专家级实现等广泛难度等级。您可以按难度等级筛选任务以匹配自身技能，或按最新发布或最高赏金排序来优化搜索。</value>
+  </data>
+  <data name="TaskListDescriptionParagraph2" xml:space="preserve">
+    <value>每张任务卡片均一目了然地展示关键信息：难度评级、以美元计的赏金金额、简短描述以及涉及技术的相关标签。难度等级包括简单、初级、中级、复杂和专家级，赏金金额通常随难度递增。标签帮助您快速识别与您技术专长匹配的任务，无论是 C#、Blazor、蟒蛇、爪哇脚本、开发运维 还是其他技术栈。点击任意任务可查看完整描述、需求说明及关联的 GitHub 仓库。</value>
+  </data>
+  <data name="TaskListDescriptionParagraph3" xml:space="preserve">
+    <value>赏金金额由客户在创建任务时确定，反映所请求工作的价值。拉取请求任务 不向开发者收取任何费用——您看到的赏金金额即为获批后实际到账金额。入门步骤：浏览可用任务，找到匹配您技能的任务，在完整任务详情页查阅需求，然后以 拉取请求 的形式提交您的解决方案。整个工作流遵循标准的 GitHub 实践，对任何熟悉版本控制和代码审查流程的开发者都易于上手。</value>
+  </data>
+  <data name="TaskListEmptyStateText" xml:space="preserve">
+    <value>目前没有开放任务。请稍后再来查看。</value>
+  </data>
+  <data name="TaskListHighestBounty" xml:space="preserve">
+    <value>最高赏金</value>
+  </data>
+  <data name="TaskListLoadingText" xml:space="preserve">
+    <value>正在加载任务...</value>
+  </data>
+  <data name="TaskListNewestFirst" xml:space="preserve">
+    <value>最新优先</value>
+  </data>
+  <data name="TaskListPageDescription" xml:space="preserve">
+    <value>浏览可用任务并认领一个开始赚钱。</value>
+  </data>
+  <data name="TaskListPageHeading" xml:space="preserve">
+    <value>开放任务</value>
+  </data>
+  <data name="TaskListSearchPlaceholder" xml:space="preserve">
+    <value>搜索任务...</value>
+  </data>
+  <data name="TaskListViewTaskButton" xml:space="preserve">
+    <value>查看任务</value>
+  </data>
+  <data name="TasksLabel" xml:space="preserve">
+    <value>任务</value>
+  </data>
+  <data name="TermsLabel" xml:space="preserve">
+    <value>条款</value>
+  </data>
+  <data name="ToggleThemeTitle" xml:space="preserve">
+    <value>切换主题</value>
+  </data>
+  <data name="ViewText" xml:space="preserve">
+    <value>查看</value>
+  </data>
+  <data name="YesText" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="AcceptableUseAccountIntegrityDescription" xml:space="preserve">
+    <value>用户只能注册一个账户。创建多个账户以领取任务或操控系统将导致永久封禁。</value>
+  </data>
+  <data name="AcceptableUseAccountIntegrityHeading" xml:space="preserve">
+    <value>账户完整性</value>
+  </data>
+  <data name="AcceptableUseCodeQualityDescription" xml:space="preserve">
+    <value>所有提交的 拉取请求 必须为原创作品。如使用自动化工具或 人工智能 生成的代码，须在 拉取请求 描述中予以说明。</value>
+  </data>
+  <data name="AcceptableUseCodeQualityHeading" xml:space="preserve">
+    <value>代码质量</value>
+  </data>
+  <data name="AcceptableUseConductAutomated" xml:space="preserve">
+    <value>未经事先书面授权，使用自动化工具或机器人与平台进行交互</value>
+  </data>
+  <data name="AcceptableUseConductDescription" xml:space="preserve">
+    <value>以下行为在 拉取请求任务 上被严格禁止，可能导致立即采取执法行动：</value>
+  </data>
+  <data name="AcceptableUseConductDiscrimination" xml:space="preserve">
+    <value>基于种族、性别、宗教、国籍、残障或任何其他受保护特征，对任何用户实施歧视性、仇恨性或威胁性行为</value>
+  </data>
+  <data name="AcceptableUseConductExploiting" xml:space="preserve">
+    <value>利用平台漏洞、应用程序接口 或支付系统谋取未经授权的利益</value>
+  </data>
+  <data name="AcceptableUseConductFakeTasks" xml:space="preserve">
+    <value>创建虚假任务或 拉取请求，以人为方式虚增收益或操控支付流程</value>
+  </data>
+  <data name="AcceptableUseConductHeading" xml:space="preserve">
+    <value>禁止行为</value>
+  </data>
+  <data name="AcceptableUseConductInauthentic" xml:space="preserve">
+    <value>参与有组织的虚假行为，包括刷单竞价、虚假评价或评分操控</value>
+  </data>
+  <data name="AcceptableUseConductIpViolation" xml:space="preserve">
+    <value>侵犯他人知识产权，包括提交侵犯版权或专利的代码</value>
+  </data>
+  <data name="AcceptableUseConductKycCircumvent" xml:space="preserve">
+    <value>规避或试图规避 了解您的客户 身份验证要求</value>
+  </data>
+  <data name="AcceptableUseConductMalicious" xml:space="preserve">
+    <value>分发、托管或链接至恶意软件、钓鱼页面或漏洞利用工具包</value>
+  </data>
+  <data name="AcceptableUseConductMoneyLaundering" xml:space="preserve">
+    <value>利用平台从事洗钱、恐怖主义融资或任何违反《反洗钱法》（第9160号共和国法案）的行为</value>
+  </data>
+  <data name="AcceptableUseConductUnauthorizedAccess" xml:space="preserve">
+    <value>未经授权尝试访问其他用户的账户、数据或支付信息</value>
+  </data>
+  <data name="AcceptableUseContactDescription" xml:space="preserve">
+    <value>如对本可接受使用政策有任何疑问，请联系 abuse@prtask.com。如需法律咨询，请联系 legal@prtask.com。</value>
+  </data>
+  <data name="AcceptableUseContactHeading" xml:space="preserve">
+    <value>联系方式</value>
+  </data>
+  <data name="AcceptableUseContentModerationDescription" xml:space="preserve">
+    <value>根据欧盟《数字服务法》2022/2065 的要求，拉取请求任务 维护透明的内容审核政策。用户可通过我们的举报机制标记违法或有害内容。拉取请求任务 优先处理"受信任举报方"提交的通知。拉取请求任务 对每项内容审核决定提供说明声明，设有内部投诉处理机制，并为受审核决定影响的用户提供庭外争议解决渠道。拉取请求任务 每年发布内容审核活动及决定的透明度报告。拉取请求任务 禁止在内容审核界面使用暗黑模式设计，并确保算法决策受到人工审查。</value>
+  </data>
+  <data name="AcceptableUseContentModerationHeading" xml:space="preserve">
+    <value>内容审核（欧盟 数字服务法 合规）</value>
+  </data>
+  <data name="AcceptableUseDescriptionHeading" xml:space="preserve">
+    <value>关于本可接受使用政策</value>
+  </data>
+  <data name="AcceptableUseDescriptionParagraph1" xml:space="preserve">
+    <value>本可接受使用政策规定了 拉取请求任务 平台所有参与者的行为准则，明确了禁止行为，包括抄袭、垃圾任务、排行榜操控、支付欺诈、骚扰及其他损害平台完整性的行为。这些规则旨在保护社区，确保 拉取请求任务 对寻求有偿工作的开发者和寻求优质代码贡献的客户而言均保持可信赖的环境。</value>
+  </data>
+  <data name="AcceptableUseDescriptionParagraph2" xml:space="preserve">
+    <value>执法措施从警告到永久封号不等，具体取决于违规的严重程度和频率。拉取请求任务 同时采用自动检测和人工审查来识别违规行为，并为认为执法有误的用户提供申诉流程。所有用户均须保持专业行为，提交原创作品，并遵守有关金融交易、知识产权和反洗钱的相关法律法规。</value>
+  </data>
+  <data name="AcceptableUseEnforcementAppeal" xml:space="preserve">
+    <value>拉取请求任务 保留自行决定采取执法行动的权利。受到执法行动的用户可在行动发生后 14 天内通过 abuse@prtask.com 提出申诉。根据欧盟《数字服务法》的要求，拉取请求任务 将对每项内容审核决定提供说明声明。</value>
+  </data>
+  <data name="AcceptableUseEnforcementContentLabel" xml:space="preserve">
+    <value>内容移除：</value>
+  </data>
+  <data name="AcceptableUseEnforcementContentText" xml:space="preserve">
+    <value>移除违规任务、拉取请求 或其他内容</value>
+  </data>
+  <data name="AcceptableUseEnforcementDescription" xml:space="preserve">
+    <value>违规行为可能导致账户暂停、赏金没收以及永久封禁。</value>
+  </data>
+  <data name="AcceptableUseEnforcementFinancialLabel" xml:space="preserve">
+    <value>资金冻结：</value>
+  </data>
+  <data name="AcceptableUseEnforcementFinancialText" xml:space="preserve">
+    <value>在调查财务违规期间冻结账户资金</value>
+  </data>
+  <data name="AcceptableUseEnforcementHeading" xml:space="preserve">
+    <value>执法措施</value>
+  </data>
+  <data name="AcceptableUseEnforcementLegalLabel" xml:space="preserve">
+    <value>法律移送：</value>
+  </data>
+  <data name="AcceptableUseEnforcementLegalText" xml:space="preserve">
+    <value>向执法机关举报犯罪行为，对于疑似洗钱案件将向 反洗钱委员会 报告</value>
+  </data>
+  <data name="AcceptableUseEnforcementSuspensionLabel" xml:space="preserve">
+    <value>临时暂停：</value>
+  </data>
+  <data name="AcceptableUseEnforcementSuspensionText" xml:space="preserve">
+    <value>在特定期限内（7 至 90 天）暂停账户访问权限</value>
+  </data>
+  <data name="AcceptableUseEnforcementTerminationLabel" xml:space="preserve">
+    <value>永久封禁：</value>
+  </data>
+  <data name="AcceptableUseEnforcementTerminationText" xml:space="preserve">
+    <value>永久移除平台资格，并没收待处理赏金</value>
+  </data>
+  <data name="AcceptableUseEnforcementWarningLabel" xml:space="preserve">
+    <value>警告：</value>
+  </data>
+  <data name="AcceptableUseEnforcementWarningText" xml:space="preserve">
+    <value>正式通知，说明违规内容并要求采取纠正措施</value>
+  </data>
+  <data name="AcceptableUseIntroduction" xml:space="preserve">
+    <value>本可接受使用政策规范您在 拉取请求任务 平台上的行为。所有用户，包括客户和开发者，均须遵守本政策。违规行为可能导致执法措施，包括账户暂停或终止。本政策符合欧盟《数字服务法》的内容审核要求。</value>
+  </data>
+  <data name="AcceptableUseLastUpdated" xml:space="preserve">
+    <value>最后更新：2026 年 3 月</value>
+  </data>
+  <data name="AcceptableUsePageHeading" xml:space="preserve">
+    <value>可接受使用政策</value>
+  </data>
+  <data name="AcceptableUseProhibitedCollusion" xml:space="preserve">
+    <value>与其他用户串通以操控任务结果或人为虚增收益</value>
+  </data>
+  <data name="AcceptableUseProhibitedDescription" xml:space="preserve">
+    <value>用户不得使用 拉取请求任务 提交抄袭代码、发布垃圾任务、操控排行榜排名或从事欺诈性支付活动。</value>
+  </data>
+  <data name="AcceptableUseProhibitedFraud" xml:space="preserve">
+    <value>从事欺诈性支付活动或操控支付流程</value>
+  </data>
+  <data name="AcceptableUseProhibitedHarassment" xml:space="preserve">
+    <value>骚扰、威胁或恐吓其他用户</value>
+  </data>
+  <data name="AcceptableUseProhibitedHeading" xml:space="preserve">
+    <value>禁止活动</value>
+  </data>
+  <data name="AcceptableUseProhibitedImpersonation" xml:space="preserve">
+    <value>冒充其他用户或虚报个人身份</value>
+  </data>
+  <data name="AcceptableUseProhibitedLeaderboard" xml:space="preserve">
+    <value>通过人为手段操控排行榜排名或成就徽章</value>
+  </data>
+  <data name="AcceptableUseProhibitedLowQuality" xml:space="preserve">
+    <value>故意提交低质量作品以骗取赏金</value>
+  </data>
+  <data name="AcceptableUseProhibitedMalware" xml:space="preserve">
+    <value>上传恶意软件、病毒、后门程序或恶意代码</value>
+  </data>
+  <data name="AcceptableUseProhibitedMoneyLaundering" xml:space="preserve">
+    <value>利用平台洗钱、资助恐怖主义或促成非法交易</value>
+  </data>
+  <data name="AcceptableUseProhibitedPaymentCircumvent" xml:space="preserve">
+    <value>试图绕过自动支付系统</value>
+  </data>
+  <data name="AcceptableUseProhibitedPlagiarism" xml:space="preserve">
+    <value>在 拉取请求 中提交抄袭、盗用或未经授权许可的代码</value>
+  </data>
+  <data name="AcceptableUseProhibitedScraping" xml:space="preserve">
+    <value>未经授权对平台进行数据抓取或自动化数据采集</value>
+  </data>
+  <data name="AcceptableUseProhibitedSpam" xml:space="preserve">
+    <value>对任务、拉取请求 或平台通讯发送垃圾信息</value>
+  </data>
+  <data name="AcceptableUseReportingDescription" xml:space="preserve">
+    <value>如您发现任何违反本可接受使用政策的行为，请向 abuse@prtask.com 举报。请提供违规方的用户名、违规行为描述以及链接或截图等支持性证据。所有举报将在 2 个工作日内审查。拉取请求任务 保护举报人身份，并禁止对善意举报者进行打击报复。</value>
+  </data>
+  <data name="AcceptableUseReportingHeading" xml:space="preserve">
+    <value>举报违规行为</value>
+  </data>
+  <data name="AccessibilityAdaComplianceDescription" xml:space="preserve">
+    <value>拉取请求任务 致力于遵守《美国残疾人法案》及同等国际无障碍标准。我们定期审查平台，确保所有用户（包括残障人士）均能有效访问和使用我们的服务。我们的目标是在所有页面和功能上达到或超过 网页内容无障碍指南 2.1 双A级 级要求。</value>
+  </data>
+  <data name="AccessibilityAdaComplianceHeading" xml:space="preserve">
+    <value>美国残疾人法案 合规</value>
+  </data>
+  <data name="AccessibilityConformanceDescription" xml:space="preserve">
+    <value>拉取请求任务 以符合《网页内容无障碍指南》2.2 双A级 级为目标，该标准被欧洲无障碍法案、美国 美国残疾人法案（第三章）及第 508 条所引用。我们定期依据这些指南审查平台并修复已发现的差距。我们的符合性状态为部分符合，即符合大多数但非全部 网页内容无障碍指南 2.2 双A级 级成功标准，并正积极推进全面符合。</value>
+  </data>
+  <data name="AccessibilityConformanceHeading" xml:space="preserve">
+    <value>符合性状态</value>
+  </data>
+  <data name="AccessibilityDescriptionHeading" xml:space="preserve">
+    <value>关于本无障碍声明</value>
+  </data>
+  <data name="AccessibilityDescriptionParagraph1" xml:space="preserve">
+    <value>本无障碍声明记录了 拉取请求任务 致力于使所有人（包括残障人士）均可使用平台的承诺。我们以 网页内容无障碍指南 2.2 双A级 级符合性为目标，并遵守《美国残疾人法案》、《欧洲无障碍法案》及其他地区性无障碍要求。我们的无障碍措施包括：语义化 超文本标记语言 标记、充足的颜色对比度、完整的键盘导航支持、响应式设计、非文本内容的文字替代、深色模式、清晰的焦点指示器以及最小交互目标尺寸。</value>
+  </data>
+  <data name="AccessibilityDescriptionParagraph2" xml:space="preserve">
+    <value>拉取请求任务 积极致力于识别和解决无障碍障碍。如您在使用平台时遇到任何无障碍问题，我们鼓励您与我们联系，以便及时解决。我们定期依据 网页内容无障碍指南 2.2 标准审查平台，并优先修复任何符合性差距。我们的目标是确保所有用户——无论能力如何——都能创建任务、浏览机会、提交 拉取请求、管理支付，并全面参与 拉取请求任务 开发者市场。</value>
+  </data>
+  <data name="AccessibilityEaaDescription" xml:space="preserve">
+    <value>拉取请求任务 遵守自 2025 年 6 月 28 日起生效的《欧洲无障碍法案》（欧盟）2019/882 及协调标准 欧洲标准 301 549 V3.2.1。这要求我们的网站和 网络 应用程序对欧盟用户至少符合 网页内容无障碍指南 2.1 双A级 级。随着 欧洲标准 301 549 V4.1.1 标准的采用，拉取请求任务 致力于达到更新的 网页内容无障碍指南 2.2 双A级 级标准。我们对所有用户适用这些无障碍标准，不受地理位置限制。</value>
+  </data>
+  <data name="AccessibilityEaaHeading" xml:space="preserve">
+    <value>欧洲无障碍法案</value>
+  </data>
+  <data name="AccessibilityFeedbackDescription" xml:space="preserve">
+    <value>我们欢迎您对 拉取请求任务 无障碍性的反馈。如您遇到任何无障碍障碍、有改进建议，或需要协助访问平台的任何部分，请通过 accessibility@prtask.com 联系我们。我们力争在 5 个工作日内回复无障碍反馈，并将及时解决所报告的问题。您也可以申请以替代格式获取内容。对于未能令您满意地解决的无障碍投诉，您可联系所在司法管辖区的相关国家执法机构。</value>
+  </data>
+  <data name="AccessibilityFeedbackHeading" xml:space="preserve">
+    <value>反馈</value>
+  </data>
+  <data name="AccessibilityKnownLimitationsDescription" xml:space="preserve">
+    <value>尽管我们努力确保平台的全面无障碍性，但部分第三方内容或新添加的功能可能尚未完全满足所有 网页内容无障碍指南 2.1 双A级 级标准。我们正积极致力于识别和解决所有无障碍差距。</value>
+  </data>
+  <data name="AccessibilityKnownLimitationsHeading" xml:space="preserve">
+    <value>已知限制</value>
+  </data>
+  <data name="AccessibilityLastUpdated" xml:space="preserve">
+    <value>最后更新：2026 年 3 月</value>
+  </data>
+  <data name="AccessibilityMeasureColorContrast" xml:space="preserve">
+    <value>文本与背景之间具有充足的颜色对比度</value>
+  </data>
+  <data name="AccessibilityMeasureDarkMode" xml:space="preserve">
+    <value>支持深色模式和浅色模式，遵循操作系统偏好设置</value>
+  </data>
+  <data name="AccessibilityMeasureFocusIndicators" xml:space="preserve">
+    <value>所有交互元素均有清晰的焦点指示器，便于键盘导航</value>
+  </data>
+  <data name="AccessibilityMeasureKeyboard" xml:space="preserve">
+    <value>所有交互元素均支持键盘导航</value>
+  </data>
+  <data name="AccessibilityMeasureResponsive" xml:space="preserve">
+    <value>响应式设计，适配各种设备和屏幕尺寸</value>
+  </data>
+  <data name="AccessibilityMeasureSemantic" xml:space="preserve">
+    <value>使用语义化 超文本标记语言 标记，确保屏幕阅读器正常导航</value>
+  </data>
+  <data name="AccessibilityMeasuresHeading" xml:space="preserve">
+    <value>我们采取的无障碍措施</value>
+  </data>
+  <data name="AccessibilityMeasureTargetSize" xml:space="preserve">
+    <value>交互目标最小尺寸为 24x24 层叠样式表 像素</value>
+  </data>
+  <data name="AccessibilityMeasureTextAlternatives" xml:space="preserve">
+    <value>在适用情况下为非文本内容提供文字替代</value>
+  </data>
+  <data name="AccessibilityOurCommitmentDescription" xml:space="preserve">
+    <value>拉取请求任务 致力于确保残障人士的数字无障碍体验。我们持续改善所有用户的使用体验，并应用相关无障碍标准。</value>
+  </data>
+  <data name="AccessibilityOurCommitmentHeading" xml:space="preserve">
+    <value>我们的承诺</value>
+  </data>
+  <data name="AccessibilityPageHeading" xml:space="preserve">
+    <value>无障碍声明</value>
+  </data>
+  <data name="AccessibilityWcag22ConsistentHelp" xml:space="preserve">
+    <value>3.2.6 一致的帮助：帮助机制在各页面中位于相同的相对位置</value>
+  </data>
+  <data name="AccessibilityWcag22Description" xml:space="preserve">
+    <value>拉取请求任务 以符合《网页内容无障碍指南》2.2 双A级 级为目标，包含以下超出 网页内容无障碍指南 2.1 的新标准：</value>
+  </data>
+  <data name="AccessibilityWcag22DraggingMovements" xml:space="preserve">
+    <value>2.5.7 拖拽操作：提供拖放交互的替代方式</value>
+  </data>
+  <data name="AccessibilityWcag22FocusAppearance" xml:space="preserve">
+    <value>2.4.13 焦点外观：已聚焦元素具有清晰可见的焦点指示器</value>
+  </data>
+  <data name="AccessibilityWcag22FocusNotObscured" xml:space="preserve">
+    <value>2.4.11 焦点不被遮挡（最低要求）：已聚焦元素不会被其他内容完全隐藏</value>
+  </data>
+  <data name="AccessibilityWcag22Heading" xml:space="preserve">
+    <value>网页内容无障碍指南 2.2 双A级 级合规</value>
+  </data>
+  <data name="AccessibilityWcag22RedundantEntry" xml:space="preserve">
+    <value>3.3.7 冗余输入：不要求用户重复输入已提供的信息</value>
+  </data>
+  <data name="AccessibilityWcag22TargetSize" xml:space="preserve">
+    <value>2.5.8 目标尺寸（最低要求）：交互目标至少为 24x24 层叠样式表 像素</value>
+  </data>
+  <data name="BoardDescriptionHeading" xml:space="preserve">
+    <value>看板——可视化任务管理与工作流</value>
+  </data>
+  <data name="BoardDescriptionParagraph1" xml:space="preserve">
+    <value>拉取请求任务 上的看板采用基于列的可视化方式，运用看板方法管理开发任务。每块看板将任务按工作流阶段组织排列——通常为"待办"、"进行中"、"审核中"和"已完成"等列——让您一目了然地掌握每项任务在开发流程中所处的阶段。这种可视化呈现方式便于识别瓶颈、平衡工作负载，并确保任务从创建到完成和支付的顺畅流转。</value>
+  </data>
+  <data name="BoardDescriptionParagraph2" xml:space="preserve">
+    <value>创建看板非常简单：提供名称并选择看板类型（默认为看板类型）。创建后，您可以向看板添加任务，并将其分配到各列以反映当前状态。看板支持拖放操作，可在阶段之间移动任务，使工作流管理直观高效。您可以为不同项目、代码库或团队创建多个看板，以适合您特定开发工作流和组织架构的方式整理工作。</value>
+  </data>
+  <data name="BoardDescriptionParagraph3" xml:space="preserve">
+    <value>拉取请求任务 看板通过 网络套接字 连接实时同步，任何团队成员的更改都会立即呈现给所有查看看板的人。这种实时协作对于开发者可能跨时区工作的分布式团队至关重要。看板与 拉取请求任务 任务系统集成，当开发者为看板上的任务提交 拉取请求 时，任务状态会自动更新。结合迭代管理和排行榜，看板完善了 拉取请求任务 提供的项目管理工具集，使团队能够在统一平台上规划、执行、追踪和庆祝开发成果。</value>
+  </data>
+  <data name="BoardSeoDescription" xml:space="preserve">
+    <value>管理您的开源项目看板并追踪 拉取请求 任务进度。开发者通过完成赏金任务赚取收益——是技术开发者为开源项目贡献力量的绝佳副业选择。</value>
+  </data>
+  <data name="CookiePolicyAnalyticsDescription" xml:space="preserve">
+    <value>我们可能使用分析性 网络缓存 了解平台使用情况并改善用户体验。不会将任何个人数据共享给第三方用于广告目的。</value>
+  </data>
+  <data name="CookiePolicyAnalyticsHeading" xml:space="preserve">
+    <value>分析</value>
+  </data>
+  <data name="CookiePolicyCategoryAnalytics" xml:space="preserve">
+    <value>分析</value>
+  </data>
+  <data name="CookiePolicyCategoryEssential" xml:space="preserve">
+    <value>必要</value>
+  </data>
+  <data name="CookiePolicyCategoryFunctional" xml:space="preserve">
+    <value>功能</value>
+  </data>
+  <data name="CookiePolicyCcpaConsentDescription" xml:space="preserve">
+    <value>根据《加州消费者隐私法》，拉取请求任务 披露所使用的所有 网络缓存 及其用途。拉取请求任务 将全球隐私控制信号视为通过 网络缓存 出售或共享个人信息的有效退出方式。拉取请求任务 不出售通过 网络缓存 收集的个人信息。</value>
+  </data>
+  <data name="CookiePolicyCcpaConsentHeading" xml:space="preserve">
+    <value>加利福尼亚州网络缓存 披露</value>
+  </data>
+  <data name="CookiePolicyConsentDescription" xml:space="preserve">
+    <value>当您首次访问 拉取请求任务 时，网络缓存 同意横幅将告知您我们使用 网络缓存 的情况，并允许您选择全部接受、全部拒绝，或按类别自定义偏好。必要 网络缓存 始终处于启用状态，无法禁用。分析、功能和营销 网络缓存 需要您的同意。您可随时通过账户设置更新 网络缓存 偏好，或通过清除浏览器 网络缓存 并重新访问网站来更改设置。</value>
+  </data>
+  <data name="CookiePolicyConsentHeading" xml:space="preserve">
+    <value>网络缓存 同意</value>
+  </data>
+  <data name="CookiePolicyConsentPurpose" xml:space="preserve">
+    <value>存储您的 网络缓存 同意偏好设置</value>
+  </data>
+  <data name="CookiePolicyContactDescription" xml:space="preserve">
+    <value>如对我们使用 网络缓存 有任何疑问，或希望行使与 网络缓存 数据相关的隐私权利，请联系我们的数据保护官 dpo@prtask.com 或隐私团队 privacy@prtask.com。</value>
+  </data>
+  <data name="CookiePolicyContactHeading" xml:space="preserve">
+    <value>联系方式</value>
+  </data>
+  <data name="CookiePolicyCookieReferenceHeading" xml:space="preserve">
+    <value>网络缓存 清单</value>
+  </data>
+  <data name="CookiePolicyCsrfPurpose" xml:space="preserve">
+    <value>防范跨站请求伪造攻击</value>
+  </data>
+  <data name="CookiePolicyDescriptionHeading" xml:space="preserve">
+    <value>关于本 网络缓存 政策</value>
+  </data>
+  <data name="CookiePolicyDescriptionParagraph1" xml:space="preserve">
+    <value>本 网络缓存 政策就 拉取请求任务 平台使用的 网络缓存 及类似追踪技术提供完整透明的说明。我们使用最少量的 网络缓存，仅用于平台功能、用户偏好和匿名分析。每个 网络缓存 均在上方参考表中记录了其名称、提供商、用途、有效期和类别，以便您就 网络缓存 偏好做出知情决策。</value>
+  </data>
+  <data name="CookiePolicyDescriptionParagraph2" xml:space="preserve">
+    <value>拉取请求任务 依照欧盟《电子隐私指令》、通用数据保护条例、加州消费者隐私法 及其他地区性隐私法规，尊重您的 网络缓存 选择。平台安全和功能所必需的必要 网络缓存 无法禁用，但您对功能性和分析性 网络缓存 拥有完全控制权。您可随时通过浏览器设置或我们的 网络缓存 同意机制管理 网络缓存 偏好，并可撤回对非必要 网络缓存 的同意，而不影响您使用平台核心功能的权利。</value>
+  </data>
+  <data name="CookiePolicyDuration1Year" xml:space="preserve">
+    <value>1 年</value>
+  </data>
+  <data name="CookiePolicyDuration24Hours" xml:space="preserve">
+    <value>24 小时</value>
+  </data>
+  <data name="CookiePolicyDuration2Years" xml:space="preserve">
+    <value>2 年</value>
+  </data>
+  <data name="CookiePolicyDuration30Days" xml:space="preserve">
+    <value>30 天</value>
+  </data>
+  <data name="CookiePolicyDurationSession" xml:space="preserve">
+    <value>会话期间</value>
+  </data>
+  <data name="CookiePolicyEssentialDescription" xml:space="preserve">
+    <value>拉取请求任务 使用必要 网络缓存 维持您的会话和身份验证状态。这些 网络缓存 是平台正常运行所必需的。</value>
+  </data>
+  <data name="CookiePolicyEssentialHeading" xml:space="preserve">
+    <value>必要 网络缓存</value>
+  </data>
+  <data name="CookiePolicyEuConsentDescription" xml:space="preserve">
+    <value>根据欧盟《电子隐私指令》和 通用数据保护条例（欧盟）及 英国隐私和电子通信条例（英国）的要求，在设置非必要 网络缓存 之前需要用户事先选择同意。拉取请求任务 采用选择加入模式：在您明确同意之前，不会放置任何非必要 网络缓存。拒绝按钮与接受按钮具有同等显著性。拉取请求任务 不使用 网络缓存 墙（即不因拒绝非必要 网络缓存 而拒绝访问）。同意按类别（分析、功能、营销）细分。拉取请求任务 维护可审计的同意记录，并将定期请求更新同意。</value>
+  </data>
+  <data name="CookiePolicyEuConsentHeading" xml:space="preserve">
+    <value>欧盟/欧洲经济区及英国 网络缓存 同意</value>
+  </data>
+  <data name="CookiePolicyFunctionalDescription" xml:space="preserve">
+    <value>功能性 网络缓存 记录您的偏好设置，例如主题选择（深色或浅色模式）、语言设置和通知偏好。这些 网络缓存 可增强您的体验，但并非平台运行的严格必要条件。您可以禁用功能性 网络缓存 而不影响核心功能，但您的偏好将不会在会话之间保留。</value>
+  </data>
+  <data name="CookiePolicyFunctionalHeading" xml:space="preserve">
+    <value>功能性 网络缓存</value>
+  </data>
+  <data name="CookiePolicyGaPurpose" xml:space="preserve">
+    <value>用于唯一访客追踪的 谷歌 分析 标识符</value>
+  </data>
+  <data name="CookiePolicyGidPurpose" xml:space="preserve">
+    <value>谷歌 分析 会话追踪标识符</value>
+  </data>
+  <data name="CookiePolicyIntroduction" xml:space="preserve">
+    <value>本 网络缓存 政策说明 拉取请求任务 在您访问或使用我们平台时如何使用 网络缓存 及类似追踪技术。它描述了 网络缓存 是什么、我们使用的类型、使用原因，以及您如何控制或禁用它们。本政策应与我们的隐私政策一同阅读。</value>
+  </data>
+  <data name="CookiePolicyLastUpdated" xml:space="preserve">
+    <value>最后更新：2026 年 3 月</value>
+  </data>
+  <data name="CookiePolicyManagingDescription" xml:space="preserve">
+    <value>您可以通过浏览器设置禁用非必要 网络缓存。禁用必要 网络缓存 可能会影响您使用平台。</value>
+  </data>
+  <data name="CookiePolicyManagingHeading" xml:space="preserve">
+    <value>管理 网络缓存</value>
+  </data>
+  <data name="CookiePolicyOtherRegionsDescription" xml:space="preserve">
+    <value>巴西、泰国、韩国、印度、南非和中国要求对非必要 网络缓存 获得同意。拉取请求任务 在全球范围内采用选择加入同意模式，以确保符合最严格的适用要求。日本、加拿大、新加坡和澳大利亚对非敏感 网络缓存 遵循通知或默示同意模式，但 拉取请求任务 为所有用户提供选择加入同意，不受司法管辖区限制。</value>
+  </data>
+  <data name="CookiePolicyOtherRegionsHeading" xml:space="preserve">
+    <value>其他司法管辖区</value>
+  </data>
+  <data name="CookiePolicyPageHeading" xml:space="preserve">
+    <value>网络缓存 政策</value>
+  </data>
+  <data name="CookiePolicyPaymentDescription" xml:space="preserve">
+    <value>支付服务提供商可能在支付过程中设置 网络缓存。这些 网络缓存 受相应提供商的 网络缓存 和隐私政策约束。</value>
+  </data>
+  <data name="CookiePolicyPaymentHeading" xml:space="preserve">
+    <value>支付 网络缓存</value>
+  </data>
+  <data name="CookiePolicyPrivacyLinkDescription" xml:space="preserve">
+    <value>本 网络缓存 政策是我们隐私政策的组成部分，应与隐私政策一同阅读。隐私政策提供了关于 拉取请求任务 如何收集、使用和保护您个人数据的全面信息，包括通过 网络缓存 收集的数据。如本 网络缓存 政策与隐私政策之间存在任何冲突，以隐私政策为准。</value>
+  </data>
+  <data name="CookiePolicyPrivacyLinkHeading" xml:space="preserve">
+    <value>与隐私政策的关系</value>
+  </data>
+  <data name="CookiePolicyRetentionDescription" xml:space="preserve">
+    <value>必要 网络缓存（会话、跨站请求伪造防护）的保留期为您的会话期间或最长 30 天。网络缓存 同意偏好保留 1 年。功能性 网络缓存（主题、语言）保留 1 年。分析性 网络缓存 最长保留 2 年。营销 网络缓存 最长保留 3 个月。所有 网络缓存 保留期均列于上方 网络缓存 清单表中。</value>
+  </data>
+  <data name="CookiePolicyRetentionHeading" xml:space="preserve">
+    <value>网络缓存 保留期限</value>
+  </data>
+  <data name="CookiePolicySessionPurpose" xml:space="preserve">
+    <value>维持您的已认证会话</value>
+  </data>
+  <data name="CookiePolicyTableCategory" xml:space="preserve">
+    <value>类别</value>
+  </data>
+  <data name="CookiePolicyTableDuration" xml:space="preserve">
+    <value>有效期</value>
+  </data>
+  <data name="CookiePolicyTableName" xml:space="preserve">
+    <value>网络缓存 名称</value>
+  </data>
+  <data name="CookiePolicyTableProvider" xml:space="preserve">
+    <value>提供商</value>
+  </data>
+  <data name="CookiePolicyTablePurpose" xml:space="preserve">
+    <value>用途</value>
+  </data>
+  <data name="CookiePolicyThemePurpose" xml:space="preserve">
+    <value>记录您选择的主题（深色或浅色模式）</value>
+  </data>
+  <data name="CookiePolicyThirdPartyDescription" xml:space="preserve">
+    <value>与 拉取请求任务 集成的某些第三方服务可能会设置其自己的 网络缓存，包括用于安全交易处理的支付处理商以及用于 开放授权 身份验证的 GitHub。第三方 网络缓存 受相应提供商的 网络缓存 和隐私政策约束，拉取请求任务 无法控制这些 网络缓存。仅在适用法律要求您提供同意后，才会加载第三方 网络缓存。</value>
+  </data>
+  <data name="CookiePolicyThirdPartyHeading" xml:space="preserve">
+    <value>第三方 网络缓存</value>
+  </data>
+  <data name="CookiePolicyWhatAreDescription" xml:space="preserve">
+    <value>网络缓存 是当您访问网站时存储在您设备（电脑、平板或手机）上的小型文本文件。它们帮助网站记住您的偏好、了解您如何使用网站，并改善您的体验。网络缓存 可以是"持久性"的（在您设备上保留一段时间），也可以是"会话性"的（在您关闭浏览器时删除）。网络缓存 可由您访问的网站设置（"第一方 网络缓存"），也可由页面上提供内容的其他服务设置（"第三方 网络缓存"）。</value>
+  </data>
+  <data name="CookiePolicyWhatAreHeading" xml:space="preserve">
+    <value>什么是 网络缓存</value>
+  </data>
+  <data name="CookiePolicyWithdrawDescription" xml:space="preserve">
+    <value>您可随时撤回 网络缓存 同意，方法包括：点击平台页脚中的 网络缓存 偏好链接、在账户偏好设置中调整设置，或通过浏览器设置清除所有 拉取请求任务 网络缓存 并重新访问网站。撤回同意不影响撤回前基于同意的处理活动的合法性。撤回后，非必要 网络缓存 将被移除，并且在您重新提供同意之前不会再次设置。</value>
+  </data>
+  <data name="CookiePolicyWithdrawHeading" xml:space="preserve">
+    <value>撤回 网络缓存 同意</value>
+  </data>
+  <data name="CreateTaskDescriptionHeading" xml:space="preserve">
+    <value>创建任务 - 发布开发工作悬赏</value>
+  </data>
+  <data name="CreateTaskDescriptionParagraph1" xml:space="preserve">
+    <value>创建任务页面供客户在 拉取请求任务 市场发布新的开发工作。每个任务需要明确的标题、详细的描述、关联的 GitHub 仓库 网址 以及开发者成功完成后可获得的悬赏金额。任务创建表单将引导您设置所有参数，帮助开发者了解需要完成的工作内容、工作复杂程度以及完成后的收益。定义清晰的任务能吸引更多合格的开发者，并带来更快、更高质量的提交。</value>
+  </data>
+  <data name="CreateTaskDescriptionParagraph2" xml:space="preserve">
+    <value>复杂度级别（极简、简单、中等、复杂、专家）帮助开发者在接受任务前评估所需的工作量和技能要求。请如实设置复杂度以吸引合适的开发者——低估复杂度可能导致提交不完整，而高估则可能令开发者望而却步。悬赏金额应与工作的复杂度和价值相匹配。拉取请求任务 设有最低悬赏要求以确保合理报酬，开发者所见的悬赏金额为全额，无任何隐性扣除。标签可按技术类型对任务分类，提升可发现性。</value>
+  </data>
+  <data name="CreateTaskDescriptionParagraph3" xml:space="preserve">
+    <value>您还可以设置工作项类型（史诗、功能、用户故事、任务、漏洞）以契合您的项目管理方法论，并选择公开或私有可见性。公开任务对市场上所有开发者可见，私有任务仅限受邀开发者访问。提交任务后，它将立即出现在任务页面供开发者发现并开始工作。悬赏付款在您审批并合并获胜的拉取请求时处理，确保您只为满足要求并通过代码审查的工作付费。</value>
+  </data>
+  <data name="CreateTaskPaymentHint" xml:space="preserve">
+    <value>零平台手续费——开发者获得 100% 的悬赏金额。</value>
+  </data>
+  <data name="CreateTaskSubmitAndPayButton" xml:space="preserve">
+    <value>创建任务并前往支付</value>
+  </data>
+  <data name="CreateTaskVisibilityPrivate" xml:space="preserve">
+    <value>私有 - 代码变更仅对参与者可见</value>
+  </data>
+  <data name="CreateTaskVisibilityPublic" xml:space="preserve">
+    <value>公开 - 代码变更对所有人可见</value>
+  </data>
+  <data name="DmcaCounterNotificationDescription" xml:space="preserve">
+    <value>如果您认为您的内容被错误删除，您可以提交包含以下内容的反通知：</value>
+  </data>
+  <data name="DmcaCounterNotificationHeading" xml:space="preserve">
+    <value>反通知</value>
+  </data>
+  <data name="DmcaCounterNotificationItem1" xml:space="preserve">
+    <value>您的亲笔或电子签名</value>
+  </data>
+  <data name="DmcaCounterNotificationItem2" xml:space="preserve">
+    <value>对已删除材料及其原始位置的说明</value>
+  </data>
+  <data name="DmcaCounterNotificationItem3" xml:space="preserve">
+    <value>在伪证处罚条款下声明该材料系因错误或误判而被删除</value>
+  </data>
+  <data name="DmcaCounterNotificationItem4" xml:space="preserve">
+    <value>您的姓名、地址、电话号码，以及同意接受您所在地区联邦法院管辖的声明</value>
+  </data>
+  <data name="DmcaCounterProcessDescription" xml:space="preserve">
+    <value>收到有效的反通知后，拉取请求任务 将其转发给原投诉方。如投诉方在 10 个工作日内未向法院申请针对用户的禁止令，拉取请求任务 将在收到反通知后 10 至 14 个工作日内恢复被删除的内容。</value>
+  </data>
+  <data name="DmcaCounterProcessHeading" xml:space="preserve">
+    <value>反通知流程</value>
+  </data>
+  <data name="DmcaDescriptionHeading" xml:space="preserve">
+    <value>关于本 数字千年版权法 政策</value>
+  </data>
+  <data name="DmcaDescriptionParagraph1" xml:space="preserve">
+    <value>本 数字千年版权法 政策概述了 拉取请求任务 依据《数字千年版权法》（17 美国法典 512）及欧盟版权指令（指令 2019/790）处理版权侵权索赔的程序。作为开发者通过拉取请求提交代码的平台，拉取请求任务 高度重视知识产权保护。我们设有注册的 数字千年版权法 代理人，实行通知与下架程序，提供反通知机制，并执行重复侵权者政策，以保护版权持有人和合法贡献者的权益。</value>
+  </data>
+  <data name="DmcaDescriptionParagraph2" xml:space="preserve">
+    <value>如果您认为通过 拉取请求任务 提交的代码侵犯了您的版权，本政策将说明如何提交包含所需信息的下架通知。如果您的代码被删除且您认为下架有误，反通知流程允许您对删除提出异议。拉取请求任务 及时、公平地处理所有 数字千年版权法 请求，在版权持有人的权利与开发者的合法贡献之间寻求平衡。如有版权相关问题，请通过本政策中提供的联系方式联系我们指定的 数字千年版权法 代理人。</value>
+  </data>
+  <data name="DmcaDesignatedAgentDescription" xml:space="preserve">
+    <value>数字千年版权法 通知和反通知应发送至我们的指定代理人：拉取请求任务 数字千年版权法 代理人，电子邮件：dmca@prtask.com。我们的指定代理人信息已按照 17 美国法典 512(c)(2) 的要求向美国版权局注册。您也可以通过我们联系页面上列出的地址以邮件方式联系我们的指定代理人。</value>
+  </data>
+  <data name="DmcaDesignatedAgentHeading" xml:space="preserve">
+    <value>指定代理人</value>
+  </data>
+  <data name="DmcaEuCopyrightDescription" xml:space="preserve">
+    <value>为遵守欧盟版权指令（指令 2019/790）第 17 条，拉取请求任务 与权利持有人合作，并为版权争议维护投诉和补救机制。拉取请求任务 尽最大努力在必要时获得用户上传内容的授权，并在收到权利持有人通知后采取有效措施防止侵权内容继续传播。受版权执法行动影响内容的用户有权通过我们的内部机制提出投诉。</value>
+  </data>
+  <data name="DmcaEuCopyrightHeading" xml:space="preserve">
+    <value>欧盟版权指令</value>
+  </data>
+  <data name="DmcaFilingDescription" xml:space="preserve">
+    <value>如果您认为 拉取请求任务 上的内容侵犯了您的版权，请向我们的指定代理人发送书面通知，并附上以下信息：</value>
+  </data>
+  <data name="DmcaFilingHeading" xml:space="preserve">
+    <value>提交 数字千年版权法 通知</value>
+  </data>
+  <data name="DmcaFilingItem1" xml:space="preserve">
+    <value>版权所有人或授权代理人的亲笔或电子签名</value>
+  </data>
+  <data name="DmcaFilingItem2" xml:space="preserve">
+    <value>对声称被侵权的受版权保护作品的说明</value>
+  </data>
+  <data name="DmcaFilingItem3" xml:space="preserve">
+    <value>对声称侵权材料的说明，并提供足够详细的信息以便在 拉取请求任务 上定位该材料</value>
+  </data>
+  <data name="DmcaFilingItem4" xml:space="preserve">
+    <value>您的联系信息，包括地址、电话号码和电子邮件地址</value>
+  </data>
+  <data name="DmcaFilingItem5" xml:space="preserve">
+    <value>声明您有合理理由相信该材料的使用未经版权所有人、其代理人或法律授权</value>
+  </data>
+  <data name="DmcaFilingItem6" xml:space="preserve">
+    <value>在伪证处罚条款下声明通知中的信息准确无误，且您有权代表版权所有人采取行动</value>
+  </data>
+  <data name="DmcaLastUpdated" xml:space="preserve">
+    <value>最后更新：2026 年 3 月</value>
+  </data>
+  <data name="DmcaOverviewDescription" xml:space="preserve">
+    <value>拉取请求任务 尊重他人的知识产权，并要求用户同样遵守。依据 1998 年《数字千年版权法》，我们将及时回应使用本平台实施版权侵权的投诉。</value>
+  </data>
+  <data name="DmcaOverviewHeading" xml:space="preserve">
+    <value>概述</value>
+  </data>
+  <data name="DmcaPageHeading" xml:space="preserve">
+    <value>数字千年版权法 / 版权政策</value>
+  </data>
+  <data name="DmcaRepeatInfringersDescription" xml:space="preserve">
+    <value>拉取请求任务 维护重复侵权者政策，以满足 数字千年版权法 安全港保护的要求。收到两次或两次以上有效 数字千年版权法 下架通知的用户将被永久封号。拉取请求任务 保留自行决定终止重复侵权者账户的权利，在情节严重的情况下，首次违规即可封号。被封号用户将没收所有待处理的悬赏，并被永久禁止创建新账户。</value>
+  </data>
+  <data name="DmcaRepeatInfringersHeading" xml:space="preserve">
+    <value>重复侵权者</value>
+  </data>
+  <data name="DmcaSafeHarborDescription" xml:space="preserve">
+    <value>拉取请求任务 作为在线服务提供商，符合《数字千年版权法》（17 美国法典 512）第 512 条的安全港保护资格。拉取请求任务 已向美国版权局注册指定的 数字千年版权法 代理人，实行并公示通知与下架程序，维护反通知机制，已采用并合理执行重复侵权者政策，并支持版权所有人用于识别或保护受版权作品的标准技术措施。</value>
+  </data>
+  <data name="DmcaSafeHarborHeading" xml:space="preserve">
+    <value>数字千年版权法 安全港</value>
+  </data>
+  <data name="DmcaTakedownDescription" xml:space="preserve">
+    <value>收到有效的 数字千年版权法 下架通知后，拉取请求任务 将迅速删除或禁止访问涉嫌侵权的材料，通知发布该内容的用户，并向该用户提供通知副本及提交反通知的相关信息。拉取请求任务 将在收到有效通知后及时采取行动，并在争议期间保留与涉嫌侵权材料相关的证据。</value>
+  </data>
+  <data name="DmcaTakedownHeading" xml:space="preserve">
+    <value>下架流程</value>
+  </data>
+  <data name="DownloadDescriptionHeading" xml:space="preserve">
+    <value>下载 拉取请求任务 - 支持多平台</value>
+  </data>
+  <data name="DownloadDescriptionParagraph1" xml:space="preserve">
+    <value>拉取请求任务 提供多平台原生应用程序，让您可以在首选设备上灵活管理任务、审查拉取请求和跟踪付款。安卓 应用提供完整的移动端体验，支持离线使用、推送通知和生物识别认证。视窗 桌面应用提供原生体验，集成系统托盘并支持本地文件访问。利纳克斯 用户可下载适用于 64位 系统的独立二进制文件，网页应用则可随时通过任何现代浏览器访问 prtask.com。</value>
+  </data>
+  <data name="DownloadDescriptionParagraph2" xml:space="preserve">
+    <value>拉取请求任务 各平台版本共享基于 .NET 多平台应用界面 和 Blazor 技术构建的相同核心功能，确保跨设备体验的一致性。原生应用提供额外功能，例如离线访问缓存的任务数据、拉取请求审查和付款更新的推送通知，以及增强安全性的生物识别登录。网页应用无需安装，可在任何配备现代浏览器的设备上使用，是最快的入门方式。苹果系统 和 苹果电脑系统 版本目前正在开发中，将在未来版本中发布。</value>
+  </data>
+  <data name="DownloadDescriptionParagraph3" xml:space="preserve">
+    <value>所有支持平台的安装过程都非常简便。安卓 用户可直接下载 安卓安装包 文件，并在设备设置中启用"允许安装未知来源应用"。视窗 用户下载可执行文件后直接运行，无需安装程序。利纳克斯 用户下载二进制文件后，设置可执行权限并从终端运行。所有下载文件均经过验证和签名以确保真实性。请查看上方的功能对比表了解各平台支持的功能，如在安装过程中遇到问题，请参阅故障排除部分。</value>
+  </data>
+  <data name="DownloadFeatureBiometric" xml:space="preserve">
+    <value>生物识别认证</value>
+  </data>
+  <data name="DownloadFeatureNative" xml:space="preserve">
+    <value>原生性能</value>
+  </data>
+  <data name="DownloadFeatureOffline" xml:space="preserve">
+    <value>离线访问</value>
+  </data>
+  <data name="DownloadInstallAndroidDescription" xml:space="preserve">
+    <value>下载 安卓安装包 文件，在设备上打开并按照屏幕提示完成安装。</value>
+  </data>
+  <data name="DownloadInstallHeading" xml:space="preserve">
+    <value>安装说明</value>
+  </data>
+  <data name="DownloadInstallIosDescription" xml:space="preserve">
+    <value>从 应用商店 下载并点击安装。应用将出现在您的主屏幕上。</value>
+  </data>
+  <data name="DownloadInstallLinuxDescription" xml:space="preserve">
+    <value>下载适用于您的发行版的软件包，并使用软件包管理器进行安装。</value>
+  </data>
+  <data name="DownloadInstallMacDescription" xml:space="preserve">
+    <value>下载 苹果磁盘镜像 文件，将 拉取请求任务 拖入应用程序文件夹，然后从启动台启动。</value>
+  </data>
+  <data name="DownloadInstallWindowsDescription" xml:space="preserve">
+    <value>下载安装程序，运行安装向导，并按照提示完成安装。</value>
+  </data>
+  <data name="DownloadLinuxButton" xml:space="preserve">
+    <value>下载 利纳克斯 二进制文件</value>
+  </data>
+  <data name="DownloadMacDescription" xml:space="preserve">
+    <value>适用于 苹果硅芯片 和 英特尔 的原生 苹果电脑 应用。</value>
+  </data>
+  <data name="DownloadMacHeading" xml:space="preserve">
+    <value>苹果电脑系统</value>
+  </data>
+  <data name="DownloadMacRequirements" xml:space="preserve">
+    <value>苹果电脑系统 12 (蒙特雷) 或更高版本，100 兆字节 可用存储空间</value>
+  </data>
+  <data name="DownloadSystemRequirementsLabel" xml:space="preserve">
+    <value>系统要求：</value>
+  </data>
+  <data name="DownloadTroubleshootApk" xml:space="preserve">
+    <value>在设备设置中启用"允许安装未知来源应用"，然后重新尝试下载。</value>
+  </data>
+  <data name="DownloadTroubleshootApkQuestion" xml:space="preserve">
+    <value>安卓 安卓安装包 无法安装，该怎么办？</value>
+  </data>
+  <data name="DownloadTroubleshootCrash" xml:space="preserve">
+    <value>请确保您的设备满足最低系统要求，并已安装最新版本。</value>
+  </data>
+  <data name="DownloadTroubleshootCrashQuestion" xml:space="preserve">
+    <value>应用启动时崩溃，如何解决？</value>
+  </data>
+  <data name="DownloadTroubleshootHeading" xml:space="preserve">
+    <value>故障排除</value>
+  </data>
+  <data name="HowItWorksClientsHeading" xml:space="preserve">
+    <value>客户端流程</value>
+  </data>
+  <data name="HowItWorksClientsStep1" xml:space="preserve">
+    <value>使用 GitHub 或 谷歌 登录并设置您的付款方式</value>
+  </data>
+  <data name="HowItWorksClientsStep2" xml:space="preserve">
+    <value>创建包含描述、仓库链接和悬赏金额的任务</value>
+  </data>
+  <data name="HowItWorksClientsStep3" xml:space="preserve">
+    <value>开发者针对您的任务提交公开拉取请求</value>
+  </data>
+  <data name="HowItWorksClientsStep4" xml:space="preserve">
+    <value>审查所有提交的拉取请求并批准最佳方案</value>
+  </data>
+  <data name="HowItWorksClientsStep5" xml:space="preserve">
+    <value>系统自动扣取悬赏金额并向开发者付款</value>
+  </data>
+  <data name="HowItWorksDescriptionHeading" xml:space="preserve">
+    <value>拉取请求任务 工作原理 - 赚取收益与招募开发者完整指南</value>
+  </data>
+  <data name="HowItWorksDescriptionParagraph1" xml:space="preserve">
+    <value>拉取请求任务 通过基于拉取请求的工作流程简化了开发者与付费软件工作的对接过程，该流程与专业开发团队的既有工作方式高度吻合。流程从使用 GitHub、谷歌、微软 或 Okta 账户注册开始，仅需数秒且无需填写单独的注册表单。完成认证后，开发者可立即浏览可用任务，客户可即刻开始创建任务并设置悬赏。从任务创建到付款发放的整个生命周期均遵循可预期、透明的工作流程，每个阶段步骤清晰。</value>
+  </data>
+  <data name="HowItWorksDescriptionParagraph2" xml:space="preserve">
+    <value>对于开发者而言，工作流程简单直接：浏览任务、找到与您技能匹配的任务、查看需求和关联的 GitHub 仓库、在您自己的 分叉 中实现解决方案，然后通过 拉取请求任务 提交拉取请求。任务所有者按照标准的 GitHub 审查流程审查您的代码，可能会要求修改，并最终批准并合并您的贡献。合并后，付款将自动触发——无需开票、无需申请付款、无需等待人工处理。悬赏将直接发放至您配置的收款方式。</value>
+  </data>
+  <data name="HowItWorksDescriptionParagraph3" xml:space="preserve">
+    <value>对于客户而言，拉取请求任务 省去了面试、合同签署和范围谈判，简化了招募流程。创建一个描述清晰的任务，设置复杂度级别和悬赏金额，关联您的 GitHub 仓库并发布到市场。全球开发者即可发现并开始处理您的任务。您以拉取请求的形式审查提交内容，可完整查看代码差异，如需修改可提出要求，满意后即可批准。平台负责处理支付、开发者验证和争议解决，让您专注于代码质量审查，而无需管理自由职业者关系。</value>
+  </data>
+  <data name="HowItWorksGettingStartedHeading" xml:space="preserve">
+    <value>快速入门</value>
+  </data>
+  <data name="HowItWorksWorkflowDescription" xml:space="preserve">
+    <value>按照以下步骤完成从登录到付款的完整工作流程。</value>
+  </data>
+  <data name="HowItWorksWorkflowHeading" xml:space="preserve">
+    <value>工作流程指南</value>
+  </data>
+  <data name="HowItWorksWorkflowStatusLoginRequired" xml:space="preserve">
+    <value>需要登录</value>
+  </data>
+  <data name="HowItWorksWorkflowStatusOpen" xml:space="preserve">
+    <value>开放</value>
+  </data>
+  <data name="HowItWorksWorkflowStep10Description" xml:space="preserve">
+    <value>在需要修改的特定代码行或高亮代码处添加内联评论。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep10Heading" xml:space="preserve">
+    <value>添加审查评论</value>
+  </data>
+  <data name="HowItWorksWorkflowStep10Link" xml:space="preserve">
+    <value>拉取请求 评论</value>
+  </data>
+  <data name="HowItWorksWorkflowStep11Description" xml:space="preserve">
+    <value>开发者应用修复，回复评论并将其标记为已解决。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep11Heading" xml:space="preserve">
+    <value>回复并解决评论</value>
+  </data>
+  <data name="HowItWorksWorkflowStep11Link" xml:space="preserve">
+    <value>解决评论</value>
+  </data>
+  <data name="HowItWorksWorkflowStep12Description" xml:space="preserve">
+    <value>客户批准 拉取请求 并通过 Maya 信用卡结账支付悬赏。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep12Heading" xml:space="preserve">
+    <value>批准 拉取请求 并通过 Maya 付款</value>
+  </data>
+  <data name="HowItWorksWorkflowStep12Link" xml:space="preserve">
+    <value>批准并付款</value>
+  </data>
+  <data name="HowItWorksWorkflowStep12PaymentsLink" xml:space="preserve">
+    <value>付款记录</value>
+  </data>
+  <data name="HowItWorksWorkflowStep13Description" xml:space="preserve">
+    <value>查看所有付款交易及其状态。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep13Heading" xml:space="preserve">
+    <value>付款历史</value>
+  </data>
+  <data name="HowItWorksWorkflowStep13Link" xml:space="preserve">
+    <value>付款记录</value>
+  </data>
+  <data name="HowItWorksWorkflowStep14Description" xml:space="preserve">
+    <value>配置收款方式并核实可提现余额。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep14Heading" xml:space="preserve">
+    <value>提现设置</value>
+  </data>
+  <data name="HowItWorksWorkflowStep14Link" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="HowItWorksWorkflowStep1Description" xml:space="preserve">
+    <value>使用 谷歌、GitHub、微软 或 Okta 进行 单点登录 认证。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep1Heading" xml:space="preserve">
+    <value>通过 单点登录 登录</value>
+  </data>
+  <data name="HowItWorksWorkflowStep1Link" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="HowItWorksWorkflowStep1Status" xml:space="preserve">
+    <value>必须完成</value>
+  </data>
+  <data name="HowItWorksWorkflowStep2Description" xml:space="preserve">
+    <value>完成 了解您的客户 身份验证以启用付款功能并符合监管要求。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep2Heading" xml:space="preserve">
+    <value>了解您的客户 身份验证</value>
+  </data>
+  <data name="HowItWorksWorkflowStep2Link" xml:space="preserve">
+    <value>设置 - 了解您的客户</value>
+  </data>
+  <data name="HowItWorksWorkflowStep3Description" xml:space="preserve">
+    <value>发布带有悬赏的任务供开发者完成。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep3Heading" xml:space="preserve">
+    <value>创建任务</value>
+  </data>
+  <data name="HowItWorksWorkflowStep3Link" xml:space="preserve">
+    <value>创建任务</value>
+  </data>
+  <data name="HowItWorksWorkflowStep4Description" xml:space="preserve">
+    <value>将源代码文件夹上传至任务，以便开发者查看差异对比。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep4Heading" xml:space="preserve">
+    <value>上传源代码</value>
+  </data>
+  <data name="HowItWorksWorkflowStep4Link" xml:space="preserve">
+    <value>任务详情</value>
+  </data>
+  <data name="HowItWorksWorkflowStep5Description" xml:space="preserve">
+    <value>开发者浏览可用任务，寻找与自身技能匹配的工作。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep5Heading" xml:space="preserve">
+    <value>浏览开放任务</value>
+  </data>
+  <data name="HowItWorksWorkflowStep5Link" xml:space="preserve">
+    <value>任务列表</value>
+  </data>
+  <data name="HowItWorksWorkflowStep6Description" xml:space="preserve">
+    <value>查看任务描述、悬赏金额和现有拉取请求。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep6Heading" xml:space="preserve">
+    <value>查看任务详情</value>
+  </data>
+  <data name="HowItWorksWorkflowStep6Link" xml:space="preserve">
+    <value>任务详情</value>
+  </data>
+  <data name="HowItWorksWorkflowStep7Description" xml:space="preserve">
+    <value>直接在浏览器差异编辑器中编辑源代码。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep7Heading" xml:space="preserve">
+    <value>在差异编辑器中修改代码</value>
+  </data>
+  <data name="HowItWorksWorkflowStep7Link" xml:space="preserve">
+    <value>差异编辑器</value>
+  </data>
+  <data name="HowItWorksWorkflowStep8Description" xml:space="preserve">
+    <value>将您的代码更改作为拉取请求提交给任务。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep8Heading" xml:space="preserve">
+    <value>提交拉取请求</value>
+  </data>
+  <data name="HowItWorksWorkflowStep8Link" xml:space="preserve">
+    <value>提交 拉取请求</value>
+  </data>
+  <data name="HowItWorksWorkflowStep9Description" xml:space="preserve">
+    <value>客户审查差异内容，查看开发者提交的所有代码变更。</value>
+  </data>
+  <data name="HowItWorksWorkflowStep9Heading" xml:space="preserve">
+    <value>审查代码变更</value>
+  </data>
+  <data name="HowItWorksWorkflowStep9Link" xml:space="preserve">
+    <value>拉取请求 详情</value>
+  </data>
+  <data name="LeaderboardHeaderDeveloper" xml:space="preserve">
+    <value>开发者</value>
+  </data>
+  <data name="LegalLastUpdated" xml:space="preserve">
+    <value>最后更新：2026 年 3 月</value>
+  </data>
+  <data name="LicensesCodeOwnershipDescription" xml:space="preserve">
+    <value>开发者对其通过 拉取请求任务 提交的所有代码保留完整的版权所有权。悬赏获批并支付后，开发者向客户授予一项永久性、全球性、非独占性、不可撤销的许可，允许其在相关仓库开源许可证的约束下使用、修改、复制和分发所提交的代码。拉取请求任务 不主张对开发者提交的任何代码享有所有权。开发者须保证其有权提交所有代码，且该代码不侵犯第三方知识产权。人工智能 生成的代码须在拉取请求描述中予以披露，且开发者须保证其有权对该代码进行许可授权。</value>
+  </data>
+  <data name="LicensesCodeOwnershipHeading" xml:space="preserve">
+    <value>代码所有权</value>
+  </data>
+  <data name="LicensesContactDescription" xml:space="preserve">
+    <value>如有许可证咨询、合规问题或信用卡处理方面的疑问，请发送邮件至 合规事务 compliance@prtask.com。</value>
+  </data>
+  <data name="LicensesContactHeading" xml:space="preserve">
+    <value>联系方式</value>
+  </data>
+  <data name="LicensesCreditCardDescription" xml:space="preserve">
+    <value>拉取请求任务 上的信用卡付款由持牌且符合 支付卡行业数据安全标准 标准的支付服务商处理。拉取请求任务 不在自有服务器上存储、处理或传输信用卡号、卡片验证码 或其他敏感持卡人数据。所有信用卡交易均完全由我们的支付处理商负责处理。</value>
+  </data>
+  <data name="LicensesCreditCardHeading" xml:space="preserve">
+    <value>信用卡处理</value>
+  </data>
+  <data name="LicensesDataProtectionDescription" xml:space="preserve">
+    <value>拉取请求任务 对所有通信使用 超文本传输安全协议/传输层安全 加密。认证通过 开放授权 2.0 和 开放身份连接  配合 代码交换证明密钥 实现。不存储明文凭据。完整的数据处理详情请参阅我们的隐私政策。</value>
+  </data>
+  <data name="LicensesDataProtectionHeading" xml:space="preserve">
+    <value>数据保护</value>
+  </data>
+  <data name="LicensesDescriptionHeading" xml:space="preserve">
+    <value>关于本许可证页面</value>
+  </data>
+  <data name="LicensesDescriptionParagraph1" xml:space="preserve">
+    <value>本许可证页面提供了关于管理 拉取请求任务 平台的软件许可证、支付服务商协议、监管合规认证及知识产权政策的全面信息。内容涵盖平台自身许可证、信用卡处理合规性、支付服务商集成、数据保护认证以及 拉取请求任务 所采用的开源组件。了解这些许可证有助于您明确在使用平台时的权利与义务。</value>
+  </data>
+  <data name="LicensesDescriptionParagraph2" xml:space="preserve">
+    <value>拉取请求任务 基于 .NET、Blazor 等开源技术及各类社区库构建，我们致力于尊重并认可所使用全部组件的许可证。开发者通过拉取请求提交的代码，除非任务另有规定，否则其知识产权归提交者所有；贡献代码的许可条款由客户项目仓库的许可证决定。本页面还详细介绍了与 GitHub、支付处理商及 Cloudflare 的第三方服务集成，这些集成对平台运营至关重要。</value>
+  </data>
+  <data name="LicensesDeveloperCodeDescription" xml:space="preserve">
+    <value>开发者提交的拉取请求在悬赏支付前，其知识产权归作者所有。付款完成后，所提交的代码依据任务仓库中指定的许可证授权给客户使用。拉取请求任务 不主张对开发者提交的任何代码享有所有权。</value>
+  </data>
+  <data name="LicensesDeveloperCodeHeading" xml:space="preserve">
+    <value>开发者提交的代码</value>
+  </data>
+  <data name="LicensesOpenSourceBlazor" xml:space="preserve">
+    <value>Blazor 网络汇编（麻省理工 许可证）</value>
+  </data>
+  <data name="LicensesOpenSourceDescription" xml:space="preserve">
+    <value>拉取请求任务 基于 .NET、Blazor 网络汇编 及其他开源技术构建。这些组件在各自许可证（麻省理工、Apache 2.0 等）下使用。完整的版权归属信息可在项目依赖文件中查阅。</value>
+  </data>
+  <data name="LicensesOpenSourceDotNet" xml:space="preserve">
+    <value>.NET 运行时和 ASP.NET Core（麻省理工 许可证）</value>
+  </data>
+  <data name="LicensesOpenSourceGratitude" xml:space="preserve">
+    <value>我们感谢开源社区提供这些工具。如需完整的依赖项及其许可证列表，请参阅项目依赖清单。</value>
+  </data>
+  <data name="LicensesOpenSourceHeading" xml:space="preserve">
+    <value>开源致谢</value>
+  </data>
+  <data name="LicensesOpenSourceMudBlazor" xml:space="preserve">
+    <value>MudBlazor 用户界面 组件（麻省理工 许可证）</value>
+  </data>
+  <data name="LicensesPageHeading" xml:space="preserve">
+    <value>许可证</value>
+  </data>
+  <data name="LicensesPaymentProviderDescription" xml:space="preserve">
+    <value>我们的支付服务商持有当前有效的 支付卡行业数据安全标准 一级认证，这是支付卡行业最高级别的安全合规认证。他们持有处理 维萨、万事达 及其他主要卡组织（视适用情况）交易的相应资质。</value>
+  </data>
+  <data name="LicensesPaymentProviderHeading" xml:space="preserve">
+    <value>支付服务商合规性</value>
+  </data>
+  <data name="LicensesPlatformDescription" xml:space="preserve">
+    <value>拉取请求任务 是由 拉取请求任务 运营的专有平台。平台的所有权利，包括其设计、品牌和源代码，均予以保留。使用本平台须遵守服务条款。</value>
+  </data>
+  <data name="LicensesPlatformHeading" xml:space="preserve">
+    <value>平台许可证</value>
+  </data>
+  <data name="LicensesRegulatoryDescription" xml:space="preserve">
+    <value>拉取请求任务 遵守适用的在线支付、数据保护和消费者权益相关法律法规。如有关于我们合规情况的疑问，请发送邮件至 合规事务 compliance@prtask.com。</value>
+  </data>
+  <data name="LicensesRegulatoryHeading" xml:space="preserve">
+    <value>监管合规</value>
+  </data>
+  <data name="LicensesThirdPartyCloudflare" xml:space="preserve">
+    <value>Cloudflare：用于托管、内容分发网络 及 分布式拒绝服务 防护，须遵守 Cloudflare 服务条款</value>
+  </data>
+  <data name="LicensesThirdPartyDescription" xml:space="preserve">
+    <value>拉取请求任务 集成了以下第三方库和服务。我们衷心感谢这些开源项目及其维护者的贡献：微软 .NET 运行时（麻省理工 许可证）、ASP.NET Core 和 Blazor（麻省理工 许可证）、Iced 32位 反汇编器（麻省理工 许可证），以及项目文件中列出的各类 NuGet 包。如需完整的依赖项及其许可证列表，请参阅项目依赖清单。</value>
+  </data>
+  <data name="LicensesThirdPartyGitHub" xml:space="preserve">
+    <value>GitHub：用于 开放授权 认证和拉取请求集成，须遵守 GitHub 服务条款</value>
+  </data>
+  <data name="LicensesThirdPartyHeading" xml:space="preserve">
+    <value>第三方致谢</value>
+  </data>
+  <data name="LicensesThirdPartyPayment" xml:space="preserve">
+    <value>支付处理商（包括 Maya Business）：用于安全交易处理，须遵守各自的服务协议</value>
+  </data>
+  <data name="LicensesUserContentDescription" xml:space="preserve">
+    <value>在 拉取请求任务 上发布内容（包括任务描述、评论和评价）即表示您授予 拉取请求任务 一项非独占性、全球性、免版税的许可，允许其仅为运营和改进平台的目的展示、复制和分发该内容。您保留对自身内容的全部所有权。当您从 拉取请求任务 删除内容时，此许可终止，但内容已被其他用户共享或依赖的情况除外。</value>
+  </data>
+  <data name="LicensesUserContentHeading" xml:space="preserve">
+    <value>用户生成内容许可</value>
+  </data>
+  <data name="LoginBrowseTasksDescription" xml:space="preserve">
+    <value>按语言、框架或赏金金额筛选，探索可用任务。</value>
+  </data>
+  <data name="LoginBrowseTasksHeading" xml:space="preserve">
+    <value>浏览任务</value>
+  </data>
+  <data name="LoginDescriptionHeading" xml:space="preserve">
+    <value>登录 拉取请求任务 - 安全身份验证选项</value>
+  </data>
+  <data name="LoginDescriptionParagraph1" xml:space="preserve">
+    <value>拉取请求任务 通过受信任的身份提供商使用单点登录 身份验证，以确保您的账户安全。您可以使用现有的 GitHub、谷歌、微软蔚蓝 或 Okta 账户登录，无需为 拉取请求任务 单独创建用户名和密码。此方式利用这些提供商的企业级安全性，包括双因素身份验证、可疑登录检测和账户恢复机制，让您的 拉取请求任务 账户受益于您已有的相同保护措施。</value>
+  </data>
+  <data name="LoginDescriptionParagraph2" xml:space="preserve">
+    <value>访问 拉取请求任务 大多数功能需要身份验证，因为金融交易和代码贡献需要经过验证的身份。首次登录时，拉取请求任务 会自动创建您的账户并将其关联到您选择的身份提供商。开发者可以连接 GitHub 账户以简化拉取请求提交流程，而客户端则受益于经过验证的身份，从而在市场中建立信任。所有身份验证数据均通过加密连接传输，拉取请求任务 从不存储您的身份提供商密码。</value>
+  </data>
+  <data name="LoginDescriptionParagraph3" xml:space="preserve">
+    <value>对于开发者，登录后可解锁浏览任务、提交拉取请求、赚取赏金以及追踪排行榜排名等功能。对于客户端，身份验证可启用任务创建、赏金注资、拉取请求审核和支付管理。拉取请求任务 支持多个关联账户，您可以将 GitHub 用于代码提交，将 谷歌 账户用于常规身份验证。登录后请访问设置页面，管理您的关联账户、设置支付方式，并完成 了解您的客户 验证以提取赏金。</value>
+  </data>
+  <data name="LoginEarnMoneyDescription" xml:space="preserve">
+    <value>每次合并的拉取请求均可获得报酬。赏金预先注资，合并后即时释放。</value>
+  </data>
+  <data name="LoginEarnMoneyHeading" xml:space="preserve">
+    <value>赚取收益</value>
+  </data>
+  <data name="LoginGetPaidDescription" xml:space="preserve">
+    <value>您的 拉取请求 经审核并合并后，赏金将自动释放到您的账户。</value>
+  </data>
+  <data name="LoginGetPaidHeading" xml:space="preserve">
+    <value>获得报酬</value>
+  </data>
+  <data name="LoginHelpDescription" xml:space="preserve">
+    <value>访问我们的文档，获取指南、常见问题解答和支持资源。</value>
+  </data>
+  <data name="LoginHelpHeading" xml:space="preserve">
+    <value>需要帮助？</value>
+  </data>
+  <data name="LoginHelpLink" xml:space="preserve">
+    <value>需要帮助？</value>
+  </data>
+  <data name="LoginNoPlatformFeesDescription" xml:space="preserve">
+    <value>开发者获得全额赏金。拉取请求任务 向客户端收费，从不向贡献者收费。</value>
+  </data>
+  <data name="LoginNoPlatformFeesHeading" xml:space="preserve">
+    <value>零平台费用</value>
+  </data>
+  <data name="LoginPublicPrsDescription" xml:space="preserve">
+    <value>所有工作均以真实的 GitHub 拉取请求形式交付。您的贡献公开可见且可验证。</value>
+  </data>
+  <data name="LoginPublicPrsHeading" xml:space="preserve">
+    <value>公开 拉取请求</value>
+  </data>
+  <data name="LoginSignInDescription" xml:space="preserve">
+    <value>使用您首选的 单点登录 提供商进行身份验证，创建您的 拉取请求任务 账户。</value>
+  </data>
+  <data name="LoginSignInHeading" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="LoginSubmitPrsDescription" xml:space="preserve">
+    <value>认领任务，编写代码，并向目标仓库提交拉取请求。</value>
+  </data>
+  <data name="LoginSubmitPrsHeading" xml:space="preserve">
+    <value>提交 拉取请求</value>
+  </data>
+  <data name="PricingDescriptionHeading" xml:space="preserve">
+    <value>拉取请求任务 定价 - 透明且对开发者友好</value>
+  </data>
+  <data name="PricingDescriptionParagraph1" xml:space="preserve">
+    <value>拉取请求任务 采用简单透明的定价模式：开发者零平台费用。当客户端批准您的拉取请求时，您将收到全额赏金，无任何扣除、服务费或隐藏费用。这种以开发者为先的方式确保您在浏览任务时看到的赏金金额，就是您的拉取请求合并并获批后实际收到的金额。拉取请求任务 通过客户端服务创收，从不从开发者收益中抽成。</value>
+  </data>
+  <data name="PricingDescriptionParagraph2" xml:space="preserve">
+    <value>对于客户端，定价同样简单明了。您在创建任务时设定赏金金额，当您批准拉取请求时，该确切金额将从您的支付方式中扣除。没有刊登费、月度订阅费、赏金之外的成功费，也不会对未收到拉取请求或您选择不批准的任务收费。您只在决定批准工作时付款，让您完全掌控支出，并确保在付款前获得价值。</value>
+  </data>
+  <data name="PricingDescriptionParagraph3" xml:space="preserve">
+    <value>支付流程旨在简单安全。客户端通过 Maya 符合 支付卡行业数据安全标准 标准的支付基础设施以信用卡付款。开发者通过其配置的方式收款——根据所在地区，支持银行转账、贝宝 或其他受支持的选项。所有交易均以美元计价，拉取请求任务 为客户端和开发者提供交易记录，以支持财务核算和税务申报。对于有企业需求的大批量客户端，请联系我们洽谈批量定价安排。</value>
+  </data>
+  <data name="PricingDeveloperDescription" xml:space="preserve">
+    <value>开发者每次合并拉取请求均可获得全额赏金。</value>
+  </data>
+  <data name="PricingDeveloperFeatureFullBounty" xml:space="preserve">
+    <value>合并后获得 100% 赏金</value>
+  </data>
+  <data name="PricingDeveloperFeatureLeaderboard" xml:space="preserve">
+    <value>赚取经验值，提升排名，解锁成就徽章</value>
+  </data>
+  <data name="PricingDeveloperFeatureMultiplePrs" xml:space="preserve">
+    <value>跨不同任务提交多个 拉取请求</value>
+  </data>
+  <data name="PricingDeveloperFeaturePublicProfile" xml:space="preserve">
+    <value>公开的开发者资料和贡献历史</value>
+  </data>
+  <data name="PricingDeveloperFeatureRealPrs" xml:space="preserve">
+    <value>工作以真实的 GitHub 拉取请求形式交付</value>
+  </data>
+  <data name="PricingDeveloperHeading" xml:space="preserve">
+    <value>面向开发者</value>
+  </data>
+  <data name="PricingFaqAnswerFees" xml:space="preserve">
+    <value>没有平台费用。开发者获得 100% 的赏金。客户端只支付其设定的赏金。</value>
+  </data>
+  <data name="PricingFaqAnswerPayment" xml:space="preserve">
+    <value>客户端在批准拉取请求时以信用卡付款。开发者通过其配置的提现方式收款。</value>
+  </data>
+  <data name="PricingFaqAnswerRefund" xml:space="preserve">
+    <value>若已批准的工作在实质上未能满足要求，可在付款后 7 天内申请退款。详情请参阅我们的退款政策。</value>
+  </data>
+  <data name="PricingFaqAnswerSecurity" xml:space="preserve">
+    <value>所有支付均由 Maya 处理，这是一家符合 支付卡行业数据安全标准 标准的支付提供商。拉取请求任务 从不存储您的信用卡信息。</value>
+  </data>
+  <data name="PricingFaqAnswerVolume" xml:space="preserve">
+    <value>请发送邮件至 hello@prtask.com 与我们联系，洽谈企业或批量合作安排。</value>
+  </data>
+  <data name="PricingFaqQuestionFees" xml:space="preserve">
+    <value>是否有平台费用或佣金？</value>
+  </data>
+  <data name="PricingFaqQuestionPayment" xml:space="preserve">
+    <value>支付是如何运作的？</value>
+  </data>
+  <data name="PricingFaqQuestionRefund" xml:space="preserve">
+    <value>退款政策是什么？</value>
+  </data>
+  <data name="PricingFaqQuestionSecurity" xml:space="preserve">
+    <value>支付安全吗？</value>
+  </data>
+  <data name="PricingFaqQuestionVolume" xml:space="preserve">
+    <value>是否为企业提供批量定价？</value>
+  </data>
+  <data name="PricingFreeHeading" xml:space="preserve">
+    <value>免费</value>
+  </data>
+  <data name="PrivacyAccessRightsDescription" xml:space="preserve">
+    <value>您有权访问、更正、删除和转移您的个人数据。请联系 dpo@prtask.com 行使您的权利。欧盟/欧洲经济区居民可向其所在国的数据保护机构提出投诉。</value>
+  </data>
+  <data name="PrivacyAccessRightsHeading" xml:space="preserve">
+    <value>您的权利</value>
+  </data>
+  <data name="PrivacyCcpaRightsDescription" xml:space="preserve">
+    <value>加利福尼亚州居民有权了解所收集的个人信息、删除个人信息、选择退出个人信息出售（拉取请求任务 不出售个人信息），以及在行使 加州消费者隐私法 权利时不受歧视。如需行使这些权利，请联系 privacy@prtask.com。</value>
+  </data>
+  <data name="PrivacyCcpaRightsHeading" xml:space="preserve">
+    <value>加利福尼亚州  权利</value>
+  </data>
+  <data name="PrivacyChildrenDescription" xml:space="preserve">
+    <value>拉取请求任务 不面向 18 岁以下用户。我们不会在知情情况下收集未成年人的个人信息。若您认为我们已收集了未成年人的信息，请联系 privacy@prtask.com。</value>
+  </data>
+  <data name="PrivacyChildrenHeading" xml:space="preserve">
+    <value>未成年人</value>
+  </data>
+  <data name="PrivacyContactDescription" xml:space="preserve">
+    <value>如有隐私问题或需行使数据主体权利，请联系我们的数据保护官 dpo@prtask.com。如有一般隐私问题，请联系 privacy@prtask.com。</value>
+  </data>
+  <data name="PrivacyContactHeading" xml:space="preserve">
+    <value>联系方式</value>
+  </data>
+  <data name="PrivacyDataRetentionDescription" xml:space="preserve">
+    <value>账户数据将在您账户存续期间及之后保留 7 年，以符合菲律宾税法和反洗钱法规的要求。交易记录依反洗钱要求保留 5 年。您可随时申请删除非法律要求保留的数据。</value>
+  </data>
+  <data name="PrivacyDataRetentionHeading" xml:space="preserve">
+    <value>数据保留</value>
+  </data>
+  <data name="PrivacyDescriptionHeading" xml:space="preserve">
+    <value>关于本隐私政策</value>
+  </data>
+  <data name="PrivacyDescriptionParagraph1" xml:space="preserve">
+    <value>本隐私政策就 拉取请求任务 如何收集、使用、存储和保护您的个人数据提供完整的透明说明。作为在国际范围内运营并处理金融交易的平台，拉取请求任务 须遵守多项隐私法规，包括《2012 年菲律宾数据隐私法》（第10173号共和国法案）、欧盟《通用数据保护条例》、《加利福尼亚消费者隐私法》以及其他地区隐私法律。本政策说明您在每项适用法规下的权利及其行使方式。</value>
+  </data>
+  <data name="PrivacyDescriptionParagraph2" xml:space="preserve">
+    <value>拉取请求任务 收集平台运营所需的个人数据，包括来自 单点登录 提供商的身份验证信息、用于支付合规的 了解您的客户 身份证明文件、通过符合 支付卡行业数据安全标准 标准的处理商获取的支付方式信息、开发者活动（包括拉取请求和收益）以及使用分析数据。所有个人数据均依据本政策所述的合法依据进行处理。拉取请求任务 不向第三方出售个人数据，不将个人数据用于广告目的，并在数据收集和处理实践中贯彻数据最小化原则。</value>
+  </data>
+  <data name="PrivacyGdprBasisDescription" xml:space="preserve">
+    <value>拉取请求任务 处理您的数据基于以下依据：合同履行（运营市场平台）、法律义务（了解您的客户/反洗钱 要求）、合法利益（平台安全、欺诈防范）以及同意（可选分析 网络缓存）。您可随时撤回同意，且不影响撤回前的处理行为。</value>
+  </data>
+  <data name="PrivacyGdprBasisHeading" xml:space="preserve">
+    <value>处理的法律依据 </value>
+  </data>
+  <data name="PrivacyGdprRightsDescription" xml:space="preserve">
+    <value>欧盟/欧洲经济区居民有权访问其个人数据（第 15 条）、更正（第 16 条）、删除（第 17 条）、限制处理（第 18 条）、数据可携带（第 20 条），以及反对处理（第 21 条）。如需行使这些权利，请联系 dpo@prtask.com。您也可向您所在国的监管机构提出投诉。</value>
+  </data>
+  <data name="PrivacyGdprRightsHeading" xml:space="preserve">
+    <value>通用数据保护条例 权利（欧盟/欧洲经济区）</value>
+  </data>
+  <data name="PrivacyIntroduction" xml:space="preserve">
+    <value>拉取请求任务 收集和处理您的数据，以运营开发者市场平台、处理支付，并遵守包括 了解您的客户/反洗钱 要求在内的适用法律。我们绝不出售您的数据。</value>
+  </data>
+  <data name="PrivacyLastUpdated" xml:space="preserve">
+    <value>最后更新：2026 年 3 月</value>
+  </data>
+  <data name="PrivacyPageHeading" xml:space="preserve">
+    <value>隐私政策</value>
+  </data>
+  <data name="PrivacyPhDpaRightsDescription" xml:space="preserve">
+    <value>菲律宾居民依据 第10173号共和国法案 享有以下权利：知情权、异议权、访问权、更正权、删除权以及数据可携带权。请联系我们的数据保护官 dpo@prtask.com 行使这些权利。您也可通过 privacy.gov.ph 向国家隐私委员会提出投诉。</value>
+  </data>
+  <data name="PrivacyPhDpaRightsHeading" xml:space="preserve">
+    <value>菲律宾数据隐私权利（第10173号共和国法案）</value>
+  </data>
+  <data name="PrivacySharingDescription" xml:space="preserve">
+    <value>拉取请求任务 与以下方共享数据：支付处理商（用于交易处理）、了解您的客户 提供商（用于身份验证）、云基础设施提供商（用于托管），以及依法律要求共享（包括向 反洗钱委员会 进行反洗钱报告）。拉取请求任务 不出售数据，也不为广告目的共享数据。</value>
+  </data>
+  <data name="PrivacySharingHeading" xml:space="preserve">
+    <value>数据共享</value>
+  </data>
+  <data name="PrivacyStorageDescription" xml:space="preserve">
+    <value>数据存储在具有静态加密和传输加密的安全云基础设施中。拉取请求任务 实施行业标准安全措施，包括访问控制、审计日志记录和定期安全评估。</value>
+  </data>
+  <data name="PrivacyStorageHeading" xml:space="preserve">
+    <value>数据存储与安全</value>
+  </data>
+  <data name="RefundAbandonedDescription" xml:space="preserve">
+    <value>如果任务没有收到任何拉取请求提交，客户可随时关闭该任务。由于在拉取请求获批之前不会付款，因此被放弃的任务无需退款。</value>
+  </data>
+  <data name="RefundAbandonedHeading" xml:space="preserve">
+    <value>被放弃的任务</value>
+  </data>
+  <data name="RefundAfterApprovalDescription" xml:space="preserve">
+    <value>一旦客户批准拉取请求并完成扣款，悬赏金将支付给开发者。退款仅在平台错误、欺诈活动，或提交的工作与拉取请求中描述的内容存在实质性差异的情况下才予以处理。</value>
+  </data>
+  <data name="RefundAfterApprovalHeading" xml:space="preserve">
+    <value>批准后退款</value>
+  </data>
+  <data name="RefundAutoPaymentDescription" xml:space="preserve">
+    <value>拉取请求任务 采用自动付款模式。客户仅在批准拉取请求时才会被扣款。发布任务时无需预付款或押金。</value>
+  </data>
+  <data name="RefundAutoPaymentHeading" xml:space="preserve">
+    <value>自动付款模式</value>
+  </data>
+  <data name="RefundChargebackDescription" xml:space="preserve">
+    <value>如果客户通过银行或信用卡发行机构发起拒付，而非使用我们的争议解决流程，拉取请求任务 保留暂停该客户账户待调查的权利。未经尝试通过 拉取请求任务 解决争议即提交拒付的客户，其账户可能被永久注销。我们鼓励所有客户在联系其金融机构之前，先使用我们内置的争议和退款流程，因为拒付会给各方带来费用和延误。拉取请求任务 保留通过适当法律途径追偿资金的权利。</value>
+  </data>
+  <data name="RefundChargebackHeading" xml:space="preserve">
+    <value>拒付政策</value>
+  </data>
+  <data name="RefundContactDescription" xml:space="preserve">
+    <value>如需提交退款请求或对本政策有任何疑问，请发送电子邮件至 support@prtask.com，并附上您的任务编号和交易参考编号。欧盟消费者行使撤回权时，请在邮件中注明。</value>
+  </data>
+  <data name="RefundContactHeading" xml:space="preserve">
+    <value>联系方式</value>
+  </data>
+  <data name="RefundDescriptionHeading" xml:space="preserve">
+    <value>关于本退款政策</value>
+  </data>
+  <data name="RefundDescriptionParagraph1" xml:space="preserve">
+    <value>本退款政策规定了通过 拉取请求任务 进行的付款可获得退款的条件。由于 拉取请求任务 采用自动付款模式，悬赏金在拉取请求获批时自动发放，退款流程旨在对客户和开发者双方公平。本政策涵盖的场景包括：工作质量争议、被放弃的任务、平台错误，以及欧盟和菲律宾消费者保护法规定的法规要求。</value>
+  </data>
+  <data name="RefundDescriptionParagraph2" xml:space="preserve">
+    <value>拉取请求任务 在拉取请求获批之前不会向开发者收取费用，客户在明确为任务悬赏金付款之前也不会被扣款。这种按批准付款的模式通过确保仅在双方就交付工作达成一致时才进行付款，从而最大限度地减少了退款需求。如有必要退款，拉取请求任务 将在本政策规定的时间内通过原始付款方式进行处理。如需发起退款请求或对交易提出异议，请联系 support@prtask.com。</value>
+  </data>
+  <data name="RefundDisputeDescription" xml:space="preserve">
+    <value>如果客户认为已批准的拉取请求不符合任务要求，拉取请求任务 将启动仲裁程序。双方须在7个工作日内提交证据。可能的结果包括：如工作不符合要求则全额退款给客户；如工作符合</value>
+  </data>
+  <data name="RefundDisputeHeading" xml:space="preserve">
+    <value>争议拉取请求</value>
+  </data>
+  <data name="RefundEuWithdrawalDescription" xml:space="preserve">
+    <value>如果您是欧盟或欧洲经济区居民，根据《消费者权利指令》（2011/83/欧盟），您对数字服务享有14天的撤回权。此权利自交易日期起生效。您可在14天内通过联系 support@prtask.com 无需说明理由行使此权利。拉取请求任务 将在收到您的撤回通知后14天内，通过与原始交易相同的付款方式处理退款。如果您在购买时给予明确的事先同意，并确认数字服务（向开发者支付悬赏金）完全履行后将丧失撤回权，则可放弃此撤回权。如果 拉取请求任务 未能告知您撤回权，该权利将自动延长至1年。</value>
+  </data>
+  <data name="RefundEuWithdrawalHeading" xml:space="preserve">
+    <value>欧盟14天撤回权</value>
+  </data>
+  <data name="RefundHowToDescription" xml:space="preserve">
+    <value>如需申请退款，请登录您的 拉取请求任务 账户，导航至相关任务，然后选择申请退款。或者，发送电子邮件至 support@prtask.com，附上您的任务编号。</value>
+  </data>
+  <data name="RefundHowToHeading" xml:space="preserve">
+    <value>如何申请退款</value>
+  </data>
+  <data name="RefundIntroduction" xml:space="preserve">
+    <value>本退款政策说明 拉取请求任务 平台上何时以及如何处理退款。拉取请求任务 采用自动付款模式，客户仅在批准拉取请求时才会被扣款。本政策涵盖所有退款场景，包括欧盟、菲律宾及其他司法管辖区法律下适用的消费者保护权利。</value>
+  </data>
+  <data name="RefundMethodDescription" xml:space="preserve">
+    <value>退款将处理至原始付款方式。处理时间取决于您的银行或发卡机构，但通常在批准后5至7个工作日内完成。</value>
+  </data>
+  <data name="RefundMethodHeading" xml:space="preserve">
+    <value>退款方式</value>
+  </data>
+  <data name="RefundNoChargeDescription" xml:space="preserve">
+    <value>客户在明确批准拉取请求之前不会被扣款。如果没有拉取请求被批准，则不会付款。客户可在批准拉取请求之前随时免费取消任务。</value>
+  </data>
+  <data name="RefundNoChargeHeading" xml:space="preserve">
+    <value>批准前不收费</value>
+  </data>
+  <data name="RefundNoEscrowDescription" xml:space="preserve">
+    <value>拉取请求任务 不托管资金。悬赏金在拉取请求批准时直接从客户处收取并支付给开发者，没有中间保管期。这确保开发者及时收款，客户仅为已批准的工作付费。</value>
+  </data>
+  <data name="RefundNoEscrowHeading" xml:space="preserve">
+    <value>无托管模式</value>
+  </data>
+  <data name="RefundNonRefundableDescription" xml:space="preserve">
+    <value>以下情况不符合退款条件：已经过审查、批准且代码已合并并符合任务要求的拉取请求悬赏金；交易后超过30天提出的争议；以及客户已使用、部署或将提交代码纳入生产环境的情况。欧盟居民的法定撤回权在未被有效放弃的情况下不受本条款影响。</value>
+  </data>
+  <data name="RefundNonRefundableHeading" xml:space="preserve">
+    <value>不可退款项目</value>
+  </data>
+  <data name="RefundPageHeading" xml:space="preserve">
+    <value>退款政策</value>
+  </data>
+  <data name="RefundPhConsumerDescription" xml:space="preserve">
+    <value>菲律宾居民依据《菲律宾共和国第7394号法案》（菲律宾消费者法）享有消费者保护权利。如果服务未能达到购买时所描述的规格或质量标准，您有权获得全额退款或补救措施。如果您的退款请求未能通过 拉取请求任务 内部流程得到令人满意的解决，您可向贸易和工业部提出投诉。拉取请求任务 将全力配合 菲律宾贸工部 的任何调查。</value>
+  </data>
+  <data name="RefundPhConsumerHeading" xml:space="preserve">
+    <value>菲律宾消费者保护（第7394号共和国法案）</value>
+  </data>
+  <data name="RefundPlatformErrorDescription" xml:space="preserve">
+    <value>如果因平台错误导致付款处理不当，拉取请求任务 将在3个工作日内全额退款。请发送电子邮件至 support@prtask.com，附上您的交易参考编号。</value>
+  </data>
+  <data name="RefundPlatformErrorHeading" xml:space="preserve">
+    <value>平台错误</value>
+  </data>
+  <data name="RefundTimelineDescription" xml:space="preserve">
+    <value>拉取请求任务 按以下时间表处理退款：欧盟撤回权退款在收到撤回通知后14天内处理；平台错误退款在3个工作日内处理；争议解决退款在解决决定后5个工作日内处理；所有其他符合条件的退款在批准后5个工作日内处理。实际收到退款的时间取决于您的银行或付款服务商，可能额外需要5至10个工作日。</value>
+  </data>
+  <data name="RefundTimelineHeading" xml:space="preserve">
+    <value>退款处理时间表</value>
+  </data>
+  <data name="RepositoryAddButton" xml:space="preserve">
+    <value>添加仓库</value>
+  </data>
+  <data name="RepositoryAddHeading" xml:space="preserve">
+    <value>添加仓库</value>
+  </data>
+  <data name="RepositoryDescriptionHeading" xml:space="preserve">
+    <value>仓库管理 — 连接并配置您的 GitHub 仓库</value>
+  </data>
+  <data name="RepositoryDescriptionParagraph1" xml:space="preserve">
+    <value>仓库页面允许客户将其 GitHub 仓库连接到 拉取请求任务，以实现无缝的任务管理和拉取请求工作流。通过关联仓库，您可以让开发者在处理您发布的任务时直接针对您的代码库提交拉取请求。每个已连接的仓库可以设置自定义显示名称，便于在 拉取请求任务 中识别，可见性设置则控制仓库是公开列出还是仅限特定开发者访问。</value>
+  </data>
+  <data name="RepositoryDescriptionParagraph2" xml:space="preserve">
+    <value>管理您的已连接仓库对于在 拉取请求任务 上维护有序的开发工作流至关重要。创建任务时，您需要将其关联到某个已连接的仓库，以便开发者知道应将代码贡献提交到哪里。公开仓库对所有市场参与者可见，非常适合开源项目和社区驱动的开发。私有仓库仅限受邀开发者访问，适合您希望控制谁可以查看和贡献代码的专有代码库。</value>
+  </data>
+  <data name="RepositoryDescriptionParagraph3" xml:space="preserve">
+    <value>拉取请求任务 通过标准应用程序接口连接与 GitHub 集成，仅需仓库网址即可建立关联。您对仓库保持完全控制权 — 拉取请求任务 不会修改仓库设置、分支保护或访问权限。所有拉取请求的审查和合并均通过您现有的 GitHub 工作流进行，拉取请求任务 自动处理悬赏金支付和任务状态跟踪。随着您添加更多仓库，仓库页面将成为您所有已连接到 拉取请求任务 市场的代码库的中央目录。</value>
+  </data>
+  <data name="RepositoryDisplayNameLabel" xml:space="preserve">
+    <value>显示名称（可选）</value>
+  </data>
+  <data name="RepositoryEmptyState" xml:space="preserve">
+    <value>尚未添加仓库。添加仓库以开始发布任务。</value>
+  </data>
+  <data name="RepositoryPageDescription" xml:space="preserve">
+    <value>管理您的仓库并控制任务的代码可见性。</value>
+  </data>
+  <data name="RepositoryPageHeading" xml:space="preserve">
+    <value>源代码仓库</value>
+  </data>
+  <data name="RepositoryRepoUrlLabel" xml:space="preserve">
+    <value>仓库网址</value>
+  </data>
+  <data name="RepositoryVisibilityLabel" xml:space="preserve">
+    <value>代码可见性</value>
+  </data>
+  <data name="RepositoryVisibilityPrivate" xml:space="preserve">
+    <value>私有 - 仅指定开发者可查看代码</value>
+  </data>
+  <data name="RepositoryVisibilityPublic" xml:space="preserve">
+    <value>公开 - 任何人均可查看源代码</value>
+  </data>
+  <data name="RepositoryYourReposHeading" xml:space="preserve">
+    <value>您的仓库</value>
+  </data>
+  <data name="SettingsAddCardButton" xml:space="preserve">
+    <value>添加银行卡</value>
+  </data>
+  <data name="SettingsAddCardHeading" xml:space="preserve">
+    <value>添加银行卡</value>
+  </data>
+  <data name="SettingsCardCvcLabel" xml:space="preserve">
+    <value>卡片验证码</value>
+  </data>
+  <data name="SettingsCardExpMonthLabel" xml:space="preserve">
+    <value>到期月份</value>
+  </data>
+  <data name="SettingsCardExpYearLabel" xml:space="preserve">
+    <value>到期年份</value>
+  </data>
+  <data name="SettingsCardNumberLabel" xml:space="preserve">
+    <value>卡号</value>
+  </data>
+  <data name="SettingsConnectedGitHub" xml:space="preserve">
+    <value>GitHub</value>
+  </data>
+  <data name="SettingsConnectedGoogle" xml:space="preserve">
+    <value>谷歌</value>
+  </data>
+  <data name="SettingsConnectedMicrosoft" xml:space="preserve">
+    <value>微软</value>
+  </data>
+  <data name="SettingsConnectedOkta" xml:space="preserve">
+    <value>奥克塔</value>
+  </data>
+  <data name="SettingsDescriptionHeading" xml:space="preserve">
+    <value>账户设置 — 配置您的 拉取请求任务 体验</value>
+  </data>
+  <data name="SettingsDescriptionParagraph1" xml:space="preserve">
+    <value>设置页面是配置您 拉取请求任务 账户各个方面的中央枢纽。在这里，您可以更新个人资料信息，包括显示名称、头像和电子邮件地址。您可以配置通知偏好，控制哪些事件触发电子邮件提醒 — 选择接收所有通知、仅接收重要通知（如付款确认和审查请求），或完全禁用电子邮件通知。您的个人资料设置决定了其他用户在平台上如何看到您，包括在排行榜和拉取请求审查中的显示。</value>
+  </data>
+  <data name="SettingsDescriptionParagraph2" xml:space="preserve">
+    <value>付款配置是账户设置的关键部分。开发者需要设置提现方式（银行转账或 贝宝）以接收悬赏金支出，而客户则需配置充值方式（信用卡或银行转账）以为任务悬赏金充值。拉取请求任务 支持多种支付网关，包括 菲律宾二维码、信用卡、GCash、格步支付、Maya 和直接银行转账 — 每种方式均可根据您的偏好单独启用或禁用。您还可以管理已保存的支付卡、配置自动开票，以及设置基于二维码的快速支付。</value>
+  </data>
+  <data name="SettingsDescriptionParagraph3" xml:space="preserve">
+    <value>安全和验证设置保护您的账户并开放所有平台功能。将多个身份提供商（谷歌、GitHub、微软、Okta）连接到您的账户，以获得灵活的身份验证选项。通过身份验证器应用或电子邮件启用双因素身份验证以提高安全性。通过提交政府颁发的身份证件完成 了解您的客户（了解您的客户）验证流程，以解锁更高的提现限额并获得客户信任。隐私设置让您控制个人资料和活动的可见性，时区配置确保日期和截止日期以您所在地区正确显示。</value>
+  </data>
+  <data name="SettingsDisbursementMethod" xml:space="preserve">
+    <value>未配置。</value>
+  </data>
+  <data name="SettingsGatewayBankLabel" xml:space="preserve">
+    <value>银行转账</value>
+  </data>
+  <data name="SettingsGatewayCardLabel" xml:space="preserve">
+    <value>信用卡 / 借记卡</value>
+  </data>
+  <data name="SettingsGatewayDisabled" xml:space="preserve">
+    <value>已禁用</value>
+  </data>
+  <data name="SettingsGatewayEnabled" xml:space="preserve">
+    <value>已启用</value>
+  </data>
+  <data name="SettingsGatewayGcashLabel" xml:space="preserve">
+    <value>GCash</value>
+  </data>
+  <data name="SettingsGatewayGrabPayLabel" xml:space="preserve">
+    <value>支付宝</value>
+  </data>
+  <data name="SettingsGatewayMayaLabel" xml:space="preserve">
+    <value>玛雅人</value>
+  </data>
+  <data name="SettingsGatewayQrPhLabel" xml:space="preserve">
+    <value>菲律宾二维码（扫码支付）</value>
+  </data>
+  <data name="SettingsGatewaysDescription" xml:space="preserve">
+    <value>为您的账户启用或禁用支付方式。</value>
+  </data>
+  <data name="SettingsGatewaysHeading" xml:space="preserve">
+    <value>支付网关</value>
+  </data>
+  <data name="SettingsKycDigitVerifyButton" xml:space="preserve">
+    <value>通过 Didit 验证</value>
+  </data>
+  <data name="SettingsKycDocumentTypeDrivers" xml:space="preserve">
+    <value>驾驶执照</value>
+  </data>
+  <data name="SettingsKycDocumentTypeNational" xml:space="preserve">
+    <value>身份证</value>
+  </data>
+  <data name="SettingsKycDocumentTypePassport" xml:space="preserve">
+    <value>护照</value>
+  </data>
+  <data name="SettingsKycDocumentTypeSelect" xml:space="preserve">
+    <value>选择证件类型</value>
+  </data>
+  <data name="SettingsLinkedWallet" xml:space="preserve">
+    <value>未关联钱包。</value>
+  </data>
+  <data name="SettingsNoInvoices" xml:space="preserve">
+    <value>暂无发票记录。</value>
+  </data>
+  <data name="SettingsNoSavedCards" xml:space="preserve">
+    <value>暂无已保存的银行卡。请在下方添加银行卡。</value>
+  </data>
+  <data name="SettingsNoSubscriptions" xml:space="preserve">
+    <value>暂无活跃订阅。</value>
+  </data>
+  <data name="SettingsNotificationAllOption" xml:space="preserve">
+    <value>所有通知</value>
+  </data>
+  <data name="SettingsNotificationImportantOption" xml:space="preserve">
+    <value>仅重要通知</value>
+  </data>
+  <data name="SettingsNotificationNoneOption" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="SettingsPaymentBankOption" xml:space="preserve">
+    <value>银行转账</value>
+  </data>
+  <data name="SettingsPaymentCardOption" xml:space="preserve">
+    <value>信用卡或借记卡</value>
+  </data>
+  <data name="SettingsPayoutBankOption" xml:space="preserve">
+    <value>银行转账</value>
+  </data>
+  <data name="SettingsPayoutPaypalOption" xml:space="preserve">
+    <value>贝宝</value>
+  </data>
+  <data name="SettingsPrivacyActivityOptions" xml:space="preserve">
+    <value>活动可见性</value>
+  </data>
+  <data name="SettingsPrivacyActivityPrivate" xml:space="preserve">
+    <value>私密 - 对他人隐藏活动</value>
+  </data>
+  <data name="SettingsPrivacyActivityPublic" xml:space="preserve">
+    <value>公开 - 在排行榜上展示活动</value>
+  </data>
+  <data name="SettingsPrivacyProfileOptions" xml:space="preserve">
+    <value>个人资料可见性</value>
+  </data>
+  <data name="SettingsPrivacyProfilePrivate" xml:space="preserve">
+    <value>私密 - 仅您自己可查看个人资料</value>
+  </data>
+  <data name="SettingsPrivacyProfilePublic" xml:space="preserve">
+    <value>公开 - 任何人均可查看您的个人资料</value>
+  </data>
+  <data name="SettingsRemoveButton" xml:space="preserve">
+    <value>移除</value>
+  </data>
+  <data name="SettingsSavedCardsDescription" xml:space="preserve">
+    <value>管理您已保存的信用卡和借记卡以快速付款。</value>
+  </data>
+  <data name="SettingsSavedCardsHeading" xml:space="preserve">
+    <value>已保存的银行卡</value>
+  </data>
+  <data name="SettingsTwoFactorAuthenticatorOption" xml:space="preserve">
+    <value>身份验证器应用</value>
+  </data>
+  <data name="SettingsTwoFactorDisabledOption" xml:space="preserve">
+    <value>已禁用</value>
+  </data>
+  <data name="SettingsTwoFactorEmailOption" xml:space="preserve">
+    <value>电子邮件验证</value>
+  </data>
+  <data name="SprintDescriptionHeading" xml:space="preserve">
+    <value>迭代管理 — 组织时间盒式开发工作</value>
+  </data>
+  <data name="SprintDescriptionParagraph1" xml:space="preserve">
+    <value>拉取请求任务 上的迭代将敏捷项目管理方法论引入了基于悬赏金的开发模式。迭代是一个时间盒式周期 — 通常为一到四周 — 在此期间规划、执行并交付特定任务。迭代管理允许客户和团队负责人将相关任务组织到具有明确开始日期、结束日期和目标的专注工作周期中。这种结构化方法有助于团队保持势头、跟踪截止日期的进度，并确保开发工作与更广泛的项目里程碑保持一致。</value>
+  </data>
+  <data name="SprintDescriptionParagraph2" xml:space="preserve">
+    <value>创建迭代非常简单：为其命名，设定描述应完成内容的目标，并定义开始和结束日期。迭代经历三种状态 — 已计划、进行中和已完成 — 让您清楚了解每个迭代的进展。团队准备好时可以启动已计划的迭代，时间盒到期后完成进行中的迭代，或删除不再需要的迭代。每个迭代跟踪分配给它的任务，提供时间周期内需完成工作的专注视图。</value>
+  </data>
+  <data name="SprintDescriptionParagraph3" xml:space="preserve">
+    <value>拉取请求任务 上的迭代管理与更广泛的任务和看板系统集成，提供完整的项目管理体验。将任务列表中的任务分配到特定迭代以创建迭代待办列表，随着开发者提交拉取请求跟踪完成率，并回顾迭代成果以改进未来迭代的规划。无论您是管理一个有少数贡献者的小型开源项目，还是跨多个仓库管理大规模开发工作，迭代管理都能帮助您保持可预测的交付节奏，使开发工作有序进行并按计划推进。</value>
+  </data>
+  <data name="SprintSeoDescription" xml:space="preserve">
+    <value>将您的开源贡献组织成迭代。跟踪拉取请求进度，赚取悬赏金，管理您的开发者工作流。对于希望通过高质量代码赚钱的开发者来说，这是一份绝佳的副业。</value>
+  </data>
+  <data name="TaskListComplexityComplexOption" xml:space="preserve">
+    <value>复杂</value>
+  </data>
+  <data name="TaskListComplexityExpertOption" xml:space="preserve">
+    <value>专家级</value>
+  </data>
+  <data name="TaskListComplexityMediumOption" xml:space="preserve">
+    <value>中等</value>
+  </data>
+  <data name="TaskListComplexitySimpleOption" xml:space="preserve">
+    <value>简单</value>
+  </data>
+  <data name="TaskListComplexityTrivialOption" xml:space="preserve">
+    <value>微小</value>
+  </data>
+  <data name="TaskListSortLabel" xml:space="preserve">
+    <value>排序方式</value>
+  </data>
+  <data name="TermsAcceptedPaymentDescription" xml:space="preserve">
+    <value>客户通过支持的付款方式（包括信用卡）支付悬赏金。开发者通过其选择的方式接收支出。开发者在提交拉取请求之前，必须在账户设置中配置其首选收款方式。</value>
+  </data>
+  <data name="TermsAcceptedPaymentHeading" xml:space="preserve">
+    <value>接受的付款方式</value>
+  </data>
+  <data name="TermsAccountCreationDescription" xml:space="preserve">
+    <value>要使用 拉取请求任务，您必须通过受支持的单点登录提供商（如 GitHub、谷歌、微软 或 Okta）进行身份验证来创建账户。您有责任维护账户凭据的安全，并对您账户下发生的所有活动负责。您必须在注册时提供准确完整的信息，并保持账户信息的及时更新。您不得创建超过一个账户或与他人共享账户。</value>
+  </data>
+  <data name="TermsAccountCreationHeading" xml:space="preserve">
+    <value>账户创建</value>
+  </data>
+  <data name="TermsAccountTerminationDescription" xml:space="preserve">
+    <value>拉取请求任务 保留暂停或注销违反本条款、从事欺诈活动或滥用平台的账户的权利。账户注销后，您使用平台的权利立即终止。任何待处理的悬赏金可能被没收。拉取请求任务 将根据适用的税务和 反洗钱 法规要求保留交易记录。您可通过联系 privacy@prtask.com 申请删除您的个人数据，但须遵守法律保留要求。欧盟用户保留《消费者权利指令》规定的合同取消权利。</value>
+  </data>
+  <data name="TermsAccountTerminationHeading" xml:space="preserve">
+    <value>账户终止</value>
+  </data>
+  <data name="TermsAmlComplianceDescription" xml:space="preserve">
+    <value>拉取请求任务 遵守《菲律宾共和国第9160号法案》（反洗钱法，经 第11521号共和国法案 修订）、欧盟反洗钱指令以及所有司法管辖区适用的 反洗钱 法律。所有用户在接收支出之前必须完成了解您的客户（了解您的客户）验证。拉取请求任务 监控交易以发现可疑活动，并依法向反洗钱委员会及相关当局报告应申报和可疑交易。用户不得利用 拉取请求任务 洗钱、资助恐怖主义或从事任何非法金融活动。拉取请求任务 保留在调查可疑活动期间冻结账户和扣留资金的权利。</value>
+  </data>
+  <data name="TermsAmlComplianceHeading" xml:space="preserve">
+    <value>反洗钱合规</value>
+  </data>
+  <data name="TermsArbitrationDescription" xml:space="preserve">
+    <value>所有因本条款或您使用 拉取请求任务 引起或与之相关的、未通过内部争议解决程序解决的争议，应通过双方同意的仲裁机构管理的具有约束力的仲裁解决。您同意放弃陪审团审判权利以及参与集体诉讼的权利。您可在账户创建后30天内向 legal@prtask.com 发送书面通知选择退出本仲裁协议。小额索赔法院诉讼不受本仲裁要求约束。欧盟居民保留访问替代争议解决机制的权利，并可向其成员国适用的消费者仲裁委员会提出投诉。</value>
+  </data>
+  <data name="TermsArbitrationHeading" xml:space="preserve">
+    <value>仲裁</value>
+  </data>
+  <data name="TermsAutoPaymentDescription" xml:space="preserve">
+    <value>客户在批准拉取请求时自动被收取悬赏金金额。通过批准拉取请求，客户授权该笔收费。无需预付押金。</value>
+  </data>
+  <data name="TermsAutoPaymentHeading" xml:space="preserve">
+    <value>自动付款</value>
+  </data>
+  <data name="TermsClientObligationsDescription" xml:space="preserve">
+    <value>作为 拉取请求任务 上的客户，您同意：提供清晰准确的任务描述和要求；为所请求的工作设定公平合理的悬赏金金额；及时且诚信地审查提交的拉取请求；在批准拉取请求时授权付款；在账户中保持有效的付款方式；不发布欺诈性、误导性或非法任务；以及遵守您所在司法管辖区的所有适用法律法规。</value>
+  </data>
+  <data name="TermsClientObligationsHeading" xml:space="preserve">
+    <value>客户义务</value>
+  </data>
+  <data name="TermsConfidentialityDescription" xml:space="preserve">
+    <value>用户同意对通过平台获得的任何非公开信息保密，包括但不限于私有仓库代码、客户业务需求以及其他用户的付款详情。</value>
+  </data>
+  <data name="TermsConfidentialityHeading" xml:space="preserve">
+    <value>保密性</value>
+  </data>
+  <data name="TermsConsumerProtectionDescription" xml:space="preserve">
+    <value>拉取请求任务 遵守《菲律宾共和国第7394号法案》（菲律宾消费者法）以及平台运营所在所有司法管辖区的同等消费者保护法律。用户有权获得公平公正的对待、关于服务和定价的准确信息，以及有效的投诉和救济机制。拉取请求任务 维持透明定价，无隐藏费用，为所有任务和悬赏金提供清晰的服务描述，并确保用户能够无障碍地行使其消费者权利。欧盟用户享有《消费者权利指令》（2011/83/欧盟）的保护，包括合同前信息要求和远程合同取消权。</value>
+  </data>
+  <data name="TermsConsumerProtectionHeading" xml:space="preserve">
+    <value>消费者保护</value>
+  </data>
+  <data name="TermsContactDescription" xml:space="preserve">
+    <value>如对本服务条款有任何疑问，请联系 legal@prtask.com。隐私查询请联系我们的数据保护官 dpo@prtask.com。无障碍问题请联系 accessibility@prtask.com。滥用举报请联系 abuse@prtask.com。</value>
+  </data>
+  <data name="TermsContactHeading" xml:space="preserve">
+    <value>联系方式</value>
+  </data>
+  <data name="TermsContentModerationDescription" xml:space="preserve">
+    <value>根据欧盟《数字服务法》2022/2065 的规定，拉取请求任务 维护透明的内容审核政策。用户可通过我们的举报机制标记非法或有害内容。拉取请求任务 就每项内容审核决定提供理由说明，并为受审核决定影响的用户提供内部投诉处理机制。用户可获得庭外争议解决途径。拉取请求任务 发布关于内容审核活动的年度透明度报告。拉取请求任务 在所有用户界面中禁止暗黑模式，并确保内容审核决定以非歧视性方式作出，充分尊重基本权利。</value>
+  </data>
+  <data name="TermsContentModerationHeading" xml:space="preserve">
+    <value>内容审核（欧盟 数字服务法）</value>
+  </data>
+  <data name="TermsDescriptionHeading" xml:space="preserve">
+    <value>关于本服务条款</value>
+  </data>
+  <data name="TermsDescriptionParagraph1" xml:space="preserve">
+    <value>本服务条款构成您与 拉取请求任务 之间关于使用我们平台的完整法律协议。它涵盖了开发者市场的各个方面，包括账户创建、任务发布、拉取请求提交、付款处理、知识产权、争议解决和平台行为规范。这些条款旨在保护开发者和客户双方，同时维护一个公平、透明的基于悬赏金的软件开发市场。</value>
+  </data>
+  <data name="TermsDescriptionParagraph2" xml:space="preserve">
+    <value>拉取请求任务 依据菲律宾法律运营，并遵守国际法规，包括适用于欧洲用户的 通用数据保护条例、适用于加利福尼亚州居民的 加州消费者隐私法，以及多个司法管辖区的消费者保护法律。这些条款涵盖平台费用（开发者免费，客户透明收费）、拉取请求批准后的自动付款处理、退款权利和争议解决程序、内容审核政策以及 了解您的客户/反洗钱 合规要求。我们鼓励所有用户仔细阅读这些条款，并通过 legal@prtask.com 提出任何疑问。</value>
+  </data>
+  <data name="TermsDeveloperObligationsDescription" xml:space="preserve">
+    <value>作为 拉取请求任务 上的开发者，您同意：仅提交您有权授权的原创作品；在拉取请求描述中披露使用人工智能生成代码的情况；遵守每个任务仓库的开源许可证要求；在接收任何支出之前完成 了解您的客户 身份验证；不提交抄袭、盗窃或未经授权的代码；在所有平台互动中保持专业行为；以及遵守您所在司法管辖区的所有适用法律法规，包括纳税申报义务。</value>
+  </data>
+  <data name="TermsDeveloperObligationsHeading" xml:space="preserve">
+    <value>开发者义务</value>
+  </data>
+  <data name="TermsDisclaimerDescription" xml:space="preserve">
+    <value>拉取请求任务 平台按"现状"和"可用时"的基础提供，不提供任何明示或暗示的保证。拉取请求任务 否认所有保证，包括适销性、特定用途适用性、所有权和不侵权的默示保证。拉取请求任务 不保证开发者提交工作的质量、准确性或完整性，也不保证平台不会中断、安全或无错误。本免责声明不影响适用法律（包括欧盟消费者保护法规）规定的不可排除的强制性消费者权利。</value>
+  </data>
+  <data name="TermsDisclaimerHeading" xml:space="preserve">
+    <value>免责声明</value>
+  </data>
+  <data name="TermsDisputeDescription" xml:space="preserve">
+    <value>所有因本条款或您使用 拉取请求任务 引起或与之相关的争议，应通过以下程序解决：（1）用户必须首先向 support@prtask.com 提交书面投诉，描述问题和期望的解决方案；（2）拉取请求任务 将在3个工作日内确认收到投诉，并在14个工作日内进行调查；（3）如果投诉未能令用户满意地得到解决，争议将提交至双方同意的调解人进行调解；（4）如果调解失败，争议将按照下文仲裁条款的规定通过具有约束力的仲裁解决。用户也可以向贸易和工业部或其所在司法管辖区其他适用的消费者保护机构提出投诉。</value>
+  </data>
+  <data name="TermsDisputeHeading" xml:space="preserve">
+    <value>争议解决</value>
+  </data>
+  <data name="TermsEligibilityDescription" xml:space="preserve">
+    <value>您必须年满18岁且在您所在的司法管辖区具有签订具有约束力合同的法律能力，才能使用 拉取请求任务。通过创建账户，您声明并保证您符合这些资格要求。拉取请求任务 不面向任何司法管辖区18岁以下的用户。如适用法律规定了更高的成年年龄，您必须达到该年龄门槛。</value>
+  </data>
+  <data name="TermsEligibilityHeading" xml:space="preserve">
+    <value>用户资格</value>
+  </data>
+  <data name="TermsEntireAgreementDescription" xml:space="preserve">
+    <value>本条款与隐私政策、网络缓存政策、可接受使用政策、退款政策、数字千年版权法政策以及本文中引用的任何其他政策共同构成您与 拉取请求任务 之间关于您使用平台的完整协议。本条款取代您与 拉取请求任务 之间先前所有口头或书面的协议、谅解和通信。</value>
+  </data>
+  <data name="TermsEntireAgreementHeading" xml:space="preserve">
+    <value>完整协议</value>
+  </data>
+  <data name="TermsEuConsumerRightsDescription" xml:space="preserve">
+    <value>欧盟居民根据《消费者权利指令》对数字服务享有14天的撤回权。如果您给予明确同意并确认数字服务完全履行后将丧失撤回权，则可在购买时放弃此权利。拉取请求任务 提供关于价格、服务主要特征和经营者身份的清晰合同前信息。自2026年6月起，拉取请求任务 将按照欧盟法律要求提供明确的"取消我的合同"功能。拉取请求任务 按《数字服务法》要求参与替代争议解决。用户可联系其欧盟成员国适用的消费者仲裁委员会进行庭外争议解决。</value>
+  </data>
+  <data name="TermsEuConsumerRightsHeading" xml:space="preserve">
+    <value>欧盟消费者权利</value>
+  </data>
+  <data name="TermsForceDescription" xml:space="preserve">
+    <value>如果 拉取请求任务 因超出其合理控制范围的事件（包括但不限于自然灾害、战争、恐怖主义、流行病、互联网中断或政府行为）导致未能履行或延迟履行其义务，拉取请求任务 不承担任何责任。</value>
+  </data>
+  <data name="TermsForceHeading" xml:space="preserve">
+    <value>不可抗力</value>
+  </data>
+  <data name="TermsGoverningLawDescription" xml:space="preserve">
+    <value>本条款受菲律宾共和国法律管辖并按其解释，不考虑法律冲突原则。任何不受仲裁约束的法律行动应专门在菲律宾共和国法院提起。尽管有上述规定，您居住地司法管辖区的强制性消费者保护法律在不能被合同排除的范围内仍适用。无论适用何种法律选择，欧盟居民保留适用欧盟消费者保护法规下的所有权利。</value>
+  </data>
+  <data name="TermsGoverningLawHeading" xml:space="preserve">
+    <value>适用法律</value>
+  </data>
+  <data name="TermsIndemnificationDescription" xml:space="preserve">
+    <value>您同意就因您使用平台、违反本条款或侵犯任何第三方权利而引起或与之相关的任何索赔、责任、损害、损失和费用（包括合理的律师费），对 拉取请求任务 及其管理人员、董事、员工和代理人进行赔偿、辩护并使其免受损害。此赔偿义务在您所在司法管辖区适用的强制性消费者保护法律禁止的范围内不适用。</value>
+  </data>
+  <data name="TermsIndemnificationHeading" xml:space="preserve">
+    <value>赔偿</value>
+  </data>
+  <data name="TermsIntellectualPropertyDescription" xml:space="preserve">
+    <value>通过 拉取请求任务 提交的所有代码在支付悬赏金之前仍属其作者的知识产权。付款后，提交的代码根据仓库许可证授权给客户。拉取请求任务 不拥有用户提交代码的所有权。</value>
+  </data>
+  <data name="TermsIntellectualPropertyHeading" xml:space="preserve">
+    <value>知识产权</value>
+  </data>
+  <data name="TermsIntroduction" xml:space="preserve">
+    <value>欢迎使用 拉取请求任务。本服务条款规范您对 拉取请求任务 平台的访问和使用，拉取请求任务 是一个开发者市场，客户在此发布有悬赏金的任务，开发者提交拉取请求以获取报酬。通过创建账户或使用 拉取请求任务，您同意受本条款约束。如果您不同意，请勿使用本平台。</value>
+  </data>
+  <data name="TermsLiabilityDescription" xml:space="preserve">
+    <value>在适用法律允许的最大范围内，拉取请求任务 及其管理人员、员工和关联公司不对任何间接、附带、特殊、后果性或惩罚性损害承担责任，包括因使用平台而产生的利润损失、数据损失或商誉损失。拉取请求任务 对任何索赔的总累计责任不超过索赔前十二个月内通过平台向您支付或您支付的总费用。此限制不适用于适用法律（包括欧盟、菲律宾及其他司法管辖区强制性消费者保护法律）规定的不可排除或限制的责任。</value>
+  </data>
+  <data name="TermsLiabilityHeading" xml:space="preserve">
+    <value>责任限制</value>
+  </data>
+  <data name="TermsLicenseGrantsDescription" xml:space="preserve">
+    <value>在悬赏金获批并支付后，开发者向客户授予使用、修改、复制和分发提交代码的永久性、全球性、非独占性、不可撤销许可，但须遵守仓库的任何开源许可证要求。开发者保留其代码的版权所有权。拉取请求任务 获得非独占性、全球性许可，仅出于运营和改进平台的目的展示、缓存和复制提交的代码。开发者声明并保证他们具有授予这些许可的合法权利，且其提交内容不存在第三方知识产权主张。</value>
+  </data>
+  <data name="TermsLicenseGrantsHeading" xml:space="preserve">
+    <value>许可授予</value>
+  </data>
+  <data name="TermsModificationDescription" xml:space="preserve">
+    <value>拉取请求任务 保留随时修改本条款的权利。重大变更将在生效前至少30天通过电子邮件或平台上的显著通知进行传达。您在生效日期后继续使用 拉取请求任务 即构成对更新条款的接受。如果您不同意变更，您必须停止使用并关闭账户。本条款的以前版本可应要求提供。</value>
+  </data>
+  <data name="TermsModificationHeading" xml:space="preserve">
+    <value>条款修改</value>
+  </data>
+  <data name="TermsPageHeading" xml:space="preserve">
+    <value>服务条款</value>
+  </data>
+  <data name="TermsPaymentDescription" xml:space="preserve">
+    <value>当客户批准拉取请求时，系统通过其注册的付款方式自动收取悬赏金金额。悬赏金全额随后支付给开发者。所有交易以美元计价。平台不收取任何费用。</value>
+  </data>
+  <data name="TermsPaymentHeading" xml:space="preserve">
+    <value>付款条款</value>
+  </data>
+  <data name="TermsPlatformFeeDescription" xml:space="preserve">
+    <value>拉取请求任务 是一个免费平台。不向客户或开发者收取任何费用。开发者在拉取请求获批后可获得100%的悬赏金金额。</value>
+  </data>
+  <data name="TermsPlatformFeeHeading" xml:space="preserve">
+    <value>平台费用</value>
+  </data>
+  <data name="TermsPlatformRoleDescription" xml:space="preserve">
+    <value>拉取请求任务 充当连接发布任务的客户与提交拉取请求的开发者之间的中介。拉取请求任务 不雇用开发者，不对所交付工作的质量负责。</value>
+  </data>
+  <data name="TermsPlatformRoleHeading" xml:space="preserve">
+    <value>平台角色</value>
+  </data>
+  <data name="TermsPrivacyDescription" xml:space="preserve">
+    <value>您对 拉取请求任务 的使用受我们隐私政策的约束。使用平台即表示您同意按照隐私政策中的描述收集和使用您的信息。</value>
+  </data>
+  <data name="TermsPrivacyHeading" xml:space="preserve">
+    <value>隐私</value>
+  </data>
+  <data name="TermsPublicPrDescription" xml:space="preserve">
+    <value>拉取请求任务 上提交的所有拉取请求均为公开。多名开发者可以针对同一任务提交拉取请求。客户审查所有提交内容并选择批准哪个拉取请求。只有被批准的拉取请求才会触发付款。</value>
+  </data>
+  <data name="TermsPublicPrHeading" xml:space="preserve">
+    <value>公开拉取请求</value>
+  </data>
+  <data name="TermsRefundRightsDescription" xml:space="preserve">
+    <value>如果拉取请求被误批准，或所交付的工作实质性地未能满足任务要求，客户可以申请退款。退款申请必须在付款后7天内提交。拉取请求任务 将在5个工作日内审查退款申请，并通过原始付款方式处理符合条件的退款。对于欧盟居民，数字服务14天撤回权适用，详见我们的退款政策。对于菲律宾居民，第7394号共和国法案 规定的消费者保护权利得到完全尊重。完整详情请参阅我们的退款政策。</value>
+  </data>
+  <data name="TermsRefundRightsHeading" xml:space="preserve">
+    <value>退款权利</value>
+  </data>
+  <data name="TermsSeverabilityDescription" xml:space="preserve">
+    <value>如果本条款的任何条款被认定为不可执行，其余条款将继续完全有效。不可执行的条款将被修改至使其可执行的最低限度。</value>
+  </data>
+  <data name="TermsSeverabilityHeading" xml:space="preserve">
+    <value>可分割性</value>
+  </data>
+  <data name="TermsTaxDescription" xml:space="preserve">
+    <value>用户完全负责确定和履行因在 拉取请求任务 上进行交易而产生的自身纳税义务，包括向国内税务局或其所在司法管辖区同等机构申报所得税。拉取请求任务 不代表用户代扣税款，也不提供税务建议。拉取请求任务 可能收集税务识别信息（美国人员的W-9/W-8BEN税务申报表税务表格表格，其他司法管辖区的同等文件），并就超过适用门槛的美国收款人开具美国国税局 1099-K表格。拉取请求任务 遵守欧盟活动的数字平台数据申报指令申报要求以及 第12023号共和国法案 规定的菲律宾增值税要求。拉取请求任务 可能生成交易摘要以协助用户进行税务申报，但用户必须独立核实其纳税义务。</value>
+  </data>
+  <data name="TermsTaxHeading" xml:space="preserve">
+    <value>税务责任</value>
+  </data>
+  <data name="TermsUserConductDescription" xml:space="preserve">
+    <value>用户同意以合法方式使用 拉取请求任务。禁止的活动包括提交抄袭代码、操纵排行榜排名、创建多个账户以及从事欺诈性付款活动。完整详情请参阅我们的可接受使用政策。</value>
+  </data>
+  <data name="TermsUserConductHeading" xml:space="preserve">
+    <value>用户行为</value>
+  </data>
+  <data name="TermsWaiverDescription" xml:space="preserve">
+    <value>拉取请求任务 未能执行本条款的任何权利或条款，不构成对该权利或条款的放弃。任何放弃必须以书面形式作出，并由 拉取请求任务 授权代表签署。</value>
+  </data>
+  <data name="TermsWaiverHeading" xml:space="preserve">
+    <value>弃权</value>
+  </data>
+  <data name="PricingEnterpriseLink" xml:space="preserve">
+    <value>联系我们</value>
+  </data>
+  <data name="PricingFaqCurrencyAnswer" xml:space="preserve">
+    <value>所有交易均以美元进行。</value>
+  </data>
+  <data name="PricingFaqCurrencyQuestion" xml:space="preserve">
+    <value>支持哪些货币？</value>
+  </data>
+  <data name="PricingFaqMethodsAnswer" xml:space="preserve">
+    <value>我们通过安全支付处理商接受维萨、万事达、美国运通及其他主要信用卡和借记卡。</value>
+  </data>
+  <data name="PricingFaqMethodsQuestion" xml:space="preserve">
+    <value>接受哪些付款方式？</value>
+  </data>
+  <data name="PricingFaqMinBountyAnswer" xml:space="preserve">
+    <value>是的，客户为任务设置的最低赏金为1美元，没有上限。</value>
+  </data>
+  <data name="PricingFaqMinBountyQuestion" xml:space="preserve">
+    <value>是否有最低赏金金额？</value>
+  </data>
+  <data name="PricingFaqPayoutTimeAnswer" xml:space="preserve">
+    <value>客户批准您的拉取请求后，付款通常在3至5个工作日内处理完成。</value>
+  </data>
+  <data name="PricingFaqPayoutTimeQuestion" xml:space="preserve">
+    <value>我多久能收到付款？</value>
+  </data>
+  <data name="PricingFaqProcessAnswer" xml:space="preserve">
+    <value>当客户批准拉取请求时，系统会自动通过其付款方式扣除赏金金额。开发者可获得100%的赏金。</value>
+  </data>
+  <data name="PricingFaqProcessQuestion" xml:space="preserve">
+    <value>付款如何处理？</value>
+  </data>
+  <data name="PricingFaqWhenPaidAnswer" xml:space="preserve">
+    <value>当客户批准您的拉取请求后，付款将自动处理。开发者通过其首选付款方式获得100%的赏金。</value>
+  </data>
+  <data name="PricingFaqWhenPaidQuestion" xml:space="preserve">
+    <value>我何时能收到付款？</value>
+  </data>
+  <data name="PricingFeatureComparisonHeading" xml:space="preserve">
+    <value>功能对比</value>
+  </data>
+  <data name="PricingFeatureHeading" xml:space="preserve">
+    <value>功能</value>
+  </data>
+  <data name="PricingFeatureIncluded" xml:space="preserve">
+    <value>已包含</value>
+  </data>
+  <data name="PricingFeaturePayment" xml:space="preserve">
+    <value>支付处理</value>
+  </data>
+  <data name="PricingRefundDescription" xml:space="preserve">
+    <value>我们为有争议或未交付的工作提供公平的退款条款。请查阅完整退款政策以了解详情。</value>
+  </data>
+  <data name="PricingRefundHeading" xml:space="preserve">
+    <value>退款政策</value>
+  </data>
+  <data name="PricingRefundLink" xml:space="preserve">
+    <value>查看完整退款政策</value>
+  </data>
+  <data name="PrivacyAppiDescription" xml:space="preserve">
+    <value>如果您位于日本，您的个人信息受《个人信息保护法》保护，由个人信息保护委员会负责执行。拉取请求任务公布数据使用目的，实施网络安全和物理保障措施，并提供第三方数据共享的退出机制。如发生数据泄露，我们将通知个人信息保护委员会及受影响的个人。您有权请求披露、更正、停止使用和删除您的个人信息。请发送邮件至dpo@prtask.com以行使您的权利。</value>
+  </data>
+  <data name="PrivacyAppiHeading" xml:space="preserve">
+    <value>日本个人信息保护法</value>
+  </data>
+  <data name="PrivacyAustraliaDescription" xml:space="preserve">
+    <value>如果您位于澳大利亚，您的个人信息受《1988年隐私法》及澳大利亚隐私原则保护，由澳大利亚信息专员办公室负责执行。拉取请求任务维护最新的隐私政策，并参与可通报数据泄露计划。您有权访问和更正您的个人信息。拉取请求任务不会在未披露的情况下使用对您产生重大影响的自动化决策。拉取请求任务遵守2026年12月起生效的人工智能披露要求。请发送邮件至privacy@prtask.com以行使您的权利，或向澳大利亚信息专员办公室提出投诉。</value>
+  </data>
+  <data name="PrivacyAustraliaHeading" xml:space="preserve">
+    <value>澳大利亚《1988年隐私法》</value>
+  </data>
+  <data name="PrivacyAutomatedDecisionDescription" xml:space="preserve">
+    <value>拉取请求任务目前不使用对用户产生法律效力或类似重大影响的自动化决策或画像处理。如果拉取请求任务未来引入此类处理，我们将提供有关所涉逻辑、重要性和预期后果的有意义信息，并确保您有权获得人工干预、表达观点和对决定提出异议，如通用数据保护条例第22条及其他司法管辖区的等效规定所要求的那样。</value>
+  </data>
+  <data name="PrivacyAutomatedDecisionHeading" xml:space="preserve">
+    <value>自动化决策与画像</value>
+  </data>
+  <data name="PrivacyCcpaCategoriesDescription" xml:space="preserve">
+    <value>根据《加州消费者隐私法》，我们在过去12个月内收集的个人信息类别包括：标识符（姓名、电子邮件地址、用户名、互联网协议地址）；商业信息（交易历史、赏金支付）；互联网或电子网络活动（在拉取请求任务上的浏览历史、功能使用情况、日志数据）；职业信息（GitHub个人资料、作品集、技能）；以及地理位置数据（由互联网协议地址推断的大致位置）。我们不收集加州消费者隐私法定义的敏感个人信息。我们不会将您的个人信息出售或共享给第三方用于跨场景行为广告目的。</value>
+  </data>
+  <data name="PrivacyCcpaCategoriesHeading" xml:space="preserve">
+    <value>加州消费者隐私法数据类别</value>
+  </data>
+  <data name="PrivacyCcpaContactInfo" xml:space="preserve">
+    <value>如需提交加州消费者隐私法/加州隐私权法请求，请发送邮件至privacy@prtask.com，主题行注明"加州消费者隐私法请求"。我们将在处理请求前验证您的身份，并在45天内作出回应。拉取请求任务将全球隐私控制信号视为有效的个人信息出售或共享退出请求。</value>
+  </data>
+  <data name="PrivacyCcpaDescription" xml:space="preserve">
+    <value>如果您是加州居民，《加州消费者隐私法》（经《加州隐私权法》修订）赋予您有关个人信息的额外权利。拉取请求任务不会将您的个人信息出售或共享给第三方用于跨场景行为广告。拉取请求任务在本政策中提供加州消费者隐私法要求的11项强制披露，包括对所收集数据类别的12个月回溯。根据加州消费者隐私法/加州隐私权法，您有权：</value>
+  </data>
+  <data name="PrivacyCcpaHeading" xml:space="preserve">
+    <value>加州消费者隐私法合规</value>
+  </data>
+  <data name="PrivacyCcpaRightDeletion" xml:space="preserve">
+    <value>请求删除您的个人信息（受法律例外情况限制）</value>
+  </data>
+  <data name="PrivacyCcpaRightKnow" xml:space="preserve">
+    <value>了解我们收集、使用和披露的有关您的个人信息，包括12个月的回溯</value>
+  </data>
+  <data name="PrivacyCcpaRightLimit" xml:space="preserve">
+    <value>限制对敏感个人信息的使用（拉取请求任务不收集加州消费者隐私法定义的敏感个人信息）</value>
+  </data>
+  <data name="PrivacyCcpaRightNonDiscrimination" xml:space="preserve">
+    <value>行使加州消费者隐私法/加州隐私权法权利时不受歧视</value>
+  </data>
+  <data name="PrivacyCcpaRightOptOut" xml:space="preserve">
+    <value>退出个人信息的出售或共享（拉取请求任务不出售个人信息）</value>
+  </data>
+  <data name="PrivacyChangesDescription" xml:space="preserve">
+    <value>拉取请求任务可能会不时更新本隐私政策。重大变更将通过电子邮件或平台上的醒目通知在生效前至少30天进行告知。我们至少每年审查和更新本政策。本政策顶部的"最后更新"日期表示最近一次修订。您在变更生效日期后继续使用拉取请求任务即表示接受更新后的政策。本政策的历史版本可应要求提供。</value>
+  </data>
+  <data name="PrivacyChangesHeading" xml:space="preserve">
+    <value>本隐私政策的变更</value>
+  </data>
+  <data name="PrivacyChildrensDescription" xml:space="preserve">
+    <value>拉取请求任务不面向18岁以下用户。我们不会在知情情况下收集未成年人的个人数据。如果您认为未成年人已创建账户，请联系我们进行删除。</value>
+  </data>
+  <data name="PrivacyChildrensHeading" xml:space="preserve">
+    <value>儿童隐私</value>
+  </data>
+  <data name="PrivacyControllerDescription" xml:space="preserve">
+    <value>拉取请求任务是负责您个人数据的数据控制者。我们的数据保护官可通过dpo@prtask.com联系。如有一般隐私咨询，请联系privacy@prtask.com。我们的注册地址可在联系页面获取。如果您位于欧盟且拉取请求任务在欧盟没有设立机构，我们将按照通用数据保护条例第27条的要求任命欧盟代表。</value>
+  </data>
+  <data name="PrivacyControllerHeading" xml:space="preserve">
+    <value>数据控制者</value>
+  </data>
+  <data name="PrivacyCookieReferenceDescription" xml:space="preserve">
+    <value>拉取请求任务按照我们的网络缓存政策使用网络缓存及类似技术。基本网络缓存是平台运行所必需的。分析和营销网络缓存在欧盟、英国及其他要求事先同意的司法管辖区需要您的选择同意。您可以随时管理您的网络缓存偏好设置。请参阅我们的网络缓存政策，了解完整详情，包括所使用网络缓存的完整清单、用途和保留期限。</value>
+  </data>
+  <data name="PrivacyCookieReferenceHeading" xml:space="preserve">
+    <value>网络缓存及追踪技术</value>
+  </data>
+  <data name="PrivacyDataBreachDescription" xml:space="preserve">
+    <value>拉取请求任务维护完善的数据泄露应对计划。如发生个人数据泄露：（a）通用数据保护条例：拉取请求任务将在72小时内通知相关监管机构，并在泄露可能对数据主体的权利和自由造成高风险时通知受影响的个人；（b）菲律宾第10173号共和国法案：拉取请求任务将在72小时内通知国家隐私委员会及受影响的个人；（c）新西兰：对于可能造成严重伤害的泄露，在72小时内通知隐私专员及受影响的个人；（d）加州消费者隐私法：在法律规定的时限内通知受影响的加州居民；（e）所有司法管辖区：拉取请求任务将记录泄露事件，进行取证调查，实施遏制措施，向受影响用户发出通知，说明泄露情况、所涉数据类型及建议的保护措施，并进行事后审查。我们的数据保护官担任主要的泄露应对协调员。如有数据泄露问题，请联系dpo@prtask.com。</value>
+  </data>
+  <data name="PrivacyDataBreachHeading" xml:space="preserve">
+    <value>数据泄露通知</value>
+  </data>
+  <data name="PrivacyDataRightsDescription" xml:space="preserve">
+    <value>您有权访问拉取请求任务持有的您的个人数据、更正不准确或不完整的数据、请求删除您的数据（受法律保留要求限制），以及对您数据的处理提出异议。</value>
+  </data>
+  <data name="PrivacyDataRightsHeading" xml:space="preserve">
+    <value>您的数据权利</value>
+  </data>
+  <data name="PrivacyDataSecurityDescription" xml:space="preserve">
+    <value>我们对所有通信使用超文本传输安全协议加密，对GitHub 开放授权令牌使用最小必要权限范围，并采用行业标准安全实践。但是，没有任何系统是完全安全的。请将漏洞报告至security@prtask.com。</value>
+  </data>
+  <data name="PrivacyDataSecurityHeading" xml:space="preserve">
+    <value>数据安全</value>
+  </data>
+  <data name="PrivacyDoNotSellDescription" xml:space="preserve">
+    <value>拉取请求任务不会将您的个人信息出售给第三方。拉取请求任务不会将您的个人信息共享给第三方用于跨场景行为广告。如果此做法在未来发生变化，拉取请求任务将按照加州消费者隐私法/加州隐私权法的要求提供醒目的"请勿出售或共享我的个人信息"链接和"限制使用我的敏感个人信息"链接。拉取请求任务将全球隐私控制信号视为有效的退出请求。</value>
+  </data>
+  <data name="PrivacyDoNotSellHeading" xml:space="preserve">
+    <value>请勿出售或共享我的个人信息</value>
+  </data>
+  <data name="PrivacyDpdpDescription" xml:space="preserve">
+    <value>如果您位于印度，您的数字个人数据受《2023年数字个人数据保护法》保护，由印度数据保护委员会负责执行。拉取请求任务在处理您的数据前通过明确的肯定性行为获取您的同意。您有权：获取个人数据及处理活动的摘要；更正和更新您的数据；删除您的数据；指定他人代为行使权利；以及提交投诉。拉取请求任务维护投诉解决机制，并将及时响应您的请求。请发送邮件至dpo@prtask.com以行使您的权利或提交投诉。</value>
+  </data>
+  <data name="PrivacyDpdpHeading" xml:space="preserve">
+    <value>印度《2023年数字个人数据保护法》</value>
+  </data>
+  <data name="PrivacyGdprContactInfo" xml:space="preserve">
+    <value>如需行使上述任何权利，请联系我们的数据保护官，邮箱：dpo@prtask.com。我们将按照通用数据保护条例要求在30天内作出回应。拉取请求任务承认全球隐私控制信号并将其视为有效的退出请求。</value>
+  </data>
+  <data name="PrivacyGdprDescription" xml:space="preserve">
+    <value>如果您位于欧洲经济区，您的个人数据受《通用数据保护条例》（欧盟）2016/679保护。拉取请求任务根据上文第4节详述的合同履行、合法利益、同意和法律义务等合法依据处理您的数据。拉取请求任务实施隐私设计和默认隐私保护（第25条），维护处理活动记录（第30条），并对高风险处理活动进行数据保护影响评估。拉取请求任务承认并响应全球隐私控制信号。作为欧盟数据主体，您有权：</value>
+  </data>
+  <data name="PrivacyGdprHeading" xml:space="preserve">
+    <value>通用数据保护条例合规</value>
+  </data>
+  <data name="PrivacyGdprRightAccess" xml:space="preserve">
+    <value>访问我们持有的关于您的所有个人数据的副本</value>
+  </data>
+  <data name="PrivacyGdprRightErase" xml:space="preserve">
+    <value>删除您的个人数据（被遗忘权），受法律保留义务限制</value>
+  </data>
+  <data name="PrivacyGdprRightLodgeComplaint" xml:space="preserve">
+    <value>向您所在地的监管机构提出投诉</value>
+  </data>
+  <data name="PrivacyGdprRightObject" xml:space="preserve">
+    <value>对基于合法利益的处理（包括画像）提出异议</value>
+  </data>
+  <data name="PrivacyGdprRightPortability" xml:space="preserve">
+    <value>数据可携带性：以结构化、机器可读的格式接收您的数据</value>
+  </data>
+  <data name="PrivacyGdprRightRectify" xml:space="preserve">
+    <value>更正不准确或不完整的个人数据</value>
+  </data>
+  <data name="PrivacyGdprRightRestrict" xml:space="preserve">
+    <value>在某些情况下限制对您个人数据的处理</value>
+  </data>
+  <data name="PrivacyGdprRightWithdrawConsent" xml:space="preserve">
+    <value>在处理基于同意的情况下随时撤回同意</value>
+  </data>
+  <data name="PrivacyInfoCollectedDescription" xml:space="preserve">
+    <value>拉取请求任务收集以下类别的个人数据：（a）账户信息：当您通过支持的单点登录提供商（GitHub、谷歌、微软、Okta）登录时，我们收集您的用户名、显示名称、电子邮件地址和头像网址；（b）支付数据：当您发起或接收付款时，我们的支付提供商直接处理支付详情；开发者提供其首选付款方式的详情；（c）平台活动：任务和拉取请求活动、代码审查、评论及排行榜参与情况；（d）技术数据：互联网协议地址、浏览器类型、操作系统、设备信息及由互联网协议地址推断的大致地理位置；（e）了解您的客户验证数据：由我们的身份验证提供商处理的政府颁发的身份证明和自拍验证；（f）税务信息：出于税务合规目的收集的税务识别号码（W-9/W-8BEN税务申报表税务表格）。</value>
+  </data>
+  <data name="PrivacyInfoCollectedHeading" xml:space="preserve">
+    <value>我们收集的信息</value>
+  </data>
+  <data name="PrivacyInfoSharingDescription" xml:space="preserve">
+    <value>我们与以下类别的接收方共享您的信息：（a）支付处理商（包括Maya Business和Stripe），用于支付处理和开发者付款；（b）身份验证提供商，用于了解您的客户合规；（c）GitHub，用于身份验证和代码库集成；（d）Cloudflare，用于托管、内容分发网络和安全服务；（e）税务机关，在法律要求时（美国国税局、菲律宾国内税务局、数字平台数据申报指令下的欧盟税务机关）。您的公开个人资料（用户名、徽章、已完成的任务）在排行榜上可见。我们不会将您的个人数据出售给第三方。我们不会将您的数据共享给第三方用于跨场景行为广告。在适用法律、有效法院命令的要求下，或为保护拉取请求任务及其用户的安全和权利时，我们可能披露相关信息。</value>
+  </data>
+  <data name="PrivacyInfoSharingHeading" xml:space="preserve">
+    <value>信息共享</value>
+  </data>
+  <data name="PrivacyInfoUsageDescription" xml:space="preserve">
+    <value>我们使用您的信息来运营拉取请求任务平台、处理赏金支付、展示公开排行榜个人资料和成就徽章、就任务状态和付款与您进行沟通，以及防止欺诈或滥用。</value>
+  </data>
+  <data name="PrivacyInfoUsageHeading" xml:space="preserve">
+    <value>我们如何使用您的信息</value>
+  </data>
+  <data name="PrivacyInternationalDescription" xml:space="preserve">
+    <value>拉取请求任务服务器通过Cloudflare托管，您的数据可能在多个司法管辖区进行处理。对于从欧洲经济区、英国或其他有数据传输限制的司法管辖区传输个人数据，拉取请求任务实施了适当的保障措施，包括：欧盟委员会批准的标准合同条款；适用时采用英国国际数据传输协议或附录；在目的地国家被认定提供充分保护的情况下采用充分性决定；以及在传输影响评估要求时采取补充措施。拉取请求任务不会在没有充分保障措施的国家传输数据。您可以通过联系dpo@prtask.com请求获取用于国际传输的保障措施副本。</value>
+  </data>
+  <data name="PrivacyInternationalHeading" xml:space="preserve">
+    <value>国际数据传输</value>
+  </data>
+  <data name="PrivacyLegalBasisDescription" xml:space="preserve">
+    <value>我们在以下合法依据下处理您的个人数据：（a）合同履行：为履行与您的合同所必需的处理，包括账户管理、支付处理和平台运营；（b）合法利益：为我们的合法利益所必需的处理，包括欺诈预防、平台安全和服务改进，前提是这些利益未凌驾于您的权利之上；（c）同意：在您对特定处理给予明确同意的情况下，例如营销通信和非必要网络缓存；（d）法律义务：为遵守适用法律所必需的处理，包括税务申报、反洗钱合规和数据泄露通知要求。您可以随时撤回同意，这不影响撤回前基于同意的处理的合法性。</value>
+  </data>
+  <data name="PrivacyLegalBasisHeading" xml:space="preserve">
+    <value>处理的法律依据（通用数据保护条例第6条）</value>
+  </data>
+  <data name="PrivacyLgpdDescription" xml:space="preserve">
+    <value>如果您位于巴西，您的个人数据受《通用数据保护法》保护，由巴西国家数据保护局负责执行。拉取请求任务在包括同意、合同履行和合法利益等合法依据下处理您的数据。您有权：确认数据处理；访问您的数据；更正不完整或不准确的数据；匿名化、屏蔽或删除不必要的数据；数据可携带性；获取与第三方共享的信息；获取同意撤回的信息；以及随时撤回同意。拉取请求任务将在15天内响应数据主体请求。请发送邮件至dpo@prtask.com以行使您的巴西通用数据保护法权利。</value>
+  </data>
+  <data name="PrivacyLgpdHeading" xml:space="preserve">
+    <value>巴西巴西通用数据保护法</value>
+  </data>
+  <data name="PrivacyNzDescription" xml:space="preserve">
+    <value>如果您位于新西兰，您的个人信息受《2020年隐私法》保护，由隐私专员办公室负责执行。拉取请求任务遵守13项信息隐私原则。您有权访问和更正您的个人信息。对于可能造成或很可能造成严重伤害的任何泄露，拉取请求任务将在72小时内通知隐私专员及受影响的个人。拉取请求任务遵守跨境披露限制。请发送邮件至privacy@prtask.com以行使您的权利或向隐私专员提出投诉。</value>
+  </data>
+  <data name="PrivacyNzHeading" xml:space="preserve">
+    <value>新西兰《2020年隐私法》</value>
+  </data>
+  <data name="PrivacyPaymentDataDescription" xml:space="preserve">
+    <value>所有客户支付卡数据均由我们的支付提供商独家处理。拉取请求任务从不在我们的服务器上存储信用卡号码或卡片验证码。开发者付款详情被安全存储，仅与所选付款提供商共享。交易记录（金额、状态、日期）将为会计目的而保留。</value>
+  </data>
+  <data name="PrivacyPaymentDataHeading" xml:space="preserve">
+    <value>支付数据</value>
+  </data>
+  <data name="PrivacyPdpaSingaporeDescription" xml:space="preserve">
+    <value>如果您位于新加坡，您的个人数据受《2012年个人数据保护法》保护，由个人数据保护委员会负责执行。拉取请求任务已任命数据保护官，其联系信息可公开获取。您有权在30天内访问和更正您的个人数据。拉取请求任务将向个人数据保护委员会通报任何可能造成重大伤害或具有重大规模的数据泄露。我们仅在收集目的所必要的时间内保留您的个人数据。请发送邮件至dpo@prtask.com以行使您的权利。</value>
+  </data>
+  <data name="PrivacyPdpaSingaporeHeading" xml:space="preserve">
+    <value>新加坡个人数据保护法</value>
+  </data>
+  <data name="PrivacyPdpaThailandDescription" xml:space="preserve">
+    <value>如果您位于泰国，您的个人数据受《佛历2562年个人数据保护法》保护，由个人数据保护委员会负责执行。拉取请求任务在收集、使用或披露您的个人数据前获取同意。您有权：访问您的数据；以可读格式获取副本；对处理提出异议；请求删除或销毁；请求暂停使用；以及撤回同意。拉取请求任务实施适当的安全保障措施并定期进行审计。请发送邮件至dpo@prtask.com以行使您的权利。</value>
+  </data>
+  <data name="PrivacyPdpaThailandHeading" xml:space="preserve">
+    <value>泰国个人数据保护法</value>
+  </data>
+  <data name="PrivacyPipaDescription" xml:space="preserve">
+    <value>如果您位于韩国，您的个人信息受《个人信息保护法》保护，由个人信息保护委员会负责执行。拉取请求任务对数据处理获取真正自愿的同意（非捆绑或强制性同意）。您有权：访问您的数据；更正不准确的数据；请求暂停处理；请求删除；以及以安全机器可读格式进行数据可携带（2025年3月起生效）。拉取请求任务就算法流程和用户画像提供透明度说明。如果拉取请求任务在国内没有设立机构，我们将按要求任命国内代表。请发送邮件至dpo@prtask.com以行使您的权利。</value>
+  </data>
+  <data name="PrivacyPipaHeading" xml:space="preserve">
+    <value>韩国个人信息保护法</value>
+  </data>
+  <data name="PrivacyPipedaDescription" xml:space="preserve">
+    <value>如果您是加拿大居民，您的个人信息受《个人信息保护和电子文件法》保护，由加拿大隐私专员办公室负责执行。拉取请求任务遵守十项公平信息原则：问责制、确定目的、同意、限制收集、限制使用和披露、准确性、保障措施、公开性、个人访问和挑战合规。您有权访问您的个人信息并对其准确性提出质疑。拉取请求任务将在30天内响应访问请求。请发送邮件至privacy@prtask.com以行使您的权利或提出投诉。</value>
+  </data>
+  <data name="PrivacyPipedaHeading" xml:space="preserve">
+    <value>加拿大加拿大个人信息保护和电子文件法</value>
+  </data>
+  <data name="PrivacyPiplDescription" xml:space="preserve">
+    <value>如果您位于中国，您的个人信息受《个人信息保护法》保护，由国家互联网信息办公室负责执行。拉取请求任务不捆绑多个处理目的的同意，并对敏感个人信息单独获取同意。您有权：了解和决定处理方式；限制或拒绝处理；访问和复制您的数据；数据可携带性；更正不准确的数据；请求删除；以及请求对处理规则进行说明。拉取请求任务按要求进行个人信息保护影响评估。请发送邮件至dpo@prtask.com以行使您的权利。</value>
+  </data>
+  <data name="PrivacyPiplHeading" xml:space="preserve">
+    <value>中国个人信息保护法</value>
+  </data>
+  <data name="PrivacyPopiaDescription" xml:space="preserve">
+    <value>如果您位于南非，您的个人信息受《个人信息保护法》保护，由信息监管机构负责执行。拉取请求任务遵守合法处理的八项条件：问责制、处理限制、目的说明、进一步处理限制、信息质量、公开性、安全保障措施和数据主体参与。您有权访问、更正和删除您的个人信息。拉取请求任务将在合理可行的情况下尽快向信息监管机构及受影响的个人通报任何安全漏洞。请发送邮件至dpo@prtask.com以行使您的权利。</value>
+  </data>
+  <data name="PrivacyPopiaHeading" xml:space="preserve">
+    <value>南非南非个人信息保护法</value>
+  </data>
+  <data name="PrivacyRa10173Description" xml:space="preserve">
+    <value>如果您是菲律宾公民或居民，您的个人数据受第10173号共和国法案（《2012年数据隐私法》）保护，由国家隐私委员会负责执行。拉取请求任务遵守透明度、合法目的和比例原则。您有权：了解处理的目的和范围；访问您的个人数据；对处理提出异议；删除或屏蔽个人数据；更正不准确的数据；向国家隐私委员会提出投诉；以及就未经授权的处理索赔损害赔偿。拉取请求任务已任命数据保护官，并将按照处理敏感个人信息的实体要求向国家隐私委员会进行登记。请发送邮件至dpo@prtask.com联系我们的数据保护官以行使您的权利。</value>
+  </data>
+  <data name="PrivacyRa10173Heading" xml:space="preserve">
+    <value>菲律宾数据隐私法（第10173号共和国法案）</value>
+  </data>
+  <data name="PrivacyThirdPartyDescription" xml:space="preserve">
+    <value>拉取请求任务与第三方服务集成，包括用于身份验证和代码库集成的GitHub、用于交易处理的支付处理商（包括Maya Business）、用于托管和内容分发网络的Cloudflare，以及用于了解您的客户合规的身份验证提供商。每个第三方服务均按照其自身的隐私政策运营。我们仅共享每个集成功能所需的最少数据。我们按照通用数据保护条例和适用数据保护法律的要求，与所有第三方处理商维护数据处理协议。</value>
+  </data>
+  <data name="PrivacyThirdPartyHeading" xml:space="preserve">
+    <value>第三方服务</value>
+  </data>
+  <data name="PrivacyUkGdprDescription" xml:space="preserve">
+    <value>如果您位于英国，您的个人数据受英国通用数据保护条例和《2018年数据保护法》保护，由信息专员办公室负责执行。您享有上述欧盟数据主体相同的权利（根据英国法律作出相应调整）。拉取请求任务为处理英国居民数据维护合法依据，并实施适当的技术和组织安全措施。如果拉取请求任务在英国没有设立机构，我们将按要求任命英国代表。如需行使您的权利或提出投诉，请联系我们的数据保护官（dpo@prtask.com）或英国信息专员办公室（ico.org.uk）。</value>
+  </data>
+  <data name="PrivacyUkGdprHeading" xml:space="preserve">
+    <value>英国通用数据保护条例与《2018年数据保护法》</value>
+  </data>
+  <data name="BrandTagline" xml:space="preserve">
+    <value>通过 拉取请求 赚取收入。</value>
+  </data>
+  <data name="CategoryPlatform" xml:space="preserve">
+    <value>平台</value>
+  </data>
+  <data name="CategoryClient" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="CategoryAccount" xml:space="preserve">
+    <value>账户</value>
+  </data>
+  <data name="CategoryLegal" xml:space="preserve">
+    <value>法律</value>
+  </data>
+  <data name="CategoryInfo" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="LoginLabel" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="RefundLabel" xml:space="preserve">
+    <value>退款</value>
+  </data>
+  <data name="HomeLabel" xml:space="preserve">
+    <value>首页</value>
+  </data>
+  <data name="HomeAutomaticPaymentValue" xml:space="preserve">
+    <value>自动</value>
+  </data>
+  <data name="HomeDeveloperPayoutValue" xml:space="preserve">
+    <value>百分之百</value>
+  </data>
+  <data name="HomeTotalBountyPoolValue" xml:space="preserve">
+    <value>$零</value>
+  </data>
+  <data name="HomeDevelopersValue" xml:space="preserve">
+    <value>零</value>
+  </data>
+  <data name="HomeOpenTasksValue" xml:space="preserve">
+    <value>零</value>
+  </data>
+  <data name="DashboardActiveTasksValue" xml:space="preserve">
+    <value>零</value>
+  </data>
+  <data name="DashboardUsersValue" xml:space="preserve">
+    <value>零</value>
+  </data>
+  <data name="DashboardPrsValue" xml:space="preserve">
+    <value>零</value>
+  </data>
+  <data name="DashboardTotalBountiesValue" xml:space="preserve">
+    <value>$零</value>
+  </data>
+  <data name="CreateTaskDescriptionPlaceholder" xml:space="preserve">
+    <value>详细描述任务...</value>
+  </data>
+  <data name="CreateTaskTitlePlaceholder" xml:space="preserve">
+    <value>修复用户服务中的身份验证错误</value>
+  </data>
+  <data name="PaymentUserIdLabel" xml:space="preserve">
+    <value>您的用户名</value>
+  </data>
+  <data name="PaymentSeoDescription" xml:space="preserve">
+    <value>查看您的付款历史记录和交易详细信息。</value>
+  </data>
+  <data name="PaymentUserIdPlaceholder" xml:space="preserve">
+    <value>输入您的用户 编号</value>
+  </data>
+  <data name="PaymentTaskNotApplicable" xml:space="preserve">
+    <value>不适用</value>
+  </data>
+  <data name="PaymentDescriptionHeading" xml:space="preserve">
+    <value>关于付款记录</value>
+  </data>
+  <data name="PaymentDescriptionParagraph3" xml:space="preserve">
+    <value>对于客户来说，此页面还可以记录向完成您的任务的开发人员支付的所有赏金。您可以将付款与特定任务交叉引用，以验证资金是否正确分配。如果您对特定交易有疑问或需要对付款提出异议，拉取请求任务 提供了专用的支持渠道，可通过您的账户设置进行访问。所有支付数据均按照 支付卡行业数据安全标准 标准进行加密和安全存储。</value>
+  </data>
+  <data name="PaymentDescriptionParagraph2" xml:space="preserve">
+    <value>当任务所有者批准并合并拉取请求时，拉取请求任务 会自动处理付款。开发者将获得 100% 的奖金，且不会从其收入中扣除任何平台费用。付款状态实时更新，让您可以查看交易是否待处理、已完成或需要关注。您可以通过输入您的用户 编号 来过滤您的付款历史记录，以查看特定于您帐户的交易。</value>
+  </data>
+  <data name="PaymentDescriptionParagraph1" xml:space="preserve">
+    <value>付款历史记录页面提供与您的 拉取请求任务 帐户关联的所有金融交易的全面视图。无论您是接收奖金的开发人员还是客户资助任务奖金，此页面都可以让您完全透明地了解通过平台进行的每笔付款。每条交易记录都包括日期、关联任务、金额、当前状态和付款类型，以便您可以放心地跟踪您的财务状况。</value>
+  </data>
+  <data name="PaymentSeoTitle" xml:space="preserve">
+    <value>付款 - 拉取请求任务</value>
+  </data>
+  <data name="SettingsDisplayNamePlaceholder" xml:space="preserve">
+    <value>您的显示名称</value>
+  </data>
+  <data name="SettingsPayoutDetailsPlaceholder" xml:space="preserve">
+    <value>账户号码</value>
+  </data>
+  <data name="SettingsTimezoneUtc" xml:space="preserve">
+    <value>协调世界时 </value>
+  </data>
+  <data name="SettingsTimezoneManila" xml:space="preserve">
+    <value>亚洲/马尼拉 (GMT+8)</value>
+  </data>
+  <data name="SettingsTimezoneEastern" xml:space="preserve">
+    <value>东部时间 (GMT-5)</value>
+  </data>
+  <data name="SettingsTimezoneLondon" xml:space="preserve">
+    <value>伦敦 (GMT+0)</value>
+  </data>
+  <data name="TaskComplexityTrivial" xml:space="preserve">
+    <value>极简</value>
+  </data>
+  <data name="TaskComplexitySimple" xml:space="preserve">
+    <value>简单</value>
+  </data>
+  <data name="TaskComplexityMedium" xml:space="preserve">
+    <value>中等</value>
+  </data>
+  <data name="TaskComplexityComplex" xml:space="preserve">
+    <value>复杂</value>
+  </data>
+  <data name="TaskComplexityExpert" xml:space="preserve">
+    <value>专家</value>
+  </data>
+  <data name="WorkItemTypeEpic" xml:space="preserve">
+    <value>史诗</value>
+  </data>
+  <data name="WorkItemTypeFeature" xml:space="preserve">
+    <value>功能</value>
+  </data>
+  <data name="WorkItemTypeStory" xml:space="preserve">
+    <value>用户故事</value>
+  </data>
+  <data name="WorkItemTypeTask" xml:space="preserve">
+    <value>任务</value>
+  </data>
+  <data name="WorkItemTypeBug" xml:space="preserve">
+    <value>漏洞</value>
+  </data>
+</root>

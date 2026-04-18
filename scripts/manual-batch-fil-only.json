@@ -1,0 +1,23 @@
+{
+  "fil": {
+    "AccessibilityLabel": "Aksesibilidad",
+    "CookieAnalyticsLabel": "Pagsusuri",
+    "DownloadFeatureAvailable": "Magagamit",
+    "DownloadWebAppHeading": "Aplikasyong Web",
+    "HowItWorksStep3Heading": "Pagmamarka ng Kumplikado",
+    "LeaderboardHeaderUser": "Gumagamit",
+    "LeaderboardLabel": "Talaan ng Ranggo",
+    "LeaderboardPageHeading": "Talaan ng Ranggo",
+    "PrDetailSplitViewLabel": "Hating Tanaw",
+    "PrDetailUnifiedViewLabel": "Pinag-isang Tanaw",
+    "PricingFeatureCodeReview": "Pagsusuri ng Code",
+    "PricingFeatureLeaderboard": "Talaan ng Ranggo",
+    "RefundLabel": "Pagbabalik ng Bayad",
+    "SettingsDisplayNameLabel": "Pangalan na Ipapakita",
+    "SettingsProfileHeading": "Propayl",
+    "SettingsTimezoneLabel": "Sonang Oras",
+    "SettingsTwoFactorLabel": "Dalawang-Salik na Pagpapatunay (2FA)",
+    "TaskDetailSourceCodeHeading": "Pinagmulan na Code",
+    "TaskListComplexityLabel": "Kompleksidad"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "es": {
+    "TermsAcceptedPaymentDescription": "Los clientes pagan las recompensas mediante metodos de pago admitidos, incluidas las tarjetas de credito. Los desarrolladores reciben los pagos a traves del metodo que hayan elegido. Los desarrolladores deben configurar su metodo de cobro preferido en la configuracion de su cuenta antes de enviar pull requests.",
+    "TermsAutoPaymentDescription": "A los clientes se les cobra automaticamente el importe de la recompensa cuando aprueban un pull request. Al aprobar un pull request, el cliente autoriza el cargo. No se requiere deposito previo.",
+    "TermsConfidentialityDescription": "Los usuarios aceptan mantener la confidencialidad de cualquier informacion no publica obtenida a traves de la plataforma, incluidos, entre otros elementos, el codigo de repositorios privados, los requisitos comerciales de los clientes y los detalles de pago de otros usuarios."
+  },
+  "fil": {
+    "TermsAcceptedPaymentDescription": "Ang mga kliyente ay nagbabayad ng mga bounty sa pamamagitan ng mga suportadong paraan ng bayad, kabilang ang mga credit card. Tinatanggap ng mga developer ang kanilang payout sa pamamagitan ng napili nilang paraan. Dapat i-configure ng mga developer ang gusto nilang payout method sa kanilang account settings bago magsumite ng mga pull request.",
+    "TermsAutoPaymentDescription": "Awtomatikong sinisingil ang mga kliyente ng halaga ng bounty kapag inaprubahan nila ang isang pull request. Sa pag-apruba ng pull request, pinahihintulutan ng kliyente ang pagsingil. Walang kinakailangang paunang deposito.",
+    "TermsConfidentialityDescription": "Sumasang-ayon ang mga user na panatilihing kumpidensyal ang anumang hindi pampublikong impormasyon na nakuha sa pamamagitan ng platform, kabilang ngunit hindi limitado sa code ng private repositories, mga business requirement ng kliyente, at mga detalye ng bayad ng ibang mga user."
+  },
+  "fr": {
+    "TermsAcceptedPaymentDescription": "Les clients paient les primes via des moyens de paiement pris en charge, y compris les cartes bancaires. Les developpeurs recoivent leurs paiements par le moyen qu'ils ont choisi. Les developpeurs doivent configurer leur methode de paiement preferee dans les parametres de leur compte avant de soumettre des pull requests.",
+    "TermsAutoPaymentDescription": "Les clients sont automatiquement debites du montant de la prime lorsqu'ils approuvent un pull request. En approuvant un pull request, le client autorise le debit. Aucun depot prealable n'est requis.",
+    "TermsConfidentialityDescription": "Les utilisateurs acceptent de garder confidentielle toute information non publique obtenue via la plateforme, y compris notamment le code de depots prives, les exigences commerciales des clients et les details de paiement des autres utilisateurs."
+  },
+  "hi": {
+    "TermsAcceptedPaymentDescription": "Clients supported payment methods, including credit cards, ke madhyam se bounty ka bhugtan karte hain. Developers apni chuni hui method ke through payout prapt karte hain. Pull requests submit karne se pehle developers ko apne account settings me apni preferred payout method configure karni hogi.",
+    "TermsAutoPaymentDescription": "Jab clients kisi pull request ko approve karte hain, tab unse bounty amount automatic roop se charge kiya jata hai. Pull request approve karke client us charge ko authorize karta hai. Koi upfront deposit avashyak nahin hai.",
+    "TermsConfidentialityDescription": "Users sahamat hote hain ki platform ke madhyam se prapt kisi bhi non-public information ko gupt rakhenge, jisme private repository code, client business requirements aur anya users ke payment details shamil hain, lekin in tak simit nahin hain."
+  },
+  "id": {
+    "TermsAcceptedPaymentDescription": "Klien membayar bounty melalui metode pembayaran yang didukung, termasuk kartu kredit. Pengembang menerima payout melalui metode yang mereka pilih. Pengembang harus mengatur metode payout pilihan mereka di pengaturan akun sebelum mengirimkan pull request.",
+    "TermsAutoPaymentDescription": "Klien secara otomatis dikenai biaya sebesar nilai bounty ketika mereka menyetujui pull request. Dengan menyetujui pull request, klien mengizinkan penagihan tersebut. Tidak diperlukan setoran di muka.",
+    "TermsConfidentialityDescription": "Pengguna setuju untuk menjaga kerahasiaan setiap informasi non-publik yang diperoleh melalui platform, termasuk namun tidak terbatas pada kode repositori privat, kebutuhan bisnis klien, dan detail pembayaran pengguna lain."
+  },
+  "it": {
+    "TermsAcceptedPaymentDescription": "I clienti pagano le bounty tramite i metodi di pagamento supportati, incluse le carte di credito. Gli sviluppatori ricevono i pagamenti tramite il metodo che hanno scelto. Gli sviluppatori devono configurare il metodo di pagamento preferito nelle impostazioni del proprio account prima di inviare pull request.",
+    "TermsAutoPaymentDescription": "Ai clienti viene addebitato automaticamente l'importo della bounty quando approvano una pull request. Approvando una pull request, il cliente autorizza l'addebito. Non e richiesto alcun deposito anticipato.",
+    "TermsConfidentialityDescription": "Gli utenti accettano di mantenere riservate tutte le informazioni non pubbliche ottenute tramite la piattaforma, incluse, a titolo esemplificativo ma non esaustivo, il codice di repository private, i requisiti aziendali dei clienti e i dettagli di pagamento di altri utenti."
+  },
+  "ja": {
+    "TermsAcceptedPaymentDescription": "クライアントは、クレジットカードを含む対応済みの支払い方法を通じて bounty を支払います。開発者は、自身が選択した方法で支払いを受け取ります。開発者は、pull request を送信する前に、希望する payout method を account settings で設定しておく必要があります。",
+    "TermsAutoPaymentDescription": "クライアントが pull request を承認すると、bounty amount が自動的に請求されます。Pull request を承認することにより、クライアントはその請求を承認したものとみなされます。事前の deposit は必要ありません。",
+    "TermsConfidentialityDescription": "ユーザーは、platform を通じて取得したあらゆる non-public information を機密として保持することに同意します。これには、private repository code、client business requirements、他の users の payment details が含まれますが、これらに限られません。"
+  },
+  "ko": {
+    "TermsAcceptedPaymentDescription": "클라이언트는 신용카드를 포함한 지원되는 결제 수단을 통해 bounty를 지불합니다. 개발자는 자신이 선택한 방법으로 payout을 받습니다. 개발자는 pull request를 제출하기 전에 account settings에서 선호하는 payout method를 구성해야 합니다.",
+    "TermsAutoPaymentDescription": "클라이언트가 pull request를 승인하면 bounty amount가 자동으로 청구됩니다. Pull request를 승인함으로써 클라이언트는 해당 청구를 승인하게 됩니다. 선결제 deposit은 필요하지 않습니다.",
+    "TermsConfidentialityDescription": "사용자는 platform을 통해 얻은 모든 non-public information을 기밀로 유지하는 데 동의합니다. 여기에는 private repository code, client business requirements, 그리고 다른 users의 payment details가 포함되지만 이에 한정되지 않습니다."
+  },
+  "nl": {
+    "TermsAcceptedPaymentDescription": "Klanten betalen bounties via ondersteunde betaalmethoden, waaronder creditcards. Ontwikkelaars ontvangen uitbetalingen via de door hen gekozen methode. Ontwikkelaars moeten hun voorkeursmethode voor uitbetaling configureren in hun accountinstellingen voordat zij pull requests indienen.",
+    "TermsAutoPaymentDescription": "Klanten worden automatisch belast met het bountybedrag wanneer zij een pull request goedkeuren. Door een pull request goed te keuren, autoriseert de klant deze afschrijving. Er is geen voorafgaande storting vereist.",
+    "TermsConfidentialityDescription": "Gebruikers stemmen ermee in om alle niet-openbare informatie die via het platform is verkregen vertrouwelijk te houden, waaronder, maar niet beperkt tot, code uit private repositories, zakelijke vereisten van klanten en betalingsgegevens van andere gebruikers."
+  },
+  "pt": {
+    "TermsAcceptedPaymentDescription": "Os clientes pagam as bounties por meio de metodos de pagamento suportados, incluindo cartoes de credito. Os desenvolvedores recebem os pagamentos por meio do metodo escolhido. Os desenvolvedores devem configurar seu metodo preferido de recebimento nas configuracoes da conta antes de enviar pull requests.",
+    "TermsAutoPaymentDescription": "Os clientes sao cobrados automaticamente pelo valor da bounty quando aprovam um pull request. Ao aprovar um pull request, o cliente autoriza a cobranca. Nao e necessario nenhum deposito antecipado.",
+    "TermsConfidentialityDescription": "Os usuarios concordam em manter confidencial toda informacao nao publica obtida por meio da plataforma, incluindo, entre outras, codigo de repositorios privados, requisitos comerciais dos clientes e detalhes de pagamento de outros usuarios."
+  },
+  "ru": {
+    "TermsAcceptedPaymentDescription": "Клиенты оплачивают bounty через поддерживаемые способы оплаты, включая банковские карты. Разработчики получают выплаты выбранным ими способом. Разработчики должны настроить предпочитаемый способ выплаты в настройках своей учетной записи до отправки pull request.",
+    "TermsAutoPaymentDescription": "С клиентов автоматически списывается сумма bounty, когда они одобряют pull request. Одобряя pull request, клиент разрешает такое списание. Предварительный депозит не требуется.",
+    "TermsConfidentialityDescription": "Пользователи соглашаются сохранять конфиденциальность любой непубличной информации, полученной через платформу, включая, помимо прочего, код private repositories, бизнес-требования клиентов и платежные данные других пользователей."
+  },
+  "tr": {
+    "TermsAcceptedPaymentDescription": "Musteriler bounty odemelerini kredi kartlari dahil desteklenen odeme yontemleri araciligiyla yapar. Gelistiriciler odemelerini sectikleri yontem uzerinden alir. Gelistiriciler pull request gondermeden once tercih ettikleri payout method'u account settings icinde yapilandirmalidir.",
+    "TermsAutoPaymentDescription": "Musteriler bir pull request'i onayladiklarinda bounty amount otomatik olarak tahsil edilir. Bir pull request'i onaylayarak musteri bu tahsilati yetkilendirir. Onceden depozito gerekmez.",
+    "TermsConfidentialityDescription": "Kullanicilar, platform araciligiyla elde edilen tum non-public information'i gizli tutmayi kabul eder. Buna private repository code, client business requirements ve diger users'in payment details bilgileri dahildir ancak bunlarla sinirli degildir."
+  }
+}

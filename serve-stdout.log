@@ -1,0 +1,21 @@
+WebRootPath: C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: https://0.0.0.0:56740
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\work\prtask.com\serve\bin\Release\net11.0
+SERVING_ON: https://0.0.0.0:56740
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET https://localhost:56740/en/ - - -
+DEBUG: ReqPath=/en/ TrimmedPath=en IndexPath=en/index.html IndexFilePath=C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\en\index.html Exists=True
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Fallback {*path:nonfile}'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/index.html'. Physical path: 'C:\work\prtask.com\src\PrTask.Client\bin\Release\net10.0\wwwroot\index.html'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Fallback {*path:nonfile}'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET https://localhost:56740/index.html - 200 254 text/html 34.8256ms

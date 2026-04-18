@@ -1,0 +1,6 @@
+@page "/tasks/{TaskId}"
+<PrTask.SharedUI.Pages.TaskDetailPage TaskId="@TaskId" />
+@code {
+    [Parameter]
+    public string TaskId { get; set; } = string.Empty;
+}

@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <EnableTrimAnalyzer>false</EnableTrimAnalyzer>
+    <EnableAotAnalyzer>false</EnableAotAnalyzer>
+    <EnableSingleFileAnalyzer>false</EnableSingleFileAnalyzer>
+    <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
+    <BlazorWebAssemblyLoadAllGlobalizationData>true</BlazorWebAssemblyLoadAllGlobalizationData>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="10.0.0-preview.3.25172.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="10.0.0-preview.3.25172.1" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="10.0.0-preview.3.25171.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PrTask.Application\PrTask.Application.csproj" />
+    <ProjectReference Include="..\PrTask.Domain\PrTask.Domain.csproj" />
+    <ProjectReference Include="..\PrTask.SharedUI\PrTask.SharedUI.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <TrimmerRootAssembly Include="Microsoft.Extensions.Configuration.EnvironmentVariables" />
+  </ItemGroup>
+  <Target Name="TranspileServerToWss" BeforeTargets="Build" Condition="Exists('$(ProjectDir)..\PrTask.Server\Endpoints')">
+    <Exec Command="dotnet run --project &quot;$(ProjectDir)..\PrTask.Transpiler\PrTask.Transpiler.csproj&quot; -c Release -- wss &quot;$(ProjectDir)..\PrTask.Server\Endpoints&quot; &quot;$(ProjectDir)..\..\infra\cloudflare-worker\src&quot;" EnvironmentVariables="DOTNET_ROLL_FORWARD=LatestMajor" />
+  </Target>
+  <Target Name="CopyStaticAssets" AfterTargets="Build">
+    <ItemGroup>
+      <StaticWwwrootFiles Include="$(ProjectDir)wwwroot\favicon.ico;$(ProjectDir)wwwroot\icon-192.png" />
+      <SharedUiCssFiles Include="$(ProjectDir)..\PrTask.SharedUI\wwwroot\css\**\*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(StaticWwwrootFiles)" DestinationFolder="$(OutputPath)wwwroot" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(SharedUiCssFiles)" DestinationFolder="$(OutputPath)wwwroot\_content\PrTask.SharedUI\css" SkipUnchangedFiles="true" />
+  </Target>
+  <Target Name="PrerenderHtml" AfterTargets="Build">
+    <Exec Command="dotnet run --project &quot;$(ProjectDir)..\PrTask.Prerender\PrTask.Prerender.csproj&quot; -c Release -- &quot;$(OutputPath)wwwroot&quot;" EnvironmentVariables="DOTNET_ROLL_FORWARD=LatestMajor" />
+  </Target>
+  <Target Name="FingerprintHtml" AfterTargets="PrerenderHtml">
+    <Exec Command="dotnet run --project &quot;$(ProjectDir)..\PrTask.Fingerprint\PrTask.Fingerprint.csproj&quot; -c Release -- &quot;$(OutputPath.TrimEnd('\'))&quot;" EnvironmentVariables="DOTNET_ROLL_FORWARD=LatestMajor" />
+  </Target>
+  <PropertyGroup>
+    <SitemapScript>$(MSBuildThisFileDirectory)..\..\scripts\Generate-Sitemap.csx</SitemapScript>
+    <SitemapRobots>$(ProjectDir)wwwroot\robots.txt</SitemapRobots>
+    <SitemapBaseUrl Condition="'$(SITEMAP_BASE_URL)' != ''">$(SITEMAP_BASE_URL)</SitemapBaseUrl>
+  </PropertyGroup>
+  <Target Name="CheckTranslations" AfterTargets="FingerprintHtml">
+    <Exec Command="dotnet-script &quot;$(MSBuildThisFileDirectory)..\..\scripts\Check-Translations.csx&quot; --wwwroot &quot;$(OutputPath)wwwroot&quot; --repo-root &quot;$(MSBuildThisFileDirectory)..\..&quot;" />
+  </Target>
+  <Target Name="GenerateSitemap" AfterTargets="FingerprintHtml">
+    <PropertyGroup>
+      <SitemapOutput>$(OutputPath)wwwroot\sitemap.xml</SitemapOutput>
+    </PropertyGroup>
+    <Exec Command="dotnet-script &quot;$(SitemapScript)&quot; --wwwroot &quot;$(OutputPath)wwwroot&quot; --robots-file &quot;$(SitemapRobots)&quot; --base-url &quot;$(SitemapBaseUrl)&quot; --output-file &quot;$(SitemapOutput)&quot; --source-file &quot;$(ProjectDir)wwwroot\sitemap.xml&quot; --update-source" />
+  </Target>
+</Project>

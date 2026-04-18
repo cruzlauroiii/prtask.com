@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <NoWarn>$(NoWarn);CA1716;RCS1141;SA1402;S2386;S3887;MA0016</NoWarn>
+  </PropertyGroup>
+</Project>

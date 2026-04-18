@@ -1,0 +1,22 @@
+@page "/inventory-search"
+@inject NavigationManager Nav
+
+<div style="width:100%">
+    <header class="toolbar" style="width:100%">
+        <label class="inventory_list_search_layout" style="width:100%">
+            <input class="inventory_search" style="width:100%" type="text" />
+        </label>
+    </header>
+    <div class="inventory_list_recycler_view" style="width:100%"></div>
+    <span class="preview" style="width:100%"></span>
+    <div class="empty">
+        <img style="width:100%" src="img/ic_empty_search_image.png" alt="ic_empty_search_image" />
+        <span class="empty_text_view"></span>
+    </div>
+    <div class="error" style="width:100%"></div>
+    <div class="loader" style="width:100%"></div>
+</div>
+
+@code {
+    private string Field2131362512 { get; set; } = string.Empty;
+}

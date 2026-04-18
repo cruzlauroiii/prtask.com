@@ -1,0 +1,64 @@
+{
+  "es": {
+    "PricingDescriptionHeading": "Precios de PrTask: transparente y favorable para desarrolladores",
+    "PricingFaqMinBountyQuestion": "¿Hay un monto minimo de recompensa?",
+    "PrivacyAustraliaDescription": "Si se encuentra en Australia, su informacion personal esta protegida por la Privacy Act 1988 y los Australian Privacy Principles (APP). PrTask cumple con los requisitos de los APP sobre recopilacion, uso, divulgacion, seguridad y acceso.",
+    "PrivacyDpdpDescription": "Si se encuentra en India, sus datos personales digitales estan protegidos por la Digital Personal Data Protection Act 2023 (DPDP). PrTask obtiene su consentimiento mediante una accion afirmativa clara antes de procesar datos y respeta sus derechos de acceso, correccion, eliminacion y queja ante la autoridad correspondiente.",
+    "PrivacyDpdpHeading": "Ley DPDP de India 2023"
+  },
+  "fr": {
+    "PricingDescriptionHeading": "Tarification PrTask — transparente et favorable aux developpeurs",
+    "PricingFaqMinBountyQuestion": "Y a-t-il un montant minimum de recompense ?",
+    "PrivacyAustraliaDescription": "Si vous etes en Australie, vos informations personnelles sont protegees par la Privacy Act 1988 et les Australian Privacy Principles (APP). PrTask respecte les exigences des APP concernant la collecte, l'utilisation, la divulgation, la securite et l'acces.",
+    "PrivacyDpdpDescription": "Si vous etes en Inde, vos donnees personnelles numeriques sont protegees par la Digital Personal Data Protection Act 2023 (DPDP). PrTask obtient un consentement explicite avant le traitement et respecte vos droits d'acces, de rectification, d'effacement et de reclamation.",
+    "PrivacyDpdpHeading": "Loi DPDP Inde 2023"
+  },
+  "it": {
+    "PricingDescriptionHeading": "Prezzi di PrTask — trasparenti e favorevoli agli sviluppatori",
+    "PricingFaqMinBountyQuestion": "Esiste un importo minimo di bounty?",
+    "PrivacyAustraliaDescription": "Se ti trovi in Australia, le tue informazioni personali sono protette dalla Privacy Act 1988 e dagli Australian Privacy Principles (APP). PrTask rispetta i requisiti APP per raccolta, uso, divulgazione, sicurezza e accesso.",
+    "PrivacyDpdpDescription": "Se ti trovi in India, i tuoi dati personali digitali sono protetti dal Digital Personal Data Protection Act 2023 (DPDP). PrTask ottiene il consenso con un'azione affermativa chiara prima del trattamento e rispetta i tuoi diritti di accesso, correzione, cancellazione e reclamo.",
+    "PrivacyDpdpHeading": "Legge DPDP India 2023"
+  },
+  "ja": {
+    "PricingDescriptionHeading": "PrTaskの料金 — 透明で開発者に優しい",
+    "PricingFaqMinBountyQuestion": "最小のバウンティ金額はありますか？",
+    "PrivacyAustraliaDescription": "オーストラリアにお住まいの場合、個人情報はPrivacy Act 1988およびAustralian Privacy Principles (APP)により保護されます。PrTaskは収集、利用、開示、セキュリティ、アクセスに関するAPP要件に準拠します。",
+    "PrivacyDpdpDescription": "インドにお住まいの場合、個人デジタルデータはDigital Personal Data Protection Act 2023 (DPDP)により保護されます。PrTaskは処理前に明確な同意を取得し、アクセス、訂正、削除、苦情申立ての権利を尊重します。",
+    "PrivacyDpdpHeading": "インドDPDP法 2023"
+  },
+  "ko": {
+    "PricingDescriptionHeading": "PrTask 요금 — 투명하고 개발자 친화적",
+    "PricingFaqMinBountyQuestion": "최소 바운티 금액이 있나요?",
+    "PrivacyAustraliaDescription": "호주에 거주하는 경우 개인 정보는 Privacy Act 1988 및 Australian Privacy Principles (APP)에 의해 보호됩니다. PrTask는 수집, 사용, 공개, 보안 및 접근에 관한 APP 요구 사항을 준수합니다.",
+    "PrivacyDpdpDescription": "인도에 거주하는 경우 디지털 개인 데이터는 Digital Personal Data Protection Act 2023 (DPDP)에 의해 보호됩니다. PrTask는 처리 전에 명확한 동의를 받고, 접근, 정정, 삭제 및 이의 제기 권리를 존중합니다.",
+    "PrivacyDpdpHeading": "인도 DPDP 법 2023"
+  },
+  "nl": {
+    "PricingDescriptionHeading": "PrTask-prijzen — transparant en ontwikkelaarsvriendelijk",
+    "PricingFaqMinBountyQuestion": "Is er een minimaal bountybedrag?",
+    "PrivacyAustraliaDescription": "Als u zich in Australie bevindt, worden uw persoonsgegevens beschermd onder de Privacy Act 1988 en de Australian Privacy Principles (APP). PrTask voldoet aan de APP-eisen voor verzameling, gebruik, verstrekking, beveiliging en toegang.",
+    "PrivacyDpdpDescription": "Als u zich in India bevindt, worden uw digitale persoonsgegevens beschermd onder de Digital Personal Data Protection Act 2023 (DPDP). PrTask verkrijgt duidelijke toestemming vooraf en respecteert uw rechten op inzage, correctie, verwijdering en klacht.",
+    "PrivacyDpdpHeading": "India DPDP-wet 2023"
+  },
+  "pt": {
+    "PricingDescriptionHeading": "Precos do PrTask — transparentes e favoraveis ao desenvolvedor",
+    "PricingFaqMinBountyQuestion": "Ha um valor minimo de recompensa?",
+    "PrivacyAustraliaDescription": "Se voce estiver na Australia, suas informacoes pessoais sao protegidas pela Privacy Act 1988 e pelos Australian Privacy Principles (APP). O PrTask cumpre os requisitos dos APP sobre coleta, uso, divulgacao, seguranca e acesso.",
+    "PrivacyDpdpDescription": "Se voce estiver na India, seus dados pessoais digitais sao protegidos pela Digital Personal Data Protection Act 2023 (DPDP). O PrTask obtem consentimento claro antes do tratamento e respeita seus direitos de acesso, correcao, exclusao e reclamacao.",
+    "PrivacyDpdpHeading": "Lei DPDP da India 2023"
+  },
+  "ru": {
+    "PricingDescriptionHeading": "Цены PrTask — прозрачные и дружественные разработчикам",
+    "PricingFaqMinBountyQuestion": "Есть ли минимальная сумма вознаграждения?",
+    "PrivacyAustraliaDescription": "Если вы находитесь в Австралии, ваши персональные данные защищены Privacy Act 1988 и Australian Privacy Principles (APP). PrTask соблюдает требования APP по сбору, использованию, раскрытию, безопасности и доступу.",
+    "PrivacyDpdpDescription": "Если вы находитесь в Индии, ваши цифровые персональные данные защищены Digital Personal Data Protection Act 2023 (DPDP). PrTask получает явное согласие перед обработкой и уважает права на доступ, исправление, удаление и подачу жалобы.",
+    "PrivacyDpdpHeading": "Закон DPDP Индии 2023"
+  },
+  "tr": {
+    "PricingDescriptionHeading": "PrTask Fiyatlandirmasi — seffaf ve gelistirici dostu",
+    "PrivacyAustraliaDescription": "Avustralya'da bulunuyorsaniz, kisisel bilgileriniz Privacy Act 1988 ve Australian Privacy Principles (APP) kapsaminda korunur. PrTask, toplama, kullanma, ifsa, guvenlik ve erisim konularinda APP gerekliliklerine uyar.",
+    "PrivacyDpdpDescription": "Hindistan'da bulunuyorsaniz, dijital kisisel verileriniz Digital Personal Data Protection Act 2023 (DPDP) kapsaminda korunur. PrTask isleme oncesinde acik riza alir ve erisim, duzeltme, silme ve sikayet haklariniza saygi gosterir.",
+    "PrivacyDpdpHeading": "Hindistan DPDP Yasasi 2023"
+  }
+}

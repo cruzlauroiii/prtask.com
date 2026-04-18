@@ -1,0 +1,58 @@
+{
+  "ar": {
+    "DownloadIosHeading": "نظام iOS من آبل",
+    "DownloadLinuxHeading": "نظام لينكس"
+  },
+  "de": {
+    "DownloadIosHeading": "Apple iOS",
+    "DownloadLinuxHeading": "Linux-System"
+  },
+  "es": {
+    "DownloadIosHeading": "iOS de Apple",
+    "DownloadLinuxHeading": "Sistema Linux"
+  },
+  "fil": {
+    "DownloadIosHeading": "iOS ng Apple",
+    "DownloadLinuxHeading": "Sistemang Linux"
+  },
+  "fr": {
+    "DownloadIosHeading": "iOS d'Apple",
+    "DownloadLinuxHeading": "Système Linux"
+  },
+  "hi": {
+    "DownloadIosHeading": "Apple iOS",
+    "DownloadLinuxHeading": "Linux सिस्टम"
+  },
+  "id": {
+    "DownloadIosHeading": "iOS Apple",
+    "DownloadLinuxHeading": "Sistem Linux"
+  },
+  "it": {
+    "DownloadIosHeading": "iOS Apple",
+    "DownloadLinuxHeading": "Sistema Linux"
+  },
+  "ja": {
+    "DownloadIosHeading": "Apple iOS",
+    "DownloadLinuxHeading": "Linux システム"
+  },
+  "ko": {
+    "DownloadIosHeading": "Apple iOS",
+    "DownloadLinuxHeading": "Linux 시스템"
+  },
+  "nl": {
+    "DownloadIosHeading": "Apple iOS",
+    "DownloadLinuxHeading": "Linux-systeem"
+  },
+  "pt": {
+    "DownloadIosHeading": "iOS da Apple",
+    "DownloadLinuxHeading": "Sistema Linux"
+  },
+  "ru": {
+    "DownloadIosHeading": "Apple iOS",
+    "DownloadLinuxHeading": "Система Linux"
+  },
+  "tr": {
+    "DownloadIosHeading": "Apple iOS",
+    "DownloadLinuxHeading": "Linux sistemi"
+  }
+}

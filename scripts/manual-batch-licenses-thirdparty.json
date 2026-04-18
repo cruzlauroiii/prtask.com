@@ -1,0 +1,52 @@
+{
+  "es": {
+    "LicensesThirdPartyCloudflare": "Cloudflare: se utiliza para alojamiento, CDN y proteccion contra DDoS, sujeto a las Condiciones de servicio de Cloudflare.",
+    "LicensesThirdPartyDescription": "PrTask incorpora las siguientes bibliotecas y servicios de terceros. Agradecemos a sus mantenedores y proveedores por hacer posible estas capacidades.",
+    "LicensesThirdPartyPayment": "Procesadores de pago (incluido Maya Business): se utilizan para el manejo seguro de transacciones, sujetos a sus respectivos terminos y requisitos regulatorios."
+  },
+  "fil": {
+    "LicensesThirdPartyCloudflare": "Cloudflare: ginagamit para sa hosting, CDN, at proteksyon laban sa DDoS, na napapailalim sa Mga Tuntunin ng Serbisyo ng Cloudflare.",
+    "LicensesThirdPartyDescription": "Isinasama ng PrTask ang mga sumusunod na third-party library at serbisyo. Nagpapasalamat kami sa kanilang mga maintainer at provider sa pagpapagana ng mga kakayahang ito.",
+    "LicensesThirdPartyPayment": "Mga payment processor (kabilang ang Maya Business): ginagamit para sa ligtas na paghawak ng transaksyon, na napapailalim sa kani-kanilang mga tuntunin at pang-regulasyong kinakailangan."
+  },
+  "fr": {
+    "LicensesThirdPartyCloudflare": "Cloudflare : utilise pour l'hebergement, le CDN et la protection DDoS, sous reserve des Conditions d'utilisation de Cloudflare.",
+    "LicensesThirdPartyDescription": "PrTask integre les bibliotheques et services tiers suivants. Nous remercions leurs mainteneurs et fournisseurs de rendre ces capacites possibles.",
+    "LicensesThirdPartyPayment": "Processeurs de paiement (y compris Maya Business) : utilises pour le traitement securise des transactions, sous reserve de leurs conditions respectives et des exigences reglementaires."
+  },
+  "hi": {
+    "LicensesThirdPartyCloudflare": "Cloudflare: होस्टिंग, CDN और DDoS सुरक्षा के लिए उपयोग किया जाता है, और यह Cloudflare की सेवा शर्तों के अधीन है।",
+    "LicensesThirdPartyDescription": "PrTask निम्नलिखित तृतीय-पक्ष लाइब्रेरी और सेवाओं को सम्मिलित करता है। इन क्षमताओं को संभव बनाने के लिए हम उनके मेंटेनरों और प्रदाताओं के आभारी हैं।",
+    "LicensesThirdPartyPayment": "भुगतान प्रोसेसर (Maya Business सहित): सुरक्षित लेनदेन प्रबंधन के लिए उपयोग किए जाते हैं, और उनकी संबंधित शर्तों तथा नियामकीय आवश्यकताओं के अधीन हैं।"
+  },
+  "id": {
+    "LicensesThirdPartyCloudflare": "Cloudflare: digunakan untuk hosting, CDN, dan perlindungan DDoS, tunduk pada Ketentuan Layanan Cloudflare.",
+    "LicensesThirdPartyDescription": "PrTask menggunakan pustaka dan layanan pihak ketiga berikut. Kami berterima kasih kepada para maintainer dan penyedia yang memungkinkan kemampuan ini.",
+    "LicensesThirdPartyPayment": "Pemroses pembayaran (termasuk Maya Business): digunakan untuk penanganan transaksi yang aman, tunduk pada ketentuan masing-masing dan persyaratan regulasi."
+  },
+  "it": {
+    "LicensesThirdPartyCloudflare": "Cloudflare: utilizzato per hosting, CDN e protezione DDoS, soggetto ai Termini di servizio di Cloudflare.",
+    "LicensesThirdPartyDescription": "PrTask incorpora le seguenti librerie e servizi di terze parti. Ringraziamo i rispettivi manutentori e fornitori per rendere possibili queste funzionalita.",
+    "LicensesThirdPartyPayment": "Processori di pagamento (incluso Maya Business): utilizzati per la gestione sicura delle transazioni, soggetti ai rispettivi termini e requisiti normativi."
+  },
+  "ja": {
+    "LicensesThirdPartyCloudflare": "Cloudflare: ホスティング、CDN、および DDoS 保護のために使用され、Cloudflare の利用規約に従います。",
+    "LicensesThirdPartyDescription": "PrTask は以下の第三者ライブラリおよびサービスを利用しています。これらの機能を可能にしている保守者および提供者に感謝します。",
+    "LicensesThirdPartyPayment": "決済処理業者（Maya Business を含む）: 安全な取引処理のために使用され、それぞれの利用条件および規制要件に従います。"
+  },
+  "ko": {
+    "LicensesThirdPartyCloudflare": "Cloudflare: 호스팅, CDN 및 DDoS 보호에 사용되며 Cloudflare 서비스 약관이 적용됩니다.",
+    "LicensesThirdPartyDescription": "PrTask는 다음의 제3자 라이브러리 및 서비스를 포함합니다. 이러한 기능을 가능하게 해 준 유지관리자와 제공업체에 감사드립니다.",
+    "LicensesThirdPartyPayment": "결제 처리업체(Maya Business 포함): 안전한 거래 처리를 위해 사용되며 각자의 약관 및 규제 요구 사항이 적용됩니다."
+  },
+  "nl": {
+    "LicensesThirdPartyCloudflare": "Cloudflare: gebruikt voor hosting, CDN en DDoS-bescherming, onderworpen aan de Servicevoorwaarden van Cloudflare.",
+    "LicensesThirdPartyDescription": "PrTask maakt gebruik van de volgende bibliotheken en diensten van derden. Wij zijn hun maintainers en aanbieders dankbaar voor het mogelijk maken van deze mogelijkheden.",
+    "LicensesThirdPartyPayment": "Betalingsverwerkers (waaronder Maya Business): gebruikt voor veilige transactieverwerking, onderworpen aan hun respectieve voorwaarden en wettelijke vereisten."
+  },
+  "tr": {
+    "LicensesThirdPartyCloudflare": "Cloudflare: barindirma, CDN ve DDoS korumasi icin kullanilir; Cloudflare Hizmet Kosullari'na tabidir.",
+    "LicensesThirdPartyDescription": "PrTask, asagidaki ucuncu taraf kutuphane ve hizmetleri kullanir. Bu kabiliyetleri mumkun kilan bakimcilara ve saglayicilara tesekkur ederiz.",
+    "LicensesThirdPartyPayment": "Odeme isleyicileri (Maya Business dahil): guvenli islem yurutumu icin kullanilir; kendi kosullarina ve duzenleyici gereksinimlerine tabidir."
+  }
+}

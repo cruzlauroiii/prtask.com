@@ -1,0 +1,131 @@
+@using PrTask.SharedUI.Services
+@inject IConnectionStateService ConnectionState
+@implements IDisposable
+<div class="sync-status-bar @BarClass">
+    <span class="sync-status-dot @DotClass"></span>
+    <span class="sync-status-text">@StatusText</span>
+    @if (ShowSyncNowButton)
+    {
+        <button class="sync-status-button" @onclick="SyncNowAsync">Sync Now</button>
+    }
+    @if (ShowGoOfflineButton)
+    {
+        <button class="sync-status-button" @onclick="GoOfflineAsync">Go Offline</button>
+    }
+    @if (ShowSetupButton)
+    {
+        <button class="sync-status-button" @onclick="SetupAsync">Setup</button>
+    }
+</div>
+@code {
+    private string StatusText { get; set; } = "OFFLINE";
+    private string DotClass { get; set; } = "dot-offline";
+    private string BarClass { get; set; } = "bar-offline";
+    private bool ShowSyncNowButton { get; set; } = true;
+    private bool ShowGoOfflineButton { get; set; }
+    private bool ShowSetupButton { get; set; }
+
+    protected override void OnInitialized()
+    {
+        ConnectionState.OnStateChanged += HandleStateChanged;
+        UpdateDisplay();
+    }
+
+    private void HandleStateChanged(object? Sender, ConnectionStateChangedEventArgs Args)
+    {
+        InvokeAsync(() =>
+        {
+            UpdateDisplay();
+            StateHasChanged();
+        });
+    }
+
+    private void UpdateDisplay()
+    {
+        ShowSyncNowButton = false;
+        ShowGoOfflineButton = false;
+        ShowSetupButton = false;
+        switch (ConnectionState.State)
+        {
+            case Services.ConnectionState.Offline:
+                DotClass = "dot-offline";
+                BarClass = "bar-offline";
+                ShowSyncNowButton = true;
+                if (ConnectionState.LastSyncTime.HasValue)
+                {
+                    var Elapsed = DateTime.UtcNow - ConnectionState.LastSyncTime.Value;
+                    StatusText = $"OFFLINE \u2014 Last synced {FormatTimeAgo(Elapsed)}";
+                }
+                else
+                {
+                    StatusText = "OFFLINE";
+                }
+                break;
+            case Services.ConnectionState.Connecting:
+                DotClass = "dot-connecting";
+                BarClass = "bar-online";
+                StatusText = "CONNECTING...";
+                break;
+            case Services.ConnectionState.Syncing:
+                DotClass = "dot-online";
+                BarClass = "bar-online";
+                if (ConnectionState.SyncTotal > 0)
+                {
+                    StatusText = $"ONLINE \u2014 Syncing... ({ConnectionState.SyncProgress}/{ConnectionState.SyncTotal} files)";
+                }
+                else
+                {
+                    StatusText = "ONLINE \u2014 Syncing...";
+                }
+                break;
+            case Services.ConnectionState.Online:
+                DotClass = "dot-online";
+                BarClass = "bar-online";
+                StatusText = "ONLINE \u2014 Sync complete";
+                ShowGoOfflineButton = true;
+                break;
+            case Services.ConnectionState.GitPulling:
+                DotClass = "dot-connecting";
+                BarClass = "bar-online";
+                StatusText = "GIT PULLING \u2014 Updating local files...";
+                break;
+            case Services.ConnectionState.SetupNeeded:
+                DotClass = "dot-offline";
+                BarClass = "bar-offline";
+                StatusText = "SETUP NEEDED \u2014 No .git directory";
+                ShowSetupButton = true;
+                break;
+        }
+    }
+
+    private static string FormatTimeAgo(TimeSpan Elapsed)
+    {
+        if (Elapsed.TotalSeconds < 60)
+            return "just now";
+        if (Elapsed.TotalMinutes < 60)
+            return $"{(int)Elapsed.TotalMinutes}m ago";
+        if (Elapsed.TotalHours < 24)
+            return $"{(int)Elapsed.TotalHours}h ago";
+        return $"{(int)Elapsed.TotalDays}d ago";
+    }
+
+    private async Task SyncNowAsync()
+    {
+        await ConnectionState.SyncNowAsync();
+    }
+
+    private async Task GoOfflineAsync()
+    {
+        await ConnectionState.GoOfflineAsync();
+    }
+
+    private async Task SetupAsync()
+    {
+        await ConnectionState.SyncNowAsync();
+    }
+
+    public void Dispose()
+    {
+        ConnectionState.OnStateChanged -= HandleStateChanged;
+    }
+}

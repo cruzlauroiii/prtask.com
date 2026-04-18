@@ -1,0 +1,33 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+
+public class VerifyAppsConstants {
+    public static readonly java.lang.string ACTION_HARMFUL_APPS_FOUND = "com.google.android.gms.safetynet.action.HARMFUL_APPS_FOUND";
+    public static readonly java.lang.string ACTION_HARMFUL_APP_BLOCKED = "com.google.android.gms.safetynet.action.HARMFUL_APP_BLOCKED";
+    public static readonly java.lang.string ACTION_HARMFUL_APP_INSTALLED = "com.google.android.gms.safetynet.action.HARMFUL_APP_INSTALLED";
+    public static readonly int HARMFUL_CATEGORY_BACKDOOR = 9;
+    public static readonly int HARMFUL_CATEGORY_CALL_FRAUD = 8;
+    public static readonly int HARMFUL_CATEGORY_DATA_COLLECTION = 21;
+    public static readonly int HARMFUL_CATEGORY_DENIAL_OF_SERVICE = 20;
+    public static readonly int HARMFUL_CATEGORY_FRAUDWARE = 5;
+    public static readonly int HARMFUL_CATEGORY_GENERIC_MALWARE = 11;
+    public static readonly int HARMFUL_CATEGORY_HARMFUL_SITE = 12;
+    public static readonly int HARMFUL_CATEGORY_HOSTILE_DOWNLOADER = 14;
+    public static readonly int HARMFUL_CATEGORY_NON_ANDROID_THREAT = 15;
+    public static readonly int HARMFUL_CATEGORY_PHISHING = 2;
+    public static readonly int HARMFUL_CATEGORY_PRIVILEGE_ESCALATION = 17;
+    public static readonly int HARMFUL_CATEGORY_RANSOMWARE = 1;
+    public static readonly int HARMFUL_CATEGORY_ROOTING = 16;
+    public static readonly int HARMFUL_CATEGORY_SPAM = 19;
+    public static readonly int HARMFUL_CATEGORY_SPYWARE = 10;
+    public static readonly int HARMFUL_CATEGORY_TOLL_FRAUD = 6;
+    public static readonly int HARMFUL_CATEGORY_TRACKING = 18;
+    public static readonly int HARMFUL_CATEGORY_TROJAN = 3;
+    public static readonly int HARMFUL_CATEGORY_UNCOMMON = 4;
+    public static readonly int HARMFUL_CATEGORY_WAP_FRAUD = 7;
+    public static readonly int HARMFUL_CATEGORY_WINDOWS_MALWARE = 13;
+
+    private VerifyAppsConstants() {
+    }
+}
+

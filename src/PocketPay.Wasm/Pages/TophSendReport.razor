@@ -1,0 +1,32 @@
+@page "/toph-send-report"
+@inject NavigationManager Nav
+
+<div style="width:100%">
+    <div class="coordinatorLayout" style="width:100%">
+        <div class="appbar" style="width:100%">
+            <div class="collapsing_layout" style="width:100%">
+                <span class="send_report_title_tv" style="width:100%"></span>
+                <header class="toolbar" style="width:100%"></header>
+            </div>
+        </div>
+        <div class="nested_scroll_view" style="width:100%">
+            <div style="display:flex;flex-direction:column;width:100%">
+                <label class="email_layout" style="width:100%">
+                    <input class="email_edit_text" style="width:100%" type="text" />
+                </label>
+                <span class="sendReportTv" style="width:100%"></span>
+                <div class="filter_duration" style="width:100%"></div>
+                <div class="filter" style="width:100%"></div>
+            </div>
+        </div>
+    </div>
+    <button class="action_send_btn" style="width:100%"></button>
+</div>
+
+@code {
+    private string Field2131362304 { get; set; } = string.Empty;
+
+    private void OnField2131361872Click()
+    {
+    }
+}

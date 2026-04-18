@@ -1,0 +1,110 @@
+{
+  "es": {
+    "TermsGoverningLawHeading": "Ley aplicable",
+    "TermsIntellectualPropertyHeading": "Propiedad intelectual",
+    "TermsLiabilityHeading": "Limitacion de responsabilidad",
+    "TermsModificationHeading": "Modificacion de los terminos",
+    "TermsPublicPrHeading": "Pull requests publicos",
+    "TermsTaxHeading": "Responsabilidades fiscales",
+    "TermsUserConductHeading": "Conducta del usuario"
+  },
+  "fil": {
+    "TermsGoverningLawHeading": "Namamahalang batas",
+    "TermsIntellectualPropertyHeading": "Intelektuwal na ari-arian",
+    "TermsLiabilityHeading": "Limitasyon ng pananagutan",
+    "TermsModificationHeading": "Pagbabago ng mga tuntunin",
+    "TermsPublicPrHeading": "Mga pampublikong pull request",
+    "TermsTaxHeading": "Mga pananagutang buwis",
+    "TermsUserConductHeading": "Asal ng gumagamit"
+  },
+  "fr": {
+    "TermsGoverningLawHeading": "Droit applicable",
+    "TermsIntellectualPropertyHeading": "Propriete intellectuelle",
+    "TermsLiabilityHeading": "Limitation de responsabilite",
+    "TermsModificationHeading": "Modification des conditions",
+    "TermsPublicPrHeading": "Pull requests publiques",
+    "TermsTaxHeading": "Responsabilites fiscales",
+    "TermsUserConductHeading": "Conduite de l'utilisateur"
+  },
+  "hi": {
+    "TermsGoverningLawHeading": "प्रासंगिक कानून",
+    "TermsIntellectualPropertyHeading": "बौद्धिक संपदा",
+    "TermsLiabilityHeading": "दायित्व की सीमा",
+    "TermsModificationHeading": "शर्तों में संशोधन",
+    "TermsPublicPrHeading": "सार्वजनिक pull request",
+    "TermsTaxHeading": "कर संबंधी जिम्मेदारियां",
+    "TermsUserConductHeading": "उपयोगकर्ता आचरण"
+  },
+  "id": {
+    "TermsGoverningLawHeading": "Hukum yang berlaku",
+    "TermsIntellectualPropertyHeading": "Kekayaan intelektual",
+    "TermsLiabilityHeading": "Batas tanggung jawab",
+    "TermsModificationHeading": "Perubahan ketentuan",
+    "TermsPublicPrHeading": "Pull request publik",
+    "TermsTaxHeading": "Tanggung jawab pajak",
+    "TermsUserConductHeading": "Perilaku pengguna"
+  },
+  "it": {
+    "TermsGoverningLawHeading": "Legge applicabile",
+    "TermsIntellectualPropertyHeading": "Proprieta intellettuale",
+    "TermsLiabilityHeading": "Limitazione di responsabilita",
+    "TermsModificationHeading": "Modifica dei termini",
+    "TermsPublicPrHeading": "Pull request pubbliche",
+    "TermsTaxHeading": "Responsabilita fiscali",
+    "TermsUserConductHeading": "Condotta dell'utente"
+  },
+  "ja": {
+    "TermsGoverningLawHeading": "準拠法",
+    "TermsIntellectualPropertyHeading": "知的財産",
+    "TermsLiabilityHeading": "責任の制限",
+    "TermsModificationHeading": "利用規約の変更",
+    "TermsPublicPrHeading": "公開 pull request",
+    "TermsTaxHeading": "税務上の責任",
+    "TermsUserConductHeading": "利用者の行動"
+  },
+  "ko": {
+    "TermsGoverningLawHeading": "준거법",
+    "TermsIntellectualPropertyHeading": "지적 재산",
+    "TermsLiabilityHeading": "책임의 제한",
+    "TermsModificationHeading": "약관 변경",
+    "TermsPublicPrHeading": "공개 pull request",
+    "TermsTaxHeading": "세금 관련 책임",
+    "TermsUserConductHeading": "사용자 행동"
+  },
+  "nl": {
+    "TermsGoverningLawHeading": "Toepasselijk recht",
+    "TermsIntellectualPropertyHeading": "Intellectuele eigendom",
+    "TermsLiabilityHeading": "Beperking van aansprakelijkheid",
+    "TermsModificationHeading": "Wijziging van de voorwaarden",
+    "TermsPublicPrHeading": "Openbare pull requests",
+    "TermsTaxHeading": "Fiscale verantwoordelijkheden",
+    "TermsUserConductHeading": "Gedrag van de gebruiker"
+  },
+  "pt": {
+    "TermsGoverningLawHeading": "Lei aplicavel",
+    "TermsIntellectualPropertyHeading": "Propriedade intelectual",
+    "TermsLiabilityHeading": "Limitacao de responsabilidade",
+    "TermsModificationHeading": "Modificacao dos termos",
+    "TermsPublicPrHeading": "Pull requests publicos",
+    "TermsTaxHeading": "Responsabilidades fiscais",
+    "TermsUserConductHeading": "Conduta do usuario"
+  },
+  "ru": {
+    "TermsGoverningLawHeading": "Применимое право",
+    "TermsIntellectualPropertyHeading": "Интеллектуальная собственность",
+    "TermsLiabilityHeading": "Ограничение ответственности",
+    "TermsModificationHeading": "Изменение условий",
+    "TermsPublicPrHeading": "Публичные pull request",
+    "TermsTaxHeading": "Налоговые обязанности",
+    "TermsUserConductHeading": "Поведение пользователя"
+  },
+  "tr": {
+    "TermsGoverningLawHeading": "Uygulanacak hukuk",
+    "TermsIntellectualPropertyHeading": "Fikri mulkiyet",
+    "TermsLiabilityHeading": "Sorumlulugun sinirlandirilmasi",
+    "TermsModificationHeading": "Kosullarin degistirilmesi",
+    "TermsPublicPrHeading": "Herkese acik pull request'ler",
+    "TermsTaxHeading": "Vergi sorumluluklari",
+    "TermsUserConductHeading": "Kullanici davranisi"
+  }
+}

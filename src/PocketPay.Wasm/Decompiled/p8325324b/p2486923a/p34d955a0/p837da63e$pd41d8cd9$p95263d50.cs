@@ -1,0 +1,15 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+
+public readonly class p837da63e$pd41d8cd9$p95263d50 : kotlin.jvm.functions.Function1 {
+    public readonly p8325324b.p2486923a.p34d955a0.p837da63e f$0;
+
+    public p837da63e$pd41d8cd9$p95263d50(p8325324b.p2486923a.p34d955a0.p837da63e p837da63eVar) {
+        this.f$0 = p837da63eVar;
+    }
+
+    public override readonly java.lang.object Invoke(java.lang.object obj) {
+        return p8325324b.p2486923a.p34d955a0.p837da63e.mce64889a(this.f$0, (pad5f82e8.p07214c67.pa4ecfc70) obj);
+    }
+}
+

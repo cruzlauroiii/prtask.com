@@ -1,0 +1,30 @@
+{
+  "es": {
+    "PrivacyPipedaHeading": "PIPEDA de Canada"
+  },
+  "fil": {
+    "PrivacyLgpdHeading": "LGPD ng Brazil",
+    "PrivacyPdpaSingaporeHeading": "PDPA ng Singapore",
+    "PrivacyPdpaThailandHeading": "PDPA ng Thailand",
+    "PrivacyPipedaHeading": "PIPEDA ng Canada",
+    "PrivacyPopiaHeading": "POPIA ng South Africa"
+  },
+  "fr": {
+    "PrivacyPipedaHeading": "PIPEDA du Canada"
+  },
+  "id": {
+    "PrivacyPdpaThailandHeading": "PDPA Thailand"
+  },
+  "it": {
+    "PrivacyPdpaSingaporeHeading": "PDPA di Singapore",
+    "PrivacyPipedaHeading": "PIPEDA del Canada"
+  },
+  "nl": {
+    "PrivacyPdpaSingaporeHeading": "Singaporese PDPA",
+    "PrivacyPdpaThailandHeading": "Thaise PDPA",
+    "PrivacyPipedaHeading": "Canadese PIPEDA"
+  },
+  "pt": {
+    "PrivacyPipedaHeading": "PIPEDA do Canada"
+  }
+}

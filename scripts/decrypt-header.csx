@@ -1,0 +1,13 @@
+using System.Security.Cryptography;
+var Password = "HTxJJaZxBMzl6hR37pogA5fIcx0Chyqg";
+var Salt = System.Text.Encoding.UTF8.GetBytes(Password);
+var Key = Rfc2898DeriveBytes.Pbkdf2(Password, Salt, 128, HashAlgorithmName.SHA1, 32);
+var Hex = "9a8150ffa68cd77c9df3e3dce3037b5cf80686274108156720000a061e133c9af6183048e8fa6d5ddc";
+var Data = Convert.FromHexString(Hex);
+var Iv = new byte[12]; Array.Copy(Data, 0, Iv, 0, 12);
+var Ct = new byte[Data.Length - 12 - 16]; Array.Copy(Data, 12, Ct, 0, Ct.Length);
+var Tag = new byte[16]; Array.Copy(Data, Data.Length - 16, Tag, 0, 16);
+var Gcm = new AesGcm(Key, 16);
+var Plain = new byte[Ct.Length];
+Gcm.Decrypt(Iv, Ct, Tag, Plain);
+Console.WriteLine("Header name: " + System.Text.Encoding.UTF8.GetString(Plain));

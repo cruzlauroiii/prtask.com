@@ -1,0 +1,158 @@
+AcceptableUseAccountIntegrityDescription|Users must maintain one account. Creating multiple accounts to claim tasks or manipulate the system results in permanent suspension.
+AcceptableUseAccountIntegrityHeading|Account Integrity
+AcceptableUseCodeQualityDescription|All submitted pull requests must be original work. Automated or AI-generated code must be disclosed in the PR description.
+AcceptableUseCodeQualityHeading|Code Quality
+AcceptableUseConductAutomated|Using automated tools or bots to interact with the platform without prior written authorization
+AcceptableUseConductDescription|The following conduct is strictly prohibited on PrTask and may result in immediate enforcement action:
+AcceptableUseConductDiscrimination|Engaging in discriminatory, hateful, or threatening behavior toward any user based on race, gender, religion, nationality, disability, or any other protected characteristic
+AcceptableUseConductExploiting|Exploiting platform vulnerabilities, APIs, or payment systems for unauthorized gain
+AcceptableUseConductFakeTasks|Creating fake tasks or pull requests to artificially inflate earnings or manipulate payment flows
+AcceptableUseConductHeading|Prohibited Conduct
+AcceptableUseConductInauthentic|Engaging in coordinated inauthentic behavior including shill bidding, fake reviews, or rating manipulation
+AcceptableUseConductIpViolation|Violating the intellectual property rights of others, including submitting code that infringes copyrights or patents
+AcceptableUseConductKycCircumvent|Circumventing or attempting to circumvent KYC verification requirements
+AcceptableUseConductMalicious|Distributing, hosting, or linking to malicious software, phishing pages, or exploit kits
+AcceptableUseConductMoneyLaundering|Using the platform to facilitate money laundering, terrorism financing, or any violation of the Anti-Money Laundering Act (RA 9160)
+AcceptableUseConductUnauthorizedAccess|Attempting to access other users' accounts, data, or payment information without authorization
+AcceptableUseContactDescription|For questions about this Acceptable Use Policy, contact abuse@prtask.com. For legal inquiries, contact legal@prtask.com.
+AcceptableUseContactHeading|Contact
+AcceptableUseContentModerationDescription|In compliance with the EU Digital Services Act (DSA) 2022/2065, PrTask maintains transparent content moderation policies. Users may flag illegal or harmful content through our reporting mechanism. PrTask processes notices from "trusted flaggers" with priority. PrTask provides a statement of reasons for every content moderation decision, offers an internal complaint handling mechanism, and provides access to out-of-court dispute settlement for users affected by moderation decisions. PrTask publishes annual transparency reports on content moderation activities and decisions. PrTask prohibits dark patterns in content moderation interfaces and ensures that algorithmic decision-making is subject to human review.
+AcceptableUseContentModerationHeading|Content Moderation (EU DSA Compliance)
+AcceptableUseDescriptionHeading|About This Acceptable Use Policy
+AcceptableUseDescriptionParagraph1|This Acceptable Use Policy establishes the rules of conduct for all participants in the PrTask marketplace. It defines prohibited activities including plagiarism, spam, leaderboard manipulation, payment fraud, harassment, and other behaviors that undermine the integrity of the platform. These rules exist to protect the community and ensure that PrTask remains a trustworthy environment for both developers seeking paid work and clients seeking quality code contributions.
+AcceptableUseDescriptionParagraph2|Enforcement actions range from warnings to permanent account termination depending on the severity and frequency of violations. PrTask employs both automated detection and manual review to identify policy violations, and provides an appeal process for users who believe enforcement actions were applied in error. All users are expected to maintain professional conduct, submit original work, and comply with applicable laws regarding financial transactions, intellectual property, and anti-money laundering regulations.
+AcceptableUseEnforcementAppeal|PrTask reserves the right to take enforcement action at its sole discretion. Users subject to enforcement action may appeal by contacting abuse@prtask.com within 14 days of the action. PrTask will provide a statement of reasons for every content moderation decision as required by the EU Digital Services Act.
+AcceptableUseEnforcementContentLabel|Content Removal:
+AcceptableUseEnforcementContentText|Removal of offending tasks, pull requests, or other content
+AcceptableUseEnforcementDescription|Violations may result in account suspension, bounty forfeiture, and permanent ban from the platform.
+AcceptableUseEnforcementFinancialLabel|Financial Hold:
+AcceptableUseEnforcementFinancialText|Freezing of account funds pending investigation of financial violations
+AcceptableUseEnforcementHeading|Enforcement
+AcceptableUseEnforcementLegalLabel|Legal Referral:
+AcceptableUseEnforcementLegalText|Reporting of criminal activity to law enforcement authorities, including the AMLC for suspected money laundering
+AcceptableUseEnforcementSuspensionLabel|Temporary Suspension:
+AcceptableUseEnforcementSuspensionText|Suspension of account access for a defined period (7 to 90 days)
+AcceptableUseEnforcementTerminationLabel|Permanent Termination:
+AcceptableUseEnforcementTerminationText|Permanent removal from the platform with forfeiture of pending bounties
+AcceptableUseEnforcementWarningLabel|Warning:
+AcceptableUseEnforcementWarningText|A formal notice identifying the violation and requiring corrective action
+AcceptableUseIntroduction|This Acceptable Use Policy governs your conduct on the PrTask platform. All users, including clients and developers, must comply with this policy. Violations may result in enforcement actions including account suspension or termination. This policy complies with the EU Digital Services Act (DSA) content moderation requirements.
+AcceptableUseLastUpdated|Last updated: March 2026
+AcceptableUsePageHeading|Acceptable Use Policy
+AcceptableUseProhibitedCollusion|Colluding with other users to manipulate task outcomes or artificially inflate earnings
+AcceptableUseProhibitedDescription|Users must not use PrTask to submit plagiarized code, spam tasks, manipulate leaderboard rankings, or engage in fraudulent payment activities.
+AcceptableUseProhibitedFraud|Engaging in fraudulent payment activities or payment manipulation
+AcceptableUseProhibitedHarassment|Harassing, threatening, or intimidating other users
+AcceptableUseProhibitedHeading|Prohibited Activities
+AcceptableUseProhibitedImpersonation|Impersonating another user or misrepresenting your identity
+AcceptableUseProhibitedLeaderboard|Manipulating leaderboard rankings or achievement badges through artificial means
+AcceptableUseProhibitedLowQuality|Intentionally submitting low-quality work to collect bounties
+AcceptableUseProhibitedMalware|Uploading malware, viruses, backdoors, or malicious code
+AcceptableUseProhibitedMoneyLaundering|Using the platform to launder money, finance terrorism, or facilitate illegal transactions
+AcceptableUseProhibitedPaymentCircumvent|Attempting to circumvent the automatic payment system
+AcceptableUseProhibitedPlagiarism|Submitting plagiarized, stolen, or unlicensed code in pull requests
+AcceptableUseProhibitedScraping|Scraping or automated data collection from the platform without authorization
+AcceptableUseProhibitedSpam|Spamming tasks, pull requests, or platform communications
+AcceptableUseReportingDescription|If you observe any activity that violates this Acceptable Use Policy, please report it to abuse@prtask.com. Include the username of the offending party, a description of the violation, and any supporting evidence such as links or screenshots. All reports are reviewed within 2 business days. PrTask protects the identity of reporters and prohibits retaliation against anyone who submits a good-faith report.
+AcceptableUseReportingHeading|Reporting Violations
+AccessibilityAdaComplianceDescription|PrTask is committed to compliance with the Americans with Disabilities Act (ADA) and equivalent international accessibility standards. We regularly audit our platform to ensure that all users, including those with disabilities, can access and use our services effectively. Our goal is to meet or exceed WCAG 2.1 Level AA requirements across all pages and features.
+AccessibilityAdaComplianceHeading|ADA Compliance
+AccessibilityConformanceDescription|PrTask targets conformance with the Web Content Accessibility Guidelines (WCAG) 2.2 at Level AA, which is the standard referenced by the European Accessibility Act, the US ADA (Title III), and Section 508. We regularly audit our platform against these guidelines and remediate any identified gaps. Our conformance status is partially conformant, meaning we conform to most but not all WCAG 2.2 Level AA success criteria, and we are actively working to achieve full conformance.
+AccessibilityConformanceHeading|Conformance Status
+AccessibilityDescriptionHeading|About This Accessibility Statement
+AccessibilityDescriptionParagraph1|This Accessibility Statement documents PrTask's commitment to making the platform usable by everyone, including people with disabilities. We target WCAG 2.2 Level AA conformance and comply with the Americans with Disabilities Act (ADA), the European Accessibility Act (EAA), and other regional accessibility requirements. Our accessibility measures include semantic HTML markup, sufficient color contrast ratios, full keyboard navigation support, responsive design, text alternatives for non-text content, dark mode, clear focus indicators, and minimum interactive target sizes.
+AccessibilityDescriptionParagraph2|PrTask actively works to identify and address accessibility barriers. If you encounter any accessibility issues while using the platform, we encourage you to contact us so we can resolve them promptly. We regularly audit our platform against WCAG 2.2 criteria and prioritize fixes for any conformance gaps. Our goal is to ensure that all users — regardless of ability — can create tasks, browse opportunities, submit pull requests, manage payments, and participate fully in the PrTask developer marketplace.
+AccessibilityEaaDescription|PrTask complies with the European Accessibility Act (EU) 2019/882, effective June 28, 2025, and the harmonized standard EN 301 549 V3.2.1. This requires that our website and web applications conform to WCAG 2.1 Level AA at minimum for users in the EU. PrTask is committed to meeting the updated WCAG 2.2 Level AA standard as the EN 301 549 V4.1.1 standard is adopted. We apply these accessibility standards to all users regardless of their geographic location.
+AccessibilityEaaHeading|European Accessibility Act (EAA)
+AccessibilityFeedbackDescription|We welcome your feedback on the accessibility of PrTask. If you encounter any accessibility barriers, have suggestions for improvement, or need assistance accessing any part of our platform, please contact us at accessibility@prtask.com. We aim to respond to accessibility feedback within 5 business days and will work to resolve reported issues promptly. You may also request content in alternative formats. For complaints regarding accessibility that are not resolved to your satisfaction, you may contact the relevant national enforcement body in your jurisdiction.
+AccessibilityFeedbackHeading|Feedback
+AccessibilityKnownLimitationsDescription|While we strive to ensure accessibility across our platform, some third-party content or newly added features may not yet fully meet all WCAG 2.1 Level AA criteria. We are actively working to identify and resolve any accessibility gaps.
+AccessibilityKnownLimitationsHeading|Known Limitations
+AccessibilityLastUpdated|Last updated: March 2026
+AccessibilityMeasureColorContrast|Sufficient color contrast ratios between text and background
+AccessibilityMeasureDarkMode|Dark mode and light mode support respecting OS preferences
+AccessibilityMeasureFocusIndicators|Clear focus indicators on all interactive elements for keyboard navigation
+AccessibilityMeasureKeyboard|Keyboard navigable interface for all interactive elements
+AccessibilityMeasureResponsive|Responsive design that works across devices and screen sizes
+AccessibilityMeasureSemantic|Semantic HTML markup for proper screen reader navigation
+AccessibilityMeasuresHeading|Measures We Take
+AccessibilityMeasureTargetSize|Minimum interactive target size of 24x24 CSS pixels
+AccessibilityMeasureTextAlternatives|Text alternatives for non-text content where applicable
+AccessibilityOurCommitmentDescription|PrTask is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards.
+AccessibilityOurCommitmentHeading|Our Commitment
+AccessibilityPageHeading|Accessibility Statement
+AccessibilityWcag22ConsistentHelp|3.2.6 Consistent Help: help mechanisms are in the same relative location across pages
+AccessibilityWcag22Description|PrTask targets conformance with the Web Content Accessibility Guidelines (WCAG) 2.2 at Level AA, which includes the following new criteria beyond WCAG 2.1:
+AccessibilityWcag22DraggingMovements|2.5.7 Dragging Movements: alternatives to drag-and-drop interactions are provided
+AccessibilityWcag22FocusAppearance|2.4.13 Focus Appearance: focused elements have a clearly visible focus indicator
+AccessibilityWcag22FocusNotObscured|2.4.11 Focus Not Obscured (Minimum): focused elements are not entirely hidden by other content
+AccessibilityWcag22Heading|WCAG 2.2 Level AA Compliance
+AccessibilityWcag22RedundantEntry|3.3.7 Redundant Entry: users are not required to re-enter information they have already provided
+AccessibilityWcag22TargetSize|2.5.8 Target Size (Minimum): interactive targets are at least 24x24 CSS pixels
+BoardDescriptionHeading|Kanban Boards — Visual Task Management and Workflow
+BoardDescriptionParagraph1|Boards on PrTask provide a visual, column-based approach to managing development tasks using the Kanban methodology. Each board displays tasks organized into workflow stages — typically columns like To Do, In Progress, In Review, and Done — giving you an at-a-glance view of where every task stands in the development pipeline. This visual representation makes it easy to identify bottlenecks, balance workloads, and ensure that tasks flow smoothly from creation through completion and payment.
+BoardDescriptionParagraph2|Creating a board is simple: provide a name and select the board type (Kanban is the default). Once created, you can add tasks to the board and organize them across columns to reflect their current status. Boards support drag-and-drop interaction for moving tasks between stages, making workflow management intuitive and fast. You can create multiple boards for different projects, repositories, or teams, keeping your work organized in ways that make sense for your specific development workflow and organizational structure.
+BoardDescriptionParagraph3|PrTask boards sync in real time via WebSocket connections, so changes made by any team member are immediately visible to everyone viewing the board. This real-time collaboration is essential for distributed teams where developers may be working across different time zones. Boards integrate with the PrTask task system, so when a developer submits a pull request for a task on your board, the task status updates automatically. Combined with sprint management and the leaderboard, boards complete the project management toolkit that PrTask provides, enabling teams to plan, execute, track, and celebrate their development work in one unified platform.
+BoardSeoDescription|Manage your open source project boards and track pull request tasks. Developers earn money by completing bounty tasks — a perfect side hustle for skilled programmers contributing to open source projects.
+CookiePolicyAnalyticsDescription|We may use analytics cookies to understand platform usage and improve the experience. No personal data is shared with third parties for advertising.
+CookiePolicyAnalyticsHeading|Analytics
+CookiePolicyCategoryAnalytics|Analytics
+CookiePolicyCategoryEssential|Essential
+CookiePolicyCategoryFunctional|Functional
+CookiePolicyCcpaConsentDescription|Under the California Consumer Privacy Act, PrTask discloses all cookies used and their purposes. PrTask honors Global Privacy Control (GPC) signals as a valid opt-out of any sale or sharing of personal information through cookies. PrTask does not sell personal information collected through cookies.
+CookiePolicyCcpaConsentHeading|California (CCPA/CPRA) Cookie Disclosure
+CookiePolicyConsentDescription|When you first visit PrTask, a cookie consent banner informs you about our use of cookies and allows you to accept all, reject all, or customize your preferences by category. Essential cookies are always active and cannot be disabled. Analytics, functional, and marketing cookies require your consent. You may update your cookie preferences at any time through your account settings or by clearing your browser cookies and revisiting the site.
+CookiePolicyConsentHeading|Cookie Consent
+CookiePolicyConsentPurpose|Stores your cookie consent preferences
+CookiePolicyContactDescription|For questions about our use of cookies or to exercise your privacy rights related to cookie data, contact our Data Protection Officer at dpo@prtask.com or our privacy team at privacy@prtask.com.
+CookiePolicyContactHeading|Contact
+CookiePolicyCookieReferenceHeading|Cookie Inventory
+CookiePolicyCsrfPurpose|Protects against cross-site request forgery attacks
+CookiePolicyDescriptionHeading|About This Cookie Policy
+CookiePolicyDescriptionParagraph1|This Cookie Policy provides complete transparency about the cookies and similar tracking technologies used on the PrTask platform. We use a minimal set of cookies necessary for platform functionality, user preferences, and anonymous analytics. Each cookie is documented in the reference table above with its name, provider, purpose, duration, and category so you can make informed decisions about your cookie preferences.
+CookiePolicyDescriptionParagraph2|PrTask respects your cookie choices in accordance with EU ePrivacy Directive, GDPR, CCPA, and other regional privacy regulations. Essential cookies that are required for platform security and functionality cannot be disabled, but you have full control over functional and analytics cookies. You can manage your cookie preferences at any time through your browser settings or our cookie consent mechanism, and withdraw consent for non-essential cookies without affecting your ability to use the core features of the platform.
+CookiePolicyDuration1Year|1 year
+CookiePolicyDuration24Hours|24 hours
+CookiePolicyDuration2Years|2 years
+CookiePolicyDuration30Days|30 days
+CookiePolicyDurationSession|Session
+CookiePolicyEssentialDescription|PrTask uses essential cookies to maintain your session and authentication state. These are required for the platform to function.
+CookiePolicyEssentialHeading|Essential Cookies
+CookiePolicyEuConsentDescription|Under the ePrivacy Directive and GDPR (EU) and PECR (UK), prior opt-in consent is required before setting non-essential cookies. PrTask implements an opt-in model: no non-essential cookies are placed until you explicitly consent. The reject button has equal prominence to the accept button. PrTask does not use cookie walls (denying access for refusing non-essential cookies). Consent is granular per category (analytics, functional, marketing). PrTask maintains auditable records of consent and will request renewal periodically.
+CookiePolicyEuConsentHeading|EU/EEA and UK Cookie Consent
+CookiePolicyFunctionalDescription|Functional cookies remember your preferences such as theme selection (dark or light mode), language settings, and notification preferences. These cookies enhance your experience but are not strictly required for the platform to operate. You may disable functional cookies without affecting core functionality, but your preferences will not be remembered between sessions.
+CookiePolicyFunctionalHeading|Functional Cookies
+CookiePolicyGaPurpose|Google Analytics identifier for unique visitor tracking
+CookiePolicyGidPurpose|Google Analytics session tracking identifier
+CookiePolicyIntroduction|This Cookie Policy explains how PrTask uses cookies and similar tracking technologies when you visit or use our platform. It describes what cookies are, the types we use, why we use them, and how you can control or disable them. This policy should be read together with our Privacy Policy.
+CookiePolicyLastUpdated|Last updated: March 2026
+CookiePolicyManagingDescription|You can disable non-essential cookies through your browser settings. Disabling essential cookies may prevent you from using the platform.
+CookiePolicyManagingHeading|Managing Cookies
+CookiePolicyOtherRegionsDescription|Brazil (LGPD), Thailand (PDPA), South Korea (PIPA), India (DPDP), South Africa (POPIA), and China (PIPL) require consent for non-essential cookies. PrTask applies the opt-in consent model globally to ensure compliance with the strictest applicable requirements. Japan (APPI), Canada (PIPEDA), Singapore (PDPA), and Australia follow notification or implied consent models for non-sensitive cookies, but PrTask provides opt-in consent for all users regardless of jurisdiction.
+CookiePolicyOtherRegionsHeading|Other Jurisdictions
+CookiePolicyPageHeading|Cookie Policy
+CookiePolicyPaymentDescription|Payment providers may set cookies during the payment process. These are governed by the respective provider's cookie and privacy policies.
+CookiePolicyPaymentHeading|Payment Cookies
+CookiePolicyPrivacyLinkDescription|This Cookie Policy is part of and should be read in conjunction with our Privacy Policy. The Privacy Policy provides comprehensive information about how PrTask collects, uses, and protects your personal data, including data collected through cookies. If there is any conflict between this Cookie Policy and the Privacy Policy, the Privacy Policy prevails.
+CookiePolicyPrivacyLinkHeading|Relationship to Privacy Policy
+CookiePolicyRetentionDescription|Essential cookies (session, CSRF) are retained for the duration of your session or up to 30 days. Cookie consent preferences are retained for 1 year. Functional cookies (theme, language) are retained for 1 year. Analytics cookies are retained for up to 2 years. Marketing cookies are retained for up to 3 months. All cookie retention periods are listed in the cookie inventory table above.
+CookiePolicyRetentionHeading|Cookie Retention Periods
+CookiePolicySessionPurpose|Maintains your authenticated session
+CookiePolicyTableCategory|Category
+CookiePolicyTableDuration|Duration
+CookiePolicyTableName|Cookie Name
+CookiePolicyTableProvider|Provider
+CookiePolicyTablePurpose|Purpose
+CookiePolicyThemePurpose|Remembers your selected theme (dark or light mode)
+CookiePolicyThirdPartyDescription|Certain third-party services integrated with PrTask may set their own cookies. These include our payment processor for secure transaction handling and GitHub for OAuth authentication. Third-party cookies are governed by the respective provider's cookie and privacy policies. PrTask does not control these cookies. Third-party cookies are only loaded after you have provided consent where required by applicable law.
+CookiePolicyThirdPartyHeading|Third-Party Cookies
+CookiePolicyWhatAreDescription|Cookies are small text files stored on your device (computer, tablet, or mobile phone) when you visit a website. They help the site remember your preferences, understand how you use the site, and improve your experience. Cookies can be "persistent" (remaining on your device for a set period) or "session" cookies (deleted when you close your browser). Cookies can be set by the site you visit ("first-party cookies") or by other services that provide content on the page ("third-party cookies").
+CookiePolicyWhatAreHeading|What Are Cookies
+CookiePolicyWithdrawDescription|You may withdraw your cookie consent at any time by clicking the cookie preferences link in the platform footer, adjusting settings in your account preferences, or clearing all PrTask cookies through your browser settings and revisiting the site. Withdrawing consent does not affect the lawfulness of processing based on consent before withdrawal. After withdrawal, non-essential cookies will be removed and will not be set again until you provide new consent.
+CookiePolicyWithdrawHeading|Withdrawing Cookie Consent
+CreateTaskDescriptionHeading|Create a Task — Post Bounties for Development Work
+CreateTaskDescriptionParagraph1|The Create Task page is where clients post new development work to the PrTask marketplace. Each task requires a clear title, detailed description, linked GitHub repository URL, and a bounty amount that developers will earn upon successful completion. The task creation form guides you through setting all the parameters that help developers understand what needs to be done, how complex the work is, and what they will earn for completing it. Well-defined tasks attract more qualified developers and lead to faster, higher-quality submissions.
+CreateTaskDescriptionParagraph2|Complexity levels (Trivial, Simple, Medium, Complex, Expert) help developers gauge the expected effort and skill requirements before committing to a task. Set the complexity honestly to attract the right developers — underestimating complexity may result in incomplete submissions, while overestimating may deter developers from attempting the task. The bounty amount should reflect the complexity and value of the work. PrTask enforces a minimum bounty to ensure meaningful compensation, and developers see the full bounty amount with no hidden deductions. Tags help categorize your task by technology and type for better discoverability.
+CreateTaskDescriptionParagraph3|You can also set work item types (Epic, Feature, Story, Task, Bug) to align with your project management methodology, and choose between public and private visibility. Public tasks are visible to all developers on the marketplace, while private tasks are only accessible to invited developers. After submitting a task, it becomes immediately available on the Tasks page where developers can discover and start working on it. Payment for the bounty is processed when you approve and merge the winning pull request, ensuring you only pay for work that meets your requirements and passes your code review.
+CreateTaskPaymentHint|No platform fees — developers receive 100% of the bounty.
+CreateTaskSubmitAndPayButton|Create Task and Proceed to Payment

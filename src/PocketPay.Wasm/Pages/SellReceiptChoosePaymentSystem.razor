@@ -1,0 +1,169 @@
+@page "/sell-receipt-choose-payment-system"
+@page "/sell"
+@inject NavigationManager Nav
+@inject HttpClient Http
+
+<div class="app-shell">
+    <header class="app-header"><a href="/">← Back</a><h2>New Sale</h2></header>
+
+    @if (ReceiptNumber > 0)
+    {
+        <div class="card" style="text-align:center">
+            <h2 style="color:green">Receipt Created</h2>
+            <p>Receipt #@ReceiptNumber</p>
+            <p>Type: @ReceiptType</p>
+            <p>@ReceiptCloseDate</p>
+            <button @onclick="ResetSale">New Sale</button>
+            <button @onclick="GoToReceipts">View Receipts</button>
+        </div>
+    }
+    else
+    {
+        <div class="card">
+            <h3>Products</h3>
+            @if (IsLoadingProducts)
+            {
+                <p>Loading products...</p>
+            }
+            else
+            {
+                @foreach (var P in Products)
+                {
+                    <div style="display:flex;align-items:center;gap:8px;margin:4px 0">
+                        <span style="flex:1">@P.Name (@P.Price.ToString("F2", System.Globalization.CultureInfo.InvariantCulture))</span>
+                        <button @onclick="() => RemoveFromCart(P.Id)">-</button>
+                        <span>@GetCartQty(P.Id)</span>
+                        <button @onclick="() => AddToCart(P.Id)">+</button>
+                    </div>
+                }
+            }
+        </div>
+
+        @if (CartItems.Count > 0)
+        {
+            <div class="card">
+                <h3>Cart</h3>
+                @foreach (var Ci in CartItems)
+                {
+                    var Prod = Products.FirstOrDefault(X => X.Id == Ci.Key);
+                    if (Prod is not null)
+                    {
+                        <p>@Prod.Name x @Ci.Value = @((Prod.Price * Ci.Value).ToString("F2", System.Globalization.CultureInfo.InvariantCulture))</p>
+                    }
+                }
+                <p><strong>Total: @CartTotal.ToString("F2", System.Globalization.CultureInfo.InvariantCulture)</strong></p>
+            </div>
+        }
+
+        <div class="card">
+            <h3>Payment Method</h3>
+            <div class="dashboard-grid">
+                <button class="dashboard-tile" @onclick="SelectCash"><h3>💵</h3><p>@(PaymentType == "CASH" ? "[Cash]" : "Cash")</p></button>
+                <button class="dashboard-tile" @onclick="SelectCard"><h3>💳</h3><p>@(PaymentType == "CARD" ? "[Card]" : "Card")</p></button>
+            </div>
+        </div>
+
+        @if (ErrorMessage.Length > 0)
+        {
+            <p class="error">@ErrorMessage</p>
+        }
+        <button @onclick="CreateReceipt" disabled="@(IsLoading || CartItems.Count == 0)">@(IsLoading ? "Processing..." : "Create Receipt")</button>
+    }
+</div>
+
+@code {
+    private string PaymentType { get; set; } = "CASH";
+    private string ErrorMessage { get; set; } = string.Empty;
+    private bool IsLoading { get; set; }
+    private bool IsLoadingProducts { get; set; }
+    private List<ProductItem> Products { get; set; } = new();
+    private Dictionary<string, int> CartItems { get; set; } = new(StringComparer.Ordinal);
+    private long ReceiptNumber { get; set; }
+    private string ReceiptType { get; set; } = string.Empty;
+    private string ReceiptCloseDate { get; set; } = string.Empty;
+
+    private decimal CartTotal => CartItems.Sum(Ci => { var P = Products.FirstOrDefault(X => X.Id == Ci.Key); return P is not null ? P.Price * Ci.Value : 0m; });
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadProducts();
+    }
+
+    private async Task LoadProducts()
+    {
+        IsLoadingProducts = true;
+        try
+        {
+            var Payload = new { Method = "get_products" };
+            var Response = await Http.PostAsJsonAsync("wss-proxy/get-products", Payload);
+            var Result = await Response.Content.ReadFromJsonAsync<ProductsResult>();
+            if (Result is not null && Result.Success) Products = Result.Items ?? new();
+        }
+        catch (Exception Ex) { ErrorMessage = Ex.Message; }
+        finally { IsLoadingProducts = false; }
+    }
+
+    private int GetCartQty(string Id) => CartItems.TryGetValue(Id, out var Q) ? Q : 0;
+
+    private void AddToCart(string Id)
+    {
+        if (CartItems.ContainsKey(Id)) CartItems[Id]++;
+        else CartItems[Id] = 1;
+    }
+
+    private void RemoveFromCart(string Id)
+    {
+        if (CartItems.TryGetValue(Id, out var Q) && Q > 1) CartItems[Id] = Q - 1;
+        else CartItems.Remove(Id);
+    }
+
+    private void SelectCash() { PaymentType = "CASH"; }
+    private void SelectCard() { PaymentType = "CARD"; }
+
+    private void ResetSale()
+    {
+        ReceiptNumber = 0;
+        ReceiptType = string.Empty;
+        ReceiptCloseDate = string.Empty;
+        CartItems.Clear();
+        ErrorMessage = string.Empty;
+    }
+
+    private void GoToReceipts() { Nav.NavigateTo("/receipt-statuses"); }
+
+    private async Task CreateReceipt()
+    {
+        ErrorMessage = string.Empty;
+        if (CartItems.Count == 0) { ErrorMessage = "Add items to cart first"; return; }
+
+        IsLoading = true;
+        try
+        {
+            var Positions = CartItems.Select(Ci =>
+            {
+                var P = Products.First(X => X.Id == Ci.Key);
+                return new { CommodityId = P.Id, Name = P.Name, Price = P.Price, Quantity = Ci.Value, Tax = P.Tax, MeasureName = P.MeasureName ?? "pcs" };
+            }).ToArray();
+
+            var Payload = new { Method = "create_receipt", Payload = new { Amount = CartTotal, PaymentType, OperationType = "SELL", Positions } };
+            var Response = await Http.PostAsJsonAsync("wss-proxy/create-receipt", Payload);
+            var Result = await Response.Content.ReadFromJsonAsync<ReceiptResult>();
+            if (Result is not null && Result.Success)
+            {
+                ReceiptNumber = Result.Number;
+                ReceiptType = Result.Type ?? "SELL";
+                ReceiptCloseDate = Result.CloseDate ?? string.Empty;
+            }
+            else
+            {
+                ErrorMessage = Result?.Error ?? "Failed to create receipt";
+            }
+        }
+        catch (Exception Ex) { ErrorMessage = Ex.Message; }
+        finally { IsLoading = false; }
+    }
+
+    private sealed record ProductItem(string Id, string Name, string Code, decimal Price, decimal CostPrice, string? ArticleNumber, decimal Tax = 0, string? MeasureName = "pcs");
+    private sealed record ProductsResult(bool Success, List<ProductItem>? Items, string? Error);
+    private sealed record ReceiptResult(bool Success, string? Error, long Number = 0, string? Type = null, string? Id = null, string? CloseDate = null, string? SessionId = null);
+}

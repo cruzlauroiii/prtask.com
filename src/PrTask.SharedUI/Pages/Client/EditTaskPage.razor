@@ -1,0 +1,104 @@
+@page "/client/edit-task/{TaskId}"
+@using PrTask.Application.Services
+@using PrTask.Domain.Constants
+@using PrTask.Domain.Models
+@inject ITaskService TaskService
+@inject NavigationManager NavigationManager
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> Localizer
+
+<SeoHead Title="@EditTaskConstants.SeoTitle" Description="@EditTaskConstants.SeoDescription" />
+
+<h1>@EditTaskConstants.PageHeading</h1>
+@if (CurrentTask is null)
+{
+    <p>@EditTaskConstants.LoadingText</p>
+}
+else
+{
+    <div class="form-container">
+        <div class="form-group">
+            <label for="Title">@EditTaskConstants.TitleLabel</label>
+            <input id="Title" type="text" @bind="CurrentTask.Title" maxlength="@AppConstants.MaxTaskTitleLength" />
+        </div>
+        <div class="form-group">
+            <label for="Description">@EditTaskConstants.DescriptionLabel</label>
+            <textarea id="Description" @bind="CurrentTask.Description" rows="6" maxlength="@AppConstants.MaxTaskDescriptionLength"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="RepoUrl">@EditTaskConstants.RepoUrlLabel</label>
+            <input id="RepoUrl" type="url" @bind="CurrentTask.RepoUrl" />
+        </div>
+        <div class="form-group">
+            <label for="WorkItemType">@EditTaskConstants.WorkItemTypeLabel</label>
+            <select id="WorkItemType" @bind="CurrentTask.WorkItemType">
+                @foreach (var ItemType in Enum.GetValues<WorkItemType>())
+                {
+                    <option value="@ItemType">@Localizer[$"WorkItemType{ItemType}"]</option>
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="Complexity">@EditTaskConstants.ComplexityLabel</label>
+            <select id="Complexity" @bind="CurrentTask.Complexity">
+                @foreach (var Level in Enum.GetValues<TaskComplexity>())
+                {
+                    <option value="@Level">@Localizer[$"TaskComplexity{Level}"]</option>
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="BountyAmount">@EditTaskConstants.BountyLabel</label>
+            <input id="BountyAmount" type="number" @bind="BountyAmountDollars" min="@(AppConstants.MinBountyAmountCents / 100)" />
+        </div>
+        <div class="form-group">
+            <label for="Deadline">@EditTaskConstants.DeadlineLabel</label>
+            <input id="Deadline" type="date" @bind="DeadlineInput" />
+        </div>
+        <div class="form-group">
+            <label for="Tags">@EditTaskConstants.TagsLabel</label>
+            <input id="Tags" type="text" @bind="TagsInput" />
+        </div>
+        <div class="form-group">
+            <label for="Visibility">@EditTaskConstants.VisibilityLabel</label>
+            <select id="Visibility" @bind="SelectedVisibility">
+                <option value="@TaskVisibilityConstants.Public">@TaskVisibilityConstants.PublicDescription</option>
+                <option value="@TaskVisibilityConstants.Private">@TaskVisibilityConstants.PrivateDescription</option>
+            </select>
+        </div>
+        <div class="form-actions">
+            <button class="btn btn-primary" @onclick="SaveChanges">@EditTaskConstants.SaveButtonText</button>
+            <a href="@(string.Format(RouteConstants.TaskDetail, TaskId))" class="btn btn-secondary">@EditTaskConstants.CancelButtonText</a>
+        </div>
+    </div>
+}
+@code {
+    [Parameter]
+    public string TaskId { get; set; } = string.Empty;
+    private TaskEntity? CurrentTask { get; set; }
+    private int BountyAmountDollars { get; set; }
+    private string TagsInput { get; set; } = string.Empty;
+    private DateTime? DeadlineInput { get; set; }
+    private string SelectedVisibility { get; set; } = TaskVisibilityConstants.Public;
+    protected override async Task OnInitializedAsync()
+    {
+        CurrentTask = await TaskService.GetByIdAsync(TaskId);
+        if (CurrentTask is not null)
+        {
+            BountyAmountDollars = (int)(CurrentTask.BountyAmountCents / 100);
+            TagsInput = CurrentTask.Tags is not null ? string.Join(", ", CurrentTask.Tags) : string.Empty;
+            DeadlineInput = CurrentTask.Deadline;
+        }
+    }
+    private async Task SaveChanges()
+    {
+        if (CurrentTask is null)
+        {
+            return;
+        }
+        CurrentTask.BountyAmountCents = BountyAmountDollars * 100L;
+        CurrentTask.Tags = string.IsNullOrWhiteSpace(TagsInput) ? null : TagsInput.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries);
+        CurrentTask.Deadline = DeadlineInput;
+        await TaskService.UpdateAsync(CurrentTask);
+        NavigationManager.NavigateTo(string.Format(RouteConstants.TaskDetail, TaskId));
+    }
+}

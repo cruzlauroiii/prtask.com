@@ -1,0 +1,55 @@
+@page "/leaderboard"
+@using System.Net.Http.Json
+@using PrTask.Domain.Models
+@inject HttpClient HttpClient
+<h1>Leaderboard</h1>
+<p>Top developers ranked by merged pull requests and complexity.</p>
+@if (TopEntries is null)
+{
+    <p>Loading leaderboard...</p>
+}
+else if (TopEntries.Length == 0)
+{
+    <div class="empty-state">
+        <p>No entries yet. Be the first to submit a PR.</p>
+    </div>
+}
+else
+{
+    <div class="leaderboard-table">
+        <div class="leaderboard-header">
+            <span>Rank</span>
+            <span>Developer</span>
+            <span>Level</span>
+            <span>XP</span>
+            <span>PRs Merged</span>
+            <span>Earned</span>
+        </div>
+        @foreach (var Entry in TopEntries)
+        {
+            <div class="leaderboard-row">
+                <span class="rank">#@Entry.Rank</span>
+                <span class="developer">@Entry.GitHubUsername</span>
+                <span class="level">Lv.@Entry.Level</span>
+                <span class="xp">@Entry.Xp XP</span>
+                <span class="prs">@Entry.PrsMerged</span>
+                <span class="earned">@FormatEarnedAmount(Entry.TotalEarnedCents)</span>
+            </div>
+        }
+    </div>
+}
+@code {
+    private LeaderboardEntry[]? TopEntries { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            TopEntries = await HttpClient.GetFromJsonAsync<LeaderboardEntry[]>(RouteConstants.ApiLeaderboard) ?? [];
+        }
+        catch (HttpRequestException)
+        {
+            TopEntries = [];
+        }
+    }
+    private static string FormatEarnedAmount(long AmountCents) => $"${AmountCents / 100m:N0}";
+}

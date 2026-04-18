@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net11.0-android36.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <SupportedOSPlatformVersion>36</SupportedOSPlatformVersion>
+    <ApplicationId>com.prtask.pocketpay.companion</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
+    <ApplicationDisplayVersion>1.0.0</ApplicationDisplayVersion>
+    <NoWarn>$(NoWarn);CA1422;CA1002;CA1024;CA1711;IDE0007;IDE0011;IDE0017;IDE0028;IDE0046;IDE0047;IDE0048;IDE0057;IDE0078;IDE0130;IDE0200;IDE0290;IDE0300;IDE0301;IDE0305;IDE0306;IDE0330;MA0016;MA0028;MA0044;MA0140;MA0158;RCS1003;RCS1123;RCS1201;S127;S1871;S1905;SA1122;SA1402;SA1407;SA1503;SA1633</NoWarn>
+  </PropertyGroup>
+</Project>

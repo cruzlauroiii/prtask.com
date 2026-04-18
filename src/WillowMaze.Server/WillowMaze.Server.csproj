@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>WillowMaze.Server</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <EnforceCodeStyleInBuild>false</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>false</EnableNETAnalyzers>
+    <RunAnalyzers>false</RunAnalyzers>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\PocketPay.Wasm\PocketPay.Wasm.Server\NativeProxy.cs" Link="PocketPay\NativeProxy.cs" />
+    <Compile Include="..\PocketPay.Wasm\PocketPay.Wasm.Server\WssHandler.cs" Link="PocketPay\WssHandler.cs" />
+  </ItemGroup>
+</Project>

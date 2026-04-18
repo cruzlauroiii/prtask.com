@@ -1,0 +1,282 @@
+@page "/settings"
+@using PrTask.Domain.Constants
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> Localizer
+<h1>@Localizer["SettingsPageHeading"]</h1>
+<p>@Localizer["SettingsPageDescription"]</p>
+<section class="form-container">
+    <h2>@Localizer["SettingsProfileHeading"]</h2>
+    <div class="form-group">
+        <label for="DisplayName">@Localizer["SettingsDisplayNameLabel"]</label>
+        <input id="DisplayName" type="text" placeholder="@Localizer["SettingsDisplayNamePlaceholder"]" @bind="DisplayName" />
+    </div>
+    <div class="form-group">
+        <label for="AvatarUrl">@Localizer["SettingsAvatarUrlLabel"]</label>
+        <input id="AvatarUrl" type="url" placeholder="https://example.com/avatar.png" @bind="AvatarUrl" />
+    </div>
+    <div class="form-group">
+        <label for="Email">@Localizer["SettingsEmailLabel"]</label>
+        <input id="Email" type="email" placeholder="you@example.com" @bind="Email" />
+    </div>
+</section>
+<section class="form-container">
+    <h2>@Localizer["SettingsNotificationsHeading"]</h2>
+    <div class="form-group">
+        <label for="EmailNotifications">@Localizer["SettingsEmailNotificationsLabel"]</label>
+        <select id="EmailNotifications" @bind="NotificationPreference">
+            <option value="all">@Localizer["SettingsNotificationAllOption"]</option>
+            <option value="important">@Localizer["SettingsNotificationImportantOption"]</option>
+            <option value="none">@Localizer["SettingsNotificationNoneOption"]</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="NotificationEmail">@Localizer["SettingsNotificationEmailLabel"]</label>
+        <input id="NotificationEmail" type="email" placeholder="you@example.com" @bind="NotificationEmail" />
+    </div>
+</section>
+<section class="form-container">
+    <h2>@Localizer["SettingsWithdrawalHeading"]</h2>
+    <p>@Localizer["SettingsWithdrawalDescription"]</p>
+    <div class="form-group">
+        <label for="PayoutMethod">@Localizer["SettingsPayoutMethodLabel"]</label>
+        <select id="PayoutMethod" @bind="PayoutMethod">
+            <option value="bank">@Localizer["SettingsPayoutBankOption"]</option>
+            <option value="paypal">@Localizer["SettingsPayoutPaypalOption"]</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="PayoutDetails">@Localizer["SettingsPayoutDetailsLabel"]</label>
+        <input id="PayoutDetails" type="text" placeholder="@Localizer["SettingsPayoutDetailsPlaceholder"]" @bind="PayoutDetails" />
+    </div>
+</section>
+<section class="form-container">
+    <h2>@Localizer["SettingsDepositHeading"]</h2>
+    <p>@Localizer["SettingsDepositDescription"]</p>
+    <div class="form-group">
+        <label for="PaymentMethod">@Localizer["SettingsPaymentMethodLabel"]</label>
+        <select id="PaymentMethod" @bind="PaymentMethod">
+            <option value="card">@Localizer["SettingsPaymentCardOption"]</option>
+            <option value="bank">@Localizer["SettingsPaymentBankOption"]</option>
+        </select>
+    </div>
+</section>
+<section class="form-container" id="payment-gateways">
+    <h2>@Localizer["SettingsGatewaysHeading"]</h2>
+    <p>@Localizer["SettingsGatewaysDescription"]</p>
+    <div class="form-group gateway-toggle">
+        <label for="GatewayQrPh">@Localizer["SettingsGatewayQrPhLabel"]</label>
+        <select id="GatewayQrPh" @bind="GatewayQrPh"><option value="enabled">@Localizer["SettingsGatewayEnabled"]</option><option value="disabled">@Localizer["SettingsGatewayDisabled"]</option></select>
+    </div>
+    <div class="form-group gateway-toggle">
+        <label for="GatewayCard">@Localizer["SettingsGatewayCardLabel"]</label>
+        <select id="GatewayCard" @bind="GatewayCard"><option value="enabled">@Localizer["SettingsGatewayEnabled"]</option><option value="disabled">@Localizer["SettingsGatewayDisabled"]</option></select>
+    </div>
+    <div class="form-group gateway-toggle">
+        <label for="GatewayGcash">@Localizer["SettingsGatewayGcashLabel"]</label>
+        <select id="GatewayGcash" @bind="GatewayGcash"><option value="enabled">@Localizer["SettingsGatewayEnabled"]</option><option value="disabled">@Localizer["SettingsGatewayDisabled"]</option></select>
+    </div>
+    <div class="form-group gateway-toggle">
+        <label for="GatewayGrabPay">@Localizer["SettingsGatewayGrabPayLabel"]</label>
+        <select id="GatewayGrabPay" @bind="GatewayGrabPay"><option value="enabled">@Localizer["SettingsGatewayEnabled"]</option><option value="disabled">@Localizer["SettingsGatewayDisabled"]</option></select>
+    </div>
+    <div class="form-group gateway-toggle">
+        <label for="GatewayMaya">@Localizer["SettingsGatewayMayaLabel"]</label>
+        <select id="GatewayMaya" @bind="GatewayMaya"><option value="enabled">@Localizer["SettingsGatewayEnabled"]</option><option value="disabled">@Localizer["SettingsGatewayDisabled"]</option></select>
+    </div>
+    <div class="form-group gateway-toggle">
+        <label for="GatewayBank">@Localizer["SettingsGatewayBankLabel"]</label>
+        <select id="GatewayBank" @bind="GatewayBank"><option value="enabled">@Localizer["SettingsGatewayEnabled"]</option><option value="disabled">@Localizer["SettingsGatewayDisabled"]</option></select>
+    </div>
+</section>
+<section class="form-container" id="saved-cards">
+    <h2>@Localizer["SettingsSavedCardsHeading"]</h2>
+    <p>@Localizer["SettingsSavedCardsDescription"]</p>
+    @if (SavedCards.Count == 0)
+    {
+        <p class="empty-state">@Localizer["SettingsNoSavedCards"]</p>
+    }
+    else
+    {
+        @foreach (var Card in SavedCards)
+        {
+            <div class="saved-card">
+                <span>@Card.Brand ****@Card.Last4 (@Card.ExpMonth/@Card.ExpYear)</span>
+                <button class="btn btn-sm btn-danger" @onclick="() => RemoveSavedCard(Card.Id)">@Localizer["SettingsRemoveButton"]</button>
+            </div>
+        }
+    }
+    <div class="add-card-form">
+        <h3>@Localizer["SettingsAddCardHeading"]</h3>
+        <div class="form-group">
+            <label for="CardNumber">@Localizer["SettingsCardNumberLabel"]</label>
+            <input id="CardNumber" type="text" placeholder="@SettingsConstants.CardPlaceholder" maxlength="19" @bind="NewCardNumber" />
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="CardExpMonth">@Localizer["SettingsCardExpMonthLabel"]</label>
+                <input id="CardExpMonth" type="number" min="1" max="12" placeholder="12" @bind="NewCardExpMonth" />
+            </div>
+            <div class="form-group">
+                <label for="CardExpYear">@Localizer["SettingsCardExpYearLabel"]</label>
+                <input id="CardExpYear" type="number" min="@SettingsConstants.DefaultCardExpYear" max="2040" placeholder="@SettingsConstants.DefaultCardExpYear" @bind="NewCardExpYear" />
+            </div>
+            <div class="form-group">
+                <label for="CardCvc">@Localizer["SettingsCardCvcLabel"]</label>
+                <input id="CardCvc" type="password" maxlength="4" placeholder="123" @bind="NewCardCvc" />
+            </div>
+        </div>
+        <button class="btn btn-primary" @onclick="AddCardAsync">@Localizer["SettingsAddCardButton"]</button>
+    </div>
+</section>
+<section class="form-container">
+    <h2>@Localizer["SettingsSecurityHeading"]</h2>
+    <p>@Localizer["SettingsPageDescription"]</p>
+    <div class="form-group">
+        <label for="TwoFactor">@Localizer["SettingsTwoFactorLabel"]</label>
+        <select id="TwoFactor" @bind="TwoFactorMethod">
+            <option value="disabled">@Localizer["SettingsTwoFactorDisabledOption"]</option>
+            <option value="authenticator">@Localizer["SettingsTwoFactorAuthenticatorOption"]</option>
+            <option value="email">@Localizer["SettingsTwoFactorEmailOption"]</option>
+        </select>
+    </div>
+</section>
+<section class="form-container">
+    <h2>@Localizer["SettingsConnectedAccountsHeading"]</h2>
+    <p>@Localizer["SettingsPageDescription"]</p>
+    <div class="form-group">
+        <label>@Localizer["SettingsConnectedGoogle"]</label>
+        <span class="connected-status @GoogleStatusClass">@GoogleStatus</span>
+    </div>
+    <div class="form-group">
+        <label>@Localizer["SettingsConnectedGitHub"]</label>
+        <span class="connected-status @GitHubStatusClass">@GitHubStatus</span>
+    </div>
+    <div class="form-group">
+        <label>@Localizer["SettingsConnectedMicrosoft"]</label>
+        <span class="connected-status @AzureStatusClass">@AzureStatus</span>
+    </div>
+    <div class="form-group">
+        <label>@Localizer["SettingsConnectedOkta"]</label>
+        <span class="connected-status @OktaStatusClass">@OktaStatus</span>
+    </div>
+</section>
+<section class="form-container">
+    <h2>@Localizer["SettingsPrivacyHeading"]</h2>
+    <div class="form-group">
+        <label for="ProfileVisibility">@Localizer["SettingsPrivacyProfileOptions"]</label>
+        <select id="ProfileVisibility" @bind="ProfileVisibility">
+            <option value="public">@Localizer["SettingsPrivacyProfilePublic"]</option>
+            <option value="private">@Localizer["SettingsPrivacyProfilePrivate"]</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="ActivityVisibility">@Localizer["SettingsPrivacyActivityOptions"]</label>
+        <select id="ActivityVisibility" @bind="ActivityVisibility">
+            <option value="public">@Localizer["SettingsPrivacyActivityPublic"]</option>
+            <option value="private">@Localizer["SettingsPrivacyActivityPrivate"]</option>
+        </select>
+    </div>
+</section>
+<section class="form-container">
+    <h2>@Localizer["SettingsSubscriptionHeading"]</h2>
+    <p>@Localizer["SettingsSubscriptionDescription"]</p>
+    @if (Subscriptions.Count == 0)
+    {
+        <div class="form-group"><label>@Localizer["SettingsSubscriptionHeading"]</label><span>@Localizer["SettingsNoSubscriptions"]</span></div>
+    }
+    else
+    {
+        @foreach (var Sub in Subscriptions)
+        {
+            <div class="form-group"><label>@Sub.Description</label><span>@Sub.Status</span></div>
+        }
+    }
+</section>
+<section class="form-container">
+    <h2>@Localizer["SettingsWalletHeading"]</h2>
+    <p>@Localizer["SettingsWalletDescription"]</p>
+    <div class="form-group"><label>@Localizer["SettingsWalletHeading"]</label><span>@Localizer["SettingsLinkedWallet"]</span></div>
+</section>
+<section class="form-container">
+    <h2>@Localizer["SettingsPaymentHistoryHeading"]</h2>
+    <p>@Localizer["SettingsPaymentHistoryDescription"]</p>
+    @if (Invoices.Count == 0)
+    {
+        <div class="form-group"><label>@Localizer["SettingsPaymentHistoryHeading"]</label><span>@Localizer["SettingsNoInvoices"]</span></div>
+    }
+    else
+    {
+        @foreach (var Invoice in Invoices)
+        {
+            <div class="form-group"><label>@Invoice.Id</label><span>@Invoice.Status</span></div>
+        }
+    }
+</section>
+<section class="form-container">
+    <h2>@Localizer["SettingsDisbursementHeading"]</h2>
+    <p>@Localizer["SettingsDisbursementDescription"]</p>
+    <div class="form-group"><label>@Localizer["SettingsDisbursementHeading"]</label><span>@Localizer["SettingsDisbursementMethod"]</span></div>
+</section>
+<section class="form-container">
+    <h2>@Localizer["SettingsInvoiceHeading"]</h2>
+    <p>@Localizer["SettingsInvoiceDescription"]</p>
+    <div class="form-group">
+        <label for="InvoiceSetting">@Localizer["SettingsInvoiceHeading"]</label>
+        <select id="InvoiceSetting" @bind="InvoiceSetting">
+            <option value="enabled">@Localizer["SettingsGatewayEnabled"]</option>
+            <option value="disabled">@Localizer["SettingsGatewayDisabled"]</option>
+        </select>
+    </div>
+</section>
+<section class="form-container">
+    <h2>@Localizer["SettingsQrPaymentHeading"]</h2>
+    <p>@Localizer["SettingsQrPaymentDescription"]</p>
+    <div class="form-group">
+        <label for="QrPaymentSetting">@Localizer["SettingsQrPaymentHeading"]</label>
+        <select id="QrPaymentSetting" @bind="QrPaymentSetting">
+            <option value="enabled">@Localizer["SettingsGatewayEnabled"]</option>
+            <option value="disabled">@Localizer["SettingsGatewayDisabled"]</option>
+        </select>
+    </div>
+</section>
+<section class="form-container" id="kyc">
+    <h2>@Localizer["SettingsKycHeading"]</h2>
+    <p>@Localizer["SettingsKycDescription"]</p>
+    <div class="form-group">
+        <label>@Localizer["SettingsKycVerificationStatusLabel"]</label>
+        <span class="kyc-status">@KycStatusText</span>
+    </div>
+    <div class="form-group">
+        <label for="KycDocumentType">@Localizer["SettingsKycDocumentTypeLabel"]</label>
+        <select id="KycDocumentType" @bind="KycDocumentType">
+            <option value="">@Localizer["SettingsKycDocumentTypeSelect"]</option>
+            <option value="passport">@Localizer["SettingsKycDocumentTypePassport"]</option>
+            <option value="national-id">@Localizer["SettingsKycDocumentTypeNational"]</option>
+            <option value="drivers-license">@Localizer["SettingsKycDocumentTypeDrivers"]</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="KycDocumentId">@Localizer["SettingsKycDocumentIdLabel"]</label>
+        <input id="KycDocumentId" type="text" placeholder="" @bind="KycDocumentId" />
+    </div>
+    <button class="btn btn-primary" @onclick="SubmitKycAsync">@Localizer["SettingsKycSubmitButton"]</button>
+    <button class="btn btn-secondary didit-verify-btn" @onclick="StartDigitalVerificationAsync">@Localizer["SettingsKycDigitVerifyButton"]</button>
+</section>
+<section class="form-container">
+    <h2>@Localizer["SettingsAccountHeading"]</h2>
+    <div class="form-group">
+        <label for="Timezone">@Localizer["SettingsTimezoneLabel"]</label>
+        <select id="Timezone" @bind="Timezone">
+            <option value="UTC">@Localizer["SettingsTimezoneUtc"]</option>
+            <option value="Asia/Manila">@Localizer["SettingsTimezoneManila"]</option>
+            <option value="America/New_York">@Localizer["SettingsTimezoneEastern"]</option>
+            <option value="Europe/London">@Localizer["SettingsTimezoneLondon"]</option>
+        </select>
+    </div>
+    <button class="btn btn-primary" @onclick="SaveSettingsAsync">@Localizer["SettingsSaveButton"]</button>
+</section>
+<section class="page-description">
+    <h2>@Localizer["SettingsDescriptionHeading"]</h2>
+    <p>@Localizer["SettingsDescriptionParagraph1"]</p>
+    <p>@Localizer["SettingsDescriptionParagraph2"]</p>
+    <p>@Localizer["SettingsDescriptionParagraph3"]</p>
+</section>

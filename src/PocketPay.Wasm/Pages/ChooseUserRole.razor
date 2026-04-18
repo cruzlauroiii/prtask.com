@@ -1,0 +1,36 @@
+@page "/choose-user-role"
+@inject NavigationManager Nav
+
+<div style="width:100%">
+    <header class="toolbar" style="width:100%"></header>
+    <div style="width:100%">
+        <div style="display:flex;flex-direction:column;width:100%">
+            <fieldset class="choose_user_role_rg" style="display:flex;flex-direction:column;width:100%">
+                <div class="supervisor_content" style="display:flex;flex-direction:row;width:100%">
+                    <input class="supervisor_rb" type="radio" />
+                    <div style="display:flex;flex-direction:column">
+                        <span class="supervisor_tv"></span>
+                        <span class="supervisor_description_tv"></span>
+                    </div>
+                    <img class="supervisor_image" src="img/ic_business_user.png" alt="ic_business_user" />
+                </div>
+                <div class="employee_content" style="display:flex;flex-direction:row;width:100%">
+                    <input class="employee_rb" type="radio" />
+                    <div style="display:flex;flex-direction:column">
+                        <span class="employee_tv"></span>
+                        <span class="employee_description_tv"></span>
+                    </div>
+                    <img class="employee_image" src="img/ic_cashier_user.png" alt="ic_cashier_user" />
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <button class="proceed_button" style="width:100%"></button>
+</div>
+
+@code {
+
+    private void OnField2131362839Click()
+    {
+    }
+}

@@ -1,0 +1,844 @@
+  Determining projects to restore...
+  Restored C:\work\prtask.com\src\PrTask.Client\PrTask.Client.csproj (in 2.74 sec).
+  6 of 7 projects are up-to-date for restore.
+C:\work\dotnet\sdk\artifacts\bin\redist\Release\dotnet\sdk\11.0.100-dev\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(383,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [C:\work\prtask.com\src\PrTask.Infrastructure\PrTask.Infrastructure.csproj]
+C:\work\dotnet\sdk\artifacts\bin\redist\Release\dotnet\sdk\11.0.100-dev\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(383,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [C:\work\prtask.com\src\PrTask.SharedUI\PrTask.SharedUI.csproj]
+C:\work\dotnet\sdk\artifacts\bin\redist\Release\dotnet\sdk\11.0.100-dev\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(383,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [C:\work\prtask.com\src\PrTask.Application\PrTask.Application.csproj]
+C:\work\dotnet\sdk\artifacts\bin\redist\Release\dotnet\sdk\11.0.100-dev\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(383,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [C:\work\prtask.com\src\PrTask.Server\PrTask.Server.csproj]
+C:\work\dotnet\sdk\artifacts\bin\redist\Release\dotnet\sdk\11.0.100-dev\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(383,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [C:\work\prtask.com\src\PrTask.Domain\PrTask.Domain.csproj]
+C:\work\dotnet\sdk\artifacts\bin\redist\Release\dotnet\sdk\11.0.100-dev\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(383,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [C:\work\prtask.com\src\PrTask.Client\PrTask.Client.csproj]
+  PrTask.Domain -> C:\work\prtask.com\src\PrTask.Domain\bin\Debug\net10.0\PrTask.Domain.dll
+  PrTask.Application -> C:\work\prtask.com\src\PrTask.Application\bin\Debug\net10.0\PrTask.Application.dll
+  PrTask.LowDb -> C:\work\prtask.com\src\PrTask.LowDb\bin\Debug\net10.0\PrTask.LowDb.dll
+  PrTask.SharedUI -> C:\work\prtask.com\src\PrTask.SharedUI\bin\Debug\net10.0\PrTask.SharedUI.dll
+  PrTask.Infrastructure -> C:\work\prtask.com\src\PrTask.Infrastructure\bin\Debug\net10.0\PrTask.Infrastructure.dll
+  PrTask.Server -> C:\work\prtask.com\src\PrTask.Server\bin\Debug\net10.0\PrTask.Server.dll
+  PrTask.Client -> C:\work\prtask.com\src\PrTask.Client\bin\Debug\net10.0\PrTask.Client.dll
+  PrTask.Client (Blazor output) -> C:\work\prtask.com\src\PrTask.Client\bin\Debug\net10.0\wwwroot
+  Pre-rendering 368 routes to bin\Debug\net10.0\wwwroot
+    [OK] [en] / -> en\index.html (15544 bytes)
+    [OK] [en] /Dashboard -> en\Dashboard.html (15412 bytes)
+    [OK] [en] /Tasks -> en\Tasks.html (14410 bytes)
+    [OK] [en] /Login -> en\Login.html (16963 bytes)
+    [OK] [en] /Settings -> en\Settings.html (24014 bytes)
+    [OK] [en] /Leaderboard -> en\Leaderboard.html (14717 bytes)
+    [OK] [en] /HowItWorks -> en\HowItWorks.html (22855 bytes)
+    [OK] [en] /Pricing -> en\Pricing.html (18732 bytes)
+    [OK] [en] /About -> en\About.html (19209 bytes)
+    [OK] [en] /Download -> en\Download.html (18822 bytes)
+    [OK] [en] /Sprints -> en\Sprints.html (14607 bytes)
+    [OK] [en] /Boards -> en\Boards.html (14584 bytes)
+    [OK] [en] /Legal/Terms -> en\Legal/Terms.html (16764 bytes)
+    [OK] [en] /Legal/Privacy -> en\Legal/Privacy.html (17659 bytes)
+    [OK] [en] /Legal/Refund -> en\Legal/Refund.html (16991 bytes)
+    [OK] [en] /Legal/AcceptableUse -> en\Legal/AcceptableUse.html (15865 bytes)
+    [OK] [en] /Legal/CookiePolicy -> en\Legal/CookiePolicy.html (15858 bytes)
+    [OK] [en] /Legal/Licenses -> en\Legal/Licenses.html (17068 bytes)
+    [OK] [en] /Legal/Accessibility -> en\Legal/Accessibility.html (16967 bytes)
+    [OK] [en] /Legal/Dmca -> en\Legal/Dmca.html (16994 bytes)
+    [OK] [en] /Client/CreateTask -> en\Client/CreateTask.html (16927 bytes)
+    [OK] [en] /Client/Payments -> en\Client/Payments.html (15303 bytes)
+    [OK] [en] /Client/Repository -> en\Client/Repository.html (15934 bytes)
+    [OK] [zh] / -> zh\index.html (16310 bytes)
+    [OK] [zh] /Dashboard -> zh\Dashboard.html (15412 bytes)
+    [OK] [zh] /Tasks -> zh\Tasks.html (14410 bytes)
+    [OK] [zh] /Login -> zh\Login.html (16963 bytes)
+    [OK] [zh] /Settings -> zh\Settings.html (24014 bytes)
+    [OK] [zh] /Leaderboard -> zh\Leaderboard.html (14717 bytes)
+    [OK] [zh] /HowItWorks -> zh\HowItWorks.html (22855 bytes)
+    [OK] [zh] /Pricing -> zh\Pricing.html (18732 bytes)
+    [OK] [zh] /About -> zh\About.html (20207 bytes)
+    [OK] [zh] /Download -> zh\Download.html (18822 bytes)
+    [OK] [zh] /Sprints -> zh\Sprints.html (14668 bytes)
+    [OK] [zh] /Boards -> zh\Boards.html (14648 bytes)
+    [OK] [zh] /Legal/Terms -> zh\Legal/Terms.html (16764 bytes)
+    [OK] [zh] /Legal/Privacy -> zh\Legal/Privacy.html (17659 bytes)
+    [OK] [zh] /Legal/Refund -> zh\Legal/Refund.html (16991 bytes)
+    [OK] [zh] /Legal/AcceptableUse -> zh\Legal/AcceptableUse.html (15865 bytes)
+    [OK] [zh] /Legal/CookiePolicy -> zh\Legal/CookiePolicy.html (15858 bytes)
+    [OK] [zh] /Legal/Licenses -> zh\Legal/Licenses.html (17068 bytes)
+    [OK] [zh] /Legal/Accessibility -> zh\Legal/Accessibility.html (16967 bytes)
+    [OK] [zh] /Legal/Dmca -> zh\Legal/Dmca.html (16994 bytes)
+    [OK] [zh] /Client/CreateTask -> zh\Client/CreateTask.html (16927 bytes)
+    [OK] [zh] /Client/Payments -> zh\Client/Payments.html (15303 bytes)
+    [OK] [zh] /Client/Repository -> zh\Client/Repository.html (15934 bytes)
+    [OK] [es] / -> es\index.html (15670 bytes)
+    [OK] [es] /Dashboard -> es\Dashboard.html (15412 bytes)
+    [OK] [es] /Tasks -> es\Tasks.html (14410 bytes)
+    [OK] [es] /Login -> es\Login.html (16963 bytes)
+    [OK] [es] /Settings -> es\Settings.html (24014 bytes)
+    [OK] [es] /Leaderboard -> es\Leaderboard.html (14717 bytes)
+    [OK] [es] /HowItWorks -> es\HowItWorks.html (22855 bytes)
+    [OK] [es] /Pricing -> es\Pricing.html (18732 bytes)
+    [OK] [es] /About -> es\About.html (19362 bytes)
+    [OK] [es] /Download -> es\Download.html (18822 bytes)
+    [OK] [es] /Sprints -> es\Sprints.html (14607 bytes)
+    [OK] [es] /Boards -> es\Boards.html (14590 bytes)
+    [OK] [es] /Legal/Terms -> es\Legal/Terms.html (16764 bytes)
+    [OK] [es] /Legal/Privacy -> es\Legal/Privacy.html (17659 bytes)
+    [OK] [es] /Legal/Refund -> es\Legal/Refund.html (16991 bytes)
+    [OK] [es] /Legal/AcceptableUse -> es\Legal/AcceptableUse.html (15865 bytes)
+    [OK] [es] /Legal/CookiePolicy -> es\Legal/CookiePolicy.html (15858 bytes)
+    [OK] [es] /Legal/Licenses -> es\Legal/Licenses.html (17068 bytes)
+    [OK] [es] /Legal/Accessibility -> es\Legal/Accessibility.html (16967 bytes)
+    [OK] [es] /Legal/Dmca -> es\Legal/Dmca.html (16994 bytes)
+    [OK] [es] /Client/CreateTask -> es\Client/CreateTask.html (16927 bytes)
+    [OK] [es] /Client/Payments -> es\Client/Payments.html (15303 bytes)
+    [OK] [es] /Client/Repository -> es\Client/Repository.html (15934 bytes)
+    [OK] [ja] / -> ja\index.html (16905 bytes)
+    [OK] [ja] /Dashboard -> ja\Dashboard.html (15412 bytes)
+    [OK] [ja] /Tasks -> ja\Tasks.html (14410 bytes)
+    [OK] [ja] /Login -> ja\Login.html (16963 bytes)
+    [OK] [ja] /Settings -> ja\Settings.html (24014 bytes)
+    [OK] [ja] /Leaderboard -> ja\Leaderboard.html (14717 bytes)
+    [OK] [ja] /HowItWorks -> ja\HowItWorks.html (22855 bytes)
+    [OK] [ja] /Pricing -> ja\Pricing.html (18732 bytes)
+    [OK] [ja] /About -> ja\About.html (21251 bytes)
+    [OK] [ja] /Download -> ja\Download.html (18822 bytes)
+    [OK] [ja] /Sprints -> ja\Sprints.html (14764 bytes)
+    [OK] [ja] /Boards -> ja\Boards.html (14696 bytes)
+    [OK] [ja] /Legal/Terms -> ja\Legal/Terms.html (16764 bytes)
+    [OK] [ja] /Legal/Privacy -> ja\Legal/Privacy.html (17659 bytes)
+    [OK] [ja] /Legal/Refund -> ja\Legal/Refund.html (16991 bytes)
+    [OK] [ja] /Legal/AcceptableUse -> ja\Legal/AcceptableUse.html (15865 bytes)
+    [OK] [ja] /Legal/CookiePolicy -> ja\Legal/CookiePolicy.html (15858 bytes)
+    [OK] [ja] /Legal/Licenses -> ja\Legal/Licenses.html (17068 bytes)
+    [OK] [ja] /Legal/Accessibility -> ja\Legal/Accessibility.html (16967 bytes)
+    [OK] [ja] /Legal/Dmca -> ja\Legal/Dmca.html (16994 bytes)
+    [OK] [ja] /Client/CreateTask -> ja\Client/CreateTask.html (16927 bytes)
+    [OK] [ja] /Client/Payments -> ja\Client/Payments.html (15303 bytes)
+    [OK] [ja] /Client/Repository -> ja\Client/Repository.html (15934 bytes)
+    [OK] [de] / -> de\index.html (15720 bytes)
+    [OK] [de] /Dashboard -> de\Dashboard.html (15412 bytes)
+    [OK] [de] /Tasks -> de\Tasks.html (14410 bytes)
+    [OK] [de] /Login -> de\Login.html (16963 bytes)
+    [OK] [de] /Settings -> de\Settings.html (24014 bytes)
+    [OK] [de] /Leaderboard -> de\Leaderboard.html (14717 bytes)
+    [OK] [de] /HowItWorks -> de\HowItWorks.html (22855 bytes)
+    [OK] [de] /Pricing -> de\Pricing.html (18732 bytes)
+    [OK] [de] /About -> de\About.html (19397 bytes)
+    [OK] [de] /Download -> de\Download.html (18822 bytes)
+    [OK] [de] /Sprints -> de\Sprints.html (14617 bytes)
+    [OK] [de] /Boards -> de\Boards.html (14594 bytes)
+    [OK] [de] /Legal/Terms -> de\Legal/Terms.html (16764 bytes)
+    [OK] [de] /Legal/Privacy -> de\Legal/Privacy.html (17659 bytes)
+    [OK] [de] /Legal/Refund -> de\Legal/Refund.html (16991 bytes)
+    [OK] [de] /Legal/AcceptableUse -> de\Legal/AcceptableUse.html (15865 bytes)
+    [OK] [de] /Legal/CookiePolicy -> de\Legal/CookiePolicy.html (15858 bytes)
+    [OK] [de] /Legal/Licenses -> de\Legal/Licenses.html (17068 bytes)
+    [OK] [de] /Legal/Accessibility -> de\Legal/Accessibility.html (16967 bytes)
+    [OK] [de] /Legal/Dmca -> de\Legal/Dmca.html (16994 bytes)
+    [OK] [de] /Client/CreateTask -> de\Client/CreateTask.html (16927 bytes)
+    [OK] [de] /Client/Payments -> de\Client/Payments.html (15303 bytes)
+    [OK] [de] /Client/Repository -> de\Client/Repository.html (15934 bytes)
+    [OK] [fr] / -> fr\index.html (15818 bytes)
+    [OK] [fr] /Dashboard -> fr\Dashboard.html (15412 bytes)
+    [OK] [fr] /Tasks -> fr\Tasks.html (14410 bytes)
+    [OK] [fr] /Login -> fr\Login.html (16963 bytes)
+    [OK] [fr] /Settings -> fr\Settings.html (24014 bytes)
+    [OK] [fr] /Leaderboard -> fr\Leaderboard.html (14717 bytes)
+    [OK] [fr] /HowItWorks -> fr\HowItWorks.html (22855 bytes)
+    [OK] [fr] /Pricing -> fr\Pricing.html (18732 bytes)
+    [OK] [fr] /About -> fr\About.html (19537 bytes)
+    [OK] [fr] /Download -> fr\Download.html (18822 bytes)
+    [OK] [fr] /Sprints -> fr\Sprints.html (14621 bytes)
+    [OK] [fr] /Boards -> fr\Boards.html (14604 bytes)
+    [OK] [fr] /Legal/Terms -> fr\Legal/Terms.html (16764 bytes)
+    [OK] [fr] /Legal/Privacy -> fr\Legal/Privacy.html (17659 bytes)
+    [OK] [fr] /Legal/Refund -> fr\Legal/Refund.html (16991 bytes)
+    [OK] [fr] /Legal/AcceptableUse -> fr\Legal/AcceptableUse.html (15865 bytes)
+    [OK] [fr] /Legal/CookiePolicy -> fr\Legal/CookiePolicy.html (15858 bytes)
+    [OK] [fr] /Legal/Licenses -> fr\Legal/Licenses.html (17068 bytes)
+    [OK] [fr] /Legal/Accessibility -> fr\Legal/Accessibility.html (16967 bytes)
+    [OK] [fr] /Legal/Dmca -> fr\Legal/Dmca.html (16994 bytes)
+    [OK] [fr] /Client/CreateTask -> fr\Client/CreateTask.html (16927 bytes)
+    [OK] [fr] /Client/Payments -> fr\Client/Payments.html (15303 bytes)
+    [OK] [fr] /Client/Repository -> fr\Client/Repository.html (15934 bytes)
+    [OK] [pt] / -> pt\index.html (15690 bytes)
+    [OK] [pt] /Dashboard -> pt\Dashboard.html (15412 bytes)
+    [OK] [pt] /Tasks -> pt\Tasks.html (14410 bytes)
+    [OK] [pt] /Login -> pt\Login.html (16963 bytes)
+    [OK] [pt] /Settings -> pt\Settings.html (24014 bytes)
+    [OK] [pt] /Leaderboard -> pt\Leaderboard.html (14717 bytes)
+    [OK] [pt] /HowItWorks -> pt\HowItWorks.html (22855 bytes)
+    [OK] [pt] /Pricing -> pt\Pricing.html (18732 bytes)
+    [OK] [pt] /About -> pt\About.html (19371 bytes)
+    [OK] [pt] /Download -> pt\Download.html (18822 bytes)
+    [OK] [pt] /Sprints -> pt\Sprints.html (14609 bytes)
+    [OK] [pt] /Boards -> pt\Boards.html (14589 bytes)
+    [OK] [pt] /Legal/Terms -> pt\Legal/Terms.html (16764 bytes)
+    [OK] [pt] /Legal/Privacy -> pt\Legal/Privacy.html (17659 bytes)
+    [OK] [pt] /Legal/Refund -> pt\Legal/Refund.html (16991 bytes)
+    [OK] [pt] /Legal/AcceptableUse -> pt\Legal/AcceptableUse.html (15865 bytes)
+    [OK] [pt] /Legal/CookiePolicy -> pt\Legal/CookiePolicy.html (15858 bytes)
+    [OK] [pt] /Legal/Licenses -> pt\Legal/Licenses.html (17068 bytes)
+    [OK] [pt] /Legal/Accessibility -> pt\Legal/Accessibility.html (16967 bytes)
+    [OK] [pt] /Legal/Dmca -> pt\Legal/Dmca.html (16994 bytes)
+    [OK] [pt] /Client/CreateTask -> pt\Client/CreateTask.html (16927 bytes)
+    [OK] [pt] /Client/Payments -> pt\Client/Payments.html (15303 bytes)
+    [OK] [pt] /Client/Repository -> pt\Client/Repository.html (15934 bytes)
+    [OK] [hi] / -> hi\index.html (18453 bytes)
+    [OK] [hi] /Dashboard -> hi\Dashboard.html (15412 bytes)
+    [OK] [hi] /Tasks -> hi\Tasks.html (14410 bytes)
+    [OK] [hi] /Login -> hi\Login.html (16963 bytes)
+    [OK] [hi] /Settings -> hi\Settings.html (24014 bytes)
+    [OK] [hi] /Leaderboard -> hi\Leaderboard.html (14717 bytes)
+    [OK] [hi] /HowItWorks -> hi\HowItWorks.html (22855 bytes)
+    [OK] [hi] /Pricing -> hi\Pricing.html (18732 bytes)
+    [OK] [hi] /About -> hi\About.html (22709 bytes)
+    [OK] [hi] /Download -> hi\Download.html (18822 bytes)
+    [OK] [hi] /Sprints -> hi\Sprints.html (14857 bytes)
+    [OK] [hi] /Boards -> hi\Boards.html (14774 bytes)
+    [OK] [hi] /Legal/Terms -> hi\Legal/Terms.html (16764 bytes)
+    [OK] [hi] /Legal/Privacy -> hi\Legal/Privacy.html (17659 bytes)
+    [OK] [hi] /Legal/Refund -> hi\Legal/Refund.html (16991 bytes)
+    [OK] [hi] /Legal/AcceptableUse -> hi\Legal/AcceptableUse.html (15865 bytes)
+    [OK] [hi] /Legal/CookiePolicy -> hi\Legal/CookiePolicy.html (15858 bytes)
+    [OK] [hi] /Legal/Licenses -> hi\Legal/Licenses.html (17068 bytes)
+    [OK] [hi] /Legal/Accessibility -> hi\Legal/Accessibility.html (16967 bytes)
+    [OK] [hi] /Legal/Dmca -> hi\Legal/Dmca.html (16994 bytes)
+    [OK] [hi] /Client/CreateTask -> hi\Client/CreateTask.html (16927 bytes)
+    [OK] [hi] /Client/Payments -> hi\Client/Payments.html (15303 bytes)
+    [OK] [hi] /Client/Repository -> hi\Client/Repository.html (15934 bytes)
+    [OK] [ko] / -> ko\index.html (16705 bytes)
+    [OK] [ko] /Dashboard -> ko\Dashboard.html (15412 bytes)
+    [OK] [ko] /Tasks -> ko\Tasks.html (14410 bytes)
+    [OK] [ko] /Login -> ko\Login.html (16963 bytes)
+    [OK] [ko] /Settings -> ko\Settings.html (24014 bytes)
+    [OK] [ko] /Leaderboard -> ko\Leaderboard.html (14717 bytes)
+    [OK] [ko] /HowItWorks -> ko\HowItWorks.html (22855 bytes)
+    [OK] [ko] /Pricing -> ko\Pricing.html (18732 bytes)
+    [OK] [ko] /About -> ko\About.html (20717 bytes)
+    [OK] [ko] /Download -> ko\Download.html (18822 bytes)
+    [OK] [ko] /Sprints -> ko\Sprints.html (14719 bytes)
+    [OK] [ko] /Boards -> ko\Boards.html (14651 bytes)
+    [OK] [ko] /Legal/Terms -> ko\Legal/Terms.html (16764 bytes)
+    [OK] [ko] /Legal/Privacy -> ko\Legal/Privacy.html (17659 bytes)
+    [OK] [ko] /Legal/Refund -> ko\Legal/Refund.html (16991 bytes)
+    [OK] [ko] /Legal/AcceptableUse -> ko\Legal/AcceptableUse.html (15865 bytes)
+    [OK] [ko] /Legal/CookiePolicy -> ko\Legal/CookiePolicy.html (15858 bytes)
+    [OK] [ko] /Legal/Licenses -> ko\Legal/Licenses.html (17068 bytes)
+    [OK] [ko] /Legal/Accessibility -> ko\Legal/Accessibility.html (16967 bytes)
+    [OK] [ko] /Legal/Dmca -> ko\Legal/Dmca.html (16994 bytes)
+    [OK] [ko] /Client/CreateTask -> ko\Client/CreateTask.html (16927 bytes)
+    [OK] [ko] /Client/Payments -> ko\Client/Payments.html (15303 bytes)
+    [OK] [ko] /Client/Repository -> ko\Client/Repository.html (15934 bytes)
+    [OK] [it] / -> it\index.html (15709 bytes)
+    [OK] [it] /Dashboard -> it\Dashboard.html (15412 bytes)
+    [OK] [it] /Tasks -> it\Tasks.html (14410 bytes)
+    [OK] [it] /Login -> it\Login.html (16963 bytes)
+    [OK] [it] /Settings -> it\Settings.html (24014 bytes)
+    [OK] [it] /Leaderboard -> it\Leaderboard.html (14717 bytes)
+    [OK] [it] /HowItWorks -> it\HowItWorks.html (22855 bytes)
+    [OK] [it] /Pricing -> it\Pricing.html (18732 bytes)
+    [OK] [it] /About -> it\About.html (19325 bytes)
+    [OK] [it] /Download -> it\Download.html (18822 bytes)
+    [OK] [it] /Sprints -> it\Sprints.html (14607 bytes)
+    [OK] [it] /Boards -> it\Boards.html (14592 bytes)
+    [OK] [it] /Legal/Terms -> it\Legal/Terms.html (16764 bytes)
+    [OK] [it] /Legal/Privacy -> it\Legal/Privacy.html (17659 bytes)
+    [OK] [it] /Legal/Refund -> it\Legal/Refund.html (16991 bytes)
+    [OK] [it] /Legal/AcceptableUse -> it\Legal/AcceptableUse.html (15865 bytes)
+    [OK] [it] /Legal/CookiePolicy -> it\Legal/CookiePolicy.html (15858 bytes)
+    [OK] [it] /Legal/Licenses -> it\Legal/Licenses.html (17068 bytes)
+    [OK] [it] /Legal/Accessibility -> it\Legal/Accessibility.html (16967 bytes)
+    [OK] [it] /Legal/Dmca -> it\Legal/Dmca.html (16994 bytes)
+    [OK] [it] /Client/CreateTask -> it\Client/CreateTask.html (16927 bytes)
+    [OK] [it] /Client/Payments -> it\Client/Payments.html (15303 bytes)
+    [OK] [it] /Client/Repository -> it\Client/Repository.html (15934 bytes)
+    [OK] [ru] / -> ru\index.html (18784 bytes)
+    [OK] [ru] /Dashboard -> ru\Dashboard.html (15412 bytes)
+    [OK] [ru] /Tasks -> ru\Tasks.html (14410 bytes)
+    [OK] [ru] /Login -> ru\Login.html (16963 bytes)
+    [OK] [ru] /Settings -> ru\Settings.html (24014 bytes)
+    [OK] [ru] /Leaderboard -> ru\Leaderboard.html (14717 bytes)
+    [OK] [ru] /HowItWorks -> ru\HowItWorks.html (22855 bytes)
+    [OK] [ru] /Pricing -> ru\Pricing.html (18732 bytes)
+    [OK] [ru] /About -> ru\About.html (22929 bytes)
+    [OK] [ru] /Download -> ru\Download.html (18822 bytes)
+    [OK] [ru] /Sprints -> ru\Sprints.html (14826 bytes)
+    [OK] [ru] /Boards -> ru\Boards.html (14764 bytes)
+    [OK] [ru] /Legal/Terms -> ru\Legal/Terms.html (16764 bytes)
+    [OK] [ru] /Legal/Privacy -> ru\Legal/Privacy.html (17659 bytes)
+    [OK] [ru] /Legal/Refund -> ru\Legal/Refund.html (16991 bytes)
+    [OK] [ru] /Legal/AcceptableUse -> ru\Legal/AcceptableUse.html (15865 bytes)
+    [OK] [ru] /Legal/CookiePolicy -> ru\Legal/CookiePolicy.html (15858 bytes)
+    [OK] [ru] /Legal/Licenses -> ru\Legal/Licenses.html (17068 bytes)
+    [OK] [ru] /Legal/Accessibility -> ru\Legal/Accessibility.html (16967 bytes)
+    [OK] [ru] /Legal/Dmca -> ru\Legal/Dmca.html (16994 bytes)
+    [OK] [ru] /Client/CreateTask -> ru\Client/CreateTask.html (16927 bytes)
+    [OK] [ru] /Client/Payments -> ru\Client/Payments.html (15303 bytes)
+    [OK] [ru] /Client/Repository -> ru\Client/Repository.html (15934 bytes)
+    [OK] [id] / -> id\index.html (15592 bytes)
+    [OK] [id] /Dashboard -> id\Dashboard.html (15412 bytes)
+    [OK] [id] /Tasks -> id\Tasks.html (14410 bytes)
+    [OK] [id] /Login -> id\Login.html (16963 bytes)
+    [OK] [id] /Settings -> id\Settings.html (24014 bytes)
+    [OK] [id] /Leaderboard -> id\Leaderboard.html (14717 bytes)
+    [OK] [id] /HowItWorks -> id\HowItWorks.html (22855 bytes)
+    [OK] [id] /Pricing -> id\Pricing.html (18732 bytes)
+    [OK] [id] /About -> id\About.html (19312 bytes)
+    [OK] [id] /Download -> id\Download.html (18822 bytes)
+    [OK] [id] /Sprints -> id\Sprints.html (14602 bytes)
+    [OK] [id] /Boards -> id\Boards.html (14579 bytes)
+    [OK] [id] /Legal/Terms -> id\Legal/Terms.html (16764 bytes)
+    [OK] [id] /Legal/Privacy -> id\Legal/Privacy.html (17659 bytes)
+    [OK] [id] /Legal/Refund -> id\Legal/Refund.html (16991 bytes)
+    [OK] [id] /Legal/AcceptableUse -> id\Legal/AcceptableUse.html (15865 bytes)
+    [OK] [id] /Legal/CookiePolicy -> id\Legal/CookiePolicy.html (15858 bytes)
+    [OK] [id] /Legal/Licenses -> id\Legal/Licenses.html (17068 bytes)
+    [OK] [id] /Legal/Accessibility -> id\Legal/Accessibility.html (16967 bytes)
+    [OK] [id] /Legal/Dmca -> id\Legal/Dmca.html (16994 bytes)
+    [OK] [id] /Client/CreateTask -> id\Client/CreateTask.html (16927 bytes)
+    [OK] [id] /Client/Payments -> id\Client/Payments.html (15303 bytes)
+    [OK] [id] /Client/Repository -> id\Client/Repository.html (15934 bytes)
+    [OK] [nl] / -> nl\index.html (15636 bytes)
+    [OK] [nl] /Dashboard -> nl\Dashboard.html (15412 bytes)
+    [OK] [nl] /Tasks -> nl\Tasks.html (14410 bytes)
+    [OK] [nl] /Login -> nl\Login.html (16963 bytes)
+    [OK] [nl] /Settings -> nl\Settings.html (24014 bytes)
+    [OK] [nl] /Leaderboard -> nl\Leaderboard.html (14717 bytes)
+    [OK] [nl] /HowItWorks -> nl\HowItWorks.html (22855 bytes)
+    [OK] [nl] /Pricing -> nl\Pricing.html (18732 bytes)
+    [OK] [nl] /About -> nl\About.html (19296 bytes)
+    [OK] [nl] /Download -> nl\Download.html (18822 bytes)
+    [OK] [nl] /Sprints -> nl\Sprints.html (14607 bytes)
+    [OK] [nl] /Boards -> nl\Boards.html (14583 bytes)
+    [OK] [nl] /Legal/Terms -> nl\Legal/Terms.html (16764 bytes)
+    [OK] [nl] /Legal/Privacy -> nl\Legal/Privacy.html (17659 bytes)
+    [OK] [nl] /Legal/Refund -> nl\Legal/Refund.html (16991 bytes)
+    [OK] [nl] /Legal/AcceptableUse -> nl\Legal/AcceptableUse.html (15865 bytes)
+    [OK] [nl] /Legal/CookiePolicy -> nl\Legal/CookiePolicy.html (15858 bytes)
+    [OK] [nl] /Legal/Licenses -> nl\Legal/Licenses.html (17068 bytes)
+    [OK] [nl] /Legal/Accessibility -> nl\Legal/Accessibility.html (16967 bytes)
+    [OK] [nl] /Legal/Dmca -> nl\Legal/Dmca.html (16994 bytes)
+    [OK] [nl] /Client/CreateTask -> nl\Client/CreateTask.html (16927 bytes)
+    [OK] [nl] /Client/Payments -> nl\Client/Payments.html (15303 bytes)
+    [OK] [nl] /Client/Repository -> nl\Client/Repository.html (15934 bytes)
+    [OK] [tr] / -> tr\index.html (16002 bytes)
+    [OK] [tr] /Dashboard -> tr\Dashboard.html (15412 bytes)
+    [OK] [tr] /Tasks -> tr\Tasks.html (14410 bytes)
+    [OK] [tr] /Login -> tr\Login.html (16963 bytes)
+    [OK] [tr] /Settings -> tr\Settings.html (24014 bytes)
+    [OK] [tr] /Leaderboard -> tr\Leaderboard.html (14717 bytes)
+    [OK] [tr] /HowItWorks -> tr\HowItWorks.html (22855 bytes)
+    [OK] [tr] /Pricing -> tr\Pricing.html (18732 bytes)
+    [OK] [tr] /About -> tr\About.html (19717 bytes)
+    [OK] [tr] /Download -> tr\Download.html (18822 bytes)
+    [OK] [tr] /Sprints -> tr\Sprints.html (14638 bytes)
+    [OK] [tr] /Boards -> tr\Boards.html (14600 bytes)
+    [OK] [tr] /Legal/Terms -> tr\Legal/Terms.html (16764 bytes)
+    [OK] [tr] /Legal/Privacy -> tr\Legal/Privacy.html (17659 bytes)
+    [OK] [tr] /Legal/Refund -> tr\Legal/Refund.html (16991 bytes)
+    [OK] [tr] /Legal/AcceptableUse -> tr\Legal/AcceptableUse.html (15865 bytes)
+    [OK] [tr] /Legal/CookiePolicy -> tr\Legal/CookiePolicy.html (15858 bytes)
+    [OK] [tr] /Legal/Licenses -> tr\Legal/Licenses.html (17068 bytes)
+    [OK] [tr] /Legal/Accessibility -> tr\Legal/Accessibility.html (16967 bytes)
+    [OK] [tr] /Legal/Dmca -> tr\Legal/Dmca.html (16994 bytes)
+    [OK] [tr] /Client/CreateTask -> tr\Client/CreateTask.html (16927 bytes)
+    [OK] [tr] /Client/Payments -> tr\Client/Payments.html (15303 bytes)
+    [OK] [tr] /Client/Repository -> tr\Client/Repository.html (15934 bytes)
+    [OK] [fil] / -> fil\index.html (15720 bytes)
+    [OK] [fil] /Dashboard -> fil\Dashboard.html (15417 bytes)
+    [OK] [fil] /Tasks -> fil\Tasks.html (14415 bytes)
+    [OK] [fil] /Login -> fil\Login.html (16968 bytes)
+    [OK] [fil] /Settings -> fil\Settings.html (24019 bytes)
+    [OK] [fil] /Leaderboard -> fil\Leaderboard.html (14722 bytes)
+    [OK] [fil] /HowItWorks -> fil\HowItWorks.html (22860 bytes)
+    [OK] [fil] /Pricing -> fil\Pricing.html (18737 bytes)
+    [OK] [fil] /About -> fil\About.html (19939 bytes)
+    [OK] [fil] /Download -> fil\Download.html (18827 bytes)
+    [OK] [fil] /Sprints -> fil\Sprints.html (14697 bytes)
+    [OK] [fil] /Boards -> fil\Boards.html (14687 bytes)
+    [OK] [fil] /Legal/Terms -> fil\Legal/Terms.html (16769 bytes)
+    [OK] [fil] /Legal/Privacy -> fil\Legal/Privacy.html (17664 bytes)
+    [OK] [fil] /Legal/Refund -> fil\Legal/Refund.html (16996 bytes)
+    [OK] [fil] /Legal/AcceptableUse -> fil\Legal/AcceptableUse.html (15870 bytes)
+    [OK] [fil] /Legal/CookiePolicy -> fil\Legal/CookiePolicy.html (15863 bytes)
+    [OK] [fil] /Legal/Licenses -> fil\Legal/Licenses.html (17073 bytes)
+    [OK] [fil] /Legal/Accessibility -> fil\Legal/Accessibility.html (16972 bytes)
+    [OK] [fil] /Legal/Dmca -> fil\Legal/Dmca.html (16999 bytes)
+    [OK] [fil] /Client/CreateTask -> fil\Client/CreateTask.html (16932 bytes)
+    [OK] [fil] /Client/Payments -> fil\Client/Payments.html (15308 bytes)
+    [OK] [fil] /Client/Repository -> fil\Client/Repository.html (15939 bytes)
+    [OK] [ar] / -> ar\index.html (17826 bytes)
+    [OK] [ar] /Dashboard -> ar\Dashboard.html (15412 bytes)
+    [OK] [ar] /Tasks -> ar\Tasks.html (14410 bytes)
+    [OK] [ar] /Login -> ar\Login.html (16963 bytes)
+    [OK] [ar] /Settings -> ar\Settings.html (24014 bytes)
+    [OK] [ar] /Leaderboard -> ar\Leaderboard.html (14717 bytes)
+    [OK] [ar] /HowItWorks -> ar\HowItWorks.html (22855 bytes)
+    [OK] [ar] /Pricing -> ar\Pricing.html (18732 bytes)
+    [OK] [ar] /About -> ar\About.html (21821 bytes)
+    [OK] [ar] /Download -> ar\Download.html (18822 bytes)
+    [OK] [ar] /Sprints -> ar\Sprints.html (14834 bytes)
+    [OK] [ar] /Boards -> ar\Boards.html (14779 bytes)
+    [OK] [ar] /Legal/Terms -> ar\Legal/Terms.html (16764 bytes)
+    [OK] [ar] /Legal/Privacy -> ar\Legal/Privacy.html (17659 bytes)
+    [OK] [ar] /Legal/Refund -> ar\Legal/Refund.html (16991 bytes)
+    [OK] [ar] /Legal/AcceptableUse -> ar\Legal/AcceptableUse.html (15865 bytes)
+    [OK] [ar] /Legal/CookiePolicy -> ar\Legal/CookiePolicy.html (15858 bytes)
+    [OK] [ar] /Legal/Licenses -> ar\Legal/Licenses.html (17068 bytes)
+    [OK] [ar] /Legal/Accessibility -> ar\Legal/Accessibility.html (16967 bytes)
+    [OK] [ar] /Legal/Dmca -> ar\Legal/Dmca.html (16994 bytes)
+    [OK] [ar] /Client/CreateTask -> ar\Client/CreateTask.html (16927 bytes)
+    [OK] [ar] /Client/Payments -> ar\Client/Payments.html (15303 bytes)
+    [OK] [ar] /Client/Repository -> ar\Client/Repository.html (15934 bytes)
+  Pre-rendering complete.
+  Found 78 fingerprinted HTML mappings
+  Found 367 locale HTML files to fingerprint
+  Fingerprinting 445 HTML files in bin\Debug\net10.0\wwwroot
+    Clean file not found: bin\Debug\net10.0\wwwroot\404.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\404.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\About.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\About.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Boards.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Boards.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Client/CreateTask.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Client/CreateTask.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Client/Payments.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Client/Payments.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Client/Repository.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Client/Repository.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Dashboard.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Dashboard.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Download.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Download.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\HowItWorks.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\HowItWorks.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Leaderboard.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Leaderboard.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Legal/AcceptableUse.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Legal/AcceptableUse.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Legal/Accessibility.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Legal/Accessibility.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Legal/CookiePolicy.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Legal/CookiePolicy.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Legal/Dmca.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Legal/Dmca.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Legal/Licenses.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Legal/Licenses.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Legal/Privacy.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Legal/Privacy.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Legal/Refund.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Legal/Refund.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Legal/Terms.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Legal/Terms.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Login.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Login.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/About.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/About.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/Boards.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/Boards.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/Dashboard.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/Dashboard.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/Download.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/Download.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/HowItWorks.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/HowItWorks.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/Leaderboard.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/Leaderboard.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/Legal/Privacy.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/Legal/Privacy.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/Legal/Terms.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/Legal/Terms.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/Login.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/Login.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/Pricing.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/Pricing.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/Settings.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/Settings.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/Sprints.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/Sprints.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/Tasks.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pages/Tasks.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pricing.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Pricing.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Settings.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Settings.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Sprints.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Sprints.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\Tasks.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\Tasks.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\clear-cache.html.gz
+    Clean file not found: bin\Debug\net10.0\wwwroot\clear-cache.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\en/index.html.gz
+    en/index.html -> en/index.dw1fy7wgsn.html
+    Clean file not found: bin\Debug\net10.0\wwwroot\index.html.gz
+    index.html -> index.l1wws48qjk.html
+    en/About.html -> en/About.mdalglxk.html
+    en/Boards.html -> en/Boards.iosuzrvhy.html
+    en/Dashboard.html -> en/Dashboard.uo4tfejwpf.html
+    en/Download.html -> en/Download.zz7wwwttwa.html
+    en/HowItWorks.html -> en/HowItWorks.ahpjuatdhg.html
+    en/Leaderboard.html -> en/Leaderboard.sa7sfxnwx.html
+    en/Login.html -> en/Login.rfsxyaep4h.html
+    en/Pricing.html -> en/Pricing.o8pilqnb7.html
+    en/Settings.html -> en/Settings.6vjztjkpp.html
+    en/Sprints.html -> en/Sprints.iq74iqcaxa.html
+    en/Tasks.html -> en/Tasks.9ivepmoe8.html
+    en/Client/CreateTask.html -> en/Client/CreateTask.fi80imwyfh.html
+    en/Client/Payments.html -> en/Client/Payments.zcfwvu1rbx.html
+    en/Client/Repository.html -> en/Client/Repository.wrllkdf8h7.html
+    en/Legal/AcceptableUse.html -> en/Legal/AcceptableUse.ed0wyqoawy.html
+    en/Legal/Accessibility.html -> en/Legal/Accessibility.ylsevsngnc.html
+    en/Legal/CookiePolicy.html -> en/Legal/CookiePolicy.tkvaocwqe.html
+    en/Legal/Dmca.html -> en/Legal/Dmca.rerp4dn3mu.html
+    en/Legal/Licenses.html -> en/Legal/Licenses.chtekmlola.html
+    en/Legal/Privacy.html -> en/Legal/Privacy.lxn2zmmszd.html
+    en/Legal/Refund.html -> en/Legal/Refund.bb9jxdz8.html
+    en/Legal/Terms.html -> en/Legal/Terms.kcvbjiuakv.html
+    zh/About.html -> zh/About.ad8cphtdtz.html
+    zh/Boards.html -> zh/Boards.ewwvawhcg2.html
+    zh/Dashboard.html -> zh/Dashboard.ugkarlscf.html
+    zh/Download.html -> zh/Download.1mcqovq4ji.html
+    zh/HowItWorks.html -> zh/HowItWorks.b4u7y0xoiu.html
+    zh/index.html -> zh/index.hxtenvvyzo.html
+    zh/Leaderboard.html -> zh/Leaderboard.qoeesyjdll.html
+    zh/Login.html -> zh/Login.iebwbu67w.html
+    zh/Pricing.html -> zh/Pricing.ulbncjmv0s.html
+    zh/Settings.html -> zh/Settings.yalu9gc8e.html
+    zh/Sprints.html -> zh/Sprints.fz9dw6s0o.html
+    zh/Tasks.html -> zh/Tasks.l46w8btpm.html
+    zh/Client/CreateTask.html -> zh/Client/CreateTask.fgo07kon4f.html
+    zh/Client/Payments.html -> zh/Client/Payments.e9dpojetxk.html
+    zh/Client/Repository.html -> zh/Client/Repository.gnaowsqoyx.html
+    zh/Legal/AcceptableUse.html -> zh/Legal/AcceptableUse.fjthcaa.html
+    zh/Legal/Accessibility.html -> zh/Legal/Accessibility.zmqhdt7zb0.html
+    zh/Legal/CookiePolicy.html -> zh/Legal/CookiePolicy.e2axndolz.html
+    zh/Legal/Dmca.html -> zh/Legal/Dmca.ursk5m8au.html
+    zh/Legal/Licenses.html -> zh/Legal/Licenses.per9gpw6al.html
+    zh/Legal/Privacy.html -> zh/Legal/Privacy.dci04hsf5m.html
+    zh/Legal/Refund.html -> zh/Legal/Refund.s82ow1adly.html
+    zh/Legal/Terms.html -> zh/Legal/Terms.12vehabuqk.html
+    es/About.html -> es/About.a0r5prbdz.html
+    es/Boards.html -> es/Boards.gkhmrtdzev.html
+    es/Dashboard.html -> es/Dashboard.eknkjlgmj.html
+    es/Download.html -> es/Download.ouvefdgtcf.html
+    es/HowItWorks.html -> es/HowItWorks.isaohlcszs.html
+    es/index.html -> es/index.lc3hvookpx.html
+    es/Leaderboard.html -> es/Leaderboard.qgnnoljd6z.html
+    es/Login.html -> es/Login.xef9agckw.html
+    es/Pricing.html -> es/Pricing.9pz5mcur6s.html
+    es/Settings.html -> es/Settings.nbh0nsyty.html
+    es/Sprints.html -> es/Sprints.oynjq70aze.html
+    es/Tasks.html -> es/Tasks.qc5dloic.html
+    es/Client/CreateTask.html -> es/Client/CreateTask.csraaf13yv.html
+    es/Client/Payments.html -> es/Client/Payments.9u7ugaczwz.html
+    es/Client/Repository.html -> es/Client/Repository.zvtvxmp08j.html
+    es/Legal/AcceptableUse.html -> es/Legal/AcceptableUse.apo3zj7weu.html
+    es/Legal/Accessibility.html -> es/Legal/Accessibility.v9leky3djw.html
+    es/Legal/CookiePolicy.html -> es/Legal/CookiePolicy.4yerq2zn7j.html
+    es/Legal/Dmca.html -> es/Legal/Dmca.txkin8b33b.html
+    es/Legal/Licenses.html -> es/Legal/Licenses.pfir5yz2qe.html
+    es/Legal/Privacy.html -> es/Legal/Privacy.4kipcve3ww.html
+    es/Legal/Refund.html -> es/Legal/Refund.rkwyr1qs7.html
+    es/Legal/Terms.html -> es/Legal/Terms.hdddmfgpg.html
+    ja/About.html -> ja/About.h2vwohpc43.html
+    ja/Boards.html -> ja/Boards.o6dsh6ylho.html
+    ja/Dashboard.html -> ja/Dashboard.p3tihu55e7.html
+    ja/Download.html -> ja/Download.yvl7ezita.html
+    ja/HowItWorks.html -> ja/HowItWorks.2smids6w.html
+    ja/index.html -> ja/index.zqk0mfes90.html
+    ja/Leaderboard.html -> ja/Leaderboard.xlp2vynqg.html
+    ja/Login.html -> ja/Login.m3zxoavvq.html
+    ja/Pricing.html -> ja/Pricing.q7aesdix2p.html
+    ja/Settings.html -> ja/Settings.qqt6dtapky.html
+    ja/Sprints.html -> ja/Sprints.lwdefnngps.html
+    ja/Tasks.html -> ja/Tasks.a0cyf1jryj.html
+    ja/Client/CreateTask.html -> ja/Client/CreateTask.5bhfirbl.html
+    ja/Client/Payments.html -> ja/Client/Payments.vnfopnr2st.html
+    ja/Client/Repository.html -> ja/Client/Repository.x6ldjlmudu.html
+    ja/Legal/AcceptableUse.html -> ja/Legal/AcceptableUse.xrc4heewxh.html
+    ja/Legal/Accessibility.html -> ja/Legal/Accessibility.pxkygdkfwb.html
+    ja/Legal/CookiePolicy.html -> ja/Legal/CookiePolicy.cm69tg1hv.html
+    ja/Legal/Dmca.html -> ja/Legal/Dmca.cpwitgcn0g.html
+    ja/Legal/Licenses.html -> ja/Legal/Licenses.wvxaoa2wwq.html
+    ja/Legal/Privacy.html -> ja/Legal/Privacy.3e2xcwd56w.html
+    ja/Legal/Refund.html -> ja/Legal/Refund.eu3zlr4mm.html
+    ja/Legal/Terms.html -> ja/Legal/Terms.kwsaeb4cw6.html
+    de/About.html -> de/About.cmapvfdc1d.html
+    de/Boards.html -> de/Boards.f4wn04alff.html
+    de/Dashboard.html -> de/Dashboard.6bt4tnox8.html
+    de/Download.html -> de/Download.dxfos5oiro.html
+    de/HowItWorks.html -> de/HowItWorks.vny397u54x.html
+    de/index.html -> de/index.4etfirzcp2.html
+    de/Leaderboard.html -> de/Leaderboard.ik3t3jo3hc.html
+    de/Login.html -> de/Login.gcvlegjoqn.html
+    de/Pricing.html -> de/Pricing.2ym8kbthp.html
+    de/Settings.html -> de/Settings.zqfecebjrp.html
+    de/Sprints.html -> de/Sprints.6xpa4odq.html
+    de/Tasks.html -> de/Tasks.kgo5ybr6pw.html
+    de/Client/CreateTask.html -> de/Client/CreateTask.lvlxoiq0z.html
+    de/Client/Payments.html -> de/Client/Payments.epxfdr6mya.html
+    de/Client/Repository.html -> de/Client/Repository.duebsiojoy.html
+    de/Legal/AcceptableUse.html -> de/Legal/AcceptableUse.1pgvqubgny.html
+    de/Legal/Accessibility.html -> de/Legal/Accessibility.hw09agbad.html
+    de/Legal/CookiePolicy.html -> de/Legal/CookiePolicy.uovh6vbopp.html
+    de/Legal/Dmca.html -> de/Legal/Dmca.fnbo0pc64z.html
+    de/Legal/Licenses.html -> de/Legal/Licenses.39krnjqhq.html
+    de/Legal/Privacy.html -> de/Legal/Privacy.nv940y2fg9.html
+    de/Legal/Refund.html -> de/Legal/Refund.mfajxe5gbl.html
+    de/Legal/Terms.html -> de/Legal/Terms.dshiadw0nb.html
+    fr/About.html -> fr/About.dpkbmr1xy.html
+    fr/Boards.html -> fr/Boards.ffv781knhe.html
+    fr/Dashboard.html -> fr/Dashboard.twhddsh2b.html
+    fr/Download.html -> fr/Download.1yahavgg2.html
+    fr/HowItWorks.html -> fr/HowItWorks.e7yyls7od2.html
+    fr/index.html -> fr/index.qtjq9wp79i.html
+    fr/Leaderboard.html -> fr/Leaderboard.nzu6us73qd.html
+    fr/Login.html -> fr/Login.ya3iicv7f.html
+    fr/Pricing.html -> fr/Pricing.m6qtljscmo.html
+    fr/Settings.html -> fr/Settings.mmxaclxdpr.html
+    fr/Sprints.html -> fr/Sprints.3apupt3py.html
+    fr/Tasks.html -> fr/Tasks.23bxa5kch.html
+    fr/Client/CreateTask.html -> fr/Client/CreateTask.yxbtfezbt.html
+    fr/Client/Payments.html -> fr/Client/Payments.pm7azrfdnw.html
+    fr/Client/Repository.html -> fr/Client/Repository.cwasmke9bg.html
+    fr/Legal/AcceptableUse.html -> fr/Legal/AcceptableUse.o1vjwpgj1.html
+    fr/Legal/Accessibility.html -> fr/Legal/Accessibility.fllkiivmj.html
+    fr/Legal/CookiePolicy.html -> fr/Legal/CookiePolicy.s0jetfj1e3.html
+    fr/Legal/Dmca.html -> fr/Legal/Dmca.riagchw5n.html
+    fr/Legal/Licenses.html -> fr/Legal/Licenses.6qxiconb1q.html
+    fr/Legal/Privacy.html -> fr/Legal/Privacy.eg1cpratks.html
+    fr/Legal/Refund.html -> fr/Legal/Refund.iga1ghxzev.html
+    fr/Legal/Terms.html -> fr/Legal/Terms.xmmvxpqqpz.html
+    pt/About.html -> pt/About.snbpx7vjjk.html
+    pt/Boards.html -> pt/Boards.dzt7kazwuq.html
+    pt/Dashboard.html -> pt/Dashboard.koy67ywxe1.html
+    pt/Download.html -> pt/Download.hwrm9cl2ty.html
+    pt/HowItWorks.html -> pt/HowItWorks.5l8c2pwmqo.html
+    pt/index.html -> pt/index.sqfahy2.html
+    pt/Leaderboard.html -> pt/Leaderboard.gzcfevdapj.html
+    pt/Login.html -> pt/Login.xcnlco1l.html
+    pt/Pricing.html -> pt/Pricing.fgltmsjj.html
+    pt/Settings.html -> pt/Settings.nderyd8bpa.html
+    pt/Sprints.html -> pt/Sprints.npch6irm0.html
+    pt/Tasks.html -> pt/Tasks.ubcj7fvb9x.html
+    pt/Client/CreateTask.html -> pt/Client/CreateTask.t4isxfu6ar.html
+    pt/Client/Payments.html -> pt/Client/Payments.aa0dxjo1n.html
+    pt/Client/Repository.html -> pt/Client/Repository.kejjs7xvn.html
+    pt/Legal/AcceptableUse.html -> pt/Legal/AcceptableUse.gucqugpcvq.html
+    pt/Legal/Accessibility.html -> pt/Legal/Accessibility.fyizq67zjd.html
+    pt/Legal/CookiePolicy.html -> pt/Legal/CookiePolicy.ayyxztpuuv.html
+    pt/Legal/Dmca.html -> pt/Legal/Dmca.hxs4fypt8n.html
+    pt/Legal/Licenses.html -> pt/Legal/Licenses.ek80qw9y6f.html
+    pt/Legal/Privacy.html -> pt/Legal/Privacy.b7xw6vjtj8.html
+    pt/Legal/Refund.html -> pt/Legal/Refund.g2eue6akx.html
+    pt/Legal/Terms.html -> pt/Legal/Terms.tb7idyhv6.html
+    hi/About.html -> hi/About.mrpsldd2i.html
+    hi/Boards.html -> hi/Boards.6sjpojlutn.html
+    hi/Dashboard.html -> hi/Dashboard.juartknj16.html
+    hi/Download.html -> hi/Download.hrh8jpoiou.html
+    hi/HowItWorks.html -> hi/HowItWorks.ehbsdet6na.html
+    hi/index.html -> hi/index.qnuz0c8ww.html
+    hi/Leaderboard.html -> hi/Leaderboard.1te7grbff.html
+    hi/Login.html -> hi/Login.nnf73r0nqx.html
+    hi/Pricing.html -> hi/Pricing.apq5hprsf1.html
+    hi/Settings.html -> hi/Settings.4759npsl7w.html
+    hi/Sprints.html -> hi/Sprints.bupaigls3f.html
+    hi/Tasks.html -> hi/Tasks.o2avt0elp.html
+    hi/Client/CreateTask.html -> hi/Client/CreateTask.qzewdgkx.html
+    hi/Client/Payments.html -> hi/Client/Payments.jsg8moeuz7.html
+    hi/Client/Repository.html -> hi/Client/Repository.7nnguu3m1v.html
+    hi/Legal/AcceptableUse.html -> hi/Legal/AcceptableUse.c2b5zhyqso.html
+    hi/Legal/Accessibility.html -> hi/Legal/Accessibility.v0r16ppxlb.html
+    hi/Legal/CookiePolicy.html -> hi/Legal/CookiePolicy.agairimsxh.html
+    hi/Legal/Dmca.html -> hi/Legal/Dmca.5hhkpwaar.html
+    hi/Legal/Licenses.html -> hi/Legal/Licenses.fjpjlcry9k.html
+    hi/Legal/Privacy.html -> hi/Legal/Privacy.jiapp99p.html
+    hi/Legal/Refund.html -> hi/Legal/Refund.l4lbszoimv.html
+    hi/Legal/Terms.html -> hi/Legal/Terms.fvtthuejtq.html
+    ko/About.html -> ko/About.ee7mvpy3j.html
+    ko/Boards.html -> ko/Boards.6x5up0giqp.html
+    ko/Dashboard.html -> ko/Dashboard.ocvfpsj15x.html
+    ko/Download.html -> ko/Download.egli3u2p6.html
+    ko/HowItWorks.html -> ko/HowItWorks.fqhinnbig.html
+    ko/index.html -> ko/index.2obyyxjvu.html
+    ko/Leaderboard.html -> ko/Leaderboard.wtaomxpvgf.html
+    ko/Login.html -> ko/Login.wjfazvfizw.html
+    ko/Pricing.html -> ko/Pricing.mqw02jihpx.html
+    ko/Settings.html -> ko/Settings.soxpphyoni.html
+    ko/Sprints.html -> ko/Sprints.9fw1pazti8.html
+    ko/Tasks.html -> ko/Tasks.ttl2wkqquc.html
+    ko/Client/CreateTask.html -> ko/Client/CreateTask.ffuoibxcs.html
+    ko/Client/Payments.html -> ko/Client/Payments.noqorgegha.html
+    ko/Client/Repository.html -> ko/Client/Repository.hc20fq9vkv.html
+    ko/Legal/AcceptableUse.html -> ko/Legal/AcceptableUse.agaojxdysr.html
+    ko/Legal/Accessibility.html -> ko/Legal/Accessibility.regnly9c5t.html
+    ko/Legal/CookiePolicy.html -> ko/Legal/CookiePolicy.la6pyjbk8i.html
+    ko/Legal/Dmca.html -> ko/Legal/Dmca.on5pdzxxcq.html
+    ko/Legal/Licenses.html -> ko/Legal/Licenses.uvoi25zh9i.html
+    ko/Legal/Privacy.html -> ko/Legal/Privacy.4ijrhtmfwv.html
+    ko/Legal/Refund.html -> ko/Legal/Refund.xji0izlly.html
+    ko/Legal/Terms.html -> ko/Legal/Terms.u9fhnsl3i7.html
+    it/About.html -> it/About.xw6xr9v7ym.html
+    it/Boards.html -> it/Boards.ssqwnlll2r.html
+    it/Dashboard.html -> it/Dashboard.jvpwapnqh8.html
+    it/Download.html -> it/Download.rn3iuf9pir.html
+    it/HowItWorks.html -> it/HowItWorks.1ukhstpo0l.html
+    it/index.html -> it/index.h04uk1nojh.html
+    it/Leaderboard.html -> it/Leaderboard.tgupv6trae.html
+    it/Login.html -> it/Login.hh4czryey5.html
+    it/Pricing.html -> it/Pricing.pfmtpz6n7v.html
+    it/Settings.html -> it/Settings.rgbhgp7ysa.html
+    it/Sprints.html -> it/Sprints.gxu5wfbr2x.html
+    it/Tasks.html -> it/Tasks.nxh9mhdeno.html
+    it/Client/CreateTask.html -> it/Client/CreateTask.eykdx4t4y.html
+    it/Client/Payments.html -> it/Client/Payments.6xfxoz2pq.html
+    it/Client/Repository.html -> it/Client/Repository.donc5ctvrs.html
+    it/Legal/AcceptableUse.html -> it/Legal/AcceptableUse.qv5hfhuqa.html
+    it/Legal/Accessibility.html -> it/Legal/Accessibility.ehrpbfuvru.html
+    it/Legal/CookiePolicy.html -> it/Legal/CookiePolicy.4m0aek0h2.html
+    it/Legal/Dmca.html -> it/Legal/Dmca.s7kktxxpd3.html
+    it/Legal/Licenses.html -> it/Legal/Licenses.w0zwuf2wyg.html
+    it/Legal/Privacy.html -> it/Legal/Privacy.kt0veet.html
+    it/Legal/Refund.html -> it/Legal/Refund.buc1bhzfho.html
+    it/Legal/Terms.html -> it/Legal/Terms.davdsrura.html
+    ru/About.html -> ru/About.klcgd4m4kl.html
+    ru/Boards.html -> ru/Boards.czu5yivvqs.html
+    ru/Dashboard.html -> ru/Dashboard.cogi1ekvcx.html
+    ru/Download.html -> ru/Download.perpzqxl0s.html
+    ru/HowItWorks.html -> ru/HowItWorks.52krvzz64r.html
+    ru/index.html -> ru/index.qbb62ecct5.html
+    ru/Leaderboard.html -> ru/Leaderboard.s0q7ogb6ik.html
+    ru/Login.html -> ru/Login.rczu1zpnir.html
+    ru/Pricing.html -> ru/Pricing.daxvgkdaj.html
+    ru/Settings.html -> ru/Settings.hncinkax91.html
+    ru/Sprints.html -> ru/Sprints.ccfps7fely.html
+    ru/Tasks.html -> ru/Tasks.onthdn6r2x.html
+    ru/Client/CreateTask.html -> ru/Client/CreateTask.2jgb5hlkhl.html
+    ru/Client/Payments.html -> ru/Client/Payments.ahipq2due.html
+    ru/Client/Repository.html -> ru/Client/Repository.jlkbzuceb.html
+    ru/Legal/AcceptableUse.html -> ru/Legal/AcceptableUse.s3mi0zux9j.html
+    ru/Legal/Accessibility.html -> ru/Legal/Accessibility.fklexd85xk.html
+    ru/Legal/CookiePolicy.html -> ru/Legal/CookiePolicy.cxgc4sl7ap.html
+    ru/Legal/Dmca.html -> ru/Legal/Dmca.se0vlfkjfh.html
+    ru/Legal/Licenses.html -> ru/Legal/Licenses.cg7vismkjs.html
+    ru/Legal/Privacy.html -> ru/Legal/Privacy.istpr3p2n3.html
+    ru/Legal/Refund.html -> ru/Legal/Refund.pzeayugmjx.html
+    ru/Legal/Terms.html -> ru/Legal/Terms.xvcrkzoxy4.html
+    id/About.html -> id/About.fyiod1kus.html
+    id/Boards.html -> id/Boards.kamb3zvigq.html
+    id/Dashboard.html -> id/Dashboard.f0ns2l6a7l.html
+    id/Download.html -> id/Download.wqm3fj98i.html
+    id/HowItWorks.html -> id/HowItWorks.wonznqd1oq.html
+    id/index.html -> id/index.c292lzr4p.html
+    id/Leaderboard.html -> id/Leaderboard.nxrl7kepvm.html
+    id/Login.html -> id/Login.onwa2yllx.html
+    id/Pricing.html -> id/Pricing.3ltju233r.html
+    id/Settings.html -> id/Settings.drdfkbfcoa.html
+    id/Sprints.html -> id/Sprints.yrfawtai1x.html
+    id/Tasks.html -> id/Tasks.tlgdif0jsk.html
+    id/Client/CreateTask.html -> id/Client/CreateTask.gtnkpjuhns.html
+    id/Client/Payments.html -> id/Client/Payments.cy22gq0jsh.html
+    id/Client/Repository.html -> id/Client/Repository.wlh67qesf4.html
+    id/Legal/AcceptableUse.html -> id/Legal/AcceptableUse.sp3op63ci8.html
+    id/Legal/Accessibility.html -> id/Legal/Accessibility.dx9ly8seyc.html
+    id/Legal/CookiePolicy.html -> id/Legal/CookiePolicy.wirgilea6o.html
+    id/Legal/Dmca.html -> id/Legal/Dmca.0qssmfryk8.html
+    id/Legal/Licenses.html -> id/Legal/Licenses.b6uva9ems.html
+    id/Legal/Privacy.html -> id/Legal/Privacy.o1vskajxvr.html
+    id/Legal/Refund.html -> id/Legal/Refund.bg9nqozkg.html
+    id/Legal/Terms.html -> id/Legal/Terms.zjhodtzrkq.html
+    nl/About.html -> nl/About.6wj0weauce.html
+    nl/Boards.html -> nl/Boards.qxfvb0hch.html
+    nl/Dashboard.html -> nl/Dashboard.pnwdubqzbc.html
+    nl/Download.html -> nl/Download.u8jfyxzlgt.html
+    nl/HowItWorks.html -> nl/HowItWorks.j8l7clcdx8.html
+    nl/index.html -> nl/index.vyydspy37.html
+    nl/Leaderboard.html -> nl/Leaderboard.cbahyob8n.html
+    nl/Login.html -> nl/Login.mreucx6ops.html
+    nl/Pricing.html -> nl/Pricing.dfcrpcqjm.html
+    nl/Settings.html -> nl/Settings.7xpzujjjb5.html
+    nl/Sprints.html -> nl/Sprints.t7mojszcbg.html
+    nl/Tasks.html -> nl/Tasks.gwtcmne3.html
+    nl/Client/CreateTask.html -> nl/Client/CreateTask.8yixgx7jxj.html
+    nl/Client/Payments.html -> nl/Client/Payments.ztjxzgzg7o.html
+    nl/Client/Repository.html -> nl/Client/Repository.npct2ss1bn.html
+    nl/Legal/AcceptableUse.html -> nl/Legal/AcceptableUse.h746yv2pqs.html
+    nl/Legal/Accessibility.html -> nl/Legal/Accessibility.17kdpuiazj.html
+    nl/Legal/CookiePolicy.html -> nl/Legal/CookiePolicy.y4m50reemq.html
+    nl/Legal/Dmca.html -> nl/Legal/Dmca.lpi45fwipa.html
+    nl/Legal/Licenses.html -> nl/Legal/Licenses.bkz9km3cjr.html
+    nl/Legal/Privacy.html -> nl/Legal/Privacy.4vzgc7fvvx.html
+    nl/Legal/Refund.html -> nl/Legal/Refund.uakzawjoae.html
+    nl/Legal/Terms.html -> nl/Legal/Terms.oveql3i3k8.html
+    tr/About.html -> tr/About.nocixgcohp.html
+    tr/Boards.html -> tr/Boards.3y9ibsnhfk.html
+    tr/Dashboard.html -> tr/Dashboard.yzrromr3i1.html
+    tr/Download.html -> tr/Download.n8wo7gqnhv.html
+    tr/HowItWorks.html -> tr/HowItWorks.pdbxdshml.html
+    tr/index.html -> tr/index.qmyfjksrqs.html
+    tr/Leaderboard.html -> tr/Leaderboard.v7rroqvu0b.html
+    tr/Login.html -> tr/Login.fod0wrdmqe.html
+    tr/Pricing.html -> tr/Pricing.erhud91lsp.html
+    tr/Settings.html -> tr/Settings.vutd7yqrdl.html
+    tr/Sprints.html -> tr/Sprints.lmvkfycojb.html
+    tr/Tasks.html -> tr/Tasks.xeyulozyzy.html
+    tr/Client/CreateTask.html -> tr/Client/CreateTask.ddzdlfa7.html
+    tr/Client/Payments.html -> tr/Client/Payments.rrtuk2u1p.html
+    tr/Client/Repository.html -> tr/Client/Repository.8jrf9bym4w.html
+    tr/Legal/AcceptableUse.html -> tr/Legal/AcceptableUse.lcydzmgkct.html
+    tr/Legal/Accessibility.html -> tr/Legal/Accessibility.xvb9wuvxaf.html
+    tr/Legal/CookiePolicy.html -> tr/Legal/CookiePolicy.alxrzvxj4f.html
+    tr/Legal/Dmca.html -> tr/Legal/Dmca.dousqhs5zc.html
+    tr/Legal/Licenses.html -> tr/Legal/Licenses.pg9xnoonu2.html
+    tr/Legal/Privacy.html -> tr/Legal/Privacy.4cj4i8lg0o.html
+    tr/Legal/Refund.html -> tr/Legal/Refund.ewndduq5ay.html
+    tr/Legal/Terms.html -> tr/Legal/Terms.n8glims2ni.html
+    fil/About.html -> fil/About.tfhl3k6y.html
+    fil/Boards.html -> fil/Boards.3rhil21k37.html
+    fil/Dashboard.html -> fil/Dashboard.g0lgatbk1q.html
+    fil/Download.html -> fil/Download.hewng52us.html
+    fil/HowItWorks.html -> fil/HowItWorks.ahvzjontyc.html
+    fil/index.html -> fil/index.skgsi7nfk.html
+    fil/Leaderboard.html -> fil/Leaderboard.v3eyj1wuco.html
+    fil/Login.html -> fil/Login.xwsq6py0z2.html
+    fil/Pricing.html -> fil/Pricing.xpi9sxtj4x.html
+    fil/Settings.html -> fil/Settings.8nadtnx.html
+    fil/Sprints.html -> fil/Sprints.wcohw5ba4.html
+    fil/Tasks.html -> fil/Tasks.wd7e0q1ff.html
+    fil/Client/CreateTask.html -> fil/Client/CreateTask.ehpd8gfzx.html
+    fil/Client/Payments.html -> fil/Client/Payments.bpwnupt9u.html
+    fil/Client/Repository.html -> fil/Client/Repository.ynkowyn56.html
+    fil/Legal/AcceptableUse.html -> fil/Legal/AcceptableUse.qasxzrm6dp.html
+    fil/Legal/Accessibility.html -> fil/Legal/Accessibility.ckuu6yfx4g.html
+    fil/Legal/CookiePolicy.html -> fil/Legal/CookiePolicy.zoy7loeza9.html
+    fil/Legal/Dmca.html -> fil/Legal/Dmca.ugfqzrqd7l.html
+    fil/Legal/Licenses.html -> fil/Legal/Licenses.g5hnrfqlhn.html
+    fil/Legal/Privacy.html -> fil/Legal/Privacy.pq1gl8ye77.html
+    fil/Legal/Refund.html -> fil/Legal/Refund.w9z0sj6oc.html
+    fil/Legal/Terms.html -> fil/Legal/Terms.0mdyeyhbtw.html
+    ar/About.html -> ar/About.dguiletaef.html
+    ar/Boards.html -> ar/Boards.jcublfvf7s.html
+    ar/Dashboard.html -> ar/Dashboard.kpelmzbdo.html
+    ar/Download.html -> ar/Download.oxblfamfl.html
+    ar/HowItWorks.html -> ar/HowItWorks.zzegrc6mn9.html
+    ar/index.html -> ar/index.4arwzcoxwc.html
+    ar/Leaderboard.html -> ar/Leaderboard.lxepihjon5.html
+    ar/Login.html -> ar/Login.lwadseb1.html
+    ar/Pricing.html -> ar/Pricing.vhzwwlnvbo.html
+    ar/Settings.html -> ar/Settings.nuqinjwqs6.html
+    ar/Sprints.html -> ar/Sprints.tnrsd5vieh.html
+    ar/Tasks.html -> ar/Tasks.qa00tgpqgb.html
+    ar/Client/CreateTask.html -> ar/Client/CreateTask.pprgzipqi.html
+    ar/Client/Payments.html -> ar/Client/Payments.v3pthrihw4.html
+    ar/Client/Repository.html -> ar/Client/Repository.kqk2hc2tfi.html
+    ar/Legal/AcceptableUse.html -> ar/Legal/AcceptableUse.b0xo8wpaj0.html
+    ar/Legal/Accessibility.html -> ar/Legal/Accessibility.c5qcuaiyaa.html
+    ar/Legal/CookiePolicy.html -> ar/Legal/CookiePolicy.3blj0cn99h.html
+    ar/Legal/Dmca.html -> ar/Legal/Dmca.sxvwiy18.html
+    ar/Legal/Licenses.html -> ar/Legal/Licenses.tqw1uc5u3.html
+    ar/Legal/Privacy.html -> ar/Legal/Privacy.6x1cdvt4n.html
+    ar/Legal/Refund.html -> ar/Legal/Refund.y21plorjae.html
+    ar/Legal/Terms.html -> ar/Legal/Terms.ykb3bpifz.html
+    index.html -> en/index.dw1fy7wgsn.html
+    404.html -> en/index.dw1fy7wgsn.html
+  Fingerprinting complete: 445 HTML files processed
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:04:47.68

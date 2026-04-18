@@ -1,0 +1,61 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+public class P17f8dd49 : Pe650e817
+{
+    private long F01ac2aa3;
+    private long F03a522c9;
+    private long F03d4e8f8;
+    private long F0415341f;
+    private long F07c51c6f;
+    private long F08e4556d;
+    private long F094dd6d8;
+    private long F13750217;
+    private long F18706cf8;
+    private long F1fb66354;
+    private long F2766566a;
+    private long F313adb8e;
+    private long F3313d6a2;
+    private long F382a6d48;
+    private long F3bf5837d;
+    private long F43cee91f;
+    private long F44e26156;
+    private long F452eb5cd;
+    private long F48dcdae3;
+    private long F4958f0d9;
+    private long F4da5e0ed;
+    private long F60afd3ad;
+    private long F66f03bee;
+    private long F6a1ae8ce;
+    private long F6fe8b8ca;
+    private long F77b23c5c;
+    private long F809a2449;
+    private long F80d05169;
+    private long F845bf274;
+    private long F847da18f;
+    private long F85d3d8b4;
+    private long F8639da05;
+    private long F89390b79;
+    private long F8c113332;
+    private long F976c9ae4;
+    private long F9a0ec616;
+    private long Fa51ead4d;
+    private long Fadf60e38;
+    private long Fb7e35353;
+    private long Fb7eff6af;
+    private long Fc9d06cfa;
+    private long Fcddcce6c;
+    private long Fd3bdfb6d;
+    private long Fdbf11dd2;
+    private long Fdccfea43;
+    private long Fec14e83a;
+    private long Fed779622;
+    private long Fee0fadd4;
+    private long Fee7fe9eb;
+    private long Ff1ab3d80;
+    private long Ff495243c;
+    private long Ff4d30717;
+    private long Ff862c29c;
+    private long Ff8be6d85;
+    private long Ff94f9b5d;
+
+}

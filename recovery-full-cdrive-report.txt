@@ -1,0 +1,96 @@
+====================================
+FULL C: DRIVE RECOVERY REPORT
+Date: 2026-03-22 16:03:33
+====================================
+
+SCAN STATISTICS:
+  Total JSONL files scanned: 2017
+  Total MB scanned: 1650.4
+  Total unique files recovered: 1398
+
+RESULTS:
+  New files written: 17
+  Updated files: 51
+  Identical (skipped): 1267
+  Errors: 0
+
+NEW FILES:
+  + src\PrTask.Client\Services\LocalBoardService.cs
+  + src\PrTask.Client\Services\LocalCloudflareD1Service.cs
+  + src\PrTask.Client\Services\LocalInferenceService.cs
+  + src\PrTask.Client\Services\LocalInvoiceService.cs
+  + src\PrTask.Client\Services\LocalKycVerificationService.cs
+  + src\PrTask.Client\Services\LocalLeaderboardService.cs
+  + src\PrTask.Client\Services\LocalPaymentRecordService.cs
+  + src\PrTask.Client\Services\LocalPullRequestService.cs
+  + src\PrTask.Client\Services\LocalRepositoryService.cs
+  + src\PrTask.Client\Services\LocalReviewCommentService.cs
+  + src\PrTask.Client\Services\LocalSnapshotService.cs
+  + src\PrTask.Client\Services\LocalSourceCodeService.cs
+  + src\PrTask.Client\Services\LocalSprintService.cs
+  + src\PrTask.Client\Services\LocalSubscriptionService.cs
+  + src\PrTask.Client\Services\LocalTaskService.cs
+  + src\PrTask.Client\Services\LocalVectorSearchService.cs
+  + src\PrTask.Prerender\NoOpServices.cs
+
+
+UPDATED FILES:
+  ~ .github\workflows\daily-rebuild.yml
+  ~ infra\cloudflare-worker\src\storage\github-html-store.ts
+  ~ infra\cloudflare-worker\src\storage\lowdb-r2.ts
+  ~ infra\pages.tf
+  ~ scripts\deploy.ps1
+  ~ src\PrTask.Application\Services\IGoogleOAuthService.cs
+  ~ src\PrTask.Application\Services\IKycProvider.cs
+  ~ src\PrTask.Client\Pages\ClientLoginPage.razor
+  ~ src\PrTask.Client\wwwroot\Js\sw-update.js
+  ~ src\PrTask.Client\wwwroot\service-worker.published.js
+  ~ src\PrTask.Infrastructure\Services\DiffComputeService.cs
+  ~ src\PrTask.Lighthouse\LighthouseAuditor.cs
+  ~ src\PrTask.Maui\_Imports.razor
+  ~ src\PrTask.Maui\Components\MauiLayout.razor
+  ~ src\PrTask.Maui\MainPage.xaml
+  ~ src\PrTask.Maui\MauiProgram.cs
+  ~ src\PrTask.Maui\Pages\MauiBoardDetailPage.razor
+  ~ src\PrTask.Maui\Pages\MauiBoardsPage.razor
+  ~ src\PrTask.Maui\Pages\MauiCreateTaskPage.razor
+  ~ src\PrTask.Maui\Pages\MauiEditTaskPage.razor
+  ~ src\PrTask.Maui\Pages\MauiNotFoundPage.razor
+  ~ src\PrTask.Maui\Pages\MauiPaymentsPage.razor
+  ~ src\PrTask.Maui\Pages\MauiSprintsPage.razor
+  ~ src\PrTask.Maui\Pages\MauiSubmitPrPage.razor
+  ~ src\PrTask.Maui\Routes.razor
+  ~ src\PrTask.Prerender\Templates\InlineScript.html
+  ~ src\PrTask.Server\Endpoints\BillsPaymentEndpoints.cs
+  ~ src\PrTask.Server\Endpoints\QrPaymentEndpoints.cs
+  ~ src\PrTask.Server\Endpoints\WalletPaymentEndpoints.cs
+  ~ src\PrTask.SharedUI\Pages\LoginPage.razor
+  ~ src\PrTask.SharedUI\sasscompiler.json
+  ~ src\PrTask.USearch\NativeMethods.cs
+  ~ src\PrTask.USearch\USearchException.cs
+  ~ src\PrTask.USearch\USearchIndex.cs
+  ~ src\PrTask.USearch\USearchTypes.cs
+  ~ tests\PrTask.E2E\CdpHelpers.cs
+  ~ tests\PrTask.E2E\DeployHelper.cs
+  ~ tests\PrTask.E2E\DeployHelper.Fingerprint.cs
+  ~ tests\PrTask.E2E\FeatureTests.ClientAndTooling.cs
+  ~ tests\PrTask.E2E\FeatureTests.InfraServices.cs
+  ~ tests\PrTask.E2E\FeatureTests.NavAndModels.cs
+  ~ tests\PrTask.E2E\FeatureTests.ServiceImplDeep.cs
+  ~ tests\PrTask.E2E\RulesTests.AllRoutes.cs
+  ~ tests\PrTask.E2E\RulesTests.CrossPlatformDb.cs
+  ~ tests\PrTask.E2E\RulesTests.T57.cs
+  ~ tests\PrTask.E2E\RulesTests.Task188to192.cs
+  ~ tests\PrTask.E2E\RulesTests.Task204to217.cs
+  ~ tests\PrTask.E2E\RulesTests.Task609to610.cs
+  ~ tests\PrTask.E2E\RulesTests.Task634to651.cs
+  ~ tests\PrTask.E2E\RulesTests.Task69to71.cs
+  ~ tests\PrTask.E2E\RulesTests.Task83.cs
+
+
+ERRORS:
+
+
+SOURCE BREAKDOWN:
+  Write: 1398 files
+

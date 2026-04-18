@@ -1,0 +1,43 @@
+@page "/edit-sell-receipt"
+@inject NavigationManager Nav
+
+<div style="width:100%">
+    <header class="toolbar" style="width:100%">
+        <img class="lock" src="img/ic_lock.png" alt="ic_lock" />
+    </header>
+    <div class="content" style="width:100%">
+        <div class="linearLayout" style="width:100%">
+            <div class="scroll" style="width:100%">
+                <div style="display:flex;flex-direction:column;width:100%">
+                    <div class="item_receipt_note"></div>
+                    <div class="sell_receipt_positions_recycler_view" style="width:100%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="empty" style="display:flex;flex-direction:column;width:100%">
+            <img src="img/ic_empty_sell.png" alt="ic_empty_sell" />
+            <span class="addPositionDescriptionTv"></span>
+        </div>
+        <div class="button_add_group_layout">
+            <span class="floating_button_description"></span>
+            <button class="add_position_to_receipt_button"></button>
+        </div>
+        <div class="btn_pay_group" style="width:100%">
+            <div class="sell_receipt_to_payment_button" style="width:100%">
+                <span class="toPayEnabledTv"></span>
+                <span class="to_receipt_button_total_price_text"></span>
+            </div>
+            <div class="sell_receipt_disabled_payment_button" style="width:100%">
+                <span class="toPayDisabledTv"></span>
+                <span class="receipt_button_price_text_disabled"></span>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" style="width:100%">
+        <div style="width:100%"></div>
+        <button class="close_expandable_menu_button"></button>
+        <div class="view_stub_expandable_fab_menu"></div>
+    </div>
+    <div class="loader" style="width:100%"></div>
+    <div class="view_receipt_boarding" style="width:100%"></div>
+</div>

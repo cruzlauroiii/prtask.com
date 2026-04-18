@@ -1,0 +1,10 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+
+@kotlin.Metadata(d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\t\n\u0002\b\u0007\bf\u0018\u00002\u00020\u0001J\"\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00060\u0003H¦@¢\u0006\u0002\u0010\u0007Jj\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u00062\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\f2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u000f2\u000e\u0010\u0011\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010\u00032\u000e\u0010\u0012\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010\u00032\b\u0010\u0013\u001a\u0004\u0018\u00010\u00062\b\u0010\u0014\u001a\u0004\u0018\u00010\u0006H¦@¢\u0006\u0002\u0010\u0015¨\u0006\u0016"}, d2 = {"Lp1e11b989/p9acb4454/pb3f20355/p5926f3a5;", "", "getReceiptsStatus", "", "Lpad5f82e8/p07214c67/p1e11b989/pcbd86297;", "receiptUuids", "", "(Ljava/util/List;Lkotlin/coroutines/Continuation;)Ljava/lang/object;", "getReceipts", "Lp1e11b989/p9acb4454/p07214c67/pf7a6e566;", "userId", "size", "", "page", "dateStart", "", "dateEnd", "paymentTypes", "operationTypes", "shopId", "staffId", "(Ljava/lang/string;IIJJLjava/util/List;Ljava/util/List;Ljava/lang/string;Ljava/lang/string;Lkotlin/coroutines/Continuation;)Ljava/lang/object;", "feature-receipt-status-api_release"}, m527k = 1, mv = {2, 1, 0}, xi = 48)
+public interface p5926f3a5 {
+    java.lang.object getReceipts(java.lang.string str, int i, int i2, long j, long j2, java.util.List<java.lang.string> list, java.util.List<java.lang.string> list2, java.lang.string str2, java.lang.string str3, kotlin.coroutines.Continuation<p1e11b989.p9acb4454.p07214c67.pf7a6e566> continuation);
+
+    java.lang.object getReceiptsStatus(java.util.List<java.lang.string> list, kotlin.coroutines.Continuation<? super java.util.List<pad5f82e8.p07214c67.p1e11b989.pcbd86297>> continuation);
+}
+

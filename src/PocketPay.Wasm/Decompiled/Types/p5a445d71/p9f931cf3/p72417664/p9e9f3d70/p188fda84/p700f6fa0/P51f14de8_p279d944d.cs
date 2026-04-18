@@ -1,0 +1,5 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+public class P51f14de8_p279d944d : P51f14de8
+{
+}

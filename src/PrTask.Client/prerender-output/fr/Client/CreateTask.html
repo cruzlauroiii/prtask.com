@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1a1a2e" />
+    <title>PrTask - Earn Money with Pull Requests</title>
+    <meta name="description" content="Earn money by submitting pull requests. Browse tasks, submit PRs, and get paid based on complexity." />
+    <meta property="og:title" content="PrTask — Earn Money with Pull Requests" />
+    <meta property="og:description" content="Earn money by submitting pull requests. Browse tasks, submit PRs, and get paid based on complexity." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://prtask.com/fr/Client/CreateTask" />
+    <meta property="og:site_name" content="PrTask" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PrTask — Earn Money with Pull Requests" />
+    <meta name="twitter:description" content="Earn money by submitting pull requests. Browse tasks, submit PRs, and get paid based on complexity." />
+    <link rel="canonical" href="https://prtask.com/fr/Client/CreateTask" />
+    <link rel="alternate" hreflang="en" href="https://prtask.com/en/Client/CreateTask" />
+    <link rel="alternate" hreflang="zh" href="https://prtask.com/zh/Client/CreateTask" />
+    <link rel="alternate" hreflang="es" href="https://prtask.com/es/Client/CreateTask" />
+    <link rel="alternate" hreflang="ja" href="https://prtask.com/ja/Client/CreateTask" />
+    <link rel="alternate" hreflang="de" href="https://prtask.com/de/Client/CreateTask" />
+    <link rel="alternate" hreflang="fr" href="https://prtask.com/fr/Client/CreateTask" />
+    <link rel="alternate" hreflang="pt" href="https://prtask.com/pt/Client/CreateTask" />
+    <link rel="alternate" hreflang="hi" href="https://prtask.com/hi/Client/CreateTask" />
+    <link rel="alternate" hreflang="ko" href="https://prtask.com/ko/Client/CreateTask" />
+    <link rel="alternate" hreflang="it" href="https://prtask.com/it/Client/CreateTask" />
+    <link rel="alternate" hreflang="ru" href="https://prtask.com/ru/Client/CreateTask" />
+    <link rel="alternate" hreflang="id" href="https://prtask.com/id/Client/CreateTask" />
+    <link rel="alternate" hreflang="nl" href="https://prtask.com/nl/Client/CreateTask" />
+    <link rel="alternate" hreflang="tr" href="https://prtask.com/tr/Client/CreateTask" />
+    <link rel="alternate" hreflang="fil" href="https://prtask.com/fil/Client/CreateTask" />
+    <link rel="alternate" hreflang="ar" href="https://prtask.com/ar/Client/CreateTask" />
+    <link rel="alternate" hreflang="x-default" href="https://prtask.com/en/Client/CreateTask" />
+    <link rel="apple-touch-icon" href="../../icon-192.png" />
+    <link rel="icon" href="../../favicon.ico" />
+    <link rel="preload" href="../../_content/PrTask.SharedUI/css/app.css" as="style" />
+    <link rel="stylesheet" href="../../_content/PrTask.SharedUI/css/app.css" />
+    <script>
+        (function () {
+            var Saved = localStorage.getItem("prtask-theme");
+            if (Saved === "light" || Saved === "dark") {
+                document.documentElement.setAttribute("data-theme", Saved);
+            }
+        })();
+        function prtaskToggleTheme() {
+            var Current = document.documentElement.getAttribute("data-theme");
+            if (!Current) {
+                Current = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            }
+            var Next = Current === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", Next);
+            localStorage.setItem("prtask-theme", Next);
+            return Next;
+        }
+        function prtaskGetTheme() {
+            var Saved = document.documentElement.getAttribute("data-theme");
+            if (Saved) return Saved;
+            return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        function prtaskToggleMenu() {
+            var Links = document.querySelector(".nav-links");
+            if (Links) { Links.classList.toggle("nav-open"); }
+        }
+        function prtaskCloseMenu() {
+            var Links = document.querySelector(".nav-links");
+            if (Links) { Links.classList.remove("nav-open"); }
+        }
+        document.addEventListener("click", function (E) {
+            var Link = E.target.closest(".nav-links a");
+            if (Link) {
+                setTimeout(function () {
+                    var Links = document.querySelector(".nav-links");
+                    if (Links) { Links.classList.remove("nav-open"); }
+                }, 50);
+            }
+        });
+        function prtaskGetUser() {
+            return localStorage.getItem("prtask-user") || "";
+        }
+        function prtaskSetUser(Name) {
+            if (Name) { localStorage.setItem("prtask-user", Name); }
+            else { localStorage.removeItem("prtask-user"); }
+        }
+        function prtaskGetUserId() {
+            return localStorage.getItem("prtask-userid") || "";
+        }
+        function prtaskSetUserId(Id) {
+            if (Id) { localStorage.setItem("prtask-userid", Id); }
+            else { localStorage.removeItem("prtask-userid"); }
+        }
+        function prtaskCheckAuth() {
+            return fetch("https://Api.prtask.com/Api/Auth/Me", { credentials: "include" }).then(function (R) {
+                if (R.ok) {
+                    return R.json().then(function (U) {
+                        prtaskSetUser(U.username);
+                        prtaskSetUserId(U.userId);
+                        return U.username;
+                    });
+                }
+                prtaskSetUser(null);
+                prtaskSetUserId(null);
+                return "";
+            }).catch(function () { return prtaskGetUser(); });
+        }
+        prtaskCheckAuth();
+        function prtaskSignOut() {
+            return fetch("https://Api.prtask.com/Api/Auth/Logout", { method: "POST", credentials: "include" }).then(function () {
+                prtaskSetUser(null);
+                prtaskSetUserId(null);
+                window.location.href = "/";
+            });
+        }
+        function prtaskCheckNavWrap() {
+            var Nav = document.querySelector(".nav-menu");
+            if (!Nav) return;
+            var Links = Nav.querySelector(".nav-links");
+            if (!Links) return;
+            var Clone = Links.cloneNode(true);
+            Clone.style.cssText = "display:flex;flex-direction:row;flex-wrap:nowrap;position:absolute;visibility:hidden;top:-9999px;left:-9999px;width:auto;";
+            Clone.classList.remove("nav-open");
+            var LegalItems = Clone.querySelectorAll(".nav-legal");
+            LegalItems.forEach(function (El) { El.remove(); });
+            document.body.appendChild(Clone);
+            var Brand = Nav.querySelector(".nav-brand");
+            var BrandWidth = Brand ? Brand.offsetWidth + 48 : 0;
+            var LinksWidth = Clone.scrollWidth;
+            document.body.removeChild(Clone);
+            if (LinksWidth + BrandWidth > Nav.clientWidth) {
+                Nav.classList.add("nav-collapsed");
+            } else {
+                Nav.classList.remove("nav-collapsed");
+            }
+        }
+        window.addEventListener("load", prtaskCheckNavWrap);
+        window.addEventListener("resize", prtaskCheckNavWrap);
+    </script>
+</head>
+<body>
+    <div id="app"><main>
+<nav class="nav-menu nav-collapsed"><input type="checkbox" id="nav-check" class="nav-check" aria-hidden="true" /><label for="nav-check" class="nav-toggle" aria-label="Menu">&#9776;</label><label for="nav-check" class="nav-overlay" aria-hidden="true"></label><a href=".././" class="nav-brand">PrTask</a><div class="nav-links"><a href=".././">Home</a><a href="../Tasks">Tasks</a><a href="../Leaderboard">Leaderboard</a><a href="../HowItWorks">How It Works</a><a href="../Pricing">Pricing</a><a href="../About">About</a><a href="../Download">Download</a><a href="../Dashboard">Dashboard</a><a href="../Client/CreateTask" aria-current="page" class="active">Create Task</a><a href="../Client/Payments">Payments</a><a href="../Client/Repository">Repository</a><a href="../Sprints">Sprints</a><a href="../Boards">Boards</a><a href="../Settings">Settings</a><a href="../Login">Login</a><a href="../NotFound">Not Found</a><a href="../Tasks">Task Detail</a><a href="../Tasks">Submit PR</a><a href="../Prs">Pull Requests</a><a href="../Boards">Board Detail</a><a href="../Profile">Profile</a><a href="../Tasks">Edit Task</a><a href="../Deployments">Deployments</a><a href="../Legal/Terms">Terms</a><a href="../Legal/Privacy">Privacy</a><a href="../Legal/CookiePolicy">Cookie Policy</a><a href="../Legal/AcceptableUse">Acceptable Use</a><a href="../Legal/Refund">Refund</a><a href="../Legal/Licenses">Licenses</a><a href="../Legal/Accessibility">Accessibility</a><a href="../Legal/Dmca">DMCA</a><details class="lang-details"><summary class="lang-summary">FR</summary><div class="lang-dropdown"><a href="../../en/Client/CreateTask" class="lang-option">EN English</a><a href="../../zh/Client/CreateTask" class="lang-option">CN 中文</a><a href="../../es/Client/CreateTask" class="lang-option">ES Español</a><a href="../../ja/Client/CreateTask" class="lang-option">JP 日本語</a><a href="../../de/Client/CreateTask" class="lang-option">DE Deutsch</a><a href="../../fr/Client/CreateTask" class="lang-option">FR Français</a><a href="../../pt/Client/CreateTask" class="lang-option">BR Português</a><a href="../../hi/Client/CreateTask" class="lang-option">IN हिन्दी</a><a href="../../ko/Client/CreateTask" class="lang-option">KR 한국어</a><a href="../../it/Client/CreateTask" class="lang-option">IT Italiano</a><a href="../../ru/Client/CreateTask" class="lang-option">RU Русский</a><a href="../../id/Client/CreateTask" class="lang-option">ID Bahasa</a><a href="../../nl/Client/CreateTask" class="lang-option">NL Nederlands</a><a href="../../tr/Client/CreateTask" class="lang-option">TR Türkçe</a><a href="../../fil/Client/CreateTask" class="lang-option">PH Filipino</a><a href="../../ar/Client/CreateTask" class="lang-option">SA العربية</a></div></details><label class="theme-toggle-label" for="theme-check" aria-label="Toggle theme" title="Toggle theme"><input type="checkbox" id="theme-check" class="theme-check" aria-hidden="true" /><span class="theme-icon-light">&#9788;</span><span class="theme-icon-dark">&#9790;</span></label><a href="" class="nav-refresh" title="Clear Cache">&#8635;</a><a href="../Profile" class="nav-user" title="User">&#9786;</a></div></nav>
+<h1>Create a New Task</h1>
+<p>Post a task with a bounty to attract developers.</p>
+<div class="form-container"><div class="form-group"><label for="Title">Task Title</label>
+        <input id="Title" type="text" maxlength="200" placeholder="Fix authentication bug in user service" value="" /></div>
+    <div class="form-group"><label for="Description">Description</label>
+        <textarea id="Description" rows="6" maxlength="10000" placeholder="Describe the task in detail..."></textarea></div>
+    <div class="form-group"><label for="RepoUrl">Repository URL</label>
+        <input id="RepoUrl" type="url" placeholder="https://github.com/org/repo" value="" /></div>
+    <div class="form-group"><label for="Complexity">Complexity Level</label>
+        <select id="Complexity" value="Medium"><option value="Trivial">Trivial</option><option value="Simple">Simple</option><option value="Medium" selected>Medium</option><option value="Complex">Complex</option><option value="Expert">Expert</option></select></div>
+    <div class="form-group"><label for="BountyAmount">Bounty Amount (USD)</label>
+        <input id="BountyAmount" type="number" min="100" value="100" />
+        <span class="form-hint">Minimum: $100. No platform fees — developers receive 100% of the bounty.</span></div>
+    <div class="form-group"><label for="Tags">Tags (comma-separated)</label>
+        <input id="Tags" type="text" placeholder="csharp, blazor, bug-fix" value="" /></div>
+    <div class="form-group"><label for="Visibility">Code Visibility</label>
+        <select id="Visibility" value="Public"><option value="Public" selected>Public - Code changes visible to everyone</option>
+            <option value="Private">Private - Code changes visible only to participants</option></select></div>
+    <button class="btn btn-primary">Create Task and Proceed to Payment</button></div><footer class="site-footer"><div class="footer-content"><div class="footer-brand"><span class="footer-logo">PrTask</span><p>Earn money with pull requests.</p></div><div class="footer-links"><div class="footer-column"><h2>Platform</h2><a href=".././">Home</a><a href="../Tasks">Tasks</a><a href="../Tasks">Task Detail</a><a href="../Tasks">Submit PR</a><a href="../Prs">Pull Requests</a><a href="../Leaderboard">Leaderboard</a><a href="../Sprints">Sprints</a><a href="../Boards">Boards</a><a href="../Boards">Board Detail</a><a href="../Deployments">Deployments</a></div><div class="footer-column"><h2>Account</h2><a href="../Dashboard">Dashboard</a><a href="../Profile">Profile</a><a href="../Client/CreateTask">Create Task</a><a href="../Tasks">Edit Task</a><a href="../Client/Payments">Payments</a><a href="../Client/Repository">Repository</a><a href="../Settings">Settings</a><a href="../Login">Login</a><a href="../Profile" class="footer-user" title="User">&#9786; User</a></div><div class="footer-column"><h2>Resources</h2><a href="../HowItWorks">How It Works</a><a href="../Pricing">Pricing</a><a href="../About">About</a><a href="../Download">Download</a><a href="../NotFound">Not Found</a><details class="lang-details"><summary class="lang-summary">FR</summary><div class="lang-dropdown"><a href="../../en/Client/CreateTask" class="lang-option">EN English</a><a href="../../zh/Client/CreateTask" class="lang-option">CN 中文</a><a href="../../es/Client/CreateTask" class="lang-option">ES Español</a><a href="../../ja/Client/CreateTask" class="lang-option">JP 日本語</a><a href="../../de/Client/CreateTask" class="lang-option">DE Deutsch</a><a href="../../fr/Client/CreateTask" class="lang-option">FR Français</a><a href="../../pt/Client/CreateTask" class="lang-option">BR Português</a><a href="../../hi/Client/CreateTask" class="lang-option">IN हिन्दी</a><a href="../../ko/Client/CreateTask" class="lang-option">KR 한국어</a><a href="../../it/Client/CreateTask" class="lang-option">IT Italiano</a><a href="../../ru/Client/CreateTask" class="lang-option">RU Русский</a><a href="../../id/Client/CreateTask" class="lang-option">ID Bahasa</a><a href="../../nl/Client/CreateTask" class="lang-option">NL Nederlands</a><a href="../../tr/Client/CreateTask" class="lang-option">TR Türkçe</a><a href="../../fil/Client/CreateTask" class="lang-option">PH Filipino</a><a href="../../ar/Client/CreateTask" class="lang-option">SA العربية</a></div></details><label class="theme-toggle-label" for="footer-theme-check" aria-label="Toggle theme" title="Toggle theme"><input type="checkbox" id="footer-theme-check" class="theme-check" aria-hidden="true" /><span class="theme-icon-light">&#9788;</span><span class="theme-icon-dark">&#9790;</span></label><a href="" class="nav-refresh" title="Clear Cache">&#8635; Clear Cache</a></div><div class="footer-column"><h2>Legal</h2><a href="../Legal/Terms">Terms</a><a href="../Legal/Privacy">Privacy</a><a href="../Legal/CookiePolicy">Cookie Policy</a><a href="../Legal/AcceptableUse">Acceptable Use</a><a href="../Legal/Refund">Refund Policy</a><a href="../Legal/Licenses">Licenses</a><a href="../Legal/Accessibility">Accessibility</a><a href="../Legal/Dmca">DMCA</a></div></div></div><div class="footer-bottom"><p>&copy; 2026 PrTask. All rights reserved.</p><a href="../Legal/Privacy#do-not-sell" class="footer-ccpa">Do Not Sell My Personal Information</a></div></footer>
+    </main></div>
+    <script defer src="../../_content/PrTask.SharedUI/js/circuit-manager.min.js"></script>
+    <script defer src="../../Js/sw-update.min.js"></script>
+    <script>
+        navigator.serviceWorker.getRegistrations().then(function (registrations) {
+            registrations.forEach(function (registration) { registration.unregister(); });
+        });
+        caches.keys().then(function (keys) {
+            keys.forEach(function (key) { caches.delete(key); });
+        });
+    </script>
+    <script defer src="../../_framework/blazor.webassembly.js" autostart="false"></script>
+    <script>function prtaskStartBlazor(){document.removeEventListener('click',prtaskStartBlazor);document.removeEventListener('scroll',prtaskStartBlazor);document.removeEventListener('touchstart',prtaskStartBlazor);Blazor.start()}document.addEventListener('click',prtaskStartBlazor,{once:true});document.addEventListener('scroll',prtaskStartBlazor,{once:true});document.addEventListener('touchstart',prtaskStartBlazor,{once:true})</script>
+
+</body>
+</html>

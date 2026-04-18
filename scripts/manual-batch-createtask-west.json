@@ -1,0 +1,86 @@
+{
+  "de": {
+    "CreateTaskDescriptionHeading": "Aufgabe erstellen – Prämien für Entwicklungsarbeit vergeben",
+    "CreateTaskDescriptionParagraph1": "Auf der Seite „Aufgabe erstellen“ veröffentlichen Kunden neue Entwicklungsarbeiten auf dem PrTask-Marktplatz. Jede Aufgabe braucht einen klaren Titel, eine ausführliche Beschreibung, die verknüpfte GitHub-Repository-URL und einen Prämienbetrag, den Entwickler bei erfolgreicher Umsetzung erhalten. Das Formular führt Sie durch alle Parameter, damit Entwickler wissen, was zu tun ist, wie komplex die Arbeit ist und wie viel sie dafür verdienen. Gut definierte Aufgaben ziehen qualifizierte Entwickler an und liefern schnellere, hochwertigere Ergebnisse.",
+    "CreateTaskDescriptionParagraph2": "Komplexitätsstufen (Extrem einfach, Einfach, Mittel, Komplex, Experte) helfen Entwicklern, den benötigten Aufwand und die Anforderungen einzuschätzen, bevor sie eine Aufgabe übernehmen. Geben Sie die Komplexität ehrlich an – eine zu niedrige Schätzung führt zu unvollständigen Abgaben, eine zu hohe könnte Entwickler abschrecken. Der Prämienbetrag sollte die Komplexität und den Wert der Arbeit widerspiegeln. PrTask setzt eine Mindestprämie fest, damit Entwickler fair entlohnt werden, und Entwickler sehen den vollen Betrag ohne verdeckte Abzüge. Tags kategorisieren Ihre Aufgabe nach Technologie und Typ für bessere Auffindbarkeit.",
+    "CreateTaskDescriptionParagraph3": "Sie können außerdem den Arbeitstyp (Epic, Feature, Story, Task, Bug) definieren, um Ihre Projektmanagement-Methode abzubilden, und zwischen öffentlicher und privater Sichtbarkeit wählen. Öffentliche Aufgaben sind für alle Entwickler sichtbar, private nur für eingeladene Teilnehmer. Nach dem Einreichen ist die Aufgabe sofort auf der Aufgaben-Seite verfügbar, wo Entwickler sie entdecken und bearbeiten können. Die Prämie wird bezahlt, wenn Sie die gewinnende Pull-Request genehmigen und mergen, so zahlen Sie nur für Arbeit, die Ihre Anforderungen erfüllt und die Code-Review besteht.",
+    "CreateTaskDescriptionPlaceholder": "Beschreiben Sie die Aufgabe ausführlich...",
+    "CreateTaskPaymentHint": "Keine Plattformgebühren – Entwickler erhalten 100 % der Prämie.",
+    "CreateTaskSubmitAndPayButton": "Aufgabe erstellen und zur Zahlung gehen",
+    "CreateTaskTitlePlaceholder": "Authentifizierungs-Bug im Nutzer-Service beheben",
+    "CreateTaskVisibilityPrivate": "Privat – Codeänderungen nur für Teilnehmer sichtbar",
+    "CreateTaskVisibilityPublic": "Öffentlich – Codeänderungen für alle sichtbar"
+  },
+  "es": {
+    "CreateTaskDescriptionHeading": "Crear una tarea — publicar recompensas para trabajo de desarrollo",
+    "CreateTaskDescriptionParagraph1": "La página Crear tarea permite a los clientes publicar nuevos trabajos de desarrollo en el mercado de PrTask. Cada tarea requiere un título claro, una descripción detallada, la URL del repositorio de GitHub relacionado y un monto de recompensa que los desarrolladores cobrarán al completarla con éxito. El formulario guía al creador paso a paso para que establezca los parámetros que ayudan a los desarrolladores a entender qué se debe hacer, cuán compleja es la tarea y cuánto ganarán. Tareas bien definidas atraen a desarrolladores más calificados y generan entregas más rápidas y de mayor calidad.",
+    "CreateTaskDescriptionParagraph2": "Los niveles de complejidad (Extremadamente trivial, Simple, Media, Compleja, Experta) ayudan a los desarrolladores a estimar el esfuerzo y las habilidades requeridas antes de comprometerse. Establezca la complejidad con honestidad: subestimarla puede resultar en entregas incompletas; sobreestimarla puede disuadir a los desarrolladores. El monto de la recompensa debe reflejar la complejidad y el valor del trabajo. PrTask exige una recompensa mínima para garantizar una compensación significativa y los desarrolladores ven el monto completo sin deducciones ocultas. Las etiquetas categorizan la tarea por tecnología y tipo para facilitar su descubrimiento.",
+    "CreateTaskDescriptionParagraph3": "También puede definir tipos de elementos de trabajo (Epic, Feature, Story, Task, Bug) para adaptarse a su metodología y elegir entre visibilidad pública o privada. Las tareas públicas son visibles para todos los desarrolladores; las privadas solo para los invitados. Tras enviar una tarea, aparece inmediatamente en la página de Tareas, donde los desarrolladores pueden descubrirla y empezar a trabajar. El pago de la recompensa se procesa cuando aprueba y fusiona la pull request ganadora, garantizando que solo paga por trabajo que cumple sus requisitos y supera la revisión de código.",
+    "CreateTaskDescriptionPlaceholder": "Describa la tarea con detalle...",
+    "CreateTaskPaymentHint": "Sin tarifas de plataforma: los desarrolladores reciben el 100 % de la recompensa.",
+    "CreateTaskSubmitAndPayButton": "Crear tarea y proceder al pago",
+    "CreateTaskTitlePlaceholder": "Solucionar fallo de autenticación en el servicio de usuario",
+    "CreateTaskVisibilityPrivate": "Privada: los cambios solo ven los participantes",
+    "CreateTaskVisibilityPublic": "Pública: los cambios los ve cualquiera"
+  },
+  "fr": {
+    "CreateTaskDescriptionHeading": "Créer une tâche — publier des primes pour du travail de développement",
+    "CreateTaskDescriptionParagraph1": "La page Créer une tâche est l’endroit où les clients postent de nouveaux travaux de développement sur la place de marché PrTask. Chaque tâche demande un titre clair, une description détaillée, l’URL du dépôt GitHub lié et le montant de la prime que les développeurs gagneront en cas de réussite. Le formulaire vous guide pour définir les paramètres qui précisent ce qu’il faut faire, la complexité du travail et la rémunération. Des tâches bien définies attirent des développeurs qualifiés et permettent des livraisons plus rapides et de meilleure qualité.",
+    "CreateTaskDescriptionParagraph2": "Les niveaux de complexité (Énormément simple, Simple, Moyen, Complexe, Expert) aident les développeurs à évaluer l’effort attendu et les compétences nécessaires avant de s’engager. Déclarez la complexité honnêtement : la sous-estimer entraîne des livraisons incomplètes, la sur-estimer peut décourager les développeurs. La récompense doit refléter la complexité et la valeur du travail. PrTask impose une prime minimale pour garantir une rémunération significative, et les développeurs voient le montant total sans déductions cachées. Les tags permettent de classer les tâches par technologie et type pour améliorer leur découverte.",
+    "CreateTaskDescriptionParagraph3": "Vous pouvez aussi définir le type d’élément (Epic, Feature, Story, Task, Bug) pour coller à votre méthode, et choisir une visibilité publique ou privée. Les tâches publiques sont visibles de tous, les privées uniquement des participants invités. Une fois la tâche soumise, elle est visible sur la page Tâches, où les développeurs peuvent la découvrir et commencer à travailler. Le paiement est déclenché lorsque vous approuvez et fusionnez la pull request gagnante, afin de rémunérer uniquement un travail conforme à vos exigences et validé en revue de code.",
+    "CreateTaskDescriptionPlaceholder": "Décrivez la tâche en détail...",
+    "CreateTaskPaymentHint": "Pas de frais de plateforme — les développeurs perçoivent 100 % de la prime.",
+    "CreateTaskSubmitAndPayButton": "Créer la tâche et passer au paiement",
+    "CreateTaskTitlePlaceholder": "Corriger le bug d’authentification dans le service utilisateur",
+    "CreateTaskVisibilityPrivate": "Privé — les modifications sont visibles uniquement des participants",
+    "CreateTaskVisibilityPublic": "Public — les modifications sont visibles de tous"
+  },
+  "it": {
+    "CreateTaskDescriptionHeading": "Crea una attività — pubblica ricompense per lavoro di sviluppo",
+    "CreateTaskDescriptionParagraph1": "La pagina Crea attività permette ai clienti di pubblicare nuovi lavori di sviluppo sul marketplace PrTask. Ogni attività richiede un titolo chiaro, una descrizione dettagliata, l’URL del repository GitHub collegato e l’importo della ricompensa che gli sviluppatori incasseranno al completamento. Il modulo guida nella definizione di tutti i parametri per aiutare gli sviluppatori a capire cosa deve essere fatto, quanto è complesso e quanto si guadagnerà. Attività ben definite attraggono sviluppatori migliori e portano consegne più rapide e di qualità.",
+    "CreateTaskDescriptionParagraph2": "I livelli di complessità (Estremamente semplice, Semplice, Medio, Complesso, Esperto) aiutano a valutare l’impegno e le competenze richieste prima di accettare un lavoro. Imposta la complessità con onestà: sottostimarla genera consegne incomplete, sopravvalutarla può scoraggiare gli sviluppatori. La ricompensa deve riflettere complessità e valore. PrTask impone una ricompensa minima per garantire compensi significativi, e gli sviluppatori vedono l’intero importo senza deduzioni nascoste. I tag categorizzano la tua attività per tecnologia e tipo per una scoperta più semplice.",
+    "CreateTaskDescriptionParagraph3": "Puoi anche scegliere il tipo di elemento (Epic, Feature, Story, Task, Bug) per aderire al tuo metodo di gestione e decidere tra visibilità pubblica o privata. Le attività pubbliche sono visibili a tutti, le private solo agli invitati. Dopo l’invio, la attività appare subito nella pagina Task, dove gli sviluppatori possono scoprirla e iniziare a lavorare. Il pagamento avviene quando approvi e unisci la pull request vincente, così paghi solo per il lavoro che soddisfa i requisiti e supera la revisione del codice.",
+    "CreateTaskDescriptionPlaceholder": "Descrivi la attività nei dettagli...",
+    "CreateTaskPaymentHint": "Nessuna commissione piattaforma — gli sviluppatori ricevono il 100% della ricompensa.",
+    "CreateTaskSubmitAndPayButton": "Crea attività e procedi al pagamento",
+    "CreateTaskTitlePlaceholder": "Correggi il bug di autenticazione nel servizio utente",
+    "CreateTaskVisibilityPrivate": "Privata — le modifiche visibili solo ai partecipanti",
+    "CreateTaskVisibilityPublic": "Pubblica — le modifiche visibili a tutti"
+  },
+  "pt": {
+    "CreateTaskDescriptionHeading": "Criar tarefa — publicar recompensas para trabalho de desenvolvimento",
+    "CreateTaskDescriptionParagraph1": "A página Criar tarefa é onde clientes postam novos trabalhos de desenvolvimento no marketplace PrTask. Cada tarefa precisa de título claro, descrição detalhada, URL do repositório GitHub vinculado e valor da recompensa que os desenvolvedores receberão ao concluir com êxito. O formulário orienta sobre os parâmetros que ajudam os desenvolvedores a entender o que fazer, quão complexa é a tarefa e quanto vão ganhar. Tarefas bem definidas atraem desenvolvedores qualificados e resultam em entregas mais rápidas e de maior qualidade.",
+    "CreateTaskDescriptionParagraph2": "Os níveis de complexidade (Extremamente trivial, Simples, Médio, Complexo, Especialista) ajudam a estimar esforço e habilidades antes de assumir uma tarefa. Defina a complexidade honestamente — subestimá-la gera entregas incompletas, superestimá-la pode desmotivar desenvolvedores. O valor da recompensa deve refletir complexidade e valor do trabalho. O PrTask exige recompensa mínima para garantir compensação significativa, e os desenvolvedores veem o valor total sem deduções ocultas. Tags categorizam a tarefa por tecnologia e tipo para facilitar a descoberta.",
+    "CreateTaskDescriptionParagraph3": "Você também pode definir o tipo de item (Epic, Feature, Story, Task, Bug) alinhado à metodologia de gestão de projetos e escolher entre visibilidade pública ou privada. Tarefas públicas ficam visíveis para todos os desenvolvedores, enquanto privadas só para convidados. Depois de enviar, a tarefa aparece imediatamente na página Tarefas, onde desenvolvedores podem encontrá-la e começar a trabalhar. O pagamento da recompensa ocorre quando você aprova e integra o pull request vencedor, garantindo que pague apenas por trabalhos que atendem aos requisitos e passam pela revisão de código.",
+    "CreateTaskDescriptionPlaceholder": "Descreva a tarefa em detalhes...",
+    "CreateTaskPaymentHint": "Sem taxas de plataforma — desenvolvedores recebem 100% da recompensa.",
+    "CreateTaskSubmitAndPayButton": "Criar tarefa e seguir para o pagamento",
+    "CreateTaskTitlePlaceholder": "Corrigir bug de autenticação no serviço de usuário",
+    "CreateTaskVisibilityPrivate": "Privada — alterações visíveis apenas para participantes",
+    "CreateTaskVisibilityPublic": "Pública — alterações visíveis para todos"
+  },
+  "ru": {
+    "CreateTaskDescriptionHeading": "Создать задачу — разместить награды за разработку",
+    "CreateTaskDescriptionParagraph1": "На странице Создать задачу заказчики публикуют новые работы по разработке на площадке PrTask. Каждая задача требует четкого заголовка, подробного описания, ссылки на репозиторий GitHub и суммы вознаграждения, которую получат разработчики при успешном завершении. Форма последовательно задает параметры, помогающие разработчикам понять, что нужно сделать, какая сложность и сколько они заработают. Хорошо описанные задачи привлекают квалифицированных специалистов и обеспечивают более быстрые и качественные выполнения.",
+    "CreateTaskDescriptionParagraph2": "Уровни сложности (Крайне простая, Простая, Средняя, Сложная, Экспертная) помогают оценить требуемые усилия и навыки до принятия задачи. Указывайте сложность честно: занижение ведет к неполным результатам, завышение — к отказу разработчиков. Сумма награды должна отражать сложность и ценность работы. PrTask устанавливает минимальную премию, чтобы гарантировать достойную оплату, и разработчики видят полную сумму без скрытых удержаний. Теги помогают классифицировать задачу по технологии и типу, улучшая поиск.",
+    "CreateTaskDescriptionParagraph3": "Можно также задать тип рабочего элемента (Epic, Feature, Story, Task, Bug) под вашу методологию и выбрать публичную или приватную видимость. Публичные задачи видны всем, приватные — только приглашенным. После отправки задача сразу появляется на странице задач, где разработчики могут найти и начать работу. Выплата премии происходит после одобрения и слияния выигравшего pull request, вы платите только за работу, соответствующую требованиям и прошедшую код-ревью.",
+    "CreateTaskDescriptionPlaceholder": "Опишите задачу подробно...",
+    "CreateTaskPaymentHint": "Без комиссии платформы — разработчики получают 100% премии.",
+    "CreateTaskSubmitAndPayButton": "Создать задачу и перейти к оплате",
+    "CreateTaskTitlePlaceholder": "Исправить баг аутентификации в пользовательском сервисе",
+    "CreateTaskVisibilityPrivate": "Приватная — изменения видны только участникам",
+    "CreateTaskVisibilityPublic": "Публичная — изменения видны всем"
+  },
+  "nl": {
+    "CreateTaskDescriptionHeading": "Taak aanmaken — beloningen voor ontwikkelwerk publiceren",
+    "CreateTaskDescriptionParagraph1": "Op de pagina Taak aanmaken plaatsen klanten nieuwe ontwikkelopdrachten op de PrTask-marktplaats. Elke taak heeft een duidelijke titel, uitgebreide beschrijving, gekoppelde GitHub-repository-URL en een beloningsbedrag dat ontwikkelaars ontvangen bij succesvolle afronding. Het formulier begeleidt je stapsgewijs bij het instellen van parameters die ontwikkelaars vertellen wat er moet gebeuren, hoe complex de klus is en wat ze verdienen. Goed omschreven taken trekken gekwalificeerde ontwikkelaars en zorgen voor snellere, kwalitatieve opleveringen.",
+    "CreateTaskDescriptionParagraph2": "Complexiteitsniveaus (Zeer eenvoudig, Eenvoudig, Gemiddeld, Complex, Expert) helpen ontwikkelaars om de benodigde moeite en vaardigheden in te schatten voordat ze een taak aannemen. Geef de complexiteit eerlijk op – onderschatten leidt tot onafgemaakte bijdragen, overschatten kan ontwikkelaars afschrikken. Het beloningsbedrag moet de complexiteit en waarde van het werk weerspiegelen. PrTask hanteert een minimale beloning zodat ontwikkelaars een eerlijke vergoeding krijgen, en ontwikkelaars zien het volledige bedrag zonder verborgen kortingen. Tags categoriseren je taak op technologie en type, waardoor het beter vindbaar is.",
+    "CreateTaskDescriptionParagraph3": "Je kunt ook het type werkitem instellen (Epic, Feature, Story, Task, Bug) zodat het past bij je projectmanagement, en kiezen voor openbare of privé zichtbaarheid. Openbare taken zijn zichtbaar voor alle ontwikkelaars; privé taken alleen voor genodigden. Na indiening verschijnt de taak direct op de Takenpagina, waar ontwikkelaars hem kunnen ontdekken en starten. De beloning wordt uitbetaald wanneer je de winnende pull request goedkeurt en samenvoegt, zodat je alleen betaalt voor werk dat aan je eisen voldoet en de code review doorstaat.",
+    "CreateTaskDescriptionPlaceholder": "Beschrijf de taak in detail...",
+    "CreateTaskPaymentHint": "Geen platformkosten — ontwikkelaars ontvangen 100% van de beloning.",
+    "CreateTaskSubmitAndPayButton": "Taak aanmaken en doorgaan naar betaling",
+    "CreateTaskTitlePlaceholder": "Authenticatiebug in gebruikersservice oplossen",
+    "CreateTaskVisibilityPrivate": "Privétr - codewijzigingen alleen zichtbaar voor deelnemers",
+    "CreateTaskVisibilityPublic": "Publiek - codewijzigingen zichtbaar voor iedereen"
+  }
+}

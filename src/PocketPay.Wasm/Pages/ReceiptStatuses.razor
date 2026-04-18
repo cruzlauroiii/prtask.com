@@ -1,0 +1,77 @@
+@page "/receipt-statuses"
+@inject NavigationManager Nav
+@inject HttpClient Http
+
+<div class="app-shell">
+    <header class="app-header"><a href="/">← Back</a><h2>Recent Receipts</h2></header>
+    <button @onclick="LoadReceipts" disabled="@IsLoading">@(IsLoading ? "Loading..." : "Refresh")</button>
+    @if (ErrorMessage.Length > 0)
+    {
+        <p class="error">@ErrorMessage</p>
+    }
+    <div class="product-list">
+        @foreach (var R in Receipts)
+        {
+            <div class="card">
+                <p><strong>Receipt #@R.Number</strong> <span style="float:right">@R.Type</span></p>
+                <p>Amount: @R.Total.ToString("F2", System.Globalization.CultureInfo.InvariantCulture)</p>
+                <p>Date: @R.CloseDate</p>
+            </div>
+        }
+        @if (!IsLoading && Receipts.Count == 0)
+        {
+            <p>No receipts found</p>
+        }
+    </div>
+</div>
+
+@code {
+    private bool IsLoading { get; set; }
+    private string ErrorMessage { get; set; } = string.Empty;
+    private List<ReceiptEntry> Receipts { get; set; } = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadReceipts();
+    }
+
+    private async Task LoadReceipts()
+    {
+        ErrorMessage = string.Empty;
+        IsLoading = true;
+        try
+        {
+            var DateFromMs = new DateTimeOffset(DateTime.Today.AddDays(-30)).ToUnixTimeMilliseconds();
+            var DateToMs = new DateTimeOffset(DateTime.Today.AddDays(1)).ToUnixTimeMilliseconds();
+            var Payload = new { Method = "get_stats", Payload = new { DateFrom = DateFromMs, DateTo = DateToMs } };
+            var Response = await Http.PostAsJsonAsync("wss-proxy/get-stats", Payload);
+            var Json = await Response.Content.ReadAsStringAsync();
+            using var Doc = System.Text.Json.JsonDocument.Parse(Json);
+            var Data = Doc.RootElement.GetProperty("data");
+            var RawJson = Data.TryGetProperty("raw", out var RawEl) ? RawEl.GetString() ?? "{}" : "{}";
+            using var RawDoc = System.Text.Json.JsonDocument.Parse(RawJson);
+            if (RawDoc.RootElement.TryGetProperty("content", out var ContentEl) && ContentEl.ValueKind == System.Text.Json.JsonValueKind.Array)
+            {
+                Receipts.Clear();
+                foreach (var Item in ContentEl.EnumerateArray())
+                {
+                    var RType = Item.TryGetProperty("type", out var TEl) ? TEl.GetString() ?? "SELL" : "SELL";
+                    var RNum = Item.TryGetProperty("number", out var NEl) ? NEl.GetInt64() : 0;
+                    var RTotal = Item.TryGetProperty("total", out var ToEl) ? ToEl.GetDecimal() : 0m;
+                    var RClose = Item.TryGetProperty("closeDate", out var CdEl) ? CdEl.GetString() ?? string.Empty : string.Empty;
+                    Receipts.Add(new ReceiptEntry(RType, RNum, RTotal, RClose));
+                }
+            }
+        }
+        catch (Exception Ex)
+        {
+            ErrorMessage = Ex.Message;
+        }
+        finally
+        {
+            IsLoading = false;
+        }
+    }
+
+    private sealed record ReceiptEntry(string Type, long Number, decimal Total, string CloseDate);
+}

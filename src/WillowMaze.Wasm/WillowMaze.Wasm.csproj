@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>WillowMaze.Wasm</RootNamespace>
+    <NoWarn>$(NoWarn);SA1122;SA1508;SA1134;SA1402;SA1503;SA1633;CS1591;PT003;PT004;PT005;PT006;PT007;CA1002;CA1416;CA1834;CA1865;CA2227;IDE0011;IDE0130;IDE0017;IDE0021;IDE0022;IDE0023;IDE0024;IDE0025;IDE0026;IDE0027;IDE0028;IDE0031;IDE0032;IDE0046;IDE0059;IDE0072;IDE0078;IDE0270;IDE0290;IDE0300;IDE0301;IDE0305;IDE0330;MA0016;MA0028;MA0075;MA0099;MA0101;MA0132;MA0158;MA0159;RCS1077;RCS1085;RCS1118;RCS1136;RCS1161;IDE1006;RCS1036;RCS1170;RCS1179;RCS1181;RCS1192;RCS1197;RCS1201;RCS1235;RCS1239;RCS1266;RCS1267;S1075;S127;S1481;S1854;S1871;S2486;S3063;S3358;S3457;S3459;S3626</NoWarn>
+    <EnableTrimAnalyzer>false</EnableTrimAnalyzer>
+    <TrimMode>partial</TrimMode>
+    <StaticWebAssetsFingerprintContent>true</StaticWebAssetsFingerprintContent>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="11.0.0-preview.2.26159.112" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="11.0.0-preview.2.26159.112" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="**/*.binary.cs" />
+    <Compile Remove="Decompiled/**/*.cs" />
+    <None Include="**/*.binary.cs" />
+    <None Include="Decompiled/**/*.cs" />
+  </ItemGroup>
+</Project>

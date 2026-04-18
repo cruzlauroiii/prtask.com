@@ -1,0 +1,112 @@
+@page "/Boards"
+@implements IDisposable
+@using Microsoft.JSInterop
+@using PrTask.Application.Services
+@using PrTask.Domain.Constants
+@using PrTask.Domain.Models
+@using PrTask.SharedUI.Services
+@inject IBoardService BoardService
+@inject IJSRuntime JsRuntime
+@inject WssStateService WssState
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> L
+
+<SeoHead Title="@BoardConstants.SeoTitle" Description="@BoardConstants.SeoDescription" />
+
+<div class="boards-page">
+    <h1>@L["BoardPageHeading"]</h1>
+    <p>@L["BoardSeoDescription"]</p>
+    <button class="btn btn-primary" @onclick="ToggleCreateForm">@L["BoardCreateButton"]</button>
+    @if (ShowCreateForm)
+    {
+        <div class="create-board-form">
+            <input type="text" @bind="NewName" placeholder="@BoardConstants.NamePlaceholder" class="form-input" />
+            <select @bind="NewType" class="form-input" aria-label="Board type">
+                @foreach (var Type in Enum.GetValues<BoardType>())
+                {
+                    <option value="@Type">@Type</option>
+                }
+            </select>
+            <button class="btn btn-primary" @onclick="CreateBoardAsync">@L["BoardCreateActionText"]</button>
+        </div>
+    }
+    @if (Boards is null)
+    {
+        <p>@L["BoardLoadingText"]</p>
+    }
+    else if (Boards.Count == 0)
+    {
+        <div class="empty-state"><p>@L["BoardEmptyStateText"]</p></div>
+    }
+    else
+    {
+        <div class="boards-grid">
+            @foreach (var Board in Boards)
+            {
+                <div class="board-card">
+                    <h3><a href="@(string.Format(RouteConstants.BoardDetail, Board.Id))">@Board.Name</a></h3>
+                    <span class="board-type">@Board.Type</span>
+                    <div class="board-actions">
+                        <button class="btn btn-sm btn-danger" @onclick="() => DeleteBoardAsync(Board.Id)">@L["BoardDeleteButton"]</button>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    <section class="page-description">
+        <h2>@L["BoardDescriptionHeading"]</h2>
+        <p>@L["BoardDescriptionParagraph1"]</p>
+        <p>@L["BoardDescriptionParagraph2"]</p>
+        <p>@L["BoardDescriptionParagraph3"]</p>
+    </section>
+</div>
+@code {
+    private IReadOnlyList<BoardEntity>? Boards { get; set; }
+    private bool ShowCreateForm { get; set; }
+    private string NewName { get; set; } = string.Empty;
+    private BoardType NewType { get; set; } = BoardType.Kanban;
+    private string CurrentUserId { get; set; } = string.Empty;
+    private IDisposable? DiffSubscription { get; set; }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            CurrentUserId = await JsRuntime.InvokeAsync<string>(JsInteropConstants.GetUserId);
+            Boards = await BoardService.ListByOwnerAsync(CurrentUserId);
+            await WssState.ConnectAsync();
+            DiffSubscription = WssState.OnDiff(OnDiffReceived);
+            StateHasChanged();
+        }
+    }
+    private void ToggleCreateForm() => ShowCreateForm = !ShowCreateForm;
+    private async Task CreateBoardAsync()
+    {
+        if (string.IsNullOrWhiteSpace(NewName)) return;
+        await BoardService.CreateAsync(new BoardEntity
+        {
+            Id = Guid.NewGuid().ToString(),
+            Name = NewName,
+            OwnerId = CurrentUserId,
+            Type = NewType
+        });
+        NewName = string.Empty;
+        ShowCreateForm = false;
+        Boards = await BoardService.ListByOwnerAsync(CurrentUserId);
+    }
+    private async Task DeleteBoardAsync(string BoardId)
+    {
+        await BoardService.DeleteAsync(BoardId);
+        Boards = await BoardService.ListByOwnerAsync(CurrentUserId);
+    }
+    private void OnDiffReceived(WssMessage Message)
+    {
+        _ = InvokeAsync(async () =>
+        {
+            Boards = await BoardService.ListByOwnerAsync(CurrentUserId);
+            StateHasChanged();
+        });
+    }
+    public void Dispose()
+    {
+        DiffSubscription?.Dispose();
+    }
+}

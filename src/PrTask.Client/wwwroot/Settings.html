@@ -1,0 +1,131 @@
+→<!DOCTYPE html>
+→<html lang="en">
+→<head>
+→    <meta charset="utf-8" />
+→    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+→    <meta name="theme-color" content="#1a1a2e" />
+→    <title>PrTask - Earn Money with Pull Requests</title>
+→    <meta name="description" content="Earn money by submitting pull requests. Browse tasks, submit PRs, and get paid based on complexity." />
+→    <meta property="og:title" content="PrTask — Earn Money with Pull Requests" />
+    10→    <meta property="og:description" content="Earn money by submitting pull requests. Browse tasks, submit PRs, and get paid based on complexity." />
+    11→    <meta property="og:type" content="website" />
+    12→    <meta property="og:url" content="https://prtask.com/Settings" />
+    13→    <meta property="og:site_name" content="PrTask" />
+    14→    <meta name="twitter:card" content="summary" />
+    15→    <meta name="twitter:title" content="PrTask — Earn Money with Pull Requests" />
+    16→    <meta name="twitter:description" content="Earn money by submitting pull requests. Browse tasks, submit PRs, and get paid based on complexity." />
+    17→    <link rel="canonical" href="https://prtask.com/Settings" />
+    18→    <link rel="apple-touch-icon" href="icon-192.png" />
+    19→    <base href="/" />
+    20→    <link rel="stylesheet" href="_content/PrTask.SharedUI/css/app.css" />
+    21→    <script src="Js/prtask-core.js"></script>
+    22→</head>
+    23→<body>
+    24→    <div id="app">
+    25→
+    26→
+    27→
+    28→<h1>Settings</h1>
+    29→<p>Manage your account preferences and payment configuration.</p><section class="form-container"><h2>Profile</h2>
+    30→    <div class="form-group"><label for="DisplayName">Display Name</label>
+    31→        <input id="DisplayName" type="text" placeholder="Your display name" value="" /></div>
+    32→    <div class="form-group"><label for="AvatarUrl">Avatar URL</label>
+    33→        <input id="AvatarUrl" type="url" placeholder="https://example.com/avatar.png" value="" /></div>
+    34→    <div class="form-group"><label for="Email">Email</label>
+    35→        <input id="Email" type="email" placeholder="you@example.com" value="" /></div></section>
+    36→<section class="form-container"><h2>Notification Preferences</h2>
+    37→    <div class="form-group"><label for="EmailNotifications">Email Notifications</label>
+    38→        <select id="EmailNotifications" value="all"><option value="all" selected>All notifications</option>
+    39→            <option value="important">Important only</option>
+    40→            <option value="none">None</option></select></div>
+    41→    <div class="form-group"><label for="NotificationEmail">Notification Email</label>
+    42→        <input id="NotificationEmail" type="email" placeholder="you@example.com" value="" /></div></section>
+    43→<section class="form-container"><h2>Withdrawal Settings</h2>
+    44→    <p>Configure how you receive payouts for completed tasks.</p>
+    45→    <div class="form-group"><label for="PayoutMethod">Payout Method</label>
+    46→        <select id="PayoutMethod" value="bank"><option value="bank" selected>Bank Transfer</option>
+    47→            <option value="paypal">PayPal</option></select></div>
+    48→    <div class="form-group"><label for="PayoutDetails">Payout Details</label>
+    49→        <input id="PayoutDetails" type="text" placeholder="Account number" value="" /></div></section>
+    50→<section class="form-container"><h2>Deposit and Payment Methods</h2>
+    51→    <p>Configure payment methods for posting task bounties.</p>
+    52→    <div class="form-group"><label for="PaymentMethod">Payment Method</label>
+    53→        <select id="PaymentMethod" value="card"><option value="card" selected>Credit or Debit Card</option>
+    54→            <option value="bank">Bank Transfer</option></select></div></section>
+    55→<section class="form-container"><h2>Security</h2>
+    56→    <p>Protect your account with additional security measures.</p>
+    57→    <div class="form-group"><label for="TwoFactor">Two-Factor Authentication (2FA)</label>
+    58→        <select id="TwoFactor" value="disabled"><option value="disabled" selected>Disabled</option>
+    59→            <option value="authenticator">Authenticator App</option>
+    60→            <option value="email">Email Verification</option></select></div></section>
+    61→<section class="form-container"><h2>Connected Accounts</h2>
+    62→    <p>Manage your linked SSO providers.</p>
+    63→    <div class="form-group"><label>Google</label>
+    64→        <span class="connected-status ">Not connected</span></div>
+    65→    <div class="form-group"><label>GitHub</label>
+    66→        <span class="connected-status ">Not connected</span></div>
+    67→    <div class="form-group"><label>Microsoft</label>
+    68→        <span class="connected-status ">Not connected</span></div>
+    69→    <div class="form-group"><label>Okta</label>
+    70→        <span class="connected-status ">Not connected</span></div></section>
+    71→<section class="form-container"><h2>Privacy</h2>
+    72→    <div class="form-group"><label for="ProfileVisibility">Profile Visibility</label>
+    73→        <select id="ProfileVisibility" value="public"><option value="public" selected>Public - Anyone can view your profile</option>
+    74→            <option value="private">Private - Only you can view your profile</option></select></div>
+    75→    <div class="form-group"><label for="ActivityVisibility">Activity Visibility</label>
+    76→        <select id="ActivityVisibility" value="public"><option value="public" selected>Public - Show activity on leaderboard</option>
+    77→            <option value="private">Private - Hide activity from others</option></select></div></section>
+    78→<section class="form-container"><h2>Subscription Settings</h2>
+    79→    <p>Manage your active subscriptions and recurring payments.</p><div class="form-group"><label>Active Subscriptions</label><span>No active subscriptions.</span></div></section>
+    80→<section class="form-container"><h2>Wallet Link Settings</h2>
+    81→    <p>Link your digital wallet for quick payments and payouts.</p>
+    82→    <div class="form-group"><label>Linked Wallet</label><span>No wallet linked.</span></div></section>
+    83→<section class="form-container"><h2>Payment History</h2>
+    84→    <p>View past transactions and payment records.</p><div class="form-group"><label>Recent Invoices</label><span>No invoice history available.</span></div></section>
+    85→<section class="form-container"><h2>Disbursement Settings</h2>
+    86→    <p>Configure how disbursements are processed for completed tasks.</p>
+    87→    <div class="form-group"><label>Disbursement Method</label><span>Not configured.</span></div></section>
+    88→<section class="form-container"><h2>Invoice Settings</h2>
+    89→    <p>Configure invoice generation for your transactions.</p>
+    90→    <div class="form-group"><label>Auto-generate Invoice</label>
+    91→        <select id="InvoiceSetting" value="enabled"><option value="enabled" selected>Enabled</option>
+    92→            <option value="disabled">Disabled</option></select></div></section>
+    93→<section class="form-container"><h2>QR Payment Settings</h2>
+    94→    <p>Manage QR code payment preferences.</p>
+    95→    <div class="form-group"><label>QR Payments</label>
+    96→        <select id="QrPaymentSetting" value="enabled"><option value="enabled" selected>Enabled</option>
+    97→            <option value="disabled">Disabled</option></select></div></section>
+    98→<section class="form-container" id="kyc"><h2>KYC - Identity Verification</h2>
+    99→    <p>Complete identity verification to enable payouts and comply with anti-money laundering regulations.</p>
+   100→    <div class="form-group"><label>Verification Status</label>
+   101→        <span class="kyc-status">Not verified</span></div>
+   102→    <div class="form-group"><label for="KycDocumentType">Document Type</label>
+   103→        <select id="KycDocumentType" value=""><option value>Select document type</option>
+   104→            <option value="passport">Passport</option>
+   105→            <option value="national-id">National ID</option>
+   106→            <option value="drivers-license">Driver&#x27;s License</option></select></div>
+   107→    <div class="form-group"><label for="KycDocumentId">Document ID Number</label>
+   108→        <input id="KycDocumentId" type="text" placeholder="Enter your document ID number" value="" /></div>
+   109→    <button class="btn btn-primary">Submit KYC Verification</button>
+   110→    <button class="btn btn-secondary didit-verify-btn">Verify with Didit</button></section>
+   111→<section class="form-container"><h2>Account</h2>
+   112→    <div class="form-group"><label for="Timezone">Timezone</label>
+   113→        <select id="Timezone" value="UTC"><option value="UTC" selected>UTC</option>
+   114→            <option value="Asia/Manila">Asia/Manila (GMT&#x2B;8)</option>
+   115→            <option value="America/New_York">Eastern Time (GMT-5)</option>
+   116→            <option value="Europe/London">London (GMT&#x2B;0)</option></select></div>
+   117→    <button class="btn btn-primary">Save Settings</button></section>    </div>
+   118→    <script src="Js/opfs-store.min.js"></script>
+   119→    <script src="Js/git-sync.min.js"></script>
+   120→    <script src="_content/PrTask.SharedUI/js/circuit-manager.min.js"></script>
+   121→    <script src="Js/indexeddb-sync.min.js"></script>
+   122→    <script src="Js/sw-update.min.js"></script>
+   123→    <script>
+   124→        navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' }).then(function (registration) {
+   125→            if (window.prtaskSwUpdate) { window.prtaskSwUpdate.register(); }
+   126→        });
+   127→    </script>
+   128→    <script src="_framework/blazor.webassembly.js"></script>
+   129→
+   130→</body>
+   131→</html>

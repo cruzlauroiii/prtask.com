@@ -1,0 +1,43 @@
+@page "/sms-verification"
+@inject NavigationManager Nav
+
+<div class="login-form">
+    <h2>SMS Verification</h2>
+    <p>Enter the 6-digit code sent to your phone</p>
+    <input class="otp-input" type="text" maxlength="6" placeholder="000000" @bind="OtpCode" @bind:event="oninput" @onkeyup="CheckOtp" />
+    @if (ErrorMessage.Length > 0)
+    {
+        <p class="error">@ErrorMessage</p>
+    }
+    <button @onclick="VerifyOtp" disabled="@IsLoading">@(IsLoading ? "Verifying..." : "Verify")</button>
+    <p>Demo: enter any 6 digits</p>
+</div>
+
+@code {
+    private string OtpCode { get; set; } = string.Empty;
+    private string ErrorMessage { get; set; } = string.Empty;
+    private bool IsLoading { get; set; }
+
+    private async Task CheckOtp()
+    {
+        if (OtpCode.Length == 6)
+        {
+            await VerifyOtp();
+        }
+    }
+
+    private async Task VerifyOtp()
+    {
+        ErrorMessage = string.Empty;
+        if (OtpCode.Length != 6 || !OtpCode.All(char.IsDigit))
+        {
+            ErrorMessage = "Please enter a valid 6-digit code";
+            return;
+        }
+
+        IsLoading = true;
+        await Task.Delay(600);
+        IsLoading = false;
+        Nav.NavigateTo("/pin-input");
+    }
+}

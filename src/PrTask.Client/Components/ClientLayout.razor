@@ -1,0 +1,29 @@
+@inherits LayoutComponentBase
+@inject HttpClient Http
+<PrTask.SharedUI.Components.NavMenu />
+<main class="page-content">
+    @Body
+</main>
+<PrTask.SharedUI.Components.FooterSection />
+@code {
+    private bool IsLoggedIn { get; set; }
+    private string Username { get; set; } = "";
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var Response = await Http.GetAsync(RouteConstants.ApiAuthMe);
+            if (Response.IsSuccessStatusCode)
+            {
+                var User = await Response.Content.ReadFromJsonAsync<AuthUser>();
+                IsLoggedIn = true;
+                Username = User?.Username ?? NavConstants.DashboardLabel;
+            }
+        }
+        catch (HttpRequestException) { IsLoggedIn = false; }
+    }
+    private sealed class AuthUser
+    {
+        public string Username { get; set; } = "";
+    }
+}

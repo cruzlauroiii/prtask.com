@@ -1,0 +1,107 @@
+@page "/about"
+@using PrTask.Domain.Constants
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> Localizer
+<h1>@Localizer["AboutPageHeading"]</h1>
+<p>@Localizer["AboutPageDescription"]</p>
+
+<section class="mission-section">
+    <h2>@Localizer["AboutMissionHeading"]</h2>
+    <p>@Localizer["AboutMissionDescription"]</p>
+</section>
+
+<section class="about-section">
+    <h2>@Localizer["AboutWhatWeDoHeading"]</h2>
+    <p>@Localizer["AboutWhatWeDoDescription"]</p>
+</section>
+
+<section class="history-section">
+    <h2>@Localizer["AboutStoryHeading"]</h2>
+    <p>@Localizer["AboutStoryDescription"]</p>
+</section>
+
+<section class="about-section">
+    <h2>@Localizer["AboutBadgesHeading"]</h2>
+    <p>@Localizer["AboutBadgesDescription"]</p>
+</section>
+
+<section class="about-section">
+    <h2>@Localizer["AboutPaymentsHeading"]</h2>
+    <p>@Localizer["AboutPaymentsDescription"]</p>
+</section>
+
+<section class="values-section">
+    <h2>@Localizer["AboutValuesHeading"]</h2>
+    <div class="values-grid">
+        <div class="value-card">
+            <h3>@Localizer["AboutValueTransparencyHeading"]</h3>
+            <p>@Localizer["AboutValueTransparencyDescription"]</p>
+        </div>
+        <div class="value-card">
+            <h3>@Localizer["AboutValueFairnessHeading"]</h3>
+            <p>@Localizer["AboutValueFairnessDescription"]</p>
+        </div>
+        <div class="value-card">
+            <h3>@Localizer["AboutValueOpenSourceHeading"]</h3>
+            <p>@Localizer["AboutValueOpenSourceDescription"]</p>
+        </div>
+    </div>
+</section>
+
+<section class="community-section">
+    <h2>@Localizer["AboutCommunityHeading"]</h2>
+    <p>@Localizer["AboutCommunityDescription"]</p>
+    <div class="stats-grid">
+        <div class="stat-card">
+            <span class="stat-value">@Localizer["AboutStatTasksCompleted"]</span>
+            <span class="stat-label">@Localizer["AboutStatTasksCompletedLabel"]</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-value">@Localizer["AboutStatActiveDevelopers"]</span>
+            <span class="stat-label">@Localizer["AboutStatActiveDevelopersLabel"]</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-value">@Localizer["AboutStatCountries"]</span>
+            <span class="stat-label">@Localizer["AboutStatCountriesLabel"]</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-value">@Localizer["AboutStatPaidToDevelopers"]</span>
+            <span class="stat-label">@Localizer["AboutStatPaidToDevelopersLabel"]</span>
+        </div>
+    </div>
+</section>
+
+<section class="opensource-section">
+    <h2>@Localizer["AboutOpenSourceHeading"]</h2>
+    <p>@Localizer["AboutOpenSourceDescription"]</p>
+</section>
+
+<section class="about-section">
+    <h2>@Localizer["AboutLegalHeading"]</h2>
+    <div class="legal-links">
+        <a href="@RouteConstants.Terms">@Localizer["AboutLegalTerms"]</a>
+        <a href="@RouteConstants.Privacy">@Localizer["AboutLegalPrivacy"]</a>
+        <a href="@RouteConstants.CookiePolicy">@Localizer["AboutLegalCookiePolicy"]</a>
+        <a href="@RouteConstants.AcceptableUse">@Localizer["AboutLegalAcceptableUse"]</a>
+        <a href="@RouteConstants.Refund">@Localizer["AboutLegalRefund"]</a>
+        <a href="@RouteConstants.Licenses">@Localizer["AboutLegalLicenses"]</a>
+        <a href="@RouteConstants.Accessibility">@Localizer["AboutLegalAccessibility"]</a>
+        <a href="@RouteConstants.Dmca">@Localizer["AboutLegalDmca"]</a>
+    </div>
+</section>
+
+<section class="about-section">
+    <h2>@Localizer["AboutContactHeading"]</h2>
+    <p>@Localizer["AboutContactDescription"]</p>
+</section>
+
+<section class="getstarted-section">
+    <h2>@Localizer["AboutGetStartedHeading"]</h2>
+    <p>@Localizer["AboutGetStartedDescription"]</p>
+    <a href="@RouteConstants.Tasks" class="cta-button">@Localizer["AboutGetStartedButton"]</a>
+</section>
+<section class="page-description">
+    <h2>@Localizer["AboutDescriptionHeading"]</h2>
+    <p>@Localizer["AboutDescriptionParagraph1"]</p>
+    <p>@Localizer["AboutDescriptionParagraph2"]</p>
+    <p>@Localizer["AboutDescriptionParagraph3"]</p>
+</section>

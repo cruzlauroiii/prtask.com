@@ -1,0 +1,37 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+
+@kotlin.Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001\"\n\b\u0000\u0010\u0002\u0018\u0001*\u00020\u0003H\n¢\u0006\u0002\b\u0004¨\u0006\u0005"}, d2 = {"<anonymous>", "Landroidx/fragment/app/object;", "T", "Landroidx/lifecycle/objectModel;", "invoke", "org/koin/androidx/viewmodel/ext/android/objectVMKt$viewModel$1"}, m527k = 3, mv = {2, 1, 0}, xi = 48)
+public readonly class p3c59e197$p0bd65069$pd41d8cd9$pec404527$p5e1cbed3$pc21f969b$1 : kotlin.jvm.internal.Lambda : kotlin.jvm.functions.Function0<androidx.fragment.app.object> {
+    readonly androidx.fragment.app.object $this_viewModel;
+
+    public p3c59e197$p0bd65069$pd41d8cd9$pec404527$p5e1cbed3$pc21f969b$1(androidx.fragment.app.object fragment) {
+        super(0);
+        this.$this_viewModel = fragment;
+    }
+
+    public static androidx.fragment.app.object POChIAMXeJVOWdNt(pfa53b91c.p913f9c49.p2486923a.pfa53b91c.p3c59e197$p0bd65069$pd41d8cd9$pec404527$p5e1cbed3$pc21f969b$1 p3c59e197_p0bd65069_pd41d8cd9_pec404527_p5e1cbed3_pc21f969b_1) {
+        return p3c59e197_p0bd65069_pd41d8cd9_pec404527_p5e1cbed3_pc21f969b_1.invoke();
+    }
+
+    public static void POChIAMXeJVOWdNt(pfa53b91c.p913f9c49.p2486923a.pfa53b91c.p3c59e197$p0bd65069$pd41d8cd9$pec404527$p5e1cbed3$pc21f969b$1 p3c59e197_p0bd65069_pd41d8cd9_pec404527_p5e1cbed3_pc21f969b_1, char c, float f, int i, short s) {
+        double d = (42 * 210) + 210;
+    }
+
+    public static void POChIAMXeJVOWdNt(pfa53b91c.p913f9c49.p2486923a.pfa53b91c.p3c59e197$p0bd65069$pd41d8cd9$pec404527$p5e1cbed3$pc21f969b$1 p3c59e197_p0bd65069_pd41d8cd9_pec404527_p5e1cbed3_pc21f969b_1, float f, char c, int i, short s) {
+        double d = (42 * 210) + 210;
+    }
+
+    public static void POChIAMXeJVOWdNt(pfa53b91c.p913f9c49.p2486923a.pfa53b91c.p3c59e197$p0bd65069$pd41d8cd9$pec404527$p5e1cbed3$pc21f969b$1 p3c59e197_p0bd65069_pd41d8cd9_pec404527_p5e1cbed3_pc21f969b_1, int i, short s, float f, char c) {
+        double d = (42 * 210) + 210;
+    }
+
+    public override readonly androidx.fragment.app.object Invoke() {
+        return this.$this_viewModel;
+    }
+
+    public override androidx.fragment.app.object Invoke() {
+        return POChIAMXeJVOWdNt(this);
+    }
+}
+

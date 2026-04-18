@@ -1,0 +1,91 @@
+@page "/client/create-task"
+@using PrTask.Application.Services
+@using PrTask.Domain.Constants
+@using PrTask.Domain.Models
+@inject ITaskService TaskService
+@inject NavigationManager NavigationManager
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> Localizer
+<h1>@Localizer["CreateTaskPageHeading"]</h1>
+<p>@Localizer["CreateTaskPageDescription"]</p>
+<div class="form-container">
+    <div class="form-group">
+        <label for="Title">@Localizer["CreateTaskTitleLabel"]</label>
+        <input id="Title" type="text" @bind="Title" maxlength="@AppConstants.MaxTaskTitleLength" placeholder="@Localizer["CreateTaskTitlePlaceholder"]" />
+    </div>
+    <div class="form-group">
+        <label for="Description">@Localizer["CreateTaskDescriptionLabel"]</label>
+        <textarea id="Description" @bind="Description" rows="6" maxlength="@AppConstants.MaxTaskDescriptionLength" placeholder="@Localizer["CreateTaskDescriptionPlaceholder"]"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="RepoUrl">@Localizer["CreateTaskRepoUrlLabel"]</label>
+        <input id="RepoUrl" type="url" @bind="RepoUrl" placeholder="https://github.com/org/repo" />
+    </div>
+    <div class="form-group">
+        <label for="WorkItemType">@Localizer["CreateTaskWorkItemTypeLabel"]</label>
+        <select id="WorkItemType" @bind="SelectedWorkItemType">
+            <option value="Epic">@Localizer["WorkItemTypeEpic"]</option>
+            <option value="Feature">@Localizer["WorkItemTypeFeature"]</option>
+            <option value="Story">@Localizer["WorkItemTypeStory"]</option>
+            <option value="Task">@Localizer["WorkItemTypeTask"]</option>
+            <option value="Bug">@Localizer["WorkItemTypeBug"]</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Complexity">@Localizer["CreateTaskComplexityLabel"]</label>
+        <select id="Complexity" @bind="SelectedComplexity">
+            @foreach (var Level in Enum.GetValues<TaskComplexity>())
+            {
+                <option value="@Level">@Localizer[$"TaskComplexity{Level}"]</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="BountyAmount">@Localizer["CreateTaskBountyLabel"]</label>
+        <input id="BountyAmount" type="number" @bind="BountyAmountPesos" min="@(AppConstants.MinBountyAmountCents / 100)" />
+        <span class="form-hint">@Localizer["CreateTaskPaymentHint"]</span>
+    </div>
+    <div class="form-group">
+        <label for="Tags">@Localizer["CreateTaskTagsLabel"]</label>
+        <input id="Tags" type="text" @bind="TagsInput" placeholder="csharp, blazor, bug-fix" />
+    </div>
+    <div class="form-group">
+        <label for="Visibility">@Localizer["CreateTaskVisibilityLabel"]</label>
+        <select id="Visibility" @bind="SelectedVisibility">
+            <option value="Public">@Localizer["CreateTaskVisibilityPublic"]</option>
+            <option value="Private">@Localizer["CreateTaskVisibilityPrivate"]</option>
+        </select>
+    </div>
+    <button class="btn btn-primary" @onclick="SubmitNewTask">@Localizer["CreateTaskSubmitAndPayButton"]</button>
+</div>
+<section class="page-description">
+    <h2>@Localizer["CreateTaskDescriptionHeading"]</h2>
+    <p>@Localizer["CreateTaskDescriptionParagraph1"]</p>
+    <p>@Localizer["CreateTaskDescriptionParagraph2"]</p>
+    <p>@Localizer["CreateTaskDescriptionParagraph3"]</p>
+</section>
+@code {
+    private string Title { get; set; } = string.Empty;
+    private string Description { get; set; } = string.Empty;
+    private string RepoUrl { get; set; } = string.Empty;
+    private string SelectedWorkItemType { get; set; } = "Task";
+    private TaskComplexity SelectedComplexity { get; set; } = TaskComplexity.Medium;
+    private int BountyAmountPesos { get; set; } = AppConstants.MinBountyAmountCents / 100;
+    private string TagsInput { get; set; } = string.Empty;
+    private string SelectedVisibility { get; set; } = "Public";
+    private async Task SubmitNewTask()
+    {
+        var NewTask = new TaskEntity
+        {
+            Id = Guid.NewGuid().ToString(),
+            ClientId = "current-user",
+            Title = Title,
+            Description = Description,
+            RepoUrl = RepoUrl,
+            Complexity = SelectedComplexity,
+            BountyAmountCents = BountyAmountPesos * 100L,
+            Tags = string.IsNullOrWhiteSpace(TagsInput) ? null : TagsInput.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries)
+        };
+        await TaskService.CreateAsync(NewTask);
+        NavigationManager.NavigateTo($"/tasks/{NewTask.Id}");
+    }
+}

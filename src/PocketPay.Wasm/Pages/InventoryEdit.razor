@@ -1,0 +1,92 @@
+@page "/inventory-edit"
+@inject NavigationManager Nav
+@inject HttpClient Http
+
+<div class="app-shell">
+    <header class="app-header"><a href="/inventory-list">← Back</a><h2>@(IsEdit ? "Edit Product" : "New Product")</h2></header>
+    <div class="card">
+        <label>Name</label>
+        <input type="text" @bind="ProductName" @bind:event="oninput" placeholder="Product name" />
+        <label>Code</label>
+        <input type="text" @bind="Code" @bind:event="oninput" placeholder="Product code" />
+        <label>Price</label>
+        <input type="number" step="0.01" @bind="Price" />
+        <label>Cost Price</label>
+        <input type="number" step="0.01" @bind="CostPrice" />
+        <label>Tax (%)</label>
+        <input type="number" step="0.01" @bind="Tax" />
+        <label>Measure</label>
+        <select @bind="MeasureName">
+            <option value="pcs">Pieces</option>
+            <option value="kg">Kilograms</option>
+            <option value="l">Liters</option>
+            <option value="m">Meters</option>
+        </select>
+        <label>Description</label>
+        <textarea @bind="Description" @bind:event="oninput" placeholder="Description"></textarea>
+        @if (ErrorMessage.Length > 0)
+        {
+            <p class="error">@ErrorMessage</p>
+        }
+        <button @onclick="SaveProduct" disabled="@IsLoading">@(IsLoading ? "Saving..." : "Save")</button>
+    </div>
+</div>
+
+@code {
+    private string ProductId { get; set; } = string.Empty;
+    private string ProductName { get; set; } = string.Empty;
+    private string Code { get; set; } = string.Empty;
+    private decimal Price { get; set; }
+    private decimal CostPrice { get; set; }
+    private decimal Tax { get; set; }
+    private string MeasureName { get; set; } = "pcs";
+    private string Description { get; set; } = string.Empty;
+    private string ErrorMessage { get; set; } = string.Empty;
+    private bool IsLoading { get; set; }
+    private bool IsEdit => ProductId.Length > 0;
+
+    protected override void OnInitialized()
+    {
+        var Uri = new Uri(Nav.Uri);
+        var Query = System.Web.HttpUtility.ParseQueryString(Uri.Query);
+        ProductId = Query["id"] ?? string.Empty;
+    }
+
+    private async Task SaveProduct()
+    {
+        ErrorMessage = string.Empty;
+        if (ProductName.Length == 0)
+        {
+            ErrorMessage = "Name is required";
+            return;
+        }
+
+        IsLoading = true;
+        try
+        {
+            var Method = IsEdit ? "update_product" : "create_product";
+            var Payload = new { Method, Payload = new { ProductId, Name = ProductName, Code, Price, CostPrice, Tax, MeasureName, Description, AllowToSell = true, Type = "NORMAL", Quantity = 0 } };
+            var Endpoint = IsEdit ? "wss-proxy/update-product" : "wss-proxy/create-product";
+            var Response = await Http.PostAsJsonAsync(Endpoint, Payload);
+            var Result = await Response.Content.ReadFromJsonAsync<SaveResult>();
+            if (Result is not null && Result.Success)
+            {
+                Nav.NavigateTo("/inventory-list");
+            }
+            else
+            {
+                ErrorMessage = Result?.Error ?? "Failed to save";
+            }
+        }
+        catch (Exception Ex)
+        {
+            ErrorMessage = Ex.Message;
+        }
+        finally
+        {
+            IsLoading = false;
+        }
+    }
+
+    private sealed record SaveResult(bool Success, string? Error);
+}

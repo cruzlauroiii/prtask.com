@@ -1,0 +1,13 @@
+     1→  Determining projects to restore...
+     2→  All projects are up-to-date for restore.
+     3→  PrTask.Analyzers -> C:\work\prtask.com\src\PrTask.Analyzers\bin\Debug\net10.0\PrTask.Analyzers.dll
+     4→  PrTask.Domain -> C:\work\prtask.com\src\PrTask.Domain\bin\Debug\net10.0\PrTask.Domain.dll
+     5→  PrTask.Application -> C:\work\prtask.com\src\PrTask.Application\bin\Debug\net10.0\PrTask.Application.dll
+     6→  PrTask.Git -> C:\work\prtask.com\src\PrTask.Git\bin\Debug\net10.0\PrTask.Git.dll
+     7→
+     8→Build succeeded.
+     9→    0 Warning(s)
+    10→    0 Error(s)
+    11→
+    12→Time Elapsed 00:00:08.02
+    13→

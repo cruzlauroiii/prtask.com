@@ -1,0 +1,30 @@
+@page "/inventory-group-edit"
+@inject NavigationManager Nav
+
+<div style="width:100%">
+    <header class="toolbar" style="width:100%"></header>
+    <div class="content" style="width:100%">
+        <label class="inventory_group_field_name" style="width:100%">
+            <input class="inventory_group_edit_name" style="width:100%" type="text" />
+        </label>
+        <label class="inventory_group_field_path" style="width:100%">
+            <input style="width:100%" type="text" />
+        </label>
+        <label class="inventory_group_field_markup" style="width:100%">
+            <div style="width:100%"></div>
+        </label>
+        <label class="inventory_group_field_classification_code" style="width:100%">
+            <input style="width:100%" type="text" />
+        </label>
+        <button class="save_group_button" style="width:100%"></button>
+    </div>
+    <div class="loader" style="width:100%"></div>
+</div>
+
+@code {
+    private string Field2131362491 { get; set; } = string.Empty;
+
+    private void OnField2131362960Click()
+    {
+    }
+}

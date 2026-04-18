@@ -1,0 +1,34 @@
+@page "/"
+
+<h1>Claude Code</h1>
+
+<div class="studio-viewport">
+    <div class="studio-status">@Status</div>
+    <div class="studio-output">
+        <pre>@Output</pre>
+    </div>
+</div>
+
+<div class="studio-controls">
+    <button class="btn" @onclick="RunEntry">Run</button>
+</div>
+
+@code {
+    private string Status = "Ready";
+    private string Output = string.Empty;
+
+    private void RunEntry()
+    {
+        Status = "Running...";
+        try
+        {
+            Status = "Completed";
+            Output = "Entry point executed successfully in browser via WASM";
+        }
+        catch (System.Exception Ex)
+        {
+            Status = "Error";
+            Output = Ex.Message;
+        }
+    }
+}

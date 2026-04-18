@@ -1,0 +1,99 @@
+07:22:23 [Warning] NativeCdpBridge.Infrastructure.Cdp.CdpBridgeClient: DevTunnel listen port not configured
+07:22:23 [Warning] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The WebRootPath was not found: C:\work\prtask.com\wwwroot. Static files may be unavailable.
+07:22:25 [Warning] NativeCdpBridge.Application.Services.AgentRouter: [Agent2] connect deferred — will retry on readiness
+07:22:27 [Warning] NativeCdpBridge.Application.Services.AgentRouter: [Agent3] connect deferred — will retry on readiness
+07:22:29 [Warning] NativeCdpBridge.Infrastructure.Updates.AutoUpdateService: Update available: gemini 0.32.1-0486a16 -> 0.33.0
+07:22:29 [Warning] NativeCdpBridge.Infrastructure.Updates.AutoUpdateService: Update available: server 2026-03-11 16:42 -> 2026-03-11 23:18
+07:22:30 [Warning] NativeCdpBridge.Application.BackgroundServices.TelegramPollingService: [TELEGRAM] 409 Conflict — another getUpdates session active.
+07:22:44 [Warning] NativeCdpBridge.Application.Services.AgentRouter: No agent targets for telegram:-5238672434
+07:22:46 [Warning] NativeCdpBridge.Application.BackgroundServices.TelegramPollingService: [TELEGRAM] 409 Conflict — another getUpdates session active.
+07:24:54 [Warning] NativeCdpBridge.Infrastructure.Cdp.CdpBridgeClient: DevTunnel listen port not configured
+07:24:54 [Warning] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The WebRootPath was not found: C:\work\prtask.com\wwwroot. Static files may be unavailable.
+07:24:56 [Warning] NativeCdpBridge.Application.Services.AgentRouter: [Agent2] connect deferred — will retry on readiness
+07:24:58 [Warning] NativeCdpBridge.Infrastructure.Updates.AutoUpdateService: Update available: gemini 0.32.1-0486a16 -> 0.33.0
+07:24:58 [Warning] NativeCdpBridge.Infrastructure.Updates.AutoUpdateService: Update available: server 2026-03-11 16:42 -> 2026-03-11 23:18
+07:24:59 [Warning] NativeCdpBridge.Application.Services.AgentRouter: [Agent3] connect deferred — will retry on readiness
+07:25:16 [Warning] NativeCdpBridge.Application.Services.AgentMessageLogger: << Agent | to:agent:team-lead | MAYA API DEEP RESEARCH - Part 1/4: Base URLs and Auth
+
+BASE URLS:
+- Sandbox: https://pg-sandbox.paymaya.com
+- Production: https://pg.paymaya.com
+- Checkout hosted page (sandbox): https://payments-web-sandbox.paymaya.com
+
+AUTHENTICATION:
+HTTP Basic Auth: Authorization: Basic [Base64(api_key:)] - password always blank
+- PUBLIC key (pk-...): create payment tokens, checkouts, wallet payments, dynamic QR
+- SECRET key (sk-...): all other ops (payments, customers, vaults, webhooks, voids, refunds, fees)
+07:25:16 [Warning] NativeCdpBridge.Application.Services.ChannelRouter: Unknown channel: agent
+07:25:30 [Warning] NativeCdpBridge.Application.Services.AgentMessageLogger: << Agent | to:telegram:7382041514 | MAYA API RESEARCH COMPLETE - sending results now
+07:25:37 [Warning] NativeCdpBridge.Application.Services.AgentMessageLogger: << Agent | to:telegram:7382041514 | MAYA API - Part 1/6: Base URLs and Auth
+
+BASE URLS:
+Sandbox: https://pg-sandbox.paymaya.com
+Production: https://pg.paymaya.com
+Checkout page (sandbox): https://payments-web-sandbox.paymaya.com
+
+AUTH: HTTP Basic Auth, Authorization: Basic [Base64(api_key:)], password always blank
+PUBLIC key (pk-...): create payment tokens, checkouts, wallet/QR payments
+SECRET key (sk-...): payments, customers, vault, webhooks, voids, refunds, fees
+07:25:50 [Warning] NativeCdpBridge.Application.Services.AgentMessageLogger: << Agent | to:telegram:7382041514 | MAYA API - Part 2/6: Checkout API
+
+POST /checkout/v1/checkouts (PUBLIC key)
+Request body:
+- totalAmount: {value, currency, details:{discount,serviceCharge,shippingFee,tax,subtotal}}
+- buyer: {firstName,middleName,lastName,birthday(YYYY-MM-DD),customerSince,sex(M/F),contact:{phone,email},shippingAddress:{firstName,middleName,lastName,phone,email,line1,line2,city,state,zipCode,countryCode,shippingType(ST/SD)},billingAddress:{line1,line2,city,state,zipCode,countryCode}}
+- items: [{name,quantity,code,description,amount:{value,details},totalAmount:{value,details}}]
+- redirectUrl: {success,failure,cancel}
+- requestReferenceNumber: string
+- metadata: object
+Response: {checkoutId, redirectUrl}
+
+GET /checkout/v1/checkouts/:checkoutId (SECRET key)
+Response: {id,items,requestReferenceNumber,createdAt,updatedAt,expiredAt,paymentScheme,expressCheckout,refundedAmount,canPayPal,status,paymentStatus,paymentDetails:{responses,paymentAt,3ds:bool},buyer,merchant,totalAmount,redirectUrl,transactionReferenceNumber,metadata}
+
+PAYMENT STATUSES: PENDING_TOKEN, PENDING_PAYMENT, FOR_AUTHENTICATION, AUTHENTICATING, AUTH_SUCCESS, AUTH_FAILED, PAYMENT_PROCESSING, PAYMENT_SUCCESS, PAYMENT_FAILED, PAYMENT_EXPIRED(1hr from creation/15min from auth), VOIDED, REFUNDED
+
+CHECKOUT WEBHOOKS:
+CHECKOUT_SUCCESS -> PAYMENT_SUCCESS
+CHECKOUT_FAILURE -> PAYMENT_FAILED
+CHECKOUT_DROPOUT -> PAYMENT_EXPIRED
+Body = Get Checkout response. Retries: now, +5m, +15m, +45m
+07:26:03 [Warning] NativeCdpBridge.Application.Services.AgentMessageLogger: << Agent | to:telegram:7382041514 | MAYA API - Part 3/6: Payment Vault + Customer + Subscriptions
+
+PAYMENT TOKENS:
+POST /payments/v1/payment-tokens (PUBLIC)
+Body: {card:{number,expMonth,expYear,cvc}}
+Token states: AVAILABLE, CURRENTLY_IN_USE, USED, EXPIRED, PREVERIFICATION, VERIFYING, VERIFICATION_FAILED
+
+PAYMENTS:
+POST /payments/v1/payments (SECRET)
+Body: {paymentTokenId,totalAmount:{amount,currency},buyer:{firstName,lastName,contact:{phone},billingAddress:{...}},redirectUrl:{success,failure,cancel}}
+GET /payments/v1/payments/:id (SECRET)
+GET /payments/v1/payment-rrns/:rrn (SECRET)
+
+CUSTOMERS:
+POST /payments/v1/customers (SECRET) - {firstName(req),middleName,lastName(req),birthday(YYYY-MM-DD),sex,contact:{phone,email},billingAddress:{line1,line2,city,state,zipCode,countryCode},metadata}
+GET/PUT/DELETE /payments/v1/customers/:id (SECRET)
+
+CARDS:
+POST /payments/v1/customers/:id/cards (SECRET) - {paymentTokenId(req),isDefault:bool,redirectUrl:{...}}
+GET /payments/v1/customers/:id/cards (SECRET) - list
+GET/PUT/DELETE /payments/v1/customers/:id/cards/:cardToken (SECRET)
+POST /payments/v1/customers/:id/cards/:cardToken/payments (SECRET) - execute payment
+
+SUBSCRIPTIONS:
+POST /payments/v1/customers/:id/cards/:cardToken/subscriptions (SECRET)
+Body: {description(req),totalAmount:{amount(req),currency(req)},interval:DAY|MONTH|YEAR(req),intervalCount(req),startDate:YYYY-MM-DD(req)}
+GET /payments/v1/customers/:id/cards/:cardToken/subscriptions (SECRET)
+GET/DELETE /payments/v1/subscriptions/:id (SECRET)
+GET /payments/v1/subscriptions/:id/payments (SECRET)
+
+VAULT WEBHOOKS: 3DS_PAYMENT_SUCCESS, 3DS_PAYMENT_FAILURE, 3DS_PAYMENT_DROPOUT, RECURRING_PAYMENT_SUCCESS, RECURRING_PAYMENT_FAILURE
+07:26:18 [Warning] NativeCdpBridge.Application.Services.AgentMessageLogger: << Agent | to:telegram:7382041514 | MAYA API - Part 4/6: Webhooks, Void/Refund, Fees, Customization
+
+WEBHOOKS:
+Checkout: POST/GET/PUT/DELETE /checkouts/v1/webhooks (SECRET)
+Vault: POST/GET/PUT/DELETE /payments/v1/webhooks (SECRET)
+Body: {name:eventName,callbackUrl}
+All event names: CHECKOUT_SUCCESS, CHECKOUT_FAILURE, CHECKOUT_DROPOUT, 3DS_PAYMENT_SUCCESS, 3DS_PAYMENT_FAILURE, 3DS_PAYMENT_DROPOUT, RECURRING_PAYMENT_SUCCESS, RECURRING_PAYMENT_FAILURE, PAYMENT_SUCCESS(generic), PAYMENT_FAILED, PAYMENT_EXPIRED
+Requirement: HTTPS port 443 (port 80 ok for sandbox), respond 200 within 5s, idempotent

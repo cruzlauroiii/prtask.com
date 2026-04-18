@@ -1,0 +1,78 @@
+@page "/tasks"
+@using PrTask.Application.Services
+@using PrTask.Domain.Models
+@inject ITaskService TaskService
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> Localizer
+<h1>@Localizer["TaskListPageHeading"]</h1>
+<p>@Localizer["TaskListPageDescription"]</p>
+<div class="task-filters">
+    <div class="filter-group">
+        <label for="task-complexity-filter">@Localizer["TaskListComplexityLabel"]</label>
+        <select id="task-complexity-filter" @bind="SelectedComplexityFilter">
+            <option value="">@Localizer["TaskListAllComplexities"]</option>
+            <option value="Trivial">@Localizer["TaskListComplexityTrivialOption"]</option>
+            <option value="Simple">@Localizer["TaskListComplexitySimpleOption"]</option>
+            <option value="Medium">@Localizer["TaskListComplexityMediumOption"]</option>
+            <option value="Complex">@Localizer["TaskListComplexityComplexOption"]</option>
+            <option value="Expert">@Localizer["TaskListComplexityExpertOption"]</option>
+        </select>
+    </div>
+    <div class="filter-group">
+        <label for="task-sort-filter">@Localizer["TaskListSortLabel"]</label>
+        <select id="task-sort-filter" @bind="SelectedSort">
+            <option value="newest">@Localizer["TaskListNewestFirst"]</option>
+            <option value="bounty">@Localizer["TaskListHighestBounty"]</option>
+            <option value="complexity">@Localizer["TaskListComplexityLabel"]</option>
+        </select>
+    </div>
+</div>
+@if (OpenTasks is null)
+{
+    <p>@Localizer["TaskListLoadingText"]</p>
+}
+else if (OpenTasks.Count == 0)
+{
+    <div class="empty-state">
+        <p>@Localizer["TaskListEmptyStateText"]</p>
+    </div>
+}
+else
+{
+    <div class="task-grid">
+        @foreach (var CurrentTask in OpenTasks)
+        {
+            <div class="task-card">
+                <div class="task-header">
+                    <span class="task-complexity complexity-@CurrentTask.Complexity.ToString().ToLowerInvariant()">@Localizer[$"TaskComplexity{CurrentTask.Complexity}"]</span>
+                    <span class="task-bounty">@FormatBountyAmount(CurrentTask.BountyAmountCents)</span>
+                </div>
+                <h3>@CurrentTask.Title</h3>
+                <p>@TruncateDescription(CurrentTask.Description)</p>
+                @if (CurrentTask.Tags is not null)
+                {
+                    <div class="task-tags">
+                        @foreach (var CurrentTag in CurrentTask.Tags)
+                        {
+                            <span class="tag">@CurrentTag</span>
+                        }
+                    </div>
+                }
+                <a href="@string.Format(System.Globalization.CultureInfo.InvariantCulture, "/tasks/{0}", CurrentTask.Id)" class="btn btn-primary">@Localizer["TaskListViewTaskButton"]</a>
+            </div>
+        }
+    </div>
+}
+<section class="page-description">
+    <h2>@Localizer["TaskListDescriptionHeading"]</h2>
+    <p>@Localizer["TaskListDescriptionParagraph1"]</p>
+    <p>@Localizer["TaskListDescriptionParagraph2"]</p>
+    <p>@Localizer["TaskListDescriptionParagraph3"]</p>
+</section>
+@code {
+    private IReadOnlyList<TaskEntity>? OpenTasks { get; set; }
+    private string SelectedComplexityFilter { get; set; } = string.Empty;
+    private string SelectedSort { get; set; } = "newest";
+    protected override async Task OnInitializedAsync() => OpenTasks = await TaskService.ListOpenAsync();
+    private static string FormatBountyAmount(long AmountCents) => $"${AmountCents / 100m:N0}";
+    private static string TruncateDescription(string Description) => Description.Length <= 120 ? Description : $"{Description[..120]}...";
+}

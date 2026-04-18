@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>WillowMaze</title>
+    <base href="/" />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="WillowMaze.Wasm.styles.css" />
+</head>
+<body>
+    <div id="app">Loading WillowMaze...</div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+    </div>
+    <script src="_framework/blazor.webassembly.js" autostart="false"></script>
+    <script>
+        window.WillowWss = {
+            socket: null,
+            pendingCallbacks: {},
+            callId: 0,
+            dotNetRef: null,
+            connect: function(url, dotNetRef) {
+                this.dotNetRef = dotNetRef;
+                try {
+                    this.socket = new WebSocket(url);
+                    this.socket.onopen = () => dotNetRef.invokeMethodAsync('OnWssOpen');
+                    this.socket.onclose = (e) => dotNetRef.invokeMethodAsync('OnWssClose', e.code, e.reason || '');
+                    this.socket.onerror = () => dotNetRef.invokeMethodAsync('OnWssError', 'WebSocket error');
+                    this.socket.onmessage = (e) => dotNetRef.invokeMethodAsync('OnWssMessage', e.data);
+                    return true;
+                } catch (err) {
+                    return false;
+                }
+            },
+            send: function(json) {
+                if (this.socket && this.socket.readyState === 1) {
+                    this.socket.send(json);
+                    return true;
+                }
+                return false;
+            },
+            disconnect: function() {
+                if (this.socket) { this.socket.close(); this.socket = null; }
+            },
+            isConnected: function() {
+                return this.socket !== null && this.socket.readyState === 1;
+            },
+            hasWebNfc: function() {
+                return 'NDEFReader' in window;
+            },
+            startWebNfcScan: async function(dotNetRef) {
+                if (!('NDEFReader' in window)) return false;
+                try {
+                    const reader = new NDEFReader();
+                    await reader.scan();
+                    reader.onreading = (event) => {
+                        const records = [];
+                        for (const r of event.message.records) {
+                            const decoder = new TextDecoder();
+                            records.push({
+                                recordType: r.recordType,
+                                mediaType: r.mediaType || '',
+                                data: r.data ? btoa(String.fromCharCode(...new Uint8Array(r.data.buffer))) : ''
+                            });
+                        }
+                        dotNetRef.invokeMethodAsync('OnWebNfcTag', event.serialNumber || '', JSON.stringify(records));
+                    };
+                    reader.onreadingerror = () => dotNetRef.invokeMethodAsync('OnWebNfcError', 'Read error');
+                    return true;
+                } catch(e) { return false; }
+            },
+            writeWebNfc: async function(text, isUri) {
+                if (!('NDEFReader' in window)) return 'Web NFC not available';
+                try {
+                    const writer = new NDEFReader();
+                    const records = isUri
+                        ? [{ recordType: 'url', data: text }]
+                        : [{ recordType: 'text', data: text }];
+                    await writer.write({ records });
+                    return '';
+                } catch(e) { return e.message || 'Write failed'; }
+            },
+            generateRandomPort: function() {
+                return 49152 + Math.floor(Math.random() * 16383);
+            }
+        };
+        Blazor.start();
+    </script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+@page "/"
+@page "/payment"
+@implements IDisposable
+@inject INfcWorkbenchService Pulse
+
+<PageTitle>NFC Payment</PageTitle>
+
+<div class="scan-shell">
+    <section class="hero-card">
+        <p class="eyebrow">Willow Maze</p>
+        <h1>Tap to Pay</h1>
+
+        <div class="badge-row">
+            <span class="@(TapRelayClient.IsConnected ? "badge good" : "badge bad")">
+                @(TapRelayClient.IsConnected ? "Server connected" : "Scanning network...")
+            </span>
+            @if (TapRelayClient.IsConnected)
+            {
+                <span class="badge neutral">@TapRelayClient.ServerUrl</span>
+            }
+        </div>
+        <div class="hero-actions compact">
+            <a class="action" href="workbench" style="text-decoration:none">Workbench</a>
+        </div>
+
+        @if (!_ready)
+        {
+            <p class="status-text">@_setupStatus</p>
+        }
+        else if (!string.IsNullOrEmpty(_txnStatus))
+        {
+            <div class="tap-zone @GetTxnZoneClass()">
+                <span class="tap-label @GetTxnLabelClass()">@_txnStatus</span>
+                <p class="status-text">Transaction @_txnId</p>
+            </div>
+            <div class="hero-actions compact">
+                <button class="action primary" @onclick="ResetAsync">New transaction</button>
+            </div>
+        }
+        else if (_transactionCount > 0)
+        {
+            <div class="tap-zone pending-zone">
+                <div class="tap-pulse pending-pulse"></div>
+                <span class="tap-label pending-label">PENDING</span>
+                <p class="status-text">Card read — waiting for backoffice</p>
+            </div>
+            @if (Pulse.LatestTag is { } tag)
+            {
+                <div class="badge-row" style="margin-top:0.8rem">
+                    <span class="badge neutral">@tag.Summary</span>
+                    <span class="badge neutral">@tag.IdentifierHex</span>
+                    <span class="badge neutral">@tag.CardType</span>
+                    <span class="badge neutral">@tag.Manufacturer</span>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="tap-zone">
+                <div class="tap-pulse"></div>
+                <span class="tap-label">TAP YOUR CARD</span>
+                <p class="status-text">Hold your phone near the POS terminal</p>
+            </div>
+            <p class="status-text">@Pulse.HceStatusText</p>
+        }
+    </section>
+</div>
+
+@code {
+    private bool _ready;
+    private string _setupStatus = "Setting up...";
+    private int _transactionCount;
+    private string? _txnId;
+    private string? _txnStatus;
+    private string? _lastTagId;
+
+    protected override async Task OnInitializedAsync()
+    {
+        StatusReporter.SetService(Pulse);
+        StatusReporter.StartTimer(Microsoft.Maui.Controls.Application.Current!.Dispatcher);
+        Pulse.Changed += HandleChanged;
+        ServerDiscovery.Found += HandleChanged;
+        TapRelayClient.StateChanged += HandleChanged;
+        TapRelayClient.TransactionResultReceived += HandleTransactionResult;
+        await SetupAsync();
+    }
+
+    private async Task SetupAsync()
+    {
+        _setupStatus = "Checking NFC adapter...";
+        StateHasChanged();
+        await Pulse.RefreshAsync();
+
+        if (!Pulse.IsSupported || !Pulse.IsEnabled)
+        {
+            _setupStatus = "NFC is not available or disabled.";
+            StateHasChanged();
+            await Pulse.OpenNfcSettingsAsync();
+            return;
+        }
+
+        _setupStatus = "Starting reader...";
+        StateHasChanged();
+
+        // Reader started via backoffice NFC Control page
+        // Starting reader here caused WebSocket disconnect
+
+        _ready = true;
+        _transactionCount = 0;
+        _txnId = null;
+        _txnStatus = null;
+        _lastTagId = Pulse.LatestTag?.IdentifierHex;
+        StateHasChanged();
+    }
+
+    private async Task ResetAsync()
+    {
+        _transactionCount = 0;
+        _txnId = null;
+        _txnStatus = null;
+        _ready = false;
+        await SetupAsync();
+    }
+
+    private void HandleChanged(object? sender, EventArgs e)
+    {
+        var tag = Pulse.LatestTag;
+        var tagKey = tag?.CapturedAtUtc.ToString("O");
+        if (tag is not null && tagKey != _lastTagId && string.IsNullOrEmpty(_txnStatus))
+        {
+            _lastTagId = tagKey;
+            _transactionCount++;
+
+            EmvCardData? emv = null;
+            try
+            {
+                var nfcTag = Pulse.LatestNfcTag;
+                if (nfcTag is not null)
+                {
+                    emv = EmvCardReader.ReadCard(nfcTag);
+                }
+            }
+            catch { }
+
+            var aidHex = emv?.AidHex;
+            var brand = emv?.CardBrand ?? tag.CardType;
+            var preview = emv?.Success == true
+                ? $"{brand} {emv.MaskedPan} exp:{emv.Expiry} {emv.CardholderName}"
+                : $"{tag.Summary} | {tag.IdentifierHex} | {tag.CardType}";
+
+            TapRelayClient.SendTap("Tap", aidHex, preview, new
+            {
+                tag.IdentifierHex,
+                tag.CardType,
+                tag.Manufacturer,
+                tag.Technologies,
+                EmvSuccess = emv?.Success ?? false,
+                EmvPan = emv?.MaskedPan,
+                EmvLast4 = emv?.Last4,
+                EmvExpiry = emv?.Expiry,
+                EmvCardholderName = emv?.CardholderName,
+                EmvCardBrand = emv?.CardBrand,
+                EmvAidHex = emv?.AidHex,
+                EmvAidLabel = emv?.AidLabel,
+                EmvLog = emv?.Log?.ToArray(),
+                EmvError = emv?.Error
+            });
+        }
+
+        _ = InvokeAsync(StateHasChanged);
+    }
+
+    private void HandleTransactionResult(object? sender, TransactionResultEventArgs e)
+    {
+        _txnId = e.TransactionId;
+        _txnStatus = e.Status;
+        _ = InvokeAsync(StateHasChanged);
+    }
+
+    private string GetTxnZoneClass() => _txnStatus switch
+    {
+        "Authorized" => "authorized-zone",
+        "Captured" => "done-zone",
+        "Declined" => "declined-zone",
+        "Voided" => "declined-zone",
+        _ => "done-zone"
+    };
+
+    private string GetTxnLabelClass() => _txnStatus switch
+    {
+        "Authorized" => "authorized-label",
+        "Captured" => "done-label",
+        "Declined" => "declined-label",
+        "Voided" => "declined-label",
+        _ => "done-label"
+    };
+
+    public void Dispose()
+    {
+        Pulse.Changed -= HandleChanged;
+        ServerDiscovery.Found -= HandleChanged;
+        TapRelayClient.StateChanged -= HandleChanged;
+        TapRelayClient.TransactionResultReceived -= HandleTransactionResult;
+    }
+}

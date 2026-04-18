@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <NoWarn>$(NoWarn);IDE0011;IDE0350;SA1503;S4830;CA5359</NoWarn>
+  </PropertyGroup>
+</Project>

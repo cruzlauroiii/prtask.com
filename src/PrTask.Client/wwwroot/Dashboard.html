@@ -1,0 +1,54 @@
+→<!DOCTYPE html>
+→<html lang="en">
+→<head>
+→    <meta charset="utf-8" />
+→    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+→    <meta name="theme-color" content="#1a1a2e" />
+→    <title>PrTask - Earn Money with Pull Requests</title>
+→    <meta name="description" content="Earn money by submitting pull requests. Browse tasks, submit PRs, and get paid based on complexity." />
+→    <meta property="og:title" content="PrTask — Earn Money with Pull Requests" />
+    10→    <meta property="og:description" content="Earn money by submitting pull requests. Browse tasks, submit PRs, and get paid based on complexity." />
+    11→    <meta property="og:type" content="website" />
+    12→    <meta property="og:url" content="https://prtask.com/Dashboard" />
+    13→    <meta property="og:site_name" content="PrTask" />
+    14→    <meta name="twitter:card" content="summary" />
+    15→    <meta name="twitter:title" content="PrTask — Earn Money with Pull Requests" />
+    16→    <meta name="twitter:description" content="Earn money by submitting pull requests. Browse tasks, submit PRs, and get paid based on complexity." />
+    17→    <link rel="canonical" href="https://prtask.com/Dashboard" />
+    18→    <link rel="apple-touch-icon" href="icon-192.png" />
+    19→    <base href="/" />
+    20→    <link rel="preload" href="_content/PrTask.SharedUI/css/app.css" as="style" />
+    21→    <link rel="preload" href="Js/prtask-core.js" as="script" />
+    22→    <link rel="preload" href="_framework/blazor.webassembly.js" as="script" />
+    23→    <link rel="stylesheet" href="_content/PrTask.SharedUI/css/app.css" />
+    24→    <script src="Js/prtask-core.js"></script>
+    25→</head>
+    26→<body>
+    27→    <div id="app">
+    28→<nav class="nav-menu nav-collapsed"><button class="nav-toggle" onclick="prtaskToggleMenu()" aria-label="Menu">&#9776;</button><a href="/" class="nav-brand">PrTask</a><div class="nav-actions"><a href="/Login" class="nav-action nav-signin">Sign In</a></div><div class="nav-links"><a href="/Tasks">Tasks</a><a href="/Leaderboard">Leaderboard</a><a href="/HowItWorks">How It Works</a><a href="/Pricing">Pricing</a><a href="/About">About</a><a href="/Dashboard">Dashboard</a><a href="/Sprints">Sprints</a><a href="/Boards">Boards</a><a href="/Download">Download</a><a href="/Settings">Settings</a></div></nav>
+    29→
+    30→
+    31→
+    32→<h1>Dashboard</h1>
+    33→<section class="dashboard-stats"><div class="stat-card"><span class="stat-value">0</span>
+    34→        <span class="stat-label">Active Tasks</span></div>
+    35→    <div class="stat-card"><span class="stat-value">0</span>
+    36→        <span class="stat-label">Users</span></div>
+    37→    <div class="stat-card"><span class="stat-value">$0</span>
+    38→        <span class="stat-label">Total Bounties</span></div>
+    39→    <div class="stat-card"><span class="stat-value">0</span>
+    40→        <span class="stat-label">Pull Requests</span></div></section>
+    41→<section class="dashboard-section"><h2>Open Tasks</h2><div class="empty-state"><p>No open tasks yet. <a href="/Client/CreateTask">Create one</a> to get started.</p></div></section>
+    42→<section class="dashboard-section"><h2>Recent Pull Requests</h2><div class="empty-state"><p>No pull requests submitted yet.</p></div></section><footer class="site-footer"><div class="footer-content"><div class="footer-brand"><span class="footer-logo">PrTask</span><p>Earn money with pull requests.</p></div><div class="footer-links"><div class="footer-column"><h4>Platform</h4><a href="/Tasks">Browse Tasks</a><a href="/Sprints">Sprints</a><a href="/Boards">Boards</a><a href="/Leaderboard">Leaderboard</a><a href="/HowItWorks">How It Works</a><a href="/Pricing">Pricing</a></div><div class="footer-column"><h4>Legal</h4><a href="/About">About</a><a href="/Legal/Terms">Terms</a><a href="/Legal/Privacy">Privacy</a><a href="/Legal/Refund">Refund Policy</a><a href="/Legal/Licenses">Licenses</a></div></div></div><div class="footer-bottom"><p>&copy; 2026 PrTask. All rights reserved.</p></div></footer>
+    43→    </div>
+    44→    <script src="_content/PrTask.SharedUI/js/circuit-manager.js"></script>
+    45→    <script src="Js/sw-update.js"></script>
+    46→    <script>
+    47→        navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' }).then(function (registration) {
+    48→            if (window.prtaskSwUpdate) { window.prtaskSwUpdate.register(); }
+    49→        });
+    50→    </script>
+    51→    <script src="_framework/blazor.webassembly.js"></script>
+    52→
+    53→</body>
+    54→</html>

@@ -1,0 +1,49 @@
+@page "/qr-pay-sell"
+@inject NavigationManager Nav
+
+<div style="width:100%">
+    <header class="toolbar" style="width:100%"></header>
+    <div style="width:100%">
+        <div class="qrPayGroup">
+            <img class="qrPaySellReceiptImage" style="width:100%" />
+            <img src="img/ic_qr_gcash_icon.png" alt="ic_qr_gcash_icon" />
+        </div>
+        <div class="progressQrLayout" style="display:flex;flex-direction:column">
+            <progress></progress>
+            <span class="tvQrCodeGeneration"></span>
+        </div>
+        <div class="errorQrGenerationLayout" style="display:flex;flex-direction:column">
+            <img src="img/ic_warning_outlined.png" alt="ic_warning_outlined" />
+            <span class="tvQrCodeGenerationError"></span>
+            <button class="btnTryAgainQrGeneration"></button>
+        </div>
+        <div class="errorAfterQrGenerationLayout" style="display:flex;flex-direction:column">
+            <img src="img/ic_error_big.png" alt="ic_error_big" />
+            <span class="tvQrPaymentError"></span>
+            <button class="btnTryAgainAfterQrGeneration"></button>
+        </div>
+        <div class="successfulLayout" style="display:flex;flex-direction:column">
+            <img src="img/ic_ok_big.png" alt="ic_ok_big" />
+            <span class="tvQrPaymentSuccessful"></span>
+        </div>
+        <span class="totalSumTv"></span>
+        <span class="tvScanQr"></span>
+    </div>
+    <div class="progressBarContactless"></div>
+    <button class="btnFinish" style="width:100%"></button>
+</div>
+
+@code {
+
+    private void OnField2131361994Click()
+    {
+    }
+
+    private void OnField2131361993Click()
+    {
+    }
+
+    private void OnField2131361984Click()
+    {
+    }
+}

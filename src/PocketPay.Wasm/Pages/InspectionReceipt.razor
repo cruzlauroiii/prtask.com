@@ -1,0 +1,25 @@
+@page "/inspection-receipt"
+@inject NavigationManager Nav
+
+<div style="width:100%">
+    <header class="toolbar" style="width:100%"></header>
+    <span class="date_of_creation_title"></span>
+    <span class="date_of_creation_text"></span>
+    <span class="total_position_title"></span>
+    <span class="total_position_text"></span>
+    <span class="total_title"></span>
+    <span class="total_text"></span>
+    <input class="switchRevaluationState" type="checkbox" />
+    <label class="inspection_description" style="width:100%">
+        <input class="default_receipt_credentials_edit_text" style="width:100%" type="text" />
+    </label>
+    <button class="complete_acceptance_button"></button>
+</div>
+
+@code {
+    private string Field2131362203 { get; set; } = string.Empty;
+
+    private void OnField2131362144Click()
+    {
+    }
+}

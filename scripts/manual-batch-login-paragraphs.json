@@ -1,0 +1,38 @@
+{
+  "es": {
+    "LoginDescriptionParagraph2": "La autenticacion es necesaria para acceder a la mayoria de las funciones de PrTask porque las transacciones financieras, la verificacion de identidad y la seguridad del repositorio requieren cuentas de usuario verificadas.",
+    "LoginDescriptionParagraph3": "Para los desarrolladores, iniciar sesion desbloquea la capacidad de explorar tareas, enviar pull requests, ganar recompensas y crear un historial publico verificable de contribuciones."
+  },
+  "fil": {
+    "LoginDescriptionParagraph2": "Kailangan ang pagpapatotoo upang ma-access ang karamihan sa mga tampok sa PrTask dahil ang mga transaksyong pinansyal, beripikasyon ng pagkakakilanlan, at seguridad ng repository ay nangangailangan ng napatunayang mga user account.",
+    "LoginDescriptionParagraph3": "Para sa mga developer, ang pag-sign in ay nagbubukas ng kakayahang mag-browse ng mga gawain, magsumite ng mga pull request, kumita ng bounty, at bumuo ng nabeberipikang pampublikong tala ng mga ambag."
+  },
+  "fr": {
+    "LoginDescriptionParagraph2": "L'authentification est necessaire pour acceder a la plupart des fonctionnalites de PrTask, car les transactions financieres, la verification d'identite et la securite des depots exigent des comptes utilisateur verifies.",
+    "LoginDescriptionParagraph3": "Pour les developpeurs, la connexion permet de parcourir les taches, de soumettre des pull requests, de gagner des primes et de constituer un historique public verifiable de leurs contributions."
+  },
+  "id": {
+    "LoginDescriptionParagraph2": "Autentikasi diperlukan untuk mengakses sebagian besar fitur di PrTask karena transaksi keuangan, verifikasi identitas, dan keamanan repositori memerlukan akun pengguna yang telah diverifikasi.",
+    "LoginDescriptionParagraph3": "Bagi developer, masuk membuka kemampuan untuk menjelajahi tugas, mengirim pull request, memperoleh bounty, dan membangun riwayat kontribusi publik yang dapat diverifikasi."
+  },
+  "it": {
+    "LoginDescriptionParagraph2": "L'autenticazione e necessaria per accedere alla maggior parte delle funzionalita di PrTask, poiche le transazioni finanziarie, la verifica dell'identita e la sicurezza del repository richiedono account utente verificati.",
+    "LoginDescriptionParagraph3": "Per gli sviluppatori, l'accesso consente di esplorare le attivita, inviare pull request, guadagnare bounty e creare una cronologia pubblica verificabile dei propri contributi."
+  },
+  "ja": {
+    "LoginDescriptionParagraph2": "PrTaskのほとんどの機能にアクセスするには認証が必要です。金融取引、本人確認、リポジトリの安全性には、確認済みのユーザーアカウントが必要だからです。",
+    "LoginDescriptionParagraph3": "開発者がサインインすると、タスクの閲覧、プルリクエストの送信、報酬の獲得、そして検証可能な公開実績の構築が可能になります。"
+  },
+  "ko": {
+    "LoginDescriptionParagraph2": "금융 거래, 신원 확인, 저장소 보안을 위해 검증된 사용자 계정이 필요하므로 PrTask의 대부분 기능에 접근하려면 인증이 필요합니다.",
+    "LoginDescriptionParagraph3": "개발자가 로그인하면 작업 탐색, pull request 제출, bounty 획득, 그리고 검증 가능한 공개 기여 이력 구축이 가능해집니다."
+  },
+  "nl": {
+    "LoginDescriptionParagraph2": "Authenticatie is vereist om de meeste functies van PrTask te gebruiken, omdat financiele transacties, identiteitsverificatie en repositorybeveiliging geverifieerde gebruikersaccounts vereisen.",
+    "LoginDescriptionParagraph3": "Voor ontwikkelaars ontgrendelt inloggen de mogelijkheid om taken te bekijken, pull requests in te dienen, beloningen te verdienen en een verifieerbare openbare bijdragegeschiedenis op te bouwen."
+  },
+  "tr": {
+    "LoginDescriptionParagraph2": "Finansal islemler, kimlik dogrulamasi ve depo guvenligi dogrulanmis kullanici hesaplari gerektirdigi icin PrTask'in cogu ozelligine erismek icin kimlik dogrulamasi gereklidir.",
+    "LoginDescriptionParagraph3": "Gelistiriciler icin oturum acmak; gorevlere goz atma, pull request gonderme, odul kazanma ve dogrulanabilir herkese acik bir katki gecmisi olusturma imkanini acar."
+  }
+}

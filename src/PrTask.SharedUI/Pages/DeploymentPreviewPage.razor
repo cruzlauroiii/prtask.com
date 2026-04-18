@@ -1,0 +1,24 @@
+@page "/deployments/{DeploymentId}"
+<h1>Deployment Preview</h1>
+<p>View the live deployed changes from this pull request.</p>
+<section class="about-section">
+    <h2>Build Status</h2>
+    <div class="deployment-status">
+        <span class="badge">Building...</span>
+    </div>
+</section>
+<section class="about-section">
+    <h2>Preview URL</h2>
+    <p>Once the build completes, a preview link will be available below.</p>
+    <a href="#" class="btn btn-primary">Open Live Preview</a>
+</section>
+<section class="about-section">
+    <h2>Deploy Log</h2>
+    <div class="empty-state">
+        <p>Deployment log will appear here once the build starts.</p>
+    </div>
+</section>
+@code {
+    [Parameter]
+    public string DeploymentId { get; set; } = string.Empty;
+}

@@ -1,0 +1,55 @@
+@page "/toph-nfc-calibration-help"
+@inject NavigationManager Nav
+
+<div style="width:100%">
+    <header class="toolbar" style="width:100%"></header>
+    <div class="content" style="width:100%">
+        <div class="scrollView" style="width:100%">
+            <div style="width:100%">
+                <span class="stepCounter1Tv"></span>
+                <span class="step1Tv"></span>
+                <img class="step1Iv" src="img/ic_card_contactless.png" alt="ic_card_contactless" />
+                <span class="stepCounter2Tv"></span>
+                <span class="step2Tv"></span>
+                <div class="step2ActionLayout" style="width:100%">
+                    <div class="step2ShowNfcSpotCv" style="width:100%">
+                        <div style="width:100%">
+                            <img class="step2ShowNfcSpotIv" src="img/ic_nfc.png" alt="ic_nfc" />
+                            <span class="step2ShowNfcSpotTv"></span>
+                            <input class="step2ShowNfcSwitch" type="checkbox" />
+                        </div>
+                    </div>
+                    <button class="step2IdentifyNfcLocationBtn" style="width:100%"></button>
+                </div>
+                <img class="step2Iv" src="img/ic_top_back.png" alt="ic_top_back" />
+                <div class="step2DescriptionCv" style="width:100%">
+                    <div style="width:100%">
+                        <img class="step2DescriptionIv" src="img/ic_info.png" alt="ic_info" />
+                        <span class="step2DescriptionTv"></span>
+                    </div>
+                </div>
+                <span class="stepCounter3Tv"></span>
+                <span class="step3Tv"></span>
+                <img class="step3Iv" src="img/toph_card_tapped.png" alt="toph_card_tapped" />
+                <span class="stepCounter4Tv"></span>
+                <span class="step4Tv"></span>
+                <img class="step4Iv" src="img/toph_card_has_been_read.png" alt="toph_card_has_been_read" />
+                <span class="stepCounter5Tv"></span>
+                <span class="step5Tv"></span>
+            </div>
+        </div>
+        <button class="returnBtn" style="width:100%"></button>
+    </div>
+    <div class="loaderLayout"></div>
+</div>
+
+@code {
+
+    private void OnField2131363089Click()
+    {
+    }
+
+    private void OnField2131362930Click()
+    {
+    }
+}

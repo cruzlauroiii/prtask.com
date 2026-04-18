@@ -1,0 +1,6 @@
+@page "/deployments/{DeploymentId}"
+<PrTask.SharedUI.Pages.DeploymentPreviewPage DeploymentId="@DeploymentId" />
+@code {
+    [Parameter]
+    public string DeploymentId { get; set; } = string.Empty;
+}

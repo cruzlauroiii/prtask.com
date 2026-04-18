@@ -1,0 +1,43 @@
+namespace PrTask.Domain.Constants;
+public static class BunConstants
+{
+    public const string TrailerString = "\n---- Bun! ----\n";
+    public const int TrailerLength = 16;
+    public const int PayloadLengthSize = 8;
+    public const int OffsetsStructSize = 32;
+    public const int StringPointerSize = 8;
+    public const int CompiledModuleGraphFileSize = 52;
+    public const string WindowsBasePath = "B:\\~BUN\\";
+    public const string WindowsBasePublicPath = "B:/~BUN/";
+    public const string UnixBasePath = "/$bunfs/";
+    public const byte EncodingBinary = 0;
+    public const byte EncodingLatin1 = 1;
+    public const byte EncodingUtf8 = 2;
+    public const byte ModuleFormatNone = 0;
+    public const byte ModuleFormatEsm = 1;
+    public const byte ModuleFormatCjs = 2;
+    public const byte SideServer = 0;
+    public const byte SideClient = 1;
+    public const string BunSectionName = ".bun";
+    public const string ExtractedEntryPointFileName = "cli.js";
+    public const string ExtractCommandName = "extract";
+    public const string ExtractingFormat = "Extracting Bun bundle from: {0}";
+    public const string ModuleCountFormat = "Found {0} modules in bundle";
+    public const string EntryPointFormat = "Entry point: {0} (index {1})";
+    public const string ModuleNameFormat = "  [{0}] {1} ({2} bytes)";
+    public const string ExtractedToFormat = "Extracted JS bundle to: {0}";
+    public const string TotalBundleSizeFormat = "Total bundle size: {0} bytes";
+    public const string ComparisonHeaderFormat = "Comparing against reference: {0}";
+    public const string ComparisonMatchMessage = "MATCH: Extracted bundle matches reference file exactly";
+    public const string ComparisonSizeMismatchFormat = "SIZE MISMATCH: Extracted={0} bytes, Reference={1} bytes";
+    public const string ComparisonContentMismatchFormat = "CONTENT MISMATCH: First difference at byte {0}";
+    public const string ComparisonContextFormat = "  Extracted: ...{0}...";
+    public const string ComparisonReferenceContextFormat = "  Reference: ...{0}...";
+    public const string TrailerNotFoundMessage = "Bun trailer not found in payload";
+    public const string BunSectionNotFoundMessage = "PE section .bun not found";
+    public const string PayloadLengthFormat = "Payload length: {0} bytes";
+    public const string SectionRawSizeFormat = "Section raw size: {0} bytes";
+    public const int ComparisonContextRadius = 40;
+    public const string DefaultReferenceSourcePath = @"C:\work\claudecode\cli.js";
+    public const string ExePathRequiredMessage = "Usage: extract <path-to-exe>";
+}

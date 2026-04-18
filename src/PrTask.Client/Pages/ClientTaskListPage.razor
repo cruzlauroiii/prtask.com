@@ -1,0 +1,48 @@
+@page "/tasks"
+@using System.Net.Http.Json
+@using PrTask.Domain.Models
+@inject HttpClient HttpClient
+<h1>Open Tasks</h1>
+<p>Browse available tasks and claim one to start earning.</p>
+@if (OpenTasks is null)
+{
+    <p>Loading tasks...</p>
+}
+else if (OpenTasks.Length == 0)
+{
+    <div class="empty-state">
+        <p>No open tasks right now. Check back soon.</p>
+    </div>
+}
+else
+{
+    <div class="task-grid">
+        @foreach (var CurrentTask in OpenTasks)
+        {
+            <div class="task-card">
+                <div class="task-header">
+                    <span class="task-complexity">@CurrentTask.Complexity</span>
+                    <span class="task-bounty">@FormatBountyAmount(CurrentTask.BountyAmountCents)</span>
+                </div>
+                <h3>@CurrentTask.Title</h3>
+                <p>@TruncateDescription(CurrentTask.Description)</p>
+            </div>
+        }
+    </div>
+}
+@code {
+    private TaskEntity[]? OpenTasks { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            OpenTasks = await HttpClient.GetFromJsonAsync<TaskEntity[]>(RouteConstants.ApiTasks) ?? [];
+        }
+        catch (HttpRequestException)
+        {
+            OpenTasks = [];
+        }
+    }
+    private static string FormatBountyAmount(long AmountCents) => $"${AmountCents / 100m:N0}";
+    private static string TruncateDescription(string Description) => Description.Length <= 120 ? Description : $"{Description[..120]}...";
+}

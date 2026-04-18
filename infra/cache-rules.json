@@ -1,0 +1,27 @@
+{
+  "name": "Cache Everything",
+  "kind": "zone",
+  "phase": "http_request_cache_settings",
+  "rules": [
+    {
+      "expression": "not starts_with(http.request.uri.path, \"/Api/\") and http.request.uri.path.extension ne \"html\"",
+      "description": "All non-HTML assets - cache 1 year everywhere",
+      "action": "set_cache_settings",
+      "action_parameters": {
+        "cache": true,
+        "edge_ttl": { "mode": "override_origin", "default": 31536000 },
+        "browser_ttl": { "mode": "override_origin", "default": 31536000 }
+      }
+    },
+    {
+      "expression": "not starts_with(http.request.uri.path, \"/Api/\") and http.request.uri.path.extension eq \"html\"",
+      "description": "HTML files - edge 1 year, browser revalidate immediately",
+      "action": "set_cache_settings",
+      "action_parameters": {
+        "cache": true,
+        "edge_ttl": { "mode": "override_origin", "default": 31536000 },
+        "browser_ttl": { "mode": "override_origin", "default": 0 }
+      }
+    }
+  ]
+}

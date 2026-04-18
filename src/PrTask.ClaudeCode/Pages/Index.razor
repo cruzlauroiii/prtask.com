@@ -1,0 +1,348 @@
+@page "/"
+@inject HttpClient Http
+@using System.Text
+@using System.Text.Json
+
+<h1>Claude Code</h1>
+
+<div class="chat-container">
+    <div class="chat-messages">
+        @foreach (var Msg in DisplayMessages)
+        {
+            <div class="chat-message @Msg.CssClass">
+                <pre>@Msg.Text</pre>
+            </div>
+        }
+        @if (IsStreaming)
+        {
+            <div class="streaming-indicator">Thinking...</div>
+        }
+    </div>
+    <div class="chat-input">
+        <textarea rows="3" @bind="UserInput" @onkeydown="HandleKeyDown" disabled="@IsStreaming"></textarea>
+        <button class="btn" @onclick="SendMessage" disabled="@IsStreaming">Send</button>
+    </div>
+</div>
+
+@code {
+    private string UserInput = string.Empty;
+    private bool IsStreaming;
+    private readonly List<DisplayMessage> DisplayMessages = new();
+    private readonly List<Dictionary<string, object>> ConversationHistory = new();
+    private string CurrentModel = "claude-sonnet-4-6";
+    private string EffortLevel = "high";
+    private int TotalInputTokens;
+    private int TotalOutputTokens;
+
+    private static readonly Dictionary<string, string> ModelAliases = new(StringComparer.OrdinalIgnoreCase)
+    {
+        ["opus"] = "claude-opus-4-6",
+        ["sonnet"] = "claude-sonnet-4-6",
+        ["haiku"] = "claude-haiku-4-5-20251001",
+        ["claude-opus-4-6"] = "claude-opus-4-6",
+        ["claude-sonnet-4-6"] = "claude-sonnet-4-6",
+        ["claude-haiku-4-5-20251001"] = "claude-haiku-4-5-20251001",
+    };
+
+    private static readonly object[] ToolDefinitions = new object[]
+    {
+        new { name = "Bash", description = "Execute a shell command and return output.", input_schema = new { type = "object", properties = new { command = new { type = "string", description = "The command to execute" }, timeout = new { type = "integer", description = "Timeout in ms (default 120000)" } }, required = new[] { "command" } } },
+        new { name = "Read", description = "Read a file from the filesystem.", input_schema = new { type = "object", properties = new { file_path = new { type = "string", description = "Absolute path to the file" }, offset = new { type = "integer", description = "Line to start from (0-based)" }, limit = new { type = "integer", description = "Max lines to read" } }, required = new[] { "file_path" } } },
+        new { name = "Write", description = "Write content to a file.", input_schema = new { type = "object", properties = new { file_path = new { type = "string", description = "Absolute path" }, content = new { type = "string", description = "Content to write" } }, required = new[] { "file_path", "content" } } },
+        new { name = "Edit", description = "Replace old_string with new_string in a file.", input_schema = new { type = "object", properties = new { file_path = new { type = "string", description = "Absolute path" }, old_string = new { type = "string", description = "Text to find" }, new_string = new { type = "string", description = "Replacement text" } }, required = new[] { "file_path", "old_string", "new_string" } } },
+        new { name = "Glob", description = "Find files matching a pattern.", input_schema = new { type = "object", properties = new { pattern = new { type = "string", description = "Glob pattern" }, path = new { type = "string", description = "Directory to search" } }, required = new[] { "pattern" } } },
+        new { name = "Grep", description = "Search file contents with regex.", input_schema = new { type = "object", properties = new { pattern = new { type = "string", description = "Regex pattern" }, path = new { type = "string", description = "Directory to search" } }, required = new[] { "pattern" } } },
+    };
+
+    private sealed class DisplayMessage
+    {
+        internal required string Text { get; init; }
+        internal required string CssClass { get; init; }
+    }
+
+    private async Task HandleKeyDown(Microsoft.AspNetCore.Components.Web.KeyboardEventArgs E)
+    {
+        if (string.Equals(E.Key, "Enter", StringComparison.Ordinal) && !E.ShiftKey)
+            await SendMessage();
+    }
+
+    private bool HandleSlashCommand(string Input)
+    {
+        if (!Input.StartsWith('/'))
+            return false;
+
+        var Parts = Input.Split(' ', 2, StringSplitOptions.RemoveEmptyEntries);
+        var Cmd = Parts[0].ToLowerInvariant();
+        var Arg = Parts.Length > 1 ? Parts[1].Trim() : string.Empty;
+
+        switch (Cmd)
+        {
+            case "/help":
+                ShowInfo(string.Join("\n",
+                    "Slash Commands:",
+                    "  /model [name]    Show or set model (opus/sonnet/haiku)",
+                    "  /effort [level]  Show or set effort (low/medium/high/max)",
+                    "  /context         Show context/token usage",
+                    "  /status          Show session status",
+                    "  /clear           Clear conversation",
+                    "  /compact         Compact conversation history",
+                    "  /config          Show configuration",
+                    "",
+                    "Available models:",
+                    "  opus    -> claude-opus-4-6",
+                    "  sonnet  -> claude-sonnet-4-6",
+                    "  haiku   -> claude-haiku-4-5-20251001"));
+                return true;
+
+            case "/model":
+                if (Arg.Length > 0)
+                {
+                    if (ModelAliases.TryGetValue(Arg, out var Resolved))
+                    {
+                        CurrentModel = Resolved;
+                        ShowInfo(string.Concat("Model set to: ", CurrentModel));
+                    }
+                    else
+                    {
+                        ShowInfo(string.Concat("Unknown model: ", Arg, "\n\nAvailable: opus, sonnet, haiku"));
+                    }
+                }
+                else
+                {
+                    ShowInfo(string.Concat("Current model: ", CurrentModel, "\n\nAvailable: opus, sonnet, haiku"));
+                }
+                return true;
+
+            case "/effort":
+                if (Arg.Length > 0)
+                {
+                    EffortLevel = Arg.ToLowerInvariant();
+                    ShowInfo(string.Concat("Effort set to: ", EffortLevel));
+                }
+                else
+                {
+                    ShowInfo(string.Concat("Current effort: ", EffortLevel));
+                }
+                return true;
+
+            case "/context":
+                ShowInfo(string.Join("\n",
+                    "Context Usage",
+                    string.Concat("  Model: ", CurrentModel),
+                    string.Concat("  Messages: ", ConversationHistory.Count.ToString()),
+                    string.Concat("  Input tokens: ", TotalInputTokens.ToString("N0")),
+                    string.Concat("  Output tokens: ", TotalOutputTokens.ToString("N0")),
+                    string.Concat("  Effort: ", EffortLevel)));
+                return true;
+
+            case "/status":
+                ShowInfo(string.Join("\n",
+                    "Session Status",
+                    string.Concat("  Model: ", CurrentModel),
+                    string.Concat("  Effort: ", EffortLevel),
+                    string.Concat("  Messages: ", ConversationHistory.Count.ToString()),
+                    string.Concat("  Tokens: ", (TotalInputTokens + TotalOutputTokens).ToString("N0"))));
+                return true;
+
+            case "/clear":
+                ConversationHistory.Clear();
+                DisplayMessages.Clear();
+                TotalInputTokens = 0;
+                TotalOutputTokens = 0;
+                ShowInfo("Conversation cleared.");
+                return true;
+
+            case "/compact":
+                if (ConversationHistory.Count < 4)
+                {
+                    ShowInfo("Not enough messages to compact.");
+                    return true;
+                }
+                var Keep = Math.Min(4, ConversationHistory.Count);
+                ConversationHistory.RemoveRange(0, ConversationHistory.Count - Keep);
+                ShowInfo(string.Concat("Compacted to ", Keep.ToString(), " messages."));
+                return true;
+
+            case "/config":
+                ShowInfo(string.Join("\n",
+                    "Configuration",
+                    string.Concat("  Model: ", CurrentModel),
+                    string.Concat("  Effort: ", EffortLevel),
+                    "  Tools: Bash, Read, Write, Edit, Glob, Grep",
+                    "  API: /api/messages -> api.anthropic.com"));
+                return true;
+
+            default:
+                ShowInfo(string.Concat("Unknown command: ", Cmd, ". Type /help"));
+                return true;
+        }
+    }
+
+    private void ShowInfo(string Text)
+    {
+        DisplayMessages.Add(new DisplayMessage { Text = Text, CssClass = "tool" });
+        StateHasChanged();
+    }
+
+    private async Task<string> ExecuteToolAsync(string ToolName, JsonElement Input)
+    {
+        var Endpoint = ToolName switch
+        {
+            "Bash" => "/api/tool/bash",
+            "Read" => "/api/tool/read",
+            "Write" => "/api/tool/write",
+            "Edit" => "/api/tool/edit",
+            "Glob" => "/api/tool/glob",
+            "Grep" => "/api/tool/grep",
+            _ => string.Empty,
+        };
+
+        if (Endpoint.Length == 0)
+            return string.Concat("Unknown tool: ", ToolName);
+
+        var Resp = await Http.PostAsync(Endpoint, new StringContent(Input.GetRawText(), Encoding.UTF8, "application/json"));
+        return await Resp.Content.ReadAsStringAsync();
+    }
+
+    private async Task SendMessage()
+    {
+        if (UserInput.Length == 0)
+            return;
+
+        var MessageText = UserInput;
+        UserInput = string.Empty;
+        DisplayMessages.Add(new DisplayMessage { Text = MessageText, CssClass = "user" });
+        StateHasChanged();
+
+        if (HandleSlashCommand(MessageText))
+            return;
+
+        ConversationHistory.Add(new Dictionary<string, object>
+        {
+            ["role"] = "user",
+            ["content"] = new[] { new Dictionary<string, string> { ["type"] = "text", ["text"] = MessageText } },
+        });
+
+        await RunAgentLoop();
+    }
+
+    private async Task RunAgentLoop()
+    {
+        IsStreaming = true;
+        StateHasChanged();
+
+        try
+        {
+            for (var Turn = 0; Turn < 25; Turn++)
+            {
+                var RequestObj = new Dictionary<string, object>
+                {
+                    ["model"] = CurrentModel,
+                    ["max_tokens"] = 16384,
+                    ["stream"] = false,
+                    ["tools"] = ToolDefinitions,
+                    ["messages"] = ConversationHistory,
+                };
+
+                var RequestJson = JsonSerializer.Serialize(RequestObj);
+                var Resp = await Http.PostAsync("/api/messages", new StringContent(RequestJson, Encoding.UTF8, "application/json"));
+                var RespText = await Resp.Content.ReadAsStringAsync();
+
+                if (!Resp.IsSuccessStatusCode)
+                {
+                    DisplayMessages.Add(new DisplayMessage { Text = RespText, CssClass = "tool" });
+                    return;
+                }
+
+                var Doc = JsonDocument.Parse(RespText);
+                var ContentArr = Doc.RootElement.GetProperty("content");
+                var StopReason = Doc.RootElement.TryGetProperty("stop_reason", out var Sr) ? Sr.GetString() : "end_turn";
+
+                if (Doc.RootElement.TryGetProperty("usage", out var Usage))
+                {
+                    if (Usage.TryGetProperty("input_tokens", out var It))
+                        TotalInputTokens += It.GetInt32();
+                    if (Usage.TryGetProperty("output_tokens", out var Ot))
+                        TotalOutputTokens += Ot.GetInt32();
+                }
+
+                var AssistantContent = new List<object>();
+                var ToolUses = new List<(string Id, string Name, JsonElement Input)>();
+                var TextParts = new StringBuilder();
+
+                foreach (var Block in ContentArr.EnumerateArray())
+                {
+                    var BlockType = Block.GetProperty("type").GetString();
+                    if (string.Equals(BlockType, "text", StringComparison.Ordinal))
+                    {
+                        var Txt = Block.GetProperty("text").GetString() ?? string.Empty;
+                        if (Txt.Length > 0)
+                            TextParts.Append(Txt);
+                        AssistantContent.Add(new Dictionary<string, string> { ["type"] = "text", ["text"] = Txt });
+                    }
+                    else if (string.Equals(BlockType, "tool_use", StringComparison.Ordinal))
+                    {
+                        var ToolId = Block.GetProperty("id").GetString()!;
+                        var ToolName = Block.GetProperty("name").GetString()!;
+                        var ToolInput = Block.GetProperty("input");
+                        ToolUses.Add((ToolId, ToolName, ToolInput));
+                        AssistantContent.Add(JsonSerializer.Deserialize<Dictionary<string, object>>(Block.GetRawText())!);
+                    }
+                }
+
+                if (TextParts.Length > 0)
+                {
+                    DisplayMessages.Add(new DisplayMessage { Text = TextParts.ToString(), CssClass = "assistant" });
+                    StateHasChanged();
+                }
+
+                ConversationHistory.Add(new Dictionary<string, object>
+                {
+                    ["role"] = "assistant",
+                    ["content"] = AssistantContent,
+                });
+
+                if (ToolUses.Count == 0 || !string.Equals(StopReason, "tool_use", StringComparison.Ordinal))
+                    return;
+
+                var ToolResults = new List<object>();
+                foreach (var (Id, Name, Input) in ToolUses)
+                {
+                    DisplayMessages.Add(new DisplayMessage
+                    {
+                        Text = string.Concat(Name, "(", Input.GetRawText().Length > 200 ? Input.GetRawText().Substring(0, 200) : Input.GetRawText(), ")"),
+                        CssClass = "tool",
+                    });
+                    StateHasChanged();
+
+                    var Result = await ExecuteToolAsync(Name, Input);
+                    var Preview = Result.Length > 500 ? string.Concat(Result.Substring(0, 500), "...") : Result;
+                    DisplayMessages.Add(new DisplayMessage { Text = string.Concat("  -> ", Preview), CssClass = "tool" });
+                    StateHasChanged();
+
+                    ToolResults.Add(new Dictionary<string, object>
+                    {
+                        ["type"] = "tool_result",
+                        ["tool_use_id"] = Id,
+                        ["content"] = Result,
+                    });
+                }
+
+                ConversationHistory.Add(new Dictionary<string, object>
+                {
+                    ["role"] = "user",
+                    ["content"] = ToolResults,
+                });
+            }
+        }
+        catch (Exception Ex)
+        {
+            DisplayMessages.Add(new DisplayMessage { Text = Ex.Message, CssClass = "tool" });
+        }
+        finally
+        {
+            IsStreaming = false;
+            StateHasChanged();
+        }
+    }
+}

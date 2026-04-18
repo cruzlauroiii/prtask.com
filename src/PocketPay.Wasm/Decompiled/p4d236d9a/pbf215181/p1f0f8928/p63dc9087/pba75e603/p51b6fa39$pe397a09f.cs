@@ -1,0 +1,11 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+
+class p51b6fa39$pe397a09f : p4d236d9a.pbf215181.p1f0f8928.p63dc9087.pba75e603.p982109a7 {
+    public p51b6fa39$pe397a09f() {
+        super("ShutterSpeedValue", 37377, 1024);
+        if ((21 + 32) % 32 > 0) {
+        }
+    }
+}
+

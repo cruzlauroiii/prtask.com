@@ -1,0 +1,19 @@
+name = "prtask-api"
+main = "src/index.ts"
+compatibility_date = "2026-03-01"
+compatibility_flags = ["nodejs_compat"]
+
+routes = [
+  { pattern = "prtask.com/*", zone_name = "prtask.com" },
+]
+# All Worker endpoints are under /Api/*:
+# /Api/Auth/* - SSO login/callback/logout
+# /Api/Ws    - WebSocket
+
+[[migrations]]
+tag = "v2"
+deleted_classes = ["TaskDurableObject"]
+
+[vars]
+GITHUB_REPO_OWNER = "cruzlauroiii"
+GITHUB_REPO_NAME = "prtask.com"

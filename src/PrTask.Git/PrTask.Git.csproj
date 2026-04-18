@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>$(NoWarn);SA1402;SA1633;CS1591;CS0219;CS0652;CS0675;PT003;PT004;PT005;PT006;PT007;CA1002;CA1008;CA2227;CA5350;IDE0017;IDE0028;IDE0031;IDE0046;IDE0059;IDE0072;IDE0078;IDE0270;IDE0290;IDE0300;IDE0301;IDE0305;MA0016;MA0028;MA0132;MA0159;RCS1118;RCS1161;RCS1197;RCS1201;RCS1235;S3457</NoWarn>
+    <GitSourcePath>C:\work\git</GitSourcePath>
+    <TranspilerProject>$(MSBuildThisFileDirectory)..\PrTask.Transpiler\PrTask.Transpiler.csproj</TranspilerProject>
+  </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="PrTask.Unit" />
+    <InternalsVisibleTo Include="PrTask.E2E" />
+  </ItemGroup>
+  <ItemGroup>
+    <FrameworkReference Remove="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PrTask.Domain\PrTask.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PrTask.Domain\PrTask.Domain.csproj" />
+    <ProjectReference Include="..\PrTask.Application\PrTask.Application.csproj" />
+  </ItemGroup>
+  <Target Name="PullGitSource" BeforeTargets="TranspileGitSource" Condition="Exists('$(GitSourcePath)\.git')">
+    <Exec Command="git -C &quot;$(GitSourcePath)&quot; pull --quiet" IgnoreExitCode="true" />
+  </Target>
+  <Target Name="TranspileGitSource" BeforeTargets="BeforeBuild" Condition="Exists('$(GitSourcePath)')">
+    <Exec Command="dotnet run --project &quot;$(TranspilerProject)&quot; -- &quot;$(GitSourcePath)&quot; &quot;$(MSBuildThisFileDirectory)Generated&quot;" EnvironmentVariables="DOTNET_ROLL_FORWARD=LatestMajor" />
+  </Target>
+</Project>

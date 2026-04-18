@@ -1,0 +1,22 @@
+@using PrTask.Application.Services
+@using PrTask.Domain.Constants
+@inject ISyncService SyncService
+<div class="@SyncVerificationConstants.SyncIndicatorLabel" title="@SyncVerificationConstants.SyncIndicatorTitle">
+    <span class="@SyncVerificationConstants.SyncIndicatorDotClass @StatusClass"></span>
+    <span class="@SyncVerificationConstants.SyncIndicatorTextClass">@StatusText</span>
+</div>
+@code {
+    private string StatusText { get; set; } = AiConstants.SyncStatusDisconnected;
+    private string StatusClass { get; set; } = SyncVerificationConstants.SyncIndicatorDisconnectedClass;
+    protected override async Task OnInitializedAsync()
+    {
+        StatusText = await SyncService.GetSyncStatusAsync();
+        StatusClass = StatusText switch
+        {
+            AiConstants.SyncStatusConnected => SyncVerificationConstants.SyncIndicatorConnectedClass,
+            AiConstants.SyncStatusConnecting => SyncVerificationConstants.SyncIndicatorConnectingClass,
+            AiConstants.SyncStatusCatchingUp => SyncVerificationConstants.SyncIndicatorCatchingUpClass,
+            _ => SyncVerificationConstants.SyncIndicatorDisconnectedClass
+        };
+    }
+}

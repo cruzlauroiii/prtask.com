@@ -1,0 +1,51 @@
+@page "/pin-input"
+@inject NavigationManager Nav
+
+<div class="login-form">
+    <h2>Create PIN</h2>
+    <p>Set a 4-digit PIN for quick access</p>
+    <div class="pin-dots">
+        @for (var I = 0; I < 4; I++)
+        {
+            <div class="pin-dot @(I < Pin.Length ? "filled" : "")"></div>
+        }
+    </div>
+    <div class="numpad">
+        @for (var I = 1; I <= 9; I++)
+        {
+            var Digit = I;
+            <button @onclick="() => PressDigit(Digit)">@Digit</button>
+        }
+        <button disabled></button>
+        <button @onclick="() => PressDigit(0)">0</button>
+        <button @onclick="DeleteDigit">⌫</button>
+    </div>
+    @if (ErrorMessage.Length > 0)
+    {
+        <p class="error">@ErrorMessage</p>
+    }
+</div>
+
+@code {
+    private string Pin { get; set; } = string.Empty;
+    private string ErrorMessage { get; set; } = string.Empty;
+
+    private async Task PressDigit(int Digit)
+    {
+        if (Pin.Length >= 4) return;
+        Pin += Digit.ToString(System.Globalization.CultureInfo.InvariantCulture);
+        if (Pin.Length == 4)
+        {
+            await Task.Delay(300);
+            Nav.NavigateTo("/launcher");
+        }
+    }
+
+    private void DeleteDigit()
+    {
+        if (Pin.Length > 0)
+        {
+            Pin = Pin[..^1];
+        }
+    }
+}

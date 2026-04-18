@@ -1,0 +1,120 @@
+{
+  "es": {
+    "PrivacyGdprContactInfo": "Para ejercer cualquiera de estos derechos, contacte a nuestro Delegado de Proteccion de Datos en dpo@prtask.com. Responderemos en un plazo de 30 dias conforme al GDPR. PrTask reconoce y atiende la senal de Global Privacy Control (GPC) como una solicitud valida de exclusion.",
+    "PrivacyGdprRightAccess": "Acceder a una copia de todos los datos personales que conservamos sobre usted",
+    "PrivacyGdprRightLodgeComplaint": "Presentar una reclamacion ante su autoridad de control local",
+    "PrivacyGdprRightObject": "Oponerse al tratamiento basado en intereses legitimos, incluida la elaboracion de perfiles",
+    "PrivacyGdprRightPortability": "Portabilidad de los datos: recibir sus datos en un formato estructurado y legible por maquina",
+    "PrivacyGdprRightRectify": "Rectificar datos personales inexactos o incompletos",
+    "PrivacyGdprRightRestrict": "Restringir el tratamiento de sus datos personales en determinadas circunstancias",
+    "PrivacyGdprRightWithdrawConsent": "Retirar el consentimiento en cualquier momento cuando el tratamiento se base en el consentimiento"
+  },
+  "fil": {
+    "PrivacyGdprContactInfo": "Upang gamitin ang alinman sa mga karapatang ito, makipag-ugnayan sa aming Data Protection Officer sa dpo@prtask.com. Tutugon kami sa loob ng 30 araw ayon sa hinihingi ng GDPR. Kinikilala at tinutugunan ng PrTask ang Global Privacy Control (GPC) signal bilang wastong kahilingan sa pag-opt out.",
+    "PrivacyGdprRightAccess": "Humingi ng kopya ng lahat ng personal na datos na hawak namin tungkol sa iyo",
+    "PrivacyGdprRightLodgeComplaint": "Maghain ng reklamo sa iyong lokal na awtoridad na nangangasiwa",
+    "PrivacyGdprRightObject": "Tutulan ang pagproseso batay sa lehitimong interes, kabilang ang profiling",
+    "PrivacyGdprRightPortability": "Portability ng datos: tanggapin ang iyong datos sa isang nakaayos at nababasang format ng makina",
+    "PrivacyGdprRightRectify": "Itama ang hindi tumpak o kulang na personal na datos",
+    "PrivacyGdprRightRestrict": "Limitahan ang pagproseso ng iyong personal na datos sa ilang sitwasyon",
+    "PrivacyGdprRightWithdrawConsent": "Bawiin ang pahintulot anumang oras kapag ang pagproseso ay nakabatay sa pahintulot"
+  },
+  "fr": {
+    "PrivacyGdprContactInfo": "Pour exercer l'un de ces droits, contactez notre delegue a la protection des donnees a dpo@prtask.com. Nous repondrons dans un delai de 30 jours conformement au GDPR. PrTask reconnait et traite le signal Global Privacy Control (GPC) comme une demande valable d'opposition.",
+    "PrivacyGdprRightAccess": "Acceder a une copie de toutes les donnees personnelles que nous detenons a votre sujet",
+    "PrivacyGdprRightLodgeComplaint": "Deposer une plainte aupres de votre autorite de controle locale",
+    "PrivacyGdprRightObject": "Vous opposer au traitement fonde sur des interets legitimes, y compris le profilage",
+    "PrivacyGdprRightPortability": "Portabilite des donnees : recevoir vos donnees dans un format structure et lisible par machine",
+    "PrivacyGdprRightRectify": "Rectifier des donnees personnelles inexactes ou incompletes",
+    "PrivacyGdprRightRestrict": "Limiter le traitement de vos donnees personnelles dans certaines circonstances",
+    "PrivacyGdprRightWithdrawConsent": "Retirer votre consentement a tout moment lorsque le traitement repose sur le consentement"
+  },
+  "hi": {
+    "PrivacyGdprContactInfo": "इनमें से किसी भी अधिकार का उपयोग करने के लिए हमारे Data Protection Officer से dpo@prtask.com पर संपर्क करें। GDPR के अनुसार हम 30 दिनों के भीतर उत्तर देंगे। PrTask Global Privacy Control (GPC) संकेत को वैध opt-out अनुरोध के रूप में पहचानता है और उसका पालन करता है।",
+    "PrivacyGdprRightLodgeComplaint": "अपने स्थानीय पर्यवेक्षी प्राधिकरण के पास शिकायत दर्ज करना",
+    "PrivacyGdprRightObject": "वैध हितों पर आधारित प्रोसेसिंग, जिसमें प्रोफाइलिंग भी शामिल है, पर आपत्ति करना",
+    "PrivacyGdprRightPortability": "डेटा पोर्टेबिलिटी: अपने डेटा को संरचित और मशीन द्वारा पढ़े जा सकने वाले प्रारूप में प्राप्त करना",
+    "PrivacyGdprRightRectify": "गलत या अपूर्ण व्यक्तिगत डेटा को सही कराना",
+    "PrivacyGdprRightRestrict": "कुछ परिस्थितियों में अपने व्यक्तिगत डेटा की प्रोसेसिंग को सीमित करना",
+    "PrivacyGdprRightWithdrawConsent": "जहां प्रोसेसिंग सहमति पर आधारित हो, वहां किसी भी समय सहमति वापस लेना"
+  },
+  "id": {
+    "PrivacyGdprContactInfo": "Untuk menggunakan salah satu hak ini, hubungi Petugas Perlindungan Data kami di dpo@prtask.com. Kami akan merespons dalam 30 hari sebagaimana diwajibkan oleh GDPR. PrTask mengakui dan merespons sinyal Global Privacy Control (GPC) sebagai permintaan opt-out yang sah.",
+    "PrivacyGdprRightAccess": "Mengakses salinan semua data pribadi yang kami simpan tentang Anda",
+    "PrivacyGdprRightLodgeComplaint": "Mengajukan keluhan kepada otoritas pengawas setempat",
+    "PrivacyGdprRightObject": "Menolak pemrosesan yang didasarkan pada kepentingan yang sah, termasuk pembuatan profil",
+    "PrivacyGdprRightPortability": "Portabilitas data: menerima data Anda dalam format yang terstruktur dan dapat dibaca mesin",
+    "PrivacyGdprRightRectify": "Memperbaiki data pribadi yang tidak akurat atau tidak lengkap",
+    "PrivacyGdprRightRestrict": "Membatasi pemrosesan data pribadi Anda dalam keadaan tertentu",
+    "PrivacyGdprRightWithdrawConsent": "Menarik persetujuan kapan saja jika pemrosesan didasarkan pada persetujuan"
+  },
+  "it": {
+    "PrivacyGdprContactInfo": "Per esercitare uno qualsiasi di questi diritti, contatta il nostro Responsabile della protezione dei dati all'indirizzo dpo@prtask.com. Risponderemo entro 30 giorni come richiesto dal GDPR. PrTask riconosce e risponde al segnale Global Privacy Control (GPC) come valida richiesta di opt-out.",
+    "PrivacyGdprRightAccess": "Accedere a una copia di tutti i dati personali che conserviamo su di te",
+    "PrivacyGdprRightLodgeComplaint": "Presentare un reclamo alla tua autorita di controllo locale",
+    "PrivacyGdprRightObject": "Opporsi al trattamento basato su interessi legittimi, inclusa la profilazione",
+    "PrivacyGdprRightPortability": "Portabilita dei dati: ricevere i tuoi dati in un formato strutturato e leggibile da macchina",
+    "PrivacyGdprRightRectify": "Rettificare dati personali inesatti o incompleti",
+    "PrivacyGdprRightRestrict": "Limitare il trattamento dei tuoi dati personali in determinate circostanze",
+    "PrivacyGdprRightWithdrawConsent": "Revocare il consenso in qualsiasi momento quando il trattamento si basa sul consenso"
+  },
+  "ja": {
+    "PrivacyGdprContactInfo": "これらの権利を行使するには、dpo@prtask.com の当社データ保護責任者までご連絡ください。PrTask は GDPR に従い 30 日以内に回答します。PrTask は Global Privacy Control (GPC) シグナルを有効なオプトアウト要求として認識し、対応します。",
+    "PrivacyGdprRightAccess": "当社が保有するあなたに関するすべての個人データの写しにアクセスすること",
+    "PrivacyGdprRightLodgeComplaint": "地域の監督機関に苦情を申し立てること",
+    "PrivacyGdprRightObject": "プロファイリングを含む、正当な利益に基づく処理に異議を唱えること",
+    "PrivacyGdprRightPortability": "データポータビリティ: あなたのデータを構造化され機械可読な形式で受け取ること",
+    "PrivacyGdprRightRectify": "不正確または不完全な個人データを訂正すること",
+    "PrivacyGdprRightRestrict": "一定の状況であなたの個人データの処理を制限すること",
+    "PrivacyGdprRightWithdrawConsent": "処理が同意に基づく場合は、いつでも同意を撤回すること"
+  },
+  "ko": {
+    "PrivacyGdprContactInfo": "이러한 권리를 행사하려면 dpo@prtask.com 으로 당사의 데이터 보호 책임자에게 연락하십시오. PrTask는 GDPR에 따라 30일 이내에 응답합니다. PrTask는 Global Privacy Control (GPC) 신호를 유효한 옵트아웃 요청으로 인식하고 이에 응답합니다.",
+    "PrivacyGdprRightAccess": "당사가 귀하에 대해 보유한 모든 개인정보 사본에 접근하기",
+    "PrivacyGdprRightLodgeComplaint": "현지 감독 기관에 불만을 제기하기",
+    "PrivacyGdprRightObject": "프로파일링을 포함하여 정당한 이익에 근거한 처리에 이의를 제기하기",
+    "PrivacyGdprRightPortability": "데이터 이동권: 구조화되고 기계가 읽을 수 있는 형식으로 귀하의 데이터를 받기",
+    "PrivacyGdprRightRectify": "부정확하거나 불완전한 개인정보를 정정하기",
+    "PrivacyGdprRightRestrict": "특정 상황에서 귀하의 개인정보 처리를 제한하기",
+    "PrivacyGdprRightWithdrawConsent": "처리가 동의에 근거하는 경우 언제든지 동의를 철회하기"
+  },
+  "nl": {
+    "PrivacyGdprContactInfo": "Neem contact op met onze functionaris voor gegevensbescherming via dpo@prtask.com om een van deze rechten uit te oefenen. Wij reageren binnen 30 dagen zoals vereist door de GDPR. PrTask erkent en behandelt het Global Privacy Control (GPC)-signaal als een geldig verzoek om af te melden.",
+    "PrivacyGdprRightAccess": "Toegang krijgen tot een kopie van alle persoonsgegevens die wij over u bewaren",
+    "PrivacyGdprRightLodgeComplaint": "Een klacht indienen bij uw lokale toezichthoudende autoriteit",
+    "PrivacyGdprRightObject": "Bezwaar maken tegen verwerking op basis van gerechtvaardigde belangen, inclusief profilering",
+    "PrivacyGdprRightPortability": "Gegevensoverdraagbaarheid: uw gegevens ontvangen in een gestructureerd en machinaal leesbaar formaat",
+    "PrivacyGdprRightRectify": "Onjuiste of onvolledige persoonsgegevens corrigeren",
+    "PrivacyGdprRightRestrict": "De verwerking van uw persoonsgegevens in bepaalde omstandigheden beperken",
+    "PrivacyGdprRightWithdrawConsent": "Uw toestemming op elk moment intrekken wanneer de verwerking op toestemming is gebaseerd"
+  },
+  "pt": {
+    "PrivacyGdprContactInfo": "Para exercer qualquer um destes direitos, entre em contato com o nosso Encarregado de Protecao de Dados em dpo@prtask.com. Responderemos em ate 30 dias, conforme exigido pelo GDPR. A PrTask reconhece e responde ao sinal Global Privacy Control (GPC) como um pedido valido de opt-out.",
+    "PrivacyGdprRightAccess": "Acessar uma copia de todos os dados pessoais que mantemos sobre voce",
+    "PrivacyGdprRightLodgeComplaint": "Apresentar reclamacao perante a sua autoridade supervisora local",
+    "PrivacyGdprRightObject": "Opor-se ao tratamento baseado em interesses legitimos, incluindo a criacao de perfil",
+    "PrivacyGdprRightPortability": "Portabilidade dos dados: receber seus dados em um formato estruturado e legivel por maquina",
+    "PrivacyGdprRightRectify": "Retificar dados pessoais inexatos ou incompletos",
+    "PrivacyGdprRightRestrict": "Restringir o tratamento dos seus dados pessoais em determinadas circunstancias",
+    "PrivacyGdprRightWithdrawConsent": "Retirar o consentimento a qualquer momento quando o tratamento se basear no consentimento"
+  },
+  "ru": {
+    "PrivacyGdprContactInfo": "Чтобы воспользоваться любым из этих прав, свяжитесь с нашим специалистом по защите данных по адресу dpo@prtask.com. Мы ответим в течение 30 дней, как того требует GDPR. PrTask признает сигнал Global Privacy Control (GPC) и реагирует на него как на действительный запрос на отказ.",
+    "PrivacyGdprRightAccess": "Получить доступ к копии всех персональных данных, которые мы храним о вас",
+    "PrivacyGdprRightLodgeComplaint": "Подать жалобу в местный надзорный орган",
+    "PrivacyGdprRightObject": "Возражать против обработки, основанной на законных интересах, включая профилирование",
+    "PrivacyGdprRightPortability": "Переносимость данных: получить свои данные в структурированном и машиночитаемом формате",
+    "PrivacyGdprRightRectify": "Исправить неточные или неполные персональные данные",
+    "PrivacyGdprRightRestrict": "Ограничить обработку ваших персональных данных при определенных обстоятельствах",
+    "PrivacyGdprRightWithdrawConsent": "Отозвать согласие в любое время, если обработка основана на согласии"
+  },
+  "tr": {
+    "PrivacyGdprContactInfo": "Bu haklardan herhangi birini kullanmak icin dpo@prtask.com adresinden Veri Koruma Gorevlimiz ile iletisime gecin. PrTask, GDPR gerektirdigi gibi 30 gun icinde yanit verir. PrTask, Global Privacy Control (GPC) sinyalini gecerli bir kapsam disi kalma talebi olarak tanir ve buna yanit verir.",
+    "PrivacyGdprRightAccess": "Hakkinizda tuttugumuz tum kisisel verilerin bir kopyasina erismek",
+    "PrivacyGdprRightObject": "Profilleme dahil olmak uzere mesru menfaatlere dayanan islemeye itiraz etmek",
+    "PrivacyGdprRightPortability": "Veri tasinabilirligi: verilerinizi yapilandirilmis ve makine tarafindan okunabilir bir bicimde almak",
+    "PrivacyGdprRightRectify": "Yanlis veya eksik kisisel verileri duzeltmek",
+    "PrivacyGdprRightRestrict": "Belirli kosullarda kisisel verilerinizin islenmesini kisitlamak",
+    "PrivacyGdprRightWithdrawConsent": "Isleme riza temelinde yapiliyorsa, istediginiz zaman rizanizi geri cekmek"
+  }
+}

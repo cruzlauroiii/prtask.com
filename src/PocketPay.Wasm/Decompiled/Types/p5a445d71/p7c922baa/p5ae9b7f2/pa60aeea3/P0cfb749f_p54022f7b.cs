@@ -1,0 +1,61 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+public class P0cfb749f_p54022f7b
+{
+    private bool F015f6f22;
+    private Hashtable F0c6a6546;
+    private pbb861a7f F122301fe;
+    private peb0f48a1 F1567f2e6;
+    private pbb861a7f F1f62feb3;
+    private bool F2af9bf2b;
+    private bool F2ce7e6b6;
+    private Hashtable F2fa8b5f3;
+    private bool F3784f1ed;
+    private p64194188 F3fff1d4c;
+    private p87179565$p2bd4a59b F4a2e2097;
+    private p87179565 F4d41b4c8;
+    private p87179565 F50b0985b;
+    private int[] F559cfb40;
+    private bool F5989338d;
+    private bool F60807e4c;
+    private p16720451 F61016a7d;
+    private pfc4c6ea5 F65484336;
+    private p668e1288 F6a6db772;
+    private int[] F707cfc65;
+    private peb0f48a1 F79fffaff;
+    private bool F7ee350ae;
+    private p16720451 F7fc7c2a1;
+    private pfc4c6ea5 F8387abb6;
+    private pfc4c6ea5 F8513569a;
+    private Hashtable F8d700e5b;
+    private short F8d779b4a;
+    private short F9482ed4f;
+    private short F94d4ee1f;
+    private p16720451 F958801cd;
+    private p16720451 Fa1a9c8b6;
+    private bool Fa31a0a56;
+    private p87179565$p2bd4a59b Fa3e0b99d;
+    private bool Fa71ba5ce;
+    private p16720451 Faca798ae;
+    private bool Fad6b24bf;
+    private p64194188 Fb3836a8b;
+    private short[] Fb49c90d3;
+    private p64194188 Fb96d999e;
+    private short Fbe4981d0;
+    private Hashtable Fbf7b0b90;
+    private short[] Fca2f3986;
+    private pc9612e59 Fcdef2b74;
+    private p668e1288 Fcf1e8c14;
+    private p87179565$p2bd4a59b Fd2a6f8f4;
+    private short Fd6e9f69f;
+    private Hashtable Fd7eb3610;
+    private pfc4c6ea5 Fd871dd9a;
+    private p64194188 Fd92e3f72;
+    private Hashtable Fdcf25f1d;
+    private Hashtable Fe2613100;
+    private pbb861a7f Feb8697e3;
+    private pfc4c6ea5 Feb901850;
+    private bool Fec0d59f2;
+    private pc9612e59 Ffeac6633;
+
+}

@@ -1,0 +1,13 @@
+{
+  "name": "prtask-api-worker",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@tsndr/cloudflare-worker-jwt": "^3.2.1",
+    "lowdb": "^7.0.1"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0",
+    "esbuild": "^0.25.0"
+  }
+}

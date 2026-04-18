@@ -1,0 +1,55 @@
+@page "/"
+@using PrTask.Domain.Constants
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> Localizer
+<section class="hero">
+    <h1>@Localizer["HomeHeroHeading"]</h1>
+    <p class="hero-subtitle">@Localizer["HomeHeroSubtitle"]</p>
+    <div class="hero-actions">
+        <a href="@NavConstants.HrefTasks" class="btn btn-primary">@Localizer["HomeBrowseTasksButton"]</a>
+        <a href="@NavConstants.HrefHowItWorks" class="btn btn-secondary">@Localizer["HomeHowItWorksButton"]</a>
+    </div>
+</section>
+<section class="features">
+    <div class="feature-card">
+        <h2>@Localizer["HomePickTaskHeading"]</h2>
+        <p>@Localizer["HomePickTaskDescription"]</p>
+    </div>
+    <div class="feature-card">
+        <h2>@Localizer["HomeSubmitPrHeading"]</h2>
+        <p>@Localizer["HomeSubmitPrDescription"]</p>
+    </div>
+    <div class="feature-card">
+        <h2>@Localizer["HomeGetPaidHeading"]</h2>
+        <p>@Localizer["HomeGetPaidDescription"]</p>
+    </div>
+</section>
+<section class="stats-section">
+    <div class="stat-card">
+        <span class="stat-value">@Localizer["HomeOpenTasksValue"]</span>
+        <span class="stat-label">@Localizer["HomeOpenTasksLabel"]</span>
+    </div>
+    <div class="stat-card">
+        <span class="stat-value">@Localizer["HomeTotalBountyPoolValue"]</span>
+        <span class="stat-label">@Localizer["HomeTotalBountyPoolLabel"]</span>
+    </div>
+    <div class="stat-card">
+        <span class="stat-value">@Localizer["HomeDevelopersValue"]</span>
+        <span class="stat-label">@Localizer["HomeDevelopersLabel"]</span>
+    </div>
+</section>
+<section class="stats-section">
+    <div class="stat-card">
+        <span class="stat-value">@Localizer["HomeDeveloperPayoutValue"]</span>
+        <span class="stat-label">@Localizer["HomeDeveloperPayoutLabel"]</span>
+    </div>
+    <div class="stat-card">
+        <span class="stat-value">@Localizer["HomeAutomaticPaymentValue"]</span>
+        <span class="stat-label">@Localizer["HomePaymentOnApprovalLabel"]</span>
+    </div>
+</section>
+<section class="page-description">
+    <h2>@Localizer["HomeDescriptionHeading"]</h2>
+    <p>@Localizer["HomeDescriptionParagraph1"]</p>
+    <p>@Localizer["HomeDescriptionParagraph2"]</p>
+    <p>@Localizer["HomeDescriptionParagraph3"]</p>
+</section>

@@ -1,0 +1,35 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+
+@kotlin.Metadata(d1 = {"\u0000!\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003*\u0001\u0000\b\n\u0018\u00002\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00028\u00000\u0001J\"\u0010\u0003\u001a\u00028\u00002\u0006\u0010\u0004\u001a\u00020\u00022\n\u0010\u0005\u001a\u0006\u0012\u0002\b\u00030\u0006H\u0096\u0002¢\u0006\u0002\u0010\u0007J*\u0010\b\u001a\u00020\t2\u0006\u0010\u0004\u001a\u00020\u00022\n\u0010\u0005\u001a\u0006\u0012\u0002\b\u00030\u00062\u0006\u0010\n\u001a\u00028\u0000H\u0096\u0002¢\u0006\u0002\u0010\u000b¨\u0006\f"}, d2 = {"utils/delegate/arguments/PreferenceDelegateKt$delegate$1", "Lkotlin/properties/ReadWriteProperty;", "", "getValue", "thisRef", "property", "Lkotlin/reflect/KProperty;", "(Ljava/lang/object;Lkotlin/reflect/KProperty;)Ljava/lang/object;", "setValue", "", "value", "(Ljava/lang/object;Lkotlin/reflect/KProperty;Ljava/lang/object;)V", "common-utils_release"}, m527k = 1, mv = {2, 1, 0}, xi = 48)
+public readonly class p62d58733$p7f662005$1<T> : kotlin.properties.ReadWriteProperty<java.lang.object, T> {
+    readonly T $defaultValue;
+    readonly kotlin.jvm.functions.Function3<android.content.Dictionary<string, object>, java.lang.string, T, T> $getter;
+    readonly java.lang.string $key;
+    readonly kotlin.jvm.functions.Function3<android.content.Dictionary<string, object>$Editor, java.lang.string, T, android.content.Dictionary<string, object>$Editor> $setter;
+    readonly android.content.Dictionary<string, object> $this_delegate;
+
+    public p62d58733$p7f662005$1(kotlin.jvm.functions.Function3<? super android.content.Dictionary<string, object>, ? super java.lang.string, ? super T, ? : T> function3, android.content.Dictionary<string, object> sharedPreferences, java.lang.string str, T t, kotlin.jvm.functions.Function3<? super android.content.Dictionary<string, object>$Editor, ? super java.lang.string, ? super T, ? : android.content.Dictionary<string, object>$Editor> function32) {
+        this.$getter = function3;
+        this.$this_delegate = sharedPreferences;
+        this.$key = str;
+        this.$defaultValue = t;
+        this.$setter = function32;
+    }
+
+    public override T GetValue(java.lang.object thisRef, kotlin.reflect.KProperty<object> property) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(thisRef, "thisRef");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(property, "property");
+        return this.$getter.invoke(this.$this_delegate, this.$key, this.$defaultValue);
+    }
+
+    public override void SetValue(java.lang.object thisRef, kotlin.reflect.KProperty<object> property, T value) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(thisRef, "thisRef");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(property, "property");
+        kotlin.jvm.functions.Function3<android.content.Dictionary<string, object>$Editor, java.lang.string, T, android.content.Dictionary<string, object>$Editor> function3 = this.$setter;
+        android.content.Dictionary<string, object>$Editor sharedPreferences$EditorEdit = this.$this_delegate.edit();
+        kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(sharedPreferences$EditorEdit, "edit(...)");
+        function3.invoke(sharedPreferences$EditorEdit, this.$key, value).apply();
+    }
+}
+

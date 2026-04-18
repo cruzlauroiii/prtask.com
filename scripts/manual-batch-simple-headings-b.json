@@ -1,0 +1,110 @@
+{
+  "es": {
+    "LicensesOpenSourceBlazor": "Blazor WebAssembly (Licencia MIT)",
+    "PricingFaqCurrencyQuestion": "¿Que monedas son compatibles?",
+    "PricingFeatureComparisonHeading": "Comparacion de funciones",
+    "PricingFeaturePayment": "Procesamiento de pagos",
+    "PricingRefundHeading": "Politica de reembolso",
+    "PricingRefundLink": "Ver la politica completa de reembolso",
+    "PrivacyChildrensHeading": "Privacidad de los menores",
+    "TermsPaymentHeading": "Condiciones de pago"
+  },
+  "fil": {
+    "PricingFaqCurrencyQuestion": "Anong mga currency ang sinusuportahan?",
+    "PricingFeatureComparisonHeading": "Paghahambing ng mga tampok",
+    "PricingFeaturePayment": "Pagproseso ng bayad",
+    "PricingRefundHeading": "Patakaran sa refund",
+    "PricingRefundLink": "Tingnan ang buong patakaran sa refund",
+    "PrivacyChildrensHeading": "Pagkapribado ng mga bata",
+    "TermsPaymentHeading": "Mga tuntunin sa pagbabayad"
+  },
+  "fr": {
+    "PricingFaqCurrencyQuestion": "Quelles devises sont prises en charge ?",
+    "PricingFeatureComparisonHeading": "Comparaison des fonctionnalites",
+    "PricingFeaturePayment": "Traitement des paiements",
+    "PricingRefundHeading": "Politique de remboursement",
+    "PricingRefundLink": "Voir la politique complete de remboursement",
+    "PrivacyChildrensHeading": "Vie privee des enfants",
+    "TermsPaymentHeading": "Conditions de paiement"
+  },
+  "hi": {
+    "PricingFaqCurrencyQuestion": "कौन-कौन सी मुद्राएं समर्थित हैं?",
+    "PricingFeatureComparisonHeading": "सुविधा तुलना",
+    "PricingFeaturePayment": "भुगतान प्रसंस्करण",
+    "PricingRefundHeading": "रिफंड नीति",
+    "PricingRefundLink": "पूरी रिफंड नीति देखें",
+    "PrivacyChildrensHeading": "बच्चों की गोपनीयता",
+    "TermsPaymentHeading": "भुगतान शर्तें"
+  },
+  "id": {
+    "PricingFeatureComparisonHeading": "Perbandingan fitur",
+    "PricingFeaturePayment": "Pemrosesan pembayaran",
+    "PricingRefundHeading": "Kebijakan pengembalian dana",
+    "PricingRefundLink": "Lihat kebijakan pengembalian dana lengkap",
+    "PrivacyChildrensHeading": "Privasi anak-anak"
+  },
+  "it": {
+    "PricingFaqCurrencyQuestion": "Quali valute sono supportate?",
+    "PricingFeatureComparisonHeading": "Confronto delle funzionalita",
+    "PricingFeaturePayment": "Elaborazione dei pagamenti",
+    "PricingRefundHeading": "Politica di rimborso",
+    "PricingRefundLink": "Visualizza la politica completa di rimborso",
+    "PrivacyChildrensHeading": "Privacy dei minori",
+    "TermsPaymentHeading": "Termini di pagamento"
+  },
+  "ja": {
+    "PricingFaqCurrencyQuestion": "対応している通貨は何ですか？",
+    "PricingFeatureComparisonHeading": "機能比較",
+    "PricingFeaturePayment": "決済処理",
+    "PricingRefundHeading": "返金ポリシー",
+    "PricingRefundLink": "返金ポリシー全文を見る",
+    "PrivacyChildrensHeading": "子どものプライバシー",
+    "TermsPaymentHeading": "支払い条件"
+  },
+  "ko": {
+    "PricingFaqCurrencyQuestion": "어떤 통화가 지원되나요?",
+    "PricingFeatureComparisonHeading": "기능 비교",
+    "PricingFeaturePayment": "결제 처리",
+    "PricingRefundHeading": "환불 정책",
+    "PricingRefundLink": "전체 환불 정책 보기",
+    "PrivacyChildrensHeading": "아동 개인정보 보호",
+    "TermsPaymentHeading": "결제 조건"
+  },
+  "nl": {
+    "PricingFaqCurrencyQuestion": "Welke valuta worden ondersteund?",
+    "PricingFeatureComparisonHeading": "Functievergelijking",
+    "PricingFeaturePayment": "Betalingsverwerking",
+    "PricingRefundHeading": "Terugbetalingsbeleid",
+    "PricingRefundLink": "Bekijk het volledige terugbetalingsbeleid",
+    "PrivacyChildrensHeading": "Privacy van kinderen",
+    "TermsPaymentHeading": "Betalingsvoorwaarden"
+  },
+  "pt": {
+    "PricingFaqCurrencyQuestion": "Quais moedas sao aceitas?",
+    "PricingFeatureComparisonHeading": "Comparacao de recursos",
+    "PricingFeaturePayment": "Processamento de pagamentos",
+    "PricingRefundHeading": "Politica de reembolso",
+    "PricingRefundLink": "Ver politica completa de reembolso",
+    "PrivacyChildrensHeading": "Privacidade infantil",
+    "TermsPaymentHeading": "Termos de pagamento"
+  },
+  "ru": {
+    "PricingFaqCurrencyQuestion": "Какие валюты поддерживаются?",
+    "PricingFeatureComparisonHeading": "Сравнение функций",
+    "PricingFeaturePayment": "Обработка платежей",
+    "PricingRefundHeading": "Политика возврата средств",
+    "PricingRefundLink": "Просмотреть полную политику возврата средств",
+    "PrivacyChildrensHeading": "Конфиденциальность детей",
+    "TermsPaymentHeading": "Условия оплаты"
+  },
+  "tr": {
+    "LicensesOpenSourceBlazor": "Blazor WebAssembly (MIT Lisansi)",
+    "PricingFaqCurrencyQuestion": "Hangi para birimleri destekleniyor?",
+    "PricingFeatureComparisonHeading": "Ozellik karsilastirmasi",
+    "PricingFeaturePayment": "Odeme isleme",
+    "PricingRefundHeading": "Iade politikasi",
+    "PricingRefundLink": "Tam iade politikasini goruntule",
+    "PrivacyChildrensHeading": "Cocuklarin gizliligi",
+    "TermsPaymentHeading": "Odeme sartlari"
+  }
+}

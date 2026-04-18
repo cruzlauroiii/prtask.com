@@ -1,0 +1,69 @@
+{
+  "de": {
+    "BoardDescriptionHeading": "Kanban-Boards – visuelles Aufgaben- und Workflow-Management",
+    "BoardDescriptionParagraph1": "Boards auf PrTask bieten einen visuellen, spaltenbasierten Ansatz zur Verwaltung von Entwicklungsaufgaben mit Status und Pull Requests.",
+    "BoardDescriptionParagraph2": "Ein Board erstellen ist einfach: Name vergeben und den Boardtyp wählen (Kanban ist Standard).",
+    "BoardDescriptionParagraph3": "PrTask-Boards synchronisieren sich in Echtzeit über WebSockets, sodass Änderungen sofort für alle sichtbar sind.",
+    "BoardSeoDescription": "Verwalten Sie Open-Source-Projekt-Boards und verfolgen Sie Pull-Request-Aufgaben."
+  },
+  "es": {
+    "BoardDescriptionHeading": "Tableros Kanban — gestión visual de tareas y flujo de trabajo",
+    "BoardDescriptionParagraph1": "Los tableros en PrTask ofrecen una forma visual basada en columnas para gestionar tareas de desarrollo con estados y pull requests.",
+    "BoardDescriptionParagraph2": "Crear un tablero es sencillo: asigna un nombre y elige el tipo (Kanban por defecto).",
+    "BoardDescriptionParagraph3": "Los tableros de PrTask se sincronizan en tiempo real mediante WebSockets para que los cambios se reflejen al instante.",
+    "BoardSeoDescription": "Gestiona tus tableros de proyectos open source y sigue las tareas de pull request."
+  },
+  "fr": {
+    "BoardDescriptionHeading": "Tableaux Kanban — gestion visuelle des tâches et du flux de travail",
+    "BoardDescriptionParagraph1": "Les tableaux sur PrTask proposent une approche visuelle en colonnes pour piloter les tâches de développement avec états et pull requests.",
+    "BoardDescriptionParagraph2": "Créer un tableau est simple : donnez-lui un nom et sélectionnez le type (Kanban par défaut).",
+    "BoardDescriptionParagraph3": "Les tableaux PrTask se synchronisent en temps réel via WebSocket pour que chaque modification soit immédiatement visible.",
+    "BoardSeoDescription": "Gérez vos tableaux de projets open source et suivez les tâches associées aux pull requests."
+  },
+  "it": {
+    "BoardDescriptionHeading": "Bacheche Kanban — gestione visiva delle attività e del flusso di lavoro",
+    "BoardDescriptionParagraph1": "Le bacheche in PrTask offrono un approccio visivo a colonne per gestire le attività di sviluppo con stati e pull request.",
+    "BoardDescriptionParagraph2": "Creare una bacheca è semplice: assegnale un nome e seleziona il tipo (Kanban predefinito).",
+    "BoardDescriptionParagraph3": "Le bacheche PrTask si sincronizzano in tempo reale tramite WebSocket, così ogni modifica è subito visibile.",
+    "BoardSeoDescription": "Gestisci le tue bacheche open source e monitora le attività di pull request."
+  },
+  "ja": {
+    "BoardDescriptionHeading": "カンバンボード — 視覚的なタスク管理とワークフロー",
+    "BoardDescriptionParagraph1": "PrTaskのボードは列ベースの視覚的なアプローチで、ステータスとプルリクエストを追跡できます。",
+    "BoardDescriptionParagraph2": "ボードの作成は簡単で、名前を入力しボードタイプ（デフォルトはカンバン）を選ぶだけです。",
+    "BoardDescriptionParagraph3": "PrTaskのボードはWebSocketでリアルタイムに同期され、変更が即座に反映されます。",
+    "BoardSeoDescription": "オープンソースプロジェクトのボードを管理し、プルリクエストのタスクを追跡します。"
+  },
+  "ko": {
+    "BoardDescriptionHeading": "칸반 보드 — 시각적인 작업 및 워크플로 관리",
+    "BoardDescriptionParagraph1": "PrTask의 보드는 열 기반 시각적 방식으로 개발 작업과 상태, 풀 리퀘스트를 관리합니다.",
+    "BoardDescriptionParagraph2": "보드 생성은 간단하며 이름을 정하고 보드 종류(기본은 칸반)를 선택하기만 하면 됩니다.",
+    "BoardDescriptionParagraph3": "PrTask 보드는 WebSocket으로 실시간 동기화되어 모든 변경 사항이 즉시 반영됩니다.",
+    "BoardSeoDescription": "오픈 소스 프로젝트 보드를 관리하고 풀 리퀘스트 작업을 추적하세요."
+  },
+  "nl": {
+    "BoardDescriptionHeading": "Kanban-borden — visuele taak- en workflowbeheer",
+    "BoardDescriptionParagraph1": "Borden op PrTask bieden een visuele kolomgebaseerde manier om ontwikkeltaken met statussen en pull requests te volgen.",
+    "BoardDescriptionParagraph2": "Een bord maken is eenvoudig: geef het een naam en kies het bordtype (Kanban is standaard).",
+    "BoardDescriptionParagraph3": "PrTask-borden synchroniseren realtime via WebSockets zodat wijzigingen direct zichtbaar zijn.",
+    "BoardSeoDescription": "Beheer je open-sourceprojectborden en volg taken voor pull requests."
+  },
+  "pt": {
+    "BoardDescriptionHeading": "Quadros Kanban — gerenciamento visual de tarefas e fluxo de trabalho",
+    "BoardDescriptionParagraph1": "Os quadros no PrTask oferecem uma abordagem visual baseada em colunas para administrar tarefas de desenvolvimento com status e pull requests.",
+    "BoardDescriptionParagraph2": "Criar um quadro é simples: nomeie-o e escolha o tipo (Kanban é o padrão).",
+    "BoardDescriptionParagraph3": "Os quadros do PrTask sincronizam em tempo real via WebSocket, mantendo as mudanças visíveis para todos.",
+    "BoardSeoDescription": "Gerencie seus quadros de projetos open source e acompanhe tarefas de pull request."
+  },
+  "ru": {
+    "BoardDescriptionHeading": "Доски Канбан — визуальное управление задачами и процессом",
+    "BoardDescriptionParagraph1": "Доски на PrTask предлагают визуальный, колонковый подход к управлению задачами разработки с учетом статусов и pull request.",
+    "BoardDescriptionParagraph2": "Создать доску просто: укажите имя и выберите тип (по умолчанию Канбан).",
+    "BoardDescriptionParagraph3": "Доски PrTask синхронизируются в реальном времени через WebSocket, поэтому все изменения мгновенно видны.",
+    "BoardSeoDescription": "Управляйте досками open source-проектов и отслеживайте задачи pull request."
+  }
+,
+  "id": {
+    "BoardSeoDescription": "Kelola papan proyek open source Anda dan pantau tugas pull request."
+  }
+}

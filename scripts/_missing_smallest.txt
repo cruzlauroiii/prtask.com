@@ -1,0 +1,120 @@
+1	RefundNoEscrowHeading	[hi]	No Escrow Model
+1	SprintDescriptionHeading	[hi]	Sprint Management — Organize Time-Boxed Development Work
+1	TermsDescriptionHeading	[hi]	About These Terms of Service
+4	DashboardPrsLabel	[es,fr,nl,pt]	Pull Requests
+6	SettingsAddCardHeading	[fil,hi,ja,ko,ru,tr]	Add a Card
+9	HowItWorksWorkflowStep6Description	[fil,fr,id,it,ja,ko,nl,pt,ru]	View the task description, bounty amount, and existing pull requests.
+10	HowItWorksDescriptionParagraph1	[fil,fr,hi,id,it,ja,ko,nl,pt,ru]	PrTask streamlines the process of connecting developers with paid software work through a 
+10	HowItWorksDescriptionParagraph2	[fil,fr,hi,id,it,ja,ko,nl,pt,ru]	For developers, the workflow is straightforward: browse tasks, find one matching your skil
+10	HowItWorksDescriptionParagraph3	[fil,fr,hi,id,it,ja,ko,nl,pt,ru]	For clients, PrTask simplifies the hiring process by eliminating interviews, contracts, an
+10	HowItWorksWorkflowHeading	[fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Workflow Guide
+10	HowItWorksWorkflowStep10Description	[fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Add inline comments on specific lines or highlighted code that need changes.
+10	HowItWorksWorkflowStep5Heading	[fil,fr,hi,it,ja,ko,nl,pt,ru,tr]	Browse Open Tasks
+10	PricingDescriptionHeading	[de,es,fr,it,ja,ko,nl,pt,ru,tr]	PrTask Pricing — Transparent and Developer-Friendly
+10	PricingFaqMinBountyQuestion	[de,es,fr,id,it,ja,ko,nl,pt,ru]	Is there a minimum bounty amount?
+10	PrivacyAustraliaDescription	[de,es,fr,it,ja,ko,nl,pt,ru,tr]	If you are located in Australia, your personal information is protected under the Privacy 
+10	PrivacyDpdpDescription	[de,es,fr,it,ja,ko,nl,pt,ru,tr]	If you are located in India, your digital personal data is protected under the Digital Per
+10	PrivacyDpdpHeading	[de,es,fr,it,ja,ko,nl,pt,ru,tr]	India DPDP Act 2023
+10	TermsClientObligationsDescription	[de,es,fr,it,ja,ko,nl,pt,ru,tr]	As a client on PrTask, you agree to: provide clear and accurate task descriptions and requ
+10	TermsLicenseGrantsDescription	[de,es,fr,it,ja,ko,nl,pt,ru,tr]	Upon approval and payment of a bounty, the developer grants the client a perpetual, worldw
+10	TermsLicenseGrantsHeading	[de,es,fr,it,ja,ko,nl,pt,ru,tr]	License Grants
+10	TermsRefundRightsDescription	[de,es,fr,it,ja,ko,nl,pt,ru,tr]	Clients may request a refund if a pull request was approved in error or if the delivered w
+10	TermsRefundRightsHeading	[de,es,fr,it,ja,ko,nl,pt,ru,tr]	Refund Rights
+11	HowItWorksDescriptionHeading	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	How PrTask Works — Complete Guide to Earning and Hiring
+11	HowItWorksGettingStartedHeading	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Getting Started
+11	HowItWorksWorkflowDescription	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Follow these steps to complete the full workflow from login to payment.
+11	HowItWorksWorkflowStatusLoginRequired	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Login Required
+11	HowItWorksWorkflowStep10Heading	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Add Review Comments
+11	HowItWorksWorkflowStep11Description	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Developer applies fixes, replies to comments, and resolves them.
+11	HowItWorksWorkflowStep11Heading	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Reply and Resolve Comments
+11	HowItWorksWorkflowStep11Link	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Resolve Comments
+11	HowItWorksWorkflowStep12Description	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Client approves the PR and pays the bounty via Maya credit card checkout.
+11	HowItWorksWorkflowStep12Heading	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Approve PR and Pay via Maya
+11	HowItWorksWorkflowStep12Link	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Approve and Pay
+11	HowItWorksWorkflowStep13Description	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	View all payment transactions and their status.
+11	HowItWorksWorkflowStep13Heading	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Payment History
+11	HowItWorksWorkflowStep14Description	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Configure payout method and verify withdrawal balance.
+11	HowItWorksWorkflowStep14Heading	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Withdrawal Settings
+11	HowItWorksWorkflowStep1Description	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Authenticate with Google, GitHub, Microsoft, or Okta.
+11	HowItWorksWorkflowStep1Heading	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Sign In via SSO
+11	HowItWorksWorkflowStep2Description	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Complete identity verification to enable payments and comply with regulations.
+11	HowItWorksWorkflowStep2Heading	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	KYC Identity Verification
+11	HowItWorksWorkflowStep2Link	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Settings - KYC
+11	HowItWorksWorkflowStep3Description	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Post a task with a bounty for developers to complete.
+11	HowItWorksWorkflowStep3Heading	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Create a Task
+11	HowItWorksWorkflowStep3Link	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Create Task
+11	HowItWorksWorkflowStep4Description	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Upload the source code folder to the task so developers can see the diff.
+11	HowItWorksWorkflowStep4Heading	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Upload Source Code
+11	HowItWorksWorkflowStep4Link	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Task Detail
+11	HowItWorksWorkflowStep5Description	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Developers browse available tasks and find work that matches their skills.
+11	HowItWorksWorkflowStep6Heading	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	View Task Detail
+11	HowItWorksWorkflowStep6Link	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Task Detail
+11	HowItWorksWorkflowStep7Description	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Edit the source code directly in the browser diff editor.
+11	HowItWorksWorkflowStep7Heading	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Modify Code in Diff Editor
+11	HowItWorksWorkflowStep7Link	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Diff Editor
+11	HowItWorksWorkflowStep8Description	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Submit your code changes as a pull request for the task.
+11	HowItWorksWorkflowStep8Heading	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Submit Pull Request
+11	HowItWorksWorkflowStep9Description	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Client reviews the diff to see all code changes submitted by the developer.
+11	HowItWorksWorkflowStep9Heading	[fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Review Code Changes
+11	LicensesContactDescription	[de,es,fil,fr,id,it,ja,ko,nl,pt,ru]	For licensing inquiries, compliance questions, or credit card processing concerns, contact
+11	LicensesOpenSourceGratitude	[de,es,fr,hi,it,ja,ko,nl,pt,ru,tr]	We are grateful to the open source community for making these tools available. For a compl
+11	LicensesThirdPartyGitHub	[de,es,fr,hi,it,ja,ko,nl,pt,ru,tr]	GitHub: used for OAuth authentication and pull request integration, subject to GitHub's Te
+11	LoginPublicPrsHeading	[de,es,fil,fr,id,it,ja,ko,nl,pt,ru]	Public PRs
+11	PaymentSeoTitle	[de,es,fil,fr,it,ja,ko,nl,pt,ru,tr]	Payments - PrTask
+11	PrivacyGdprRightErase	[de,es,fr,hi,it,ja,ko,nl,pt,ru,tr]	Erase your personal data (right to be forgotten), subject to legal retention obligations
+11	PrivacyPipaDescription	[de,es,fr,hi,it,ja,ko,nl,pt,ru,tr]	If you are located in South Korea, your personal information is protected under the Person
+11	PrivacyPipaHeading	[de,es,fr,hi,it,ja,ko,nl,pt,ru,tr]	South Korea PIPA
+11	RefundDisputeDescription	[de,es,fil,fr,id,it,ja,ko,nl,pt,ru]	If a client believes an approved PR does not meet the task requirements, PrTask initiates 
+11	RefundDisputeHeading	[de,es,fil,fr,id,it,ja,ko,nl,pt,ru]	Disputed Pull Requests
+11	RefundHowToDescription	[de,es,fil,fr,id,it,ja,ko,nl,pt,ru]	To request a refund, log in to your PrTask account, navigate to the task in question, and 
+11	RepositoryDescriptionParagraph2	[de,es,fr,hi,it,ja,ko,nl,pt,ru,tr]	Managing your connected repositories is essential for maintaining an organized development
+11	RepositoryDescriptionParagraph3	[de,es,fr,hi,it,ja,ko,nl,pt,ru,tr]	PrTask integrates with GitHub through standard API connections, requiring only the reposit
+11	SettingsCardNumberLabel	[de,es,fil,fr,id,it,ja,ko,nl,pt,ru]	Card Number
+11	SettingsNoSubscriptions	[de,es,fil,fr,id,it,ja,ko,nl,pt,ru]	No active subscriptions.
+11	TermsArbitrationDescription	[de,es,fr,hi,it,ja,ko,nl,pt,ru,tr]	All disputes arising out of or relating to these Terms or your use of PrTask that are not 
+11	TermsDescriptionParagraph1	[de,es,fr,hi,it,ja,ko,nl,pt,ru,tr]	These Terms of Service constitute the complete legal agreement between you and PrTask gove
+11	TermsPaymentHeading	[de,es,fr,hi,it,ja,ko,nl,pt,ru,tr]	Payment Terms
+12	LicensesCodeOwnershipDescription	[de,es,fil,fr,hi,id,it,ja,ko,nl,pt,ru]	Developers retain full copyright ownership of all code they submit through PrTask. Upon ap
+12	LicensesCodeOwnershipHeading	[de,es,fil,fr,hi,id,it,ja,ko,nl,pt,ru]	Code Ownership Rights
+12	LicensesOpenSourceBlazor	[de,es,fil,fr,id,it,ja,ko,nl,pt,ru,tr]	Blazor WebAssembly (MIT License)
+12	LicensesPaymentProviderHeading	[de,es,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Payment Provider Compliance
+12	LicensesUserContentDescription	[de,es,fil,fr,hi,id,it,ja,ko,nl,pt,ru]	By posting content on PrTask (including task descriptions, comments, and reviews), you gra
+12	LoginDescriptionParagraph2	[de,es,fil,fr,id,it,ja,ko,nl,pt,ru,tr]	Authentication is required to access most features on PrTask because financial transaction
+12	LoginDescriptionParagraph3	[de,es,fil,fr,id,it,ja,ko,nl,pt,ru,tr]	For developers, signing in unlocks the ability to browse tasks, submit pull requests, earn
+12	PricingDescriptionParagraph1	[de,es,fil,fr,id,it,ja,ko,nl,pt,ru,tr]	PrTask operates on a fundamentally developer-friendly pricing model: developers pay nothin
+12	PricingFaqCurrencyQuestion	[de,es,fil,fr,hi,it,ja,ko,nl,pt,ru,tr]	What currencies are supported?
+12	PrivacyChildrensHeading	[de,es,fil,fr,hi,it,ja,ko,nl,pt,ru,tr]	Children's Privacy
+12	PrivacyDescriptionHeading	[de,es,fil,fr,hi,id,it,ja,ko,nl,pt,ru]	About This Privacy Policy
+12	PrivacyGdprDescription	[de,es,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	If you are located in the European Economic Area (EEA), your personal data is protected un
+12	PrivacyGdprHeading	[de,es,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	GDPR Compliance
+12	PrivacyGdprRightAccess	[de,es,fil,fr,id,it,ja,ko,nl,pt,ru,tr]	Access a copy of all personal data we hold about you
+12	PrivacyGdprRightLodgeComplaint	[de,es,fil,fr,hi,id,it,ja,ko,nl,pt,ru]	Lodge a complaint with your local supervisory authority
+12	PrivacyInfoCollectedDescription	[de,es,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	PrTask collects the following categories of personal data: (a) Account information: when y
+12	PrivacyInfoCollectedHeading	[de,es,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Information We Collect
+12	PrivacyInfoSharingDescription	[de,es,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	We share your information with the following categories of recipients: (a) Payment process
+12	PrivacyPiplHeading	[de,es,fil,fr,hi,id,it,ja,ko,nl,pt,ru]	China PIPL
+12	PrivacyPopiaDescription	[de,es,fil,fr,id,it,ja,ko,nl,pt,ru,tr]	If you are located in South Africa, your personal information is protected under the Prote
+12	RefundAutoPaymentDescription	[de,es,fil,fr,hi,it,ja,ko,nl,pt,ru,tr]	PrTask uses an automatic payment model. Clients are only charged when they approve a pull 
+12	RefundAutoPaymentHeading	[de,es,fil,fr,hi,it,ja,ko,nl,pt,ru,tr]	Automatic Payment Model
+12	RefundChargebackDescription	[de,es,fil,fr,hi,it,ja,ko,nl,pt,ru,tr]	If a client initiates a chargeback through their bank or credit card issuer instead of usi
+12	RefundPhConsumerHeading	[de,es,fil,fr,hi,id,it,ja,ko,nl,pt,ru]	Philippine Consumer Protection (RA 7394)
+12	SettingsTwoFactorAuthenticatorOption	[de,es,fil,fr,hi,it,ja,ko,nl,pt,ru,tr]	Authenticator App
+12	SprintSeoDescription	[de,es,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Organize your open source contributions into sprints. Track pull request progress, earn bo
+12	TermsClientObligationsHeading	[de,es,fil,fr,id,it,ja,ko,nl,pt,ru,tr]	Client Obligations
+12	TermsDeveloperObligationsDescription	[de,es,fil,fr,id,it,ja,ko,nl,pt,ru,tr]	As a developer on PrTask, you agree to: submit only original work that you have the right 
+12	TermsPageHeading	[de,es,fil,fr,id,it,ja,ko,nl,pt,ru,tr]	Terms of Service
+12	TermsPaymentDescription	[de,es,fil,fr,hi,it,ja,ko,nl,pt,ru,tr]	When a client approves a pull request, they are automatically charged the bounty amount vi
+12	TermsPlatformFeeDescription	[de,es,fil,fr,hi,it,ja,ko,nl,pt,ru,tr]	PrTask is a free platform. No fees are charged to clients or developers. Developers receiv
+12	TermsPlatformFeeHeading	[de,es,fil,fr,hi,it,ja,ko,nl,pt,ru,tr]	Platform Fee
+12	TermsPlatformRoleHeading	[de,es,fil,fr,hi,id,it,ja,ko,nl,pt,ru]	Platform Role
+13	HowItWorksClientsHeading	[de,es,fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	For Clients
+13	HowItWorksClientsStep1	[de,es,fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Sign in with GitHub or Google and set up your payment method
+13	HowItWorksClientsStep2	[de,es,fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Create a task with a description, repository link, and bounty amount
+13	HowItWorksClientsStep3	[de,es,fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Developers submit public pull requests for your task
+13	HowItWorksClientsStep4	[de,es,fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Review all submitted pull requests and approve the best one
+13	HowItWorksClientsStep5	[de,es,fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	You are automatically charged the bounty and the developer gets paid
+13	LegalLastUpdated	[de,es,fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Last updated: March 2026
+13	LicensesCreditCardDescription	[de,es,fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Credit card payments on PrTask are processed by licensed, PCI DSS-compliant payment provid
+13	LicensesCreditCardHeading	[de,es,fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Credit Card Processing
+13	LicensesDataProtectionDescription	[de,es,fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	PrTask uses HTTPS/TLS encryption for all communications. Authentication is handled via OAu
+13	LicensesDataProtectionHeading	[de,es,fil,fr,hi,id,it,ja,ko,nl,pt,ru,tr]	Data Protection

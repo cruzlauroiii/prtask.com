@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<title>PrTask - Clearing Cache</title>
+<style>
+body { background: #0f172a; color: #e2e8f0; font-family: system-ui, sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+.box { text-align: center; padding: 2rem; max-width: 400px; }
+h1 { font-size: 1.5rem; margin-bottom: 1rem; }
+p { color: #94a3b8; margin: 0.5rem 0; font-size: 0.875rem; }
+#status { color: #22d3ee; font-weight: 600; font-size: 1rem; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Clearing all cache</h1>
+<p id="status">Deleting cached data...</p>
+<p id="progress"></p>
+</div>
+<script>
+(async function() {
+    var status = document.getElementById("status");
+    var progress = document.getElementById("progress");
+    var total = 0;
+
+    status.textContent = "Step 1: Clearing Cache API...";
+    if ("caches" in window) {
+        var names = await caches.keys();
+        for (var i = 0; i < names.length; i++) { await caches.delete(names[i]); }
+        total += names.length;
+        progress.textContent = "Deleted " + names.length + " cache store(s)";
+    }
+
+    status.textContent = "Step 2: Unregistering service workers...";
+    if ("serviceWorker" in navigator) {
+        var regs = await navigator.serviceWorker.getRegistrations();
+        for (var j = 0; j < regs.length; j++) { await regs[j].unregister(); }
+        if (regs.length > 0) { progress.textContent = "Removed " + regs.length + " service worker(s)"; }
+    }
+
+    status.textContent = "Step 3: Clearing storage...";
+    var theme = localStorage.getItem("prtask-theme");
+    localStorage.clear();
+    sessionStorage.clear();
+    if (theme) { localStorage.setItem("prtask-theme", theme); }
+
+    status.textContent = "Step 4: Downloading fresh index.html...";
+    await fetch("/index.html", { cache: "no-store" });
+
+    status.textContent = "Step 5: Downloading fresh CSS...";
+    await fetch("/_content/PrTask.SharedUI/css/app.css", { cache: "no-store" });
+
+    status.textContent = "Step 6: Downloading fresh dotnet.js...";
+    var dotnetResponse = await fetch("/_framework/dotnet.js", { cache: "no-store" });
+    var dotnetJs = await dotnetResponse.text();
+
+    status.textContent = "Step 7: Downloading fresh blazor.webassembly.js...";
+    await fetch("/_framework/blazor.webassembly.js", { cache: "no-store" });
+
+    var allWasm = dotnetJs.match(/[a-zA-Z0-9._-]+\.wasm/g) || [];
+    var unique = [];
+    var seen = {};
+    for (var w = 0; w < allWasm.length; w++) {
+        if (!seen[allWasm[w]]) { seen[allWasm[w]] = true; unique.push(allWasm[w]); }
+    }
+
+    status.textContent = "Step 8: Downloading " + unique.length + " WASM assemblies...";
+    for (var k = 0; k < unique.length; k++) {
+        progress.textContent = (k + 1) + " / " + unique.length + ": " + unique[k];
+        try { await fetch("/_framework/" + unique[k], { cache: "no-store" }); } catch (e) {}
+        total++;
+    }
+
+    status.textContent = "Done! Redownloaded " + total + " files.";
+    progress.textContent = "Redirecting to fresh site...";
+
+    setTimeout(function() { window.location.replace("/?t=" + Date.now()); }, 1500);
+})();
+</script>
+</body>
+</html>

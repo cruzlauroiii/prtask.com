@@ -1,0 +1,27 @@
+@page "/toph-info"
+@inject NavigationManager Nav
+
+<div style="width:100%">
+    <header class="toolbar" style="width:100%"></header>
+    <div class="vg_toph_info" style="display:flex;flex-direction:column;width:100%">
+        <label class="midInput" style="width:100%">
+            <input class="mid_edit_text" style="width:100%" type="text" />
+        </label>
+        <label class="tidInput" style="width:100%">
+            <input class="tid_edit_text" style="width:100%" type="text" />
+        </label>
+    </div>
+    <div style="display:flex;flex-direction:column;width:100%">
+        <div class="vg_reconciliation_results" style="display:flex;flex-direction:column;width:100%">
+            <span class="reconciliationResultsTv" style="width:100%"></span>
+            <span class="tv_reconciliation_date" style="width:100%"></span>
+        </div>
+        <span class="send_report_tv" style="width:100%"></span>
+    </div>
+    <div class="loader" style="width:100%"></div>
+</div>
+
+@code {
+    private string Field2131362643 { get; set; } = string.Empty;
+    private string Field2131363192 { get; set; } = string.Empty;
+}

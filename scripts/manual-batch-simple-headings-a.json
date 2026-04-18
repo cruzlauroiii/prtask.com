@@ -1,0 +1,88 @@
+{
+  "es": {
+    "LoginPublicPrsHeading": "Pull requests publicos",
+    "PaymentSeoTitle": "Pagos - PrTask",
+    "LicensesCodeOwnershipHeading": "Derechos de propiedad del codigo",
+    "LicensesPaymentProviderHeading": "Cumplimiento del proveedor de pagos",
+    "LicensesOpenSourceBlazor": "Blazor WebAssembly (Licencia MIT)",
+    "SettingsCardNumberLabel": "Numero de tarjeta",
+    "SettingsNoSubscriptions": "No hay suscripciones activas."
+  },
+  "fil": {
+    "LoginPublicPrsHeading": "Mga pampublikong pull request",
+    "PaymentSeoTitle": "Mga Bayad - PrTask",
+    "LicensesCodeOwnershipHeading": "Mga karapatan sa pagmamay-ari ng code",
+    "LicensesOpenSourceBlazor": "Blazor WebAssembly (Lisensyang MIT)",
+    "SettingsCardNumberLabel": "Numero ng card",
+    "SettingsNoSubscriptions": "Walang aktibong subscription."
+  },
+  "fr": {
+    "LoginPublicPrsHeading": "Pull requests publiques",
+    "PaymentSeoTitle": "Paiements - PrTask",
+    "LicensesCodeOwnershipHeading": "Droits de propriete du code",
+    "LicensesPaymentProviderHeading": "Conformite du fournisseur de paiement",
+    "LicensesOpenSourceBlazor": "Blazor WebAssembly (Licence MIT)",
+    "SettingsCardNumberLabel": "Numero de carte",
+    "SettingsNoSubscriptions": "Aucun abonnement actif."
+  },
+  "hi": {
+    "LicensesCodeOwnershipHeading": "कोड स्वामित्व अधिकार",
+    "LicensesPaymentProviderHeading": "भुगतान प्रदाता अनुपालन"
+  },
+  "id": {
+    "LoginPublicPrsHeading": "Pull request publik",
+    "LicensesCodeOwnershipHeading": "Hak kepemilikan kode",
+    "LicensesPaymentProviderHeading": "Kepatuhan penyedia pembayaran",
+    "LicensesOpenSourceBlazor": "Blazor WebAssembly (Lisensi MIT)",
+    "SettingsCardNumberLabel": "Nomor kartu",
+    "SettingsNoSubscriptions": "Tidak ada langganan aktif."
+  },
+  "it": {
+    "LoginPublicPrsHeading": "Pull request pubbliche",
+    "PaymentSeoTitle": "Pagamenti - PrTask",
+    "LicensesCodeOwnershipHeading": "Diritti di proprieta del codice",
+    "LicensesPaymentProviderHeading": "Conformita del fornitore di pagamenti",
+    "LicensesOpenSourceBlazor": "Blazor WebAssembly (Licenza MIT)",
+    "SettingsCardNumberLabel": "Numero della carta",
+    "SettingsNoSubscriptions": "Nessun abbonamento attivo."
+  },
+  "ja": {
+    "LoginPublicPrsHeading": "公開プルリクエスト",
+    "PaymentSeoTitle": "支払い - PrTask",
+    "LicensesCodeOwnershipHeading": "コード所有権",
+    "LicensesPaymentProviderHeading": "決済プロバイダーのコンプライアンス",
+    "LicensesOpenSourceBlazor": "Blazor WebAssembly（MITライセンス）",
+    "SettingsCardNumberLabel": "カード番号",
+    "SettingsNoSubscriptions": "有効なサブスクリプションはありません。"
+  },
+  "ko": {
+    "LoginPublicPrsHeading": "공개 pull request",
+    "PaymentSeoTitle": "결제 - PrTask",
+    "LicensesCodeOwnershipHeading": "코드 소유권",
+    "LicensesPaymentProviderHeading": "결제 제공업체 규정 준수",
+    "LicensesOpenSourceBlazor": "Blazor WebAssembly (MIT 라이선스)",
+    "SettingsCardNumberLabel": "카드 번호",
+    "SettingsNoSubscriptions": "활성 구독이 없습니다."
+  },
+  "nl": {
+    "LoginPublicPrsHeading": "Openbare pull requests",
+    "PaymentSeoTitle": "Betalingen - PrTask",
+    "LicensesCodeOwnershipHeading": "Rechten op code-eigendom",
+    "LicensesPaymentProviderHeading": "Naleving door betalingsprovider",
+    "LicensesOpenSourceBlazor": "Blazor WebAssembly (MIT-licentie)",
+    "SettingsCardNumberLabel": "Kaartnummer",
+    "SettingsNoSubscriptions": "Geen actieve abonnementen."
+  },
+  "pt": {
+    "SettingsCardNumberLabel": "Numero do cartao",
+    "SettingsNoSubscriptions": "Nenhuma assinatura ativa."
+  },
+  "ru": {
+    "SettingsCardNumberLabel": "Номер карты",
+    "SettingsNoSubscriptions": "Нет активных подписок."
+  },
+  "tr": {
+    "PaymentSeoTitle": "Odemeler - PrTask",
+    "LicensesPaymentProviderHeading": "Odeme saglayicisi uyumlulugu"
+  }
+}

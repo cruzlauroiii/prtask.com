@@ -1,0 +1,196 @@
+@page "/"
+@inject NavigationManager Nav
+@inject HttpClient Http
+
+@if (IsCheckingSession)
+{
+    <div class="splash-screen"><h1>PocketPay</h1><p>Loading...</p></div>
+}
+else if (!IsAuthenticated)
+{
+    <div class="inline-login">
+        <div class="login-form">
+            <h2>PocketPay</h2>
+            <p>Sign in to your merchant account</p>
+            <input type="tel" placeholder="09XX XXX XXXX" @bind="PhoneNumber" @bind:event="oninput" />
+            <input type="password" placeholder="Password" @bind="Password" @bind:event="oninput" />
+            @if (ErrorMessage.Length > 0)
+            {
+                <p class="error">@ErrorMessage</p>
+            }
+            <button @onclick="SubmitLogin" disabled="@IsLoading">@(IsLoading ? "Logging in..." : "Login")</button>
+        </div>
+    </div>
+}
+else
+{
+    <div class="app-shell">
+        <header class="dashboard-header">
+            <h1>PocketPay</h1>
+            <p>@StoreName</p>
+        </header>
+        <div class="card">
+            <p>Welcome, <strong>@UserName</strong></p>
+            <p>@UserRole &mdash; @Region</p>
+        </div>
+        <div class="stats-card">
+            <h3>Today</h3>
+            <p>Sales: @TodaySales.ToString("C2", System.Globalization.CultureInfo.GetCultureInfo("en-PH"))</p>
+            <p>Transactions: @TodayCount</p>
+        </div>
+        <div class="quick-actions">
+            <a class="quick-action-card" href="/sell"><h3>💵</h3><span>New Sale</span></a>
+            <a class="quick-action-card" href="/inventory-list"><h3>📦</h3><span>Inventory</span></a>
+            <a class="quick-action-card" href="/statistics"><h3>📊</h3><span>Statistics</span></a>
+            <a class="quick-action-card" href="/receipt-statuses"><h3>🧾</h3><span>Receipts</span></a>
+            <a class="quick-action-card" href="/company-details"><h3>🏢</h3><span>Company</span></a>
+            <a class="quick-action-card" href="/main-settings"><h3>⚙️</h3><span>Settings</span></a>
+        </div>
+        @if (Products.Count > 0)
+        {
+            <div class="product-preview">
+                <h3>Products</h3>
+                @foreach (var P in Products)
+                {
+                    <div class="product-preview-item"><span>@P.Name</span><span>@P.Price.ToString("F2", System.Globalization.CultureInfo.InvariantCulture)</span></div>
+                }
+            </div>
+        }
+        <div class="device-status">
+            <span class="device-status-dot @(DeviceOnline ? "online" : "offline")"></span>
+            <span>@DeviceName &mdash; @(DeviceOnline ? "Online" : "Offline")</span>
+        </div>
+    </div>
+}
+
+@code {
+    private bool IsCheckingSession { get; set; } = true;
+    private bool IsAuthenticated { get; set; }
+    private bool IsLoading { get; set; }
+    private string PhoneNumber { get; set; } = string.Empty;
+    private string Password { get; set; } = string.Empty;
+    private string ErrorMessage { get; set; } = string.Empty;
+    private string UserName { get; set; } = string.Empty;
+    private string UserRole { get; set; } = string.Empty;
+    private string Region { get; set; } = string.Empty;
+    private string StoreName { get; set; } = string.Empty;
+    private decimal TodaySales { get; set; }
+    private int TodayCount { get; set; }
+    private List<ProductItem> Products { get; set; } = new();
+    private string DeviceName { get; set; } = string.Empty;
+    private bool DeviceOnline { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var SessionResponse = await Http.PostAsJsonAsync("wss-proxy/get_session", new { });
+            var Session = await SessionResponse.Content.ReadFromJsonAsync<SessionResult>();
+            if (Session is not null && Session.Authenticated)
+            {
+                IsAuthenticated = true;
+                await LoadDashboardData();
+            }
+        }
+        catch { }
+        finally { IsCheckingSession = false; }
+    }
+
+    private async Task LoadDashboardData()
+    {
+        try
+        {
+            var CheckResponse = await Http.PostAsJsonAsync("wss-proxy/check-user", new { Method = "check_user" });
+            var CheckResult = await CheckResponse.Content.ReadFromJsonAsync<CheckUserResult>();
+            if (CheckResult is not null && CheckResult.UserExists)
+            {
+                UserName = CheckResult.UserName ?? CheckResult.UserId ?? "Merchant";
+                UserRole = CheckResult.Role ?? "BUSINESS";
+                Region = CheckResult.Region ?? "PH";
+
+                if (CheckResult.UserId is not null)
+                {
+                    var StoresResponse = await Http.GetFromJsonAsync<StoreInfo[]>($"wss-proxy/stores?userId={CheckResult.UserId}");
+                    if (StoresResponse is not null && StoresResponse.Length > 0)
+                    {
+                        StoreName = StoresResponse[0].Name ?? "My Store";
+                    }
+
+                    var DevicesResponse = await Http.GetFromJsonAsync<DeviceInfo[]>($"wss-proxy/devices?userId={CheckResult.UserId}");
+                    if (DevicesResponse is not null && DevicesResponse.Length > 0)
+                    {
+                        DeviceName = DevicesResponse[0].Name ?? "Device";
+                        DeviceOnline = string.Equals(DevicesResponse[0].State, "ONLINE", StringComparison.OrdinalIgnoreCase);
+                    }
+                }
+            }
+        }
+        catch { UserName = "Merchant"; }
+
+        try
+        {
+            var DateFromMs = new DateTimeOffset(DateTime.Today).ToUnixTimeMilliseconds();
+            var DateToMs = new DateTimeOffset(DateTime.Today.AddDays(1)).ToUnixTimeMilliseconds();
+            var StatsPayload = new { Method = "get_stats", Payload = new { DateFrom = DateFromMs, DateTo = DateToMs } };
+            var StatsResponse = await Http.PostAsJsonAsync("wss-proxy/get-stats", StatsPayload);
+            var Stats = await StatsResponse.Content.ReadFromJsonAsync<StatsResult>();
+            if (Stats is not null && Stats.Success)
+            {
+                TodaySales = Stats.TotalSales;
+                TodayCount = Stats.TotalCount;
+            }
+        }
+        catch { }
+
+        try
+        {
+            var ProdPayload = new { Method = "get_products" };
+            var ProdResponse = await Http.PostAsJsonAsync("wss-proxy/get-products", ProdPayload);
+            var ProdResult = await ProdResponse.Content.ReadFromJsonAsync<ProductsResult>();
+            if (ProdResult is not null && ProdResult.Success && ProdResult.Items is not null)
+            {
+                Products = ProdResult.Items.Take(5).ToList();
+            }
+        }
+        catch { }
+    }
+
+    private async Task SubmitLogin()
+    {
+        ErrorMessage = string.Empty;
+        if (PhoneNumber.Length < 10) { ErrorMessage = "Please enter a valid phone number"; return; }
+        if (Password.Length == 0) { ErrorMessage = "Please enter your password"; return; }
+
+        IsLoading = true;
+        try
+        {
+            var LoginPhone = PhoneNumber.Replace(" ", string.Empty).Replace("+", string.Empty).Replace("-", string.Empty);
+            if (LoginPhone.StartsWith("0", StringComparison.Ordinal)) LoginPhone = "63" + LoginPhone[1..];
+            else if (!LoginPhone.StartsWith("63", StringComparison.Ordinal)) LoginPhone = "63" + LoginPhone;
+
+            var Payload = new { Method = "login", Payload = new { Phone = LoginPhone, Password = Password } };
+            var Response = await Http.PostAsJsonAsync("wss-proxy/login", Payload);
+            var Result = await Response.Content.ReadFromJsonAsync<LoginResult>();
+            if (Result is not null && Result.Success)
+            {
+                IsAuthenticated = true;
+                await LoadDashboardData();
+            }
+            else
+            {
+                ErrorMessage = Result?.Error ?? "Login failed";
+            }
+        }
+        catch (Exception Ex) { ErrorMessage = Ex.Message; }
+        finally { IsLoading = false; }
+    }
+
+    private sealed record SessionResult(bool Authenticated, bool HasToken);
+    private sealed record LoginResult(bool Success, string? Token, string? Error, string? ShopUuid);
+    private sealed record CheckUserResult(bool UserExists, string? UserId, string? UserName, string? Role, string? Region);
+    private sealed record StoreInfo(string? Id, string? Name, string? Address);
+    private sealed record DeviceInfo(string? Name, string? State);
+    private sealed record StatsResult(bool Success, decimal TotalSales, int TotalCount, string? Raw, string? Error);
+    private sealed record ProductItem(string Id, string Name, string Code, decimal Price);
+    private sealed record ProductsResult(bool Success, List<ProductItem>? Items, string? Error);
+}

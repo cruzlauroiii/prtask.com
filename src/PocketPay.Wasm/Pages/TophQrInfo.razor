@@ -1,0 +1,24 @@
+@page "/toph-qr-info"
+@inject NavigationManager Nav
+
+<div style="width:100%">
+    <header class="toolbar" style="width:100%"></header>
+    <div class="qrInfoVg" style="display:flex;flex-direction:column;width:100%">
+        <label class="midInput" style="width:100%">
+            <input class="midEt" style="width:100%" type="text" />
+        </label>
+        <label class="tidInput" style="width:100%">
+            <input class="tidEt" style="width:100%" type="text" />
+        </label>
+        <label class="nameInput" style="width:100%">
+            <input class="nameEt" style="width:100%" type="text" />
+        </label>
+    </div>
+    <div class="loader" style="width:100%"></div>
+</div>
+
+@code {
+    private string Field2131362641 { get; set; } = string.Empty;
+    private string Field2131363190 { get; set; } = string.Empty;
+    private string Field2131362678 { get; set; } = string.Empty;
+}

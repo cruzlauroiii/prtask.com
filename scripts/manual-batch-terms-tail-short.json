@@ -1,0 +1,74 @@
+{
+  "es": {
+    "TermsPublicPrDescription": "Todos los pull requests enviados en PrTask son publicos. Varios desarrolladores pueden enviar pull requests para la misma tarea. El cliente revisa todos los envios y elige que pull request aprobar. Solo el PR aprobado genera el pago.",
+    "TermsSeverabilityDescription": "Si alguna disposicion de estos terminos se considera inaplicable, las disposiciones restantes continuaran en pleno vigor y efecto. La disposicion inaplicable se modificara solo en la medida minima necesaria para hacerla exigible.",
+    "TermsUserConductDescription": "Los usuarios aceptan utilizar PrTask de manera legal. Las actividades prohibidas incluyen enviar codigo plagiado, manipular las clasificaciones del leaderboard, crear varias cuentas y participar en actividades de pago fraudulentas. Consulte nuestra Acceptable Use Policy para obtener todos los detalles.",
+    "TermsWaiverDescription": "El hecho de que PrTask no haga valer cualquier derecho o disposicion de estos terminos no constituira una renuncia a dicho derecho o disposicion. Cualquier renuncia debe constar por escrito y estar firmada por un representante autorizado de PrTask."
+  },
+  "fil": {
+    "TermsPublicPrDescription": "Lahat ng pull request na isinusumite sa PrTask ay pampubliko. Maaaring magsumite ang maraming developer ng pull request para sa iisang gawain. Nirerepaso ng kliyente ang lahat ng submission at pinipili kung aling pull request ang aaprubahan. Tanging ang naaprubahang PR lamang ang magreresulta sa bayad.",
+    "TermsSeverabilityDescription": "Kung may anumang probisyon ng mga tuntuning ito na mapag-alamang hindi maipapatupad, ang natitirang mga probisyon ay mananatiling ganap na may bisa at epektibo. Ang hindi maipapatupad na probisyon ay babaguhin lamang sa pinakamababang lawak na kailangan upang ito ay maipapatupad.",
+    "TermsUserConductDescription": "Sumasang-ayon ang mga user na gamitin ang PrTask sa legal na paraan. Kabilang sa mga ipinagbabawal na gawain ang pagsusumite ng kinopyang code, pagmamanipula ng ranggo sa leaderboard, paglikha ng maraming account, at pagsali sa mapanlinlang na aktibidad sa bayad. Tingnan ang aming Acceptable Use Policy para sa buong detalye.",
+    "TermsWaiverDescription": "Ang pagkabigo ng PrTask na ipatupad ang anumang karapatan o probisyon ng mga tuntuning ito ay hindi ituturing na pagwawaksi ng naturang karapatan o probisyon. Ang anumang waiver ay dapat nakasulat at pirmado ng awtorisadong kinatawan ng PrTask."
+  },
+  "fr": {
+    "TermsPublicPrDescription": "Toutes les pull requests soumises sur PrTask sont publiques. Plusieurs developpeurs peuvent soumettre des pull requests pour une meme tache. Le client examine toutes les soumissions et choisit quelle pull request approuver. Seule la PR approuvee donne lieu a un paiement.",
+    "TermsSeverabilityDescription": "Si une disposition de ces termes est jugee inapplicable, les autres dispositions demeureront pleinement en vigueur et continueront de produire leurs effets. La disposition inapplicable sera modifiee uniquement dans la mesure minimale necessaire pour la rendre applicable.",
+    "TermsUserConductDescription": "Les utilisateurs s'engagent a utiliser PrTask de maniere legale. Les activites interdites incluent la soumission de code plagie, la manipulation du classement du leaderboard, la creation de plusieurs comptes et la participation a des activites de paiement frauduleuses. Consultez notre Acceptable Use Policy pour tous les details.",
+    "TermsWaiverDescription": "Le fait que PrTask n'applique pas un droit ou une disposition de ces termes ne constitue pas une renonciation a ce droit ou a cette disposition. Toute renonciation doit etre ecrite et signee par un representant autorise de PrTask."
+  },
+  "hi": {
+    "TermsPublicPrDescription": "PrTask पर submit किए गए सभी pull requests public होते हैं। एक ही task के लिए कई developers pull requests submit कर सकते हैं। Client सभी submissions की review करता है और तय करता है कि किस pull request को approve करना है। केवल approved PR के लिए ही payment होता है।",
+    "TermsSeverabilityDescription": "यदि इन terms की कोई भी provision लागू करने योग्य नहीं पाई जाती है, तो बाकी provisions पूरी तरह प्रभावी बनी रहेंगी। लागू न की जा सकने वाली provision को केवल उतनी ही न्यूनतम सीमा तक बदला जाएगा जितना उसे लागू करने योग्य बनाने के लिए आवश्यक हो।",
+    "TermsUserConductDescription": "Users सहमत हैं कि वे PrTask का उपयोग कानूनी तरीके से करेंगे। प्रतिबंधित गतिविधियों में plagiarized code submit करना, leaderboard rankings में हेरफेर करना, कई accounts बनाना, और fraudulent payment activities में शामिल होना शामिल है। पूरी जानकारी के लिए हमारी Acceptable Use Policy देखें।",
+    "TermsWaiverDescription": "यदि PrTask इन terms के किसी भी right या provision को लागू नहीं करता, तो इसे उस right या provision के waiver के रूप में नहीं माना जाएगा। कोई भी waiver लिखित रूप में होना चाहिए और PrTask के किसी authorized representative द्वारा हस्ताक्षरित होना चाहिए।"
+  },
+  "id": {
+    "TermsPublicPrDescription": "Semua pull request yang dikirimkan di PrTask bersifat publik. Beberapa pengembang dapat mengirimkan pull request untuk tugas yang sama. Klien meninjau semua kiriman dan memilih pull request mana yang akan disetujui. Hanya PR yang disetujui yang menghasilkan pembayaran.",
+    "TermsSeverabilityDescription": "Jika ada ketentuan dalam syarat ini yang dianggap tidak dapat diberlakukan, ketentuan lainnya akan tetap berlaku sepenuhnya dan tetap efektif. Ketentuan yang tidak dapat diberlakukan akan diubah hanya sejauh minimum yang diperlukan agar dapat diberlakukan.",
+    "TermsUserConductDescription": "Pengguna setuju untuk menggunakan PrTask secara sah. Aktivitas yang dilarang mencakup mengirimkan kode hasil plagiarisme, memanipulasi peringkat leaderboard, membuat banyak akun, dan terlibat dalam aktivitas pembayaran yang curang. Lihat Acceptable Use Policy kami untuk rincian lengkap.",
+    "TermsWaiverDescription": "Kegagalan PrTask untuk menegakkan hak atau ketentuan apa pun dalam syarat ini tidak merupakan pengesampingan atas hak atau ketentuan tersebut. Setiap pengesampingan harus dibuat secara tertulis dan ditandatangani oleh perwakilan resmi PrTask."
+  },
+  "it": {
+    "TermsPublicPrDescription": "Tutte le pull request inviate su PrTask sono pubbliche. Piu sviluppatori possono inviare pull request per la stessa attivita. Il cliente esamina tutte le submission e sceglie quale pull request approvare. Solo la PR approvata comporta il pagamento.",
+    "TermsSeverabilityDescription": "Se una disposizione di questi termini viene ritenuta inapplicabile, le restanti disposizioni continueranno ad avere pieno vigore ed effetto. La disposizione inapplicabile sara modificata solo nella misura minima necessaria per renderla applicabile.",
+    "TermsUserConductDescription": "Gli utenti accettano di usare PrTask in modo lecito. Le attivita vietate includono l'invio di codice plagiato, la manipolazione delle classifiche del leaderboard, la creazione di piu account e il coinvolgimento in attivita di pagamento fraudolente. Consulta la nostra Acceptable Use Policy per tutti i dettagli.",
+    "TermsWaiverDescription": "Il fatto che PrTask non faccia valere un diritto o una disposizione di questi termini non costituisce rinuncia a tale diritto o disposizione. Qualsiasi rinuncia deve essere in forma scritta e firmata da un rappresentante autorizzato di PrTask."
+  },
+  "ja": {
+    "TermsPublicPrDescription": "PrTask に提出されるすべての pull request は公開されます。同じ task に対して複数の開発者が pull request を提出できます。クライアントはすべての提出物を確認し、どの pull request を承認するかを選択します。支払いが発生するのは承認された PR のみです。",
+    "TermsSeverabilityDescription": "これらの条項のいずれかの規定が執行不能と判断された場合でも、残りの規定は引き続き完全な効力を有します。執行不能な規定は、それを執行可能にするために必要な最小限の範囲でのみ修正されます。",
+    "TermsUserConductDescription": "ユーザーは PrTask を適法な方法で利用することに同意します。禁止される行為には、盗用したコードの提出、leaderboard の順位操作、複数アカウントの作成、不正な支払い活動への関与が含まれます。詳細については Acceptable Use Policy をご確認ください。",
+    "TermsWaiverDescription": "PrTask がこれらの条項に基づく権利または規定を行使しなかったとしても、その権利または規定を放棄したことにはなりません。いかなる放棄も書面で行われ、PrTask の権限ある代表者が署名している必要があります。"
+  },
+  "ko": {
+    "TermsPublicPrDescription": "PrTask에 제출되는 모든 pull request는 공개됩니다. 동일한 task에 대해 여러 개발자가 pull request를 제출할 수 있습니다. 클라이언트는 모든 제출물을 검토하고 어떤 pull request를 승인할지 선택합니다. 승인된 PR만 결제로 이어집니다.",
+    "TermsSeverabilityDescription": "이 약관의 어떤 조항이 집행할 수 없는 것으로 판단되더라도 나머지 조항은 계속 완전한 효력을 유지합니다. 집행할 수 없는 조항은 집행 가능하도록 만드는 데 필요한 최소한의 범위에서만 수정됩니다.",
+    "TermsUserConductDescription": "사용자는 PrTask를 합법적인 방식으로 사용하기로 동의합니다. 금지되는 활동에는 표절한 코드 제출, leaderboard 순위 조작, 여러 계정 생성, 사기성 결제 활동 참여가 포함됩니다. 자세한 내용은 당사의 Acceptable Use Policy를 참조하십시오.",
+    "TermsWaiverDescription": "PrTask가 이 약관의 어떠한 권리나 조항도 집행하지 않는다고 해서 해당 권리나 조항에 대한 포기로 간주되지는 않습니다. 모든 포기는 서면으로 이루어져야 하며 PrTask의 권한 있는 대표자가 서명해야 합니다."
+  },
+  "nl": {
+    "TermsPublicPrDescription": "Alle pull requests die op PrTask worden ingediend, zijn openbaar. Meerdere ontwikkelaars kunnen pull requests indienen voor dezelfde task. De klant beoordeelt alle inzendingen en kiest welke pull request wordt goedgekeurd. Alleen de goedgekeurde PR leidt tot betaling.",
+    "TermsSeverabilityDescription": "Als een bepaling van deze voorwaarden onafdwingbaar wordt geacht, blijven de overige bepalingen volledig van kracht. De onafdwingbare bepaling wordt slechts aangepast voor zover minimaal noodzakelijk om haar afdwingbaar te maken.",
+    "TermsUserConductDescription": "Gebruikers stemmen ermee in PrTask op rechtmatige wijze te gebruiken. Verboden activiteiten omvatten het indienen van geplagieerde code, het manipuleren van leaderboard-ranglijsten, het aanmaken van meerdere accounts en het deelnemen aan frauduleuze betalingsactiviteiten. Zie onze Acceptable Use Policy voor alle details.",
+    "TermsWaiverDescription": "Het feit dat PrTask enig recht of enige bepaling van deze voorwaarden niet handhaaft, vormt geen afstand van dat recht of die bepaling. Elke afstand moet schriftelijk zijn en zijn ondertekend door een bevoegde vertegenwoordiger van PrTask."
+  },
+  "pt": {
+    "TermsPublicPrDescription": "Todos os pull requests enviados no PrTask sao publicos. Varios desenvolvedores podem enviar pull requests para a mesma tarefa. O cliente analisa todas as submissions e escolhe qual pull request aprovar. Somente a PR aprovada gera pagamento.",
+    "TermsSeverabilityDescription": "Se qualquer disposicao destes termos for considerada inexequivel, as disposicoes restantes continuarao em pleno vigor e efeito. A disposicao inexequivel sera modificada apenas na medida minima necessaria para torna-la exequivel.",
+    "TermsUserConductDescription": "Os usuarios concordam em usar o PrTask de maneira legal. As atividades proibidas incluem enviar codigo plagiado, manipular classificacoes do leaderboard, criar varias contas e participar de atividades de pagamento fraudulentas. Consulte nossa Acceptable Use Policy para todos os detalhes.",
+    "TermsWaiverDescription": "A falha do PrTask em fazer cumprir qualquer direito ou disposicao destes termos nao constituira renuncia a esse direito ou disposicao. Qualquer renuncia deve ser feita por escrito e assinada por um representante autorizado do PrTask."
+  },
+  "ru": {
+    "TermsPublicPrDescription": "Все pull request, отправленные в PrTask, являются публичными. Несколько разработчиков могут отправлять pull request для одной и той же task. Клиент рассматривает все отправленные варианты и выбирает, какой pull request утвердить. Только утвержденный PR приводит к выплате.",
+    "TermsSeverabilityDescription": "Если какое-либо положение этих условий будет признано неисполнимым, остальные положения сохранят полную силу и действие. Неисполнимое положение будет изменено только в минимально необходимой степени, чтобы сделать его исполнимым.",
+    "TermsUserConductDescription": "Пользователи соглашаются использовать PrTask законным образом. Запрещенные действия включают отправку плагиатного кода, манипулирование рейтингом leaderboard, создание нескольких учетных записей и участие в мошеннических платежных действиях. Полные сведения см. в нашей Acceptable Use Policy.",
+    "TermsWaiverDescription": "Неспособность PrTask обеспечить исполнение какого-либо права или положения этих условий не означает отказ от такого права или положения. Любой отказ должен быть оформлен в письменной форме и подписан уполномоченным представителем PrTask."
+  },
+  "tr": {
+    "TermsPublicPrDescription": "PrTask uzerinden gonderilen tum pull request'ler herkese aciktir. Ayni task icin birden fazla gelistirici pull request gonderebilir. Musteri tum gonderimleri inceler ve hangi pull request'i onaylayacagini secer. Yalnizca onaylanan PR odemeye yol acar.",
+    "TermsSeverabilityDescription": "Bu kosullarin herhangi bir hukmu uygulanamaz bulunursa, kalan hukumler tam olarak yururlukte kalmaya devam eder. Uygulanamaz hukum, uygulanabilir hale getirmek icin gereken en asgari olcude degistirilir.",
+    "TermsUserConductDescription": "Kullanicilar PrTask'i hukuka uygun sekilde kullanmayi kabul eder. Yasak faaliyetler arasinda intihal edilmis kod gondermek, leaderboard siralamalarini manipule etmek, birden fazla hesap olusturmak ve sahte odeme faaliyetlerine katilmak yer alir. Tum ayrintilar icin Acceptable Use Policy'mize bakin.",
+    "TermsWaiverDescription": "PrTask'in bu kosullardaki herhangi bir hakki veya hukmu uygulamamasi, o hakkin veya hukmun feragat edildigi anlamina gelmez. Herhangi bir feragat yazili olmali ve PrTask'in yetkili bir temsilcisi tarafindan imzalanmis olmalidir."
+  }
+}

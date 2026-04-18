@@ -1,0 +1,43 @@
+@page "/main-settings"
+@inject NavigationManager Nav
+
+<div style="display:flex;flex-direction:column;width:100%">
+    <div class="loader" style="width:100%"></div>
+    <header class="toolbar" style="width:100%"></header>
+    <div style="width:100%">
+        <div style="display:flex;flex-direction:column;width:100%">
+            <div style="display:flex;flex-direction:row;width:100%">
+                <img src="img/ic_fast_sell.png" alt="ic_fast_sell" />
+                <div class="settings_fast_sell_info" style="display:flex;flex-direction:column">
+                    <span class="fastSellTv"></span>
+                    <span class="fastSellMoreTv"></span>
+                </div>
+                <div></div>
+                <input class="settings_enable_fast_sell" type="checkbox" />
+            </div>
+            <div style="display:flex;flex-direction:column;width:100%">
+                <span class="settings_company" style="width:100%"></span>
+                <span class="settings_geolocation" style="width:100%"></span>
+                <span class="settings_payment_systems" style="width:100%"></span>
+                <span class="settings_receipt_sending" style="width:100%"></span>
+                <span class="settings_design" style="width:100%"></span>
+                <span class="settings_language" style="width:100%"></span>
+                <span class="settings_feedback" style="width:100%"></span>
+                <span class="settings_verify" style="width:100%"></span>
+            </div>
+            <button class="exit_account_btn" style="width:100%"></button>
+            <div style="width:100%"></div>
+            <div style="display:flex;flex-direction:row;width:100%">
+                <span class="version_name_tv"></span>
+                <span class="boarding_news_tv"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+
+    private void OnField2131362337Click()
+    {
+    }
+}

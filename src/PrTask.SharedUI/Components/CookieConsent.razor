@@ -1,0 +1,98 @@
+@using PrTask.Domain.Constants
+@inject IJSRuntime JsRuntime
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> L
+@if (ShowBanner)
+{
+    <div class="cookie-consent">
+        @if (!ShowCustomize)
+        {
+            <p>@L["CookieConsentMessage"] <a href="@RouteConstants.CookiePolicy">@L["CookiePolicyLabel"]</a>.</p>
+            <div class="cookie-consent-actions">
+                <button class="btn btn-primary" @onclick="AcceptAll">@L["CookieAcceptAllButton"]</button>
+                <button class="btn btn-secondary" @onclick="RejectAll">@L["CookieRejectAllButton"]</button>
+                <button class="btn btn-outline" @onclick="ToggleCustomize">@L["CookieCustomizeButton"]</button>
+            </div>
+        }
+        else
+        {
+            <p>@L["CookieManagePreferencesMessage"]</p>
+            <div class="cookie-consent-options">
+                <label>
+                    <input type="checkbox" checked disabled />
+                    <strong>@L["CookieEssentialLabel"]</strong> — @L["CookieEssentialDescription"]
+                </label>
+                <label>
+                    <input type="checkbox" @bind="AnalyticsEnabled" />
+                    <strong>@L["CookieAnalyticsLabel"]</strong> — @L["CookieAnalyticsDescription"]
+                </label>
+                <label>
+                    <input type="checkbox" @bind="MarketingEnabled" />
+                    <strong>@L["CookieMarketingLabel"]</strong> — @L["CookieMarketingDescription"]
+                </label>
+            </div>
+            <div class="cookie-consent-actions">
+                <button class="btn btn-primary" @onclick="SavePreferences">@L["CookieSavePreferencesButton"]</button>
+                <button class="btn btn-secondary" @onclick="ToggleCustomize">@L["CookieBackButtonText"]</button>
+            </div>
+        }
+    </div>
+}
+@code {
+    private bool ShowBanner { get; set; }
+    private bool ShowCustomize { get; set; }
+    private bool AnalyticsEnabled { get; set; }
+    private bool MarketingEnabled { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var Consent = await JsRuntime.InvokeAsync<string>(SeoConstants.JsLocalStorageGetItem, SeoConstants.CookieConsentKey);
+            ShowBanner = string.IsNullOrEmpty(Consent);
+            if (!ShowBanner)
+            {
+                AnalyticsEnabled = await GetStoredPreference(SeoConstants.CookieConsentAnalyticsKey);
+                MarketingEnabled = await GetStoredPreference(SeoConstants.CookieConsentMarketingKey);
+            }
+            StateHasChanged();
+        }
+    }
+
+    private async Task AcceptAll()
+    {
+        AnalyticsEnabled = true;
+        MarketingEnabled = true;
+        await PersistPreferences(SeoConstants.CookieConsentAccepted);
+    }
+
+    private async Task RejectAll()
+    {
+        AnalyticsEnabled = false;
+        MarketingEnabled = false;
+        await PersistPreferences(SeoConstants.CookieConsentRejected);
+    }
+
+    private async Task SavePreferences()
+    {
+        await PersistPreferences(SeoConstants.CookieConsentCustomized);
+    }
+
+    private async Task PersistPreferences(string ConsentValue)
+    {
+        await JsRuntime.InvokeVoidAsync(SeoConstants.JsLocalStorageSetItem, SeoConstants.CookieConsentKey, ConsentValue);
+        await JsRuntime.InvokeVoidAsync(SeoConstants.JsLocalStorageSetItem, SeoConstants.CookieConsentAnalyticsKey, AnalyticsEnabled.ToString().ToLowerInvariant());
+        await JsRuntime.InvokeVoidAsync(SeoConstants.JsLocalStorageSetItem, SeoConstants.CookieConsentMarketingKey, MarketingEnabled.ToString().ToLowerInvariant());
+        ShowBanner = false;
+    }
+
+    private void ToggleCustomize()
+    {
+        ShowCustomize = !ShowCustomize;
+    }
+
+    private async Task<bool> GetStoredPreference(string Key)
+    {
+        var Value = await JsRuntime.InvokeAsync<string>(SeoConstants.JsLocalStorageGetItem, Key);
+        return string.Equals(Value, "true", System.StringComparison.OrdinalIgnoreCase);
+    }
+}

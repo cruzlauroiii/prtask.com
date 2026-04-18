@@ -1,0 +1,10 @@
+{
+  "TaskComplexityMedium": "Medium",
+  "TaskComplexityComplex": "Complex",
+  "TaskComplexityExpert": "Expert",
+  "WorkItemTypeEpic": "Epic",
+  "WorkItemTypeFeature": "Feature",
+  "WorkItemTypeStory": "Story",
+  "WorkItemTypeTask": "Task",
+  "WorkItemTypeBug": "Bug"
+}

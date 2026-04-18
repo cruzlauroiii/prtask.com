@@ -1,0 +1,92 @@
+namespace WillowMaze.Wasm.Decompiled;
+
+
+public readonly class R$color {
+    public static readonly int abc_background_cache_hint_selector_material_dark = 2131099648;
+    public static readonly int abc_background_cache_hint_selector_material_light = 2131099649;
+    public static readonly int abc_btn_colored_borderless_text_material = 2131099650;
+    public static readonly int abc_btn_colored_text_material = 2131099651;
+    public static readonly int abc_color_highlight_material = 2131099652;
+    public static readonly int abc_decor_view_status_guard = 2131099653;
+    public static readonly int abc_decor_view_status_guard_light = 2131099654;
+    public static readonly int abc_hint_foreground_material_dark = 2131099655;
+    public static readonly int abc_hint_foreground_material_light = 2131099656;
+    public static readonly int abc_primary_text_disable_only_material_dark = 2131099657;
+    public static readonly int abc_primary_text_disable_only_material_light = 2131099658;
+    public static readonly int abc_primary_text_material_dark = 2131099659;
+    public static readonly int abc_primary_text_material_light = 2131099660;
+    public static readonly int abc_search_url_text = 2131099661;
+    public static readonly int abc_search_url_text_normal = 2131099662;
+    public static readonly int abc_search_url_text_pressed = 2131099663;
+    public static readonly int abc_search_url_text_selected = 2131099664;
+    public static readonly int abc_secondary_text_material_dark = 2131099665;
+    public static readonly int abc_secondary_text_material_light = 2131099666;
+    public static readonly int abc_tint_btn_checkable = 2131099667;
+    public static readonly int abc_tint_default = 2131099668;
+    public static readonly int abc_tint_edittext = 2131099669;
+    public static readonly int abc_tint_seek_thumb = 2131099670;
+    public static readonly int abc_tint_spinner = 2131099671;
+    public static readonly int abc_tint_switch_track = 2131099672;
+    public static readonly int accent_material_dark = 2131099673;
+    public static readonly int accent_material_light = 2131099674;
+    public static readonly int background_floating_material_dark = 2131099680;
+    public static readonly int background_floating_material_light = 2131099681;
+    public static readonly int background_material_dark = 2131099682;
+    public static readonly int background_material_light = 2131099683;
+    public static readonly int bright_foreground_disabled_material_dark = 2131099687;
+    public static readonly int bright_foreground_disabled_material_light = 2131099688;
+    public static readonly int bright_foreground_inverse_material_dark = 2131099689;
+    public static readonly int bright_foreground_inverse_material_light = 2131099690;
+    public static readonly int bright_foreground_material_dark = 2131099691;
+    public static readonly int bright_foreground_material_light = 2131099692;
+    public static readonly int button_material_dark = 2131099699;
+    public static readonly int button_material_light = 2131099700;
+    public static readonly int dim_foreground_disabled_material_dark = 2131099886;
+    public static readonly int dim_foreground_disabled_material_light = 2131099887;
+    public static readonly int dim_foreground_material_dark = 2131099888;
+    public static readonly int dim_foreground_material_light = 2131099889;
+    public static readonly int error_color_material_dark = 2131099890;
+    public static readonly int error_color_material_light = 2131099891;
+    public static readonly int foreground_material_dark = 2131099892;
+    public static readonly int foreground_material_light = 2131099893;
+    public static readonly int highlighted_text_material_dark = 2131099894;
+    public static readonly int highlighted_text_material_light = 2131099895;
+    public static readonly int material_blue_grey_800 = 2131100337;
+    public static readonly int material_blue_grey_900 = 2131100338;
+    public static readonly int material_blue_grey_950 = 2131100339;
+    public static readonly int material_deep_teal_200 = 2131100341;
+    public static readonly int material_deep_teal_500 = 2131100342;
+    public static readonly int material_grey_100 = 2131100417;
+    public static readonly int material_grey_300 = 2131100418;
+    public static readonly int material_grey_50 = 2131100419;
+    public static readonly int material_grey_600 = 2131100420;
+    public static readonly int material_grey_800 = 2131100421;
+    public static readonly int material_grey_850 = 2131100422;
+    public static readonly int material_grey_900 = 2131100423;
+    public static readonly int primary_dark_material_dark = 2131100560;
+    public static readonly int primary_dark_material_light = 2131100561;
+    public static readonly int primary_material_dark = 2131100562;
+    public static readonly int primary_material_light = 2131100563;
+    public static readonly int primary_text_default_material_dark = 2131100564;
+    public static readonly int primary_text_default_material_light = 2131100565;
+    public static readonly int primary_text_disabled_material_dark = 2131100566;
+    public static readonly int primary_text_disabled_material_light = 2131100567;
+    public static readonly int ripple_material_dark = 2131100570;
+    public static readonly int ripple_material_light = 2131100571;
+    public static readonly int secondary_text_default_material_dark = 2131100572;
+    public static readonly int secondary_text_default_material_light = 2131100573;
+    public static readonly int secondary_text_disabled_material_dark = 2131100574;
+    public static readonly int secondary_text_disabled_material_light = 2131100575;
+    public static readonly int switch_thumb_disabled_material_dark = 2131100578;
+    public static readonly int switch_thumb_disabled_material_light = 2131100579;
+    public static readonly int switch_thumb_material_dark = 2131100580;
+    public static readonly int switch_thumb_material_light = 2131100581;
+    public static readonly int switch_thumb_normal_material_dark = 2131100582;
+    public static readonly int switch_thumb_normal_material_light = 2131100583;
+    public static readonly int tooltip_background_dark = 2131100587;
+    public static readonly int tooltip_background_light = 2131100588;
+
+    private R$color() {
+    }
+}
+

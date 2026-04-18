@@ -1,0 +1,25 @@
+@page "/prs/{PrId}"
+<div class="pr-detail">
+    <h1>Pull Request Details</h1>
+    <div class="pr-header">
+        <span class="pr-status">Open</span>
+        <span class="pr-author">Submitted by developer</span>
+    </div>
+    <section class="diff-section">
+        <h2>Code Changes</h2>
+        <div class="diff-viewer">
+            <div class="diff-file">
+                <div class="diff-file-header">Loading diff...</div>
+                <div class="diff-lines">
+                    <div class="diff-line line-add">+ Added line</div>
+                    <div class="diff-line line-del">- Removed line</div>
+                    <div class="diff-line line-context">  Unchanged line</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pr-actions">
+        <button class="btn btn-primary">Approve and Merge</button>
+        <button class="btn btn-secondary">Request Changes</button>
+    </section>
+</div>

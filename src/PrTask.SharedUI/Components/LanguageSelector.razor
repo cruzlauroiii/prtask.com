@@ -1,0 +1,46 @@
+@using System.Globalization
+@using PrTask.Domain.Constants
+@inject IJSRuntime JsRuntime
+@inject NavigationManager Nav
+<select id="LanguageSelect" name="LanguageSelect" class="nav-action language-select" value="@CurrentLanguage" @onchange="OnLanguageChangedAsync" title="Language" aria-label="Language">
+    <option value="@I18NConstants.LanguageCodeEnglish">@I18NConstants.LabelEnglish</option>
+    <option value="@I18NConstants.LanguageCodeChinese">@I18NConstants.LabelChinese</option>
+    <option value="@I18NConstants.LanguageCodeSpanish">@I18NConstants.LabelSpanish</option>
+    <option value="@I18NConstants.LanguageCodeJapanese">@I18NConstants.LabelJapanese</option>
+    <option value="@I18NConstants.LanguageCodeGerman">@I18NConstants.LabelGerman</option>
+    <option value="@I18NConstants.LanguageCodeFrench">@I18NConstants.LabelFrench</option>
+    <option value="@I18NConstants.LanguageCodePortuguese">@I18NConstants.LabelPortuguese</option>
+    <option value="@I18NConstants.LanguageCodeHindi">@I18NConstants.LabelHindi</option>
+    <option value="@I18NConstants.LanguageCodeKorean">@I18NConstants.LabelKorean</option>
+    <option value="@I18NConstants.LanguageCodeItalian">@I18NConstants.LabelItalian</option>
+    <option value="@I18NConstants.LanguageCodeRussian">@I18NConstants.LabelRussian</option>
+    <option value="@I18NConstants.LanguageCodeIndonesian">@I18NConstants.LabelIndonesian</option>
+    <option value="@I18NConstants.LanguageCodeDutch">@I18NConstants.LabelDutch</option>
+    <option value="@I18NConstants.LanguageCodeTurkish">@I18NConstants.LabelTurkish</option>
+    <option value="@I18NConstants.LanguageCodeArabic">@I18NConstants.LabelArabic</option>
+</select>
+@code {
+    private string CurrentLanguage { get; set; } = I18NConstants.LanguageCodeEnglish;
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var Saved = await JsRuntime.InvokeAsync<string>(I18NConstants.JsGetLanguage);
+            if (!string.IsNullOrEmpty(Saved) && Saved != CurrentLanguage)
+            {
+                CurrentLanguage = Saved;
+                StateHasChanged();
+            }
+        }
+    }
+    private async Task OnLanguageChangedAsync(ChangeEventArgs Args)
+    {
+        var SelectedLanguage = Args.Value?.ToString() ?? I18NConstants.LanguageCodeEnglish;
+        CurrentLanguage = SelectedLanguage;
+        await JsRuntime.InvokeVoidAsync(I18NConstants.JsSetLanguage, SelectedLanguage);
+        var Culture = new CultureInfo(SelectedLanguage);
+        CultureInfo.DefaultThreadCurrentCulture = Culture;
+        CultureInfo.DefaultThreadCurrentUICulture = Culture;
+        Nav.NavigateTo(Nav.Uri, forceLoad: true);
+    }
+}

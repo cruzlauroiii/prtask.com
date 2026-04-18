@@ -1,0 +1,134 @@
+{
+  "es": {
+    "PrivacyDataBreachHeading": "Notificacion de violacion de datos",
+    "PrivacyLgpdHeading": "Brasil LGPD",
+    "PrivacyNzHeading": "Ley de Privacidad de Nueva Zelanda de 2020",
+    "PrivacyPdpaSingaporeHeading": "PDPA de Singapur",
+    "PrivacyPdpaThailandHeading": "PDPA de Tailandia",
+    "PrivacyPipedaHeading": "PIPEDA de Canada",
+    "PrivacyPopiaHeading": "POPIA de Sudafrica",
+    "PrivacyRa10173Heading": "Ley de Privacidad de Datos de Filipinas (RA 10173)",
+    "PrivacyUkGdprHeading": "RGPD del Reino Unido y Ley de Proteccion de Datos de 2018"
+  },
+  "fil": {
+    "PrivacyDataBreachHeading": "Abiso ng paglabag sa datos",
+    "PrivacyLgpdHeading": "LGPD ng Brazil",
+    "PrivacyNzHeading": "Batas sa Privacy ng New Zealand 2020",
+    "PrivacyPdpaSingaporeHeading": "PDPA ng Singapore",
+    "PrivacyPdpaThailandHeading": "PDPA ng Thailand",
+    "PrivacyPipedaHeading": "PIPEDA ng Canada",
+    "PrivacyPopiaHeading": "POPIA ng South Africa",
+    "PrivacyRa10173Heading": "Batas sa Privacy ng Datos ng Pilipinas (RA 10173)",
+    "PrivacyUkGdprHeading": "UK GDPR at Data Protection Act 2018"
+  },
+  "fr": {
+    "PrivacyDataBreachHeading": "Notification de violation de donnees",
+    "PrivacyLgpdHeading": "LGPD du Bresil",
+    "PrivacyNzHeading": "Loi de 2020 sur la protection de la vie privee de Nouvelle-Zelande",
+    "PrivacyPdpaSingaporeHeading": "PDPA de Singapour",
+    "PrivacyPdpaThailandHeading": "PDPA de Thailande",
+    "PrivacyPipedaHeading": "PIPEDA du Canada",
+    "PrivacyPopiaHeading": "POPIA d'Afrique du Sud",
+    "PrivacyRa10173Heading": "Loi philippine sur la confidentialite des donnees (RA 10173)",
+    "PrivacyUkGdprHeading": "RGPD du Royaume-Uni et loi sur la protection des donnees de 2018"
+  },
+  "hi": {
+    "PrivacyDataBreachHeading": "डेटा उल्लंघन सूचना",
+    "PrivacyLgpdHeading": "ब्राजील LGPD",
+    "PrivacyNzHeading": "न्यूज़ीलैंड गोपनीयता अधिनियम 2020",
+    "PrivacyPdpaSingaporeHeading": "सिंगापुर PDPA",
+    "PrivacyPdpaThailandHeading": "थाईलैंड PDPA",
+    "PrivacyPipedaHeading": "कनाडा PIPEDA",
+    "PrivacyPopiaHeading": "दक्षिण अफ्रीका POPIA",
+    "PrivacyRa10173Heading": "फिलीपींस डेटा गोपनीयता अधिनियम (RA 10173)",
+    "PrivacyUkGdprHeading": "यूके GDPR और डेटा संरक्षण अधिनियम 2018"
+  },
+  "id": {
+    "PrivacyDataBreachHeading": "Pemberitahuan pelanggaran data",
+    "PrivacyLgpdHeading": "LGPD Brasil",
+    "PrivacyNzHeading": "Undang-Undang Privasi Selandia Baru 2020",
+    "PrivacyPdpaSingaporeHeading": "PDPA Singapura",
+    "PrivacyPdpaThailandHeading": "PDPA Thailand",
+    "PrivacyPipedaHeading": "PIPEDA Kanada",
+    "PrivacyPopiaHeading": "POPIA Afrika Selatan",
+    "PrivacyRa10173Heading": "Undang-Undang Privasi Data Filipina (RA 10173)",
+    "PrivacyUkGdprHeading": "UK GDPR dan Data Protection Act 2018"
+  },
+  "it": {
+    "PrivacyDataBreachHeading": "Notifica di violazione dei dati",
+    "PrivacyLgpdHeading": "LGPD del Brasile",
+    "PrivacyNzHeading": "Privacy Act 2020 della Nuova Zelanda",
+    "PrivacyPdpaSingaporeHeading": "PDPA di Singapore",
+    "PrivacyPdpaThailandHeading": "PDPA della Thailandia",
+    "PrivacyPipedaHeading": "PIPEDA del Canada",
+    "PrivacyPopiaHeading": "POPIA del Sudafrica",
+    "PrivacyRa10173Heading": "Legge filippina sulla privacy dei dati (RA 10173)",
+    "PrivacyUkGdprHeading": "GDPR del Regno Unito e Data Protection Act 2018"
+  },
+  "ja": {
+    "PrivacyDataBreachHeading": "データ侵害通知",
+    "PrivacyLgpdHeading": "ブラジル LGPD",
+    "PrivacyNzHeading": "ニュージーランド個人情報保護法 2020",
+    "PrivacyPdpaSingaporeHeading": "シンガポール PDPA",
+    "PrivacyPdpaThailandHeading": "タイ PDPA",
+    "PrivacyPipedaHeading": "カナダ PIPEDA",
+    "PrivacyPopiaHeading": "南アフリカ POPIA",
+    "PrivacyRa10173Heading": "フィリピンデータプライバシー法 (RA 10173)",
+    "PrivacyUkGdprHeading": "英国 GDPR および 2018 年データ保護法"
+  },
+  "ko": {
+    "PrivacyDataBreachHeading": "데이터 침해 통지",
+    "PrivacyLgpdHeading": "브라질 LGPD",
+    "PrivacyNzHeading": "뉴질랜드 개인정보 보호법 2020",
+    "PrivacyPdpaSingaporeHeading": "싱가포르 PDPA",
+    "PrivacyPdpaThailandHeading": "태국 PDPA",
+    "PrivacyPipedaHeading": "캐나다 PIPEDA",
+    "PrivacyPopiaHeading": "남아프리카 POPIA",
+    "PrivacyRa10173Heading": "필리핀 데이터 개인정보 보호법 (RA 10173)",
+    "PrivacyUkGdprHeading": "영국 GDPR 및 2018 데이터 보호법"
+  },
+  "nl": {
+    "PrivacyDataBreachHeading": "Melding van datalekken",
+    "PrivacyLgpdHeading": "Brazilie LGPD",
+    "PrivacyNzHeading": "Nieuw-Zeelandse Privacywet 2020",
+    "PrivacyPdpaSingaporeHeading": "Singapore PDPA",
+    "PrivacyPdpaThailandHeading": "Thailand PDPA",
+    "PrivacyPipedaHeading": "Canada PIPEDA",
+    "PrivacyPopiaHeading": "Zuid-Afrika POPIA",
+    "PrivacyRa10173Heading": "Filippijnse wet op gegevensprivacy (RA 10173)",
+    "PrivacyUkGdprHeading": "Britse GDPR en Data Protection Act 2018"
+  },
+  "pt": {
+    "PrivacyDataBreachHeading": "Notificacao de violacao de dados",
+    "PrivacyLgpdHeading": "LGPD do Brasil",
+    "PrivacyNzHeading": "Lei de Privacidade da Nova Zelandia de 2020",
+    "PrivacyPdpaSingaporeHeading": "PDPA de Singapura",
+    "PrivacyPdpaThailandHeading": "PDPA da Tailandia",
+    "PrivacyPipedaHeading": "PIPEDA do Canada",
+    "PrivacyPopiaHeading": "POPIA da Africa do Sul",
+    "PrivacyRa10173Heading": "Lei filipina de privacidade de dados (RA 10173)",
+    "PrivacyUkGdprHeading": "GDPR do Reino Unido e Lei de Protecao de Dados de 2018"
+  },
+  "ru": {
+    "PrivacyDataBreachHeading": "Уведомление об утечке данных",
+    "PrivacyLgpdHeading": "Бразилия LGPD",
+    "PrivacyNzHeading": "Закон Новой Зеландии о конфиденциальности 2020 года",
+    "PrivacyPdpaSingaporeHeading": "PDPA Сингапура",
+    "PrivacyPdpaThailandHeading": "PDPA Таиланда",
+    "PrivacyPipedaHeading": "PIPEDA Канады",
+    "PrivacyPopiaHeading": "POPIA Южной Африки",
+    "PrivacyRa10173Heading": "Филиппинский закон о конфиденциальности данных (RA 10173)",
+    "PrivacyUkGdprHeading": "GDPR Великобритании и Закон о защите данных 2018 года"
+  },
+  "tr": {
+    "PrivacyDataBreachHeading": "Veri ihlali bildirimi",
+    "PrivacyLgpdHeading": "Brezilya LGPD",
+    "PrivacyNzHeading": "Yeni Zelanda Gizlilik Yasasi 2020",
+    "PrivacyPdpaSingaporeHeading": "Singapur PDPA",
+    "PrivacyPdpaThailandHeading": "Tayland PDPA",
+    "PrivacyPipedaHeading": "Kanada PIPEDA",
+    "PrivacyPopiaHeading": "Guney Afrika POPIA",
+    "PrivacyRa10173Heading": "Filipinler Veri Gizliligi Yasasi (RA 10173)",
+    "PrivacyUkGdprHeading": "Birlesik Krallik GDPR ve 2018 Veri Koruma Yasasi"
+  }
+}

@@ -1,0 +1,5 @@
+@page "/profile/{UserId}"
+<PrTask.SharedUI.Pages.ProfilePage UserId="@UserId" />
+@code {
+    [Parameter] public string UserId { get; set; } = string.Empty;
+}

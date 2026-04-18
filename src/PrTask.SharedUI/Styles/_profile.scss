@@ -1,0 +1,83 @@
+@use "variables" as *;
+
+.profile-page {
+  max-width: 800px;
+}
+
+.profile-header {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.profile-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 3px solid $color-primary;
+}
+
+.profile-username {
+  color: $color-text-muted;
+  margin-bottom: 0.75rem;
+}
+
+.profile-badges {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.badge {
+  background: rgba($color-primary, 0.15);
+  color: $color-primary;
+  padding: 0.25rem 0.75rem;
+  border-radius: $radius;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.profile-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.dashboard-section {
+  margin-top: 2rem;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+.task-detail {
+  max-width: 800px;
+}
+
+.task-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.task-description {
+  color: $color-text-muted;
+  line-height: 1.8;
+  margin: 1rem 0;
+}
+
+.task-meta {
+  display: flex;
+  gap: 2rem;
+  color: $color-text-muted;
+  margin: 1.5rem 0;
+}

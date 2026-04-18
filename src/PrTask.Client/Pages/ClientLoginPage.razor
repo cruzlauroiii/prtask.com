@@ -1,0 +1,28 @@
+@page "/login"
+@inject NavigationManager NavigationManager
+<section class="login-section">
+    <h1>Sign In to PrTask</h1>
+    <p>Connect your account to start earning or posting tasks.</p>
+    <div class="login-buttons">
+        <a href="@RouteConstants.ApiAuthGoogle" class="btn btn-primary google-login">Sign in with Google</a>
+        <a href="@RouteConstants.ApiAuthGitHub" class="btn btn-secondary github-login">Sign in with GitHub</a>
+        <a href="@RouteConstants.ApiAuthAzure" class="btn btn-secondary azure-login">Sign in with Microsoft</a>
+        <a href="@RouteConstants.ApiAuthOkta" class="btn btn-secondary okta-login">Sign in with Okta</a>
+    </div>
+    <div class="login-info">
+        <h3>For Developers</h3>
+        <p>Browse tasks, claim work, submit PRs, and get paid.</p>
+        <h3>For Clients</h3>
+        <p>Post tasks with bounties and get quality code delivered.</p>
+    </div>
+</section>
+@code {
+    protected override void OnInitialized()
+    {
+        var CurrentUri = NavigationManager.Uri;
+        if (!CurrentUri.Contains("auto_failed") && !CurrentUri.Contains("error="))
+        {
+            NavigationManager.NavigateTo($"{RouteConstants.ApiAuthGoogle}?auto=true", forceLoad: true);
+        }
+    }
+}

@@ -1,0 +1,125 @@
+@page "/Sprints"
+@using Microsoft.JSInterop
+@using PrTask.Application.Services
+@using PrTask.Domain.Constants
+@using PrTask.Domain.Models
+@inject ISprintService SprintService
+@inject IJSRuntime JsRuntime
+@inject IStringLocalizer<PrTask.SharedUI.Resources.SharedResource> L
+
+<SeoHead Title="@SprintConstants.SeoTitle" Description="@SprintConstants.SeoDescription" />
+
+<div class="sprints-page">
+    <h1>@L["SprintPageHeading"]</h1>
+    <p>@L["SprintSeoDescription"]</p>
+    <button class="btn btn-primary" @onclick="ToggleCreateForm">@L["SprintCreateButton"]</button>
+    @if (ShowCreateForm)
+    {
+        <div class="create-sprint-form">
+            <input type="text" @bind="NewName" placeholder="@SprintConstants.NamePlaceholder" class="form-input" />
+            <textarea @bind="NewGoal" placeholder="@SprintConstants.GoalPlaceholder" class="form-input"></textarea>
+            <label>@L["SprintStartDateLabel"]</label>
+            <input type="date" @bind="NewStartDate" class="form-input" />
+            <label>@L["SprintEndDateLabel"]</label>
+            <input type="date" @bind="NewEndDate" class="form-input" />
+            <button class="btn btn-primary" @onclick="CreateSprintAsync">@L["SprintCreateActionText"]</button>
+        </div>
+    }
+    @if (Sprints is null)
+    {
+        <p>@L["SprintLoadingText"]</p>
+    }
+    else if (Sprints.Count == 0)
+    {
+        <div class="empty-state"><p>@L["SprintEmptyStateText"]</p></div>
+    }
+    else
+    {
+        @foreach (var Sprint in Sprints)
+        {
+            <div class="sprint-card">
+                <div class="sprint-header">
+                    <h3>@Sprint.Name</h3>
+                    <span class="sprint-status status-@Sprint.Status.ToString().ToLowerInvariant()">@Sprint.Status</span>
+                </div>
+                @if (!string.IsNullOrEmpty(Sprint.Goal))
+                {
+                    <p class="sprint-goal">@Sprint.Goal</p>
+                }
+                <div class="sprint-dates">
+                    <span>@Sprint.StartDate.ToString(SprintConstants.DateRangeFormat) - @Sprint.EndDate.ToString(SprintConstants.EndDateFormat)</span>
+                </div>
+                <div class="sprint-actions">
+                    @if (Sprint.Status == SprintStatus.Planned)
+                    {
+                        <button class="btn btn-sm btn-primary" @onclick="() => StartSprintAsync(Sprint)">@L["SprintStartButton"]</button>
+                    }
+                    @if (Sprint.Status == SprintStatus.Active)
+                    {
+                        <button class="btn btn-sm btn-secondary" @onclick="() => CompleteSprintAsync(Sprint)">@L["SprintCompleteButton"]</button>
+                    }
+                    <button class="btn btn-sm btn-danger" @onclick="() => DeleteSprintAsync(Sprint.Id)">@L["SprintDeleteButton"]</button>
+                </div>
+            </div>
+        }
+    }
+    <section class="page-description">
+        <h2>@L["SprintDescriptionHeading"]</h2>
+        <p>@L["SprintDescriptionParagraph1"]</p>
+        <p>@L["SprintDescriptionParagraph2"]</p>
+        <p>@L["SprintDescriptionParagraph3"]</p>
+    </section>
+</div>
+@code {
+    private IReadOnlyList<SprintEntity>? Sprints { get; set; }
+    private bool ShowCreateForm { get; set; }
+    private string NewName { get; set; } = string.Empty;
+    private string? NewGoal { get; set; }
+    private DateTime NewStartDate { get; set; } = DateTime.UtcNow;
+    private DateTime NewEndDate { get; set; } = DateTime.UtcNow.AddDays(14);
+    private string CurrentUserId { get; set; } = string.Empty;
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            CurrentUserId = await JsRuntime.InvokeAsync<string>(JsInteropConstants.GetUserId);
+            Sprints = await SprintService.ListActiveAsync();
+            StateHasChanged();
+        }
+    }
+    private void ToggleCreateForm() => ShowCreateForm = !ShowCreateForm;
+    private async Task CreateSprintAsync()
+    {
+        if (string.IsNullOrWhiteSpace(NewName)) return;
+        await SprintService.CreateAsync(new SprintEntity
+        {
+            Id = Guid.NewGuid().ToString(),
+            Name = NewName,
+            Goal = NewGoal,
+            OwnerId = CurrentUserId,
+            StartDate = NewStartDate,
+            EndDate = NewEndDate
+        });
+        NewName = string.Empty;
+        NewGoal = null;
+        ShowCreateForm = false;
+        Sprints = await SprintService.ListActiveAsync();
+    }
+    private async Task StartSprintAsync(SprintEntity Sprint)
+    {
+        Sprint.Status = SprintStatus.Active;
+        await SprintService.UpdateAsync(Sprint);
+        Sprints = await SprintService.ListActiveAsync();
+    }
+    private async Task CompleteSprintAsync(SprintEntity Sprint)
+    {
+        Sprint.Status = SprintStatus.Completed;
+        await SprintService.UpdateAsync(Sprint);
+        Sprints = await SprintService.ListActiveAsync();
+    }
+    private async Task DeleteSprintAsync(string SprintId)
+    {
+        await SprintService.DeleteAsync(SprintId);
+        Sprints = await SprintService.ListActiveAsync();
+    }
+}

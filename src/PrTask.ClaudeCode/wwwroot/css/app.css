@@ -1,0 +1,21 @@
+html, body { margin: 0; padding: 0; background: #0f172a; color: #e2e8f0; font-family: system-ui, sans-serif; }
+.app-container { display: flex; flex-direction: column; align-items: center; padding: 2rem; min-height: 100vh; }
+h1 { color: #22d3ee; margin-bottom: 1.5rem; font-size: 2rem; }
+.chat-container { width: 100%; max-width: 800px; display: flex; flex-direction: column; gap: 1rem; }
+.chat-messages { flex: 1; overflow-y: auto; max-height: 65vh; padding: 1rem; background: #1e293b; border-radius: 8px; border: 1px solid #334155; }
+.chat-message { padding: 0.75rem; margin-bottom: 0.5rem; border-radius: 6px; }
+.chat-message pre { margin: 0; white-space: pre-wrap; word-break: break-word; }
+.chat-message.user { background: #1e3a5f; text-align: right; }
+.chat-message.assistant { background: #1e293b; border: 1px solid #334155; }
+.chat-message.tool { background: #1a2332; border-left: 3px solid #22d3ee; font-family: monospace; font-size: 0.85rem; }
+.chat-input { display: flex; gap: 0.5rem; }
+.chat-input textarea { flex: 1; background: #1e293b; color: #e2e8f0; border: 1px solid #334155; border-radius: 6px; padding: 0.75rem; font-family: system-ui, sans-serif; font-size: 0.95rem; resize: none; }
+.btn { background: #22d3ee; color: #0f172a; border: none; padding: 0.75rem 2rem; border-radius: 6px; cursor: pointer; font-weight: 700; font-size: 1rem; }
+.btn:hover { background: #06b6d4; }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.api-key-input { background: #1e293b; color: #e2e8f0; border: 1px solid #334155; border-radius: 6px; padding: 0.75rem; width: 100%; max-width: 400px; font-family: monospace; }
+.streaming-indicator { color: #22d3ee; font-style: italic; padding: 0.5rem; }
+.auth-options { display: flex; flex-direction: column; align-items: center; gap: 1rem; padding: 2rem; background: #1e293b; border-radius: 8px; border: 1px solid #334155; }
+.auth-divider { color: #64748b; font-size: 0.9rem; }
+.proxy-input { display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap; justify-content: center; }
+.proxy-input label { color: #94a3b8; font-weight: 600; }
