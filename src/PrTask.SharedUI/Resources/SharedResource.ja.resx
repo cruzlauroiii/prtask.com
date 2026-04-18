@@ -256,7 +256,7 @@
     <value>設定を保存</value>
   </data>
   <data name="CreateTaskBountyLabel" xml:space="preserve">
-    <value>報酬額 (USD)</value>
+    <value>報酬額 (PHP)</value>
   </data>
   <data name="CreateTaskComplexityLabel" xml:space="preserve">
     <value>複雑さレベル</value>
@@ -286,7 +286,7 @@
     <value>タスクタイトル</value>
   </data>
   <data name="CreateTaskValidationBountyTooLow" xml:space="preserve">
-    <value>報酬は最低$100必要です。</value>
+    <value>報酬は最低₱100必要です。</value>
   </data>
   <data name="CreateTaskValidationDescriptionRequired" xml:space="preserve">
     <value>説明は必須です。</value>
@@ -1366,7 +1366,7 @@
     <value>完了タスク</value>
   </data>
   <data name="AboutStatTotalPaid" xml:space="preserve">
-    <value>$2.4M+</value>
+    <value>₱2.4M+</value>
   </data>
   <data name="AboutTermsLinkText" xml:space="preserve">
     <value>利用規約</value>
@@ -1855,7 +1855,7 @@
     <value>出金が届くまでどのくらいかかりますか？</value>
   </data>
   <data name="PricingAdditionalFaq3Answer" xml:space="preserve">
-    <value>はい、クライアントがタスクに設定できる最低報酬は$1です。上限はありません。</value>
+    <value>はい、クライアントがタスクに設定できる最低報酬は₱1です。上限はありません。</value>
   </data>
   <data name="PricingAdditionalFaq3Question" xml:space="preserve">
     <value>最低報酬額はありますか？</value>
@@ -1864,7 +1864,7 @@
     <value>カスタム報酬で無制限のタスクを投稿</value>
   </data>
   <data name="PricingClientFeature2" xml:space="preserve">
-    <value>最低報酬: $1</value>
+    <value>最低報酬: ₱1</value>
   </data>
   <data name="PricingClientFeature3" xml:space="preserve">
     <value>PR承認時に自動支払い</value>
@@ -1921,7 +1921,7 @@
     <value>PRがクライアントに承認されると、支払いが自動的に処理されます。開発者は報酬の100%を受け取ります。</value>
   </data>
   <data name="PricingFaqAnswer3" xml:space="preserve">
-    <value>すべての取引は米ドル(USD)建てです。</value>
+    <value>すべての取引は米ドル(PHP)建てです。</value>
   </data>
   <data name="PricingFaqQuestion1" xml:space="preserve">
     <value>支払いはどのように処理されますか？</value>
@@ -3106,7 +3106,7 @@
     <value>支払いデータ</value>
   </data>
   <data name="PricingDescriptionParagraph1" xml:space="preserve">
-    <value>PrTask は開発者にとって非常に有利な料金モデルを採用しています。開発者は費用を一切支払わず、獲得した報奨金の 100% を受け取ります。サブスクリプション料金や手数料率、開発者の支払いから差し引かれる隠れた費用はありません。クライアントが 500 USD の報奨金でタスクを投稿した場合、タスクを完了しプルリクエストが承認された開発者は 500 USD を全額受け取ります。この価格構造は、コードを書く人が自分の仕事の価値を全て受け取るべきだという私たちの信念を反映しています。</value>
+    <value>PrTask は開発者にとって非常に有利な料金モデルを採用しています。開発者は費用を一切支払わず、獲得した報奨金の 100% を受け取ります。サブスクリプション料金や手数料率、開発者の支払いから差し引かれる隠れた費用はありません。クライアントが 500 PHP の報奨金でタスクを投稿した場合、タスクを完了しプルリクエストが承認された開発者は 500 PHP を全額受け取ります。この価格構造は、コードを書く人が自分の仕事の価値を全て受け取るべきだという私たちの信念を反映しています。</value>
   </data>
   <data name="SprintSeoDescription" xml:space="preserve">
     <value>オープンソースへの貢献をスプリントに整理しましょう。プルリクエストの進捗を追跡し、報奨金を獲得し、開発者のワークフローを管理できます。質の高いコードで収入を得たい開発者にとって最適な副業です。</value>
@@ -3160,7 +3160,7 @@
     <value>PrTask の開発者として、あなたは以下に同意します。ライセンスする権利を有するオリジナルの作業のみを提出すること、pull request の説明に AI 生成コードの使用を開示すること、各タスクのリポジトリのオープンソースライセンス要件に従うこと、報酬を受け取る前に KYC 本人確認を完了すること、盗用・盗難・無許可のコードを提出しないこと、プラットフォーム上のすべてのやり取りで専門的な行動を維持すること、そして税務報告義務を含む、あなたの法域に適用されるすべての法律および規制を遵守すること。</value>
   </data>
   <data name="TermsPaymentDescription" xml:space="preserve">
-    <value>クライアントが pull request を承認すると、登録済みの支払い方法を通じて報奨金額が自動的に請求されます。その後、報奨金の全額が開発者に支払われます。すべての取引は米ドル (USD) で行われます。プラットフォーム手数料はありません。</value>
+    <value>クライアントが pull request を承認すると、登録済みの支払い方法を通じて報奨金額が自動的に請求されます。その後、報奨金の全額が開発者に支払われます。すべての取引は米ドル (PHP) で行われます。プラットフォーム手数料はありません。</value>
   </data>
   <data name="TermsPlatformFeeDescription" xml:space="preserve">
     <value>PrTask は無料のプラットフォームです。クライアントにも開発者にも手数料はかかりません。PR 承認時に開発者は報奨金額の 100% を受け取ります。</value>
@@ -3265,7 +3265,7 @@
     <value>PrTask の決済処理は、世界中のユーザーに対応できるよう複数の方法をサポートしています。クライアントは主要なクレジットカードやデビットカードで支払いを行え、開発者は自分の地域で利用可能な対応出金オプションを通じて報酬を受け取れます。当社の決済基盤は信頼できるプロバイダーによって支えられており、暗号化された処理とコンプライアンス基準によって安全性が維持されています。</value>
   </data>
   <data name="PricingFaqCurrencyAnswer" xml:space="preserve">
-    <value>すべての取引は米ドル (USD) で行われます。</value>
+    <value>すべての取引は米ドル (PHP) で行われます。</value>
   </data>
   <data name="PricingFaqMethodsQuestion" xml:space="preserve">
     <value>どの支払い方法が利用できますか？</value>
@@ -3274,7 +3274,7 @@
     <value>当社の決済プロセッサーを通じて、Visa、Mastercard、American Express、その他主要なクレジットカードおよびデビットカードをご利用いただけます。</value>
   </data>
   <data name="PricingFaqMinBountyAnswer" xml:space="preserve">
-    <value>はい。クライアントがタスクに設定できる最低報奨金は 1 USD です。上限はありません。</value>
+    <value>はい。クライアントがタスクに設定できる最低報奨金は 1 PHP です。上限はありません。</value>
   </data>
   <data name="PricingFaqPayoutTimeQuestion" xml:space="preserve">
     <value>報酬を受け取るまでどのくらいかかりますか？</value>

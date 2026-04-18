@@ -124,7 +124,7 @@
     <value>Countries Represented</value>
   </data>
   <data name="AboutStatPaidToDevelopers" xml:space="preserve">
-    <value>$2.4M+</value>
+    <value>₱2.4M+</value>
   </data>
   <data name="AboutStatPaidToDevelopersLabel" xml:space="preserve">
     <value>Paid to Developers</value>
@@ -250,7 +250,7 @@
     <value>Save Preferences</value>
   </data>
   <data name="CreateTaskBountyLabel" xml:space="preserve">
-    <value>Bounty Amount (USD)</value>
+    <value>Bounty Amount (PHP)</value>
   </data>
   <data name="CreateTaskComplexityLabel" xml:space="preserve">
     <value>Complexity Level</value>
@@ -280,7 +280,7 @@
     <value>Task Title</value>
   </data>
   <data name="CreateTaskValidationBountyTooLow" xml:space="preserve">
-    <value>Bounty must be at least $100.</value>
+    <value>Bounty must be at least ₱100.</value>
   </data>
   <data name="CreateTaskValidationDescriptionRequired" xml:space="preserve">
     <value>Description is required.</value>
@@ -331,7 +331,7 @@
     <value>Total Bounties</value>
   </data>
   <data name="DashboardTotalBountiesValue" xml:space="preserve">
-    <value>$0</value>
+    <value>₱0</value>
   </data>
   <data name="DashboardUsersLabel" xml:space="preserve">
     <value>Users</value>
@@ -469,7 +469,7 @@
     <value>Total Bounty Pool</value>
   </data>
   <data name="HomeTotalBountyPoolValue" xml:space="preserve">
-    <value>$0</value>
+    <value>₱0</value>
   </data>
   <data name="HowItWorksLabel" xml:space="preserve">
     <value>How It Works</value>
@@ -1573,7 +1573,7 @@
     <value>Post unlimited tasks with custom bounties</value>
   </data>
   <data name="PricingClientFeature2" xml:space="preserve">
-    <value>Minimum bounty: $1</value>
+    <value>Minimum bounty: ₱1</value>
   </data>
   <data name="PricingClientFeature3" xml:space="preserve">
     <value>Automatic payment on PR approval</value>
@@ -1612,7 +1612,7 @@
     <value>Contact Us</value>
   </data>
   <data name="PricingFaqCurrencyAnswer" xml:space="preserve">
-    <value>All transactions are in US Dollars (USD).</value>
+    <value>All transactions are in Philippine Pesos (PHP).</value>
   </data>
   <data name="PricingFaqCurrencyQuestion" xml:space="preserve">
     <value>What currencies are supported?</value>
@@ -1624,7 +1624,7 @@
     <value>What payment methods are accepted?</value>
   </data>
   <data name="PricingFaqMinBountyAnswer" xml:space="preserve">
-    <value>Yes, the minimum bounty that a client can set for a task is $1. There is no maximum limit.</value>
+    <value>Yes, the minimum bounty that a client can set for a task is ₱1. There is no maximum limit.</value>
   </data>
   <data name="PricingFaqMinBountyQuestion" xml:space="preserve">
     <value>Is there a minimum bounty amount?</value>
@@ -2176,7 +2176,7 @@
     <value>Terms of Service</value>
   </data>
   <data name="TermsPaymentDescription" xml:space="preserve">
-    <value>When a client approves a pull request, they are automatically charged the bounty amount via their registered payment method. The full bounty is then paid to the developer. All transactions are in US Dollars (USD). There are no platform fees.</value>
+    <value>When a client approves a pull request, they are automatically charged the bounty amount via their registered payment method. The full bounty is then paid to the developer. All transactions are in Philippine Pesos (PHP). There are no platform fees.</value>
   </data>
   <data name="TermsPaymentHeading" xml:space="preserve">
     <value>Payment Terms</value>
@@ -2917,7 +2917,7 @@
     <value>The Tasks page is your gateway to finding paid development work on PrTask. Every task listed here represents a real piece of software work posted by a client, complete with a bounty that you earn upon successful completion. Tasks span a wide range of complexity levels from trivial fixes that take minutes to expert-level implementations requiring deep domain knowledge. You can filter tasks by complexity level to find work that matches your skill set, and sort by newest or highest bounty to prioritize your search.</value>
   </data>
   <data name="TaskListDescriptionParagraph2" xml:space="preserve">
-    <value>Each task card displays essential information at a glance: the complexity rating, bounty amount in USD, a brief description, and relevant tags indicating the technologies involved. Complexity levels include Trivial, Simple, Medium, Complex, and Expert, with bounty amounts typically scaling with difficulty. Tags help you quickly identify tasks that match your technical expertise, whether that is C#, Blazor, Python, JavaScript, DevOps, or any other technology stack. Click on any task to view the full description, requirements, and linked GitHub repository.</value>
+    <value>Each task card displays essential information at a glance: the complexity rating, bounty amount in PHP, a brief description, and relevant tags indicating the technologies involved. Complexity levels include Trivial, Simple, Medium, Complex, and Expert, with bounty amounts typically scaling with difficulty. Tags help you quickly identify tasks that match your technical expertise, whether that is C#, Blazor, Python, JavaScript, DevOps, or any other technology stack. Click on any task to view the full description, requirements, and linked GitHub repository.</value>
   </data>
   <data name="TaskListDescriptionParagraph3" xml:space="preserve">
     <value>Bounty amounts are determined by clients when they create a task and reflect the value of the work being requested. PrTask does not charge developers any fees — the bounty amount you see is the exact amount you receive upon approval. To get started, browse the available tasks, find one that matches your skills, review the requirements in the full task detail page, and submit your solution as a pull request. The entire workflow follows standard GitHub practices, making it accessible to any developer familiar with version control and code review processes.</value>
@@ -2950,7 +2950,7 @@
     <value>PrTask Pricing — Transparent and Developer-Friendly</value>
   </data>
   <data name="PricingDescriptionParagraph1" xml:space="preserve">
-    <value>PrTask operates on a fundamentally developer-friendly pricing model: developers pay nothing and keep 100% of every bounty they earn. There are no subscription fees, no commission percentages, and no hidden charges deducted from developer payouts. When a client posts a task with a $500 bounty, the developer who completes and gets their pull request approved receives the full $500. This pricing structure reflects our belief that the people writing the code should receive the full value of their work.</value>
+    <value>PrTask operates on a fundamentally developer-friendly pricing model: developers pay nothing and keep 100% of every bounty they earn. There are no subscription fees, no commission percentages, and no hidden charges deducted from developer payouts. When a client posts a task with a ₱500 bounty, the developer who completes and gets their pull request approved receives the full ₱500. This pricing structure reflects our belief that the people writing the code should receive the full value of their work.</value>
   </data>
   <data name="PricingDescriptionParagraph2" xml:space="preserve">
     <value>For clients, PrTask is also free to use. Clients pay only the bounty amount they set when creating tasks, plus standard payment processing fees charged by the payment gateway (credit card, bank transfer, or mobile wallet). There are no platform subscription fees, no markup on bounties, and no ongoing costs. Enterprise clients who need custom integrations, dedicated support, or volume task management can contact us for tailored solutions. Our pricing transparency extends to the feature comparison table above, which confirms that all core features are included for both developers and clients at no cost.</value>

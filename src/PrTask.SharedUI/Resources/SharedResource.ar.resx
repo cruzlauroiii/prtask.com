@@ -286,7 +286,7 @@
     <value>عنوان المهمة</value>
   </data>
   <data name="CreateTaskValidationBountyTooLow" xml:space="preserve">
-    <value>يجب أن تكون المكافأة $100 على الأقل.</value>
+    <value>يجب أن تكون المكافأة ₱100 على الأقل.</value>
   </data>
   <data name="CreateTaskValidationDescriptionRequired" xml:space="preserve">
     <value>الوصف مطلوب.</value>
@@ -1105,7 +1105,7 @@
     <value>نشر مهام غير محدودة بمكافآت مخصصة</value>
   </data>
   <data name="PricingClientFeature2" xml:space="preserve">
-    <value>الحد الأدنى للمكافأة: $1</value>
+    <value>الحد الأدنى للمكافأة: ₱1</value>
   </data>
   <data name="PricingClientFeature3" xml:space="preserve">
     <value>دفع تلقائي عند الموافقة على PR</value>
@@ -2773,7 +2773,7 @@
     <value>شروط الخدمة</value>
   </data>
   <data name="TermsPaymentDescription" xml:space="preserve">
-    <value>عند موافقة العميل على طلب السحب، يُخصم منه تلقائيًا مبلغ المكافأة عبر طريقة الدفع المسجَّلة. يُدفع المبلغ الكامل للمكافأة للمطور. جميع المعاملات بالدولار الأمريكي (USD). لا توجد رسوم منصة.</value>
+    <value>عند موافقة العميل على طلب السحب، يُخصم منه تلقائيًا مبلغ المكافأة عبر طريقة الدفع المسجَّلة. يُدفع المبلغ الكامل للمكافأة للمطور. جميع المعاملات بالدولار الأمريكي (PHP). لا توجد رسوم منصة.</value>
   </data>
   <data name="TermsPaymentHeading" xml:space="preserve">
     <value>شروط الدفع</value>
@@ -2836,7 +2836,7 @@
     <value>تواصل معنا</value>
   </data>
   <data name="PricingFaqCurrencyAnswer" xml:space="preserve">
-    <value>جميع المعاملات بالدولار الأمريكي (USD).</value>
+    <value>جميع المعاملات بالدولار الأمريكي (PHP).</value>
   </data>
   <data name="PricingFaqCurrencyQuestion" xml:space="preserve">
     <value>ما العملات المدعومة؟</value>
@@ -3280,7 +3280,7 @@
     <value>مهمة مكتملة</value>
   </data>
   <data name="AboutStatTotalPaid" xml:space="preserve">
-    <value>$2.4M+</value>
+    <value>₱2.4M+</value>
   </data>
   <data name="AboutTermsLinkText" xml:space="preserve">
     <value>شروط الخدمة</value>
@@ -3688,7 +3688,7 @@
     <value>كم يستغرق استلام السحب؟</value>
   </data>
   <data name="PricingAdditionalFaq3Answer" xml:space="preserve">
-    <value>نعم، الحد الأدنى للمكافأة هو $1. لا يوجد حد أقصى.</value>
+    <value>نعم، الحد الأدنى للمكافأة هو ₱1. لا يوجد حد أقصى.</value>
   </data>
   <data name="PricingAdditionalFaq3Question" xml:space="preserve">
     <value>هل يوجد حد أدنى لمبلغ المكافأة؟</value>
@@ -3715,7 +3715,7 @@
     <value>تتم معالجة الدفع تلقائياً عند الموافقة على PR. المطورون يحصلون على 100% من المكافأة.</value>
   </data>
   <data name="PricingFaqAnswer3" xml:space="preserve">
-    <value>جميع المعاملات بالدولار الأمريكي (USD).</value>
+    <value>جميع المعاملات بالدولار الأمريكي (PHP).</value>
   </data>
   <data name="PricingFaqQuestion1" xml:space="preserve">
     <value>كيف تتم معالجة المدفوعات؟</value>

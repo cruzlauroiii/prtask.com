@@ -136,7 +136,7 @@
     <value>प्रतिनिधित्व वाले देश</value>
   </data>
   <data name="AboutStatPaidToDevelopers" xml:space="preserve">
-    <value>$2.4M+</value>
+    <value>₱2.4M+</value>
   </data>
   <data name="AboutStatPaidToDevelopersLabel" xml:space="preserve">
     <value>डेवलपरों को भुगतान</value>
@@ -256,7 +256,7 @@
     <value>प्राथमिकताएँ सहेजें</value>
   </data>
   <data name="CreateTaskBountyLabel" xml:space="preserve">
-    <value>बाउंटी राशि (USD)</value>
+    <value>बाउंटी राशि (PHP)</value>
   </data>
   <data name="CreateTaskComplexityLabel" xml:space="preserve">
     <value>जटिलता स्तर</value>
@@ -286,7 +286,7 @@
     <value>कार्य शीर्षक</value>
   </data>
   <data name="CreateTaskValidationBountyTooLow" xml:space="preserve">
-    <value>बाउंटी कम से कम $100 होनी चाहिए।</value>
+    <value>बाउंटी कम से कम ₱100 होनी चाहिए।</value>
   </data>
   <data name="CreateTaskValidationDescriptionRequired" xml:space="preserve">
     <value>विवरण आवश्यक है।</value>
@@ -940,7 +940,7 @@
     <value>कार्य पृष्ठ PrTask पर सशुल्क विकास कार्य खोजने का आपका प्रवेश द्वार है। यहाँ सूचीबद्ध प्रत्येक कार्य एक क्लाइंट द्वारा पोस्ट किए गए सॉफ्टवेयर कार्य का एक वास्तविक अंश है, जिसमें सफल समापन पर अर्जित बाउंटी शामिल है। कार्य जटिलता स्तरों की एक विस्तृत श्रृंखला में फैले हैं - मिनटों में हल होने वाले तुच्छ सुधारों से लेकर गहन डोमेन ज्ञान की आवश्यकता वाले विशेषज्ञ-स्तरीय कार्यान्वयन तक। आप अपने कौशल सेट से मेल खाने वाला कार्य खोजने के लिए जटिलता स्तर के अनुसार फ़िल्टर कर सकते हैं, और अपनी खोज को प्राथमिकता देने के लिए नवीनतम या सर्वाधिक बाउंटी के अनुसार सॉर्ट कर सकते हैं।</value>
   </data>
   <data name="TaskListDescriptionParagraph2" xml:space="preserve">
-    <value>प्रत्येक कार्य कार्ड एक नज़र में आवश्यक जानकारी प्रदर्शित करता है: जटिलता रेटिंग, USD में बाउंटी राशि, एक संक्षिप्त विवरण, और संबंधित प्रौद्योगिकियों को दर्शाने वाले प्रासंगिक टैग। जटिलता स्तरों में Trivial, Simple, Medium, Complex और Expert शामिल हैं, बाउंटी राशि आमतौर पर कठिनाई के साथ बढ़ती है। टैग आपको उन कार्यों की तुरंत पहचान करने में मदद करते हैं जो आपकी तकनीकी विशेषज्ञता से मेल खाते हैं, चाहे वह C#, Blazor, Python, JavaScript, DevOps या कोई अन्य प्रौद्योगिकी स्टैक हो। पूर्ण विवरण, आवश्यकताएं और लिंक्ड GitHub रिपॉजिटरी देखने के लिए किसी भी कार्य पर क्लिक करें।</value>
+    <value>प्रत्येक कार्य कार्ड एक नज़र में आवश्यक जानकारी प्रदर्शित करता है: जटिलता रेटिंग, PHP में बाउंटी राशि, एक संक्षिप्त विवरण, और संबंधित प्रौद्योगिकियों को दर्शाने वाले प्रासंगिक टैग। जटिलता स्तरों में Trivial, Simple, Medium, Complex और Expert शामिल हैं, बाउंटी राशि आमतौर पर कठिनाई के साथ बढ़ती है। टैग आपको उन कार्यों की तुरंत पहचान करने में मदद करते हैं जो आपकी तकनीकी विशेषज्ञता से मेल खाते हैं, चाहे वह C#, Blazor, Python, JavaScript, DevOps या कोई अन्य प्रौद्योगिकी स्टैक हो। पूर्ण विवरण, आवश्यकताएं और लिंक्ड GitHub रिपॉजिटरी देखने के लिए किसी भी कार्य पर क्लिक करें।</value>
   </data>
   <data name="TaskListDescriptionParagraph3" xml:space="preserve">
     <value>बाउंटी राशि क्लाइंट द्वारा कार्य बनाते समय निर्धारित की जाती है और अनुरोधित कार्य के मूल्य को दर्शाती है। PrTask डेवलपर्स से कोई शुल्क नहीं लेता - आप जो बाउंटी राशि देखते हैं वही स्वीकृति पर आपको प्राप्त होती है। शुरू करने के लिए, उपलब्ध कार्यों को ब्राउज़ करें, अपने कौशल से मेल खाने वाला एक कार्य खोजें, पूर्ण कार्य विवरण पृष्ठ में आवश्यकताओं की समीक्षा करें, और pull request के रूप में अपना समाधान सबमिट करें। पूरा वर्कफ़्लो मानक GitHub प्रथाओं का पालन करता है, जिससे यह संस्करण नियंत्रण और कोड समीक्षा प्रक्रियाओं से परिचित किसी भी डेवलपर के लिए सुलभ है।</value>
@@ -1177,7 +1177,7 @@
     <value>पूर्ण कार्य</value>
   </data>
   <data name="AboutStatTotalPaid" xml:space="preserve">
-    <value>$2.4M+</value>
+    <value>₱2.4M+</value>
   </data>
   <data name="AboutTermsLinkText" xml:space="preserve">
     <value>सेवा की शर्तें</value>
@@ -1663,7 +1663,7 @@
     <value>मुझे अपनी निकासी कब मिलेगी?</value>
   </data>
   <data name="PricingAdditionalFaq3Answer" xml:space="preserve">
-    <value>हाँ, न्यूनतम इनाम $1 है। कोई अधिकतम सीमा नहीं है।</value>
+    <value>हाँ, न्यूनतम इनाम ₱1 है। कोई अधिकतम सीमा नहीं है।</value>
   </data>
   <data name="PricingAdditionalFaq3Question" xml:space="preserve">
     <value>क्या न्यूनतम इनाम राशि है?</value>
@@ -1672,7 +1672,7 @@
     <value>असीमित कस्टम इनाम कार्य पोस्ट करें</value>
   </data>
   <data name="PricingClientFeature2" xml:space="preserve">
-    <value>न्यूनतम इनाम: $1</value>
+    <value>न्यूनतम इनाम: ₱1</value>
   </data>
   <data name="PricingClientFeature3" xml:space="preserve">
     <value>PR स्वीकृति पर स्वचालित भुगतान</value>
@@ -1729,7 +1729,7 @@
     <value>जब आपका PR ग्राहक द्वारा स्वीकृत किया जाता है, भुगतान स्वचालित रूप से संसाधित हो जाता है। डेवलपर्स को अपनी पसंदीदा निकासी विधि से इनाम का 100% मिलता है।</value>
   </data>
   <data name="PricingFaqAnswer3" xml:space="preserve">
-    <value>सभी लेन-देन अमेरिकी डॉलर (USD) में हैं।</value>
+    <value>सभी लेन-देन अमेरिकी डॉलर (PHP) में हैं।</value>
   </data>
   <data name="PricingFaqQuestion1" xml:space="preserve">
     <value>भुगतान कैसे संसाधित होते हैं?</value>
@@ -2323,7 +2323,7 @@
     <value>0</value>
   </data>
   <data name="DashboardTotalBountiesValue" xml:space="preserve">
-    <value>$0</value>
+    <value>₱0</value>
   </data>
   <data name="DashboardUsersValue" xml:space="preserve">
     <value>0</value>
@@ -2503,7 +2503,7 @@
     <value>शून्य</value>
   </data>
   <data name="HomeTotalBountyPoolValue" xml:space="preserve">
-    <value>US$0</value>
+    <value>US₱0</value>
   </data>
   <data name="SettingsCardCvcLabel" xml:space="preserve">
     <value>कार्ड सत्यापन कोड</value>
@@ -3211,7 +3211,7 @@
     <value>यदि कोई क्लाइंट हमारे विवाद समाधान प्रक्रिया का उपयोग करने के बजाय अपने बैंक या क्रेडिट कार्ड जारीकर्ता के माध्यम से chargeback शुरू करता है, तो PrTask जांच लंबित रहने तक क्लाइंट के खाते को निलंबित करने का अधिकार सुरक्षित रखता है। जो क्लाइंट पहले PrTask के माध्यम से समाधान का प्रयास किए बिना chargeback दर्ज करते हैं, उनके खाते स्थायी रूप से समाप्त किए जा सकते हैं। हम सभी क्लाइंट्स को प्रोत्साहित करते हैं कि वे अपनी वित्तीय संस्था से संपर्क करने से पहले हमारे अंतर्निहित विवाद और रिफंड प्रक्रिया का उपयोग करें, क्योंकि chargeback सभी संबंधित पक्षों के लिए शुल्क और देरी पैदा करते हैं। PrTask उपयुक्त कानूनी माध्यमों से धन की वसूली करने का अधिकार सुरक्षित रखता है।</value>
   </data>
   <data name="TermsPaymentDescription" xml:space="preserve">
-    <value>जब कोई क्लाइंट एक pull request को मंजूरी देता है, तो उसके पंजीकृत भुगतान तरीके के माध्यम से स्वतः ही bounty राशि चार्ज की जाती है। उसके बाद पूरी bounty डेवलपर को भुगतान की जाती है। सभी लेनदेन US Dollars (USD) में होते हैं। कोई प्लेटफ़ॉर्म शुल्क नहीं है।</value>
+    <value>जब कोई क्लाइंट एक pull request को मंजूरी देता है, तो उसके पंजीकृत भुगतान तरीके के माध्यम से स्वतः ही bounty राशि चार्ज की जाती है। उसके बाद पूरी bounty डेवलपर को भुगतान की जाती है। सभी लेनदेन US Dollars (PHP) में होते हैं। कोई प्लेटफ़ॉर्म शुल्क नहीं है।</value>
   </data>
   <data name="TermsPlatformFeeDescription" xml:space="preserve">
     <value>PrTask एक मुफ्त प्लेटफ़ॉर्म है। क्लाइंट्स या डेवलपर्स से कोई शुल्क नहीं लिया जाता। PR स्वीकृति पर डेवलपर्स को bounty राशि का 100% मिलता है।</value>
@@ -3316,7 +3316,7 @@
     <value>PrTask पर भुगतान प्रसंस्करण दुनिया भर के उपयोगकर्ताओं के लिए कई तरीकों का समर्थन करता है। क्लाइंट प्रमुख credit और debit cards का उपयोग करके भुगतान कर सकते हैं, और डेवलपर्स अपने क्षेत्र में उपलब्ध समर्थित disbursement options के माध्यम से payout प्राप्त कर सकते हैं। हमारा payment infrastructure विश्वसनीय providers द्वारा संचालित है, और encrypted processing तथा compliance standards के माध्यम से सुरक्षा बनाए रखी जाती है।</value>
   </data>
   <data name="PricingFaqCurrencyAnswer" xml:space="preserve">
-    <value>सभी लेनदेन US Dollars (USD) में होते हैं।</value>
+    <value>सभी लेनदेन US Dollars (PHP) में होते हैं।</value>
   </data>
   <data name="PricingFaqMethodsQuestion" xml:space="preserve">
     <value>कौन-कौन से भुगतान तरीके स्वीकार किए जाते हैं?</value>
@@ -3325,7 +3325,7 @@
     <value>हम अपने payment processor के माध्यम से Visa, Mastercard, American Express और अन्य प्रमुख credit तथा debit cards स्वीकार करते हैं।</value>
   </data>
   <data name="PricingFaqMinBountyAnswer" xml:space="preserve">
-    <value>हाँ, किसी कार्य के लिए क्लाइंट द्वारा निर्धारित की जाने वाली न्यूनतम bounty $1 है। अधिकतम सीमा नहीं है।</value>
+    <value>हाँ, किसी कार्य के लिए क्लाइंट द्वारा निर्धारित की जाने वाली न्यूनतम bounty ₱1 है। अधिकतम सीमा नहीं है।</value>
   </data>
   <data name="PricingFaqPayoutTimeQuestion" xml:space="preserve">
     <value>मेरा payout मिलने में कितना समय लगता है?</value>

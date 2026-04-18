@@ -136,7 +136,7 @@
     <value>Negara Terwakili</value>
   </data>
   <data name="AboutStatPaidToDevelopers" xml:space="preserve">
-    <value>$2.4M+</value>
+    <value>₱2.4M+</value>
   </data>
   <data name="AboutStatPaidToDevelopersLabel" xml:space="preserve">
     <value>Dibayarkan kepada Pengembang</value>
@@ -259,7 +259,7 @@
     <value>Simpan Preferensi</value>
   </data>
   <data name="CreateTaskBountyLabel" xml:space="preserve">
-    <value>Jumlah Hadiah (USD)</value>
+    <value>Jumlah Hadiah (PHP)</value>
   </data>
   <data name="CreateTaskComplexityLabel" xml:space="preserve">
     <value>Tingkat Kompleksitas</value>
@@ -289,7 +289,7 @@
     <value>Judul Tugas</value>
   </data>
   <data name="CreateTaskValidationBountyTooLow" xml:space="preserve">
-    <value>Hadiah harus minimal $100.</value>
+    <value>Hadiah harus minimal ₱100.</value>
   </data>
   <data name="CreateTaskValidationDescriptionRequired" xml:space="preserve">
     <value>Deskripsi wajib diisi.</value>
@@ -964,7 +964,7 @@
     <value>Halaman Tugas adalah gerbang Anda untuk menemukan pekerjaan pengembangan berbayar di PrTask. Setiap tugas yang terdaftar di sini mewakili pekerjaan perangkat lunak nyata yang diposting oleh klien, lengkap dengan bounty yang Anda peroleh setelah berhasil menyelesaikannya.</value>
   </data>
   <data name="TaskListDescriptionParagraph2" xml:space="preserve">
-    <value>Setiap kartu tugas menampilkan informasi penting secara sekilas: peringkat kompleksitas, jumlah bounty dalam USD, deskripsi singkat, dan tag relevan yang menunjukkan teknologi yang terlibat.</value>
+    <value>Setiap kartu tugas menampilkan informasi penting secara sekilas: peringkat kompleksitas, jumlah bounty dalam PHP, deskripsi singkat, dan tag relevan yang menunjukkan teknologi yang terlibat.</value>
   </data>
   <data name="TaskListDescriptionParagraph3" xml:space="preserve">
     <value>Jumlah bounty ditentukan oleh klien saat membuat tugas. PrTask tidak membebankan biaya kepada pengembang - jumlah yang Anda lihat adalah persis yang Anda terima. Telusuri tugas yang tersedia dan kirim solusi Anda sebagai pull request.</value>
@@ -1093,7 +1093,7 @@
     <value>Hadiah penuh kemudian dibayarkan kepada pengembang. </value>
   </data>
   <data name="TermsPlatformFeeDescription" xml:space="preserve">
-    <value>Semua transaksi dalam Dolar AS (USD). </value>
+    <value>Semua transaksi dalam Dolar AS (PHP). </value>
   </data>
   <data name="TermsPlatformFeeHeading" xml:space="preserve">
     <value>Tidak ada biaya platform.</value>
@@ -1216,7 +1216,7 @@
     <value>Tugas Selesai</value>
   </data>
   <data name="AboutStatTotalPaid" xml:space="preserve">
-    <value>$2,4 Jt+</value>
+    <value>₱2,4 Jt+</value>
   </data>
   <data name="AboutTermsLinkText" xml:space="preserve">
     <value>Ketentuan Layanan</value>
@@ -1699,7 +1699,7 @@
     <value>Berapa lama sampai saya menerima penarikan?</value>
   </data>
   <data name="PricingAdditionalFaq3Answer" xml:space="preserve">
-    <value>Ya, hadiah minimum yang dapat ditetapkan klien untuk tugas adalah $1. Tidak ada batas maksimum.</value>
+    <value>Ya, hadiah minimum yang dapat ditetapkan klien untuk tugas adalah ₱1. Tidak ada batas maksimum.</value>
   </data>
   <data name="PricingAdditionalFaq3Question" xml:space="preserve">
     <value>Apakah ada jumlah hadiah minimum?</value>
@@ -1708,7 +1708,7 @@
     <value>Posting tugas tak terbatas dengan hadiah kustom</value>
   </data>
   <data name="PricingClientFeature2" xml:space="preserve">
-    <value>Hadiah minimum: $1</value>
+    <value>Hadiah minimum: ₱1</value>
   </data>
   <data name="PricingClientFeature3" xml:space="preserve">
     <value>Pembayaran otomatis saat persetujuan PR</value>
@@ -1765,7 +1765,7 @@
     <value>Pembayaran diproses otomatis saat PR Anda disetujui. Pengembang menerima 100% hadiah.</value>
   </data>
   <data name="PricingFaqAnswer3" xml:space="preserve">
-    <value>Semua transaksi dalam Dolar AS (USD).</value>
+    <value>Semua transaksi dalam Dolar AS (PHP).</value>
   </data>
   <data name="PricingFaqQuestion1" xml:space="preserve">
     <value>Bagaimana pembayaran diproses?</value>
@@ -2356,7 +2356,7 @@
     <value>0</value>
   </data>
   <data name="DashboardTotalBountiesValue" xml:space="preserve">
-    <value>$0</value>
+    <value>₱0</value>
   </data>
   <data name="DashboardUsersValue" xml:space="preserve">
     <value>0</value>
@@ -2533,7 +2533,7 @@
     <value>Nol</value>
   </data>
   <data name="HomeTotalBountyPoolValue" xml:space="preserve">
-    <value>US$0</value>
+    <value>US₱0</value>
   </data>
   <data name="SettingsCardCvcLabel" xml:space="preserve">
     <value>Kode Verifikasi Kartu</value>
@@ -3190,7 +3190,7 @@
     <value>Data pembayaran</value>
   </data>
   <data name="PricingDescriptionParagraph1" xml:space="preserve">
-    <value>PrTask menggunakan model harga yang sangat ramah developer: developer tidak membayar apa pun dan menerima 100% dari setiap bounty yang mereka peroleh. Tidak ada biaya langganan, tidak ada persentase komisi, dan tidak ada potongan tersembunyi dari payout developer. Saat klien memposting tugas dengan bounty $500, developer yang menyelesaikan dan mendapatkan persetujuan pull request menerima penuh $500. Struktur harga ini mencerminkan keyakinan kami bahwa orang yang menulis kode harus menerima nilai penuh dari kerja mereka.</value>
+    <value>PrTask menggunakan model harga yang sangat ramah developer: developer tidak membayar apa pun dan menerima 100% dari setiap bounty yang mereka peroleh. Tidak ada biaya langganan, tidak ada persentase komisi, dan tidak ada potongan tersembunyi dari payout developer. Saat klien memposting tugas dengan bounty ₱500, developer yang menyelesaikan dan mendapatkan persetujuan pull request menerima penuh ₱500. Struktur harga ini mencerminkan keyakinan kami bahwa orang yang menulis kode harus menerima nilai penuh dari kerja mereka.</value>
   </data>
   <data name="SprintSeoDescription" xml:space="preserve">
     <value>Atur kontribusi open source Anda ke dalam sprint. Lacak progres pull request, dapatkan bounty, dan kelola alur kerja developer Anda. Sampingan yang hebat bagi developer yang ingin menghasilkan uang melalui kode berkualitas.</value>
@@ -3334,7 +3334,7 @@
     <value>Pemrosesan pembayaran di PrTask mendukung berbagai metode untuk mengakomodasi pengguna di seluruh dunia. Klien dapat membayar menggunakan kartu kredit dan debit utama, dan developer dapat menerima payout melalui opsi pencairan yang didukung di wilayah mereka. Infrastruktur pembayaran kami didukung oleh penyedia tepercaya, dan keamanan dijaga melalui pemrosesan terenkripsi serta standar kepatuhan.</value>
   </data>
   <data name="PricingFaqCurrencyAnswer" xml:space="preserve">
-    <value>Semua transaksi menggunakan Dolar Amerika Serikat (USD).</value>
+    <value>Semua transaksi menggunakan Dolar Amerika Serikat (PHP).</value>
   </data>
   <data name="PricingFaqMethodsQuestion" xml:space="preserve">
     <value>Metode pembayaran apa saja yang diterima?</value>
@@ -3343,7 +3343,7 @@
     <value>Kami menerima Visa, Mastercard, American Express, dan kartu kredit serta debit utama lainnya melalui pemroses pembayaran kami.</value>
   </data>
   <data name="PricingFaqMinBountyAnswer" xml:space="preserve">
-    <value>Ya, bounty minimum yang dapat ditetapkan klien untuk sebuah tugas adalah $1. Tidak ada batas maksimum.</value>
+    <value>Ya, bounty minimum yang dapat ditetapkan klien untuk sebuah tugas adalah ₱1. Tidak ada batas maksimum.</value>
   </data>
   <data name="PricingFaqPayoutTimeQuestion" xml:space="preserve">
     <value>Berapa lama sampai saya menerima payout saya?</value>

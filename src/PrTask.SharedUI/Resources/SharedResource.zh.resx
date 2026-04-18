@@ -193,7 +193,7 @@
     <value>已完成任务</value>
   </data>
   <data name="AboutStatTotalPaid" xml:space="preserve">
-    <value>$2.4M+</value>
+    <value>₱2.4M+</value>
   </data>
   <data name="AboutStoryDescription" xml:space="preserve">
     <value>拉取请求任务 源于一个简单的想法：如果每一次代码贡献都附带明确且有保障的悬赏，会怎样？平台诞生于对无偿开源劳动和不透明自由职业平台的不满，旨在打造一个以 拉取请求 为通用工作货币的市场。从第一笔悬赏到数千个已完成的任务，我们已成长为一个由开发者和客户共同组成的全球社区，共同践行透明、以实力为本的协作理念。</value>
@@ -367,7 +367,7 @@
     <value>任务标题</value>
   </data>
   <data name="CreateTaskValidationBountyTooLow" xml:space="preserve">
-    <value>赏金必须至少为 $100。</value>
+    <value>赏金必须至少为 ₱100。</value>
   </data>
   <data name="CreateTaskValidationDescriptionRequired" xml:space="preserve">
     <value>描述为必填项。</value>
@@ -1255,7 +1255,7 @@
     <value>多久能收到提现？</value>
   </data>
   <data name="PricingAdditionalFaq3Answer" xml:space="preserve">
-    <value>是的，客户可以为任务设置的最低赏金为 $1。没有最高限额。</value>
+    <value>是的，客户可以为任务设置的最低赏金为 ₱1。没有最高限额。</value>
   </data>
   <data name="PricingAdditionalFaq3Question" xml:space="preserve">
     <value>有最低赏金金额吗？</value>
@@ -1264,7 +1264,7 @@
     <value>发布无限数量的自定义赏金任务</value>
   </data>
   <data name="PricingClientFeature2" xml:space="preserve">
-    <value>最低赏金：$1</value>
+    <value>最低赏金：₱1</value>
   </data>
   <data name="PricingClientFeature3" xml:space="preserve">
     <value>拉取请求 批准时自动付款</value>

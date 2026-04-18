@@ -136,7 +136,7 @@
     <value>Vertegenwoordigde landen</value>
   </data>
   <data name="AboutStatPaidToDevelopers" xml:space="preserve">
-    <value>US$2,4 mln+</value>
+    <value>US₱2,4 mln+</value>
   </data>
   <data name="AboutStatPaidToDevelopersLabel" xml:space="preserve">
     <value>Uitbetaald aan ontwikkelaars</value>
@@ -289,7 +289,7 @@
     <value>Taaktitel</value>
   </data>
   <data name="CreateTaskValidationBountyTooLow" xml:space="preserve">
-    <value>De beloning moet minimaal $100 zijn.</value>
+    <value>De beloning moet minimaal ₱100 zijn.</value>
   </data>
   <data name="CreateTaskValidationDescriptionRequired" xml:space="preserve">
     <value>Beschrijving is verplicht.</value>
@@ -964,7 +964,7 @@
     <value>De Takenpagina is uw toegangspoort tot betaald ontwikkelwerk op PrTask. Elke hier vermelde taak vertegenwoordigt echt softwarewerk dat door een klant is geplaatst, compleet met een bounty die u verdient bij succesvolle voltooiing.</value>
   </data>
   <data name="TaskListDescriptionParagraph2" xml:space="preserve">
-    <value>Elke taakkaart toont essentieel informatie in een oogopslag: de complexiteitsbeoordeling, het bounty-bedrag in USD, een korte beschrijving en relevante tags die de betrokken technologieen aangeven.</value>
+    <value>Elke taakkaart toont essentieel informatie in een oogopslag: de complexiteitsbeoordeling, het bounty-bedrag in PHP, een korte beschrijving en relevante tags die de betrokken technologieen aangeven.</value>
   </data>
   <data name="TaskListDescriptionParagraph3" xml:space="preserve">
     <value>Bounty-bedragen worden bepaald door klanten bij het aanmaken van een taak. PrTask brengt geen kosten in rekening bij ontwikkelaars - het bedrag dat u ziet is precies wat u ontvangt. Bekijk de beschikbare taken en dien uw oplossing in als pull request.</value>
@@ -1294,7 +1294,7 @@
     <value>Nul</value>
   </data>
   <data name="DashboardTotalBountiesValue" xml:space="preserve">
-    <value>0 USD</value>
+    <value>0 PHP</value>
   </data>
   <data name="DashboardUsersValue" xml:space="preserve">
     <value>Nul</value>
@@ -1315,7 +1315,7 @@
     <value>Nul</value>
   </data>
   <data name="HomeTotalBountyPoolValue" xml:space="preserve">
-    <value>0 USD</value>
+    <value>0 PHP</value>
   </data>
   <data name="SettingsCardCvcLabel" xml:space="preserve">
     <value>CVC (Kaartverificatiecode)</value>
@@ -1390,7 +1390,7 @@
     <value>Voltooide taken</value>
   </data>
   <data name="AboutStatTotalPaid" xml:space="preserve">
-    <value>$2,4M+</value>
+    <value>₱2,4M+</value>
   </data>
   <data name="AboutTermsLinkText" xml:space="preserve">
     <value>Servicevoorwaarden</value>
@@ -1876,7 +1876,7 @@
     <value>Hoe lang duurt het tot ik mijn opname ontvang?</value>
   </data>
   <data name="PricingAdditionalFaq3Answer" xml:space="preserve">
-    <value>Ja, de minimale beloning is $1. Er is geen maximumlimiet.</value>
+    <value>Ja, de minimale beloning is ₱1. Er is geen maximumlimiet.</value>
   </data>
   <data name="PricingAdditionalFaq3Question" xml:space="preserve">
     <value>Is er een minimaal beloningsbedrag?</value>
@@ -1885,7 +1885,7 @@
     <value>Onbeperkt taken plaatsen met aangepaste beloningen</value>
   </data>
   <data name="PricingClientFeature2" xml:space="preserve">
-    <value>Minimale beloning: $1</value>
+    <value>Minimale beloning: ₱1</value>
   </data>
   <data name="PricingClientFeature3" xml:space="preserve">
     <value>Automatische betaling bij PR-goedkeuring</value>
@@ -1942,7 +1942,7 @@
     <value>Betaling wordt automatisch verwerkt wanneer je PR wordt goedgekeurd. Ontwikkelaars ontvangen 100% van de beloning.</value>
   </data>
   <data name="PricingFaqAnswer3" xml:space="preserve">
-    <value>Alle transacties zijn in Amerikaanse dollars (USD).</value>
+    <value>Alle transacties zijn in Amerikaanse dollars (PHP).</value>
   </data>
   <data name="PricingFaqQuestion1" xml:space="preserve">
     <value>Hoe worden betalingen verwerkt?</value>
@@ -3124,7 +3124,7 @@
     <value>Betalingsgegevens</value>
   </data>
   <data name="PricingDescriptionParagraph1" xml:space="preserve">
-    <value>PrTask werkt met een fundamenteel ontwikkelaarsvriendelijk prijsmodel: ontwikkelaars betalen niets en houden 100% van elke bounty die ze verdienen. Er zijn geen abonnementskosten, geen commissiepercentages en geen verborgen kosten die van ontwikkelaarsuitbetalingen worden afgetrokken. Wanneer een klant een taak plaatst met een bounty van 500 USD, ontvangt de ontwikkelaar die de taak afrondt en waarvan de pull request wordt goedgekeurd de volledige 500 USD. Deze prijsstructuur weerspiegelt onze overtuiging dat de mensen die de code schrijven de volledige waarde van hun werk moeten krijgen.</value>
+    <value>PrTask werkt met een fundamenteel ontwikkelaarsvriendelijk prijsmodel: ontwikkelaars betalen niets en houden 100% van elke bounty die ze verdienen. Er zijn geen abonnementskosten, geen commissiepercentages en geen verborgen kosten die van ontwikkelaarsuitbetalingen worden afgetrokken. Wanneer een klant een taak plaatst met een bounty van 500 PHP, ontvangt de ontwikkelaar die de taak afrondt en waarvan de pull request wordt goedgekeurd de volledige 500 PHP. Deze prijsstructuur weerspiegelt onze overtuiging dat de mensen die de code schrijven de volledige waarde van hun werk moeten krijgen.</value>
   </data>
   <data name="SprintSeoDescription" xml:space="preserve">
     <value>Organiseer je open source-bijdragen in sprints. Volg de voortgang van pull requests, verdien bounties en beheer je ontwikkelaarsworkflow. Een prima bijverdienste voor ontwikkelaars die geld willen verdienen met kwalitatieve code.</value>
@@ -3178,7 +3178,7 @@
     <value>Als ontwikkelaar op PrTask gaat u ermee akkoord: alleen origineel werk in te dienen dat u het recht heeft te licentieren; het gebruik van door AI gegenereerde code in uw pull request-beschrijvingen bekend te maken; te voldoen aan de open source-licentievereisten van de repository van elke taak; de KYC-identiteitsverificatie te voltooien voordat u enige uitbetalingen ontvangt; geen geplagieerd, gestolen of niet-gelicentieerd code in te dienen; professioneel gedrag te handhaven in alle platforminteracties; en te voldoen aan alle toepasselijke wetten en voorschriften in uw rechtsgebied, inclusief belastingrapportageverplichtingen.</value>
   </data>
   <data name="TermsPaymentDescription" xml:space="preserve">
-    <value>Wanneer een klant een pull request goedkeurt, wordt het bountybedrag automatisch in rekening gebracht via de geregistreerde betaalmethode. De volledige bounty wordt vervolgens aan de ontwikkelaar uitbetaald. Alle transacties zijn in Amerikaanse dollars (USD). Er zijn geen platformkosten.</value>
+    <value>Wanneer een klant een pull request goedkeurt, wordt het bountybedrag automatisch in rekening gebracht via de geregistreerde betaalmethode. De volledige bounty wordt vervolgens aan de ontwikkelaar uitbetaald. Alle transacties zijn in Amerikaanse dollars (PHP). Er zijn geen platformkosten.</value>
   </data>
   <data name="TermsPlatformFeeDescription" xml:space="preserve">
     <value>PrTask is een gratis platform. Er worden geen kosten in rekening gebracht bij klanten of ontwikkelaars. Ontwikkelaars ontvangen 100% van het bountybedrag na goedkeuring van de PR.</value>
@@ -3283,7 +3283,7 @@
     <value>De betalingsverwerking op PrTask ondersteunt meerdere methoden om gebruikers wereldwijd te bedienen. Klanten kunnen betalen met belangrijke creditcards en betaalkaarten, en ontwikkelaars kunnen uitbetalingen ontvangen via de ondersteunde uitbetalingsopties die in hun regio beschikbaar zijn. Onze betalingsinfrastructuur wordt verzorgd door vertrouwde aanbieders en de beveiliging wordt gehandhaafd via versleutelde verwerking en nalevingsnormen.</value>
   </data>
   <data name="PricingFaqCurrencyAnswer" xml:space="preserve">
-    <value>Alle transacties zijn in Amerikaanse dollars (USD).</value>
+    <value>Alle transacties zijn in Amerikaanse dollars (PHP).</value>
   </data>
   <data name="PricingFaqMethodsQuestion" xml:space="preserve">
     <value>Welke betaalmethoden worden geaccepteerd?</value>
@@ -3292,7 +3292,7 @@
     <value>Wij accepteren Visa, Mastercard, American Express en andere belangrijke creditcards en betaalkaarten via onze betalingsverwerker.</value>
   </data>
   <data name="PricingFaqMinBountyAnswer" xml:space="preserve">
-    <value>Ja, de minimale bounty die een klant voor een taak kan instellen is 1 USD. Er is geen maximumlimiet.</value>
+    <value>Ja, de minimale bounty die een klant voor een taak kan instellen is 1 PHP. Er is geen maximumlimiet.</value>
   </data>
   <data name="PricingFaqPayoutTimeQuestion" xml:space="preserve">
     <value>Hoe lang duurt het voordat ik mijn uitbetaling ontvang?</value>

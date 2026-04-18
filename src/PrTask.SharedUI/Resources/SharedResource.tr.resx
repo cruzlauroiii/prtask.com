@@ -259,7 +259,7 @@
     <value>Tercihleri Kaydet</value>
   </data>
   <data name="CreateTaskBountyLabel" xml:space="preserve">
-    <value>Ödül Tutarı (USD)</value>
+    <value>Ödül Tutarı (PHP)</value>
   </data>
   <data name="CreateTaskComplexityLabel" xml:space="preserve">
     <value>Karmaşıklık Düzeyi</value>
@@ -289,7 +289,7 @@
     <value>Görev Başlığı</value>
   </data>
   <data name="CreateTaskValidationBountyTooLow" xml:space="preserve">
-    <value>Ödül en az $100 olmalıdır.</value>
+    <value>Ödül en az ₱100 olmalıdır.</value>
   </data>
   <data name="CreateTaskValidationDescriptionRequired" xml:space="preserve">
     <value>Açıklama gereklidir.</value>
@@ -964,7 +964,7 @@
     <value>Gorevler sayfasi PrTask uzerinde ucretli gelistirme isi bulmak icin giris noktanizdir. Burada listelenen her gorev bir musteri tarafindan yayinlanan gercek bir yazilim isini temsil eder ve basarili tamamlama uzerine kazanacaginiz bir odul icerir.</value>
   </data>
   <data name="TaskListDescriptionParagraph2" xml:space="preserve">
-    <value>Her gorev karti temel bilgileri bir bakista gosterir: karmasiklik degerlendirmesi, USD cinsinden odul tutari, kisa bir aciklama ve ilgili teknolojileri gosteren etiketler.</value>
+    <value>Her gorev karti temel bilgileri bir bakista gosterir: karmasiklik degerlendirmesi, PHP cinsinden odul tutari, kisa bir aciklama ve ilgili teknolojileri gosteren etiketler.</value>
   </data>
   <data name="TaskListDescriptionParagraph3" xml:space="preserve">
     <value>Odul tutarlari musteriler tarafindan gorev olusturulurken belirlenir. PrTask gelistiricilerden ucret almaz - gordugunuz tutar tam olarak alacaginiz tutardir. Mevcut gorevlere goz atin ve cozumunuzu pull request olarak gonderin.</value>
@@ -1180,7 +1180,7 @@
     <value>Tamamlanan Gorev</value>
   </data>
   <data name="AboutStatTotalPaid" xml:space="preserve">
-    <value>$2,4M+</value>
+    <value>₱2,4M+</value>
   </data>
   <data name="AboutTermsLinkText" xml:space="preserve">
     <value>Hizmet Sartlari</value>
@@ -1663,7 +1663,7 @@
     <value>Cekilimi ne zaman alirim?</value>
   </data>
   <data name="PricingAdditionalFaq3Answer" xml:space="preserve">
-    <value>Evet, minimum odul $1'dir. Maksimum sinir yoktur.</value>
+    <value>Evet, minimum odul ₱1'dir. Maksimum sinir yoktur.</value>
   </data>
   <data name="PricingAdditionalFaq3Question" xml:space="preserve">
     <value>Minimum odul tutari var mi?</value>
@@ -1672,7 +1672,7 @@
     <value>Ozel odullerle sinirsiz gorev yayinlayin</value>
   </data>
   <data name="PricingClientFeature2" xml:space="preserve">
-    <value>Minimum odul: $1</value>
+    <value>Minimum odul: ₱1</value>
   </data>
   <data name="PricingClientFeature3" xml:space="preserve">
     <value>PR onayinda otomatik odeme</value>
@@ -1729,7 +1729,7 @@
     <value>PR'niz onaylandiginda odeme otomatik olarak islenir. Gelistiriciler odulun %100'unu alir.</value>
   </data>
   <data name="PricingFaqAnswer3" xml:space="preserve">
-    <value>Tum islemler ABD Dolari (USD) cinsindendir.</value>
+    <value>Tum islemler ABD Dolari (PHP) cinsindendir.</value>
   </data>
   <data name="PricingFaqQuestion1" xml:space="preserve">
     <value>Odemeler nasil islenir?</value>
@@ -2323,7 +2323,7 @@
     <value>0</value>
   </data>
   <data name="DashboardTotalBountiesValue" xml:space="preserve">
-    <value>$0</value>
+    <value>₱0</value>
   </data>
   <data name="DashboardUsersValue" xml:space="preserve">
     <value>0</value>
@@ -2506,7 +2506,7 @@
     <value>Sıfır</value>
   </data>
   <data name="HomeTotalBountyPoolValue" xml:space="preserve">
-    <value>US$0</value>
+    <value>US₱0</value>
   </data>
   <data name="SettingsCardCvcLabel" xml:space="preserve">
     <value>Kart Doğrulama Kodu</value>
@@ -3181,7 +3181,7 @@
     <value>Odeme verileri</value>
   </data>
   <data name="PricingDescriptionParagraph1" xml:space="preserve">
-    <value>PrTask, temel olarak geliştirici dostu bir fiyatlama modeliyle çalışır: geliştiriciler hiçbir ücret ödemez ve kazandıkları her bounty'nin %100'ünü alırlar. Abonelik ücreti yoktur, komisyon yüzdeleri yoktur ve geliştirici ödemelerinden kesilen gizli ücretler yoktur. Bir müşteri 500 USD bounty ile bir görev yayınladığında, görevi tamamlayıp pull request'i onaylanan geliştirici 500 USD'nin tamamını alır. Bu fiyatlama yapısı, kodu yazan kişilerin emeklerinin tam değerini alması gerektiğine dair inancımızı yansıtır.</value>
+    <value>PrTask, temel olarak geliştirici dostu bir fiyatlama modeliyle çalışır: geliştiriciler hiçbir ücret ödemez ve kazandıkları her bounty'nin %100'ünü alırlar. Abonelik ücreti yoktur, komisyon yüzdeleri yoktur ve geliştirici ödemelerinden kesilen gizli ücretler yoktur. Bir müşteri 500 PHP bounty ile bir görev yayınladığında, görevi tamamlayıp pull request'i onaylanan geliştirici 500 PHP'nin tamamını alır. Bu fiyatlama yapısı, kodu yazan kişilerin emeklerinin tam değerini alması gerektiğine dair inancımızı yansıtır.</value>
   </data>
   <data name="SprintSeoDescription" xml:space="preserve">
     <value>Açık kaynak katkılarınızı sprintler halinde düzenleyin. Pull request ilerlemesini takip edin, bounty kazanın ve geliştirici iş akışınızı yönetin. Kaliteli kodla para kazanmak isteyen geliştiriciler için harika bir ek gelir.</value>
@@ -3235,7 +3235,7 @@
     <value>PrTask'te bir gelistirici olarak: lisanslama hakkina sahip oldugunuz yalnizca ozgun isleri gondermeyi; pull request aciklamalarinizda AI ile uretilen kod kullanimini aciklamayi; her gorevin deposunun open source lisans gereksinimlerine uymayi; herhangi bir odeme almadan once KYC kimlik dogrulamasini tamamlamayi; intihal, calinti veya lisanssiz kod gondermemeyi; platformdaki tum etkilesimlerde profesyonel davranmayi; ve vergi beyan yukumlulukleri dahil olmak uzere kendi yargi bolgenizde uygulanan tum yasa ve duzenlemelere uymayi kabul edersiniz.</value>
   </data>
   <data name="TermsPaymentDescription" xml:space="preserve">
-    <value>Bir musteri bir pull request'i onayladiginda, kayitli odeme yontemi araciligiyla bounty tutari otomatik olarak tahsil edilir. Ardindan bounty'nin tamami gelistiriciye odenir. Tum islemler ABD Dolari (USD) cinsindedir. Platform ucreti yoktur.</value>
+    <value>Bir musteri bir pull request'i onayladiginda, kayitli odeme yontemi araciligiyla bounty tutari otomatik olarak tahsil edilir. Ardindan bounty'nin tamami gelistiriciye odenir. Tum islemler ABD Dolari (PHP) cinsindedir. Platform ucreti yoktur.</value>
   </data>
   <data name="TermsPlatformFeeDescription" xml:space="preserve">
     <value>PrTask ucretsiz bir platformdur. Musterilerden veya gelistiricilerden ucret alinmaz. PR onayinda gelistiriciler bounty tutarinin %100'unu alir.</value>
@@ -3340,7 +3340,7 @@
     <value>PrTask'teki odeme islemleri, dunyadaki kullanicilara uyum saglamak icin birden fazla yontemi destekler. Musteriler baslica kredi ve banka kartlariyla odeme yapabilir, gelistiriciler ise kendi bolgelerinde mevcut desteklenen odeme dagitim secenekleriyle odeme alabilir. Odeme altyapimiz guvenilir saglayicilar tarafindan desteklenir ve guvenlik, sifreli isleme ile uyumluluk standartlari sayesinde korunur.</value>
   </data>
   <data name="PricingFaqCurrencyAnswer" xml:space="preserve">
-    <value>Tum islemler ABD Dolari (USD) cinsindendir.</value>
+    <value>Tum islemler ABD Dolari (PHP) cinsindendir.</value>
   </data>
   <data name="PricingFaqMethodsQuestion" xml:space="preserve">
     <value>Hangi odeme yontemleri kabul ediliyor?</value>
@@ -3349,7 +3349,7 @@
     <value>Odeme isleyicimiz araciligiyla Visa, Mastercard, American Express ve diger baslica kredi ve banka kartlarini kabul ediyoruz.</value>
   </data>
   <data name="PricingFaqMinBountyAnswer" xml:space="preserve">
-    <value>Evet, bir musterinin bir gorev icin belirleyebilecegi minimum bounty 1 USD'dir. Maksimum sinir yoktur.</value>
+    <value>Evet, bir musterinin bir gorev icin belirleyebilecegi minimum bounty 1 PHP'dir. Maksimum sinir yoktur.</value>
   </data>
   <data name="PricingFaqPayoutTimeQuestion" xml:space="preserve">
     <value>Odeme mi almam ne kadar surer?</value>

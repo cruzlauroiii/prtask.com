@@ -145,7 +145,7 @@
     <value>I-save ang mga Kagustuhan</value>
   </data>
   <data name="CreateTaskBountyLabel" xml:space="preserve">
-    <value>Halaga ng Bounty (USD)</value>
+    <value>Halaga ng Bounty (PHP)</value>
   </data>
   <data name="CreateTaskComplexityLabel" xml:space="preserve">
     <value>Antas ng Complexity</value>
@@ -175,7 +175,7 @@
     <value>Pamagat ng Gawain</value>
   </data>
   <data name="CreateTaskValidationBountyTooLow" xml:space="preserve">
-    <value>Ang bounty ay dapat na hindi bababa sa $100.</value>
+    <value>Ang bounty ay dapat na hindi bababa sa ₱100.</value>
   </data>
   <data name="CreateTaskValidationDescriptionRequired" xml:space="preserve">
     <value>Kinakailangan ang deskripsyon.</value>
@@ -922,7 +922,7 @@
     <value>Mga Nakumpletong Gawain</value>
   </data>
   <data name="AboutStatTotalPaid" xml:space="preserve">
-    <value>$2.4M+</value>
+    <value>₱2.4M+</value>
   </data>
   <data name="AboutTermsLinkText" xml:space="preserve">
     <value>Mga Tuntunin ng Serbisyo</value>
@@ -1432,7 +1432,7 @@
     <value>Gaano katagal bago ko matanggap ang aking payout?</value>
   </data>
   <data name="PricingAdditionalFaq3Answer" xml:space="preserve">
-    <value>Oo, ang minimum na bounty na maaaring itakda ng isang kliyente para sa isang gawain ay $1. Walang maximum na limitasyon.</value>
+    <value>Oo, ang minimum na bounty na maaaring itakda ng isang kliyente para sa isang gawain ay ₱1. Walang maximum na limitasyon.</value>
   </data>
   <data name="PricingAdditionalFaq3Question" xml:space="preserve">
     <value>Mayroon bang minimum na halaga ng bounty?</value>
@@ -1441,7 +1441,7 @@
     <value>Mag-post ng walang limitasyong mga gawain na may custom na bounty</value>
   </data>
   <data name="PricingClientFeature2" xml:space="preserve">
-    <value>Minimum na bounty: $1</value>
+    <value>Minimum na bounty: ₱1</value>
   </data>
   <data name="PricingClientFeature3" xml:space="preserve">
     <value>Awtomatikong bayad sa pag-approve ng PR</value>
@@ -1498,7 +1498,7 @@
     <value>Awtomatikong pinoproseso ang bayad kapag na-approve ng kliyente ang iyong PR. Natatanggap ng mga developer ang 100% ng bounty sa pamamagitan ng kanilang gustong paraan ng payout.</value>
   </data>
   <data name="PricingFaqAnswer3" xml:space="preserve">
-    <value>Lahat ng mga transaksyon ay nasa US Dollars (USD).</value>
+    <value>Lahat ng mga transaksyon ay nasa US Dollars (PHP).</value>
   </data>
   <data name="PricingFaqQuestion1" xml:space="preserve">
     <value>Paano pinoproseso ang mga bayad?</value>
@@ -1840,7 +1840,7 @@
     <value>Mga Aktibong Developer</value>
   </data>
   <data name="AboutStatPaidToDevelopers" xml:space="preserve">
-    <value>Mahigit $2.4M</value>
+    <value>Mahigit ₱2.4M</value>
   </data>
   <data name="AboutStatPaidToDevelopersLabel" xml:space="preserve">
     <value>Naibayad sa mga Developer</value>
@@ -1936,7 +1936,7 @@
     <value>Ang PrTask ay walang platform fee sa mga developer - natatanggap nila ang 100 porsyento ng bawat bounty na kinita. Itinatakda ng mga kliyente ang halaga ng bounty sa paggawa ng gawain at ang bayad ay awtomatikong pinoproseso pagkatapos ma-approve ang pull request.</value>
   </data>
   <data name="TaskListDescriptionParagraph2" xml:space="preserve">
-    <value>Ang bawat task card ay nagpapakita ng mahahalagang impormasyon sa isang tingin: ang complexity rating, bounty amount sa USD, maikling paglalarawan, at mga kaugnay na tag na nagpapahiwatig ng mga teknolohiyang kasangkot.</value>
+    <value>Ang bawat task card ay nagpapakita ng mahahalagang impormasyon sa isang tingin: ang complexity rating, bounty amount sa PHP, maikling paglalarawan, at mga kaugnay na tag na nagpapahiwatig ng mga teknolohiyang kasangkot.</value>
   </data>
   <data name="HomeLabel" xml:space="preserve">
     <value>Bahay</value>
@@ -2356,7 +2356,7 @@
     <value>0</value>
   </data>
   <data name="DashboardTotalBountiesValue" xml:space="preserve">
-    <value>$0</value>
+    <value>₱0</value>
   </data>
   <data name="DashboardUsersValue" xml:space="preserve">
     <value>0</value>
@@ -2530,7 +2530,7 @@
     <value>Wala</value>
   </data>
   <data name="HomeTotalBountyPoolValue" xml:space="preserve">
-    <value>US$0</value>
+    <value>US₱0</value>
   </data>
   <data name="SettingsCardCvcLabel" xml:space="preserve">
     <value>Code ng Pag-verify ng Card</value>
@@ -3193,7 +3193,7 @@
     <value>Datos sa pagbabayad</value>
   </data>
   <data name="PricingDescriptionParagraph1" xml:space="preserve">
-    <value>Gumagamit ang PrTask ng modelong pagpepresyo na talagang pabor sa mga developer: walang binabayaran ang mga developer at kanila ang 100% ng bawat bounty na kanilang kinikita. Walang subscription fees, walang porsiyento ng komisyon, at walang mga nakatagong kaltas sa payout ng developer. Kapag ang kliyente ay nag-post ng gawain na may $500 na bounty, ang developer na tumapos at naaprubahan ang kanyang pull request ay tumatanggap ng buong $500. Ipinapakita ng ganitong pagpepresyo ang paniniwala namin na ang mga taong nagsusulat ng code ay dapat makatanggap ng buong halaga ng kanilang trabaho.</value>
+    <value>Gumagamit ang PrTask ng modelong pagpepresyo na talagang pabor sa mga developer: walang binabayaran ang mga developer at kanila ang 100% ng bawat bounty na kanilang kinikita. Walang subscription fees, walang porsiyento ng komisyon, at walang mga nakatagong kaltas sa payout ng developer. Kapag ang kliyente ay nag-post ng gawain na may ₱500 na bounty, ang developer na tumapos at naaprubahan ang kanyang pull request ay tumatanggap ng buong ₱500. Ipinapakita ng ganitong pagpepresyo ang paniniwala namin na ang mga taong nagsusulat ng code ay dapat makatanggap ng buong halaga ng kanilang trabaho.</value>
   </data>
   <data name="RepositoryAddButton" xml:space="preserve">
     <value>Magdagdag ng repository</value>
@@ -3244,7 +3244,7 @@
     <value>Bilang developer sa PrTask, sumasang-ayon kang: magsumite lamang ng orihinal na gawaing may karapatan kang ilisensya; ibunyag ang paggamit ng AI-generated na code sa mga paglalarawan ng iyong pull request; sumunod sa mga kinakailangan ng open source license ng repository ng bawat gawain; tapusin ang KYC identity verification bago makatanggap ng anumang payout; huwag magsumite ng plagiarized, ninakaw, o walang lisensyang code; panatilihin ang propesyonal na asal sa lahat ng interaksyon sa platform; at sumunod sa lahat ng naaangkop na batas at regulasyon sa iyong hurisdiksyon, kabilang ang mga obligasyon sa pag-uulat ng buwis.</value>
   </data>
   <data name="TermsPaymentDescription" xml:space="preserve">
-    <value>Kapag inaprubahan ng kliyente ang isang pull request, awtomatiko siyang sisingilin ng halaga ng bounty sa pamamagitan ng kanyang rehistradong paraan ng pagbabayad. Ang buong bounty ay ibinabayad sa developer. Lahat ng transaksyon ay nasa US Dollars (USD). Walang platform fees.</value>
+    <value>Kapag inaprubahan ng kliyente ang isang pull request, awtomatiko siyang sisingilin ng halaga ng bounty sa pamamagitan ng kanyang rehistradong paraan ng pagbabayad. Ang buong bounty ay ibinabayad sa developer. Lahat ng transaksyon ay nasa US Dollars (PHP). Walang platform fees.</value>
   </data>
   <data name="TermsPlatformFeeDescription" xml:space="preserve">
     <value>Ang PrTask ay libreng platform. Walang bayad na sinisingil sa mga kliyente o developer. Tinatanggap ng mga developer ang 100% ng halaga ng bounty kapag naaprubahan ang PR.</value>
@@ -3349,7 +3349,7 @@
     <value>Sinusuportahan ng pagproseso ng bayad sa PrTask ang maraming paraan upang matugunan ang mga user sa buong mundo. Maaaring magbayad ang mga kliyente gamit ang mga pangunahing credit at debit card, at maaaring tumanggap ng payout ang mga developer sa pamamagitan ng mga suportadong opsyon sa disbursement na available sa kanilang rehiyon. Pinapagana ang aming imprastraktura sa pagbabayad ng mga pinagkakatiwalaang provider, at pinananatili ang seguridad sa pamamagitan ng encrypted na pagproseso at mga pamantayan sa pagsunod.</value>
   </data>
   <data name="PricingFaqCurrencyAnswer" xml:space="preserve">
-    <value>Lahat ng transaksyon ay nasa US Dollars (USD).</value>
+    <value>Lahat ng transaksyon ay nasa US Dollars (PHP).</value>
   </data>
   <data name="PricingFaqMethodsQuestion" xml:space="preserve">
     <value>Anong mga paraan ng pagbabayad ang tinatanggap?</value>
@@ -3358,7 +3358,7 @@
     <value>Tumatanggap kami ng Visa, Mastercard, American Express, at iba pang pangunahing credit at debit card sa pamamagitan ng aming payment processor.</value>
   </data>
   <data name="PricingFaqMinBountyAnswer" xml:space="preserve">
-    <value>Oo, ang minimum na bounty na maaaring itakda ng kliyente para sa isang gawain ay $1. Walang maximum na limitasyon.</value>
+    <value>Oo, ang minimum na bounty na maaaring itakda ng kliyente para sa isang gawain ay ₱1. Walang maximum na limitasyon.</value>
   </data>
   <data name="PricingFaqPayoutTimeQuestion" xml:space="preserve">
     <value>Gaano katagal bago ko matanggap ang aking payout?</value>

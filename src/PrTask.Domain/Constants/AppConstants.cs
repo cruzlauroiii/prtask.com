@@ -22,7 +22,7 @@ public static class AppConstants
     public const string AppBaseUrl = "https://" + AppDomain;
     public const string AppHostSuffix = "." + AppDomain;
     public const string AppRootSelector = "#app";
-    public const string CurrencyCode = "USD";
+    public const string CurrencyCode = "PHP";
     public const string ContentTypeJson = "application/json";
     public const string AuthSchemeBasic = "Basic";
     public const decimal CentsToDollarsDivisor = 100m;

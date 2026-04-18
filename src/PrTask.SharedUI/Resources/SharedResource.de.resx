@@ -178,7 +178,7 @@
     <value>An Entwickler gezahlt</value>
   </data>
   <data name="AboutStatPaidToDevelopers" xml:space="preserve">
-    <value>$2.4M+</value>
+    <value>₱2.4M+</value>
   </data>
   <data name="AboutStatPaidToDevelopersLabel" xml:space="preserve">
     <value>An Entwickler ausgezahlt</value>
@@ -193,7 +193,7 @@
     <value>Abgeschlossene Aufgaben</value>
   </data>
   <data name="AboutStatTotalPaid" xml:space="preserve">
-    <value>$2,4M+</value>
+    <value>₱2,4M+</value>
   </data>
   <data name="AboutStoryDescription" xml:space="preserve">
     <value>PrTask wurde mit einer einfachen Idee gegründet: Was wäre, wenn jeder Code-Beitrag einen klaren, garantierten Bounty hätte? Aus der Frustration über unbezahlte Open-Source-Arbeit und undurchsichtige Freelancing-Plattformen heraus gegründet, schuf PrTask einen Marktplatz, auf dem Pull Requests die universelle Währung der Arbeit sind. Von unserem ersten Bounty bis zu Tausenden abgeschlossener Aufgaben sind wir zu einer globalen Gemeinschaft von Entwicklern und Kunden herangewachsen, die sich einem transparenten, leistungsbasierten Austausch verpflichtet fühlen.</value>
@@ -1330,7 +1330,7 @@
     <value>Die Zahlung wird automatisch verarbeitet, wenn Ihr PR vom Kunden genehmigt wird. Entwickler erhalten 100 % der Prämie über ihre bevorzugte Auszahlungsmethode.</value>
   </data>
   <data name="PricingFaqAnswer3" xml:space="preserve">
-    <value>Alle Transaktionen erfolgen in US-Dollar (USD).</value>
+    <value>Alle Transaktionen erfolgen in US-Dollar (PHP).</value>
   </data>
   <data name="PricingFaqHeading" xml:space="preserve">
     <value>Zahlungsdetails</value>
@@ -1873,7 +1873,7 @@
     <value>Die Aufgabenseite ist Ihr Einstiegspunkt fuer bezahlte Entwicklungsarbeit auf PrTask. Jede hier aufgefuehrte Aufgabe stellt echte Softwarearbeit dar, komplett mit einer Praemie, die Sie bei erfolgreicher Fertigstellung verdienen.</value>
   </data>
   <data name="TaskListDescriptionParagraph2" xml:space="preserve">
-    <value>Jede Aufgabenkarte zeigt wesentliche Informationen auf einen Blick: die Komplexitaetsbewertung, den Praemienbetrag in USD, eine kurze Beschreibung und relevante Tags fuer die verwendeten Technologien.</value>
+    <value>Jede Aufgabenkarte zeigt wesentliche Informationen auf einen Blick: die Komplexitaetsbewertung, den Praemienbetrag in PHP, eine kurze Beschreibung und relevante Tags fuer die verwendeten Technologien.</value>
   </data>
   <data name="TaskListDescriptionParagraph3" xml:space="preserve">
     <value>Praemienbetraege werden von Kunden bei der Aufgabenerstellung festgelegt. PrTask erhebt keine Gebuehren fuer Entwickler - der angezeigte Betrag ist genau das, was Sie erhalten. Durchsuchen Sie die verfuegbaren Aufgaben und reichen Sie Ihre Loesung als Pull Request ein.</value>
@@ -2203,7 +2203,7 @@
     <value>0</value>
   </data>
   <data name="DashboardTotalBountiesValue" xml:space="preserve">
-    <value>$0</value>
+    <value>₱0</value>
   </data>
   <data name="DashboardUsersValue" xml:space="preserve">
     <value>0</value>
@@ -2221,7 +2221,7 @@
     <value>0</value>
   </data>
   <data name="HomeTotalBountyPoolValue" xml:space="preserve">
-    <value>$0</value>
+    <value>₱0</value>
   </data>
   <data name="SettingsCardCvcLabel" xml:space="preserve">
     <value>CVC</value>
@@ -3499,7 +3499,7 @@
     <value>Nutzungsbedingungen</value>
   </data>
   <data name="TermsPaymentDescription" xml:space="preserve">
-    <value>Wenn ein Auftraggeber einen Pull Request genehmigt, wird er automatisch mit dem Prämienbetrag über seine registrierte Zahlungsmethode belastet. Die vollständige Prämie wird dann an den Entwickler ausgezahlt. Alle Transaktionen erfolgen in US-Dollar (USD). Es fallen keine Plattformgebühren an.</value>
+    <value>Wenn ein Auftraggeber einen Pull Request genehmigt, wird er automatisch mit dem Prämienbetrag über seine registrierte Zahlungsmethode belastet. Die vollständige Prämie wird dann an den Entwickler ausgezahlt. Alle Transaktionen erfolgen in US-Dollar (PHP). Es fallen keine Plattformgebühren an.</value>
   </data>
   <data name="TermsPaymentHeading" xml:space="preserve">
     <value>Zahlungsbedingungen</value>
@@ -3562,7 +3562,7 @@
     <value>Kontaktieren Sie uns</value>
   </data>
   <data name="PricingFaqCurrencyAnswer" xml:space="preserve">
-    <value>Alle Transaktionen erfolgen in US-Dollar (USD).</value>
+    <value>Alle Transaktionen erfolgen in US-Dollar (PHP).</value>
   </data>
   <data name="PricingFaqCurrencyQuestion" xml:space="preserve">
     <value>Welche Währungen werden unterstützt?</value>

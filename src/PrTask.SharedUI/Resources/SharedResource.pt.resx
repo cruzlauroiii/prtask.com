@@ -136,7 +136,7 @@
     <value>Paises representados</value>
   </data>
   <data name="AboutStatPaidToDevelopers" xml:space="preserve">
-    <value>US$2,4 mi+</value>
+    <value>US₱2,4 mi+</value>
   </data>
   <data name="AboutStatPaidToDevelopersLabel" xml:space="preserve">
     <value>Pago aos desenvolvedores</value>
@@ -289,7 +289,7 @@
     <value>Título da tarefa</value>
   </data>
   <data name="CreateTaskValidationBountyTooLow" xml:space="preserve">
-    <value>A recompensa deve ser de pelo menos $100.</value>
+    <value>A recompensa deve ser de pelo menos ₱100.</value>
   </data>
   <data name="CreateTaskValidationDescriptionRequired" xml:space="preserve">
     <value>A descrição é obrigatória.</value>
@@ -964,7 +964,7 @@
     <value>A pagina de Tarefas e a sua porta de entrada para encontrar trabalho de desenvolvimento remunerado no PrTask. Cada tarefa listada aqui representa um trabalho real de software publicado por um cliente, completo com uma recompensa que voce ganha ao concluir com sucesso.</value>
   </data>
   <data name="TaskListDescriptionParagraph2" xml:space="preserve">
-    <value>Cada cartao de tarefa exibe informacoes essenciais em um relance: a classificacao de complexidade, o valor da recompensa em USD, uma breve descricao e tags relevantes indicando as tecnologias envolvidas.</value>
+    <value>Cada cartao de tarefa exibe informacoes essenciais em um relance: a classificacao de complexidade, o valor da recompensa em PHP, uma breve descricao e tags relevantes indicando as tecnologias envolvidas.</value>
   </data>
   <data name="TaskListDescriptionParagraph3" xml:space="preserve">
     <value>Os valores de recompensa sao determinados pelos clientes ao criar uma tarefa. O PrTask nao cobra taxas dos desenvolvedores - o valor que voce ve e exatamente o que voce recebe. Navegue pelas tarefas disponiveis e envie sua solucao como um pull request.</value>
@@ -1294,7 +1294,7 @@
     <value>Zero</value>
   </data>
   <data name="DashboardTotalBountiesValue" xml:space="preserve">
-    <value>0 USD</value>
+    <value>0 PHP</value>
   </data>
   <data name="DashboardUsersValue" xml:space="preserve">
     <value>Zero</value>
@@ -1315,7 +1315,7 @@
     <value>Zero</value>
   </data>
   <data name="HomeTotalBountyPoolValue" xml:space="preserve">
-    <value>0 USD</value>
+    <value>0 PHP</value>
   </data>
   <data name="SettingsCardCvcLabel" xml:space="preserve">
     <value>CVC (Código de verificação do cartão)</value>
@@ -1390,7 +1390,7 @@
     <value>Tarefas concluidas</value>
   </data>
   <data name="AboutStatTotalPaid" xml:space="preserve">
-    <value>US$2,4M+</value>
+    <value>US₱2,4M+</value>
   </data>
   <data name="AboutTermsLinkText" xml:space="preserve">
     <value>Termos de servico</value>
@@ -1876,7 +1876,7 @@
     <value>Quanto tempo ate receber meu saque?</value>
   </data>
   <data name="PricingAdditionalFaq3Answer" xml:space="preserve">
-    <value>Sim, a recompensa minima e de $1. Nao ha limite maximo.</value>
+    <value>Sim, a recompensa minima e de ₱1. Nao ha limite maximo.</value>
   </data>
   <data name="PricingAdditionalFaq3Question" xml:space="preserve">
     <value>Ha um valor minimo de recompensa?</value>
@@ -1885,7 +1885,7 @@
     <value>Publicar tarefas ilimitadas com recompensas personalizadas</value>
   </data>
   <data name="PricingClientFeature2" xml:space="preserve">
-    <value>Recompensa minima: $1</value>
+    <value>Recompensa minima: ₱1</value>
   </data>
   <data name="PricingClientFeature3" xml:space="preserve">
     <value>Pagamento automatico na aprovacao do PR</value>
@@ -1942,7 +1942,7 @@
     <value>O pagamento e processado automaticamente quando sua PR e aprovada. Desenvolvedores recebem 100% da recompensa.</value>
   </data>
   <data name="PricingFaqAnswer3" xml:space="preserve">
-    <value>Todas as transacoes sao em dolares americanos (USD).</value>
+    <value>Todas as transacoes sao em dolares americanos (PHP).</value>
   </data>
   <data name="PricingFaqQuestion1" xml:space="preserve">
     <value>Como os pagamentos sao processados?</value>
@@ -3127,7 +3127,7 @@
     <value>Dados de pagamento</value>
   </data>
   <data name="PricingDescriptionParagraph1" xml:space="preserve">
-    <value>A PrTask opera com um modelo de precos claramente favoravel aos desenvolvedores: os desenvolvedores nao pagam nada e ficam com 100% de cada bounty que ganham. Nao ha taxas de assinatura, nem percentuais de comissao, nem cobrancas ocultas descontadas dos pagamentos aos desenvolvedores. Quando um cliente publica uma tarefa com uma bounty de 500 USD, o desenvolvedor que a conclui e tem seu pull request aprovado recebe os 500 USD integrais. Essa estrutura de precos reflete nossa conviccao de que as pessoas que escrevem o codigo devem receber o valor total do seu trabalho.</value>
+    <value>A PrTask opera com um modelo de precos claramente favoravel aos desenvolvedores: os desenvolvedores nao pagam nada e ficam com 100% de cada bounty que ganham. Nao ha taxas de assinatura, nem percentuais de comissao, nem cobrancas ocultas descontadas dos pagamentos aos desenvolvedores. Quando um cliente publica uma tarefa com uma bounty de 500 PHP, o desenvolvedor que a conclui e tem seu pull request aprovado recebe os 500 PHP integrais. Essa estrutura de precos reflete nossa conviccao de que as pessoas que escrevem o codigo devem receber o valor total do seu trabalho.</value>
   </data>
   <data name="SprintSeoDescription" xml:space="preserve">
     <value>Organize suas contribuicoes de codigo aberto em sprints. Acompanhe o progresso das pull requests, ganhe bounties e gerencie seu fluxo de trabalho como desenvolvedor. Um excelente bico para desenvolvedores que querem ganhar dinheiro com codigo de qualidade.</value>
@@ -3181,7 +3181,7 @@
     <value>Como desenvolvedor no PrTask, voce concorda em: enviar apenas trabalho original que tenha direito de licenciar; divulgar o uso de codigo gerado por IA nas descricoes de seus pull requests; cumprir os requisitos de licenca open source do repositorio de cada tarefa; concluir a verificacao de identidade KYC antes de receber quaisquer pagamentos; nao enviar codigo plagiado, roubado ou sem licenca; manter conduta profissional em todas as interacoes da plataforma; e cumprir todas as leis e regulamentos aplicaveis em sua jurisdicao, incluindo obrigacoes de declaracao de impostos.</value>
   </data>
   <data name="TermsPaymentDescription" xml:space="preserve">
-    <value>Quando um cliente aprova um pull request, o valor da bounty e cobrado automaticamente por meio do metodo de pagamento registrado. A bounty completa e entao paga ao desenvolvedor. Todas as transacoes sao em dolares americanos (USD). Nao ha taxas de plataforma.</value>
+    <value>Quando um cliente aprova um pull request, o valor da bounty e cobrado automaticamente por meio do metodo de pagamento registrado. A bounty completa e entao paga ao desenvolvedor. Todas as transacoes sao em dolares americanos (PHP). Nao ha taxas de plataforma.</value>
   </data>
   <data name="TermsPlatformFeeDescription" xml:space="preserve">
     <value>O PrTask e uma plataforma gratuita. Nenhuma taxa e cobrada de clientes ou desenvolvedores. Os desenvolvedores recebem 100% do valor da bounty na aprovacao do PR.</value>
@@ -3286,7 +3286,7 @@
     <value>O processamento de pagamentos no PrTask oferece suporte a varios metodos para atender usuarios em todo o mundo. Os clientes podem pagar com os principais cartoes de credito e debito, e os desenvolvedores podem receber pagamentos por meio das opcoes de desembolso disponiveis em sua regiao. Nossa infraestrutura de pagamentos e operada por provedores confiaveis, e a seguranca e mantida por meio de processamento criptografado e padroes de conformidade.</value>
   </data>
   <data name="PricingFaqCurrencyAnswer" xml:space="preserve">
-    <value>Todas as transacoes sao em dolares americanos (USD).</value>
+    <value>Todas as transacoes sao em dolares americanos (PHP).</value>
   </data>
   <data name="PricingFaqMethodsQuestion" xml:space="preserve">
     <value>Quais metodos de pagamento sao aceitos?</value>
@@ -3295,7 +3295,7 @@
     <value>Aceitamos Visa, Mastercard, American Express e outros principais cartoes de credito e debito por meio do nosso processador de pagamentos.</value>
   </data>
   <data name="PricingFaqMinBountyAnswer" xml:space="preserve">
-    <value>Sim, a bounty minima que um cliente pode definir para uma tarefa e de 1 USD. Nao ha limite maximo.</value>
+    <value>Sim, a bounty minima que um cliente pode definir para uma tarefa e de 1 PHP. Nao ha limite maximo.</value>
   </data>
   <data name="PricingFaqPayoutTimeQuestion" xml:space="preserve">
     <value>Quanto tempo leva para eu receber meu pagamento?</value>
