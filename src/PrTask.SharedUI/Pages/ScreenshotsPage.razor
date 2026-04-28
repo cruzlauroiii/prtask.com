@@ -1,18 +1,20 @@
 @page "/Screenshots"
 <style>
-.shot-intro { background: #20203a; border-left: 4px solid #6c8eff; padding: 1rem 1.2rem; border-radius: 6px; color: #b8b8d4; margin: 1rem 0 1.5rem; }
-.shot-intro strong { color: #fff; }
+.shot-intro { background: var(--color-surface); border: 1px solid var(--color-border); border-left: 4px solid var(--color-primary); padding: 1rem 1.2rem; border-radius: 6px; color: var(--color-text-muted); margin: 1rem 0 1.5rem; }
+.shot-intro strong { color: var(--color-text); }
 .shot-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-top: 1.5rem; }
-.shot-card { background: #20203a; border: 1px solid #2d2d4a; border-radius: 10px; overflow: hidden; }
-.shot-head { padding: 1rem 1.25rem; border-bottom: 1px solid #2d2d4a; }
-.shot-step { display: inline-block; background: #6c8eff; color: #0a0a18; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.2rem 0.55rem; border-radius: 4px; margin-right: 0.6rem; vertical-align: middle; }
-.shot-head h2 { display: inline-block; color: #fff; font-size: 1.05rem; margin: 0; vertical-align: middle; }
-.shot-head p { color: #b8b8d4; margin: 0.5rem 0 0; font-size: 0.9rem; }
-.shot-img { display: block; width: 100%; height: auto; max-height: 600px; object-fit: contain; object-position: top; background: #0d0d1a; border-bottom: 1px solid #2d2d4a; }
-.shot-foot { padding: 0.85rem 1.25rem; background: #2a2a48; display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: space-between; align-items: center; font-size: 0.85rem; }
-.shot-foot .meta { color: #8a8aa8; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-.shot-foot a.btn-link { display: inline-block; background: #6c8eff; color: #0a0a18; padding: 0.45rem 0.95rem; border-radius: 6px; font-weight: 600; text-decoration: none; font-size: 0.85rem; }
-.shot-foot a.btn-link:hover { background: #9bb3ff; }
+.shot-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; overflow: hidden; color: var(--color-text); }
+.shot-head { padding: 1rem 1.25rem; border-bottom: 1px solid var(--color-border); }
+.shot-step { display: inline-block; background: #1e40af; color: #ffffff; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.2rem 0.55rem; border-radius: 4px; margin-right: 0.6rem; vertical-align: middle; }
+.shot-head h2 { display: inline-block; color: var(--color-text); font-size: 1.05rem; margin: 0; vertical-align: middle; }
+.shot-head p { color: var(--color-text-muted); margin: 0.5rem 0 0; font-size: 0.9rem; }
+.shot-img { display: block; width: 100%; height: auto; max-height: 600px; object-fit: contain; object-position: top; background: color-mix(in oklab, var(--color-bg), var(--color-text) 4%); border-bottom: 1px solid var(--color-border); }
+.shot-foot { padding: 0.85rem 1.25rem; background: color-mix(in oklab, var(--color-surface), var(--color-text) 6%); display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: space-between; align-items: center; font-size: 0.85rem; }
+.shot-foot .meta { color: var(--color-text-muted); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.shot-foot a.btn-link { display: inline-block; background: #1e40af; color: #ffffff; padding: 0.45rem 0.95rem; border-radius: 6px; font-weight: 600; text-decoration: none; font-size: 0.85rem; }
+.shot-foot a.btn-link:hover { background: #1d4ed8; color: #ffffff; }
+.shot-img { aspect-ratio: 16 / 5; }
+p a, ol a, ul a, li a, .shot-intro a { text-decoration: underline; }
 </style>
 <h1>Workflow Screenshots</h1>
 <p>The screenshots below are real captures of the running PrTask delivery-confirmation workflow, taken from the live site at <a href="https://prtask.com">https://prtask.com</a>. Each one corresponds to a stage of the no-charge-until-merge delivery model. Click "Open the live page" on any card to see the actual page in your browser - the screenshots are not mockups, they are real renderings of the production site.</p>
