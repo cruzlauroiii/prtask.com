@@ -1,5 +1,7 @@
 @page "/Receipt"
 @using PrTask.Domain.Constants
+<link rel="preconnect" href="https://api.github.com" crossorigin />
+<link rel="dns-prefetch" href="https://api.github.com" />
 <style>
 .delivery-receipt { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; overflow: hidden; margin-top: 1.5rem; color: var(--color-text); }
 .receipt-header { padding: 1.5rem 1.75rem 1rem; border-bottom: 1px solid var(--color-border); background: color-mix(in oklab, var(--color-surface), var(--color-text) 6%); }
@@ -225,8 +227,12 @@ body:has(.theme-dark:checked) .receipt-status.error, body:has(.theme-system:chec
     f('receipt-copy').addEventListener('click', async function () { if (!lastReceipt) return; var json = JSON.stringify(lastReceipt, null, 2); try { await navigator.clipboard.writeText(json); var btn = f('receipt-copy'); var prev = btn.textContent; btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = prev; }, 1500); } catch (e) { setStatus('Could not copy. Receipt JSON in console.', 'error'); console.log(json); } });
     var qs = new URLSearchParams(window.location.search);
     var initialPr = qs.get('pr'); var initialTask = qs.get('taskId');
-    if (initialPr) { input.value = initialPr; form.dispatchEvent(new Event('submit', { cancelable: true })); }
-    else if (initialTask) { input.value = initialTask; form.dispatchEvent(new Event('submit', { cancelable: true })); }
-    else { input.value = EXAMPLE_PR; form.dispatchEvent(new Event('submit', { cancelable: true })); }
+    function autoload() {
+        if (initialPr) { input.value = initialPr; form.dispatchEvent(new Event('submit', { cancelable: true })); }
+        else if (initialTask) { input.value = initialTask; form.dispatchEvent(new Event('submit', { cancelable: true })); }
+        else { input.value = EXAMPLE_PR; form.dispatchEvent(new Event('submit', { cancelable: true })); }
+    }
+    if (document.readyState === 'complete') { setTimeout(autoload, 0); }
+    else { window.addEventListener('load', function () { setTimeout(autoload, 0); }); }
 })();
 </script>
