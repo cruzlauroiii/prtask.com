@@ -1,4 +1,27 @@
 @page "/ConfirmationEmails"
+<script>
+(function () {
+  var KEY = 'prtask-theme';
+  function apply() {
+    var saved;
+    try { saved = localStorage.getItem(KEY); } catch (e) { saved = null; }
+    var t = saved || 'light';
+    var r = document.getElementById('theme-' + t);
+    if (r) r.checked = true;
+    ['light', 'dark', 'system'].forEach(function (n) {
+      var el = document.getElementById('theme-' + n);
+      if (el && !el.dataset.persisted) {
+        el.dataset.persisted = '1';
+        el.addEventListener('change', function () {
+          if (el.checked) { try { localStorage.setItem(KEY, n); } catch (e) {} }
+        });
+      }
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', apply);
+  else apply();
+})();
+</script>
 <style>
 .email-stack { display: flex; flex-direction: column; gap: 1.25rem; margin-top: 1.25rem; }
 .email-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; overflow: hidden; color: var(--color-text); }
