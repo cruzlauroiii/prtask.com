@@ -22,6 +22,7 @@ var PrerenderRoutes = new (string Route, Type PageType)[]
     (PrerenderConstants.RouteDownload, typeof(PrTask.SharedUI.Pages.DownloadPage)),
     (PrerenderConstants.RouteSprints, typeof(PrTask.SharedUI.Pages.SprintsPage)),
     (PrerenderConstants.RouteBoards, typeof(PrTask.SharedUI.Pages.BoardsPage)),
+    (PrerenderConstants.RouteReceipt, typeof(PrTask.SharedUI.Pages.ReceiptLandingPage)),
     (PrerenderConstants.RouteLegalTerms, typeof(PrTask.SharedUI.Pages.Legal.TermsPage)),
     (PrerenderConstants.RouteLegalPrivacy, typeof(PrTask.SharedUI.Pages.Legal.PrivacyPage)),
     (PrerenderConstants.RouteLegalRefund, typeof(PrTask.SharedUI.Pages.Legal.RefundPage)),

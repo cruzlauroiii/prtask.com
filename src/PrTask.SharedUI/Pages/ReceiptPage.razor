@@ -1,0 +1,231 @@
+@page "/receipts/{TaskId}"
+@using PrTask.Application.Services
+@using PrTask.Domain.Constants
+@using PrTask.Domain.Models
+@inject ITaskService TaskService
+@inject IPullRequestService PullRequestService
+@inject IPaymentRecordService PaymentRecordService
+@inject IUserService UserService
+@inject IJSRuntime Js
+<PageTitle>@ReceiptConstants.SeoTitle</PageTitle>
+<HeadContent>
+    <meta name="description" content="@ReceiptConstants.SeoDescription" />
+</HeadContent>
+<article class="delivery-receipt">
+    @if (LoadFailed)
+    {
+        <header class="receipt-banner receipt-banner-error">
+            <h1>@ReceiptConstants.NotFoundHeading</h1>
+            <p>@ReceiptConstants.NotFoundBody</p>
+        </header>
+    }
+    else if (CurrentTask is null)
+    {
+        <p class="receipt-loading">@ReceiptConstants.LoadingMessage</p>
+    }
+    else if (CurrentPullRequest is null || CurrentPullRequest.Status < PullRequestStatus.Merged)
+    {
+        <header class="receipt-banner receipt-banner-pending">
+            <h1>@ReceiptConstants.PendingHeading</h1>
+            <p>@ReceiptConstants.PendingBody</p>
+        </header>
+    }
+    else
+    {
+        <header class="receipt-header">
+            <span class="receipt-stamp receipt-stamp-@(CurrentPaymentStatusKey)">@CurrentPaymentStatusLabel</span>
+            <h1>@ReceiptConstants.PageHeading</h1>
+            <p class="receipt-subtitle">@ReceiptConstants.PageSubtitle</p>
+            <dl class="receipt-id-grid">
+                <div><dt>@ReceiptConstants.ReceiptNumberLabel</dt><dd class="mono">@CurrentReceiptNumber</dd></div>
+                <div><dt>@ReceiptConstants.TransactionReferenceLabel</dt><dd class="mono">@(CurrentPayment?.MayaPaymentId ?? "-")</dd></div>
+                <div><dt>@ReceiptConstants.IssuedAtLabel</dt><dd class="mono">@FormatUtc(CurrentPullRequest.PaidAt ?? CurrentPullRequest.MergedAt ?? DateTime.UtcNow)</dd></div>
+            </dl>
+        </header>
+        <section class="receipt-block">
+            <h2>@ReceiptConstants.DeliveryConfirmationHeading</h2>
+            <p>@ReceiptConstants.DeliveryConfirmationBody</p>
+        </section>
+        <section class="receipt-block">
+            <h2>@ReceiptConstants.PageHeading</h2>
+            <dl class="receipt-grid">
+                <div><dt>@ReceiptConstants.TaskIdLabel</dt><dd class="mono">@CurrentTask.Id</dd></div>
+                <div><dt>@ReceiptConstants.TaskTitleLabel</dt><dd>@CurrentTask.Title</dd></div>
+                <div class="full"><dt>@ReceiptConstants.TaskDescriptionLabel</dt><dd>@CurrentTask.Description</dd></div>
+                <div><dt>@ReceiptConstants.RepositoryLabel</dt><dd><a href="@CurrentTask.RepoUrl" target="_blank" rel="noopener">@CurrentTask.RepoUrl</a></dd></div>
+                <div><dt>@ReceiptConstants.ComplexityLabel</dt><dd>@CurrentTask.Complexity</dd></div>
+                <div><dt>@ReceiptConstants.ClientLabel</dt><dd>@(DisplayUser(CurrentClient, CurrentTask.ClientId))</dd></div>
+                <div><dt>@ReceiptConstants.DeveloperLabel</dt><dd>@(DisplayUser(CurrentDeveloper, CurrentPullRequest.DeveloperId))</dd></div>
+            </dl>
+        </section>
+        <section class="receipt-block">
+            <h2>@ReceiptConstants.PullRequestLabel</h2>
+            <dl class="receipt-grid">
+                <div><dt>@ReceiptConstants.PullRequestLabel</dt><dd class="mono">#@CurrentPullRequest.Id</dd></div>
+                <div class="full"><dt>@ReceiptConstants.PullRequestUrlLabel</dt><dd>@if (!string.IsNullOrWhiteSpace(CurrentPullRequest.GitHubPrUrl)){<a href="@CurrentPullRequest.GitHubPrUrl" target="_blank" rel="noopener">@CurrentPullRequest.GitHubPrUrl</a>}else{<span>-</span>}</dd></div>
+                <div><dt>@ReceiptConstants.SubmittedAtLabel</dt><dd class="mono">@FormatUtc(CurrentPullRequest.SubmittedAt)</dd></div>
+                <div><dt>@ReceiptConstants.ApprovedAtLabel</dt><dd class="mono">@FormatUtc(CurrentPullRequest.MergedAt)</dd></div>
+                <div><dt>@ReceiptConstants.MergeCommitShaLabel</dt><dd class="mono">@(CurrentPullRequest.DiffStorageKey ?? "-")</dd></div>
+                <div><dt>@ReceiptConstants.FilesChangedLabel</dt><dd>@CurrentPullRequest.FilesChanged</dd></div>
+                <div><dt>@ReceiptConstants.LinesChangedLabel</dt><dd class="mono">@string.Format(System.Globalization.CultureInfo.InvariantCulture, ReceiptConstants.LinesFormat, CurrentPullRequest.Additions, CurrentPullRequest.Deletions)</dd></div>
+            </dl>
+        </section>
+        <section class="receipt-block">
+            <h2>Payment</h2>
+            <dl class="receipt-grid">
+                <div><dt>@ReceiptConstants.AmountLabel</dt><dd class="mono">@FormatAmount(CurrentTask.BountyAmountCents) @ReceiptConstants.CurrencyPhp</dd></div>
+                <div><dt>@ReceiptConstants.PlatformFeeLabel</dt><dd class="mono">@FormatAmount(CurrentPlatformFeeCents) @ReceiptConstants.CurrencyPhp</dd></div>
+                <div><dt>@ReceiptConstants.NetToDeveloperLabel</dt><dd class="mono">@FormatAmount(CurrentTask.BountyAmountCents - CurrentPlatformFeeCents) @ReceiptConstants.CurrencyPhp</dd></div>
+                <div><dt>@ReceiptConstants.CurrencyLabel</dt><dd>@ReceiptConstants.CurrencyPhp</dd></div>
+                <div><dt>@ReceiptConstants.PaymentMethodLabel</dt><dd>@ReceiptConstants.PaymentMethodMaya</dd></div>
+                <div><dt>@ReceiptConstants.PaymentStatusLabel</dt><dd>@CurrentPaymentStatusLabel</dd></div>
+                <div><dt>@ReceiptConstants.PaidAtLabel</dt><dd class="mono">@FormatUtc(CurrentPullRequest.PaidAt)</dd></div>
+            </dl>
+        </section>
+        <section class="receipt-block">
+            <h2>@ReceiptConstants.IndependentVerificationHeading</h2>
+            <p>@ReceiptConstants.IndependentVerificationBody</p>
+            @if (!string.IsNullOrWhiteSpace(CurrentPullRequest.GitHubPrUrl))
+            {
+                <p><a class="btn btn-secondary" href="@CurrentPullRequest.GitHubPrUrl" target="_blank" rel="noopener">@ReceiptConstants.ActionViewOnGitHub</a></p>
+            }
+        </section>
+        <section class="receipt-block">
+            <h2>@ReceiptConstants.RecordsRetentionHeading</h2>
+            <p>@ReceiptConstants.RecordsRetentionBody</p>
+        </section>
+        <section class="receipt-block">
+            <h2>@ReceiptConstants.ContactHeading</h2>
+            <p>@ReceiptConstants.ContactBody</p>
+        </section>
+        <footer class="receipt-actions">
+            <button type="button" class="btn btn-secondary" @onclick="PrintReceipt">@ReceiptConstants.ActionPrint</button>
+            <button type="button" class="btn btn-secondary" @onclick="CopyReceiptJson">@ReceiptConstants.ActionCopyJson</button>
+        </footer>
+    }
+</article>
+@code {
+    [Parameter]
+    public string TaskId { get; set; } = string.Empty;
+    private TaskEntity? CurrentTask { get; set; }
+    private PullRequestEntity? CurrentPullRequest { get; set; }
+    private PaymentEntity? CurrentPayment { get; set; }
+    private UserEntity? CurrentClient { get; set; }
+    private UserEntity? CurrentDeveloper { get; set; }
+    private bool LoadFailed { get; set; }
+    private long CurrentPlatformFeeCents => CurrentPayment?.PlatformFeeCents ?? 0L;
+    private string CurrentReceiptNumber => string.Format(System.Globalization.CultureInfo.InvariantCulture, ReceiptConstants.ReceiptNumberFormat, CurrentTask?.Id ?? string.Empty);
+    private string CurrentPaymentStatusKey => CurrentPullRequest?.Status switch
+    {
+        PullRequestStatus.Paid => "paid",
+        PullRequestStatus.Merged => "merged",
+        _ => "pending"
+    };
+    private string CurrentPaymentStatusLabel => CurrentPullRequest?.Status switch
+    {
+        PullRequestStatus.Paid => ReceiptConstants.StatusPaid,
+        PullRequestStatus.Merged => ReceiptConstants.StatusMerged,
+        _ => ReceiptConstants.StatusPending
+    };
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            CurrentTask = await TaskService.GetByIdAsync(TaskId);
+            if (CurrentTask is null)
+            {
+                LoadFailed = true;
+                return;
+            }
+            var Payments = await PaymentRecordService.ListByTaskAsync(CurrentTask.Id);
+            CurrentPayment = Payments.FirstOrDefault(P => !string.IsNullOrWhiteSpace(P.PullRequestId));
+            if (CurrentPayment is not null && !string.IsNullOrWhiteSpace(CurrentPayment.PullRequestId))
+            {
+                CurrentPullRequest = await PullRequestService.GetByIdAsync(CurrentPayment.PullRequestId!);
+            }
+            CurrentClient = await UserService.GetByIdAsync(CurrentTask.ClientId);
+            if (CurrentPullRequest is not null)
+            {
+                CurrentDeveloper = await UserService.GetByIdAsync(CurrentPullRequest.DeveloperId);
+            }
+        }
+        catch
+        {
+            LoadFailed = true;
+        }
+    }
+    private static string DisplayUser(UserEntity? User, string Fallback)
+    {
+        if (User is null)
+        {
+            return Fallback;
+        }
+        if (!string.IsNullOrWhiteSpace(User.DisplayName))
+        {
+            return User.DisplayName!;
+        }
+        if (!string.IsNullOrWhiteSpace(User.GitHubUsername))
+        {
+            return User.GitHubUsername;
+        }
+        return Fallback;
+    }
+    private static string FormatUtc(DateTime? Value) => Value.HasValue ? Value.Value.ToUniversalTime().ToString(ReceiptConstants.DateFormat, System.Globalization.CultureInfo.InvariantCulture) : "-";
+    private static string FormatAmount(long Cents) => string.Format(System.Globalization.CultureInfo.InvariantCulture, ReceiptConstants.AmountFormat, Cents / 100m);
+    private async Task PrintReceipt() => await Js.InvokeVoidAsync("window.print");
+    private async Task CopyReceiptJson()
+    {
+        if (CurrentTask is null || CurrentPullRequest is null)
+        {
+            return;
+        }
+        var Json = BuildReceiptJson();
+        await Js.InvokeVoidAsync("navigator.clipboard.writeText", Json);
+    }
+    private string BuildReceiptJson()
+    {
+        var Buffer = new System.IO.MemoryStream();
+        using (var Writer = new System.Text.Json.Utf8JsonWriter(Buffer, new System.Text.Json.JsonWriterOptions { Indented = true }))
+        {
+            Writer.WriteStartObject();
+            Writer.WriteString("receiptNumber", CurrentReceiptNumber);
+            Writer.WriteString("mayaTransactionReference", CurrentPayment?.MayaPaymentId ?? string.Empty);
+            Writer.WriteStartObject("task");
+            Writer.WriteString("id", CurrentTask!.Id);
+            Writer.WriteString("title", CurrentTask.Title);
+            Writer.WriteString("repoUrl", CurrentTask.RepoUrl);
+            Writer.WriteNumber("bountyAmountCents", CurrentTask.BountyAmountCents);
+            Writer.WriteString("complexity", CurrentTask.Complexity.ToString());
+            Writer.WriteEndObject();
+            Writer.WriteStartObject("client");
+            Writer.WriteString("id", CurrentTask.ClientId);
+            Writer.WriteString("displayName", DisplayUser(CurrentClient, CurrentTask.ClientId));
+            Writer.WriteEndObject();
+            Writer.WriteStartObject("developer");
+            Writer.WriteString("id", CurrentPullRequest!.DeveloperId);
+            Writer.WriteString("displayName", DisplayUser(CurrentDeveloper, CurrentPullRequest.DeveloperId));
+            Writer.WriteEndObject();
+            Writer.WriteStartObject("pullRequest");
+            Writer.WriteString("id", CurrentPullRequest.Id);
+            Writer.WriteString("gitHubPrUrl", CurrentPullRequest.GitHubPrUrl ?? string.Empty);
+            Writer.WriteString("mergeCommitSha", CurrentPullRequest.DiffStorageKey ?? string.Empty);
+            Writer.WriteNumber("filesChanged", CurrentPullRequest.FilesChanged);
+            Writer.WriteNumber("additions", CurrentPullRequest.Additions);
+            Writer.WriteNumber("deletions", CurrentPullRequest.Deletions);
+            Writer.WriteString("submittedAt", CurrentPullRequest.SubmittedAt.ToUniversalTime().ToString("o", System.Globalization.CultureInfo.InvariantCulture));
+            Writer.WriteString("mergedAt", CurrentPullRequest.MergedAt?.ToUniversalTime().ToString("o", System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty);
+            Writer.WriteString("paidAt", CurrentPullRequest.PaidAt?.ToUniversalTime().ToString("o", System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty);
+            Writer.WriteEndObject();
+            Writer.WriteStartObject("payment");
+            Writer.WriteNumber("amountCents", CurrentTask.BountyAmountCents);
+            Writer.WriteNumber("platformFeeCents", CurrentPlatformFeeCents);
+            Writer.WriteNumber("netToDeveloperCents", CurrentTask.BountyAmountCents - CurrentPlatformFeeCents);
+            Writer.WriteString("currency", ReceiptConstants.CurrencyPhp);
+            Writer.WriteString("method", ReceiptConstants.PaymentMethodMaya);
+            Writer.WriteString("status", CurrentPaymentStatusLabel);
+            Writer.WriteEndObject();
+            Writer.WriteEndObject();
+        }
+        return System.Text.Encoding.UTF8.GetString(Buffer.ToArray());
+    }
+}

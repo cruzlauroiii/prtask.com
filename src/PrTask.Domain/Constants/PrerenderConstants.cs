@@ -16,6 +16,7 @@ public static class PrerenderConstants
     public const string RouteDownload = "/Download";
     public const string RouteSprints = "/Sprints";
     public const string RouteBoards = "/Boards";
+    public const string RouteReceipt = "/Receipt";
     public const string RouteLegalTerms = "/Legal/Terms";
     public const string RouteLegalPrivacy = "/Legal/Privacy";
     public const string RouteLegalRefund = "/Legal/Refund";

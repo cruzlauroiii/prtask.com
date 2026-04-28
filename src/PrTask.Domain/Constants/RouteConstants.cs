@@ -19,6 +19,8 @@ public static class RouteConstants
     public const string Terms = "/legal/terms";
     public const string Privacy = "/legal/privacy";
     public const string Refund = "/legal/refund";
+    public const string Receipts = "/receipts";
+    public const string ReceiptDetail = "/receipts/{0}";
     public const string AcceptableUse = "/legal/acceptable-use";
     public const string CookiePolicy = "/legal/cookie-policy";
     public const string Licenses = "/legal/licenses";
