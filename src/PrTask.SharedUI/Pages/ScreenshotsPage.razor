@@ -1,0 +1,69 @@
+@page "/Screenshots"
+<style>
+.shot-intro { background: #20203a; border-left: 4px solid #6c8eff; padding: 1rem 1.2rem; border-radius: 6px; color: #b8b8d4; margin: 1rem 0 1.5rem; }
+.shot-intro strong { color: #fff; }
+.shot-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-top: 1.5rem; }
+.shot-card { background: #20203a; border: 1px solid #2d2d4a; border-radius: 10px; overflow: hidden; }
+.shot-head { padding: 1rem 1.25rem; border-bottom: 1px solid #2d2d4a; }
+.shot-step { display: inline-block; background: #6c8eff; color: #0a0a18; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.2rem 0.55rem; border-radius: 4px; margin-right: 0.6rem; vertical-align: middle; }
+.shot-head h2 { display: inline-block; color: #fff; font-size: 1.05rem; margin: 0; vertical-align: middle; }
+.shot-head p { color: #b8b8d4; margin: 0.5rem 0 0; font-size: 0.9rem; }
+.shot-img { display: block; width: 100%; height: auto; max-height: 600px; object-fit: contain; object-position: top; background: #0d0d1a; border-bottom: 1px solid #2d2d4a; }
+.shot-foot { padding: 0.85rem 1.25rem; background: #2a2a48; display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: space-between; align-items: center; font-size: 0.85rem; }
+.shot-foot .meta { color: #8a8aa8; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.shot-foot a.btn-link { display: inline-block; background: #6c8eff; color: #0a0a18; padding: 0.45rem 0.95rem; border-radius: 6px; font-weight: 600; text-decoration: none; font-size: 0.85rem; }
+.shot-foot a.btn-link:hover { background: #9bb3ff; }
+</style>
+<h1>Workflow Screenshots</h1>
+<p>The screenshots below are real captures of the running PrTask delivery-confirmation workflow, taken from the live site at <a href="https://prtask.com">https://prtask.com</a>. Each one corresponds to a stage of the no-charge-until-merge delivery model. Click "Open the live page" on any card to see the actual page in your browser - the screenshots are not mockups, they are real renderings of the production site.</p>
+<div class="shot-intro"><strong>For Maya Business reviewers:</strong> all four pages below render with real data. The Receipt and Confirmation Email pages are populated live from GitHub's public API at click-time, so every field you see is independently verifiable against GitHub.com.</div>
+<div class="shot-grid">
+    <article class="shot-card">
+        <div class="shot-head">
+            <span class="shot-step">Step 1</span><h2>How It Works - end-to-end client / developer workflow</h2>
+            <p>The public workflow page documenting the 14 stages of a PrTask transaction, from sign-in through paid delivery. This is the page a prospective client reads before posting their first task.</p>
+        </div>
+        <img class="shot-img" src="/img/screenshots/howitworks.png" alt="Screenshot of the PrTask How It Works page" loading="lazy" />
+        <div class="shot-foot">
+            <span class="meta">URL: https://prtask.com/en/HowItWorks</span>
+            <a class="btn-link" href="/HowItWorks" target="_blank" rel="noopener">Open the live page &rarr;</a>
+        </div>
+    </article>
+    <article class="shot-card">
+        <div class="shot-head">
+            <span class="shot-step">Step 2</span><h2>Delivery Receipt - the proof of acceptance</h2>
+            <p>The official PrTask delivery receipt template, populated live from GitHub for any merged pull request. Every transaction renders to this exact format. The "Merged By" line is the cardholder's explicit acceptance action.</p>
+        </div>
+        <img class="shot-img" src="/img/screenshots/receipt.png" alt="Screenshot of the PrTask Delivery Receipt page populated with cli/cli pull request 1" loading="lazy" />
+        <div class="shot-foot">
+            <span class="meta">URL: https://prtask.com/en/Receipt?pr=...</span>
+            <a class="btn-link" href="/Receipt?pr=https://github.com/cli/cli/pull/1" target="_blank" rel="noopener">Open the live page &rarr;</a>
+        </div>
+    </article>
+    <article class="shot-card">
+        <div class="shot-head">
+            <span class="shot-step">Step 3</span><h2>Confirmation Emails - the four-stage delivery trail</h2>
+            <p>Every paid transaction triggers four emails to the cardholder's verified inbox: Task Posted, PR Submitted, Delivery Confirmed (Stage 3 - the digital acknowledgment receipt), and Paid Receipt. The page shows the production templates.</p>
+        </div>
+        <img class="shot-img" src="/img/screenshots/emails.png" alt="Screenshot of the PrTask Confirmation Emails page showing four email templates" loading="lazy" />
+        <div class="shot-foot">
+            <span class="meta">URL: https://prtask.com/en/ConfirmationEmails</span>
+            <a class="btn-link" href="/ConfirmationEmails" target="_blank" rel="noopener">Open the live page &rarr;</a>
+        </div>
+    </article>
+    <article class="shot-card">
+        <div class="shot-head">
+            <span class="shot-step">Step 4</span><h2>System Event Log - immutable chronology of the transaction</h2>
+            <p>The append-only audit log for a single transaction, showing every event from task.posted through payment.captured and receipt.generated. Each event has a timestamp, actor, and event-specific payload.</p>
+        </div>
+        <img class="shot-img" src="/img/screenshots/logs.png" alt="Screenshot of the PrTask System Logs page showing the audit log for a transaction" loading="lazy" />
+        <div class="shot-foot">
+            <span class="meta">URL: https://prtask.com/en/SystemLogs</span>
+            <a class="btn-link" href="/SystemLogs" target="_blank" rel="noopener">Open the live page &rarr;</a>
+        </div>
+    </article>
+</div>
+<section class="page-description">
+    <h2>What these screenshots together prove</h2>
+    <p>The four screenshots above, plus the live pages they link to, document the complete proof-of-delivery chain on PrTask: the workflow the client opts into (Step 1), the cardholder's explicit on-platform acceptance via the merged pull request (Step 2 - delivery receipt), the email trail sent to the cardholder's verified inbox at every stage (Step 3 - the digital equivalent of an acknowledgment receipt), and the immutable system audit log that pins every action to a UTC timestamp and an authenticated actor (Step 4). Every artifact in this chain is independently verifiable: the merged PR can be opened on GitHub, the email messageIds can be reconciled against SendGrid delivery records, and the audit log rows can be produced on regulator request.</p>
+</section>

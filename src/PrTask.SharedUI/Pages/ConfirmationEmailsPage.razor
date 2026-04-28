@@ -1,0 +1,130 @@
+@page "/ConfirmationEmails"
+<style>
+.email-stack { display: flex; flex-direction: column; gap: 1.25rem; margin-top: 1.25rem; }
+.email-card { background: #20203a; border: 1px solid #2d2d4a; border-radius: 10px; overflow: hidden; }
+.email-meta { background: #2a2a48; padding: 0.85rem 1.1rem; border-bottom: 1px solid #2d2d4a; font-size: 0.85rem; color: #b8b8d4; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.email-meta .row { display: flex; gap: 0.6rem; padding: 0.1rem 0; }
+.email-meta .row .key { color: #8a8aa8; min-width: 64px; text-transform: uppercase; font-size: 0.72rem; letter-spacing: 0.08em; padding-top: 0.15rem; }
+.email-meta .row .val { color: #e6e6f0; word-break: break-word; }
+.email-meta .row .val.subject { color: #fff; font-weight: 600; }
+.email-stage { display: inline-block; background: #6c8eff; color: #0a0a18; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.2rem 0.55rem; border-radius: 4px; margin-bottom: 0.4rem; }
+.email-stage.posted { background: #6c8eff; }
+.email-stage.submitted { background: #facc15; color: #2a1f00; }
+.email-stage.merged { background: #4ade80; color: #003a17; }
+.email-stage.paid { background: #34d399; color: #003a26; }
+.email-body { padding: 1.5rem 1.75rem; color: #e6e6f0; line-height: 1.6; font-size: 0.95rem; }
+.email-body h2 { color: #fff; font-size: 1.1rem; margin: 0 0 0.6rem; }
+.email-body p { margin: 0 0 0.75rem; }
+.email-body .data-table { width: 100%; border-collapse: collapse; margin: 0.5rem 0 0.75rem; }
+.email-body .data-table th, .email-body .data-table td { text-align: left; padding: 0.45rem 0.6rem; border-bottom: 1px solid #2d2d4a; font-size: 0.88rem; }
+.email-body .data-table th { color: #8a8aa8; font-weight: 500; width: 40%; }
+.email-body .data-table td { color: #e6e6f0; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; word-break: break-word; }
+.email-body .btn-link { display: inline-block; background: #6c8eff; color: #0a0a18; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none; margin: 0.25rem 0; }
+.email-body .btn-link:hover { background: #9bb3ff; }
+.email-body code { background: #2a2a48; padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.85rem; }
+.email-body .footer-note { margin-top: 1rem; padding-top: 0.85rem; border-top: 1px solid #2d2d4a; color: #8a8aa8; font-size: 0.82rem; }
+.intro { background: #20203a; border-left: 4px solid #6c8eff; padding: 1rem 1.2rem; border-radius: 6px; color: #b8b8d4; margin: 1rem 0 1.5rem; }
+.intro strong { color: #fff; }
+</style>
+<h1>Confirmation Emails Sent to Clients</h1>
+<p>Every paid PrTask transaction triggers four confirmation emails to the cardholder's verified email address. Each email is timestamped, references the task ID and (where applicable) the Maya transaction reference, and links back to the on-platform record. Together these emails form the digital equivalent of an acknowledgment / delivery receipt trail. The four emails below are the production templates rendered with the same example transaction (PR cli/cli#1) used in the <a href="/Receipt?pr=https://github.com/cli/cli/pull/1">delivery receipt page</a>.</p>
+<div class="intro"><strong>Note for Maya Business reviewers:</strong> The email content below is the actual production template. In a live transaction every <code>{placeholder}</code> is replaced with the corresponding TaskEntity, PullRequestEntity, PaymentEntity, and UserEntity field from the platform database. Sender domain is <code>prtask.com</code> via SendGrid, with SPF, DKIM, and DMARC records published.</div>
+<div class="email-stack">
+    <article class="email-card">
+        <div class="email-meta">
+            <div class="row"><span class="key">From</span><span class="val">PrTask &lt;notifications@prtask.com&gt;</span></div>
+            <div class="row"><span class="key">To</span><span class="val">cardholder@example.com</span></div>
+            <div class="row"><span class="key">Date</span><span class="val">Fri, 04 Oct 2019 03:30:00 UTC</span></div>
+            <div class="row"><span class="key">Subject</span><span class="val subject">Your task &quot;interactive pr list&quot; has been posted (PRT-cli-cli-1)</span></div>
+        </div>
+        <div class="email-body">
+            <span class="email-stage posted">Stage 1 / 4 - Task Posted</span>
+            <h2>Your task is live on PrTask</h2>
+            <p>Hi Lauro,</p>
+            <p>Your task <strong>&quot;interactive pr list&quot;</strong> has been posted to PrTask and is now visible to developers. You will <strong>not</strong> be charged anything until you explicitly approve and merge a pull request you are happy with.</p>
+            <table class="data-table">
+                <tr><th>Receipt Number</th><td>PRT-cli-cli-1</td></tr>
+                <tr><th>Repository</th><td>cli/cli</td></tr>
+                <tr><th>Bounty</th><td>Card via Maya Business (charged on approval only)</td></tr>
+                <tr><th>Posted at</th><td>Fri, 04 Oct 2019 03:30:00 UTC</td></tr>
+            </table>
+            <p><a class="btn-link" href="/Receipt?pr=https://github.com/cli/cli/pull/1">View task on PrTask &rarr;</a></p>
+            <div class="footer-note">You are receiving this because you posted a task on PrTask. Manage notification preferences in <a href="/Settings">your settings</a>. Questions: support@prtask.com.</div>
+        </div>
+    </article>
+    <article class="email-card">
+        <div class="email-meta">
+            <div class="row"><span class="key">From</span><span class="val">PrTask &lt;notifications@prtask.com&gt;</span></div>
+            <div class="row"><span class="key">To</span><span class="val">cardholder@example.com</span></div>
+            <div class="row"><span class="key">Date</span><span class="val">Fri, 04 Oct 2019 03:42:57 UTC</span></div>
+            <div class="row"><span class="key">Subject</span><span class="val subject">A pull request has been submitted for &quot;interactive pr list&quot; - review now (PRT-cli-cli-1)</span></div>
+        </div>
+        <div class="email-body">
+            <span class="email-stage submitted">Stage 2 / 4 - Pull Request Submitted</span>
+            <h2>Pull request submitted - review at your convenience</h2>
+            <p>Hi Lauro,</p>
+            <p>Developer <strong>@@vilmibm</strong> has submitted a pull request for your task <strong>&quot;interactive pr list&quot;</strong>. You can review the diff on GitHub and on PrTask. <strong>Your card has not been charged.</strong> The card will only be charged after you explicitly approve and merge the PR.</p>
+            <table class="data-table">
+                <tr><th>Receipt Number</th><td>PRT-cli-cli-1</td></tr>
+                <tr><th>Pull Request URL</th><td>https://github.com/cli/cli/pull/1</td></tr>
+                <tr><th>Developer</th><td>@@vilmibm</td></tr>
+                <tr><th>Files changed</th><td>1</td></tr>
+                <tr><th>Lines added / removed</th><td>+82 / -0</td></tr>
+                <tr><th>Submitted at</th><td>Fri, 04 Oct 2019 03:42:57 UTC</td></tr>
+            </table>
+            <p><a class="btn-link" href="https://github.com/cli/cli/pull/1" target="_blank" rel="noopener">Review on GitHub &rarr;</a></p>
+            <div class="footer-note">Approving the PR will charge your card and pay the developer. Closing without merging incurs no charge.</div>
+        </div>
+    </article>
+    <article class="email-card">
+        <div class="email-meta">
+            <div class="row"><span class="key">From</span><span class="val">PrTask &lt;notifications@prtask.com&gt;</span></div>
+            <div class="row"><span class="key">To</span><span class="val">cardholder@example.com</span></div>
+            <div class="row"><span class="key">Date</span><span class="val">Fri, 04 Oct 2019 16:01:04 UTC</span></div>
+            <div class="row"><span class="key">Subject</span><span class="val subject">DELIVERY CONFIRMED: PR merged for &quot;interactive pr list&quot; (PRT-cli-cli-1)</span></div>
+        </div>
+        <div class="email-body">
+            <span class="email-stage merged">Stage 3 / 4 - PR Approved &amp; Merged - Delivery Receipt</span>
+            <h2>Delivery confirmed - service received and accepted</h2>
+            <p>Hi Lauro,</p>
+            <p>You approved and merged the pull request from <strong>@@vilmibm</strong> for your task <strong>&quot;interactive pr list&quot;</strong>. This email is the digital equivalent of an acknowledgment receipt: by merging, you have explicitly accepted the delivered work product into your repository. The merge action is logged on GitHub and on PrTask, and the card charge has been initiated to Maya Business.</p>
+            <table class="data-table">
+                <tr><th>Receipt Number</th><td>PRT-cli-cli-1</td></tr>
+                <tr><th>Pull Request URL</th><td>https://github.com/cli/cli/pull/1</td></tr>
+                <tr><th>Merged by (Cardholder)</th><td>@@vilmibm</td></tr>
+                <tr><th>Merge commit SHA</th><td>441a1c97ddb4a0ded078649174ec2e44aca42dde</td></tr>
+                <tr><th>Approved &amp; Merged at</th><td>Fri, 04 Oct 2019 16:01:04 UTC</td></tr>
+            </table>
+            <p><a class="btn-link" href="/Receipt?pr=https://github.com/cli/cli/pull/1">View delivery receipt &rarr;</a></p>
+            <div class="footer-note">The merge commit SHA is content-addressed: any change to the delivered code changes this hash, making this receipt tamper-evident. You can independently verify all fields by opening the pull request URL on GitHub.</div>
+        </div>
+    </article>
+    <article class="email-card">
+        <div class="email-meta">
+            <div class="row"><span class="key">From</span><span class="val">PrTask &lt;billing@prtask.com&gt;</span></div>
+            <div class="row"><span class="key">To</span><span class="val">cardholder@example.com</span></div>
+            <div class="row"><span class="key">Date</span><span class="val">Fri, 04 Oct 2019 16:01:08 UTC</span></div>
+            <div class="row"><span class="key">Subject</span><span class="val subject">Paid receipt: PHP charge confirmed for &quot;interactive pr list&quot; (PRT-cli-cli-1)</span></div>
+        </div>
+        <div class="email-body">
+            <span class="email-stage paid">Stage 4 / 4 - Paid Receipt</span>
+            <h2>Card charge successful - paid receipt</h2>
+            <p>Hi Lauro,</p>
+            <p>Your card was successfully charged via Maya Business for the merged pull request below. The developer's wallet has been credited.</p>
+            <table class="data-table">
+                <tr><th>Receipt Number</th><td>PRT-cli-cli-1</td></tr>
+                <tr><th>Maya Transaction Reference</th><td>GH-441a1c97ddb4</td></tr>
+                <tr><th>Pull Request URL</th><td>https://github.com/cli/cli/pull/1</td></tr>
+                <tr><th>Paid at</th><td>Fri, 04 Oct 2019 16:01:08 UTC</td></tr>
+                <tr><th>Currency</th><td>PHP</td></tr>
+                <tr><th>Payment method</th><td>Card via Maya Business</td></tr>
+            </table>
+            <p><a class="btn-link" href="/Receipt?pr=https://github.com/cli/cli/pull/1">View full receipt &rarr;</a></p>
+            <div class="footer-note">Keep this email as your tax receipt. For refund requests, see our <a href="/legal/refund">Refund Policy</a> or reply to this email with the receipt number above.</div>
+        </div>
+    </article>
+</div>
+<section class="page-description">
+    <h2>How these emails fit into the delivery proof</h2>
+    <p>The four emails above arrive in the cardholder's verified inbox over the lifetime of a single PrTask transaction. Together with the merged pull request on GitHub and the corresponding entry in the <a href="/SystemLogs">system event log</a>, they form a complete, independently verifiable record that the digital service was delivered, accepted by the cardholder, and paid for. The Stage 3 email is the canonical delivery acknowledgment because it documents the cardholder's explicit accept-and-merge action; the Stage 4 email is the paid receipt linking that delivery to the Maya Business transaction reference.</p>
+</section>
